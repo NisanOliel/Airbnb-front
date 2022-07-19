@@ -1,13 +1,14 @@
 <template>
-
-  <h2>filter header</h2>
+  <h2>{{ msg }}</h2>
 </template>
 
 <script>
-export default {
-
-}
+  export default {
+    name: 'header-filter',
+    data() {
+      return {
+        msg: 'Hello form filter',
+      };
+    },
+  };
 </script>
-
-<style lang="scss" scoped>
-</style>

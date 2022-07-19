@@ -1,5 +1,6 @@
 <template>
   <header>
+    <header-filter />
     <!-- <nav>
       <router-link to="/">
         <span role="img" aria-label="logo">🙏</span>
@@ -8,25 +9,25 @@
       <router-link to="/chat">Chat</router-link>
       <router-link to="/login">Login / Signup</router-link>
     </nav> -->
-    <header-filter />
-    <section class="loggedin-user" v-if="loggedInUser">
+
+    <!-- <section class="loggedin-user" v-if="loggedInUser">
       <router-link :to="`/user/${loggedInUser._id}`">
         {{ loggedInUser.fullname }}
       </router-link>
       <span>{{ loggedInUser.score.toLocaleString() }}</span>
-    </section>
+    </section> -->
   </header>
 </template>
 <script>
-import headerFilter from './header-filter.cmp.vue'
-export default {
-  computed: {
-    loggedInUser() {
-      return this.$store.getters.loggedinUser
+  import headerFilter from './header-filter.cmp.vue';
+  export default {
+    computed: {
+      // loggedInUser() {
+      //   return this.$store.getters.loggedinUser;
+      // },
     },
     components: {
-      headerFilter
-    }
-  }
-}
+      headerFilter,
+    },
+  };
 </script>
