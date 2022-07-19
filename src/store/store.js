@@ -1,13 +1,15 @@
 import Vuex from 'vuex'
 
-import { userStore } from './user.store.js'
-import { reviewStore } from './review.store.js'
+import { userStore } from './modules/user-module.js'
+import { reviewStore } from './modules/review-module.js'
+import { stayStore } from './modules/stay-module.js'
 
 export const store = Vuex.createStore({
   strict: true,
   modules: {
     userStore,
-    reviewStore
+    reviewStore,
+    stayStore
   },
   state: {
   },

@@ -1,4 +1,4 @@
-import { reviewService } from '../services/review.service';
+import { reviewService } from '../../services/review.service';
 // import { socketService, SOCKET_EVENT_REVIEW_ADDED, SOCKET_EVENT_REVIEW_ABOUT_YOU } from '../services/socket.service'
 
 export const reviewStore = {

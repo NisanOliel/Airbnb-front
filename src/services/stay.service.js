@@ -2,6 +2,9 @@ import { utilService } from "./util.service.js"
 import { storageService } from './async-storage.service.js'
 import axios from 'axios'
 
+
+import staysJason from '../../data/stay.json' assert {type: 'json'};
+
 const KEY = 'staysDB'
 // const API = '//localhost:3030/api/stay/'
 
@@ -19,7 +22,7 @@ export const stayService = {
     getstay,
 }
 
-// _createstays()
+_createstays()
 
 function query(filterBy) {
     return axios.get(API, { params: filterBy }).then((res) => res.data)
@@ -65,45 +68,11 @@ function getstay(stayId) {
 }
 
 
-// function _createstays() {
-//     var stays = JSON.parse(localStorage.getItem(KEY))
-//     if (!stays || !stays.length) {
-//         stays = [
-//             {
-//                 _id: utilService.makeId(),
-//                 name: 'avi',
-//                 price: 123,
-//                 labels: ["Doll", "Battery Powered", "Baby"],
-//                 createdAt: Date.now() - 1000 * 50 * 5,
-//                 inStock: false
-//             },
-//             {
-//                 _id: utilService.makeId(),
-//                 name: 'moshe',
-//                 price: 22,
-//                 labels: ["Doll", "Battery Powered", "Baby"],
-//                 createdAt: Date.now() - 1000 * 50 * 5,
-//                 inStock: false
-//             },
-//             {
-//                 _id: utilService.makeId(),
-//                 name: 'kaka',
-//                 price: 33,
-//                 labels: ["Doll", "Battery Powered", "Baby"],
-//                 createdAt: Date.now() - 1000 * 50 * 5,
-//                 inStock: true
-//             },
-//             {
-//                 _id: utilService.makeId(),
-//                 name: 'shimon',
-//                 price: 123,
-//                 labels: ["Doll", "Battery Powered", "Baby"],
-//                 createdAt: Date.now() - 1000 * 50 * 5,
-//                 inStock: true
-//             },
+function _createstays() {
+    let stays = JSON.parse(localStorage.getItem(KEY))
+    if (!stays || !stays.length) {
 
-//         ]
-//         localStorage.setItem(KEY, JSON.stringify(stays))
-//     }
-//     return stays;
-// }
+        localStorage.setItem(KEY, JSON.stringify(staysJason))
+    }
+    return stays;
+}
