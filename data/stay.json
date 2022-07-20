@@ -12,13 +12,30 @@
 		"beds": 4,
 		"numOfReviews": 9,
 		"amenities": [
-			"TV",
-			"Wifi",
-			"Air conditioning",
-			"Kitchen",
-			"Free parking",
-			"Elevator",
-			"Washer"
+			{
+				"name": "TV",
+				"src": "../assets/icons/tv.svg"
+			},
+			{
+				"name": "Air conditioning",
+				"src": "../assets/icons/air-conditioning.svg"
+			},
+			{
+				"name": "Kitchen",
+				"src": "../assets/icons/kitchen.svg"
+			},
+			{
+				"name": "Free parking",
+				"src": "../assets/icons/free-parking.svg"
+			},
+			{
+				"name": "Elevator",
+				"src": "../assets/icons/elevator.svg"
+			},
+			{
+				"name": "Washer",
+				"src": "../assets/icons/washer.svg"
+			}
 		],
 		"host": {
 			"_id": "622f3403e36c59e6164faf93",
@@ -179,12 +196,26 @@
 		"beds": 1,
 		"numOfReviews": 4,
 		"amenities": [
-			"TV",
-			"Wifi",
-			"Air conditioning",
-			"Kitchen",
-			"Elevator",
-			"Washer"
+			{
+				"name": "TV",
+				"src": "../assets/icons/tv.svg"
+			},
+			{
+				"name": "Air conditioning",
+				"src": "../assets/icons/air-conditioning.svg"
+			},
+			{
+				"name": "Kitchen",
+				"src": "../assets/icons/kitchen.svg"
+			},
+			{
+				"name": "Elevator",
+				"src": "../assets/icons/elevator.svg"
+			},
+			{
+				"name": "Washer",
+				"src": "../assets/icons/washer.svg"
+			}
 		],
 		"host": {
 			"_id": "622f3401e36c59e6164fabab",
@@ -289,11 +320,22 @@
 		"beds": 2,
 		"numOfReviews": 18,
 		"amenities": [
-			"TV",
-			"Wifi",
-			"Air conditioning",
-			"Kitchen",
-			"Washer"
+			{
+				"name": "TV",
+				"src": "../assets/icons/tv.svg"
+			},
+			{
+				"name": "Air conditioning",
+				"src": "../assets/icons/air-conditioning.svg"
+			},
+			{
+				"name": "Kitchen",
+				"src": "../assets/icons/kitchen.svg"
+			},
+			{
+				"name": "Washer",
+				"src": "../assets/icons/washer.svg"
+			}
 		],
 		"host": {
 			"_id": "622f3403e36c59e6164fb266",
@@ -553,9 +595,14 @@
 		"beds": 1,
 		"numOfReviews": 180,
 		"amenities": [
-			"Wifi",
-			"Air conditioning",
-			"Kitchen"
+			{
+				"name": "Air conditioning",
+				"src": "../assets/icons/air-conditioning.svg"
+			},
+			{
+				"name": "Kitchen",
+				"src": "../assets/icons/kitchen.svg"
+			}
 		],
 		"host": {
 			"_id": "622f3402e36c59e6164fac46",
@@ -837,9 +884,14 @@
 		"beds": 1,
 		"numOfReviews": 2,
 		"amenities": [
-			"Wifi",
-			"Kitchen",
-			"Elevator"
+			{
+				"name": "Kitchen",
+				"src": "../assets/icons/kitchen.svg"
+			},
+			{
+				"name": "Elevator",
+				"src": "../assets/icons/elevator.svg"
+			}
 		],
 		"host": {
 			"_id": "622f3407e36c59e6164fbdae",
@@ -922,9 +974,14 @@
 		"beds": 1,
 		"numOfReviews": 108,
 		"amenities": [
-			"Wifi",
-			"Kitchen",
-			"Washer"
+			{
+				"name": "Kitchen",
+				"src": "../assets/icons/kitchen.svg"
+			},
+			{
+				"name": "Washer",
+				"src": "../assets/icons/washer.svg"
+			}
 		],
 		"host": {
 			"_id": "622f3404e36c59e6164fb63a",
@@ -1206,10 +1263,18 @@
 		"beds": 1,
 		"numOfReviews": 199,
 		"amenities": [
-			"TV",
-			"Wifi",
-			"Air conditioning",
-			"Kitchen"
+			{
+				"name": "TV",
+				"src": "../assets/icons/tv.svg"
+			},
+			{
+				"name": "Air conditioning",
+				"src": "../assets/icons/air-conditioning.svg"
+			},
+			{
+				"name": "Kitchen",
+				"src": "../assets/icons/kitchen.svg"
+			}
 		],
 		"host": {
 			"_id": "622f3405e36c59e6164fb914",
@@ -1491,9 +1556,14 @@
 		"beds": 1,
 		"numOfReviews": 31,
 		"amenities": [
-			"TV",
-			"Wifi",
-			"Kitchen"
+			{
+				"name": "TV",
+				"src": "../assets/icons/tv.svg"
+			},
+			{
+				"name": "Kitchen",
+				"src": "../assets/icons/kitchen.svg"
+			}
 		],
 		"host": {
 			"_id": "622f3401e36c59e6164fab5c",
@@ -1775,11 +1845,22 @@
 		"beds": 1,
 		"numOfReviews": 5,
 		"amenities": [
-			"Wifi",
-			"Kitchen",
-			"Free parking",
-			"Pets allowed",
-			"Washer"
+			{
+				"name": "Kitchen",
+				"src": "../assets/icons/kitchen.svg"
+			},
+			{
+				"name": "Free parking",
+				"src": "../assets/icons/free-parking.svg"
+			},
+			{
+				"name": "Pets allowed",
+				"src": "../assets/icons/pets-allowed.svg"
+			},
+			{
+				"name": "Washer",
+				"src": "../assets/icons/washer.svg"
+			}
 		],
 		"host": {
 			"_id": "622f3404e36c59e6164fb54f",
@@ -1896,11 +1977,22 @@
 		"beds": 1,
 		"numOfReviews": 31,
 		"amenities": [
-			"TV",
-			"Wifi",
-			"Air conditioning",
-			"Kitchen",
-			"Washer"
+			{
+				"name": "TV",
+				"src": "../assets/icons/tv.svg"
+			},
+			{
+				"name": "Air conditioning",
+				"src": "../assets/icons/air-conditioning.svg"
+			},
+			{
+				"name": "Kitchen",
+				"src": "../assets/icons/kitchen.svg"
+			},
+			{
+				"name": "Washer",
+				"src": "../assets/icons/washer.svg"
+			}
 		],
 		"host": {
 			"_id": "622f3402e36c59e6164fae4d",
@@ -2182,13 +2274,30 @@
 		"beds": 6,
 		"numOfReviews": 17,
 		"amenities": [
-			"TV",
-			"Wifi",
-			"Air conditioning",
-			"Kitchen",
-			"Free parking",
-			"Elevator",
-			"Washer"
+			{
+				"name": "TV",
+				"src": "../assets/icons/tv.svg"
+			},
+			{
+				"name": "Air conditioning",
+				"src": "../assets/icons/air-conditioning.svg"
+			},
+			{
+				"name": "Kitchen",
+				"src": "../assets/icons/kitchen.svg"
+			},
+			{
+				"name": "Free parking",
+				"src": "../assets/icons/free-parking.svg"
+			},
+			{
+				"name": "Elevator",
+				"src": "../assets/icons/elevator.svg"
+			},
+			{
+				"name": "Washer",
+				"src": "../assets/icons/washer.svg"
+			}
 		],
 		"host": {
 			"_id": "622f3405e36c59e6164fb6ba",
@@ -2437,10 +2546,18 @@
 		"beds": 4,
 		"numOfReviews": 39,
 		"amenities": [
-			"TV",
-			"Wifi",
-			"Air conditioning",
-			"Kitchen"
+			{
+				"name": "TV",
+				"src": "../assets/icons/tv.svg"
+			},
+			{
+				"name": "Air conditioning",
+				"src": "../assets/icons/air-conditioning.svg"
+			},
+			{
+				"name": "Kitchen",
+				"src": "../assets/icons/kitchen.svg"
+			}
 		],
 		"host": {
 			"_id": "622f3405e36c59e6164fb898",
@@ -2722,11 +2839,22 @@
 		"beds": 6,
 		"numOfReviews": 77,
 		"amenities": [
-			"TV",
-			"Wifi",
-			"Air conditioning",
-			"Kitchen",
-			"Washer"
+			{
+				"name": "TV",
+				"src": "../assets/icons/tv.svg"
+			},
+			{
+				"name": "Air conditioning",
+				"src": "../assets/icons/air-conditioning.svg"
+			},
+			{
+				"name": "Kitchen",
+				"src": "../assets/icons/kitchen.svg"
+			},
+			{
+				"name": "Washer",
+				"src": "../assets/icons/washer.svg"
+			}
 		],
 		"host": {
 			"_id": "622f3406e36c59e6164fbbf5",
@@ -3008,11 +3136,22 @@
 		"beds": 7,
 		"numOfReviews": 129,
 		"amenities": [
-			"TV",
-			"Wifi",
-			"Air conditioning",
-			"Kitchen",
-			"Washer"
+			{
+				"name": "TV",
+				"src": "../assets/icons/tv.svg"
+			},
+			{
+				"name": "Air conditioning",
+				"src": "../assets/icons/air-conditioning.svg"
+			},
+			{
+				"name": "Kitchen",
+				"src": "../assets/icons/kitchen.svg"
+			},
+			{
+				"name": "Washer",
+				"src": "../assets/icons/washer.svg"
+			}
 		],
 		"host": {
 			"_id": "622f3403e36c59e6164fb08c",
@@ -3294,10 +3433,18 @@
 		"beds": 4,
 		"numOfReviews": 94,
 		"amenities": [
-			"TV",
-			"Wifi",
-			"Air conditioning",
-			"Kitchen"
+			{
+				"name": "TV",
+				"src": "../assets/icons/tv.svg"
+			},
+			{
+				"name": "Air conditioning",
+				"src": "../assets/icons/air-conditioning.svg"
+			},
+			{
+				"name": "Kitchen",
+				"src": "../assets/icons/kitchen.svg"
+			}
 		],
 		"host": {
 			"_id": "622f3405e36c59e6164fb9ad",
@@ -3579,11 +3726,22 @@
 		"beds": 1,
 		"numOfReviews": 206,
 		"amenities": [
-			"TV",
-			"Wifi",
-			"Air conditioning",
-			"Kitchen",
-			"Elevator"
+			{
+				"name": "TV",
+				"src": "../assets/icons/tv.svg"
+			},
+			{
+				"name": "Air conditioning",
+				"src": "../assets/icons/air-conditioning.svg"
+			},
+			{
+				"name": "Kitchen",
+				"src": "../assets/icons/kitchen.svg"
+			},
+			{
+				"name": "Elevator",
+				"src": "../assets/icons/elevator.svg"
+			}
 		],
 		"host": {
 			"_id": "622f3405e36c59e6164fb911",
@@ -3865,13 +4023,30 @@
 		"beds": 3,
 		"numOfReviews": 7,
 		"amenities": [
-			"TV",
-			"Wifi",
-			"Air conditioning",
-			"Kitchen",
-			"Free parking",
-			"Elevator",
-			"Washer"
+			{
+				"name": "TV",
+				"src": "../assets/icons/tv.svg"
+			},
+			{
+				"name": "Air conditioning",
+				"src": "../assets/icons/air-conditioning.svg"
+			},
+			{
+				"name": "Kitchen",
+				"src": "../assets/icons/kitchen.svg"
+			},
+			{
+				"name": "Free parking",
+				"src": "../assets/icons/free-parking.svg"
+			},
+			{
+				"name": "Elevator",
+				"src": "../assets/icons/elevator.svg"
+			},
+			{
+				"name": "Washer",
+				"src": "../assets/icons/washer.svg"
+			}
 		],
 		"host": {
 			"_id": "622f3402e36c59e6164faf2c",
@@ -4010,8 +4185,10 @@
 		"beds": 1,
 		"numOfReviews": 1,
 		"amenities": [
-			"Wifi",
-			"Air conditioning"
+			{
+				"name": "Air conditioning",
+				"src": "../assets/icons/air-conditioning.svg"
+			}
 		],
 		"host": {
 			"_id": "622f3407e36c59e6164fbe18",
@@ -4084,11 +4261,22 @@
 		"beds": 4,
 		"numOfReviews": 7,
 		"amenities": [
-			"TV",
-			"Wifi",
-			"Air conditioning",
-			"Kitchen",
-			"Washer"
+			{
+				"name": "TV",
+				"src": "../assets/icons/tv.svg"
+			},
+			{
+				"name": "Air conditioning",
+				"src": "../assets/icons/air-conditioning.svg"
+			},
+			{
+				"name": "Kitchen",
+				"src": "../assets/icons/kitchen.svg"
+			},
+			{
+				"name": "Washer",
+				"src": "../assets/icons/washer.svg"
+			}
 		],
 		"host": {
 			"_id": "622f3404e36c59e6164fb4b4",
@@ -4227,10 +4415,18 @@
 		"beds": 1,
 		"numOfReviews": 3,
 		"amenities": [
-			"TV",
-			"Wifi",
-			"Kitchen",
-			"Washer"
+			{
+				"name": "TV",
+				"src": "../assets/icons/tv.svg"
+			},
+			{
+				"name": "Kitchen",
+				"src": "../assets/icons/kitchen.svg"
+			},
+			{
+				"name": "Washer",
+				"src": "../assets/icons/washer.svg"
+			}
 		],
 		"host": {
 			"_id": "622f3402e36c59e6164facbf",
@@ -4325,13 +4521,30 @@
 		"beds": 4,
 		"numOfReviews": 5,
 		"amenities": [
-			"TV",
-			"Wifi",
-			"Air conditioning",
-			"Kitchen",
-			"Free parking",
-			"Elevator",
-			"Washer"
+			{
+				"name": "TV",
+				"src": "../assets/icons/tv.svg"
+			},
+			{
+				"name": "Air conditioning",
+				"src": "../assets/icons/air-conditioning.svg"
+			},
+			{
+				"name": "Kitchen",
+				"src": "../assets/icons/kitchen.svg"
+			},
+			{
+				"name": "Free parking",
+				"src": "../assets/icons/free-parking.svg"
+			},
+			{
+				"name": "Elevator",
+				"src": "../assets/icons/elevator.svg"
+			},
+			{
+				"name": "Washer",
+				"src": "../assets/icons/washer.svg"
+			}
 		],
 		"host": {
 			"_id": "622f3403e36c59e6164faf93",
@@ -4448,9 +4661,18 @@
 		"beds": 3,
 		"numOfReviews": 22,
 		"amenities": [
-			"TV",
-			"Kitchen",
-			"Washer"
+			{
+				"name": "TV",
+				"src": "../assets/icons/tv.svg"
+			},
+			{
+				"name": "Kitchen",
+				"src": "../assets/icons/kitchen.svg"
+			},
+			{
+				"name": "Washer",
+				"src": "../assets/icons/washer.svg"
+			}
 		],
 		"host": {
 			"_id": "622f3407e36c59e6164fbdc0",
@@ -4732,11 +4954,22 @@
 		"beds": 4,
 		"numOfReviews": 22,
 		"amenities": [
-			"TV",
-			"Wifi",
-			"Air conditioning",
-			"Kitchen",
-			"Washer"
+			{
+				"name": "TV",
+				"src": "../assets/icons/tv.svg"
+			},
+			{
+				"name": "Air conditioning",
+				"src": "../assets/icons/air-conditioning.svg"
+			},
+			{
+				"name": "Kitchen",
+				"src": "../assets/icons/kitchen.svg"
+			},
+			{
+				"name": "Washer",
+				"src": "../assets/icons/washer.svg"
+			}
 		],
 		"host": {
 			"_id": "622f3407e36c59e6164fbfc1",
@@ -5018,11 +5251,22 @@
 		"beds": 2,
 		"numOfReviews": 9,
 		"amenities": [
-			"TV",
-			"Wifi",
-			"Air conditioning",
-			"Kitchen",
-			"Pets allowed"
+			{
+				"name": "TV",
+				"src": "../assets/icons/tv.svg"
+			},
+			{
+				"name": "Air conditioning",
+				"src": "../assets/icons/air-conditioning.svg"
+			},
+			{
+				"name": "Kitchen",
+				"src": "../assets/icons/kitchen.svg"
+			},
+			{
+				"name": "Pets allowed",
+				"src": "../assets/icons/pets-allowed.svg"
+			}
 		],
 		"host": {
 			"_id": "622f3405e36c59e6164fb718",
@@ -5182,8 +5426,10 @@
 		"beds": 2,
 		"numOfReviews": 231,
 		"amenities": [
-			"Wifi",
-			"Air conditioning"
+			{
+				"name": "Air conditioning",
+				"src": "../assets/icons/air-conditioning.svg"
+			}
 		],
 		"host": {
 			"_id": "622f3404e36c59e6164fb38c",
@@ -5465,11 +5711,22 @@
 		"beds": 3,
 		"numOfReviews": 23,
 		"amenities": [
-			"TV",
-			"Wifi",
-			"Air conditioning",
-			"Kitchen",
-			"Washer"
+			{
+				"name": "TV",
+				"src": "../assets/icons/tv.svg"
+			},
+			{
+				"name": "Air conditioning",
+				"src": "../assets/icons/air-conditioning.svg"
+			},
+			{
+				"name": "Kitchen",
+				"src": "../assets/icons/kitchen.svg"
+			},
+			{
+				"name": "Washer",
+				"src": "../assets/icons/washer.svg"
+			}
 		],
 		"host": {
 			"_id": "622f3405e36c59e6164fb99d",
@@ -5751,10 +6008,18 @@
 		"beds": 1,
 		"numOfReviews": 132,
 		"amenities": [
-			"Wifi",
-			"Kitchen",
-			"Pets allowed",
-			"Washer"
+			{
+				"name": "Kitchen",
+				"src": "../assets/icons/kitchen.svg"
+			},
+			{
+				"name": "Pets allowed",
+				"src": "../assets/icons/pets-allowed.svg"
+			},
+			{
+				"name": "Washer",
+				"src": "../assets/icons/washer.svg"
+			}
 		],
 		"host": {
 			"_id": "622f3402e36c59e6164facd5",
@@ -6036,10 +6301,18 @@
 		"beds": 2,
 		"numOfReviews": 3,
 		"amenities": [
-			"TV",
-			"Wifi",
-			"Kitchen",
-			"Washer"
+			{
+				"name": "TV",
+				"src": "../assets/icons/tv.svg"
+			},
+			{
+				"name": "Kitchen",
+				"src": "../assets/icons/kitchen.svg"
+			},
+			{
+				"name": "Washer",
+				"src": "../assets/icons/washer.svg"
+			}
 		],
 		"host": {
 			"_id": "622f3406e36c59e6164fba46",
@@ -6133,9 +6406,14 @@
 		"beds": 1,
 		"numOfReviews": 122,
 		"amenities": [
-			"Wifi",
-			"Air conditioning",
-			"Kitchen"
+			{
+				"name": "Air conditioning",
+				"src": "../assets/icons/air-conditioning.svg"
+			},
+			{
+				"name": "Kitchen",
+				"src": "../assets/icons/kitchen.svg"
+			}
 		],
 		"host": {
 			"_id": "622f3404e36c59e6164fb5d8",
