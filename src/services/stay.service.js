@@ -2,7 +2,8 @@ import { utilService } from './util.service.js';
 import { storageService } from './async-storage.service.js';
 import axios from 'axios';
 
-import staysJason from '../../data/stay.json' assert { type: 'json' };
+import staysJason from '../../data/stay.json' assert { type: 'json' }
+import labelsJason from '../../data/labels.json' assert {type: 'json'}
 
 const KEY = 'staysDB';
 // const API = '//localhost:3030/api/stay/'
@@ -15,14 +16,15 @@ export const stayService = {
   remove,
   save,
   getEmptystay,
-  getstay,
-};
+  getstay
+}
 
 _createstays();
+getLabels()
 
 function query(filterBy) {
   // return axios.get(API, { params: filterBy }).then((res) => res.data)
-
+  console.log(labelsJason);
   return storageService.query(KEY);
 }
 
@@ -69,4 +71,9 @@ function _createstays() {
     localStorage.setItem(KEY, JSON.stringify(staysJason));
   }
   return stays;
+}
+
+function getLabels() {
+  console.log(labelsJason);
+  return labelsJason
 }

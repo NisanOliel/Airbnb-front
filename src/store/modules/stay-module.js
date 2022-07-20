@@ -6,17 +6,26 @@ export const stayStore = {
     filterBy: null,
     lastRemoveStay: null,
   },
-
+  state() {
+    return {
+      labels: stayService.getLabels()
+    }
+  },
   getters: {
     getStays({ stays }) {
       return stays;
     },
 
+    getLabels({ labels }) {
+      return labels
+    },
+
+
     chartLabel({ stays }) {
       console.log('stays', stays);
       const typeMap = {};
       stays.forEach(stay => {
-        console.log('TOY:', stay);
+        console.log('stay:', stay);
         if (!typeMap[stay.type]) {
           typeMap[stay.type] = 0;
           console.log('typeMap:', typeMap);
@@ -37,12 +46,12 @@ export const stayStore = {
     // },
 
     removeStay(state, { stayId }) {
-      const idx = state.stays.findIndex(p => p._id === stayId);
+      const idx = state.stays.findIndex(p => p._id === stayId)
       state.lastRemovedstay = state.stays[idx];
       state.stays.splice(idx, 1);
     },
     clearRemovestay(state) {
-      state.lastRemovestay = null;
+      state.lastRemovestay = null
     },
     undoRemovestay(state) {
       state.stays.unshift(state.lastRemovestay);
@@ -66,7 +75,7 @@ export const stayStore = {
     loadStays({ commit }) {
       stayService.query().then(stays => {
         commit({ type: 'setStays', stays });
-      });
+      })
     },
 
     removeStay({ commit }, payload) {
@@ -97,10 +106,11 @@ export const stayStore = {
       return stayService.getById(stayId);
     },
     setFilterBy({ commit }, { filterBy }) {
-      stayService.query(filterBy).then(stays => {
-        commit({ type: 'setStays', stays });
-        // commit({ type: 'setFilterBy', filterBy })
-      });
+      console.log("from label", filterBy)
+      // stayService.query(filterBy).then(stays => {
+      // commit({ type: 'setStays', stays });
+      //   // commit({ type: 'setFilterBy', filterBy })
+      // })
     },
   },
 };
