@@ -1,10 +1,8 @@
-
 <template>
   <div class="preview">
     <!-- <pre>
   {{ stay }}
   </pre> -->
-
 
     <div>
       <el-carousel trigger="click" :autoplay="false" height="300px">
@@ -12,7 +10,6 @@
           <img :src="image" />
         </el-carousel-item>
       </el-carousel>
-
     </div>
 
     <!-- <img v-for="image in stay.imgUrls" :src="`src/assets/Images/${image}`"> -->
@@ -39,11 +36,9 @@ export default {
         `src/assets/Images/${this.stay.imgUrls[0]}`,
         `src/assets/Images/${this.stay.imgUrls[1]}`,
         `src/assets/Images/${this.stay.imgUrls[2]}`,
-        `src/assets/Images/${this.stay.imgUrls[3]}`
-      ]
-
-    }
+        `src/assets/Images/${this.stay.imgUrls[3]}`,
+      ],
+    };
   },
 };
 </script>
-
