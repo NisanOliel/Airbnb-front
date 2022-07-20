@@ -1,6 +1,5 @@
 <template>
   <h2>{{ msg }}</h2>
-
   <el-form @submit.prevent="formSubmit">
     <div class="search-wrapper flex">
       <div class="filter-header-location">Anywhere</div>
