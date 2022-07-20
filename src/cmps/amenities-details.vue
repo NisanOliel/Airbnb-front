@@ -1,10 +1,10 @@
 <template>
     <section>
-        <h2>Amenities</h2>
+        <h2>What this place offers</h2>
         <ul>
             <li v-for="(amenity) in stay.amenities" :key="amenity">
                 <div class="flex">
-                    <img :src=amenity.src>
+                    <img class="amenity-icons" :src=amenity.src>
                     <h4>
                         {{ amenity.name }}
                     </h4>

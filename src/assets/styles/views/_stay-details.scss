@@ -23,3 +23,24 @@
 .el-carousel.el-carousel--horizontal {
   border-radius: 12px;
 }
+
+.amenity-icons {
+  height: 15px;
+}
+
+
+
+
+.reviews-list-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 40px 1px;
+}
+
+.review-preview-container {
+  margin-right: 100px;
+}
+
+.reviews-image {
+  height: 70px;
+}

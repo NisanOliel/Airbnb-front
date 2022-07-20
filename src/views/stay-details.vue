@@ -19,6 +19,9 @@
             <p>{{ stay.summary }}</p>
         </section>
         <amenities-details :stay="stay" />
+        <reviews-details :stay="stay" />
+
+
         <!-- <pre>{{ stay }}</pre> -->
 
     </section>
@@ -31,6 +34,7 @@ import upInfoDetails from "../cmps/up-info-details.vue";
 import galleryDetails from "../cmps/gallery-details.vue";
 import featuresDetails from "../cmps/features-details.vue";
 import amenitiesDetails from "../cmps/amenities-details.vue";
+import reviewsDetails from "../cmps/reviews-details.vue";
 
 
 
@@ -40,7 +44,8 @@ export default {
         upInfoDetails,
         galleryDetails,
         featuresDetails,
-        amenitiesDetails
+        amenitiesDetails,
+        reviewsDetails
     },
 
     data() {
