@@ -4,20 +4,10 @@
   {{ stay }}
   </pre> -->
 
-<<<<<<< HEAD
-    <!-- <pre>{{ images }}</pre> -->
-
-    <div>
-      <el-carousel trigger="click" height="150px">
-        <el-carousel-item v-for="image in images" :key="image">
-          <h3 class="small justify-center" text="2xl">{{ image }}</h3>
-=======
-
     <div>
       <el-carousel trigger="click" :autoplay="false" height="200px">
-        <el-carousel-item v-for="image in  images " :key="image">
+        <el-carousel-item v-for="image in images" :key="image">
           <img :src="image" />
->>>>>>> a0b5eec1e1febf5810f6671339181ad9b985a91c
         </el-carousel-item>
       </el-carousel>
     </div>
