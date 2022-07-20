@@ -4,16 +4,20 @@
     <!-- <pre>
   {{ stay }}
   </pre> -->
-    <!-- 
+
+    <pre>{{ images }}</pre>
+
+
     <div>
       <el-carousel trigger="click" height="150px">
-        <el-carousel-item v-for="image in stay.reviews.imgUrl" :key="image">
+        <el-carousel-item v-for="image in  images " :key="image">
+          <h3 class="small justify-center" text="2xl">{{ image }}</h3>
         </el-carousel-item>
       </el-carousel>
 
-    </div> -->
+    </div>
 
-    <img v-for="image in stay.imgUrls" :src="`src/assets/Images/${image}`">
+    <!-- <img v-for="image in stay.imgUrls" :src="`src/assets/Images/${image}`"> -->
     <div>{{ stay.propertyType }} in {{ stay.address.city }}, {{ stay.address.country }}</div>
     <div>{{ stay.name }} </div>
     <div>{{ stay.beds }} beds </div>
@@ -31,9 +35,17 @@ export default {
   props: {
     stay: Object,
   },
-  methods: {
+  data() {
+    return {
+      images: [
+        `src/assets/Images/${this.stay.imgUrls[0]}`,
+        `src/assets/Images/${this.stay.imgUrls[1]}`,
+        `src/assets/Images/${this.stay.imgUrls[2]}`,
+        `src/assets/Images/${this.stay.imgUrls[3]}`
+      ]
 
-  }
+    }
+  },
 };
 </script>
 
