@@ -1,9 +1,9 @@
 <template>
   <el-form @submit.prevent="formSubmit">
     <div class="search-wrapper flex">
-      <div class="filter-header-location">Anywhere</div>
-      <div class="filter-header-time">Any week</div>
-      <div class="filter-header-guests">Add guests</div>
+      <div class="filter header-location">Anywhere</div>
+      <div class="filter header-time">Any week</div>
+      <div class="filter header-guests">Add guests</div>
       <button
         ><svg
           viewBox="0 0 32 32"
