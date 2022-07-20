@@ -9,9 +9,9 @@
 
 
     <div>
-      <el-carousel trigger="click" height="150px">
+      <el-carousel trigger="click" autoplay="false" pause-on-hover="true" height="200px">
         <el-carousel-item v-for="image in  images " :key="image">
-          <h3 class="small justify-center" text="2xl">{{ image }}</h3>
+          <img :src="image" />
         </el-carousel-item>
       </el-carousel>
 
