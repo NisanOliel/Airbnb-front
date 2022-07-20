@@ -5,11 +5,9 @@
   {{ stay }}
   </pre> -->
 
-    <pre>{{ images }}</pre>
-
 
     <div>
-      <el-carousel trigger="click" autoplay="false" pause-on-hover="true" height="200px">
+      <el-carousel trigger="click" :autoplay="false" height="200px">
         <el-carousel-item v-for="image in  images " :key="image">
           <img :src="image" />
         </el-carousel-item>
