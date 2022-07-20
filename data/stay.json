@@ -108,6 +108,7 @@
 		"reviews": [
 			{
 				"at": "2016-06-12T04:00:00.000Z",
+				"rate": 3,
 				"by": {
 					"_id": "622f3407e36c59e6164fc004",
 					"fullname": "Kiesha",
@@ -273,6 +274,7 @@
 		"reviews": [
 			{
 				"at": "2016-07-07T04:00:00.000Z",
+				"rate": 2,
 				"by": {
 					"_id": "622f3407e36c59e6164fc058",
 					"fullname": "Rowan",
@@ -427,6 +429,7 @@
 		"reviews": [
 			{
 				"at": "2016-07-18T04:00:00.000Z",
+				"rate": 5,
 				"by": {
 					"_id": "622f3403e36c59e6164fb090",
 					"fullname": "Lina & Alexis",
@@ -687,6 +690,7 @@
 		"reviews": [
 			{
 				"at": "2013-05-27T04:00:00.000Z",
+				"rate": 3,
 				"by": {
 					"_id": "622f3407e36c59e6164fbfd2",
 					"fullname": "Nicolas",
@@ -958,6 +962,7 @@
 		"reviews": [
 			{
 				"at": "2016-07-12T04:00:00.000Z",
+				"rate": 4,
 				"by": {
 					"_id": "622f3407e36c59e6164fbebb",
 					"fullname": "Rafaela",
@@ -1056,6 +1061,7 @@
 		"reviews": [
 			{
 				"at": "2016-02-24T05:00:00.000Z",
+				"rate": 4,
 				"by": {
 					"_id": "622f3405e36c59e6164fb95e",
 					"fullname": "Pierre",
@@ -1343,6 +1349,7 @@
 		"reviews": [
 			{
 				"at": "2016-03-26T04:00:00.000Z",
+				"rate": 2,
 				"by": {
 					"_id": "622f3405e36c59e6164fb8b4",
 					"fullname": "Christine",
@@ -1634,6 +1641,7 @@
 		"reviews": [
 			{
 				"at": "2016-02-06T05:00:00.000Z",
+				"rate": 3,
 				"by": {
 					"_id": "622f3404e36c59e6164fb449",
 					"fullname": "Tejovra",
@@ -1913,6 +1921,7 @@
 		"reviews": [
 			{
 				"at": "2016-08-11T04:00:00.000Z",
+				"rate": 5,
 				"by": {
 					"_id": "622f3402e36c59e6164fad68",
 					"fullname": "Celeste",
@@ -2034,6 +2043,7 @@
 		"reviews": [
 			{
 				"at": "2014-04-06T04:00:00.000Z",
+				"rate": 4,
 				"by": {
 					"_id": "622f3406e36c59e6164fbcc7",
 					"fullname": "Quentin",
@@ -2353,6 +2363,7 @@
 		"reviews": [
 			{
 				"at": "2016-12-08T05:00:00.000Z",
+				"rate": 2,
 				"by": {
 					"_id": "622f3407e36c59e6164fbfd3",
 					"fullname": "Therese",
@@ -2601,6 +2612,7 @@
 		"reviews": [
 			{
 				"at": "2016-11-06T04:00:00.000Z",
+				"rate": 1,
 				"by": {
 					"_id": "622f3404e36c59e6164fb5a5",
 					"fullname": "Sime",
@@ -2881,6 +2893,7 @@
 		"reviews": [
 			{
 				"at": "2016-03-30T04:00:00.000Z",
+				"rate": 3,
 				"by": {
 					"_id": "622f3402e36c59e6164faec0",
 					"fullname": "Lenny",
@@ -3193,6 +3206,7 @@
 		"reviews": [
 			{
 				"at": "2013-05-12T04:00:00.000Z",
+				"rate": 4,
 				"by": {
 					"_id": "622f3403e36c59e6164fb132",
 					"fullname": "Jean-Pierre",
@@ -3477,6 +3491,7 @@
 		"reviews": [
 			{
 				"at": "2016-03-23T04:00:00.000Z",
+				"rate": 5,
 				"by": {
 					"_id": "622f3402e36c59e6164facca",
 					"fullname": "Franz",
@@ -3752,6 +3767,7 @@
 		"reviews": [
 			{
 				"at": "2016-03-26T04:00:00.000Z",
+				"rate": 2,
 				"by": {
 					"_id": "622f3407e36c59e6164fbf0f",
 					"fullname": "Sindy",
@@ -4064,6 +4080,7 @@
 		"reviews": [
 			{
 				"at": "2016-09-03T04:00:00.000Z",
+				"rate": 4,
 				"by": {
 					"_id": "622f3407e36c59e6164fbf63",
 					"fullname": "Mony",
@@ -4208,6 +4225,7 @@
 		"reviews": [
 			{
 				"at": "2016-06-24T04:00:00.000Z",
+				"rate": 4,
 				"by": {
 					"_id": "622f3405e36c59e6164fb74c",
 					"fullname": "Francesca",
@@ -4325,6 +4343,7 @@
 		"reviews": [
 			{
 				"at": "2016-06-01T04:00:00.000Z",
+				"rate": 2,
 				"by": {
 					"_id": "622f3404e36c59e6164fb3db",
 					"fullname": "Tim",
@@ -4481,6 +4500,7 @@
 		"reviews": [
 			{
 				"at": "2017-01-08T05:00:00.000Z",
+				"rate": 4,
 				"by": {
 					"_id": "622f3407e36c59e6164fc04e",
 					"fullname": "Jorge",
@@ -4639,6 +4659,7 @@
 		"reviews": [
 			{
 				"at": "2016-12-31T05:00:00.000Z",
+				"rate": 5,
 				"by": {
 					"_id": "622f3404e36c59e6164fb43d",
 					"fullname": "Darren",
@@ -4768,6 +4789,7 @@
 		"reviews": [
 			{
 				"at": "2016-04-10T04:00:00.000Z",
+				"rate": 2,
 				"by": {
 					"_id": "622f3402e36c59e6164faed0",
 					"fullname": "Ayşegül",
@@ -5060,6 +5082,7 @@
 		"reviews": [
 			{
 				"at": "2016-07-16T04:00:00.000Z",
+				"rate": 1,
 				"by": {
 					"_id": "622f3403e36c59e6164fb212",
 					"fullname": "Lawrence",
@@ -5336,6 +5359,7 @@
 		"reviews": [
 			{
 				"at": "2016-05-28T04:00:00.000Z",
+				"rate": 1,
 				"by": {
 					"_id": "622f3403e36c59e6164fb0e2",
 					"fullname": "Danielle",
@@ -5509,6 +5533,7 @@
 		"reviews": [
 			{
 				"at": "2010-06-13T04:00:00.000Z",
+				"rate": 4,
 				"by": {
 					"_id": "622f3404e36c59e6164fb351",
 					"fullname": "Andre",
@@ -5793,6 +5818,7 @@
 		"reviews": [
 			{
 				"at": "2016-03-07T05:00:00.000Z",
+				"rate": 5,
 				"by": {
 					"_id": "622f3405e36c59e6164fb93c",
 					"fullname": "Zeljko",
@@ -6078,6 +6104,7 @@
 		"reviews": [
 			{
 				"at": "2016-07-24T04:00:00.000Z",
+				"rate": 2,
 				"by": {
 					"_id": "622f3402e36c59e6164faf17",
 					"fullname": "Ida",
@@ -6363,6 +6390,7 @@
 		"reviews": [
 			{
 				"at": "2016-08-15T04:00:00.000Z",
+				"rate": 1,
 				"by": {
 					"_id": "622f3407e36c59e6164fbfd7",
 					"fullname": "Joshua",
@@ -6468,6 +6496,7 @@
 		"reviews": [
 			{
 				"at": "2011-05-22T04:00:00.000Z",
+				"rate": 4,
 				"by": {
 					"_id": "622f3405e36c59e6164fb685",
 					"fullname": "Jesse",
