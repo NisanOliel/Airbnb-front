@@ -1,7 +1,7 @@
 <template>
   <div class="list-container">
     <div v-for="stay in stays">
-      <stay-preview :stay="stay" :key="stay._id"></stay-preview>
+      <stay-preview :stay="stay" :key="stay._id" />
     </div>
   </div>
 </template>

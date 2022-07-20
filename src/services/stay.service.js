@@ -25,7 +25,7 @@ function query(filterBy) {
 
   return storageService.query(KEY);
 }
-// dsds
+
 function getById(id) {
   // return axios.get(API + id).then(res => res.data);
   return storageService.get(KEY, id)

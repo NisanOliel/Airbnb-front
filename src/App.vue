@@ -8,7 +8,6 @@
 </template>
 
 <script>
-import { store } from './store/store';
 import appHeader from './cmps/app-header.vue';
 // import userMsg from './cmps/user-msg.vue';
 import appFooter from './cmps/app-footer.vue';
