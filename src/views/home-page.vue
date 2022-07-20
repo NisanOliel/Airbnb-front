@@ -10,7 +10,7 @@
   import stayList from '../cmps/stay-list.cmp.vue';
 
   export default {
-    name: 'home',
+    name: 'home-page',
     data() {
       return {};
     },
