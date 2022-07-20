@@ -1,6 +1,5 @@
 <template>
   <section>
-    <user-msg />
     <app-header />
     <router-view />
     <app-footer />
@@ -23,8 +22,6 @@
     components: {
       appHeader,
       appFooter,
-      // store,
-      // userMsg,
     },
   };
 </script>
