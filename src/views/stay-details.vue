@@ -19,7 +19,7 @@
             <p>{{ stay.summary }}</p>
         </section>
 
-        <pre>{{ stay }}</pre>
+        <!-- <pre>{{ stay }}</pre> -->
 
     </section>
     <router-link to="/">Back</router-link>
