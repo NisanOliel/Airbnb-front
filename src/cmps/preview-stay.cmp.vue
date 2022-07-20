@@ -1,8 +1,5 @@
 <template>
-  <div class="preview">
-    <!-- <pre>
-  {{ stay }}
-  </pre> -->
+  <div class="preview" @click="goToDetails">
 
     <div>
       <el-carousel trigger="click" :autoplay="false" height="300px">
@@ -40,5 +37,10 @@ export default {
       ],
     };
   },
+  methods: {
+    goToDetails() {
+      this.$router.push("/stay/" + this.stay._id);
+    },
+  }
 };
 </script>

@@ -27,13 +27,13 @@ function query(filterBy) {
 }
 
 function getById(id) {
-  return axios.get(API + id).then(res => res.data);
-  // return storageService.get(KEY, id)
+  // return axios.get(API + id).then(res => res.data);
+  return storageService.get(KEY, id)
 }
 
 function remove(id) {
-  return axios.delete(API + id).then(res => res.data);
-  // return storageService.remove(KEY, id)
+  // return axios.delete(API + id).then(res => res.data);
+  return storageService.remove(KEY, id)
 }
 
 function save(stay) {
