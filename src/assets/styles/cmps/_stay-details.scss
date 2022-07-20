@@ -1,0 +1,22 @@
+.gallery-details {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(180px, 1fr));
+    grid-template-rows: 180px 180px;
+    grid-gap: 8px;
+    gap: 8px;
+
+    img {
+        height: 100%;
+        width: 100%;
+        -o-object-fit: cover;
+        object-fit: cover;
+
+    }
+
+    :first-child {
+        grid-column: 1/span 2;
+        grid-row: 1/span 2;
+        border-top-left-radius: 13px;
+        border-bottom-left-radius: 13px;
+    }
+}
