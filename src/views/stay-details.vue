@@ -1,5 +1,7 @@
 <template>
-    <section class="user-details" v-if="stay">
+    <section v-if="stay">
+        <h1>{{ stay.name }}</h1>
+
         <pre>{{ stay }}</pre>
 
     </section>
