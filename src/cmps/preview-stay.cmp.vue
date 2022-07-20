@@ -7,7 +7,7 @@
 
 
     <div>
-      <el-carousel trigger="click" :autoplay="false" height="200px">
+      <el-carousel trigger="click" :autoplay="false" height="300px">
         <el-carousel-item v-for="image in  images " :key="image">
           <img :src="image" />
         </el-carousel-item>
