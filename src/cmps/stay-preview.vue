@@ -15,7 +15,6 @@
     <div>{{ stay.beds }} beds </div>
     <div>{{ stay.price }}$ / night </div>||
     <!-- <div>{{ stay.price }}</div> -->
-
     <!-- <router-link :to="'/toy/details/' + toy._id">Details</router-link>
     <router-link :to="'/toy/edit/' + toy._id">Edit</router-link> -->
   </div>
