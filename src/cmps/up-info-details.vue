@@ -1,10 +1,10 @@
 <template>
-    <h3>INfO dettilas</h3>
-    <div>
-        <img src="../assets/icons/star.svg" style="height: 15px;">
-        <!-- <h4>{{ reviewsRateAvg }}</h4> -->
+    <div class="flex">
+        <img src="../assets/icons/star.svg" style="height: 15px;"> &nbsp&nbsp&nbsp
+        <h4>{{ reviewsRateAvg }}</h4> &nbsp&nbsp&nbsp
+        <h4>{{ reviewsCount }} reviews</h4>&nbsp&nbsp&nbsp
+        <h4>{{ city }} ,{{ country }} </h4>
     </div>
-    <pre>{{ stay }}</pre>
 </template>
 
 <script>
@@ -16,19 +16,23 @@ export default {
 
     computed: {
         reviewsRateAvg() {
-            var avgsSum = 0;
+            var sum = 0;
             this.stay.reviews.forEach((review) => {
-                const sumRates = (obj) => Object.values(obj).reduce((a, b) => a + b);
-                const currSum = sumRates(review.rate);
-                const currSumAvg = currSum / 6;
-                avgsSum += currSumAvg;
+                sum += review.rate;
             });
-            avgsSum = avgsSum / this.stay.reviews.length;
-            return avgsSum.toFixed(1);
+            sum = sum / this.stay.reviews.length;
+            return sum.toFixed(1);
         },
         reviewsCount() {
             return this.stay.reviews.length;
         },
+
+        city() {
+            return this.stay.address.city
+        },
+        country() {
+            return this.stay.address.country
+        }
     },
 
 }
