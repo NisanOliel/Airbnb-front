@@ -1,8 +1,6 @@
 <template>
-  <section class="container home text-center">
-    <section>
-      <stay-list :stays="stays"></stay-list>
-    </section>
+  <section class="container">
+    <stay-list :stays="stays"></stay-list>
   </section>
 </template>
 

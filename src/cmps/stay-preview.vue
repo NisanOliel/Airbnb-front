@@ -1,13 +1,10 @@
 <template>
   <div class="preview" @click="goToDetails">
-
-    <div>
-      <el-carousel trigger="click" :autoplay="false" height="300px">
-        <el-carousel-item v-for="image in  images " :key="image">
-          <img :src="image" />
-        </el-carousel-item>
-      </el-carousel>
-    </div>
+    <el-carousel trigger="click" :autoplay="false" height="300px">
+      <el-carousel-item v-for="image in images" :key="image">
+        <img :src="image" />
+      </el-carousel-item>
+    </el-carousel>
 
     <!-- <img v-for="image in stay.imgUrls" :src="`src/assets/Images/${image}`"> -->
     <div>{{ stay.propertyType }} in {{ stay.address.city }}, {{ stay.address.country }}</div>
@@ -21,25 +18,25 @@
 </template>
 
 <script>
-export default {
-  name: 'stay-preview',
-  props: {
-    stay: Object,
-  },
-  data() {
-    return {
-      images: [
-        `src/assets/Images/${this.stay.imgUrls[0]}`,
-        `src/assets/Images/${this.stay.imgUrls[1]}`,
-        `src/assets/Images/${this.stay.imgUrls[2]}`,
-        `src/assets/Images/${this.stay.imgUrls[3]}`,
-      ],
-    };
-  },
-  methods: {
-    goToDetails() {
-      this.$router.push("/stay/" + this.stay._id);
+  export default {
+    name: 'stay-preview',
+    props: {
+      stay: Object,
     },
-  }
-};
+    data() {
+      return {
+        images: [
+          `src/assets/Images/${this.stay.imgUrls[0]}`,
+          `src/assets/Images/${this.stay.imgUrls[1]}`,
+          `src/assets/Images/${this.stay.imgUrls[2]}`,
+          `src/assets/Images/${this.stay.imgUrls[3]}`,
+        ],
+      };
+    },
+    methods: {
+      goToDetails() {
+        this.$router.push('/stay/' + this.stay._id);
+      },
+    },
+  };
 </script>
