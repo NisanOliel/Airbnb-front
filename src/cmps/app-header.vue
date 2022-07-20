@@ -1,21 +1,8 @@
 <template>
   <header>
-    <header-filter />
-    <!-- <nav>
-      <router-link to="/">
-        <span role="img" aria-label="logo">🙏</span>
-      </router-link>
-      <router-link to="/review">Reviews</router-link>
-      <router-link to="/chat">Chat</router-link>
-      <router-link to="/login">Login / Signup</router-link>
-    </nav> -->
-
-    <!-- <section class="loggedin-user" v-if="loggedInUser">
-      <router-link :to="`/user/${loggedInUser._id}`">
-        {{ loggedInUser.fullname }}
-      </router-link>
-      <span>{{ loggedInUser.score.toLocaleString() }}</span>
-    </section> -->
+    <nav>
+      <header-filter />
+    </nav>
   </header>
 </template>
 <script>
