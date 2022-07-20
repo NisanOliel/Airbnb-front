@@ -14,27 +14,27 @@
 		"amenities": [
 			{
 				"name": "TV",
-				"src": "../assets/icons/tv.svg"
+				"src": "src/assets/icons/tv.svg"
 			},
 			{
 				"name": "Air conditioning",
-				"src": "../assets/icons/air-conditioning.svg"
+				"src": "src/assets/icons/air-conditioning.svg"
 			},
 			{
 				"name": "Kitchen",
-				"src": "../assets/icons/kitchen.svg"
+				"src": "src/assets/icons/kitchen.svg"
 			},
 			{
 				"name": "Free parking",
-				"src": "../assets/icons/free-parking.svg"
+				"src": "src/assets/icons/free-parking.svg"
 			},
 			{
 				"name": "Elevator",
-				"src": "../assets/icons/elevator.svg"
+				"src": "src/assets/icons/elevator.svg"
 			},
 			{
 				"name": "Washer",
-				"src": "../assets/icons/washer.svg"
+				"src": "src/assets/icons/washer.svg"
 			}
 		],
 		"host": {
@@ -198,23 +198,23 @@
 		"amenities": [
 			{
 				"name": "TV",
-				"src": "../assets/icons/tv.svg"
+				"src": "src/assets/icons/tv.svg"
 			},
 			{
 				"name": "Air conditioning",
-				"src": "../assets/icons/air-conditioning.svg"
+				"src": "src/assets/icons/air-conditioning.svg"
 			},
 			{
 				"name": "Kitchen",
-				"src": "../assets/icons/kitchen.svg"
+				"src": "src/assets/icons/kitchen.svg"
 			},
 			{
 				"name": "Elevator",
-				"src": "../assets/icons/elevator.svg"
+				"src": "src/assets/icons/elevator.svg"
 			},
 			{
 				"name": "Washer",
-				"src": "../assets/icons/washer.svg"
+				"src": "src/assets/icons/washer.svg"
 			}
 		],
 		"host": {
@@ -322,19 +322,19 @@
 		"amenities": [
 			{
 				"name": "TV",
-				"src": "../assets/icons/tv.svg"
+				"src": "src/assets/icons/tv.svg"
 			},
 			{
 				"name": "Air conditioning",
-				"src": "../assets/icons/air-conditioning.svg"
+				"src": "src/assets/icons/air-conditioning.svg"
 			},
 			{
 				"name": "Kitchen",
-				"src": "../assets/icons/kitchen.svg"
+				"src": "src/assets/icons/kitchen.svg"
 			},
 			{
 				"name": "Washer",
-				"src": "../assets/icons/washer.svg"
+				"src": "src/assets/icons/washer.svg"
 			}
 		],
 		"host": {
@@ -597,11 +597,11 @@
 		"amenities": [
 			{
 				"name": "Air conditioning",
-				"src": "../assets/icons/air-conditioning.svg"
+				"src": "src/assets/icons/air-conditioning.svg"
 			},
 			{
 				"name": "Kitchen",
-				"src": "../assets/icons/kitchen.svg"
+				"src": "src/assets/icons/kitchen.svg"
 			}
 		],
 		"host": {
@@ -886,11 +886,11 @@
 		"amenities": [
 			{
 				"name": "Kitchen",
-				"src": "../assets/icons/kitchen.svg"
+				"src": "src/assets/icons/kitchen.svg"
 			},
 			{
 				"name": "Elevator",
-				"src": "../assets/icons/elevator.svg"
+				"src": "src/assets/icons/elevator.svg"
 			}
 		],
 		"host": {
@@ -976,11 +976,11 @@
 		"amenities": [
 			{
 				"name": "Kitchen",
-				"src": "../assets/icons/kitchen.svg"
+				"src": "src/assets/icons/kitchen.svg"
 			},
 			{
 				"name": "Washer",
-				"src": "../assets/icons/washer.svg"
+				"src": "src/assets/icons/washer.svg"
 			}
 		],
 		"host": {
@@ -1265,15 +1265,15 @@
 		"amenities": [
 			{
 				"name": "TV",
-				"src": "../assets/icons/tv.svg"
+				"src": "src/assets/icons/tv.svg"
 			},
 			{
 				"name": "Air conditioning",
-				"src": "../assets/icons/air-conditioning.svg"
+				"src": "src/assets/icons/air-conditioning.svg"
 			},
 			{
 				"name": "Kitchen",
-				"src": "../assets/icons/kitchen.svg"
+				"src": "src/assets/icons/kitchen.svg"
 			}
 		],
 		"host": {
@@ -1558,11 +1558,11 @@
 		"amenities": [
 			{
 				"name": "TV",
-				"src": "../assets/icons/tv.svg"
+				"src": "src/assets/icons/tv.svg"
 			},
 			{
 				"name": "Kitchen",
-				"src": "../assets/icons/kitchen.svg"
+				"src": "src/assets/icons/kitchen.svg"
 			}
 		],
 		"host": {
@@ -1847,19 +1847,19 @@
 		"amenities": [
 			{
 				"name": "Kitchen",
-				"src": "../assets/icons/kitchen.svg"
+				"src": "src/assets/icons/kitchen.svg"
 			},
 			{
 				"name": "Free parking",
-				"src": "../assets/icons/free-parking.svg"
+				"src": "src/assets/icons/free-parking.svg"
 			},
 			{
 				"name": "Pets allowed",
-				"src": "../assets/icons/pets-allowed.svg"
+				"src": "src/assets/icons/pets-allowed.svg"
 			},
 			{
 				"name": "Washer",
-				"src": "../assets/icons/washer.svg"
+				"src": "src/assets/icons/washer.svg"
 			}
 		],
 		"host": {
@@ -1979,19 +1979,19 @@
 		"amenities": [
 			{
 				"name": "TV",
-				"src": "../assets/icons/tv.svg"
+				"src": "src/assets/icons/tv.svg"
 			},
 			{
 				"name": "Air conditioning",
-				"src": "../assets/icons/air-conditioning.svg"
+				"src": "src/assets/icons/air-conditioning.svg"
 			},
 			{
 				"name": "Kitchen",
-				"src": "../assets/icons/kitchen.svg"
+				"src": "src/assets/icons/kitchen.svg"
 			},
 			{
 				"name": "Washer",
-				"src": "../assets/icons/washer.svg"
+				"src": "src/assets/icons/washer.svg"
 			}
 		],
 		"host": {
@@ -2276,27 +2276,27 @@
 		"amenities": [
 			{
 				"name": "TV",
-				"src": "../assets/icons/tv.svg"
+				"src": "src/assets/icons/tv.svg"
 			},
 			{
 				"name": "Air conditioning",
-				"src": "../assets/icons/air-conditioning.svg"
+				"src": "src/assets/icons/air-conditioning.svg"
 			},
 			{
 				"name": "Kitchen",
-				"src": "../assets/icons/kitchen.svg"
+				"src": "src/assets/icons/kitchen.svg"
 			},
 			{
 				"name": "Free parking",
-				"src": "../assets/icons/free-parking.svg"
+				"src": "src/assets/icons/free-parking.svg"
 			},
 			{
 				"name": "Elevator",
-				"src": "../assets/icons/elevator.svg"
+				"src": "src/assets/icons/elevator.svg"
 			},
 			{
 				"name": "Washer",
-				"src": "../assets/icons/washer.svg"
+				"src": "src/assets/icons/washer.svg"
 			}
 		],
 		"host": {
@@ -2548,15 +2548,15 @@
 		"amenities": [
 			{
 				"name": "TV",
-				"src": "../assets/icons/tv.svg"
+				"src": "src/assets/icons/tv.svg"
 			},
 			{
 				"name": "Air conditioning",
-				"src": "../assets/icons/air-conditioning.svg"
+				"src": "src/assets/icons/air-conditioning.svg"
 			},
 			{
 				"name": "Kitchen",
-				"src": "../assets/icons/kitchen.svg"
+				"src": "src/assets/icons/kitchen.svg"
 			}
 		],
 		"host": {
@@ -2841,19 +2841,19 @@
 		"amenities": [
 			{
 				"name": "TV",
-				"src": "../assets/icons/tv.svg"
+				"src": "src/assets/icons/tv.svg"
 			},
 			{
 				"name": "Air conditioning",
-				"src": "../assets/icons/air-conditioning.svg"
+				"src": "src/assets/icons/air-conditioning.svg"
 			},
 			{
 				"name": "Kitchen",
-				"src": "../assets/icons/kitchen.svg"
+				"src": "src/assets/icons/kitchen.svg"
 			},
 			{
 				"name": "Washer",
-				"src": "../assets/icons/washer.svg"
+				"src": "src/assets/icons/washer.svg"
 			}
 		],
 		"host": {
@@ -3138,19 +3138,19 @@
 		"amenities": [
 			{
 				"name": "TV",
-				"src": "../assets/icons/tv.svg"
+				"src": "src/assets/icons/tv.svg"
 			},
 			{
 				"name": "Air conditioning",
-				"src": "../assets/icons/air-conditioning.svg"
+				"src": "src/assets/icons/air-conditioning.svg"
 			},
 			{
 				"name": "Kitchen",
-				"src": "../assets/icons/kitchen.svg"
+				"src": "src/assets/icons/kitchen.svg"
 			},
 			{
 				"name": "Washer",
-				"src": "../assets/icons/washer.svg"
+				"src": "src/assets/icons/washer.svg"
 			}
 		],
 		"host": {
@@ -3435,15 +3435,15 @@
 		"amenities": [
 			{
 				"name": "TV",
-				"src": "../assets/icons/tv.svg"
+				"src": "src/assets/icons/tv.svg"
 			},
 			{
 				"name": "Air conditioning",
-				"src": "../assets/icons/air-conditioning.svg"
+				"src": "src/assets/icons/air-conditioning.svg"
 			},
 			{
 				"name": "Kitchen",
-				"src": "../assets/icons/kitchen.svg"
+				"src": "src/assets/icons/kitchen.svg"
 			}
 		],
 		"host": {
@@ -3728,19 +3728,19 @@
 		"amenities": [
 			{
 				"name": "TV",
-				"src": "../assets/icons/tv.svg"
+				"src": "src/assets/icons/tv.svg"
 			},
 			{
 				"name": "Air conditioning",
-				"src": "../assets/icons/air-conditioning.svg"
+				"src": "src/assets/icons/air-conditioning.svg"
 			},
 			{
 				"name": "Kitchen",
-				"src": "../assets/icons/kitchen.svg"
+				"src": "src/assets/icons/kitchen.svg"
 			},
 			{
 				"name": "Elevator",
-				"src": "../assets/icons/elevator.svg"
+				"src": "src/assets/icons/elevator.svg"
 			}
 		],
 		"host": {
@@ -4025,27 +4025,27 @@
 		"amenities": [
 			{
 				"name": "TV",
-				"src": "../assets/icons/tv.svg"
+				"src": "src/assets/icons/tv.svg"
 			},
 			{
 				"name": "Air conditioning",
-				"src": "../assets/icons/air-conditioning.svg"
+				"src": "src/assets/icons/air-conditioning.svg"
 			},
 			{
 				"name": "Kitchen",
-				"src": "../assets/icons/kitchen.svg"
+				"src": "src/assets/icons/kitchen.svg"
 			},
 			{
 				"name": "Free parking",
-				"src": "../assets/icons/free-parking.svg"
+				"src": "src/assets/icons/free-parking.svg"
 			},
 			{
 				"name": "Elevator",
-				"src": "../assets/icons/elevator.svg"
+				"src": "src/assets/icons/elevator.svg"
 			},
 			{
 				"name": "Washer",
-				"src": "../assets/icons/washer.svg"
+				"src": "src/assets/icons/washer.svg"
 			}
 		],
 		"host": {
@@ -4187,7 +4187,7 @@
 		"amenities": [
 			{
 				"name": "Air conditioning",
-				"src": "../assets/icons/air-conditioning.svg"
+				"src": "src/assets/icons/air-conditioning.svg"
 			}
 		],
 		"host": {
@@ -4263,19 +4263,19 @@
 		"amenities": [
 			{
 				"name": "TV",
-				"src": "../assets/icons/tv.svg"
+				"src": "src/assets/icons/tv.svg"
 			},
 			{
 				"name": "Air conditioning",
-				"src": "../assets/icons/air-conditioning.svg"
+				"src": "src/assets/icons/air-conditioning.svg"
 			},
 			{
 				"name": "Kitchen",
-				"src": "../assets/icons/kitchen.svg"
+				"src": "src/assets/icons/kitchen.svg"
 			},
 			{
 				"name": "Washer",
-				"src": "../assets/icons/washer.svg"
+				"src": "src/assets/icons/washer.svg"
 			}
 		],
 		"host": {
@@ -4417,15 +4417,15 @@
 		"amenities": [
 			{
 				"name": "TV",
-				"src": "../assets/icons/tv.svg"
+				"src": "src/assets/icons/tv.svg"
 			},
 			{
 				"name": "Kitchen",
-				"src": "../assets/icons/kitchen.svg"
+				"src": "src/assets/icons/kitchen.svg"
 			},
 			{
 				"name": "Washer",
-				"src": "../assets/icons/washer.svg"
+				"src": "src/assets/icons/washer.svg"
 			}
 		],
 		"host": {
@@ -4523,27 +4523,27 @@
 		"amenities": [
 			{
 				"name": "TV",
-				"src": "../assets/icons/tv.svg"
+				"src": "src/assets/icons/tv.svg"
 			},
 			{
 				"name": "Air conditioning",
-				"src": "../assets/icons/air-conditioning.svg"
+				"src": "src/assets/icons/air-conditioning.svg"
 			},
 			{
 				"name": "Kitchen",
-				"src": "../assets/icons/kitchen.svg"
+				"src": "src/assets/icons/kitchen.svg"
 			},
 			{
 				"name": "Free parking",
-				"src": "../assets/icons/free-parking.svg"
+				"src": "src/assets/icons/free-parking.svg"
 			},
 			{
 				"name": "Elevator",
-				"src": "../assets/icons/elevator.svg"
+				"src": "src/assets/icons/elevator.svg"
 			},
 			{
 				"name": "Washer",
-				"src": "../assets/icons/washer.svg"
+				"src": "src/assets/icons/washer.svg"
 			}
 		],
 		"host": {
@@ -4663,15 +4663,15 @@
 		"amenities": [
 			{
 				"name": "TV",
-				"src": "../assets/icons/tv.svg"
+				"src": "src/assets/icons/tv.svg"
 			},
 			{
 				"name": "Kitchen",
-				"src": "../assets/icons/kitchen.svg"
+				"src": "src/assets/icons/kitchen.svg"
 			},
 			{
 				"name": "Washer",
-				"src": "../assets/icons/washer.svg"
+				"src": "src/assets/icons/washer.svg"
 			}
 		],
 		"host": {
@@ -4956,19 +4956,19 @@
 		"amenities": [
 			{
 				"name": "TV",
-				"src": "../assets/icons/tv.svg"
+				"src": "src/assets/icons/tv.svg"
 			},
 			{
 				"name": "Air conditioning",
-				"src": "../assets/icons/air-conditioning.svg"
+				"src": "src/assets/icons/air-conditioning.svg"
 			},
 			{
 				"name": "Kitchen",
-				"src": "../assets/icons/kitchen.svg"
+				"src": "src/assets/icons/kitchen.svg"
 			},
 			{
 				"name": "Washer",
-				"src": "../assets/icons/washer.svg"
+				"src": "src/assets/icons/washer.svg"
 			}
 		],
 		"host": {
@@ -5253,19 +5253,19 @@
 		"amenities": [
 			{
 				"name": "TV",
-				"src": "../assets/icons/tv.svg"
+				"src": "src/assets/icons/tv.svg"
 			},
 			{
 				"name": "Air conditioning",
-				"src": "../assets/icons/air-conditioning.svg"
+				"src": "src/assets/icons/air-conditioning.svg"
 			},
 			{
 				"name": "Kitchen",
-				"src": "../assets/icons/kitchen.svg"
+				"src": "src/assets/icons/kitchen.svg"
 			},
 			{
 				"name": "Pets allowed",
-				"src": "../assets/icons/pets-allowed.svg"
+				"src": "src/assets/icons/pets-allowed.svg"
 			}
 		],
 		"host": {
@@ -5428,7 +5428,7 @@
 		"amenities": [
 			{
 				"name": "Air conditioning",
-				"src": "../assets/icons/air-conditioning.svg"
+				"src": "src/assets/icons/air-conditioning.svg"
 			}
 		],
 		"host": {
@@ -5713,19 +5713,19 @@
 		"amenities": [
 			{
 				"name": "TV",
-				"src": "../assets/icons/tv.svg"
+				"src": "src/assets/icons/tv.svg"
 			},
 			{
 				"name": "Air conditioning",
-				"src": "../assets/icons/air-conditioning.svg"
+				"src": "src/assets/icons/air-conditioning.svg"
 			},
 			{
 				"name": "Kitchen",
-				"src": "../assets/icons/kitchen.svg"
+				"src": "src/assets/icons/kitchen.svg"
 			},
 			{
 				"name": "Washer",
-				"src": "../assets/icons/washer.svg"
+				"src": "src/assets/icons/washer.svg"
 			}
 		],
 		"host": {
@@ -6010,15 +6010,15 @@
 		"amenities": [
 			{
 				"name": "Kitchen",
-				"src": "../assets/icons/kitchen.svg"
+				"src": "src/assets/icons/kitchen.svg"
 			},
 			{
 				"name": "Pets allowed",
-				"src": "../assets/icons/pets-allowed.svg"
+				"src": "src/assets/icons/pets-allowed.svg"
 			},
 			{
 				"name": "Washer",
-				"src": "../assets/icons/washer.svg"
+				"src": "src/assets/icons/washer.svg"
 			}
 		],
 		"host": {
@@ -6303,15 +6303,15 @@
 		"amenities": [
 			{
 				"name": "TV",
-				"src": "../assets/icons/tv.svg"
+				"src": "src/assets/icons/tv.svg"
 			},
 			{
 				"name": "Kitchen",
-				"src": "../assets/icons/kitchen.svg"
+				"src": "src/assets/icons/kitchen.svg"
 			},
 			{
 				"name": "Washer",
-				"src": "../assets/icons/washer.svg"
+				"src": "src/assets/icons/washer.svg"
 			}
 		],
 		"host": {
@@ -6408,11 +6408,11 @@
 		"amenities": [
 			{
 				"name": "Air conditioning",
-				"src": "../assets/icons/air-conditioning.svg"
+				"src": "src/assets/icons/air-conditioning.svg"
 			},
 			{
 				"name": "Kitchen",
-				"src": "../assets/icons/kitchen.svg"
+				"src": "src/assets/icons/kitchen.svg"
 			}
 		],
 		"host": {
