@@ -1,6 +1,7 @@
 <template>
   <div class="flex">
-    <img src="../assets/icons/star.svg" style="height: 15px" /> &nbsp&nbsp&nbsp <h4>{{ reviewsRateAvg }}</h4> &nbsp&nbsp&nbsp
+    {{ $filters.reviewsRateAvg(stay) }}
+    &nbsp&nbsp&nbsp sadas
     <h4>{{ reviewsCount }} reviews</h4>&nbsp&nbsp&nbsp
   </div>
 
@@ -25,26 +26,20 @@
 </template>
 
 <script>
-  export default {
-    name: 'reviews-details',
-    props: {
-      stay: { type: Object },
-    },
+export default {
+  name: 'reviews-details',
+  props: {
+    stay: { type: Object },
+  },
 
-    computed: {
-      reviewsRateAvg() {
-        var sum = 0;
-        this.stay.reviews.forEach(review => {
-          sum += review.rate;
-        });
-        sum = sum / this.stay.reviews.length;
-        return sum.toFixed(1);
-      },
-      reviewsCount() {
-        return this.stay.reviews.length;
-      },
+  computed: {
+
+    reviewsCount() {
+      return this.stay.reviews.length;
     },
-  };
+  },
+};
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+</style>
