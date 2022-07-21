@@ -32,7 +32,7 @@
 <script>
 import exploreFilter from './explore-filter.vue';
 import exploreLabels from './explore-labels.vue';
-import standAloneFilter from './';
+import standAloneFilter from './explore-labels.vue';
 
 export default {
   computed: {
