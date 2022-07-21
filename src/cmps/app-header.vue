@@ -30,6 +30,10 @@
           >
         </div>
       </div>
+      <div class="header-labels">
+        <explore-labels />
+        <standAlone-filter />
+      </div>
     </div>
   </header>
 </template>

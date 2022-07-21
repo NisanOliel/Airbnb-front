@@ -1,6 +1,6 @@
 <template>
     <section v-if="stay" class="details-layout">
-        <h1>{{ stay.name }}</h1>
+        <h1 class="">{{ stay.name }}</h1>
         <up-info-details :stay="stay" />
         <gallery-details :stay="stay" />
 

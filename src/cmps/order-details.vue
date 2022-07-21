@@ -1,5 +1,5 @@
 <template>
-    <div class="order-details flex">
+    <!-- <div class="order-details flex">
         <div class="order-top flex justify-justify-space-between">
             <h1>{{ stay.price }}$ <span>night</span></h1>
             <div class="flex">
@@ -48,10 +48,10 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
 
-    <section class="order-container">
+    <section class="order-container sticky">
         <div class="order-form-header">
             <p><span class="cost">${{ stay.price }}</span> / night</p>
             <img src="../assets/icons/star.svg" style="height: 15px;">
@@ -229,9 +229,6 @@
         </div>
     </section>
 
-
-
-    <pre>{{ trip }}</pre>
 </template>
 
 <script>

@@ -1,9 +1,10 @@
 <template>
-    <section class="flex">
-        <img src="../assets/icons/star.svg" style="height: 15px;"> &nbsp&nbsp&nbsp
-        <h4>{{ reviewsRateAvg }}</h4> &nbsp&nbsp&nbsp
-        <h4>{{ reviewsCount }} reviews</h4>&nbsp&nbsp&nbsp
-        <h4>{{ city }} ,{{ country }} </h4>
+    <section class=" up-info flex">
+        <img src="../assets/icons/star.svg" style="height: 15px;">
+        <h4>{{ reviewsRateAvg }}</h4>
+        <h4 class="under-line">{{ reviewsCount }} reviews</h4>
+        <span class="gray">•</span>
+        <h4 class="under-line">{{ city }} ,{{ country }} </h4>
     </section>
 </template>
 
