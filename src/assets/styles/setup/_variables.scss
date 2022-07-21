@@ -2,7 +2,7 @@
 $clr1: #222222;
 $clr2: #ff385c;
 $clr3: #ffffff;
-$clr4: #95adbe;
+$clr4: #dfdfdf;
 $clr5: #dff0ea;
 $clr6: #dddddd;
 
@@ -14,6 +14,7 @@ $normal-breakpoint: 960px;
 // Fonts size
 
 $regular-size: 14px;
+$small-size: 12px;
 
 //Font wight
 $light: 100;
@@ -24,3 +25,7 @@ $bold: 600;
 
 $column-list-gap: 24px;
 $row-list-gap: 48px;
+
+// Border radios
+
+$light-radios: 12px;

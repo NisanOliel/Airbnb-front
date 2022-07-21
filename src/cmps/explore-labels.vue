@@ -1,5 +1,5 @@
 <template>
-  <ul class="flex text-center">
+  <ul class="flex">
     <li v-for="label in labels" :key="label.src" @click="filter(label.propertyType)" class="labels">
       <img :src="label.src" />
       <span>{{ label.propertyType }}</span>

@@ -3,6 +3,10 @@ header {
   display: flex;
   justify-content: space-between;
 
+  nav {
+    height: 80px;
+  }
+
   img {
     height: 32px;
   }
@@ -13,5 +17,41 @@ header {
   .explore-filter {
     flex: 1;
     max-width: 847px;
+  }
+  .header-labels {
+    height: 80px;
+    align-items: center;
+    margin-top: 30px;
+    ul {
+      gap: 32px;
+    }
+    li.labels {
+      text-align: center;
+
+      img {
+        height: 24px;
+        filter: contrast(calc(13 / 44));
+        transition: filter 200ms ease, transform 200ms ease;
+      }
+      span {
+        display: block;
+        font-size: $small-size;
+      }
+    }
+  }
+
+  button.v1tureqs.dir.dir-ltr {
+    width: 90px;
+    height: 48px;
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px solid $clr4;
+    border-radius: $light-radios;
+    margin: 0;
+    padding: 7px 0;
+    span.i3c9txn.dir.dir-ltr {
+      display: flex;
+      justify-content: space-evenly;
+    }
   }
 }

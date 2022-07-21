@@ -22,3 +22,13 @@ ul {
 .header-labels {
   margin-top: 3em;
 }
+
+.el-carousel__item {
+  border-radius: 15px;
+  height: 285px;
+  width: 300px;
+  img {
+    height: 285px;
+    object-fit: fill;
+  }
+}
