@@ -2,54 +2,25 @@
   box-sizing: border-box;
 }
 
-::selection {
-  background-color: $clr1;
-  color: $clr6;
-}
-
 html {
-  // font-family: 'Cereal-medium';
-  // font-family: 'Cereal-bold';
   font-family: 'Cereal';
-  // font-weight: 700;
 }
 
 body {
-  font-family: 'Cereal';
-  // font-weight: bold;
-  font-size: rem(18px);
+  font-size: $regular-size;
   margin: 0;
   padding: 0;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  // font-family: Cereal;
-  margin: 0 0 0.6em;
-  line-height: 1;
-}
-
-section,
-main,
-footer {
-  // padding: 5px;
-}
-
-// img {
-//     width: 100%;
-// }
-
 p {
-  margin: 0 0 1em;
-  max-width: 40ch;
+  margin: 0;
+  padding: 0;
 }
 
-a {
+a,
+button {
   text-decoration: none;
+  cursor: pointer;
 }
 
 a:hover {
