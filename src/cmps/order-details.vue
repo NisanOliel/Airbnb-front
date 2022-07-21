@@ -1,6 +1,6 @@
 <template>
-    <div class="order-details flex">
-        <div class="order-top flex justify-space-between">
+    <!-- <div class="order-details flex">
+        <div class="order-top flex justify-justify-space-between">
             <h1>{{ stay.price }}$ <span>night</span></h1>
             <div class="flex">
                 <img src="../assets/icons/star.svg" style="height: 15px;"> &nbsp&nbsp&nbsp
@@ -15,40 +15,178 @@
                     end-placeholder="End date" size="large" />
             </div>
 
-            <div class="guests-modal flex column">
-                <div class="guest-type-label flex space-between align-center">
-                    <div class="guest-label flex column">
+            <div class="flex column">
+                <div class="flex justify-space-between align-center">
+                    <div class="flex column">
                         <span>Adults</span>
                         <span>Ages 13+</span>
                     </div>
-                    <div class="guest-btns flex align-center space-between">
-                        <button @click.stop="updateGuests('adults', -1)">
+                    <div class=" flex align-center justify-space-between">
+                        <button @click.prevent="updateGuests('adults', -1)">
                             <span> - </span>
                         </button>
-                        <span class="guests-num">{{ trip.guests.adults }}</span>
-                        <button @click.stop="updateGuests('adults', 1)">
+                        <span>{{ trip.guests.adults }}</span>
+                        <button @click.prevent="updateGuests('adults', 1)">
                             <span> + </span>
                         </button>
                     </div>
                 </div>
-                <div class="guest-type-label flex space-between align-center">
-                    <div class="guest-label flex column">
+                <div class="flex justify-space-between align-center">
+                    <div class="flex column">
                         <span>Children</span>
                         <span>Ages 2-12</span>
                     </div>
-                    <div class="guest-btns flex align-center space-between">
-                        <button @click.stop="updateGuests('children', -1)">
+                    <div class="flex align-center justify-space-between">
+                        <button @click.prevent="updateGuests('children', -1)">
                             <span> - </span>
                         </button>
                         <span>{{ trip.guests.children }}</span>
-                        <button @click.stop="updateGuests('children', 1)">
+                        <button @click.prevent="updateGuests('children', 1)">
                             <span> + </span>
                         </button>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
+
+
+    <section class="order-container">
+        <div class="order-form-header">
+            <p><span class="cost">${{ stay.price }}</span> / night</p>
+            <p>{{ reviewsRateAvg }} <span class="reviews">({{ reviewsCount }})</span></p>
+        </div>
+
+        <div class="order-data">
+            <div class="date-picker">
+                <div class="date-input">
+                    <label>check in</label>
+                    <input placeholder="Tue Sep 07 2021">
+                </div>
+                <div class="date-input">
+                    <label>check out</label>
+                    <input placeholder="Tue Sep 07 2021">
+                </div>
+            </div>
+
+            <div class="guest-input">
+                <label>guests</label>
+                <input :placeholder="guestsCount">
+            </div>
+        </div>
+
+
+        <div class="btn-container">
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="content">
+                <button class="action-btn">
+                    <span>Reserve</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+
     <pre>{{ trip }}</pre>
 </template>
 
@@ -56,7 +194,8 @@
 // import { ref } from 'vue'
 
 export default {
-    name: " order-details", props: { stay: { type: Object }, },
+    name: " order-details",
+    props: { stay: { type: Object }, },
     data() {
         return {
             trip: {
@@ -78,6 +217,11 @@ export default {
         },
         reviewsCount() {
             return this.stay.reviews.length;
+        },
+        guestsCount() {
+            const guestsCount = this.trip.guests.children + this.trip.guests.adults;
+            if (guestsCount >= 1) return guestsCount + " guests";
+            else return "Add guests";
         }
     },
     methods: {
@@ -91,29 +235,3 @@ export default {
 
 
 </script>
-                    <!-- <style scoped>
-.demo-date-picker {
-    display: flex;
-    width: 100%;
-    padding: 0;
-    flex-wrap: wrap;
-}
-
-.demo-date-picker .block {
-    padding: 30px 0;
-    text-align: center;
-    border-right: solid 1px var(--el-border-color);
-    flex: 1;
-}
-
-.demo-date-picker .block:last-child {
-    border-right: none;
-}
-
-.demo-date-picker .demonstration {
-    display: block;
-    color: var(--el-text-color-secondary);
-    font-size: 14px;
-    margin-bottom: 20px;
-}
-</style> -->
