@@ -1,14 +1,29 @@
 <template>
   <section v-if="stay" class="details-container">
-    <h1>{{ stay.name }}</h1>
-    <up-info-details :stay="stay" />
+    <div class="main-title">
+      <h1>{{ stay.name }}</h1>
+
+      <div class="reviews-title flex align-center">
+        <up-info-details :stay="stay" />
+      </div>
+    </div>
     <gallery-details :stay="stay" />
-    <div class="content-wrapper flex">
+    <div class="content-wrapper flex justify-space-between">
       <section class="left-side">
         <section class="flex">
           <div>
-            <h3>{{ stay.roomType }} by {{ stay.host.fullname }}</h3>
-            <h4>{{ stay.capacity }} guests {{ stay.bedrooms }} bedrooms {{ stay.beds }} beds </h4>
+            <h2>{{ stay.roomType }} by {{ stay.host.fullname }}</h2>
+            <ul
+              ><li
+                ><span>{{ stay.capacity }} guests </span></li
+              >
+              <li
+                ><span>{{ stay.bedrooms }} bedrooms</span></li
+              >
+              <li
+                ><span>{{ stay.beds }} beds </span></li
+              >
+            </ul>
           </div>
           <img :src="stay.host.thumbnailUrl" />
         </section>

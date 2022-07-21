@@ -2,6 +2,23 @@
   max-width: 1120px;
   width: 100%;
   margin: auto;
+
+  section.up-info.flex {
+    flex: 1;
+    align-items: center;
+    gap: 10px;
+  }
+  .main-title {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .content-wrapper {
+    section.left-side {
+      flex-basis: 62%;
+    }
+  }
 }
 
 .stay-name {
