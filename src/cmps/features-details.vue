@@ -28,7 +28,6 @@
       <h3>Free cancellation for 48 hours.</h3>
     </div>
   </section>
-
 </template>
 
 <script>

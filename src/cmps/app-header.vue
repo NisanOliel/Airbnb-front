@@ -12,22 +12,14 @@
       <div class="header-labels flex justify-space-between align-center">
         <explore-labels />
         <div class="stand-alone-filter">
-          <button style="--filter-button_border: 1px solid var(--j-qkgmf)" type="button" class="v1tureqs dir dir-ltr"
-            ><span class="i3c9txn dir dir-ltr"
-              ><svg
-                viewBox="0 0 16 16"
-                xmlns="http://www.w3.org/2000/svg"
-                style="display: block; height: 14px; width: 14px; fill: currentColor"
-                aria-hidden="true"
-                role="presentation"
-                focusable="false"
-              >
+          <button style="--filter-button_border: 1px solid var(--j-qkgmf)" type="button"
+            class="v1tureqs dir dir-ltr"><span class="i3c9txn dir dir-ltr"><svg viewBox="0 0 16 16"
+                xmlns="http://www.w3.org/2000/svg" style="display: block; height: 14px; width: 14px; fill: currentColor"
+                aria-hidden="true" role="presentation" focusable="false">
                 <path
-                  d="M5 8c1.306 0 2.418.835 2.83 2H14v2H7.829A3.001 3.001 0 1 1 5 8zm0 2a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm6-8a3 3 0 1 1-2.829 4H2V4h6.17A3.001 3.001 0 0 1 11 2zm0 2a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"
-                ></path></svg
-              ><span class="t1o11edy dir dir-ltr">Filters</span></span
-            ></button
-          >
+                  d="M5 8c1.306 0 2.418.835 2.83 2H14v2H7.829A3.001 3.001 0 1 1 5 8zm0 2a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm6-8a3 3 0 1 1-2.829 4H2V4h6.17A3.001 3.001 0 0 1 11 2zm0 2a1 1 0 1 0 0 2 1 1 0 0 0 0-2z">
+                </path>
+              </svg><span class="t1o11edy dir dir-ltr">Filters</span></span></button>
         </div>
       </div>
       <div class="header-labels">
@@ -38,18 +30,20 @@
   </header>
 </template>
 <script>
-  import exploreFilter from './explore-filter.vue';
-  import exploreLabels from './explore-labels.vue';
+import exploreFilter from './explore-filter.vue';
+import exploreLabels from './explore-labels.vue';
+import standAloneFilter from './';
 
-  export default {
-    computed: {
-      // loggedInUser() {
-      //   return this.$store.getters.loggedinUser;
-      // },
-    },
-    components: {
-      exploreFilter,
-      exploreLabels,
-    },
-  };
+export default {
+  computed: {
+    // loggedInUser() {
+    //   return this.$store.getters.loggedinUser;
+    // },
+  },
+  components: {
+    exploreFilter,
+    exploreLabels,
+    standAloneFilter
+  },
+};
 </script>
