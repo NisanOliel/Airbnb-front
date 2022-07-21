@@ -1,10 +1,10 @@
 <template>
-    <div class="flex">
+    <section class="flex">
         <img src="../assets/icons/star.svg" style="height: 15px;"> &nbsp&nbsp&nbsp
         <h4>{{ reviewsRateAvg }}</h4> &nbsp&nbsp&nbsp
         <h4>{{ reviewsCount }} reviews</h4>&nbsp&nbsp&nbsp
         <h4>{{ city }} ,{{ country }} </h4>
-    </div>
+    </section>
 </template>
 
 <script>

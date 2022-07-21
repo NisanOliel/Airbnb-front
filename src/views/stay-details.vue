@@ -1,5 +1,5 @@
 <template>
-    <section v-if="stay">
+    <section v-if="stay" class="details-layout">
         <h1>{{ stay.name }}</h1>
         <up-info-details :stay="stay" />
         <gallery-details :stay="stay" />
@@ -20,7 +20,7 @@
         </section>
         <amenities-details :stay="stay" />
         <reviews-details :stay="stay" />
-
+        <date-picker></date-picker>
 
         <!-- <pre>{{ stay }}</pre> -->
 
@@ -35,6 +35,7 @@ import galleryDetails from "../cmps/gallery-details.vue";
 import featuresDetails from "../cmps/features-details.vue";
 import amenitiesDetails from "../cmps/amenities-details.vue";
 import reviewsDetails from "../cmps/reviews-details.vue";
+import datePicker from "../cmps/date-picker.vue";
 
 
 
@@ -45,7 +46,8 @@ export default {
         galleryDetails,
         featuresDetails,
         amenitiesDetails,
-        reviewsDetails
+        reviewsDetails,
+        datePicker
     },
 
     data() {
