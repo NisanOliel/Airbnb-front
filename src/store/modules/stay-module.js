@@ -101,10 +101,10 @@ export const stayStore = {
     setFilterBy({ commit }, { filterBy }) {
       stayService.query(filterBy).then(stays => {
         const filteredStays = stays.filter(stay => {
-          return stay.amenities.includes(filterBy?.label)
+          return stay.amenities.find(item => item.name === filterBy?.label)
         })
         commit({ type: 'setStays', stays: filteredStays })
       })
-    },
-  },
-};
+    }
+  }
+}
