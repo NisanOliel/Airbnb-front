@@ -22,11 +22,11 @@
                         <span>Ages 13+</span>
                     </div>
                     <div class=" flex align-center justify-space-between">
-                        <button @click.prevent="updateGuests('adults', -1)">
+                        <button @click.stop="updateGuests('adults', -1)">
                             <span> - </span>
                         </button>
                         <span>{{ trip.guests.adults }}</span>
-                        <button @click.prevent="updateGuests('adults', 1)">
+                        <button @click.stop="updateGuests('adults', 1)">
                             <span> + </span>
                         </button>
                     </div>
@@ -37,11 +37,11 @@
                         <span>Ages 2-12</span>
                     </div>
                     <div class="flex align-center justify-space-between">
-                        <button @click.prevent="updateGuests('children', -1)">
+                        <button @click.stop="updateGuests('children', -1)">
                             <span> - </span>
                         </button>
                         <span>{{ trip.guests.children }}</span>
-                        <button @click.prevent="updateGuests('children', 1)">
+                        <button @click.stop="updateGuests('children', 1)">
                             <span> + </span>
                         </button>
                     </div>
@@ -61,24 +61,26 @@
             <div class="date-picker">
                 <div class="date-input">
                     <label>check in</label>
-                    <input placeholder="Tue Sep 07 2021">
+                    <input :placeholder="checkIn">
+
                 </div>
                 <div class="date-input">
                     <label>check out</label>
-                    <input placeholder="Tue Sep 07 2021">
+                    <input :placeholder="checkOut">
+
                 </div>
             </div>
 
             <div class="guest-input">
                 <label>guests</label>
-                <input :placeholder="guestsCount">
+                <input disabled :placeholder="guestsCount">
             </div>
         </div>
 
 
+        <div class="cell"></div>
+        <div class="cell"></div>
         <div class="btn-container">
-            <div class="cell"></div>
-            <div class="cell"></div>
             <div class="cell"></div>
             <div class="cell"></div>
             <div class="cell"></div>
@@ -183,6 +185,45 @@
                 </button>
             </div>
         </div>
+        <div class="flex column">
+            <div class="guests-container flex justify-space-between align-center">
+                <div class="flex column">
+                    <span>Adultssss</span>
+                    <h5>Ages 13+</h5>
+                </div>
+                <div class="guests-btns flex align-center justify-space-between">
+                    <button @click.stop="updateGuests('adults', -1)">
+                        <span> - </span>
+                    </button>
+                    <span>{{ trip.guests.adults }}</span>
+                    <button @click.stop="updateGuests('adults', 1)">
+                        <span> + </span>
+                    </button>
+                </div>
+            </div>
+            <div class="guests-container flex justify-space-between align-center">
+                <div class="flex column">
+                    <span>Childrens</span>
+                    <h5>Ages 2-12</h5>
+                </div>
+                <div class="guests-btns flex align-center justify-space-between">
+                    <button @click.stop="updateGuests('children', -1)">
+                        <span> - </span>
+                    </button>
+                    <span>{{ trip.guests.children }}</span>
+                    <button @click.stop="updateGuests('children', 1)">
+                        <span> + </span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="pricing">
+                <h4>You won't be charged yet</h4>
+                <p>
+                    <span>Total</span><span> ${{ stay.price }}</span>
+                </p>
+            </div>
+        </div>
     </section>
 
 
@@ -222,12 +263,25 @@ export default {
             const guestsCount = this.trip.guests.children + this.trip.guests.adults;
             if (guestsCount >= 1) return guestsCount + " guests";
             else return "Add guests";
-        }
+        },
+        checkIn() {
+            return this.trip.dates[0]
+        },
+        checkOut() {
+            return this.trip.dates[1]
+
+        },
     },
     methods: {
         updateGuests(type, number) {
+            console.log('number:', number)
+            console.log('type:', type)
             if (this.trip.guests[type] === 0 && number === -1) return;
             this.trip.guests[type] += number;
+        },
+        updateChildren(number) {
+            if (this.trip.guests.children === 0 && number === -1) return;
+            this.trip.guests.children += number;
         },
     }
 }
