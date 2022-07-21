@@ -12,62 +12,30 @@
     "beds": 4,
     "numOfReviews": 9,
     "amenities": [
-      "TV",
-      "Cable TV",
-      "Internet",
-      "Wifi",
-      "Air conditioning",
-      "Wheelchair accessible",
-      "Pool",
-      "Kitchen",
-      "Free parking on premises",
-      "Doorman",
-      "Gym",
-      "Elevator",
-      "Hot tub",
-      "Heating",
-      "Family/kid friendly",
-      "Suitable for events",
-      "Washer",
-      "Dryer",
-      "Smoke detector",
-      "Carbon monoxide detector",
-      "First aid kit",
-      "Safety card",
-      "Fire extinguisher",
-      "Essentials",
-      "Shampoo",
-      "24-hour check-in",
-      "Hangers",
-      "Hair dryer",
-      "Iron",
-      "Laptop friendly workspace",
-      "Self check-in",
-      "Building staff",
-      "Private entrance",
-      "Room-darkening shades",
-      "Hot water",
-      "Bed linens",
-      "Extra pillows and blankets",
-      "Ethernet connection",
-      "Luggage dropoff allowed",
-      "Long term stays allowed",
-      "Ground floor access",
-      "Wide hallway clearance",
-      "Step-free access",
-      "Wide doorway",
-      "Flat path to front door",
-      "Well-lit path to entrance",
-      "Disabled parking spot",
-      "Step-free access",
-      "Wide doorway",
-      "Wide clearance to bed",
-      "Step-free access",
-      "Wide doorway",
-      "Step-free access",
-      "Wide entryway",
-      "Waterfront",
-      "Beachfront"
+      {
+        "name": "TV",
+        "src": "src/assets/icons/tv.svg"
+      },
+      {
+        "name": "Air conditioning",
+        "src": "src/assets/icons/air-conditioning.svg"
+      },
+      {
+        "name": "Kitchen",
+        "src": "src/assets/icons/kitchen.svg"
+      },
+      {
+        "name": "Free parking",
+        "src": "src/assets/icons/free-parking.svg"
+      },
+      {
+        "name": "Elevator",
+        "src": "src/assets/icons/elevator.svg"
+      },
+      {
+        "name": "Washer",
+        "src": "src/assets/icons/washer.svg"
+      }
     ],
     "host": {
       "_id": "622f3403e36c59e6164faf93",
@@ -228,21 +196,26 @@
     "beds": 1,
     "numOfReviews": 4,
     "amenities": [
-      "TV",
-      "Wifi",
-      "Air conditioning",
-      "Kitchen",
-      "Elevator",
-      "Buzzer/wireless intercom",
-      "Heating",
-      "Family/kid friendly",
-      "Washer",
-      "Dryer",
-      "Smoke detector",
-      "Carbon monoxide detector",
-      "Essentials",
-      "Iron",
-      "translation missing: en.hosting_amenity_50"
+      {
+        "name": "TV",
+        "src": "src/assets/icons/tv.svg"
+      },
+      {
+        "name": "Air conditioning",
+        "src": "src/assets/icons/air-conditioning.svg"
+      },
+      {
+        "name": "Kitchen",
+        "src": "src/assets/icons/kitchen.svg"
+      },
+      {
+        "name": "Elevator",
+        "src": "src/assets/icons/elevator.svg"
+      },
+      {
+        "name": "Washer",
+        "src": "src/assets/icons/washer.svg"
+      }
     ],
     "host": {
       "_id": "622f3401e36c59e6164fabab",
@@ -347,59 +320,22 @@
     "beds": 2,
     "numOfReviews": 18,
     "amenities": [
-      "TV",
-      "Cable TV",
-      "Internet",
-      "Wifi",
-      "Air conditioning",
-      "Kitchen",
-      "Paid parking off premises",
-      "Free street parking",
-      "Buzzer/wireless intercom",
-      "Family/kid friendly",
-      "Washer",
-      "Smoke detector",
-      "First aid kit",
-      "Fire extinguisher",
-      "Essentials",
-      "Shampoo",
-      "Lock on bedroom door",
-      "24-hour check-in",
-      "Hangers",
-      "Hair dryer",
-      "Iron",
-      "Laptop friendly workspace",
-      "Private entrance",
-      "Crib",
-      "Room-darkening shades",
-      "Hot water",
-      "Bed linens",
-      "Extra pillows and blankets",
-      "Microwave",
-      "Coffee maker",
-      "Refrigerator",
-      "Dishwasher",
-      "Dishes and silverware",
-      "Cooking basics",
-      "Oven",
-      "Stove",
-      "Patio or balcony",
-      "Luggage dropoff allowed",
-      "Long term stays allowed",
-      "Wide doorway",
-      "Well-lit path to entrance",
-      "Step-free access",
-      "Wide doorway",
-      "Accessible-height bed",
-      "Step-free access",
-      "Wide doorway",
-      "Accessible-height toilet",
-      "Step-free access",
-      "Wide entryway",
-      "Host greets you",
-      "Handheld shower head",
-      "Paid parking on premises",
-      "Fixed grab bars for shower"
+      {
+        "name": "TV",
+        "src": "src/assets/icons/tv.svg"
+      },
+      {
+        "name": "Air conditioning",
+        "src": "src/assets/icons/air-conditioning.svg"
+      },
+      {
+        "name": "Kitchen",
+        "src": "src/assets/icons/kitchen.svg"
+      },
+      {
+        "name": "Washer",
+        "src": "src/assets/icons/washer.svg"
+      }
     ],
     "host": {
       "_id": "622f3403e36c59e6164fb266",
@@ -659,25 +595,14 @@
     "beds": 1,
     "numOfReviews": 180,
     "amenities": [
-      "Internet",
-      "Wifi",
-      "Air conditioning",
-      "Kitchen",
-      "Heating",
-      "Family/kid friendly",
-      "Smoke detector",
-      "Carbon monoxide detector",
-      "Fire extinguisher",
-      "Essentials",
-      "Shampoo",
-      "24-hour check-in",
-      "Hangers",
-      "Hair dryer",
-      "Iron",
-      "Laptop friendly workspace",
-      "translation missing: en.hosting_amenity_49",
-      "Self check-in",
-      "Lockbox"
+      {
+        "name": "Air conditioning",
+        "src": "src/assets/icons/air-conditioning.svg"
+      },
+      {
+        "name": "Kitchen",
+        "src": "src/assets/icons/kitchen.svg"
+      }
     ],
     "host": {
       "_id": "622f3402e36c59e6164fac46",
@@ -959,17 +884,14 @@
     "beds": 1,
     "numOfReviews": 2,
     "amenities": [
-      "Wifi",
-      "Kitchen",
-      "Doorman",
-      "Elevator",
-      "Buzzer/wireless intercom",
-      "Heating",
-      "Essentials",
-      "Hangers",
-      "Hair dryer",
-      "translation missing: en.hosting_amenity_49",
-      "translation missing: en.hosting_amenity_50"
+      {
+        "name": "Kitchen",
+        "src": "src/assets/icons/kitchen.svg"
+      },
+      {
+        "name": "Elevator",
+        "src": "src/assets/icons/elevator.svg"
+      }
     ],
     "host": {
       "_id": "622f3407e36c59e6164fbdae",
@@ -1052,23 +974,14 @@
     "beds": 1,
     "numOfReviews": 108,
     "amenities": [
-      "Wifi",
-      "Kitchen",
-      "Paid parking off premises",
-      "Smoking allowed",
-      "Heating",
-      "Washer",
-      "Essentials",
-      "Shampoo",
-      "Lock on bedroom door",
-      "Hangers",
-      "Hair dryer",
-      "Iron",
-      "translation missing: en.hosting_amenity_49",
-      "translation missing: en.hosting_amenity_50",
-      "Hot water",
-      "Bed linens",
-      "Host greets you"
+      {
+        "name": "Kitchen",
+        "src": "src/assets/icons/kitchen.svg"
+      },
+      {
+        "name": "Washer",
+        "src": "src/assets/icons/washer.svg"
+      }
     ],
     "host": {
       "_id": "622f3404e36c59e6164fb63a",
@@ -1350,32 +1263,18 @@
     "beds": 1,
     "numOfReviews": 199,
     "amenities": [
-      "TV",
-      "Wifi",
-      "Air conditioning",
-      "Kitchen",
-      "Free street parking",
-      "Heating",
-      "Smoke detector",
-      "Carbon monoxide detector",
-      "Essentials",
-      "Shampoo",
-      "Lock on bedroom door",
-      "Hangers",
-      "Iron",
-      "Laptop friendly workspace",
-      "translation missing: en.hosting_amenity_49",
-      "translation missing: en.hosting_amenity_50",
-      "Private living room",
-      "Hot water",
-      "Bed linens",
-      "Extra pillows and blankets",
-      "Refrigerator",
-      "Dishes and silverware",
-      "Cooking basics",
-      "Oven",
-      "Stove",
-      "Host greets you"
+      {
+        "name": "TV",
+        "src": "src/assets/icons/tv.svg"
+      },
+      {
+        "name": "Air conditioning",
+        "src": "src/assets/icons/air-conditioning.svg"
+      },
+      {
+        "name": "Kitchen",
+        "src": "src/assets/icons/kitchen.svg"
+      }
     ],
     "host": {
       "_id": "622f3405e36c59e6164fb914",
@@ -1657,36 +1556,14 @@
     "beds": 1,
     "numOfReviews": 31,
     "amenities": [
-      "TV",
-      "Cable TV",
-      "Internet",
-      "Wifi",
-      "Kitchen",
-      "Free street parking",
-      "Heating",
-      "First aid kit",
-      "Safety card",
-      "Fire extinguisher",
-      "Essentials",
-      "Shampoo",
-      "24-hour check-in",
-      "Hangers",
-      "Hair dryer",
-      "translation missing: en.hosting_amenity_49",
-      "translation missing: en.hosting_amenity_50",
-      "Room-darkening shades",
-      "Hot water",
-      "Bed linens",
-      "Extra pillows and blankets",
-      "Microwave",
-      "Refrigerator",
-      "Dishes and silverware",
-      "Cooking basics",
-      "Stove",
-      "Single level home",
-      "Long term stays allowed",
-      "Host greets you",
-      "Handheld shower head"
+      {
+        "name": "TV",
+        "src": "src/assets/icons/tv.svg"
+      },
+      {
+        "name": "Kitchen",
+        "src": "src/assets/icons/kitchen.svg"
+      }
     ],
     "host": {
       "_id": "622f3401e36c59e6164fab5c",
@@ -1968,24 +1845,22 @@
     "beds": 1,
     "numOfReviews": 5,
     "amenities": [
-      "Wifi",
-      "Kitchen",
-      "Free parking on premises",
-      "Pets live on this property",
-      "Cat(s)",
-      "Washer",
-      "Dryer",
-      "First aid kit",
-      "Fire extinguisher",
-      "Essentials",
-      "Shampoo",
-      "Lock on bedroom door",
-      "Hangers",
-      "Hair dryer",
-      "Iron",
-      "Laptop friendly workspace",
-      "translation missing: en.hosting_amenity_49",
-      "translation missing: en.hosting_amenity_50"
+      {
+        "name": "Kitchen",
+        "src": "src/assets/icons/kitchen.svg"
+      },
+      {
+        "name": "Free parking",
+        "src": "src/assets/icons/free-parking.svg"
+      },
+      {
+        "name": "Pets allowed",
+        "src": "src/assets/icons/pets-allowed.svg"
+      },
+      {
+        "name": "Washer",
+        "src": "src/assets/icons/washer.svg"
+      }
     ],
     "host": {
       "_id": "622f3404e36c59e6164fb54f",
@@ -2102,16 +1977,22 @@
     "beds": 1,
     "numOfReviews": 31,
     "amenities": [
-      "TV",
-      "Cable TV",
-      "Internet",
-      "Wifi",
-      "Air conditioning",
-      "Kitchen",
-      "Heating",
-      "Washer",
-      "Essentials",
-      "Shampoo"
+      {
+        "name": "TV",
+        "src": "src/assets/icons/tv.svg"
+      },
+      {
+        "name": "Air conditioning",
+        "src": "src/assets/icons/air-conditioning.svg"
+      },
+      {
+        "name": "Kitchen",
+        "src": "src/assets/icons/kitchen.svg"
+      },
+      {
+        "name": "Washer",
+        "src": "src/assets/icons/washer.svg"
+      }
     ],
     "host": {
       "_id": "622f3402e36c59e6164fae4d",
@@ -2393,64 +2274,30 @@
     "beds": 6,
     "numOfReviews": 17,
     "amenities": [
-      "TV",
-      "Cable TV",
-      "Internet",
-      "Wifi",
-      "Air conditioning",
-      "Pool",
-      "Kitchen",
-      "Free parking on premises",
-      "Gym",
-      "Elevator",
-      "Hot tub",
-      "Family/kid friendly",
-      "Washer",
-      "Dryer",
-      "Smoke detector",
-      "Carbon monoxide detector",
-      "First aid kit",
-      "Safety card",
-      "Fire extinguisher",
-      "Essentials",
-      "Shampoo",
-      "Lock on bedroom door",
-      "24-hour check-in",
-      "Hangers",
-      "Hair dryer",
-      "Iron",
-      "Laptop friendly workspace",
-      "Self check-in",
-      "Building staff",
-      "Private entrance",
-      "Bathtub",
-      "Baby bath",
-      "High chair",
-      "Children’s books and toys",
-      "Crib",
-      "Pack ’n Play/travel crib",
-      "Children’s dinnerware",
-      "Hot water",
-      "Bed linens",
-      "Extra pillows and blankets",
-      "Microwave",
-      "Coffee maker",
-      "Refrigerator",
-      "Dishwasher",
-      "Dishes and silverware",
-      "Cooking basics",
-      "Oven",
-      "Stove",
-      "BBQ grill",
-      "Patio or balcony",
-      "Beach essentials",
-      "Step-free access",
-      "Disabled parking spot",
-      "Step-free access",
-      "Step-free access",
-      "Step-free access",
-      "Beachfront",
-      "Pool with pool hoist"
+      {
+        "name": "TV",
+        "src": "src/assets/icons/tv.svg"
+      },
+      {
+        "name": "Air conditioning",
+        "src": "src/assets/icons/air-conditioning.svg"
+      },
+      {
+        "name": "Kitchen",
+        "src": "src/assets/icons/kitchen.svg"
+      },
+      {
+        "name": "Free parking",
+        "src": "src/assets/icons/free-parking.svg"
+      },
+      {
+        "name": "Elevator",
+        "src": "src/assets/icons/elevator.svg"
+      },
+      {
+        "name": "Washer",
+        "src": "src/assets/icons/washer.svg"
+      }
     ],
     "host": {
       "_id": "622f3405e36c59e6164fb6ba",
@@ -2699,23 +2546,18 @@
     "beds": 4,
     "numOfReviews": 39,
     "amenities": [
-      "TV",
-      "Wifi",
-      "Air conditioning",
-      "Kitchen",
-      "Paid parking off premises",
-      "Heating",
-      "Family/kid friendly",
-      "Fire extinguisher",
-      "Essentials",
-      "Shampoo",
-      "Hangers",
-      "Hair dryer",
-      "Iron",
-      "Hot water",
-      "Microwave",
-      "Refrigerator",
-      "Host greets you"
+      {
+        "name": "TV",
+        "src": "src/assets/icons/tv.svg"
+      },
+      {
+        "name": "Air conditioning",
+        "src": "src/assets/icons/air-conditioning.svg"
+      },
+      {
+        "name": "Kitchen",
+        "src": "src/assets/icons/kitchen.svg"
+      }
     ],
     "host": {
       "_id": "622f3405e36c59e6164fb898",
@@ -2997,25 +2839,22 @@
     "beds": 6,
     "numOfReviews": 77,
     "amenities": [
-      "TV",
-      "Internet",
-      "Wifi",
-      "Air conditioning",
-      "Kitchen",
-      "Paid parking off premises",
-      "Smoking allowed",
-      "Buzzer/wireless intercom",
-      "Family/kid friendly",
-      "Washer",
-      "Dryer",
-      "Essentials",
-      "Shampoo",
-      "Hangers",
-      "Hair dryer",
-      "Iron",
-      "Laptop friendly workspace",
-      "Hot water",
-      "Host greets you"
+      {
+        "name": "TV",
+        "src": "src/assets/icons/tv.svg"
+      },
+      {
+        "name": "Air conditioning",
+        "src": "src/assets/icons/air-conditioning.svg"
+      },
+      {
+        "name": "Kitchen",
+        "src": "src/assets/icons/kitchen.svg"
+      },
+      {
+        "name": "Washer",
+        "src": "src/assets/icons/washer.svg"
+      }
     ],
     "host": {
       "_id": "622f3406e36c59e6164fbbf5",
@@ -3297,57 +3136,22 @@
     "beds": 7,
     "numOfReviews": 129,
     "amenities": [
-      "TV",
-      "Cable TV",
-      "Internet",
-      "Wifi",
-      "Air conditioning",
-      "Kitchen",
-      "Paid parking off premises",
-      "Buzzer/wireless intercom",
-      "Heating",
-      "Family/kid friendly",
-      "Washer",
-      "Smoke detector",
-      "Carbon monoxide detector",
-      "First aid kit",
-      "Safety card",
-      "Fire extinguisher",
-      "Essentials",
-      "Shampoo",
-      "24-hour check-in",
-      "Hangers",
-      "Hair dryer",
-      "Iron",
-      "Laptop friendly workspace",
-      "Outlet covers",
-      "Bathtub",
-      "High chair",
-      "Stair gates",
-      "Children’s books and toys",
-      "Crib",
-      "Pack ’n Play/travel crib",
-      "Room-darkening shades",
-      "Children’s dinnerware",
-      "Hot water",
-      "Bed linens",
-      "Extra pillows and blankets",
-      "Ethernet connection",
-      "Microwave",
-      "Coffee maker",
-      "Refrigerator",
-      "Dishwasher",
-      "Dishes and silverware",
-      "Cooking basics",
-      "Oven",
-      "Stove",
-      "Patio or balcony",
-      "Luggage dropoff allowed",
-      "Long term stays allowed",
-      "Wide doorway",
-      "Well-lit path to entrance",
-      "Wide entryway",
-      "Host greets you"
+      {
+        "name": "TV",
+        "src": "src/assets/icons/tv.svg"
+      },
+      {
+        "name": "Air conditioning",
+        "src": "src/assets/icons/air-conditioning.svg"
+      },
+      {
+        "name": "Kitchen",
+        "src": "src/assets/icons/kitchen.svg"
+      },
+      {
+        "name": "Washer",
+        "src": "src/assets/icons/washer.svg"
+      }
     ],
     "host": {
       "_id": "622f3403e36c59e6164fb08c",
@@ -3629,29 +3433,18 @@
     "beds": 4,
     "numOfReviews": 94,
     "amenities": [
-      "TV",
-      "Cable TV",
-      "Internet",
-      "Wifi",
-      "Air conditioning",
-      "Kitchen",
-      "Smoking allowed",
-      "Hot tub",
-      "Buzzer/wireless intercom",
-      "Heating",
-      "Family/kid friendly",
-      "Smoke detector",
-      "Carbon monoxide detector",
-      "First aid kit",
-      "Safety card",
-      "Fire extinguisher",
-      "Essentials",
-      "Shampoo",
-      "24-hour check-in",
-      "Hangers",
-      "Hair dryer",
-      "Iron",
-      "Laptop friendly workspace"
+      {
+        "name": "TV",
+        "src": "src/assets/icons/tv.svg"
+      },
+      {
+        "name": "Air conditioning",
+        "src": "src/assets/icons/air-conditioning.svg"
+      },
+      {
+        "name": "Kitchen",
+        "src": "src/assets/icons/kitchen.svg"
+      }
     ],
     "host": {
       "_id": "622f3405e36c59e6164fb9ad",
@@ -3933,20 +3726,22 @@
     "beds": 1,
     "numOfReviews": 206,
     "amenities": [
-      "TV",
-      "Cable TV",
-      "Internet",
-      "Wifi",
-      "Air conditioning",
-      "Wheelchair accessible",
-      "Kitchen",
-      "Doorman",
-      "Elevator",
-      "First aid kit",
-      "Essentials",
-      "Shampoo",
-      "Hair dryer",
-      "Iron"
+      {
+        "name": "TV",
+        "src": "src/assets/icons/tv.svg"
+      },
+      {
+        "name": "Air conditioning",
+        "src": "src/assets/icons/air-conditioning.svg"
+      },
+      {
+        "name": "Kitchen",
+        "src": "src/assets/icons/kitchen.svg"
+      },
+      {
+        "name": "Elevator",
+        "src": "src/assets/icons/elevator.svg"
+      }
     ],
     "host": {
       "_id": "622f3405e36c59e6164fb911",
@@ -4228,57 +4023,30 @@
     "beds": 3,
     "numOfReviews": 7,
     "amenities": [
-      "TV",
-      "Cable TV",
-      "Internet",
-      "Wifi",
-      "Air conditioning",
-      "Pool",
-      "Kitchen",
-      "Free parking on premises",
-      "Elevator",
-      "Free street parking",
-      "Family/kid friendly",
-      "Washer",
-      "Dryer",
-      "Smoke detector",
-      "First aid kit",
-      "Essentials",
-      "Hangers",
-      "Hair dryer",
-      "Iron",
-      "Laptop friendly workspace",
-      "Self check-in",
-      "Lockbox",
-      "Babysitter recommendations",
-      "Hot water",
-      "Bed linens",
-      "Extra pillows and blankets",
-      "Microwave",
-      "Coffee maker",
-      "Refrigerator",
-      "Dishwasher",
-      "Dishes and silverware",
-      "Cooking basics",
-      "Oven",
-      "Stove",
-      "Single level home",
-      "BBQ grill",
-      "Patio or balcony",
-      "Garden or backyard",
-      "Beach essentials",
-      "Long term stays allowed",
-      "Wide hallway clearance",
-      "Step-free access",
-      "Wide doorway",
-      "Flat path to front door",
-      "Well-lit path to entrance",
-      "Disabled parking spot",
-      "Step-free access",
-      "Step-free access",
-      "Step-free access",
-      "Waterfront",
-      "Beachfront"
+      {
+        "name": "TV",
+        "src": "src/assets/icons/tv.svg"
+      },
+      {
+        "name": "Air conditioning",
+        "src": "src/assets/icons/air-conditioning.svg"
+      },
+      {
+        "name": "Kitchen",
+        "src": "src/assets/icons/kitchen.svg"
+      },
+      {
+        "name": "Free parking",
+        "src": "src/assets/icons/free-parking.svg"
+      },
+      {
+        "name": "Elevator",
+        "src": "src/assets/icons/elevator.svg"
+      },
+      {
+        "name": "Washer",
+        "src": "src/assets/icons/washer.svg"
+      }
     ],
     "host": {
       "_id": "622f3402e36c59e6164faf2c",
@@ -4417,19 +4185,10 @@
     "beds": 1,
     "numOfReviews": 1,
     "amenities": [
-      "Internet",
-      "Wifi",
-      "Air conditioning",
-      "Heating",
-      "Smoke detector",
-      "Carbon monoxide detector",
-      "First aid kit",
-      "Fire extinguisher",
-      "Shampoo",
-      "Lock on bedroom door",
-      "Hangers",
-      "Hair dryer",
-      "Iron"
+      {
+        "name": "Air conditioning",
+        "src": "src/assets/icons/air-conditioning.svg"
+      }
     ],
     "host": {
       "_id": "622f3407e36c59e6164fbe18",
@@ -4502,52 +4261,22 @@
     "beds": 4,
     "numOfReviews": 7,
     "amenities": [
-      "TV",
-      "Internet",
-      "Wifi",
-      "Air conditioning",
-      "Kitchen",
-      "Paid parking off premises",
-      "Buzzer/wireless intercom",
-      "Heating",
-      "Family/kid friendly",
-      "Washer",
-      "Dryer",
-      "Smoke detector",
-      "Carbon monoxide detector",
-      "First aid kit",
-      "Safety card",
-      "Fire extinguisher",
-      "Essentials",
-      "Shampoo",
-      "24-hour check-in",
-      "Hangers",
-      "Hair dryer",
-      "Iron",
-      "Laptop friendly workspace",
-      "High chair",
-      "Crib",
-      "Room-darkening shades",
-      "Hot water",
-      "Bed linens",
-      "Extra pillows and blankets",
-      "Microwave",
-      "Coffee maker",
-      "Refrigerator",
-      "Dishwasher",
-      "Dishes and silverware",
-      "Cooking basics",
-      "Oven",
-      "Stove",
-      "Luggage dropoff allowed",
-      "Long term stays allowed",
-      "Cleaning before checkout",
-      "Wide doorway",
-      "Step-free access",
-      "Wide clearance to bed",
-      "Step-free access",
-      "Host greets you",
-      "Handheld shower head"
+      {
+        "name": "TV",
+        "src": "src/assets/icons/tv.svg"
+      },
+      {
+        "name": "Air conditioning",
+        "src": "src/assets/icons/air-conditioning.svg"
+      },
+      {
+        "name": "Kitchen",
+        "src": "src/assets/icons/kitchen.svg"
+      },
+      {
+        "name": "Washer",
+        "src": "src/assets/icons/washer.svg"
+      }
     ],
     "host": {
       "_id": "622f3404e36c59e6164fb4b4",
@@ -4686,31 +4415,18 @@
     "beds": 1,
     "numOfReviews": 3,
     "amenities": [
-      "TV",
-      "Cable TV",
-      "Wifi",
-      "Kitchen",
-      "Paid parking off premises",
-      "Smoking allowed",
-      "Heating",
-      "Family/kid friendly",
-      "Washer",
-      "Essentials",
-      "Shampoo",
-      "Hangers",
-      "Hair dryer",
-      "Iron",
-      "Laptop friendly workspace",
-      "translation missing: en.hosting_amenity_50",
-      "Hot water",
-      "Bed linens",
-      "Extra pillows and blankets",
-      "Refrigerator",
-      "Dishwasher",
-      "Dishes and silverware",
-      "Cooking basics",
-      "Oven",
-      "Host greets you"
+      {
+        "name": "TV",
+        "src": "src/assets/icons/tv.svg"
+      },
+      {
+        "name": "Kitchen",
+        "src": "src/assets/icons/kitchen.svg"
+      },
+      {
+        "name": "Washer",
+        "src": "src/assets/icons/washer.svg"
+      }
     ],
     "host": {
       "_id": "622f3402e36c59e6164facbf",
@@ -4805,73 +4521,30 @@
     "beds": 4,
     "numOfReviews": 5,
     "amenities": [
-      "TV",
-      "Cable TV",
-      "Internet",
-      "Wifi",
-      "Air conditioning",
-      "Wheelchair accessible",
-      "Pool",
-      "Kitchen",
-      "Free parking on premises",
-      "Doorman",
-      "Gym",
-      "Elevator",
-      "Hot tub",
-      "Heating",
-      "Family/kid friendly",
-      "Suitable for events",
-      "Washer",
-      "Dryer",
-      "Smoke detector",
-      "Carbon monoxide detector",
-      "First aid kit",
-      "Safety card",
-      "Fire extinguisher",
-      "Essentials",
-      "Shampoo",
-      "24-hour check-in",
-      "Hangers",
-      "Hair dryer",
-      "Iron",
-      "Laptop friendly workspace",
-      "Self check-in",
-      "Building staff",
-      "Private entrance",
-      "Room-darkening shades",
-      "Hot water",
-      "Bed linens",
-      "Extra pillows and blankets",
-      "Ethernet connection",
-      "Microwave",
-      "Coffee maker",
-      "Refrigerator",
-      "Dishwasher",
-      "Dishes and silverware",
-      "Cooking basics",
-      "Oven",
-      "Stove",
-      "Single level home",
-      "BBQ grill",
-      "Patio or balcony",
-      "Garden or backyard",
-      "Luggage dropoff allowed",
-      "Long term stays allowed",
-      "Wide hallway clearance",
-      "Step-free access",
-      "Wide doorway",
-      "Flat path to front door",
-      "Well-lit path to entrance",
-      "Disabled parking spot",
-      "Step-free access",
-      "Wide doorway",
-      "Wide clearance to bed",
-      "Step-free access",
-      "Wide doorway",
-      "Step-free access",
-      "Wide entryway",
-      "Waterfront",
-      "Beachfront"
+      {
+        "name": "TV",
+        "src": "src/assets/icons/tv.svg"
+      },
+      {
+        "name": "Air conditioning",
+        "src": "src/assets/icons/air-conditioning.svg"
+      },
+      {
+        "name": "Kitchen",
+        "src": "src/assets/icons/kitchen.svg"
+      },
+      {
+        "name": "Free parking",
+        "src": "src/assets/icons/free-parking.svg"
+      },
+      {
+        "name": "Elevator",
+        "src": "src/assets/icons/elevator.svg"
+      },
+      {
+        "name": "Washer",
+        "src": "src/assets/icons/washer.svg"
+      }
     ],
     "host": {
       "_id": "622f3403e36c59e6164faf93",
@@ -4988,24 +4661,18 @@
     "beds": 3,
     "numOfReviews": 22,
     "amenities": [
-      "TV",
-      "Kitchen",
-      "Heating",
-      "Family/kid friendly",
-      "Washer",
-      "First aid kit",
-      "Essentials",
-      "Shampoo",
-      "24-hour check-in",
-      "Hangers",
-      "Hair dryer",
-      "Iron",
-      "Laptop friendly workspace",
-      "Children’s books and toys",
-      "Hot water",
-      "Luggage dropoff allowed",
-      "Long term stays allowed",
-      "Host greets you"
+      {
+        "name": "TV",
+        "src": "src/assets/icons/tv.svg"
+      },
+      {
+        "name": "Kitchen",
+        "src": "src/assets/icons/kitchen.svg"
+      },
+      {
+        "name": "Washer",
+        "src": "src/assets/icons/washer.svg"
+      }
     ],
     "host": {
       "_id": "622f3407e36c59e6164fbdc0",
@@ -5287,37 +4954,22 @@
     "beds": 4,
     "numOfReviews": 22,
     "amenities": [
-      "TV",
-      "Wifi",
-      "Air conditioning",
-      "Kitchen",
-      "Free street parking",
-      "Heating",
-      "Washer",
-      "Dryer",
-      "Smoke detector",
-      "Carbon monoxide detector",
-      "Fire extinguisher",
-      "Essentials",
-      "Shampoo",
-      "Hangers",
-      "Hair dryer",
-      "Iron",
-      "Laptop friendly workspace",
-      "Self check-in",
-      "Lockbox",
-      "Private living room",
-      "Hot water",
-      "Bed linens",
-      "Microwave",
-      "Coffee maker",
-      "Refrigerator",
-      "Dishwasher",
-      "Dishes and silverware",
-      "Cooking basics",
-      "Oven",
-      "Stove",
-      "Long term stays allowed"
+      {
+        "name": "TV",
+        "src": "src/assets/icons/tv.svg"
+      },
+      {
+        "name": "Air conditioning",
+        "src": "src/assets/icons/air-conditioning.svg"
+      },
+      {
+        "name": "Kitchen",
+        "src": "src/assets/icons/kitchen.svg"
+      },
+      {
+        "name": "Washer",
+        "src": "src/assets/icons/washer.svg"
+      }
     ],
     "host": {
       "_id": "622f3407e36c59e6164fbfc1",
@@ -5599,22 +5251,22 @@
     "beds": 2,
     "numOfReviews": 9,
     "amenities": [
-      "TV",
-      "Cable TV",
-      "Internet",
-      "Wifi",
-      "Air conditioning",
-      "Kitchen",
-      "Pets allowed",
-      "Pets live on this property",
-      "Buzzer/wireless intercom",
-      "Heating",
-      "Family/kid friendly",
-      "Essentials",
-      "Shampoo",
-      "Hair dryer",
-      "Iron",
-      "Laptop friendly workspace"
+      {
+        "name": "TV",
+        "src": "src/assets/icons/tv.svg"
+      },
+      {
+        "name": "Air conditioning",
+        "src": "src/assets/icons/air-conditioning.svg"
+      },
+      {
+        "name": "Kitchen",
+        "src": "src/assets/icons/kitchen.svg"
+      },
+      {
+        "name": "Pets allowed",
+        "src": "src/assets/icons/pets-allowed.svg"
+      }
     ],
     "host": {
       "_id": "622f3405e36c59e6164fb718",
@@ -5774,28 +5426,10 @@
     "beds": 2,
     "numOfReviews": 231,
     "amenities": [
-      "Internet",
-      "Wifi",
-      "Air conditioning",
-      "Pets live on this property",
-      "Dog(s)",
-      "Heating",
-      "Smoke detector",
-      "Carbon monoxide detector",
-      "Essentials",
-      "Shampoo",
-      "Lock on bedroom door",
-      "Hangers",
-      "Hair dryer",
-      "Iron",
-      "Laptop friendly workspace",
-      "translation missing: en.hosting_amenity_49",
-      "translation missing: en.hosting_amenity_50",
-      "Hot water",
-      "Bed linens",
-      "Extra pillows and blankets",
-      "Luggage dropoff allowed",
-      "Host greets you"
+      {
+        "name": "Air conditioning",
+        "src": "src/assets/icons/air-conditioning.svg"
+      }
     ],
     "host": {
       "_id": "622f3404e36c59e6164fb38c",
@@ -6077,29 +5711,22 @@
     "beds": 3,
     "numOfReviews": 23,
     "amenities": [
-      "TV",
-      "Wifi",
-      "Air conditioning",
-      "Kitchen",
-      "Smoking allowed",
-      "Heating",
-      "Family/kid friendly",
-      "Washer",
-      "Dryer",
-      "Essentials",
-      "Shampoo",
-      "Hangers",
-      "Hair dryer",
-      "Iron",
-      "Bathtub",
-      "Bed linens",
-      "Microwave",
-      "Coffee maker",
-      "Refrigerator",
-      "Dishwasher",
-      "Dishes and silverware",
-      "Oven",
-      "Patio or balcony"
+      {
+        "name": "TV",
+        "src": "src/assets/icons/tv.svg"
+      },
+      {
+        "name": "Air conditioning",
+        "src": "src/assets/icons/air-conditioning.svg"
+      },
+      {
+        "name": "Kitchen",
+        "src": "src/assets/icons/kitchen.svg"
+      },
+      {
+        "name": "Washer",
+        "src": "src/assets/icons/washer.svg"
+      }
     ],
     "host": {
       "_id": "622f3405e36c59e6164fb99d",
@@ -6381,30 +6008,18 @@
     "beds": 1,
     "numOfReviews": 132,
     "amenities": [
-      "Internet",
-      "Wifi",
-      "Kitchen",
-      "Pets live on this property",
-      "Cat(s)",
-      "Buzzer/wireless intercom",
-      "Heating",
-      "Washer",
-      "First aid kit",
-      "Essentials",
-      "Shampoo",
-      "24-hour check-in",
-      "Hangers",
-      "Hair dryer",
-      "Iron",
-      "Laptop friendly workspace",
-      "translation missing: en.hosting_amenity_49",
-      "translation missing: en.hosting_amenity_50",
-      "Hot water",
-      "Bed linens",
-      "Refrigerator",
-      "Dishes and silverware",
-      "Cooking basics",
-      "Stove"
+      {
+        "name": "Kitchen",
+        "src": "src/assets/icons/kitchen.svg"
+      },
+      {
+        "name": "Pets allowed",
+        "src": "src/assets/icons/pets-allowed.svg"
+      },
+      {
+        "name": "Washer",
+        "src": "src/assets/icons/washer.svg"
+      }
     ],
     "host": {
       "_id": "622f3402e36c59e6164facd5",
@@ -6686,31 +6301,18 @@
     "beds": 2,
     "numOfReviews": 3,
     "amenities": [
-      "TV",
-      "Internet",
-      "Wifi",
-      "Kitchen",
-      "Paid parking off premises",
-      "Smoking allowed",
-      "Free street parking",
-      "Heating",
-      "Washer",
-      "Dryer",
-      "Smoke detector",
-      "Carbon monoxide detector",
-      "First aid kit",
-      "Fire extinguisher",
-      "Essentials",
-      "Shampoo",
-      "24-hour check-in",
-      "Hangers",
-      "Hair dryer",
-      "Iron",
-      "Laptop friendly workspace",
-      "translation missing: en.hosting_amenity_49",
-      "translation missing: en.hosting_amenity_50",
-      "Hot water",
-      "Host greets you"
+      {
+        "name": "TV",
+        "src": "src/assets/icons/tv.svg"
+      },
+      {
+        "name": "Kitchen",
+        "src": "src/assets/icons/kitchen.svg"
+      },
+      {
+        "name": "Washer",
+        "src": "src/assets/icons/washer.svg"
+      }
     ],
     "host": {
       "_id": "622f3406e36c59e6164fba46",
@@ -6804,20 +6406,14 @@
     "beds": 1,
     "numOfReviews": 122,
     "amenities": [
-      "Wifi",
-      "Air conditioning",
-      "Kitchen",
-      "Free street parking",
-      "Heating",
-      "Smoke detector",
-      "First aid kit",
-      "Fire extinguisher",
-      "Essentials",
-      "Shampoo",
-      "Lock on bedroom door",
-      "translation missing: en.hosting_amenity_49",
-      "translation missing: en.hosting_amenity_50",
-      "Host greets you"
+      {
+        "name": "Air conditioning",
+        "src": "src/assets/icons/air-conditioning.svg"
+      },
+      {
+        "name": "Kitchen",
+        "src": "src/assets/icons/kitchen.svg"
+      }
     ],
     "host": {
       "_id": "622f3404e36c59e6164fb5d8",

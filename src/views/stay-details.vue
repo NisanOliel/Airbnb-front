@@ -14,7 +14,7 @@
 
         <features-details />
 
-        <order-details />
+        <order-details :stay="stay" />
 
         <section>
             <h2>Description</h2>
