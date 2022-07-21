@@ -1,7 +1,6 @@
 <template>
     <section class=" up-info flex">
-        <img src="../assets/icons/star.svg" style="height: 15px;">
-        <h4>{{ reviewsRateAvg }}</h4>
+        {{ $filters.reviewsRateAvg(stay) }}
         <h4 class="under-line">{{ reviewsCount }} reviews</h4>
         <span class="gray">•</span>
         <h4 class="under-line">{{ city }} ,{{ country }} </h4>
@@ -16,14 +15,14 @@ export default {
     },
 
     computed: {
-        reviewsRateAvg() {
-            var sum = 0;
-            this.stay.reviews.forEach((review) => {
-                sum += review.rate;
-            });
-            sum = sum / this.stay.reviews.length;
-            return sum.toFixed(1);
-        },
+        // reviewsRateAvg() {
+        //     var sum = 0;
+        //     this.stay.reviews.forEach((review) => {
+        //         sum += review.rate;
+        //     });
+        //     sum = sum / this.stay.reviews.length;
+        //     return sum.toFixed(1);
+        // },
         reviewsCount() {
             return this.stay.reviews.length;
         },
