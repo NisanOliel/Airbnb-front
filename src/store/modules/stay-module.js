@@ -37,6 +37,7 @@ export const stayStore = {
     setStays(state, { stays }) {
       state.stays = stays;
     },
+
     removeStay(state, { stayId }) {
       const idx = state.stays.findIndex(p => p._id === stayId)
       state.lastRemovedstay = state.stays[idx];
@@ -100,10 +101,9 @@ export const stayStore = {
     setFilterBy({ commit }, { filterBy }) {
       stayService.query(filterBy).then(stays => {
         const filteredStays = stays.filter(stay => {
-          return stay.name.includes(filterBy?.label);
-        });
-        commit({ type: 'setStays', stays: filteredStays });
-        // commit({ type: 'setFilterBy', filterBy })
+          return stay.name.includes(filterBy?.label)
+        })
+        commit({ type: 'setStays', stays: filteredStays })
       })
     },
   },
