@@ -1,8 +1,8 @@
 <template>
   <ul class="flex text-center">
-    <li v-for=" label in labels" :key="label.src" @click="filter(label.name)" class="labels">
+    <li v-for=" label in labels" :key="label.src" @click="filter(label.propertyType)" class="labels">
       <img :src="label.src" />
-      <h2>{{ label.name }}</h2>
+      <h2>{{ label.propertyType }}</h2>
     </li>
   </ul>
 </template>
@@ -21,6 +21,7 @@ export default {
     filter(value) {
       this.filterBy.label = value
       this.$store.dispatch({ type: 'setFilterBy', filterBy: this.filterBy })
+      console.log(this.filterBy.label);
     }
   },
 
@@ -32,7 +33,6 @@ export default {
       return this.labels;
     }
   }
-
 
 }
 </script>

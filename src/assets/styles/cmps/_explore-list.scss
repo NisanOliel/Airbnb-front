@@ -10,20 +10,15 @@
   grid-gap: $row-list-gap $column-list-gap;
 }
 
-
-
-
 ul {
   list-style: none;
 }
 
 .labels {
   margin-right: 3em;
-
+  cursor: pointer;
 }
 
 .header-labels {
   margin-top: 3em;
-
-
 }

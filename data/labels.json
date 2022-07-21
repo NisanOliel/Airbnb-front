@@ -1,30 +1,22 @@
 [
   {
-    "name": "TV",
+    "propertyType": "Apartment",
     "src": "src/assets/app-filter-img/3b1eb541-46d9-4bef-abc4-c37d77e3c21b.jpg"
   },
   {
-    "name": "Elevator",
+    "propertyType": "House",
     "src": "src/assets/app-filter-img/6b639c8d-cf9b-41fb-91a0-91af9d7677cc.jpg"
   },
   {
-    "name": "Kitchen",
+    "propertyType": "Condominium",
     "src": "src/assets/app-filter-img/33848f9e-8dd6-4777-b905-ed38342bacb9.jpg"
   },
   {
-    "name": "Washer",
+    "propertyType": "Serviced apartment",
     "src": "src/assets/app-filter-img/5cdb8451-8f75-4c5f-a17d-33ee228e3db8.jpg"
   },
   {
-    "name": "Free parking",
-    "src": "src/assets/app-filter-img/8a43b8c6-7eb4-421c-b3a9-1bd9fcb26622.jpg"
-  },
-  {
-    "name": "Air conditioning",
-    "src": "src/assets/app-filter-img/6ad4bd95-f086-437d-97e3-14d12155ddfe.jpg"
-  },
-  {
-    "name": "Pets allowed",
-    "src": "src/assets/app-filter-img/5ed8f7c7-2e1f-43a8-9a39-4edfc81a3325.jpg"
+    "propertyType": "Townhouse",
+    "src": "src/assets/app-filter-img/5cdb8451-8f75-4c5f-a17d-33ee228e3db8.jpg"
   }
 ]
