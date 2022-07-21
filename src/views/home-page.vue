@@ -1,31 +1,28 @@
 <template>
-  <section class="container home text-center">
-    <section>
-      <stay-list :stays="stays"></stay-list>
-    </section>
+  <section class="container">
+    <stay-list :stays="stays"></stay-list>
   </section>
 </template>
 
 <script>
-  import stayList from '../cmps/stay-list.cmp.vue';
+import stayList from '../cmps/stay-list.cmp.vue';
 
-  export default {
-    name: 'home-page',
-    data() {
-      return {};
+export default {
+  name: 'home-page',
+  data() {
+    return {};
+  },
+  computed: {
+    stays() {
+      return this.$store.getters.getStays;
     },
-    computed: {
-      stays() {
-        console.log('from app', this.$store.getters.getStays);
-        return this.$store.getters.getStays;
-      },
-    },
-    created() {
-      this.$store.dispatch({ type: 'loadStays' });
-    },
-    methods: {},
-    components: {
-      stayList,
-    },
-  };
+  },
+  created() {
+    this.$store.dispatch({ type: 'loadStays' });
+  },
+  methods: {},
+  components: {
+    stayList,
+  },
+};
 </script>

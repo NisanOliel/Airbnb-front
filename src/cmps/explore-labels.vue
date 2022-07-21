@@ -1,9 +1,9 @@
 <template>
-  <!-- <ul>
-    <li v-for="image in images" :key="image" @click="filter(label.name)">
-      <img :src="image" />
+  <ul>
+    <li v-for="label in labels" :key="label.src" @click="filter(label.label)">
+      <img :src="label.src" />
     </li>
-  </ul> -->
+  </ul>
 
 </template>
 <script>
@@ -15,12 +15,6 @@ export default {
       filterBy: {
         label: null
       },
-      images: [
-        `src/assets/app-filter-img/33848f9e-8dd6-4777-b905-ed38342bacb9.jpg`,
-        `src/assets/app-filter-img/33848f9e-8dd6-4777-b905-ed38342bacb9.jpg`,
-        `src/assets/app-filter-img/33848f9e-8dd6-4777-b905-ed38342bacb9.jpg`,
-        `src/assets/app-filter-img/33848f9e-8dd6-4777-b905-ed38342bacb9.jpg`,
-      ]
     }
   },
   methods: {
@@ -32,9 +26,9 @@ export default {
 
   created() {
     this.labels = this.$store.getters.getLabels
-    console.log('tio', this.labels);
-  },computed:{
-    getLabels(){
+
+  }, computed: {
+    getLabels() {
       return this.labels;
     }
   }

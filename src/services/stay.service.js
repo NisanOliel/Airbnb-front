@@ -16,15 +16,14 @@ export const stayService = {
   remove,
   save,
   getEmptystay,
-  getstay
+  getstay,
+  getLabels
 }
 
-_createstays();
-getLabels()
+_createstays()
 
 function query(filterBy) {
   // return axios.get(API, { params: filterBy }).then((res) => res.data)
-  console.log(labelsJason);
   return storageService.query(KEY);
 }
 
@@ -74,6 +73,5 @@ function _createstays() {
 }
 
 function getLabels() {
-  console.log(labelsJason);
   return labelsJason
 }

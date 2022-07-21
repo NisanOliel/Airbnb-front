@@ -5,12 +5,9 @@ export const stayStore = {
     stays: [],
     filterBy: null,
     lastRemoveStay: null,
+    labels: stayService.getLabels()
   },
-  state() {
-    return {
-      labels: stayService.getLabels()
-    }
-  },
+
   getters: {
     getStays({ stays }) {
       return stays;
@@ -40,11 +37,6 @@ export const stayStore = {
     setStays(state, { stays }) {
       state.stays = stays;
     },
-    // setFilterBy(state, { filterBy }) {
-    //     console.log('filterBy:', filterBy)
-    //     state.filterBy = filterBy
-    // },
-
     removeStay(state, { stayId }) {
       const idx = state.stays.findIndex(p => p._id === stayId)
       state.lastRemovedstay = state.stays[idx];
@@ -102,15 +94,17 @@ export const stayStore = {
       const stay = state.stays.find(stay => stay._id === stayId);
       stayService.save(stay);
     },
-    getstayById(context, { stayId }) {
+    getStayById(context, { stayId }) {
       return stayService.getById(stayId);
     },
     setFilterBy({ commit }, { filterBy }) {
-      console.log("from label", filterBy)
-      // stayService.query(filterBy).then(stays => {
-      // commit({ type: 'setStays', stays });
-      //   // commit({ type: 'setFilterBy', filterBy })
-      // })
+      stayService.query(filterBy).then(stays => {
+        const filteredStays = stays.filter(stay => {
+          return stay.name.includes(filterBy?.label);
+        });
+        commit({ type: 'setStays', stays: filteredStays });
+        // commit({ type: 'setFilterBy', filterBy })
+      })
     },
   },
 };

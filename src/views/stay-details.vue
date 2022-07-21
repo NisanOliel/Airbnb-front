@@ -18,8 +18,11 @@
             <h2>Description</h2>
             <p>{{ stay.summary }}</p>
         </section>
+        <amenities-details :stay="stay" />
+        <reviews-details :stay="stay" />
 
-        <pre>{{ stay }}</pre>
+
+        <!-- <pre>{{ stay }}</pre> -->
 
     </section>
     <router-link to="/">Back</router-link>
@@ -30,6 +33,8 @@ import { stayService } from "../services/stay.service.js";
 import upInfoDetails from "../cmps/up-info-details.vue";
 import galleryDetails from "../cmps/gallery-details.vue";
 import featuresDetails from "../cmps/features-details.vue";
+import amenitiesDetails from "../cmps/amenities-details.vue";
+import reviewsDetails from "../cmps/reviews-details.vue";
 
 
 
@@ -38,7 +43,9 @@ export default {
     components: {
         upInfoDetails,
         galleryDetails,
-        featuresDetails
+        featuresDetails,
+        amenitiesDetails,
+        reviewsDetails
     },
 
     data() {
