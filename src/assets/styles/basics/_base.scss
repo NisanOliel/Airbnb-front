@@ -7,21 +7,24 @@
   color: $clr6;
 }
 
-html,
-div {
-  font-family: 'Cereal', sans-serif;
-  font-weight: bold;
-  line-height: 1.6;
-  // color: $clr2;
+html {
+  // font-family: 'Cereal-medium';
+  // font-family: 'Cereal-bold';
+  // font-family: 'Cereal';
+  // font-weight: 700;
+
+  font-family: 'airbnb-regular';
+
 }
 
-body {
-  font-family: 'Cereal', sans-serif;
-  font-weight: bold;
-  font-size: rem(18px);
-  margin: 0;
-  padding: 0;
-}
+
+// body {
+//   font-family: 'Cereal', sans-serif;
+//   font-weight: bold;
+//   font-size: rem(18px);
+//   margin: 0;
+//   padding: 0;
+// }
 
 h1,
 h2,
@@ -29,7 +32,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Cereal;
+  // font-family: Cereal;
   margin: 0 0 0.6em;
   line-height: 1;
 }

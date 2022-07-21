@@ -1,5 +1,5 @@
 <template>
-    <!-- <div class="order-details flex">
+    <div class="order-details flex">
         <div class="order-top flex justify-justify-space-between">
             <h1>{{ stay.price }}$ <span>night</span></h1>
             <div class="flex">
@@ -48,13 +48,16 @@
                 </div>
             </div>
         </div>
-    </div> -->
+    </div>
 
 
     <section class="order-container">
         <div class="order-form-header">
             <p><span class="cost">${{ stay.price }}</span> / night</p>
-            <p>{{ reviewsRateAvg }} <span class="reviews">({{ reviewsCount }})</span></p>
+            <img src="../assets/icons/star.svg" style="height: 15px;">
+            <p>
+                {{ reviewsRateAvg }} <span class="reviews">
+                    ({{ reviewsCount }})</span></p>
         </div>
 
         <div class="order-data">
@@ -217,10 +220,10 @@
                 </div>
             </div>
 
-            <div class="pricing">
+            <div class="pricing " if="">
                 <h4>You won't be charged yet</h4>
                 <p>
-                    <span>Total</span><span> ${{ stay.price }}</span>
+                    <span>Total</span><span> ${{ totalPrice }}</span>
                 </p>
             </div>
         </div>
@@ -271,6 +274,16 @@ export default {
             return this.trip.dates[1]
 
         },
+        totalPrice() {
+            var size = Object.keys(this.trip.dates).length;
+            if (size > 1) {
+                const timeDiff = (this.trip.dates[1].getTime() - this.trip.dates[0].getTime()) / (1000 * 3600 * 24);
+                return Number(
+                    parseInt(this.stay.price * timeDiff)
+                ).toLocaleString();
+            }
+        }
+
     },
     methods: {
         updateGuests(type, number) {
