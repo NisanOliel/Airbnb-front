@@ -99,9 +99,10 @@ export const stayStore = {
       return stayService.getById(stayId);
     },
     setFilterBy({ commit }, { filterBy }) {
+      console.log({ filterBy });
       stayService.query(filterBy).then(stays => {
         const filteredStays = stays.filter(stay => {
-          return stay.amenities.find(item => item.name === filterBy?.label)
+          return stay.propertyType.includes(filterBy?.label)
         })
         commit({ type: 'setStays', stays: filteredStays })
       })

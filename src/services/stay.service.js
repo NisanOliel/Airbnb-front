@@ -65,9 +65,9 @@ function getstay(stayId) {
 }
 
 function _createstays() {
-  let stays = JSON.parse(localStorage.getItem(KEY));
+  let stays = JSON.parse(localStorage.getItem(KEY))
   if (!stays || !stays.length) {
-    localStorage.setItem(KEY, JSON.stringify(staysJason));
+    localStorage.setItem(KEY, JSON.stringify(staysJason))
   }
   return stays;
 }
