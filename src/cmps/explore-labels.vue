@@ -22,7 +22,7 @@ export default {
     filter(value) {
       this.filterBy.label = value
       this.$store.dispatch({ type: 'setFilterBy', filterBy: this.filterBy })
-    },
+    }
   },
 
   created() {
