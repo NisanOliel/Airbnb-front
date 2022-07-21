@@ -16,7 +16,15 @@
     "src": "src/assets/app-filter-img/5cdb8451-8f75-4c5f-a17d-33ee228e3db8.jpg"
   },
   {
-    "name": "Air conditioning",
+    "name": "Free parking",
     "src": "src/assets/app-filter-img/8a43b8c6-7eb4-421c-b3a9-1bd9fcb26622.jpg"
+  },
+  {
+    "name": "Air conditioning",
+    "src": "src/assets/app-filter-img/6ad4bd95-f086-437d-97e3-14d12155ddfe.jpg"
+  },
+  {
+    "name": "Pets allowed",
+    "src": "src/assets/app-filter-img/5ed8f7c7-2e1f-43a8-9a39-4edfc81a3325.jpg"
   }
 ]
