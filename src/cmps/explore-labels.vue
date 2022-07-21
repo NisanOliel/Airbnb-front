@@ -1,5 +1,5 @@
 <template>
-  <ul>
+  <ul class="flex ">
     <li v-for="label in labels" :key="label.src" @click="filter(label.name)">
       <img :src="label.src" />
       <h2>{{ label.name }}</h2>
