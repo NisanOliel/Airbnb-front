@@ -10,8 +10,8 @@ header {
     font-size: $header-size;
     color: $clr1;
   }
-  .explore-filter form {
-    width: 352px;
-    height: 48px;
+  .explore-filter {
+    flex: 1;
+    max-width: 847px;
   }
 }

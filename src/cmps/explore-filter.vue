@@ -1,26 +1,42 @@
 <template>
-  <el-form @submit.prevent="formSubmit">
-    <div class="search-wrapper flex">
-      <div class="filter header-location">Anywhere</div>
-      <div class="filter header-time">Any week</div>
-      <div class="filter header-guests">Add guests</div>
-      <button
-        ><svg
-          viewBox="0 0 32 32"
-          xmlns="http://www.w3.org/2000/svg"
-          aria-hidden="true"
-          role="presentation"
-          focusable="false"
-          style="display: block; fill: none; height: 12px; width: 12px; stroke: currentcolor; stroke-width: 5.33333; overflow: visible"
-        >
-          <g fill="none">
-            <path
-              d="m13 24c6.0751322 0 11-4.9248678 11-11 0-6.07513225-4.9248678-11-11-11-6.07513225 0-11 4.92486775-11 11 0 6.0751322 4.92486775 11 11 11zm8-3 9 9"
-            ></path>
-          </g></svg
-      ></button>
+  <div class="search-wrapper flex">
+    <div v-show="filterPreview" @click="expendForm($event)" class="filter-preview flex align-center">
+      <div class="filter btn header-location">Anywhere</div>
+      <div class="filter btn header-time">Any week</div>
+      <div class="filter btn header-guests search" value="hellow"
+        >Add guests <span><img src="src/assets/search-icon.svg" /></span>
+      </div>
     </div>
-  </el-form>
+
+    <div v-show="!filterPreview" class="filter-expend flex">
+      <el-form :model="form" @submit.prevent="formSubmit">
+        <div class="filter-option">
+          <el-form-item label="Where">
+            <el-input @focus="showInitModal" v-model="form.where" placeholder="Search destination" />
+            <div v-show="showModal"></div>
+          </el-form-item>
+        </div>
+        <div class="filter-option check">
+          <el-form-item label="Check in">
+            {{ addressMsg }}
+          </el-form-item>
+          <el-form-item label="Check out">
+            {{ addressMsg }}
+          </el-form-item>
+
+          <el-form-item label="Check out">
+            <el-date-picker unlink-panels="true" v-model="form.date" type="daterange" start-placeholder="Add address" />
+          </el-form-item>
+        </div>
+        <div class="filter-option">
+          <el-form-item label="Where">
+            <el-input v-model="form.where" placeholder="Search destination" />
+          </el-form-item>
+          <button><img class="search" src="src/assets/search-icon.svg" /></button>
+        </div>
+      </el-form>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -28,12 +44,32 @@
     name: 'explore-filter',
     data() {
       return {
+        form: {
+          where: '',
+          date: '',
+        },
         msg: 'Hello form filter',
+        filterPreview: true,
+        addressMsg: 'Add address',
+        showModal: false,
       };
     },
     methods: {
       formSubmit() {
         console.log('hellow');
+      },
+      expendForm(ev) {
+        console.log('ev', ev.target.innerText);
+        console.log('ev', ev);
+        this.filterShow;
+      },
+    },
+    computed: {
+      filterShow() {
+        this.filterPreview = !this.filterPreview;
+      },
+      showInitModal() {
+        this.showModal = !this.showInitModal;
       },
     },
   };
