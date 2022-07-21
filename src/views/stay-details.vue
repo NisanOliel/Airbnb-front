@@ -1,5 +1,5 @@
 <template>
-    <section v-if="stay">
+    <section v-if="stay" class="details-layout">
         <h1>{{ stay.name }}</h1>
         <up-info-details :stay="stay" />
         <gallery-details :stay="stay" />
@@ -14,13 +14,14 @@
 
         <features-details />
 
+        <order-details />
+
         <section>
             <h2>Description</h2>
             <p>{{ stay.summary }}</p>
         </section>
         <amenities-details :stay="stay" />
         <reviews-details :stay="stay" />
-
 
         <!-- <pre>{{ stay }}</pre> -->
 
@@ -35,6 +36,7 @@ import galleryDetails from "../cmps/gallery-details.vue";
 import featuresDetails from "../cmps/features-details.vue";
 import amenitiesDetails from "../cmps/amenities-details.vue";
 import reviewsDetails from "../cmps/reviews-details.vue";
+import orderDetails from "../cmps/order-details.vue";
 
 
 
@@ -45,7 +47,8 @@ export default {
         galleryDetails,
         featuresDetails,
         amenitiesDetails,
-        reviewsDetails
+        reviewsDetails,
+        orderDetails
     },
 
     data() {
