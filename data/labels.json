@@ -1,19 +1,19 @@
 [
   {
-    "propertyType": "Apartment",
+    "propertyType": "Beaches",
+    "src": "src/assets/app-filter-img/10ce1091-c854-40f3-a2fb-defc2995bcaf.jpg"
+  },
+  {
+    "propertyType": "amazing views",
     "src": "src/assets/app-filter-img/3b1eb541-46d9-4bef-abc4-c37d77e3c21b.jpg"
   },
   {
+    "propertyType": "Apartment",
+    "src": "src/assets/app-filter-img/50861fca-582c-4bcc-89d3-857fb7ca6528.jpg"
+  },
+  {
     "propertyType": "House",
-    "src": "src/assets/app-filter-img/6b639c8d-cf9b-41fb-91a0-91af9d7677cc.jpg"
-  },
-  {
-    "propertyType": "Condominium",
-    "src": "src/assets/app-filter-img/33848f9e-8dd6-4777-b905-ed38342bacb9.jpg"
-  },
-  {
-    "propertyType": "Serviced apartment",
-    "src": "src/assets/app-filter-img/5cdb8451-8f75-4c5f-a17d-33ee228e3db8.jpg"
+    "src": "src/assets/app-filter-img/6ad4bd95-f086-437d-97e3-14d12155ddfe.jpg"
   },
   {
     "propertyType": "Townhouse",
