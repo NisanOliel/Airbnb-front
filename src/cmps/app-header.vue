@@ -10,12 +10,14 @@
 
     <div class="header-labels">
       <explore-labels />
+      <standAlone-filter />
     </div>
   </header>
 </template>
 <script>
-import exploreFilter from './explore-filter.vue';
-import exploreLabels from './explore-labels.vue';
+import exploreFilter from './explore-filter.vue'
+import exploreLabels from './explore-labels.vue'
+import standAloneFilter from './standalone-filter.vue'
 
 export default {
 
@@ -28,6 +30,7 @@ export default {
   components: {
     exploreFilter,
     exploreLabels,
+    standAloneFilter
   },
 }
 
