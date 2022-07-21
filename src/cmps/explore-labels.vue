@@ -2,6 +2,7 @@
   <ul>
     <li v-for="label in labels" :key="label.src" @click="filter(label.label)">
       <img :src="label.src" />
+      <h2>{{ label.name }}</h2>
     </li>
   </ul>
 
