@@ -69,7 +69,6 @@ function _createstays() {
   if (!stays || !stays.length) {
     localStorage.setItem(KEY, JSON.stringify(staysJason))
   }
-  console.log(stays)
   return stays;
 }
 

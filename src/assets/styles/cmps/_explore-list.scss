@@ -9,3 +9,21 @@
   grid-auto-rows: minmax(0, 1fr);
   grid-gap: $row-list-gap $column-list-gap;
 }
+
+
+
+
+ul {
+  list-style: none;
+}
+
+.labels {
+  margin-right: 3em;
+
+}
+
+.header-labels {
+  margin-top: 3em;
+
+
+}
