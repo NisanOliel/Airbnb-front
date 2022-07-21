@@ -14,13 +14,14 @@
 
         <features-details />
 
+        <order-details />
+
         <section>
             <h2>Description</h2>
             <p>{{ stay.summary }}</p>
         </section>
         <amenities-details :stay="stay" />
         <reviews-details :stay="stay" />
-        <date-picker></date-picker>
 
         <!-- <pre>{{ stay }}</pre> -->
 
@@ -35,7 +36,7 @@ import galleryDetails from "../cmps/gallery-details.vue";
 import featuresDetails from "../cmps/features-details.vue";
 import amenitiesDetails from "../cmps/amenities-details.vue";
 import reviewsDetails from "../cmps/reviews-details.vue";
-import datePicker from "../cmps/date-picker.vue";
+import orderDetails from "../cmps/order-details.vue";
 
 
 
@@ -47,7 +48,7 @@ export default {
         featuresDetails,
         amenitiesDetails,
         reviewsDetails,
-        datePicker
+        orderDetails
     },
 
     data() {
