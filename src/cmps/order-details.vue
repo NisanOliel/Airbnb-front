@@ -54,9 +54,8 @@
     <section class="order-container sticky">
         <div class="order-form-header">
             <p><span class="cost">${{ stay.price }}</span> / night</p>
-            <img src="../assets/icons/star.svg" style="height: 15px;">
             <p>
-                {{ reviewsRateAvg }} <span class="reviews">
+                {{ $filters.reviewsRateAvg(stay) }} <span class="reviews">
                     ({{ reviewsCount }})</span></p>
         </div>
 
@@ -249,13 +248,6 @@ export default {
 
         }
     }, computed: {
-        reviewsRateAvg() {
-            var sum = 0; this.stay.reviews.forEach((review) => {
-                sum += review.rate;
-            });
-            sum = sum / this.stay.reviews.length;
-            return sum.toFixed(1);
-        },
         reviewsCount() {
             return this.stay.reviews.length;
         },
