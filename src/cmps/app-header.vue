@@ -11,7 +11,7 @@
         <div class="user-nav">User</div>
       </nav>
 
-      <div class="header-labels flex justify-space-between align-center">
+      <div v-if="headerLocation" class="header-labels flex justify-space-between align-center">
         <explore-labels />
         <div class="stand-alone-filter">
           <button @click="isShow = !isShow" style="--filter-button_border: 1px solid var(--j-qkgmf)" type="button" class="v1tureqs dir dir-ltr"
