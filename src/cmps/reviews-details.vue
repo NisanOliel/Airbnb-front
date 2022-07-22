@@ -3,7 +3,7 @@
     <div class="flex">
       <h2>
         {{ $filters.reviewsRateAvg(stay) }}
-        <span>··</span>
+        <span>·</span>
         {{ reviewsCount }} reviews
       </h2>
     </div>
@@ -30,18 +30,19 @@
 </template>
 
 <script>
-  export default {
-    name: 'reviews-details',
-    props: {
-      stay: { type: Object },
-    },
+export default {
+  name: 'reviews-details',
+  props: {
+    stay: { type: Object },
+  },
 
-    computed: {
-      reviewsCount() {
-        return this.stay.reviews.length;
-      },
+  computed: {
+    reviewsCount() {
+      return this.stay.reviews.length;
     },
-  };
+  },
+};
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+</style>

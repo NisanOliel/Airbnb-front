@@ -14,15 +14,9 @@
           <div>
             <h2>{{ stay.roomType }} by {{ stay.host.fullname }}</h2>
             <ul class="flex include">
-              <li
-                ><span>{{ stay.capacity }} guests </span></li
-              >
-              <li class="order-disc"
-                ><span>{{ stay.bedrooms }} bedrooms</span></li
-              >
-              <li class="order-disc"
-                ><span>{{ stay.beds }} beds </span></li
-              >
+              <li><span>{{ stay.capacity }} guests </span></li>
+              <li class="order-disc"><span>{{ stay.bedrooms }} bedrooms</span></li>
+              <li class="order-disc"><span>{{ stay.beds }} beds </span></li>
             </ul>
           </div>
           <img class="host-image" :src="stay.host.thumbnailUrl" />
@@ -45,40 +39,41 @@
 </template>
 
 <script>
-  import { stayService } from '../services/stay.service.js';
-  import upInfoDetails from '../cmps/up-info-details.vue';
-  import galleryDetails from '../cmps/gallery-details.vue';
-  import featuresDetails from '../cmps/features-details.vue';
-  import amenitiesDetails from '../cmps/amenities-details.vue';
-  import reviewsDetails from '../cmps/reviews-details.vue';
-  import orderDetails from '../cmps/order-details.vue';
+import { stayService } from '../services/stay.service.js';
+import upInfoDetails from '../cmps/up-info-details.vue';
+import galleryDetails from '../cmps/gallery-details.vue';
+import featuresDetails from '../cmps/features-details.vue';
+import amenitiesDetails from '../cmps/amenities-details.vue';
+import reviewsDetails from '../cmps/reviews-details.vue';
+import orderDetails from '../cmps/order-details.vue';
 
-  export default {
-    name: 'stay-Details',
-    components: {
-      upInfoDetails,
-      galleryDetails,
-      featuresDetails,
-      amenitiesDetails,
-      reviewsDetails,
-      orderDetails,
-    },
+export default {
+  name: 'stay-Details',
+  components: {
+    upInfoDetails,
+    galleryDetails,
+    featuresDetails,
+    amenitiesDetails,
+    reviewsDetails,
+    orderDetails,
+  },
 
-    data() {
-      return {
-        stay: null,
-      };
-    },
-    created() {
-      const { stayId } = this.$route.params;
-      console.log('styid', stayId);
-      stayService.getById(stayId).then(stay => {
-        this.stay = stay;
-      });
-    },
-    methods: {},
-    computed: {},
-  };
+  data() {
+    return {
+      stay: null,
+    };
+  },
+  created() {
+    const { stayId } = this.$route.params;
+    console.log('styid', stayId);
+    stayService.getById(stayId).then(stay => {
+      this.stay = stay;
+    });
+  },
+  methods: {},
+  computed: {},
+};
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+</style>
