@@ -1,28 +1,31 @@
 <template>
-  <div class="flex">
-    {{ $filters.reviewsRateAvg(stay) }}
-    &nbsp&nbsp&nbsp sadas
-    <h4>{{ reviewsCount }} reviews</h4>&nbsp&nbsp&nbsp
-  </div>
+  <section class="reviews-container box-padding">
 
-  <div>
-    <ul class="clean-list reviews-list-container">
-      <li class="review-preview-container" v-for="reviews in stay.reviews" :key="reviews">
-        <div class="flex">
-          <img :src="reviews.by.imgUrl" class="reviews-image" />
+    <div class="flex">
+      {{ $filters.reviewsRateAvg(stay) }}
+      &nbsp&nbsp&nbsp sadas
+      <h4>{{ reviewsCount }} reviews</h4>&nbsp&nbsp&nbsp
+    </div>
 
-          <div class="reviews-by">
-            <h3>{{ reviews.by.fullname }}</h3>
-            <h3>{{ reviews.at }}</h3>
+    <div>
+      <ul class="clean-list reviews-list-container">
+        <li class="review-preview-container" v-for="reviews in stay.reviews" :key="reviews">
+          <div class="flex">
+            <img :src="reviews.by.imgUrl" class="host-image" />
+
+            <div class="reviews-by">
+              <h3>{{ reviews.by.fullname }}</h3>
+              <h3>{{ reviews.at }}</h3>
+            </div>
           </div>
-        </div>
 
-        <div>
-          <h4> {{ reviews.txt }} </h4>
-        </div>
-      </li>
-    </ul>
-  </div>
+          <div>
+            <h4> {{ reviews.txt }} </h4>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
 </template>
 
 <script>
