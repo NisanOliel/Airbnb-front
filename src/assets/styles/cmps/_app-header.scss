@@ -14,17 +14,21 @@ header {
     font-size: $regular-size;
     color: $clr1;
   }
+
   .explore-filter {
     flex: 1;
     max-width: 847px;
   }
+
   .header-labels {
     height: 80px;
     align-items: center;
     margin-top: 30px;
+
     ul {
       gap: 32px;
     }
+
     li.labels {
       text-align: center;
 
@@ -33,6 +37,7 @@ header {
         filter: contrast(calc(13 / 44));
         transition: filter 200ms ease, transform 200ms ease;
       }
+
       span {
         display: block;
         font-size: $small-size;
@@ -49,9 +54,22 @@ header {
     border-radius: $light-radios;
     margin: 0;
     padding: 7px 0;
+
     span.i3c9txn.dir.dir-ltr {
       display: flex;
       justify-content: space-evenly;
     }
   }
+}
+
+
+.form-filter {
+  background-color: aliceblue;
+  width: 55em;
+  height: 40em;
+  position: absolute;
+  z-index: 1;
+  top: 8vh;
+  left: 15vw;
+  overflow-y: auto;
 }
