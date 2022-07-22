@@ -9,49 +9,49 @@
       <p>The average nightly price is 100$</p>
       <div class="form-inputs">
         min price
-        <input type="number" min="0">
+        <input @input="filter" v-model="filterBy.price.minPrice" type="number" min="0">
         max price
-        <input type="number" max="1000">
+        <input @input="filter" v-model="filterBy.price.maxPrice" type="number" max="1000">
       </div>
     </div>
     <div class="form-rooms-and-beds">
       <h2>Rooms and beds</h2>
       <h3>Bedrooms</h3>
-      <button class="Any">Any</button>
-      <button class="rooms-and-beds-btn">1</button>
-      <button class="rooms-and-beds-btn">2</button>
-      <button class="rooms-and-beds-btn">3</button>
-      <button class="rooms-and-beds-btn">4</button>
-      <button class="rooms-and-beds-btn">5</button>
-      <button class="rooms-and-beds-btn">6</button>
-      <button class="rooms-and-beds-btn">7</button>
-      <button class="rooms-and-beds-btn">8+</button>
+      <button @click="filter(this.target.value)" class="Any" value="0">Any</button>
+      <button @click="filter(this)" class="rooms-and-beds-btn" value="1">1</button>
+      <button @click="filter" class="rooms-and-beds-btn">2</button>
+      <button @click="filter" class="rooms-and-beds-btn">3</button>
+      <button @click="filter" class="rooms-and-beds-btn">4</button>
+      <button @click="filter" class="rooms-and-beds-btn">5</button>
+      <button @click="filter" class="rooms-and-beds-btn">6</button>
+      <button @click="filter" class="rooms-and-beds-btn">7</button>
+      <button @click="filter" class="rooms-and-beds-btn">8+</button>
       <h3>Beds</h3>
-      <button class="Any">Any</button>
-      <button class="rooms-and-beds-btn">1</button>
-      <button class="rooms-and-beds-btn">2</button>
-      <button class="rooms-and-beds-btn">3</button>
-      <button class="rooms-and-beds-btn">4</button>
-      <button class="rooms-and-beds-btn">5</button>
-      <button class="rooms-and-beds-btn">6</button>
-      <button class="rooms-and-beds-btn">7</button>
-      <button class="rooms-and-beds-btn">8+</button>
+      <button @click="filter" class="Any">Any</button>
+      <button @click="filter" class="rooms-and-beds-btn">1</button>
+      <button @click="filter" class="rooms-and-beds-btn">2</button>
+      <button @click="filter" class="rooms-and-beds-btn">3</button>
+      <button @click="filter" class="rooms-and-beds-btn">4</button>
+      <button @click="filter" class="rooms-and-beds-btn">5</button>
+      <button @click="filter" class="rooms-and-beds-btn">6</button>
+      <button @click="filter" class="rooms-and-beds-btn">7</button>
+      <button @click="filter" class="rooms-and-beds-btn">8+</button>
     </div>
     <div class="form-property-type">
       <h2>Property type</h2>
-      <div class="house">
+      <div @click="filter" class="house">
         <button></button>
         <span>House</span>
       </div>
-      <div class="apartment">
+      <div @click="filter" class="apartment">
         <button></button>
         <span>Apartment</span>
       </div>
-      <div class="guesthouse">
+      <div @click="filter" class="guesthouse">
         <button></button>
         <span>Guesthouse</span>
       </div>
-      <div class="hotel">
+      <div @click="filter" class="hotel">
         <button></button>
         <span>Hotel</span>
       </div>
@@ -63,23 +63,23 @@
       <div class="Essentials">
         <h3>Essentials</h3>
         <div class="wifi">
-          <input name="wifi-checkbox" type="checkbox">
+          <input @input="filter" name="wifi-checkbox" type="checkbox">
           <span>Wifi</span>
         </div>
         <div class="washer">
-          <input name="washer-checkbox" type="checkbox">
+          <input @input="filter" name="washer-checkbox" type="checkbox">
           <span>Washer</span>
         </div>
         <div class="air-conditioning">
-          <input name="air-checkbox" type="checkbox">
+          <input @input="filter" name="air-checkbox" type="checkbox">
           <span>Air-conditioning</span>
         </div>
         <div class="kitchen">
-          <input name="kitchen-checkbox" type="checkbox">
+          <input @input="filter" name="kitchen-checkbox" type="checkbox">
           <span>Kitchen</span>
         </div>
         <div class="dryer">
-          <input name="dryer-checkbox" type="checkbox">
+          <input @input="filter" name="dryer-checkbox" type="checkbox">
           <span>Dryer</span>
         </div>
       </div>
@@ -89,84 +89,55 @@
         <h2>Host language</h2>
       </div>
       <div class="english">
-        <input name="english-checkbox" type="checkbox">
+        <input @input="filter" name="english-checkbox" type="checkbox">
         <span>English</span>
       </div>
       <div class="german">
-        <input name="english-checkbox" type="checkbox">
+        <input @input="filter" name="english-checkbox" type="checkbox">
         <span>German</span>
       </div>
       <div class="french">
-        <input name="english-checkbox" type="checkbox">
+        <input @input="filter" name="english-checkbox" type="checkbox">
         <span>French</span>
       </div>
       <div class="japanese">
-        <input name="english-checkbox" type="checkbox">
+        <input @input="filter" name="english-checkbox" type="checkbox">
         <span>Japanese</span>
       </div>
     </div>
     <div class="form-footer">
       <button>Clear all</button>
-      <a>show results</a>
+      <input type="submit" value="Save Information" />
     </div>
   </form>
 </template>
 <script>
-<<<<<<< HEAD
 export default {
-  name: 'standalone-filter',
+  name: 'standAlone-filter',
   data() {
     return {
-      labels: '',
       filterBy: {
-        label: null,
-      },
+        price: {
+          minPrice: 0,
+          maxPrice: 1000
+        },
+        bedRooms: null,
+        beds: null
+      }
+
     }
   },
   methods: {
     filter(value) {
-      this.filterBy.label = value;
-      this.$store.dispatch({ type: 'setFilterBy', filterBy: this.filterBy });
-      console.log(this.filterBy.label);
-    },
+      console.log(value);
+      this.$store.dispatch({ type: 'setFilterBy', filterBy: this.filterBy })
+    }
   },
-
-  created() {
-    this.labels = this.$store.getters.getLabels;
-  },
+  // created() {
+  //   this.labels = this.$store.getters.getLabels;
+  // },
   computed: {
-    getLabels() {
-      return this.labels;
-    },
-  },
+  }
 }
-=======
-  export default {
-    name: 'explore-labels',
-    data() {
-      return {
-        //     labels: '',
-        //     filterBy: {
-        //       label: null,
-        //     },
-      };
-    },
-    methods: {
-      //   filter(value) {
-      //     this.filterBy.label = value;
-      //     this.$store.dispatch({ type: 'setFilterBy', filterBy: this.filterBy });
-      //     console.log(this.filterBy.label);
-    },
-
-    created() {
-      //   this.labels = this.$store.getters.getLabels;
-    },
-    computed: {
-      //   getLabels() {
-      //     return this.labels;
-      //   },
-    },
-  };
->>>>>>> db2c5f0f524ad6847b6b8e956fa9196fbf5242df
-</script>
+</script> 
 

@@ -71,5 +71,6 @@ header {
   position: absolute;
   z-index: 1;
   top: 8vh;
-  left: 15vw
+  left: 15vw;
+  overflow-y: auto;
 }

@@ -102,8 +102,11 @@ export const stayStore = {
       console.log({ filterBy });
       stayService.query(filterBy).then(stays => {
         const filteredStays = stays.filter(stay => {
-          return stay.propertyType.includes(filterBy?.label)
+          return stay.price >= filterBy.price.minPrice &&
+            stay.price <= filterBy.price.maxPrice
+          // return stay.propertyType.includes(filterBy?.label)
         })
+        console.log(filteredStays)
         commit({ type: 'setStays', stays: filteredStays })
       })
     }
