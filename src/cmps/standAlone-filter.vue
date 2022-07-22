@@ -17,41 +17,41 @@
     <div class="form-rooms-and-beds">
       <h2>Rooms and beds</h2>
       <h3>Bedrooms</h3>
-      <button @click="filter(this.target.value)" class="Any" value="0">Any</button>
-      <button @click="filter(this)" class="rooms-and-beds-btn" value="1">1</button>
-      <button @click="filter" class="rooms-and-beds-btn">2</button>
-      <button @click="filter" class="rooms-and-beds-btn">3</button>
-      <button @click="filter" class="rooms-and-beds-btn">4</button>
-      <button @click="filter" class="rooms-and-beds-btn">5</button>
-      <button @click="filter" class="rooms-and-beds-btn">6</button>
-      <button @click="filter" class="rooms-and-beds-btn">7</button>
-      <button @click="filter" class="rooms-and-beds-btn">8+</button>
+      <button @click="filter(value)" class="Any" :value="0">Any</button>
+      <button @click="filter($event)" class="rooms-and-beds-btn" value="1">1</button>
+      <button @click="filter($event)" class="rooms-and-beds-btn">2</button>
+      <button @click="filter($event)" class="rooms-and-beds-btn">3</button>
+      <button @click="filter($event)" class="rooms-and-beds-btn">4</button>
+      <button @click="filter($event)" class="rooms-and-beds-btn">5</button>
+      <button @click="filter($event)" class="rooms-and-beds-btn">6</button>
+      <button @click="filter($event)" class="rooms-and-beds-btn">7</button>
+      <button @click="filter($event)" class="rooms-and-beds-btn">8+</button>
       <h3>Beds</h3>
-      <button @click="filter" class="Any">Any</button>
-      <button @click="filter" class="rooms-and-beds-btn">1</button>
-      <button @click="filter" class="rooms-and-beds-btn">2</button>
-      <button @click="filter" class="rooms-and-beds-btn">3</button>
-      <button @click="filter" class="rooms-and-beds-btn">4</button>
-      <button @click="filter" class="rooms-and-beds-btn">5</button>
-      <button @click="filter" class="rooms-and-beds-btn">6</button>
-      <button @click="filter" class="rooms-and-beds-btn">7</button>
-      <button @click="filter" class="rooms-and-beds-btn">8+</button>
+      <button @click="filter($event)" class="Any">Any</button>
+      <button @click="filter($event)" class="rooms-and-beds-btn">1</button>
+      <button @click="filter($event)" class="rooms-and-beds-btn">2</button>
+      <button @click="filter($event)" class="rooms-and-beds-btn">3</button>
+      <button @click="filter($event)" class="rooms-and-beds-btn">4</button>
+      <button @click="filter($event)" class="rooms-and-beds-btn">5</button>
+      <button @click="filter($event)" class="rooms-and-beds-btn">6</button>
+      <button @click="filter($event)" class="rooms-and-beds-btn">7</button>
+      <button @click="filter($event)" class="rooms-and-beds-btn">8+</button>
     </div>
     <div class="form-property-type">
       <h2>Property type</h2>
-      <div @click="filter" class="house">
+      <div @click="filter($event)" class="house">
         <button></button>
         <span>House</span>
       </div>
-      <div @click="filter" class="apartment">
+      <div @click="filter($event)" class="apartment">
         <button></button>
         <span>Apartment</span>
       </div>
-      <div @click="filter" class="guesthouse">
+      <div @click="filter($event)" class="guesthouse">
         <button></button>
         <span>Guesthouse</span>
       </div>
-      <div @click="filter" class="hotel">
+      <div @click="filter($event)" class="hotel">
         <button></button>
         <span>Hotel</span>
       </div>
@@ -124,7 +124,6 @@ export default {
         bedRooms: null,
         beds: null
       }
-
     }
   },
   methods: {
