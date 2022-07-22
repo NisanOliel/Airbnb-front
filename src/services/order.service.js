@@ -35,14 +35,14 @@ function remove(id) {
 }
 
 function save(order) {
-    if (order._id) {
-        return axios.put(API + order._id, order).then(res => res.data)
-    } else {
-        return axios.post(API, order).then(res => res.data)
-    }
+    // if (order._id) {
+    //     return axios.put(API + order._id, order).then(res => res.data)
+    // } else {
+    //     return axios.post(API, order).then(res => res.data)
+    // }
 
-    // const savedOrder = (order._id) ? storageService.put(KEY, order) : storageService.post(KEY, order)
-    // return savedOrder
+    const savedOrder = (order._id) ? storageService.put(KEY, order) : storageService.post(KEY, order)
+    return savedOrder
 }
 
 function getEmptyorder() {
@@ -58,7 +58,7 @@ function getEmptyorder() {
         'endDate': '',
         'guests': {
             'adults': '',
-            'kids': ''
+            'children': ''
         },
         'stay': {
             '_id': '',
