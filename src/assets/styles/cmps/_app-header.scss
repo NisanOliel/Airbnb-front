@@ -5,11 +5,11 @@ header {
 
   nav {
     height: 80px;
+    img {
+      height: 32px;
+    }
   }
 
-  img {
-    height: 32px;
-  }
   div {
     font-size: $regular-size;
     color: $clr1;

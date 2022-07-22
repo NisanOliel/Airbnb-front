@@ -1,7 +1,7 @@
 <template>
   <div class="preview" @click="goToDetails">
     <div class="like">
-      <span class="material-icons"> favorite </span>
+      <span class="material-icons favorite" :class="{ active: isLiked }" @click.stop="toggleWishList"> favorite </span>
     </div>
     <el-carousel trigger="click" :autoplay="false">
       <el-carousel-item v-for="image in images" :key="image">
@@ -9,14 +9,15 @@
       </el-carousel-item>
     </el-carousel>
 
-    <!-- <img v-for="image in stay.imgUrls" :src="`src/assets/Images/${image}`"> -->
-    <div
-      ><span>{{ stay.propertyType }} in {{ stay.address.city }}, {{ stay.address.country }}</span
-      ><span>{{ $filters.reviewsRateAvg(stay) }}</span></div
-    >
-    <div>{{ stay.name }} </div>
-    <div>{{ stay.beds }} beds </div>
-    <div>{{ stay.price }}$ / night </div>||
+    <div class="preview-info">
+      <div class="location-info flex justify-space-between">
+        <span>{{ stay.address.city }}, {{ stay.address.country }}</span>
+        <span class="stared">{{ $filters.reviewsRateAvg(stay) }}</span>
+      </div>
+      <div>{{ stay.name }} </div>
+      <div>{{ stay.beds }} beds </div>
+      <div>£{{ stay.price }} night </div>
+    </div>
   </div>
 </template>
 
@@ -34,11 +35,16 @@
           `src/assets/Images/${this.stay.imgUrls[2]}`,
           `src/assets/Images/${this.stay.imgUrls[3]}`,
         ],
+        isLiked: false,
       };
     },
     methods: {
       goToDetails() {
         this.$router.push('/stay/' + this.stay._id);
+      },
+      toggleWishList() {
+        this.isLiked = !this.isLiked;
+        console.log('heart is active', this.isLiked);
       },
     },
   };
