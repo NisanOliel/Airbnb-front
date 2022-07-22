@@ -14,6 +14,47 @@
         <input @input="filter" v-model="filterBy.price.maxPrice" type="number" max="1000">
       </div>
     </div>
+    <h3>bedRooms</h3>
+
+    <div>
+      <el-radio-group fill="red" text-color="yellow" @change="setFilter()" v-model="filterBy.bedRooms" size="large">
+        <el-radio-button size="small" label="1" />
+        <el-radio-button size="small" label="2" />
+        <el-radio-button label="3" />
+        <el-radio-button label="4" />
+        <el-radio-button label="5" />
+        <el-radio-button label="6" />
+        <el-radio-button label="7" />
+        <el-radio-button label="8" />
+      </el-radio-group>
+    </div>
+
+    <div>
+      <h3>beds</h3>
+
+      <el-radio-group @change="setFilter" v-model="filterBy.beds" size="large">
+        <el-radio-button label="1" />
+        <el-radio-button label="2" />
+        <el-radio-button label="3" />
+        <el-radio-button label="4" />
+        <el-radio-button label="5" />
+        <el-radio-button label="6" />
+        <el-radio-button label="7" />
+        <el-radio-button label="8" />
+      </el-radio-group>
+    </div>
+
+    <el-checkbox-group @change="setFilter" v-model="filterBy.hostlanguage">
+      <el-checkbox label="English" />
+      <el-checkbox label="German" />
+      <el-checkbox label="French" />
+      <el-checkbox label="Japanese" />
+    </el-checkbox-group>
+
+
+
+
+
     <div class="form-rooms-and-beds">
       <h2>Rooms and beds</h2>
       <h3>Bedrooms</h3>
@@ -26,6 +67,7 @@
       <button @click="filter($event)" class="rooms-and-beds-btn">6</button>
       <button @click="filter($event)" class="rooms-and-beds-btn">7</button>
       <button @click="filter($event)" class="rooms-and-beds-btn">8+</button>
+      <button @v-model="filterBy.beds" @click="setFilter()" :value="810">810+</button>
       <h3>Beds</h3>
       <button @click="filter($event)" class="Any">Any</button>
       <button @click="filter($event)" class="rooms-and-beds-btn">1</button>
@@ -127,8 +169,8 @@ export default {
     }
   },
   methods: {
-    filter(value) {
-      console.log(value);
+    setFilter() {
+      console.log(' this.filterBy:', this.filterBy)
       this.$store.dispatch({ type: 'setFilterBy', filterBy: this.filterBy })
     }
   },

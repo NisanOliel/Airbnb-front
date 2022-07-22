@@ -51,13 +51,7 @@
       </div>
     </div>
 
-<<<<<<< HEAD
-=======
-    <div class="cell"></div>
-    <div class="cell"></div>
->>>>>>> 57826e6f97c74e2fff1b39a99380afae998b9afe
     <div class="btn-container">
-      <div class="cell"></div>
       <div class="cell"></div>
       <div class="cell"></div>
       <div class="cell"></div>
@@ -220,3 +214,6 @@
           },
           dates: {},
         },
+      }
+    }
+  }
