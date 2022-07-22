@@ -221,13 +221,12 @@
 
     </div>
 
-    <div class="pricing" v-if="trip.dates">
+    <div class="pricing" v-if="dateCheck">
       <h4>You won't be charged yet</h4>
       <p>
         <span>Total</span><span> ${{ totalPrice }}</span>
       </p>
     </div>
-
   </section>
 </template>
 
@@ -253,6 +252,9 @@ export default {
   computed: {
     reviewsCount() {
       return this.stay.reviews.length;
+    },
+    dateCheck() {
+      return Object.keys(this.trip.dates).length
     },
 
     guestsCount() {
