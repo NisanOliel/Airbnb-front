@@ -11,7 +11,7 @@
 
       <div class="header-labels flex justify-space-between align-center">
         <explore-labels />
-        <div class="stand-alone-filter">
+        <div class="standalone-filter">
           <button @click="isShow = !isShow" style="--filter-button_border: 1px solid var(--j-qkgmf)" type="button"
             class="v1tureqs dir dir-ltr"><span class="i3c9txn dir dir-ltr"><svg viewBox="0 0 16 16"
                 xmlns="http://www.w3.org/2000/svg" style="display: block; height: 14px; width: 14px; fill: currentColor"
@@ -33,7 +33,7 @@
 <script>
 import exploreFilter from './explore-filter.vue';
 import exploreLabels from './explore-labels.vue';
-import standAloneFilter from './standAlone-filter.vue';
+import standAloneFilter from './standAlone-filter.vue'
 
 export default {
   data() {
