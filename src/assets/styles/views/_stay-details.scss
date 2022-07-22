@@ -3,11 +3,20 @@
   width: 100%;
   margin: auto;
 
+  .host-image {
+    height: 56px;
+    width: 56px;
+    border-radius: 50%;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+
   section.up-info.flex {
     flex: 1;
     align-items: center;
     gap: 10px;
   }
+
   .main-title {
     display: flex;
     flex-direction: column;
@@ -17,6 +26,69 @@
   .content-wrapper {
     section.left-side {
       flex-basis: 62%;
+
+      .box-padding {
+        padding-top: 48px;
+        padding-bottom: 24px;
+      }
+
+      ul {
+        gap: 25px;
+
+      }
+
+      .description {
+        padding-top: 32px;
+        padding-bottom: 48px;
+
+        h2 {
+          margin-bottom: 5px;
+
+        }
+
+        p {
+          line-height: 24px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 6;
+          -webkit-box-orient: vertical;
+        }
+      }
+    }
+  }
+
+  .features-details {
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    img {
+      height: 20px;
+    }
+
+    h3 {
+      margin-bottom: 4px;
+    }
+
+    .feature-self {
+      margin-bottom: 24px
+    }
+  }
+
+  .amenities-details {
+    h2 {
+      margin: 0;
+      padding-bottom: 24px;
+
+    }
+  }
+
+  .reviews-container {
+    padding-block: 48px;
+
+    h2 {
+      padding-bottom: 32px;
+
     }
   }
 }
@@ -76,6 +148,24 @@
 
 .review-preview-container {
   margin-right: 100px;
+
+  .header-review {
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 10px;
+
+    h3 {
+      margin: 0;
+    }
+
+    h5 {
+      margin: 0;
+      font-size: .875rem;
+      font-weight: 400;
+      line-height: 1.25rem;
+      color: #717171;
+    }
+  }
 }
 
 .reviews-image {
@@ -93,13 +183,7 @@
   width: 600px;
 }
 
-// .el-range-editor--large.el-input__wrapper {
-//   border: 1px solid #b0b0b0;
-//   border-bottom-color: hsla(0, 0%, 100%, 0);
-//   border-top-right-radius: 13px;
-//   padding: 10px 12px;
 
-// }
 .order-container {
   border: 1px solid #00000030;
   border-radius: 13px;
@@ -181,11 +265,11 @@
     grid-template: repeat(10, 1fr) / repeat(10, 1fr);
 
     @for $i from 0 to 10 {
-      .cell:nth-child(10n + #{$i + 1}):hover ~ .content {
+      .cell:nth-child(10n + #{$i + 1}):hover~.content {
         --positionX: #{$i};
       }
 
-      .cell:nth-child(n + #{10 * $i + 1}):nth-child(-n + #{10 * ($i + 1)}):hover ~ .content {
+      .cell:nth-child(n + #{10 * $i + 1}):nth-child(-n + #{10 * ($i + 1)}):hover~.content {
         --positionY: #{$i};
       }
     }
@@ -212,15 +296,13 @@
       height: 100%;
       border-radius: 8px;
 
-      background-image: radial-gradient(
-        circle at calc((0 + var(--positionX, 0)) * 10%) calc((0 + var(--positionY, 0)) * 5%),
-        rgb(241, 37, 75) 0%,
-        rgb(230, 30, 77) 27.5%,
-        rgb(227, 28, 95) 40%,
-        rgb(215, 4, 102) 57.5%,
-        rgb(189, 30, 89) 75%,
-        rgb(189, 30, 89) 100%
-      );
+      background-image: radial-gradient(circle at calc((0 + var(--positionX, 0)) * 10%) calc((0 + var(--positionY, 0)) * 5%),
+          rgb(241, 37, 75) 0%,
+          rgb(230, 30, 77) 27.5%,
+          rgb(227, 28, 95) 40%,
+          rgb(215, 4, 102) 57.5%,
+          rgb(189, 30, 89) 75%,
+          rgb(189, 30, 89) 100%);
     }
 
     .action-btn {
