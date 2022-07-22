@@ -4,7 +4,7 @@
       <p
         ><span class="cost">${{ stay.price }}</span> / night</p
       >
-      <p>
+      <p class="stared">
         {{ $filters.reviewsRateAvg(stay) }} <span class="reviews"> ({{ reviewsCount }})</span></p
       >
     </div>

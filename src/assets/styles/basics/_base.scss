@@ -13,7 +13,8 @@ body {
 }
 
 h1,
-h2 {
+h2,
+h3 {
   color: $clr1;
   padding: 0;
   margin: 0;
@@ -29,6 +30,7 @@ h2 {
 p {
   margin: 0;
   padding: 0;
+  line-height: em(24px);
 }
 
 a,
@@ -49,4 +51,14 @@ ul {
 
 li {
   text-align: inherit;
+}
+
+.stared::before {
+  content: '\e838';
+  font-family: 'Material Icons';
+}
+.stared {
+  display: flex;
+  align-items: center;
+  gap: 2px;
 }
