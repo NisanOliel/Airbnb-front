@@ -58,6 +58,7 @@ export default {
     orderDetails,
   },
 
+<<<<<<< HEAD
   data() {
     return {
       stay: null,
@@ -72,6 +73,23 @@ export default {
   methods: {},
   computed: {},
 };
+=======
+    data() {
+      return {
+        stay: null,
+      };
+    },
+    created() {
+      const { stayId } = this.$route.params;
+      console.log('styid', stayId);
+      stayService.getById(stayId).then(stay => {
+        this.stay = stay;
+      });
+    },
+    methods: {},
+    computed: {},
+  };
+>>>>>>> b3f8926566ecd9578545675896e71271bd72a60f
 </script>
 
 <style lang="scss" scoped>

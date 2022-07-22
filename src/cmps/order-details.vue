@@ -1,9 +1,18 @@
 <template>
   <section class="order-container sticky">
     <div class="order-form-header">
+<<<<<<< HEAD
       <p><span class="cost">${{ stay.price }}</span> / night</p>
       <p>
         {{ $filters.reviewsRateAvg(stay) }} <span class="reviews"> ({{ reviewsCount }})</span></p>
+=======
+      <p
+        ><span class="cost">${{ stay.price }}</span> / night</p
+      >
+      <p>
+        {{ $filters.reviewsRateAvg(stay) }} <span class="reviews"> ({{ reviewsCount }})</span></p
+      >
+>>>>>>> b3f8926566ecd9578545675896e71271bd72a60f
     </div>
 
     <div class="order-data">
@@ -174,56 +183,56 @@
 </template>
 
 <script>
-// import { ref } from 'vue'
+  // import { ref } from 'vue'
 
-export default {
-  name: ' order-details',
-  props: { stay: { type: Object } },
-  data() {
-    return {
-      trip: {
-        guests: {
-          adults: 0,
-          children: 0,
+  export default {
+    name: ' order-details',
+    props: { stay: { type: Object } },
+    data() {
+      return {
+        trip: {
+          guests: {
+            adults: 0,
+            children: 0,
+          },
+          dates: {},
         },
-        dates: {},
+      };
+    },
+    computed: {
+      reviewsCount() {
+        return this.stay.reviews.length;
       },
-    };
-  },
-  computed: {
-    reviewsCount() {
-      return this.stay.reviews.length;
+      guestsCount() {
+        const guestsCount = this.trip.guests.children + this.trip.guests.adults;
+        if (guestsCount >= 1) return guestsCount + ' guests';
+        else return 'Add guests';
+      },
+      checkIn() {
+        return this.trip.dates[0];
+      },
+      checkOut() {
+        return this.trip.dates[1];
+      },
+      totalPrice() {
+        var size = Object.keys(this.trip.dates).length;
+        if (size > 1) {
+          const timeDiff = (this.trip.dates[1].getTime() - this.trip.dates[0].getTime()) / (1000 * 3600 * 24);
+          return Number(parseInt(this.stay.price * timeDiff)).toLocaleString();
+        }
+      },
     },
-    guestsCount() {
-      const guestsCount = this.trip.guests.children + this.trip.guests.adults;
-      if (guestsCount >= 1) return guestsCount + ' guests';
-      else return 'Add guests';
+    methods: {
+      updateGuests(type, number) {
+        console.log('number:', number);
+        console.log('type:', type);
+        if (this.trip.guests[type] === 0 && number === -1) return;
+        this.trip.guests[type] += number;
+      },
+      updateChildren(number) {
+        if (this.trip.guests.children === 0 && number === -1) return;
+        this.trip.guests.children += number;
+      },
     },
-    checkIn() {
-      return this.trip.dates[0];
-    },
-    checkOut() {
-      return this.trip.dates[1];
-    },
-    totalPrice() {
-      var size = Object.keys(this.trip.dates).length;
-      if (size > 1) {
-        const timeDiff = (this.trip.dates[1].getTime() - this.trip.dates[0].getTime()) / (1000 * 3600 * 24);
-        return Number(parseInt(this.stay.price * timeDiff)).toLocaleString();
-      }
-    },
-  },
-  methods: {
-    updateGuests(type, number) {
-      console.log('number:', number);
-      console.log('type:', type);
-      if (this.trip.guests[type] === 0 && number === -1) return;
-      this.trip.guests[type] += number;
-    },
-    updateChildren(number) {
-      if (this.trip.guests.children === 0 && number === -1) return;
-      this.trip.guests.children += number;
-    },
-  },
-};
+  };
 </script>

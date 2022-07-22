@@ -1,14 +1,9 @@
 <template>
   <section class="reviews-container box-padding">
     <div class="flex">
-<<<<<<< HEAD
-      <h2 class="stared">
+      <h2>
         {{ $filters.reviewsRateAvg(stay) }}
-        <span>·</span>
-=======
-      <h2> {{ $filters.reviewsRateAvg(stay) }}
         <span>··</span>
->>>>>>> db2c5f0f524ad6847b6b8e956fa9196fbf5242df
         {{ reviewsCount }} reviews
       </h2>
     </div>
