@@ -51,6 +51,11 @@
       </div>
     </div>
 
+<<<<<<< HEAD
+=======
+    <div class="cell"></div>
+    <div class="cell"></div>
+>>>>>>> 57826e6f97c74e2fff1b39a99380afae998b9afe
     <div class="btn-container">
       <div class="cell"></div>
       <div class="cell"></div>
@@ -190,7 +195,7 @@
       </div>
     </div>
 
-    <div class="pricing" v-if="trip.dates">
+    <div class="pricing" v-if="dateCheck">
       <h4>You won't be charged yet</h4>
       <p>
         <span>Total</span><span> ${{ totalPrice }}</span>
@@ -215,43 +220,3 @@
           },
           dates: {},
         },
-      };
-    },
-    computed: {
-      reviewsCount() {
-        return this.stay.reviews.length;
-      },
-
-      guestsCount() {
-        const guestsCount = this.trip.guests.children + this.trip.guests.adults;
-        if (guestsCount >= 1) return guestsCount + ' guests';
-        else return 'Add guests';
-      },
-      checkIn() {
-        return this.trip.dates[0];
-      },
-      checkOut() {
-        return this.trip.dates[1];
-      },
-      totalPrice() {
-        let size = Object.keys(this.trip.dates).length;
-        if (size > 1) {
-          const time = JSON.parse(JSON.stringify(this.trip.dates));
-          const { start, end } = time;
-
-          const timeDiff = (new Date(end).getTime() - new Date(start).getTime()) / (1000 * 3600 * 24);
-          return Number(parseInt(this.stay.price * timeDiff)).toLocaleString();
-        }
-      },
-    },
-    methods: {
-      updateGuests(type, number) {
-        const guestsCount = this.trip.guests.children + this.trip.guests.adults;
-        if (this.trip.guests[type] === 0 && number === -1) return;
-        if (this.stay.capacity === guestsCount && number == 1) return ElMessage.error('You over the guests capacity');
-
-        this.trip.guests[type] += number;
-      },
-    },
-  };
-</script>
