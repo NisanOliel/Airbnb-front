@@ -42,7 +42,6 @@
     </div>
     <reviews-details :stay="stay" />
   </section>
-  <router-link to="/">Back</router-link>
 </template>
 
 <script>
@@ -65,6 +64,7 @@
       orderDetails,
     },
 
+<<<<<<< HEAD
     data() {
       return {
         stay: null,
@@ -80,6 +80,22 @@
     methods: {},
     computed: {},
   };
+=======
+  data() {
+    return {
+      stay: null,
+    };
+  },
+  created() {
+    const { stayId } = this.$route.params;
+    stayService.getById(stayId).then(stay => {
+      this.stay = stay;
+    });
+  },
+  methods: {},
+  computed: {},
+};
+>>>>>>> db2c5f0f524ad6847b6b8e956fa9196fbf5242df
 </script>
 
 <style lang="scss" scoped></style>
