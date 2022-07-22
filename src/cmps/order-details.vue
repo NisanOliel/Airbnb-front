@@ -1,18 +1,9 @@
 <template>
   <section class="order-container sticky">
     <div class="order-form-header">
-<<<<<<< HEAD
-      <p
-        ><span class="cost">${{ stay.price }}</span> / night</p
-      >
-      <p class="stared">
-        {{ $filters.reviewsRateAvg(stay) }} <span class="reviews"> ({{ reviewsCount }})</span></p
-      >
-=======
       <p><span class="cost">${{ stay.price }}</span> / night</p>
       <p>
         {{ $filters.reviewsRateAvg(stay) }} <span class="reviews"> ({{ reviewsCount }})</span></p>
->>>>>>> db2c5f0f524ad6847b6b8e956fa9196fbf5242df
     </div>
 
     <div class="order-data">
@@ -143,7 +134,7 @@
     <div class="flex column">
       <div class="guests-container flex justify-space-between align-center">
         <div class="flex column">
-          <h5>Adultss</h5>
+          <h5>Adults</h5>
           <span>Ages 13+</span>
         </div>
         <div class="guests-btns flex align-center justify-space-between">
