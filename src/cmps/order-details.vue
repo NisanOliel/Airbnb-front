@@ -284,6 +284,7 @@ export default {
       }
 
       this.$store.dispatch({ type: "saveOrder", order, });
+      ElMessage.success('Order Added!')
     }
   },
 };
