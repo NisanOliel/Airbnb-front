@@ -2,7 +2,7 @@
   <section class="order-container sticky">
     <div class="order-form-header">
       <p><span class="cost">${{ stay.price }}</span> / night</p>
-      <p>
+      <p class="stared">
         {{ $filters.reviewsRateAvg(stay) }} <span class="reviews"> ({{ reviewsCount }})</span></p>
     </div>
 
@@ -46,37 +46,6 @@
         <input disabled :placeholder="guestsCount" />
       </div>
     </div>
-
-
-
-
-    <!-- <div class="order-data">
-      <div class="date-picker">
-        <div class="date-input">
-          <label>check in</label>
-          <input :placeholder="checkIn" />
-        </div>
-        <div class="date-input">
-          <label>check out</label>
-          <input :placeholder="checkOut" />
-        </div>
-      </div>
-      <div @click="isShow = !isShow" class="guest-input">
-        <label>guests
-          <div class="expand-order">
-            <span class="material-icons-outlined" :class="{ flip: !isShow }">
-              expand_less
-            </span>
-          </div>
-        </label>
-        <input disabled :placeholder="guestsCount" />
-      </div>
-    </div> -->
-
-
-
-
-
 
     <div class="cell"></div>
     <div class="cell"></div>
