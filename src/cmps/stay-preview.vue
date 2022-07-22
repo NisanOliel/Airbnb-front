@@ -1,5 +1,8 @@
 <template>
   <div class="preview" @click="goToDetails">
+    <div class="like">
+      <span class="material-icons"> favorite </span>
+    </div>
     <el-carousel trigger="click" :autoplay="false">
       <el-carousel-item v-for="image in images" :key="image">
         <img :src="image" />

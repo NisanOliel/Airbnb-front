@@ -25,5 +25,6 @@ app.config.globalProperties.$filters = {
 app.use(router);
 app.use(store);
 app.use(ElementPlus);
+// app.use(materialIcons);
 
 app.mount('#app');

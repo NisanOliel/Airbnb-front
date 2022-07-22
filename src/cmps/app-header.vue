@@ -67,7 +67,7 @@
         let params = this.$route.params;
         let isEmpty = Object.keys(params).length === 0;
         return isEmpty;
-        console.log('heder loc', isEmpty);
+
         // return (this.location = isEmpty);
       },
     },
