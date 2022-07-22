@@ -220,7 +220,6 @@
       </div>
 
     </div>
-    <pre>{{ trip.dates }}</pre>
 
     <div class="pricing" v-if="trip.dates">
       <h4>You won't be charged yet</h4>
