@@ -18,6 +18,7 @@ header {
   .explore-filter {
     flex: 1;
     max-width: 847px;
+    position: relative;
   }
 
   .header-labels {
@@ -148,5 +149,36 @@ header {
     /* padding: 20px; */
     padding: 14px 32px;
     box-sizing: border-box;
+  }
+  .destination {
+  }
+  .dropdown-card {
+    position: absolute;
+    max-width: 600px;
+    width: 100%;
+    border-radius: 32px;
+    box-shadow: 0 0 0 1px rgb(0 0 0 / 4%), 0 8px 16px rgb(0 0 0 / 15%);
+    margin-top: 12px;
+    padding: 16px 32px;
+    z-index: 5;
+    background: white;
+  }
+
+  .guests-modal {
+    right: 0;
+    max-width: 406px;
+  }
+
+  .row-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-bottom: 1px solid rgb(235, 235, 235);
+    padding: 20px 0px;
+    .lft-crd {
+      display: flex;
+      flex-direction: column;
+    }
   }
 }

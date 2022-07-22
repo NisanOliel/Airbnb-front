@@ -12,11 +12,12 @@
       <el-form :model="form" @submit.prevent="formSubmit">
         <div class="filter-option">
           <label for="where">Where</label>
-          <input name="where" @focus="showInitModal($event)" v-model="form.where" placeholder="Search destination" />
+          <!-- <input name="where" @focus="showInitModal($event)" v-model="form.where" placeholder="Search destination" /> -->
+          <input name="where" v-model="form.where" placeholder="Search destination" />
 
-          <div v-if="showModal">dflkgjldfkjgdlsfgjdfslkgjdfsljl</div>
+          <!-- <div v-if="showModal">dflkgjldfkjgdlsfgjdfslkgjdfsljl</div> -->
         </div>
-        <div @click="activeDateModal" class="filter-option check">
+        <div class="filter-option check">
           <div class="labels-wrap">
             <v-date-picker :columns="2" v-model="form.date" is-range>
               <template v-slot="{ inputValue, inputEvents }">
@@ -47,7 +48,7 @@
           </div>
         </div>
         <div class="filter-option guest-dropdown">
-          <div class="add-guest-wrapper">
+          <div @click.stop="dropDownMenu" class="add-guest-wrapper">
             <label for="add-guest">Who</label>
             <input disabled type="text" placeholder="Add guests" />
           </div>
@@ -164,26 +165,89 @@
       </el-form>
     </div>
   </div>
+
+  <div v-show="showModal" class="guests-modal dropdown-card order-container">
+    <div class="row-card">
+      <div class="lft-crd">
+        <span class="title-sm"> Adults</span>
+        <span class="txt-sm">Ages 13 or above</span>
+      </div>
+      <div class="rit-crd guests-btns">
+        <button @click.stop="updateGuests('adults', -1)">
+          <span> - </span>
+        </button>
+        <span>{{ form.guests.adults }}</span>
+        <button @click.stop="updateGuests('adults', 1)">
+          <span> + </span>
+        </button>
+      </div>
+    </div>
+    <div class="row-card">
+      <div class="lft-crd">
+        <span class="title-sm"> Adults</span>
+        <span class="txt-sm">Ages 13 or above</span>
+      </div>
+      <div class="rit-crd guests-btns">
+        <button @click.stop="updateGuests('adults', -1)">
+          <span> - </span>
+        </button>
+        <span>{{ form.guests.adults }}</span>
+        <button @click.stop="updateGuests('adults', 1)">
+          <span> + </span>
+        </button>
+      </div>
+    </div>
+    <div class="row-card">
+      <div class="lft-crd">
+        <span class="title-sm"> Adults</span>
+        <span class="txt-sm">Ages 13 or above</span>
+      </div>
+      <div class="rit-crd guests-btns">
+        <button @click.stop="updateGuests('adults', -1)">
+          <span> - </span>
+        </button>
+        <span>{{ form.guests.adults }}</span>
+        <button @click.stop="updateGuests('adults', 1)">
+          <span> + </span>
+        </button>
+      </div>
+    </div>
+    <div class="row-card">
+      <div class="lft-crd">
+        <span class="title-sm"> Adults</span>
+        <span class="txt-sm">Ages 13 or above</span>
+      </div>
+      <div class="rit-crd guests-btns">
+        <button @click.stop="updateGuests('adults', -1)">
+          <span> - </span>
+        </button>
+        <span>{{ form.guests.adults }}</span>
+        <button @click.stop="updateGuests('adults', 1)">
+          <span> + </span>
+        </button>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
-  import { ref } from 'vue';
+  // import { ref } from 'vue';
   export default {
     name: 'explore-filter',
     data() {
       return {
         form: {
           where: '',
-          date: '',
-          start: 'Add address',
-          end: 'Add address',
+          date: [],
+          guests: {
+            adults: 0,
+            children: 0,
+            infants: 0,
+            pets: 0,
+          },
         },
-        msg: 'Hello form filter',
         filterPreview: true,
-        addressMsg: 'Add address',
         showModal: false,
-        defaultTime: ref([new Date(2000, 1, 1, 0, 0, 0), new Date(2000, 2, 1, 23, 59, 59)]),
-        lab: 'test',
       };
     },
     methods: {
@@ -200,8 +264,13 @@
         this.showModal = !this.showModal;
         console.log(this.showModal);
       },
-      activeDateModal() {
-        this.$refs.datePicker.focus();
+      dropDownMenu() {
+        this.showModal = !this.showModal;
+        console.log('dropdown');
+        console.log(this.showModal);
+      },
+      updateGuests(type, number) {
+        this.form.guests[type] += number;
       },
     },
     computed: {
