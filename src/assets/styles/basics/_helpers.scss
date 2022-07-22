@@ -46,12 +46,20 @@
   text-align: center;
 }
 
+.gray-box {
+  box-shadow: inset 0 -0.5px 0 0 #ddd;
+}
+
+.order-disc {
+  list-style-type: disc;
+}
+
 // flex helpers
 
 .flex {
   display: flex;
 
-  > *.full {
+  >*.full {
     flex: 1;
   }
 

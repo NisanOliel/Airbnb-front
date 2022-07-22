@@ -1,13 +1,13 @@
 <template>
-    <section>
+    <section class=" box-padding amenities-details  ">
         <h2>What this place offers</h2>
-        <ul>
+        <ul class="flex">
             <li v-for="(amenity) in stay.amenities" :key="amenity">
                 <div class="flex">
                     <img class="amenity-icons" :src=amenity.src>
-                    <h4>
+                    <span>
                         {{ amenity.name }}
-                    </h4>
+                    </span>
                 </div>
             </li>
         </ul>

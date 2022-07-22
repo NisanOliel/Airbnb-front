@@ -1,0 +1,18 @@
+.preview {
+  position: relative;
+  span.material-icons-outlined {
+    position: absolute;
+    z-index: 1;
+    right: 0;
+  }
+  .like {
+    color: rgb(49 16 16 / 41%);
+    -webkit-text-stroke: #fff;
+    -webkit-text-stroke-width: 1px;
+    position: absolute;
+    z-index: 1;
+    right: 18px;
+    top: 16px;
+    /* font-size: 10px; */
+  }
+}

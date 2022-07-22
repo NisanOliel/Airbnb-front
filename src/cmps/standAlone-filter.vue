@@ -112,6 +112,7 @@
   </form>
 </template>
 <script>
+<<<<<<< HEAD
 export default {
   name: 'standalone-filter',
   data() {
@@ -139,5 +140,33 @@ export default {
     },
   },
 }
+=======
+  export default {
+    name: 'explore-labels',
+    data() {
+      return {
+        //     labels: '',
+        //     filterBy: {
+        //       label: null,
+        //     },
+      };
+    },
+    methods: {
+      //   filter(value) {
+      //     this.filterBy.label = value;
+      //     this.$store.dispatch({ type: 'setFilterBy', filterBy: this.filterBy });
+      //     console.log(this.filterBy.label);
+    },
+
+    created() {
+      //   this.labels = this.$store.getters.getLabels;
+    },
+    computed: {
+      //   getLabels() {
+      //     return this.labels;
+      //   },
+    },
+  };
+>>>>>>> db2c5f0f524ad6847b6b8e956fa9196fbf5242df
 </script>
 
