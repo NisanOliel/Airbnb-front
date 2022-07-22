@@ -1,7 +1,7 @@
 <template>
   <carousel :transition="330" :items-to-show="3.5" :wrap-around="true" snapAlign="start">
-    <slide v-for="label in labels" :key="label">
-      <div class="labels" @cdivck="filter(label.propertyType)">
+    <slide v-for="label in labels" :key="label" @click="filter(label.propertyType)">
+      <div class="labels">
         <img :src="label.src" />
         <span>{{ label.propertyType }}</span>
       </div>
@@ -34,7 +34,7 @@
       filter(value) {
         this.filterBy.label = value;
         this.$store.dispatch({ type: 'setFilterBy', filterBy: this.filterBy });
-        console.log(this.filterBy.label);
+        console.log('click', this.filterBy.label);
       },
     },
 
