@@ -72,6 +72,7 @@
     },
     created() {
       const { stayId } = this.$route.params;
+      console.log('styid', stayId);
       stayService.getById(stayId).then(stay => {
         this.stay = stay;
       });
