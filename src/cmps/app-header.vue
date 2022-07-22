@@ -31,11 +31,8 @@
             ></button
           >
         </div>
-      </div>
-      <div class="header-labels">
-        <div v-if="isShow">
-          <standAlone-filter />
-        </div>
+
+        <standAlone-filter v-if="isShow" />
       </div>
     </div>
   </header>

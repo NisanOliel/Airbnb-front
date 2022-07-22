@@ -1,6 +1,6 @@
 <template>
   <section class="up-info flex">
-    <span> {{ $filters.reviewsRateAvg(stay) }}</span>
+    <span class="stared"> {{ $filters.reviewsRateAvg(stay) }}</span>
     <span>
       <a class="under-line">{{ reviewsCount }} reviews</a></span
     >

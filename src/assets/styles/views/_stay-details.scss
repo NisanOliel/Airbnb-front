@@ -32,18 +32,25 @@
         padding-bottom: 24px;
       }
 
-      ul {
-        gap: 25px;
-
+      // ul {
+      //   gap: 25px;
+      // }
+      .amenities {
+        max-width: fit-content;
+        width: 100%;
+        li {
+          flex-basis: 40%;
+        }
       }
-
+      .include {
+        gap: 30px;
+      }
       .description {
         padding-top: 32px;
         padding-bottom: 48px;
 
         h2 {
           margin-bottom: 5px;
-
         }
 
         p {
@@ -67,11 +74,11 @@
     }
 
     h3 {
-      margin-bottom: 4px;
+      // margin-bottom: 4px;
     }
 
     .feature-self {
-      margin-bottom: 24px
+      margin-bottom: 24px;
     }
   }
 
@@ -79,7 +86,6 @@
     h2 {
       margin: 0;
       padding-bottom: 24px;
-
     }
   }
 
@@ -88,7 +94,6 @@
 
     h2 {
       padding-bottom: 32px;
-
     }
   }
 }
@@ -160,7 +165,7 @@
 
     h5 {
       margin: 0;
-      font-size: .875rem;
+      font-size: 0.875rem;
       font-weight: 400;
       line-height: 1.25rem;
       color: #717171;
@@ -182,7 +187,6 @@
   flex-direction: column;
   width: 600px;
 }
-
 
 .order-container {
   border: 1px solid #00000030;
@@ -265,11 +269,11 @@
     grid-template: repeat(10, 1fr) / repeat(10, 1fr);
 
     @for $i from 0 to 10 {
-      .cell:nth-child(10n + #{$i + 1}):hover~.content {
+      .cell:nth-child(10n + #{$i + 1}):hover ~ .content {
         --positionX: #{$i};
       }
 
-      .cell:nth-child(n + #{10 * $i + 1}):nth-child(-n + #{10 * ($i + 1)}):hover~.content {
+      .cell:nth-child(n + #{10 * $i + 1}):nth-child(-n + #{10 * ($i + 1)}):hover ~ .content {
         --positionY: #{$i};
       }
     }
@@ -296,13 +300,15 @@
       height: 100%;
       border-radius: 8px;
 
-      background-image: radial-gradient(circle at calc((0 + var(--positionX, 0)) * 10%) calc((0 + var(--positionY, 0)) * 5%),
-          rgb(241, 37, 75) 0%,
-          rgb(230, 30, 77) 27.5%,
-          rgb(227, 28, 95) 40%,
-          rgb(215, 4, 102) 57.5%,
-          rgb(189, 30, 89) 75%,
-          rgb(189, 30, 89) 100%);
+      background-image: radial-gradient(
+        circle at calc((0 + var(--positionX, 0)) * 10%) calc((0 + var(--positionY, 0)) * 5%),
+        rgb(241, 37, 75) 0%,
+        rgb(230, 30, 77) 27.5%,
+        rgb(227, 28, 95) 40%,
+        rgb(215, 4, 102) 57.5%,
+        rgb(189, 30, 89) 75%,
+        rgb(189, 30, 89) 100%
+      );
     }
 
     .action-btn {
