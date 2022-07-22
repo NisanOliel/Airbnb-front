@@ -59,7 +59,6 @@ export default {
     orderDetails,
   },
 
-<<<<<<< HEAD
   data() {
     return {
       stay: null,
@@ -67,6 +66,7 @@ export default {
   },
   created() {
     const { stayId } = this.$route.params;
+    console.log('styid', stayId);
     stayService.getById(stayId).then(stay => {
       this.stay = stay;
     });
@@ -74,23 +74,6 @@ export default {
   methods: {},
   computed: {},
 };
-=======
-    data() {
-      return {
-        stay: null,
-      };
-    },
-    created() {
-      const { stayId } = this.$route.params;
-      console.log('styid', stayId);
-      stayService.getById(stayId).then(stay => {
-        this.stay = stay;
-      });
-    },
-    methods: {},
-    computed: {},
-  };
->>>>>>> f5e6ee258f6cbe8986db20cc96b18eb565321161
 </script>
 
 <style lang="scss" scoped>
