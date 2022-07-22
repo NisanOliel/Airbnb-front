@@ -18,7 +18,7 @@ app.config.globalProperties.$filters = {
       sum += review.rate;
     });
     sum = sum / stay.reviews.length;
-    return `⭐️ ${sum.toFixed(1)}`;
+    return `${sum.toFixed(1)} `;
   },
 };
 

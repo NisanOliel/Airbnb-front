@@ -1,9 +1,8 @@
 <template>
-  <div class="gray-box features-details">
-
-    <section class="flex feature-self ">
+  <div class="gray-box features-details flex column gap-column">
+    <section class="flex align-items gap-row feature">
       <div>
-        <img src="../assets/icons/check-in.svg">
+        <img src="../assets/icons/check-in.svg" />
       </div>
       <div>
         <h3>Self check-in</h3>
@@ -11,9 +10,9 @@
       </div>
     </section>
 
-    <section class="flex feature-self">
+    <section class="flex gap-row feature">
       <div>
-        <img src="../assets/icons/location.svg">
+        <img src="../assets/icons/location.svg" />
       </div>
       <div>
         <h3>Great location</h3>
@@ -21,9 +20,9 @@
       </div>
     </section>
 
-    <section class="flex">
+    <section class="flex gap-row feature">
       <div>
-        <img src="../assets/icons/cancellation.svg">
+        <img src="../assets/icons/cancellation.svg" />
       </div>
       <div>
         <h3>Free cancellation for 48 hours.</h3>
@@ -33,10 +32,9 @@
 </template>
 
 <script>
-export default {
-  name: "features-details"
-}
+  export default {
+    name: 'features-details',
+  };
 </script>
 
-<style>
-</style>
+<style></style>
