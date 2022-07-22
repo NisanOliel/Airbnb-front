@@ -55,9 +55,6 @@
 
 
 
-
-
-
     <div class="form-rooms-and-beds">
       <h2>Rooms and beds</h2>
       <h3>Bedrooms</h3>
