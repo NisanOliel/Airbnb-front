@@ -54,12 +54,16 @@
   list-style-type: disc;
 }
 
+.flip {
+  transform: scaleY(-1);
+}
+
 // flex helpers
 
 .flex {
   display: flex;
 
-  > *.full {
+  >*.full {
     flex: 1;
   }
 
@@ -78,15 +82,19 @@
   &.justify-space-between {
     justify-content: space-between;
   }
+
   &.gap-column {
     gap: 20px;
   }
+
   &.gap-row {
     gap: 10px;
   }
+
   &.flex-flow-wrap {
     flex-flow: wrap;
   }
+
   &.flex1 {
     flex: 1;
   }
