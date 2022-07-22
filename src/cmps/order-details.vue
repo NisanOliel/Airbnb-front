@@ -1,12 +1,9 @@
 <template>
   <section class="order-container sticky">
     <div class="order-form-header">
-      <p
-        ><span class="cost">${{ stay.price }}</span> / night</p
-      >
+      <p><span class="cost">${{ stay.price }}</span> / night</p>
       <p>
-        {{ $filters.reviewsRateAvg(stay) }} <span class="reviews"> ({{ reviewsCount }})</span></p
-      >
+        {{ $filters.reviewsRateAvg(stay) }} <span class="reviews"> ({{ reviewsCount }})</span></p>
     </div>
 
     <div class="order-data">
@@ -137,8 +134,8 @@
     <div class="flex column">
       <div class="guests-container flex justify-space-between align-center">
         <div class="flex column">
-          <span>Adultssss</span>
-          <h5>Ages 13+</h5>
+          <h5>Adultss</h5>
+          <span>Ages 13+</span>
         </div>
         <div class="guests-btns flex align-center justify-space-between">
           <button @click.stop="updateGuests('adults', -1)">
@@ -152,8 +149,8 @@
       </div>
       <div class="guests-container flex justify-space-between align-center">
         <div class="flex column">
-          <span>Childrens</span>
-          <h5>Ages 2-12</h5>
+          <h5>Children</h5>
+          <span>Ages 2-12</span>
         </div>
         <div class="guests-btns flex align-center justify-space-between">
           <button @click.stop="updateGuests('children', -1)">
@@ -177,56 +174,56 @@
 </template>
 
 <script>
-  // import { ref } from 'vue'
+// import { ref } from 'vue'
 
-  export default {
-    name: ' order-details',
-    props: { stay: { type: Object } },
-    data() {
-      return {
-        trip: {
-          guests: {
-            adults: 0,
-            children: 0,
-          },
-          dates: {},
+export default {
+  name: ' order-details',
+  props: { stay: { type: Object } },
+  data() {
+    return {
+      trip: {
+        guests: {
+          adults: 0,
+          children: 0,
         },
-      };
+        dates: {},
+      },
+    };
+  },
+  computed: {
+    reviewsCount() {
+      return this.stay.reviews.length;
     },
-    computed: {
-      reviewsCount() {
-        return this.stay.reviews.length;
-      },
-      guestsCount() {
-        const guestsCount = this.trip.guests.children + this.trip.guests.adults;
-        if (guestsCount >= 1) return guestsCount + ' guests';
-        else return 'Add guests';
-      },
-      checkIn() {
-        return this.trip.dates[0];
-      },
-      checkOut() {
-        return this.trip.dates[1];
-      },
-      totalPrice() {
-        var size = Object.keys(this.trip.dates).length;
-        if (size > 1) {
-          const timeDiff = (this.trip.dates[1].getTime() - this.trip.dates[0].getTime()) / (1000 * 3600 * 24);
-          return Number(parseInt(this.stay.price * timeDiff)).toLocaleString();
-        }
-      },
+    guestsCount() {
+      const guestsCount = this.trip.guests.children + this.trip.guests.adults;
+      if (guestsCount >= 1) return guestsCount + ' guests';
+      else return 'Add guests';
     },
-    methods: {
-      updateGuests(type, number) {
-        console.log('number:', number);
-        console.log('type:', type);
-        if (this.trip.guests[type] === 0 && number === -1) return;
-        this.trip.guests[type] += number;
-      },
-      updateChildren(number) {
-        if (this.trip.guests.children === 0 && number === -1) return;
-        this.trip.guests.children += number;
-      },
+    checkIn() {
+      return this.trip.dates[0];
     },
-  };
+    checkOut() {
+      return this.trip.dates[1];
+    },
+    totalPrice() {
+      var size = Object.keys(this.trip.dates).length;
+      if (size > 1) {
+        const timeDiff = (this.trip.dates[1].getTime() - this.trip.dates[0].getTime()) / (1000 * 3600 * 24);
+        return Number(parseInt(this.stay.price * timeDiff)).toLocaleString();
+      }
+    },
+  },
+  methods: {
+    updateGuests(type, number) {
+      console.log('number:', number);
+      console.log('type:', type);
+      if (this.trip.guests[type] === 0 && number === -1) return;
+      this.trip.guests[type] += number;
+    },
+    updateChildren(number) {
+      if (this.trip.guests.children === 0 && number === -1) return;
+      this.trip.guests.children += number;
+    },
+  },
+};
 </script>

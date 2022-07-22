@@ -3,7 +3,7 @@
 
     <div class="flex">
       <h2> {{ $filters.reviewsRateAvg(stay) }}
-        <span>·</span>
+        <span>··</span>
         {{ reviewsCount }} reviews
       </h2>
     </div>

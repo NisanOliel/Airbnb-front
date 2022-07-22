@@ -36,7 +36,6 @@
     </div>
     <reviews-details :stay="stay" />
   </section>
-  <router-link to="/">Back</router-link>
 </template>
 
 <script>
@@ -66,7 +65,6 @@ export default {
   },
   created() {
     const { stayId } = this.$route.params;
-    console.log('styid', stayId);
     stayService.getById(stayId).then(stay => {
       this.stay = stay;
     });
