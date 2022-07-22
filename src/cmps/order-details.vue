@@ -6,6 +6,9 @@
         {{ $filters.reviewsRateAvg(stay) }} <span class="reviews"> ({{ reviewsCount }})</span></p>
     </div>
 
+
+
+
     <div class="order-data">
       <div class="date-picker">
         <div class="date-input">
