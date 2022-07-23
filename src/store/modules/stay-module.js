@@ -28,48 +28,48 @@ export const stayStore = {
         const keys = Object.keys(filters[key]);
         // console.log('stay obj keys', stay);
 
-        switch (keys) {
-          case stay.bedrooms:
-            // case stay.beds:
-            if (stay.bedroom !== 'Any') {
-              filters =
-                stays &&
-                filters.filter(stay => {
-                  return stay[key] === Number(value);
-                });
-            }
-            // return
-            break;
-          case 'price':
-            if (value) {
-              const { minPrice, maxPrice } = value;
-              filters = filters.filter(stay => {
-                return stay.price >= Number(minPrice) && stay.price <= Number(maxPrice);
-              });
-            }
-            break;
-          case 'propertyType':
-            if (value) {
-              filters = filters.filter(stay => {
-                return stay.propertyType.includes(value);
-              });
-            }
-            break;
-          case 'amenities':
-            if (value.length > 0) {
-              filters = filters.filter(stay => {
-                return stay.amenities.find(amenity => value.includes(amenity.name));
-              });
-            }
-            break;
-          case 'label':
-            if (value) {
-              filters = filters.filter(stay => stay.propertyType === value);
-            }
-            break;
-          default:
-            break;
-        }
+        // switch (keys) {
+        //   case stay.bedrooms:
+        //     // case stay.beds:
+        //     if (stay.bedroom !== 'Any') {
+        //       filters =
+        //         stays &&
+        //         filters.filter(stay => {
+        //           return stay[key] === Number(value);
+        //         });
+        //     }
+        //     // return
+        //     break;
+        //   case 'price':
+        //     if (value) {
+        //       const { minPrice, maxPrice } = value;
+        //       filters = filters.filter(stay => {
+        //         return stay.price >= Number(minPrice) && stay.price <= Number(maxPrice);
+        //       });
+        //     }
+        //     break;
+        //   case 'propertyType':
+        //     if (value) {
+        //       filters = filters.filter(stay => {
+        //         return stay.propertyType.includes(value);
+        //       });
+        //     }
+        //     break;
+        //   case 'amenities':
+        //     if (value.length > 0) {
+        //       filters = filters.filter(stay => {
+        //         return stay.amenities.find(amenity => value.includes(amenity.name));
+        //       });
+        //     }
+        //     break;
+        //   case 'label':
+        //     if (value) {
+        //       filters = filters.filter(stay => stay.propertyType === value);
+        //     }
+        //     break;
+        //   default:
+        //     break;
+        // }
       }
 
       console.log('filter by explore', filters);
