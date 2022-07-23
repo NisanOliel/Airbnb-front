@@ -11,7 +11,12 @@
         <div class="explore-filter">
           <explore-filter />
         </div>
-        <div class="user-nav">User</div>
+
+        <button class="nav-btn expend flex ">
+          <img class="menu-btn" src="../assets/icons/menu.svg">
+          <img class="host-image" src="https://randomuser.me/api/portraits/men/10.jpg">
+        </button>
+
       </nav>
 
       <div v-if="headerLocation" class="header-labels flex justify-space-between align-center">
