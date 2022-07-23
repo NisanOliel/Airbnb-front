@@ -2,7 +2,6 @@
   <section v-if="stay" class="details-container">
     <div class="main-title">
       <h1>{{ stay.name }}</h1>
-
       <div class="reviews-title flex align-center">
         <up-info-details :stay="stay" />
       </div>
@@ -76,7 +75,9 @@ export default {
       this.stay = stay;
     });
   },
-  methods: {},
+  methods: {
+
+  },
   computed: {},
 };
 </script>

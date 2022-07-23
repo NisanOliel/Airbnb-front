@@ -10,9 +10,12 @@ import VCalendar from 'v-calendar';
 
 import VueClickAway from "vue3-click-away";
 
-
 import './assets/styles/main.scss';
 import App from './App.vue';
+
+
+import HistogramSlider from "vue3-histogram-slider";
+import "vue3-histogram-slider/dist/histogram-slider.css";
 
 const app = createApp(App);
 
@@ -26,12 +29,12 @@ app.config.globalProperties.$filters = {
     return `${sum.toFixed(1)} `;
   },
 };
-
 app.use(router);
 app.use(store);
 app.use(ElementPlus);
 app.use(VCalendar, {})
 app.use(VueClickAway)
 // app.use(materialIcons);
+app.component(HistogramSlider.name, HistogramSlider);
 
 app.mount('#app');
