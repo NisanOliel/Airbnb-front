@@ -109,7 +109,7 @@
 
 .up-info {
   .gray {
-    color: #717171;
+    color: $clr7;
   }
 }
 
@@ -172,7 +172,7 @@
       font-size: 0.875rem;
       font-weight: 400;
       line-height: 1.25rem;
-      color: #717171;
+      color: $clr7;
     }
   }
 }
@@ -363,7 +363,7 @@
       flex-grow: 0;
       flex-shrink: 0;
       cursor: pointer;
-      color: #717171;
+      color: $clr7;
       border: 1px solid #b0b0b0;
       background-color: #fff;
       text-align: center;
