@@ -90,6 +90,9 @@
       closeModal() {
         this.isShow = false;
       },
+      onClickAway() {
+        this.isShow = false;
+      },
     },
     components: {
       exploreFilter,
