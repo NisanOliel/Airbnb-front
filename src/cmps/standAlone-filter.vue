@@ -10,11 +10,9 @@
       <div class="form-price">
         <h2>Price range</h2>
         <p>The average nightly price is 100$</p>
-
         <HistogramSlider :width="360" :bar-height="100" :data="prices" :clip="false" :min="10" :max="1000" :barGap="1"
           :barRadius="2" :lineHeight="2" :primaryColor="primaryColor" :labelColor="labelColor"
           :handleColor="handleColor" :holderColor="holderColor" @finish="sliderChanged" />
-
         <div class="form-inputs">
           min price
           <input @input="setFilter" v-model="filterBy.price.minPrice" type="number" min="0" />
@@ -29,21 +27,18 @@
           <el-radio-button label="Any" />
           <el-radio-button v-for="(opt, idx) in numLabels" :key="idx" :label="opt" />
         </el-radio-group>
-
         <h3>beds</h3>
         <el-radio-group @change="setFilter" v-model="filterBy.beds">
           <el-radio-button label="Any" />
           <el-radio-button v-for="(opt, idx) in numLabels" :key="idx" :label="opt" />
         </el-radio-group>
       </div>
-
       <div class="form-property-type">
         <h2>Property type</h2>
         <el-radio-group @change="setFilter" v-model="filterBy.propertyType">
           <el-radio-button v-for="(opt, idx) in propertyType" :key="idx" :label="opt" />
         </el-radio-group>
       </div>
-
       <div class="form-amenities">
         <div>
           <h2>Amenities</h2>
@@ -60,17 +55,14 @@
         <el-checkbox v-for="(opt, idx) in language" @change="setAmenities(opt, $event)" :key="idx" :label="opt" />
       </div>
     </div>
-
     <div class="form-footer">
       <button @click="clearAll()">Clear all</button>
       <button @click="onSaveFilters()">Save Information</button>
     </div>
   </form>
 </template>
-
 <script>
 import { ref } from 'vue';
-
 export default {
   name: 'standAlone-filter',
   data() {
@@ -82,10 +74,10 @@ export default {
       Essentials: ['Wifi', 'Washer', 'Air conditioning', 'Kitchen', 'Dryer'],
       checked: ref(false),
       prices: null,
-      primaryColor: '#ff385c',
-      holderColor: '#b0b0b0',
-      labelColor: '#e7da0e',
-      handleColor: '#0ecde7',
+      primaryColor: '#FF385C',
+      holderColor: '#B0B0B0',
+      labelColor: '#E7DA0E',
+      handleColor: '#0ECDE7',
     };
   },
   created() {
@@ -105,7 +97,6 @@ export default {
         propertyType: null,
       };
     },
-
     getStaysPrices() {
       const stays = this.$store.getters.getStays;
       const staysPrices = stays.map(stay => stay.price);
@@ -141,7 +132,6 @@ export default {
   // },
   computed: {},
   components: {
-    // ref,
   },
 };
 </script>
