@@ -45,14 +45,14 @@
         </div>
         <div class="Essentials">
           <h3>Essentials</h3>
-          <el-checkbox v-for="(opt, idx) in Essentials" @change="setAmenities(opt, $event)" :key="idx" :label="opt" />
+          <el-checkbox v-for="(opt, idx) in essentials" @change="setAmenities(opt, $event)" :key="idx" :label="opt" />
         </div>
       </div>
       <div class="form-host-language">
         <div>
           <h2>Host language</h2>
         </div>
-        <el-checkbox v-for="(opt, idx) in language" @change="setAmenities(opt, $event)" :key="idx" :label="opt" />
+        <el-checkbox v-for="(opt, idx) in language" @change="setLanguage(opt, $event)" :key="idx" :label="opt" />
       </div>
     </div>
     <div class="form-footer">
@@ -70,8 +70,8 @@ export default {
       filterBy: this.getInitialFilterState(),
       numLabels: [0, 1, 2, 3, 4, 5, 6, 7, 8],
       propertyType: ['House', 'Apartment', 'Guesthouse', 'Hotel', 'Townhouse'],
-      language: ['english', 'german', 'french', 'japanese'],
-      Essentials: ['Wifi', 'Washer', 'Air conditioning', 'Kitchen', 'Dryer'],
+      language: ['English', 'German', 'French', 'Japanese'],
+      essentials: ['Wifi', 'Washer', 'Air conditioning', 'Kitchen', 'Dryer'],
       checked: ref(false),
       prices: null,
       primaryColor: '#FF385C',
@@ -114,6 +114,14 @@ export default {
         this.filterBy.amenities = this.filterBy.amenities.filter(amenity => amenity !== currAmenity);
       }
       this.$store.dispatch({ type: 'setFilterBy', filterBy: this.filterBy });
+    },
+    setLanguage(currLanguage, isChecked) {
+      if (isChecked) {
+        this.filterBy.hostLanguage.push(currLanguage);
+      } else {
+        this.filterBy.hostLanguage = this.filterBy.hostLanguage.filter(language => language !== currLanguage)
+      }
+      this.$store.dispatch({ type: 'setFilterBy', filterBy: this.filterBy })
     },
     onSaveFilters() {
       this.$store.dispatch({ type: 'setFilteredStays' });
