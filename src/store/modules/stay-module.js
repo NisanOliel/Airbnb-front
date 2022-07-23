@@ -76,7 +76,6 @@ export const stayStore = {
       return typeMap;
     },
   },
-
   mutations: {
     setStays(state, { stays }) {
       state.stays = stays;

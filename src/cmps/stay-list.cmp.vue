@@ -7,18 +7,18 @@
 </template>
 
 <script>
-  import stayPreview from '../cmps/stay-preview.vue';
+import stayPreview from '../cmps/stay-preview.vue';
 
-  export default {
-    name: 'stay-list',
-    props: {
-      stays: Array,
-    },
-    data() {
-      return {};
-    },
-    components: {
-      stayPreview,
-    },
-  };
+export default {
+  name: 'stay-list',
+  props: {
+    stays: Array,
+  },
+  data() {
+    return {};
+  },
+  components: {
+    stayPreview,
+  },
+};
 </script>

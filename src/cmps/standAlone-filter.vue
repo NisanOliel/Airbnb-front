@@ -76,10 +76,10 @@
       <div>
         <h2>Host language</h2>
       </div>
-      <el-checkbox @change="setAmenities('english', $event)" label="english" />
-      <el-checkbox @change="setAmenities('english', $event)" label="german" />
-      <el-checkbox @change="setAmenities('english', $event)" label="english" />
-      <el-checkbox @change="setAmenities('english', $event)" label="english" />
+      <el-checkbox @change="setLanguage('english', $event)" label="English" />
+      <el-checkbox @change="setLanguage('german', $event)" label="German" />
+      <el-checkbox @change="setLanguage('english', $event)" label="French" />
+      <el-checkbox @change="setLanguage('english', $event)" label="Japanese" />
     </div>
     <div class="form-footer">
       <button @click="clearAll()">Clear all</button>
@@ -124,6 +124,15 @@ export default {
       }
       this.$store.dispatch({ type: 'setFilterBy', filterBy: this.filterBy })
     },
+    setAmenities(currAmenity, isChecked) {
+      if (isChecked) {
+        this.filterBy.amenities.push(currAmenity);
+      } else {
+        this.filterBy.amenities = this.filterBy.amenities.filter(amenity => amenity !== currAmenity)
+      }
+      this.$store.dispatch({ type: 'setFilterBy', filterBy: this.filterBy })
+    },
+
     onSaveFilters() {
       this.$store.dispatch({ type: 'setFilteredStays' })
       this.closeForm();
