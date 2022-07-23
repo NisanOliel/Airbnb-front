@@ -1,4 +1,5 @@
 <template>
+  <div v-if="isShow" class="overlay"></div>
   <header class="flex column">
     <div :class="{ container: headerLocation, 'inner-container': !headerLocation }">
       <nav class="top-nav flex justify-space-between align-center">
@@ -32,7 +33,7 @@
           >
         </div>
 
-        <standAlone-filter @closeFilersForm="closeModal" v-if="isShow" />
+        <standAlone-filter @closeFilersForm="closeModal" v-if="isShow" v-click-away="onClickAway" />
       </div>
     </div>
   </header>
@@ -70,6 +71,9 @@
     },
     methods: {
       closeModal() {
+        this.isShow = false;
+      },
+      onClickAway() {
         this.isShow = false;
       },
     },
