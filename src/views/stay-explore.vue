@@ -1,40 +1,40 @@
 <template>
   <h3>exploreee page</h3>
+
+  <pre>{{ stays[0] }}</pre>
+  <pre>THIS NOT EXIST {{ stays[1] }}</pre>
 </template>
 
 <script>
-
-export default {
-  name: 'explore-page',
-  data() {
-    return {
-      filterBy: null
-    };
-  },
-  computed: {
-    stays() {
-      // return this.$store.getters.getFilteredStays;
+  export default {
+    name: 'explore-page',
+    data() {
+      return {
+        filterBy: {
+          // location: null,
+        },
+      };
     },
-  },
-  created() {
-    // this.$store.dispatch({ type: 'loadStays' });
-  },
-  watch: {
-    $route: {
-      handler() {
-        const { where, text } = this.$route.query;
-        console.log(' this.$route.query:', this.$route.query)
-        console.log('where:', where)
-        console.log('text:', text)
-        // this.filterBy.destination = where;
-        // this.filterBy.name = text;
-        // console.log('this.filterBy:', this.filterBy)
+    computed: {
+      stays() {
+        // return this.$store.getters.getFilteredStays;
+        return this.$store.getters.getFilteredStays;
       },
-      immediate: true,
     },
-  },
-  methods: {},
-  components: {
-  },
-};
+    created() {
+      this.$store.dispatch({ type: 'setFilterBy', filterBy: this.filterBy });
+    },
+    watch: {
+      $route: {
+        handler() {
+          const { location } = this.$route.query;
+          this.filterBy.location = location;
+          console.log(' this.$route.query:', this.$route.query);
+        },
+        immediate: true,
+      },
+    },
+    methods: {},
+    components: {},
+  };
 </script>
