@@ -14,23 +14,18 @@
         </div>
 
 
-        <div class="flex ">
+        <a class="right-header" href="/#/login"><img class="explore-btn" src="../assets/icons/en.svg" /></a>
 
 
-          <div class="flex">
-            <a class="right-header" href="/explore">Explore</a>
+        <div class="flex">
 
-            <a class="right-header" href="/#/login"><img class="explore-btn" src="../assets/icons/en.svg"></a>
-          </div>
+          <a class="right-header" href="/explore">Explore</a>
 
-
-
-          <button class="nav-btn expend flex ">
-            <img class="menu-btn" src="../assets/icons/menu.svg">
-            <img class="host-image" src="https://randomuser.me/api/portraits/men/10.jpg">
+          <button class="nav-btn expend flex">
+            <img class="menu-btn" src="../assets/icons/menu.svg" />
+            <img class="host-image" src="https://randomuser.me/api/portraits/men/10.jpg" />
           </button>
         </div>
-
       </nav>
 
       <div v-if="headerLocation" class="header-labels flex justify-space-between align-center">
