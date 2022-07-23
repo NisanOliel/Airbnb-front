@@ -28,6 +28,12 @@
           <h2>Description</h2>
           <p>{{ stay.summary }}</p>
         </section>
+
+        <section class="gray-box description">
+          <img class="aircover" src="../assets/icons/aircover.webp">
+          <p>Every booking includes free protection from Host cancellations, listing inaccuracies, and other issues like
+            trouble checking in.</p>
+        </section>
         <amenities-details :stay="stay" />
       </section>
       <section class="right-side">
