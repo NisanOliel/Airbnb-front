@@ -8,6 +8,8 @@ import 'element-plus/dist/index.css';
 
 import VCalendar from 'v-calendar';
 
+import VueClickAway from "vue3-click-away";
+
 
 import './assets/styles/main.scss';
 import App from './App.vue';
@@ -29,7 +31,7 @@ app.use(router);
 app.use(store);
 app.use(ElementPlus);
 app.use(VCalendar, {})
-
+app.use(VueClickAway)
 // app.use(materialIcons);
 
 app.mount('#app');
