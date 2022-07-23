@@ -1,4 +1,5 @@
 <template>
+  <div v-if="isShow" class="overlay"></div>
   <header class="flex column">
     <div :class="{ container: headerLocation, 'inner-container': !headerLocation }">
       <nav class="top-nav flex justify-space-between align-center">
@@ -44,7 +45,7 @@
               </svg><span class="t1o11edy dir dir-ltr">Filters</span></span></button>
         </div>
 
-        <standAlone-filter @closeFilersForm="closeModal" v-if="isShow" />
+        <standAlone-filter @closeFilersForm="closeModal" v-if="isShow" v-click-away="onClickAway" />
       </div>
     </div>
   </header>
@@ -77,7 +78,20 @@ export default {
       let isEmpty = Object.keys(params).length === 0;
       return isEmpty;
 
+<<<<<<< HEAD
+        // return (this.location = isEmpty);
+      },
+    },
+    methods: {
+      closeModal() {
+        this.isShow = false;
+      },
+      onClickAway() {
+        this.isShow = false;
+      },
+=======
       // return (this.location = isEmpty);
+>>>>>>> 22b60ed931a12431f066bd964d891370bf92dc9d
     },
   },
   methods: {

@@ -1,27 +1,24 @@
 .form-filter {
   background-color: white;
   max-width: 780px;
-  height: 40em;
+  height: 80vh;
   position: fixed;
-  z-index: 2;
+  z-index: 20;
   top: 0;
   /* left: 50%; */
   right: 50%;
-
   transform: translate(50%, 15%);
   width: 100%;
-  padding: 0px 40px;
+  padding: 0px 24px;
   box-shadow: rgb(0 0 0 / 28%) 0px 8px 28px;
   border-radius: 12px;
+  overflow: hidden;
   .form-wrapper {
     position: relative;
-    height: 100%;
-  }
-  .form-inner-wrapper {
+    height: 84%;
     overflow-y: auto;
-    max-height: 74%;
-    height: 100%;
   }
+
   h2 {
     flex: 1;
     font-size: em(16px);
@@ -33,20 +30,25 @@
     span {
       font-size: 18px;
     }
+    .form-footer {
+      height: 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
   }
-
   .form-header {
     display: flex;
     align-items: center;
-    min-height: 64px;
+    height: 8%;
     border-bottom: $border;
   }
+
   .form-price,
   .form-rooms-and-beds,
   .form-property-type,
   .form-amenities,
-  .form-host-language,
-  .form-footer {
+  .form-host-language {
     padding: $padding-filter 0;
     border-bottom: $border;
   }
