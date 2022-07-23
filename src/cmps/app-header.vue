@@ -13,22 +13,23 @@
           <explore-filter />
         </div>
 
-        <div class="flex">
-          <a class="right-header" href="/explore">Explore</a>
 
-          <a class="right-header" href="/#/login"><img class="explore-btn" src="../assets/icons/en.svg"></a>
+        <div class="flex ">
+
+
+          <div class="flex">
+            <a class="right-header" href="/explore">Explore</a>
+
+            <a class="right-header" href="/#/login"><img class="explore-btn" src="../assets/icons/en.svg"></a>
+          </div>
+
+
+
+          <button class="nav-btn expend flex ">
+            <img class="menu-btn" src="../assets/icons/menu.svg">
+            <img class="host-image" src="https://randomuser.me/api/portraits/men/10.jpg">
+          </button>
         </div>
-
-        <!-- <button class="expend explore-btn">Explore</button>
-
-        <button class="expend">
-          <img src="../assets/icons/en.svg">
-        </button> -->
-
-        <button class="nav-btn expend flex ">
-          <img class="menu-btn" src="../assets/icons/menu.svg">
-          <img class="host-image" src="https://randomuser.me/api/portraits/men/10.jpg">
-        </button>
 
       </nav>
 
@@ -78,20 +79,7 @@ export default {
       let isEmpty = Object.keys(params).length === 0;
       return isEmpty;
 
-<<<<<<< HEAD
-        // return (this.location = isEmpty);
-      },
-    },
-    methods: {
-      closeModal() {
-        this.isShow = false;
-      },
-      onClickAway() {
-        this.isShow = false;
-      },
-=======
       // return (this.location = isEmpty);
->>>>>>> 22b60ed931a12431f066bd964d891370bf92dc9d
     },
   },
   methods: {
