@@ -50,6 +50,11 @@ export const stayStore = {
               })
             }
             break;
+          case 'label':
+            if (value) {
+              filteredStays = filteredStays.filter(stay => stay.propertyType === value)
+            }
+            break;
           default:
             break;
         }
@@ -87,6 +92,9 @@ export const stayStore = {
     undoRemovestay(state) {
       state.stays.unshift(state.lastRemovestay);
       state.lastRemovestay = null;
+    },
+    setFilterBy(state, { filterBy }) {
+      stayStore.state.filterBy = filterBy;
     },
     setFilteredStays(state) {
       state.filterBy = { ...state.filterBy };
@@ -139,13 +147,7 @@ export const stayStore = {
       return stayService.getById(stayId);
     },
     setFilterBy({ commit }, { filterBy }) {
-      stayStore.state.filterBy = { ...filterBy };
-    },
-    filterStays(filterBy) {
-      stayService.query(filterBy).then(stays => {
-        // stayService.filterStays(filterBy, stays);
-        commit({ type: 'setStays', stays })
-      })
+      commit({ type: 'setFilterBy', filterBy });
     },
     setFilteredStays({ commit }) {
       commit({ type: 'setFilteredStays' });

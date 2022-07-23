@@ -18,39 +18,40 @@
     </li> -->
 </template>
 <script>
-  import 'vue3-carousel/dist/carousel.css';
-  import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel';
-  export default {
-    name: 'explore-labels',
-    data() {
-      return {
-        labels: '',
-        filterBy: {
-          label: null,
-        },
-      };
-    },
-    methods: {
-      filter(value) {
-        this.filterBy.label = value;
-        this.$store.dispatch({ type: 'setFilterBy', filterBy: this.filterBy });
-        console.log('click', this.filterBy.label);
+import 'vue3-carousel/dist/carousel.css';
+import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel';
+export default {
+  name: 'explore-labels',
+  data() {
+    return {
+      labels: '',
+      filterBy: {
+        label: null,
       },
+    };
+  },
+  methods: {
+    filter(value) {
+      this.filterBy.label = value;
+      this.$store.dispatch({ type: 'setFilterBy', filterBy: this.filterBy });
+      this.$store.dispatch({ type: 'setFilteredStays' })
+      console.log('click', this.filterBy.label);
     },
+  },
 
-    created() {
-      this.labels = this.$store.getters.getLabels;
+  created() {
+    this.labels = this.$store.getters.getLabels;
+  },
+  computed: {
+    getLabels() {
+      return this.labels;
     },
-    computed: {
-      getLabels() {
-        return this.labels;
-      },
-    },
-    components: {
-      Carousel,
-      Slide,
-      Pagination,
-      Navigation,
-    },
-  };
+  },
+  components: {
+    Carousel,
+    Slide,
+    Pagination,
+    Navigation,
+  },
+};
 </script>
