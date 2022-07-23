@@ -51,14 +51,7 @@
       <div>
         <h2>Host language</h2>
       </div>
-<<<<<<< HEAD
-      <el-checkbox @change="setLanguage('english', $event)" label="English" />
-      <el-checkbox @change="setLanguage('german', $event)" label="German" />
-      <el-checkbox @change="setLanguage('english', $event)" label="French" />
-      <el-checkbox @change="setLanguage('english', $event)" label="Japanese" />
-=======
-      <el-checkbox v-for="(opt, idx) in language" @change="setAmenities(opt, $event)" :key="idx" :label="opt" />
->>>>>>> 8e085d9bedee2a73511f4ed625c7bc458e3d78b9
+      <el-checkbox v-for="(opt, idx) in language" @change="setLanguage(opt, $event)" :key="idx" :label="opt" />
     </div>
     <div class="form-footer">
       <button @click="clearAll()">Clear all</button>
@@ -76,10 +69,8 @@ export default {
       filterBy: this.getInitialFilterState(),
       numLabels: [0, 1, 2, 3, 4, 5, 6, 7, 8],
       propertyType: ["House", "Apartment", "Guesthouse", "Hotel", "Townhouse"],
-      language: ["english", "german", "french", "japanese"],
+      language: ["English", "German", "French", "Japanese"],
       Essentials: ["Wifi", "Washer", "Air conditioning", "Kitchen", "Dryer"]
-
-
     }
   },
   methods: {
@@ -107,11 +98,11 @@ export default {
       }
       this.$store.dispatch({ type: 'setFilterBy', filterBy: this.filterBy })
     },
-    setAmenities(currAmenity, isChecked) {
+    setLanguage(currLanguage, isChecked) {
       if (isChecked) {
-        this.filterBy.amenities.push(currAmenity);
+        this.filterBy.hostLanguage.push(currLanguage);
       } else {
-        this.filterBy.amenities = this.filterBy.amenities.filter(amenity => amenity !== currAmenity)
+        this.filterBy.hostLanguage = this.filterBy.hostLanguage.filter(language => language !== currLanguage)
       }
       this.$store.dispatch({ type: 'setFilterBy', filterBy: this.filterBy })
     },
@@ -128,9 +119,6 @@ export default {
       this.$emit('closeFilersForm')
     }
   },
-  // created() {
-  //   this.labels = this.$store.getters.getLabels;
-  // },
   computed: {}
 }
 </script> 
