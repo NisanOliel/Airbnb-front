@@ -146,7 +146,7 @@
       </div>
     </div>
 
-    <div class="flex column" v-if="isShow">
+    <div class="flex column" v-if="isShow" v-click-away="onClickAway">
       <div class="guests-container flex justify-space-between align-center">
         <div class="flex column">
           <h5>Adults</h5>
@@ -285,7 +285,11 @@ export default {
 
       this.$store.dispatch({ type: "saveOrder", order, });
       ElMessage.success('Order Added!')
+    },
+    onClickAway(event) {
+      this.isShow = false
     }
+
   },
 };
 </script>
