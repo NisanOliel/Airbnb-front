@@ -3,6 +3,12 @@
     <div class="main-title">
       <h1>{{ stay.name }}</h1>
 
+      <HistogramSlider :width="360" :bar-height="100" :data=prices :clip="false" :min="10" :max="1000" :barGap="1"
+        :barRadius="2" :lineHeight="2" :primaryColor="primaryColor" :labelColor="labelColor" :handleColor="handleColor"
+        :holderColor="holderColor" @finish="sliderChanged" />
+
+
+
       <div class="reviews-title flex align-center">
         <up-info-details :stay="stay" />
       </div>
@@ -67,16 +73,33 @@ export default {
   data() {
     return {
       stay: null,
+      prices: null,
+      primaryColor: "#ff385c",
+      holderColor: "#b0b0b0",
+      labelColor: "#e7da0e",
+      handleColor: "#0ecde7",
+
     };
   },
   created() {
+    this.getStaysPrices()
     const { stayId } = this.$route.params;
     console.log('styid', stayId);
     stayService.getById(stayId).then(stay => {
       this.stay = stay;
     });
   },
-  methods: {},
+  methods: {
+
+    getStaysPrices() {
+      const stays = this.$store.getters.getStays;
+      const staysPrices = stays.map((stay) => stay.price);
+      this.prices = staysPrices;
+      console.log('staysPrices:', staysPrices)
+      console.log(' this.prices:', this.prices)
+    },
+
+  },
   computed: {},
 };
 </script>
