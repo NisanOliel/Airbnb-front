@@ -24,52 +24,47 @@ export const stayStore = {
       if (loc) {
         filters = deepStays.filter(stay => regex.test(stay.address.country) || regex.test(stay.address.city));
       }
-      for (let key in filters) {
-        const keys = Object.keys(filters[key]);
-        // console.log('stay obj keys', stay);
-
-        // switch (keys) {
-        //   case stay.bedrooms:
-        //     // case stay.beds:
-        //     if (stay.bedroom !== 'Any') {
-        //       filters =
-        //         stays &&
-        //         filters.filter(stay => {
-        //           return stay[key] === Number(value);
-        //         });
-        //     }
-        //     // return
-        //     break;
-        //   case 'price':
-        //     if (value) {
-        //       const { minPrice, maxPrice } = value;
-        //       filters = filters.filter(stay => {
-        //         return stay.price >= Number(minPrice) && stay.price <= Number(maxPrice);
-        //       });
-        //     }
-        //     break;
-        //   case 'propertyType':
-        //     if (value) {
-        //       filters = filters.filter(stay => {
-        //         return stay.propertyType.includes(value);
-        //       });
-        //     }
-        //     break;
-        //   case 'amenities':
-        //     if (value.length > 0) {
-        //       filters = filters.filter(stay => {
-        //         return stay.amenities.find(amenity => value.includes(amenity.name));
-        //       });
-        //     }
-        //     break;
-        //   case 'label':
-        //     if (value) {
-        //       filters = filters.filter(stay => stay.propertyType === value);
-        //     }
-        //     break;
-        //   default:
-        //     break;
-        // }
+      for (let key in filterBy) {
+        const value = filterBy[key];
+        switch (key) {
+          case 'bedrooms':
+          case 'beds':
+            if (value && value !== 'Any') {
+              filters = filters.filter(stay => {
+                return stay[key] === Number(value);
+              });
+              break;
+            }
+          case 'price':
+            if (value) {
+              const { minPrice, maxPrice } = value;
+              filters = filters.filter(stay => {
+                return stay.price >= Number(minPrice) && stay.price <= Number(maxPrice);
+              });
+            }
+            break;
+          case 'propertyType':
+            if (value) {
+              filters = filters.filter(stay => {
+                return stay.propertyType.includes(value);
+              });
+            }
+            break;
+          case 'amenities':
+            if (value.length > 0) {
+              filters = filters.filter(stay => {
+                return stay.amenities.find(amenity => value.includes(amenity.name));
+              });
+            }
+            break;
+          case 'label':
+            if (value) {
+              filters = filters.filter(stay => stay.propertyType === value);
+            }
+            break;
+          default:
+            break;
+        }
       }
 
       console.log('filter by explore', filters);
