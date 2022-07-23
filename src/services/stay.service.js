@@ -17,14 +17,17 @@ export const stayService = {
   save,
   getEmptystay,
   getstay,
-  getLabels
+  getLabels,
+  filterStays
 }
 
 _createstays()
 
-function query(filterBy) {
+async function query(filterBy) {
+  const stays = storageService.query(KEY);
+
   // return axios.get(API, { params: filterBy }).then((res) => res.data)
-  return storageService.query(KEY);
+  return filterStays(filterBy, await stays);
 }
 
 function getById(id) {
@@ -74,4 +77,47 @@ function _createstays() {
 
 function getLabels() {
   return labelsJason
+}
+
+function filterStays(filterBy, stays) {
+  let filteredStays = stays;
+  for (const key in filterBy) {
+    const value = filterBy[key];
+    switch (key) {
+      case 'bedrooms':
+      case 'beds':
+        if (value && value !== 'Any') {
+          filteredStays = stays && filteredStays.filter(stay => {
+            return stay[key] === Number(value)
+          })
+        }
+        break;
+      case 'price':
+        if (value) {
+          const { minPrice, maxPrice } = value;
+          filteredStays = filteredStays.filter(stay => {
+            return stay.price >= Number(minPrice) && stay.price <= Number(maxPrice)
+          })
+        }
+        break;
+      case 'propertyType':
+        if (value) {
+          filteredStays = filteredStays.filter(stay => {
+            return stay.propertyType.includes(value)
+          })
+        }
+        break;
+      case 'amenities':
+        if (value.length > 0) {
+          filteredStays = filteredStays.filter(stay => {
+            return stay.amenities.find(amenity => value.includes(amenity.name));
+          })
+        }
+        break;
+      default:
+        break;
+    }
+  }
+
+  return filteredStays
 }

@@ -5,19 +5,58 @@ export const stayStore = {
     stays: [],
     filterBy: null,
     lastRemoveStay: null,
-    labels: stayService.getLabels()
+    labels: stayService.getLabels(),
   },
 
   getters: {
     getStays({ stays }) {
       return stays;
     },
-
     getLabels({ labels }) {
       return labels
     },
+    getFilteredStays({ filterBy, stays }) {
+      let filteredStays = stays;
+      for (const key in filterBy) {
+        const value = filterBy[key];
+        switch (key) {
+          case 'bedrooms':
+          case 'beds':
+            if (value && value !== 'Any') {
+              filteredStays = stays && filteredStays.filter(stay => {
+                return stay[key] === Number(value)
+              })
+            }
+            break;
+          case 'price':
+            if (value) {
+              const { minPrice, maxPrice } = value;
+              filteredStays = filteredStays.filter(stay => {
+                return stay.price >= Number(minPrice) && stay.price <= Number(maxPrice)
+              })
+            }
+            break;
+          case 'propertyType':
+            if (value) {
+              filteredStays = filteredStays.filter(stay => {
+                return stay.propertyType.includes(value)
+              })
+            }
+            break;
+          case 'amenities':
+            if (value.length > 0) {
+              filteredStays = filteredStays.filter(stay => {
+                return stay.amenities.find(amenity => value.includes(amenity.name));
+              })
+            }
+            break;
+          default:
+            break;
+        }
+      }
 
-
+      return filteredStays;
+    },
     chartLabel({ stays }) {
       console.log('stays', stays);
       const typeMap = {};
@@ -37,7 +76,6 @@ export const stayStore = {
     setStays(state, { stays }) {
       state.stays = stays;
     },
-
     removeStay(state, { stayId }) {
       const idx = state.stays.findIndex(p => p._id === stayId)
       state.lastRemovedstay = state.stays[idx];
@@ -50,7 +88,9 @@ export const stayStore = {
       state.stays.unshift(state.lastRemovestay);
       state.lastRemovestay = null;
     },
-
+    setFilteredStays(state) {
+      state.filterBy = { ...state.filterBy };
+    },
     markStay(state, { stayId }) {
       const stay = state.stays.find(stay => stay._id === stayId);
       stay.inStock = !stay.inStock;
@@ -99,16 +139,16 @@ export const stayStore = {
       return stayService.getById(stayId);
     },
     setFilterBy({ commit }, { filterBy }) {
-      console.log({ filterBy });
+      stayStore.state.filterBy = { ...filterBy };
+    },
+    filterStays(filterBy) {
       stayService.query(filterBy).then(stays => {
-        const filteredStays = stays.filter(stay => {
-          return stay.price >= filterBy.price.minPrice &&
-            stay.price <= filterBy.price.maxPrice
-          // return stay.propertyType.includes(filterBy?.label)
-        })
-        console.log(filteredStays)
-        commit({ type: 'setStays', stays: filteredStays })
+        // stayService.filterStays(filterBy, stays);
+        commit({ type: 'setStays', stays })
       })
+    },
+    setFilteredStays({ commit }) {
+      commit({ type: 'setFilteredStays' });
     }
   }
 }
