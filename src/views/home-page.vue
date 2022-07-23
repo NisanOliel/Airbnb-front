@@ -5,24 +5,24 @@
 </template>
 
 <script>
-  import stayList from '../cmps/stay-list.cmp.vue';
+import stayList from '../cmps/stay-list.cmp.vue';
 
-  export default {
-    name: 'home-page',
-    data() {
-      return {};
+export default {
+  name: 'home-page',
+  data() {
+    return {};
+  },
+  computed: {
+    stays() {
+      return this.$store.getters.getFilteredStays;
     },
-    computed: {
-      stays() {
-        return this.$store.getters.getFilteredStays;
-      },
-    },
-    created() {
-      this.$store.dispatch({ type: 'loadStays' });
-    },
-    methods: {},
-    components: {
-      stayList,
-    },
-  };
+  },
+  created() {
+    this.$store.dispatch({ type: 'loadStays' });
+  },
+  methods: {},
+  components: {
+    stayList,
+  },
+};
 </script>
