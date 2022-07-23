@@ -19,67 +19,46 @@
       <h3>BedRooms</h3>
       <el-radio-group @change="setFilter" v-model="filterBy.bedrooms">
         <el-radio-button label="Any" />
-        <el-radio-button label="1" />
-        <el-radio-button label="2" />
-        <el-radio-button label="3" />
-        <el-radio-button label="4" />
-        <el-radio-button label="5" />
-        <el-radio-button label="6" />
-        <el-radio-button label="7" />
+        <el-radio-button v-for="(opt, idx) in numLabels" :key="idx" :label="opt" />
       </el-radio-group>
+
       <h3>beds</h3>
       <el-radio-group @change="setFilter" v-model="filterBy.beds">
         <el-radio-button label="Any" />
-        <el-radio-button label="1" />
-        <el-radio-button label="2" />
-        <el-radio-button label="3" />
-        <el-radio-button label="4" />
-        <el-radio-button label="5" />
-        <el-radio-button label="6" />
-        <el-radio-button label="7" />
+        <el-radio-button v-for="(opt, idx) in numLabels" :key="idx" :label="opt" />
       </el-radio-group>
     </div>
+
+
     <div class="form-property-type">
       <h2>Property type</h2>
       <el-radio-group @change="setFilter" v-model="filterBy.propertyType">
-        <el-radio-button label="House" />
-        <el-radio-button label="Apartment" />
-        <el-radio-button label="Guesthouse" />
-        <el-radio-button label="Hotel" />
-        <el-radio-button label="Townhouse" />
+        <el-radio-button v-for="(opt, idx) in propertyType" :key="idx" :label="opt" />
       </el-radio-group>
     </div>
+
+
     <div class="form-amenities">
       <div>
         <h2>Amenities</h2>
       </div>
       <div class="Essentials">
         <h3>Essentials</h3>
-        <div class="wifi">
-          <el-checkbox @change="setAmenities('Wifi', $event)" label="Wifi" />
-        </div>
-        <div class="washer">
-          <el-checkbox @change="setAmenities('Washer', $event)" label="Washer" />
-        </div>
-        <div class="air-conditioning">
-          <el-checkbox @change="setAmenities('Air conditioning', $event)" label="Air conditioning" />
-        </div>
-        <div class="Kitchen">
-          <el-checkbox @change="setAmenities('Kitchen', $event)" label="Kitchen" />
-        </div>
-        <div class="dryer">
-          <el-checkbox @change="setAmenities('Dryer', $event)" label="Dryer" />
-        </div>
+        <el-checkbox v-for="(opt, idx) in Essentials" @change="setAmenities(opt, $event)" :key="idx" :label="opt" />
       </div>
     </div>
     <div class="form-host-language">
       <div>
         <h2>Host language</h2>
       </div>
+<<<<<<< HEAD
       <el-checkbox @change="setLanguage('english', $event)" label="English" />
       <el-checkbox @change="setLanguage('german', $event)" label="German" />
       <el-checkbox @change="setLanguage('english', $event)" label="French" />
       <el-checkbox @change="setLanguage('english', $event)" label="Japanese" />
+=======
+      <el-checkbox v-for="(opt, idx) in language" @change="setAmenities(opt, $event)" :key="idx" :label="opt" />
+>>>>>>> 8e085d9bedee2a73511f4ed625c7bc458e3d78b9
     </div>
     <div class="form-footer">
       <button @click="clearAll()">Clear all</button>
@@ -90,13 +69,17 @@
 
 
 <script>
-import { property } from 'lodash';
-import { ref } from 'vue'
 export default {
   name: 'standAlone-filter',
   data() {
     return {
       filterBy: this.getInitialFilterState(),
+      numLabels: [0, 1, 2, 3, 4, 5, 6, 7, 8],
+      propertyType: ["House", "Apartment", "Guesthouse", "Hotel", "Townhouse"],
+      language: ["english", "german", "french", "japanese"],
+      Essentials: ["Wifi", "Washer", "Air conditioning", "Kitchen", "Dryer"]
+
+
     }
   },
   methods: {

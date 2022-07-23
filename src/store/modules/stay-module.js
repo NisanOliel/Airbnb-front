@@ -13,46 +13,53 @@ export const stayStore = {
       return stays;
     },
     getLabels({ labels }) {
-      return labels
+      return labels;
     },
     getFilteredStays({ filterBy, stays }) {
-      let filteredStays = stays;
-      for (const key in filterBy) {
+      const loc = filterBy?.location;
+      const deepStays = JSON.parse(JSON.stringify(stays));
+
+      const regex = new RegExp(loc, 'i');
+      let filters = deepStays;
+      if (loc) {
+        filters = deepStays.filter(stay => regex.test(stay.address.country) || regex.test(stay.address.city));
+      }
+      for (let key in filterBy) {
         const value = filterBy[key];
         switch (key) {
           case 'bedrooms':
           case 'beds':
             if (value && value !== 'Any') {
-              filteredStays = stays && filteredStays.filter(stay => {
-                return stay[key] === Number(value)
-              })
+              filters = filters.filter(stay => {
+                return stay[key] === Number(value);
+              });
+              break;
             }
-            break;
           case 'price':
             if (value) {
               const { minPrice, maxPrice } = value;
-              filteredStays = filteredStays.filter(stay => {
-                return stay.price >= Number(minPrice) && stay.price <= Number(maxPrice)
-              })
+              filters = filters.filter(stay => {
+                return stay.price >= Number(minPrice) && stay.price <= Number(maxPrice);
+              });
             }
             break;
           case 'propertyType':
             if (value) {
-              filteredStays = filteredStays.filter(stay => {
-                return stay.propertyType.includes(value)
-              })
+              filters = filters.filter(stay => {
+                return stay.propertyType.includes(value);
+              });
             }
             break;
           case 'amenities':
             if (value.length > 0) {
-              filteredStays = filteredStays.filter(stay => {
+              filters = filters.filter(stay => {
                 return stay.amenities.find(amenity => value.includes(amenity.name));
-              })
+              });
             }
             break;
           case 'label':
             if (value) {
-              filteredStays = filteredStays.filter(stay => stay.propertyType === value)
+              filters = filters.filter(stay => stay.propertyType === value);
             }
             break;
           default:
@@ -60,7 +67,9 @@ export const stayStore = {
         }
       }
 
-      return filteredStays;
+      console.log('filter by explore', filters);
+
+      return filters;
     },
     chartLabel({ stays }) {
       console.log('stays', stays);
@@ -81,12 +90,12 @@ export const stayStore = {
       state.stays = stays;
     },
     removeStay(state, { stayId }) {
-      const idx = state.stays.findIndex(p => p._id === stayId)
+      const idx = state.stays.findIndex(p => p._id === stayId);
       state.lastRemovedstay = state.stays[idx];
       state.stays.splice(idx, 1);
     },
     clearRemovestay(state) {
-      state.lastRemovestay = null
+      state.lastRemovestay = null;
     },
     undoRemovestay(state) {
       state.stays.unshift(state.lastRemovestay);
@@ -115,7 +124,7 @@ export const stayStore = {
     loadStays({ commit }) {
       stayService.query().then(stays => {
         commit({ type: 'setStays', stays });
-      })
+      });
     },
 
     removeStay({ commit }, payload) {
@@ -146,10 +155,11 @@ export const stayStore = {
       return stayService.getById(stayId);
     },
     setFilterBy({ commit }, { filterBy }) {
+      console.log('filter where', filterBy);
       commit({ type: 'setFilterBy', filterBy });
     },
     setFilteredStays({ commit }) {
       commit({ type: 'setFilteredStays' });
-    }
-  }
-}
+    },
+  },
+};

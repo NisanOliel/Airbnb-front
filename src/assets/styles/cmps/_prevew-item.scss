@@ -1,11 +1,13 @@
 .preview {
   position: relative;
   max-width: 300px;
+
   span.material-icons-outlined {
     position: absolute;
     z-index: 1;
     right: 0;
   }
+
   .like {
     color: rgb(49 16 16 / 41%);
     -webkit-text-stroke: #fff;
@@ -16,22 +18,30 @@
     top: 16px;
     /* font-size: 10px; */
   }
+
   .preview-info {
     display: grid;
 
     grid-template-columns: 1fr;
     grid-gap: 6px;
   }
+
   .favorite {
     transition: all 700ms ease-out;
   }
+
   .favorite.active {
     color: $clr2;
     -webkit-text-stroke-width: 0px;
     transition: all 200ms ease-out;
   }
+
   .location-info {
     font-size: em(16px);
     font-family: 'Cereal-medium', Arial, sans-serif;
+  }
+
+  .gray {
+    color: $clr7;
   }
 }

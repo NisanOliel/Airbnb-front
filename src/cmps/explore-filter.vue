@@ -9,17 +9,17 @@
     </div>
 
     <div v-show="!filterPreview" class="filter-expend flex">
-      <el-form :model="form" @submit.prevent="formSubmit">
+      <el-form :model="filterBy">
         <div class="filter-option">
           <label for="where">Where</label>
           <!-- <input name="where" @focus="showInitModal($event)" v-model="form.where" placeholder="Search destination" /> -->
-          <input name="where" v-model="form.where" placeholder="Search destination" />
+          <input name="where" v-model="filterBy.where" placeholder="Search destination" />
 
           <!-- <div v-if="showModal">dflkgjldfkjgdlsfgjdfslkgjdfsljl</div> -->
         </div>
         <div class="filter-option check">
           <div class="labels-wrap">
-            <v-date-picker :columns="2" v-model="form.date" is-range>
+            <v-date-picker :columns="2" v-model="filterBy.date" is-range>
               <template v-slot="{ inputValue, inputEvents }">
                 <div class="flex justify-center items-center">
                   <div class="checkin">
@@ -48,12 +48,12 @@
           </div>
         </div>
         <div class="filter-option guest-dropdown">
-          <div @click.stop="dropDownMenu" class="add-guest-wrapper">
+          <div @click.stop="dropDownMenu($event)" class="add-guest-wrapper">
             <label for="add-guest">Who</label>
             <input disabled type="text" placeholder="Add guests" />
           </div>
 
-          <div class="order-container header-filter-search">
+          <div @click="formSubmit" class="order-container header-filter-search">
             <div class="btn-container on-filter">
               <div class="cell"></div>
               <div class="cell"></div>
@@ -166,7 +166,7 @@
     </div>
   </div>
 
-  <div v-show="showModal" class="guests-modal dropdown-card order-container">
+  <div v-show="showModal" v-click-away="onClickAway" class="guests-modal dropdown-card order-container">
     <div class="row-card">
       <div class="lft-crd">
         <span class="title-sm"> Adults</span>
@@ -176,7 +176,7 @@
         <button @click.stop="updateGuests('adults', -1)">
           <span> - </span>
         </button>
-        <span>{{ form.guests.adults }}</span>
+        <span>{{ filterBy.guests.adults }}</span>
         <button @click.stop="updateGuests('adults', 1)">
           <span> + </span>
         </button>
@@ -184,45 +184,45 @@
     </div>
     <div class="row-card">
       <div class="lft-crd">
-        <span class="title-sm"> Adults</span>
-        <span class="txt-sm">Ages 13 or above</span>
+        <span class="title-sm"> Children</span>
+        <span class="txt-sm">Ages 2–12</span>
       </div>
       <div class="rit-crd guests-btns">
-        <button @click.stop="updateGuests('adults', -1)">
+        <button @click.stop="updateGuests('children', -1)">
           <span> - </span>
         </button>
-        <span>{{ form.guests.adults }}</span>
-        <button @click.stop="updateGuests('adults', 1)">
+        <span>{{ filterBy.guests.children }}</span>
+        <button @click.stop="updateGuests('children', 1)">
           <span> + </span>
         </button>
       </div>
     </div>
     <div class="row-card">
       <div class="lft-crd">
-        <span class="title-sm"> Adults</span>
-        <span class="txt-sm">Ages 13 or above</span>
+        <span class="title-sm"> Infants</span>
+        <span class="txt-sm">Under 2</span>
       </div>
       <div class="rit-crd guests-btns">
-        <button @click.stop="updateGuests('adults', -1)">
+        <button @click.stop="updateGuests('infants', -1)">
           <span> - </span>
         </button>
-        <span>{{ form.guests.adults }}</span>
-        <button @click.stop="updateGuests('adults', 1)">
+        <span>{{ filterBy.guests.infants }}</span>
+        <button @click.stop="updateGuests('infants', 1)">
           <span> + </span>
         </button>
       </div>
     </div>
     <div class="row-card">
       <div class="lft-crd">
-        <span class="title-sm"> Adults</span>
-        <span class="txt-sm">Ages 13 or above</span>
+        <span class="title-sm"> Pets</span>
+        <span class="txt-sm">Serve animals</span>
       </div>
       <div class="rit-crd guests-btns">
-        <button @click.stop="updateGuests('adults', -1)">
+        <button @click.stop="updateGuests('pets', -1)">
           <span> - </span>
         </button>
-        <span>{{ form.guests.adults }}</span>
-        <button @click.stop="updateGuests('adults', 1)">
+        <span>{{ filterBy.guests.pets }}</span>
+        <button @click.stop="updateGuests('pets', 1)">
           <span> + </span>
         </button>
       </div>
@@ -236,7 +236,7 @@
     name: 'explore-filter',
     data() {
       return {
-        form: {
+        filterBy: {
           where: '',
           date: [],
           guests: {
@@ -253,6 +253,8 @@
     methods: {
       formSubmit() {
         console.log('hellow');
+        let url = `/explore?location=${this.filterBy.where}`;
+        this.$router.push(url);
       },
       expendForm(ev) {
         console.log('ev', ev.target.innerText);
@@ -260,22 +262,40 @@
         this.filterShow;
       },
       showInitModal(ev) {
+        this.toggleShowModal();
         console.log('show modal', ev);
-        this.showModal = !this.showModal;
+        // this.showModal = !this.showModal
         console.log(this.showModal);
       },
-      dropDownMenu() {
-        this.showModal = !this.showModal;
+      dropDownMenu(ev) {
+        // this.showModal = !this.showModal;
+        this.toggleShowModal(ev);
         console.log('dropdown');
         console.log(this.showModal);
       },
       updateGuests(type, number) {
-        this.form.guests[type] += number;
+        this.filterBy.guests[type] += number;
+      },
+      toggleShowModal(ev) {
+        this.showModal = !this.showModal;
+        // if (this.showModal) {
+        //   document.addEventListener('click', e => {
+        //     console.log('document ev', e);
+        //     ev.stopPropagation();
+        //     this.showModal = false;
+        //   });
+        // }
+      },
+      onClickAway() {
+        this.showModal = false;
       },
     },
     computed: {
       filterShow() {
         this.filterPreview = !this.filterPreview;
+      },
+      unmounted() {
+        // this.formSubmit();
       },
     },
   };

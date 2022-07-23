@@ -4,6 +4,7 @@ import home from './views/home-page.vue'
 import loginSignup from './views/login-signup.vue'
 import userDetails from './views/user-details.vue'
 import stayDetails from './views/stay-details.vue'
+import stayExplore from './views/stay-explore.vue'
 
 
 const routes = [
@@ -12,6 +13,12 @@ const routes = [
     name: 'home',
     component: home
   },
+  {
+    path: '/explore',
+    name: 'explore',
+    component: stayExplore
+  },
+
   {
     path: '/login',
     name: 'loginSignup',

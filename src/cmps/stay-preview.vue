@@ -14,38 +14,42 @@
         <span>{{ stay.address.city }}, {{ stay.address.country }}</span>
         <span class="stared">{{ $filters.reviewsRateAvg(stay) }}</span>
       </div>
-      <div>{{ stay.name }} </div>
-      <div>{{ stay.beds }} beds </div>
-      <div>£{{ stay.price }} night </div>
+      <div class="gray">
+
+        <div>{{ stay.name }} </div>
+        <div>{{ stay.beds }} beds </div>
+      </div>
+      <div><span class="bold">£{{ stay.price }}</span> night </div>
+
     </div>
   </div>
 </template>
 
 <script>
-  export default {
-    name: 'stay-preview',
-    props: {
-      stay: Object,
+export default {
+  name: 'stay-preview',
+  props: {
+    stay: Object,
+  },
+  data() {
+    return {
+      images: [
+        `src/assets/Images/${this.stay.imgUrls[0]}`,
+        `src/assets/Images/${this.stay.imgUrls[1]}`,
+        `src/assets/Images/${this.stay.imgUrls[2]}`,
+        `src/assets/Images/${this.stay.imgUrls[3]}`,
+      ],
+      isLiked: false,
+    };
+  },
+  methods: {
+    goToDetails() {
+      this.$router.push('/stay/' + this.stay._id);
     },
-    data() {
-      return {
-        images: [
-          `src/assets/Images/${this.stay.imgUrls[0]}`,
-          `src/assets/Images/${this.stay.imgUrls[1]}`,
-          `src/assets/Images/${this.stay.imgUrls[2]}`,
-          `src/assets/Images/${this.stay.imgUrls[3]}`,
-        ],
-        isLiked: false,
-      };
+    toggleWishList() {
+      this.isLiked = !this.isLiked;
+      console.log('heart is active', this.isLiked);
     },
-    methods: {
-      goToDetails() {
-        this.$router.push('/stay/' + this.stay._id);
-      },
-      toggleWishList() {
-        this.isLiked = !this.isLiked;
-        console.log('heart is active', this.isLiked);
-      },
-    },
-  };
+  },
+};
 </script>

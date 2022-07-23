@@ -179,7 +179,6 @@
       </div>
     </div>
 
-    <!-- <pre>{{ stay }}</pre> -->
     <div class="pricing" v-if="dateCheck">
       <h4>You won't be charged yet</h4>
       <p>
