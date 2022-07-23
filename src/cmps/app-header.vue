@@ -6,12 +6,22 @@
         <router-link to="/">
           <div class="main-logo flex">
             <div class=""><img src="src/assets/airbnb-logo.svg" /></div>
-            <h1>air2B</h1>
+            <h1>air2b</h1>
           </div>
         </router-link>
         <div class="explore-filter">
           <explore-filter />
         </div>
+
+        <a class="right-header" href="/explore">Explore</a>
+
+        <a class="right-header" href="/#/login"><img class="explore-btn" src="../assets/icons/en.svg"></a>
+
+        <!-- <button class="expend explore-btn">Explore</button>
+
+        <button class="expend">
+          <img src="../assets/icons/en.svg">
+        </button> -->
 
         <button class="nav-btn expend flex ">
           <img class="menu-btn" src="../assets/icons/menu.svg">

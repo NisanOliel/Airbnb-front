@@ -203,6 +203,7 @@ a:link:hover {
 .nav-btn {
   padding: 5px 5px 5px 15px;
   background-color: $clr3;
+  transition: all 100ms ease-out;
 
   .menu-btn {
     height: 16px;
@@ -210,9 +211,29 @@ a:link:hover {
     margin: auto;
   }
 
+  &:hover {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.18);
+    transition: all 150ms ease-out;
+  }
+
   .host-image {
     background-color: currentcolor;
     border-radius: 50%;
     margin-left: 10px;
+  }
+
+}
+
+.explore-btn {
+  height: 18px;
+}
+
+.right-header {
+  text-align: inherit;
+  padding: 12px;
+  border-radius: 20px;
+
+  &:hover {
+    background-color: rgba(248, 237, 237, 0.863);
   }
 }
