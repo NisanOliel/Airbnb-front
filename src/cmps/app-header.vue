@@ -14,12 +14,10 @@
         </div>
 
 
-        <a class="right-header" href="/#/login"><img class="explore-btn" src="../assets/icons/en.svg" /></a>
-
-
         <div class="flex">
 
           <a class="right-header" href="/explore">Explore</a>
+          <a class="right-header" href="/#/login"><img class="explore-btn" src="../assets/icons/en.svg" /></a>
 
           <button class="nav-btn expend flex">
             <img class="menu-btn" src="../assets/icons/menu.svg" />
