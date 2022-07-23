@@ -2,18 +2,15 @@
   <section class="order-container sticky">
     <div class="order-form-header">
       <p><span class="cost">${{ stay.price }}</span> / night</p>
-      <p>
+      <p class="stared">
         {{ $filters.reviewsRateAvg(stay) }} <span class="reviews"> ({{ reviewsCount }})</span></p>
     </div>
-
-
 
     <!-- Date !! -->
     <div class="order-data">
       <v-date-picker v-model="trip.dates" is-range :columns="2">
         <template v-slot="{ inputValue, inputEvents }">
           <div class="flex justify-center items-center">
-
             <div class="date-picker">
               <div class="date-input">
                 <label>check in</label>
@@ -21,67 +18,30 @@
                   class="border px-2 py-1 w-32 rounded focus:outline-none focus:border-indigo-300" />
               </div>
 
-
               <div class="date-input">
                 <label>check out</label>
                 <input :placeholder="checkOut" :value="inputValue.end" v-on="inputEvents.end"
                   class="border px-2 py-1 w-32 rounded focus:outline-none focus:border-indigo-300" />
               </div>
             </div>
-
           </div>
         </template>
       </v-date-picker>
       <!--  -->
 
-
       <div @click="isShow = !isShow" class="guest-input">
         <label>guests
           <div class="expand-order">
-            <span class="material-icons-outlined" :class="{ flip: !isShow }">
-              expand_less
-            </span>
+            <span class="material-icons-outlined" :class="{ flip: !isShow }"> expand_less </span>
           </div>
         </label>
         <input disabled :placeholder="guestsCount" />
       </div>
     </div>
 
-
-
-
-    <!-- <div class="order-data">
-      <div class="date-picker">
-        <div class="date-input">
-          <label>check in</label>
-          <input :placeholder="checkIn" />
-        </div>
-        <div class="date-input">
-          <label>check out</label>
-          <input :placeholder="checkOut" />
-        </div>
-      </div>
-      <div @click="isShow = !isShow" class="guest-input">
-        <label>guests
-          <div class="expand-order">
-            <span class="material-icons-outlined" :class="{ flip: !isShow }">
-              expand_less
-            </span>
-          </div>
-        </label>
-        <input disabled :placeholder="guestsCount" />
-      </div>
-    </div> -->
-
-
-
-
-
-
     <div class="cell"></div>
     <div class="cell"></div>
-    <div class="btn-container">
-      <div class="cell"></div>
+    <div @click.prevent="sendOrder" class="btn-container">
       <div class="cell"></div>
       <div class="cell"></div>
       <div class="cell"></div>
@@ -186,7 +146,6 @@
       </div>
     </div>
 
-
     <div class="flex column" v-if="isShow">
       <div class="guests-container flex justify-space-between align-center">
         <div class="flex column">
@@ -218,9 +177,9 @@
           </button>
         </div>
       </div>
-
     </div>
 
+    <!-- <pre>{{ stay }}</pre> -->
     <div class="pricing" v-if="dateCheck">
       <h4>You won't be charged yet</h4>
       <p>
@@ -231,14 +190,14 @@
 </template>
 
 <script>
-import { ElMessage } from 'element-plus'
+import { ElMessage } from 'element-plus';
 
 export default {
-
   name: ' order-details',
   props: { stay: { type: Object } },
   data() {
     return {
+      totalPriceSum: 0,
       isShow: false,
       trip: {
         guests: {
@@ -247,14 +206,19 @@ export default {
         },
         dates: {},
       },
+      loggedinUser: null,
     };
+  },
+  created() {
+    this.loggedinUser = this.$store.getters.loggedinUser;
+
   },
   computed: {
     reviewsCount() {
       return this.stay.reviews.length;
     },
     dateCheck() {
-      return Object.keys(this.trip.dates).length
+      return Object.keys(this.trip.dates).length;
     },
 
     guestsCount() {
@@ -271,24 +235,57 @@ export default {
     totalPrice() {
       let size = Object.keys(this.trip.dates).length;
       if (size > 1) {
-        const time = JSON.parse(JSON.stringify(this.trip.dates))
-        const { start, end } = time
+        const time = JSON.parse(JSON.stringify(this.trip.dates));
+        const { start, end } = time;
 
         const timeDiff = (new Date(end).getTime() - new Date(start).getTime()) / (1000 * 3600 * 24);
+        this.totalPriceSum = Number(parseInt(this.stay.price * timeDiff)).toLocaleString();
         return Number(parseInt(this.stay.price * timeDiff)).toLocaleString();
       }
     },
-
   },
   methods: {
     updateGuests(type, number) {
       const guestsCount = this.trip.guests.children + this.trip.guests.adults;
       if (this.trip.guests[type] === 0 && number === -1) return;
-      if (this.stay.capacity === guestsCount && number == 1) return ElMessage.error('You over the guests capacity')
+      if (this.stay.capacity === guestsCount && number == 1) return ElMessage.error('You over the guests capacity');
 
       this.trip.guests[type] += number;
     },
+    sendOrder() {
+      console.log('this.stay.host._id:', this.stay.host._id)
+      if (this.dateCheck === 0) return ElMessage.error('Fill check in and check out date ')
+      const { adults, children } = this.trip.guests
+      if (children === 0 && adults === 0) return ElMessage.error('Add guests! ')
 
+      const time = JSON.parse(JSON.stringify(this.trip.dates));
+      const { start, end } = time;
+
+      let order = {
+        "hostId": this.stay.host._id,
+        "createdAt": Date.now(),
+        "buyer": {
+          "_id": "logininuser",   //this.loggedinUser._id
+          "fullname": "logininuser"  //this.loggedinUser.fullname
+        },
+        "totalPrice": this.totalPriceSum,
+        "startDate": start,
+        "endDate": end,
+        "guests": {
+          "adults": adults,
+          "children": children,
+        },
+        "stay": {
+          "_id": this.stay._id,
+          "name": this.stay.name,
+          "price": this.stay.price
+        },
+        "status": "pending"
+      }
+
+      this.$store.dispatch({ type: "saveOrder", order, });
+      ElMessage.success('Order Added!')
+    }
   },
 };
 </script>

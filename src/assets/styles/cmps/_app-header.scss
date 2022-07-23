@@ -18,6 +18,7 @@ header {
   .explore-filter {
     flex: 1;
     max-width: 847px;
+    position: relative;
   }
 
   .header-labels {
@@ -58,6 +59,126 @@ header {
     span.i3c9txn.dir.dir-ltr {
       display: flex;
       justify-content: space-evenly;
+    }
+  }
+  .order-container.header-filter-search {
+    background: none;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+    margin: 0;
+    max-width: 110px;
+    height: 47px;
+    margin-right: -20px;
+    .content.filter-content {
+      border-radius: 24px;
+    }
+    .content.filter-content button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-sizing: border-box;
+      /* padding: 20px; */
+      gap: 8px;
+      .material-icons.search {
+        color: white;
+        font-size: 17px;
+      }
+      span {
+        font-family: 'Cereal';
+      }
+    }
+  }
+  .form-filter {
+    background-color: aliceblue;
+    width: 55em;
+    height: 40em;
+    position: absolute;
+    z-index: 1;
+    top: 8vh;
+    left: 15vw;
+    overflow-y: auto;
+  }
+
+  .filter-option {
+    flex: 1;
+    input:focus {
+      outline: none;
+    }
+    input {
+      border: none;
+    }
+  }
+
+  .filter-option:first-child {
+    flex: 1.2;
+  }
+  .filter-option.guest-dropdown {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .filter-option label {
+    font-size: 12px;
+    font-family: 'Cereal-medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  .filter-option,
+  .add-guest-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .checkin,
+  .checkout {
+    display: flex;
+    flex-direction: column;
+  }
+  .expend {
+    border: 1px solid #dddddd;
+    border-radius: 32px;
+  }
+  .btn-container.on-filter {
+    // margin-left: 23px;
+    padding-right: 9px;
+  }
+
+  form.el-form.el-form--default.el-form--label-right {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* padding: 20px; */
+    padding: 14px 32px;
+    box-sizing: border-box;
+  }
+  .destination {
+  }
+  .dropdown-card {
+    position: absolute;
+    max-width: 600px;
+    width: 100%;
+    border-radius: 32px;
+    box-shadow: 0 0 0 1px rgb(0 0 0 / 4%), 0 8px 16px rgb(0 0 0 / 15%);
+    margin-top: 12px;
+    padding: 16px 32px;
+    z-index: 5;
+    background: white;
+  }
+
+  .guests-modal {
+    right: 0;
+    max-width: 406px;
+  }
+
+  .row-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-bottom: 1px solid rgb(235, 235, 235);
+    padding: 20px 0px;
+    .lft-crd {
+      display: flex;
+      flex-direction: column;
     }
   }
 }
