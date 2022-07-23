@@ -89,16 +89,6 @@ header {
       }
     }
   }
-  .form-filter {
-    background-color: aliceblue;
-    width: 55em;
-    height: 40em;
-    position: absolute;
-    z-index: 1;
-    top: 8vh;
-    left: 15vw;
-    overflow-y: auto;
-  }
 
   .filter-option {
     flex: 1;
@@ -181,16 +171,4 @@ header {
       flex-direction: column;
     }
   }
-}
-
-
-.form-filter {
-  background-color: aliceblue;
-  width: 55em;
-  height: 40em;
-  position: absolute;
-  z-index: 100;
-  top: 8vh;
-  left: 15vw;
-  overflow-y: auto;
 }

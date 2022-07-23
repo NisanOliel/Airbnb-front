@@ -1,0 +1,59 @@
+.form-filter {
+  background-color: white;
+  max-width: 780px;
+  height: 40em;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  /* left: 50%; */
+  right: 50%;
+
+  transform: translate(50%, 15%);
+  width: 100%;
+  padding: 0px 40px;
+  box-shadow: rgb(0 0 0 / 28%) 0px 8px 28px;
+  border-radius: 12px;
+  .form-wrapper {
+    position: relative;
+    height: 100%;
+  }
+  .form-inner-wrapper {
+    overflow-y: auto;
+    max-height: 74%;
+    height: 100%;
+  }
+  h2 {
+    flex: 1;
+    font-size: em(16px);
+    font-family: 'Cereal-medium', Helvetica, sans-serif;
+  }
+  .close-filter {
+    flex: 1;
+
+    span {
+      font-size: 18px;
+    }
+  }
+
+  .form-header {
+    display: flex;
+    align-items: center;
+    min-height: 64px;
+    border-bottom: $border;
+  }
+  .form-price,
+  .form-rooms-and-beds,
+  .form-property-type,
+  .form-amenities,
+  .form-host-language,
+  .form-footer {
+    padding: $padding-filter 0;
+    border-bottom: $border;
+  }
+}
+
+@media (max-width: 800px) {
+  .form-filter {
+    width: calc(100% - 20px);
+  }
+}
