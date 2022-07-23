@@ -1,5 +1,5 @@
 <template>
-  <div class="container about">
+  <!-- <div class="container about">
     <p>{{ msg }}</p>
 
     <div v-if="loggedinUser">
@@ -14,30 +14,22 @@
       <form @submit.prevent="doLogin">
         <select v-model="loginCred.username">
           <option value="">Select User</option>
-          <option v-for="user in users" :key="user._id" :value="user.username">{{user.fullname}}</option>
+          <option v-for="user in users" :key="user._id" :value="user.username">{{ user.fullname }}</option>
         </select>
-        <!-- <input type="text" v-model="loginCred.username" placeholder="User name" />
+        <input type="text" v-model="loginCred.username" placeholder="User name" />
         <input
           type="text"
           v-model="loginCred.password"
           placeholder="Password"
-        /> -->
+        />
         <button>Login</button>
       </form>
       <p class="mute">user1 or admin, pass:123 </p>
       <form @submit.prevent="doSignup">
         <h2>Signup</h2>
         <input type="text" v-model="signupCred.fullname" placeholder="Your full name" />
-        <input
-          type="text"
-          v-model="signupCred.password"
-          placeholder="Password"
-        />
-        <input
-          type="text"
-          v-model="signupCred.username"
-          placeholder="Username"
-        />
+        <input type="text" v-model="signupCred.password" placeholder="Password" />
+        <input type="text" v-model="signupCred.username" placeholder="Username" />
         <button>Signup</button>
       </form>
     </div>
@@ -53,7 +45,46 @@
         </li>
       </ul>
     </details>
-  </div>
+  </div> -->
+
+  <main class="login-container">
+    <section v-if="!this.newUser" class="flex column align-center">
+      <form class="login-form" @submit.prevent="doLogin">
+        <div class="login-form-body flex column">
+          <h1>Welcome back</h1>
+          <input autocomplete="username" type="text" class="login-input" name="username" placeholder="Username"
+            v-model="loginCred.username" />
+          <input autocomplete="password" type="password" class="login-input" name="password" placeholder="Password"
+            v-model="loginCred.password" />
+          <p>{{ msg }}</p>
+          <button type="submit" class="login-btn">Submit</button>
+          <div class="login-actions-btns flex ">
+            <button type="button" class="actions-btn" @click="toggleForm()">New user</button>
+          </div>
+        </div>
+      </form>
+    </section>
+
+
+    <section v-else class="flex column align-center">
+      <form class="login-form" @submit.prevent="doSignup">
+        <div class="login-form-body flex column">
+          <h1>Sign up</h1>
+          <input type="text" class="login-input" name="fullname" placeholder="Full name"
+            v-model="signupCred.fullname" />
+          <input autocomplete="password" name="password" class="login-input" type="password" placeholder="Password"
+            v-model="signupCred.password" />
+          <input autocomplete="username" type="text" class="login-input" name="username" placeholder="Username"
+            v-model="signupCred.username" />
+          <p>{{ msg }}</p>
+          <button class="login-btn" type="submit">Sign up</button>
+          <div class="login-actions-btns flex">
+            <button type="button" class=" actions-btn" @click="toggleForm()">I already have an account</button>
+          </div>
+        </div>
+      </form>
+    </section>
+  </main>
 </template>
 
 <script>
@@ -61,9 +92,10 @@ export default {
   name: 'login-signup',
   data() {
     return {
+      newUser: false,
       msg: '',
-      loginCred: {username: 'user1', password: '123'},
-      signupCred: {username: '', password: '', fullname: ''},
+      loginCred: { username: '', password: '' },
+      signupCred: { username: '', password: '', fullname: '' },
     }
   },
   computed: {
@@ -78,6 +110,11 @@ export default {
     this.loadUsers()
   },
   methods: {
+    toggleForm() {
+      this.newUser = !this.newUser;
+      this.msg = "";
+    },
+
     async doLogin() {
       if (!this.loginCred.username) {
         this.msg = 'Please enter username/password'
@@ -86,9 +123,9 @@ export default {
       try {
         await this.$store.dispatch({ type: "login", userCred: this.loginCred })
         this.$router.push('/')
-      } catch(err) {
-          console.log(err)
-          this.msg = 'Failed to login'
+      } catch (err) {
+        console.log(err)
+        this.msg = 'Failed to login'
       }
     },
     doLogout() {
@@ -101,7 +138,7 @@ export default {
       }
       await this.$store.dispatch({ type: 'signup', userCred: this.signupCred })
       this.$router.push('/')
-      
+
     },
     loadUsers() {
       this.$store.dispatch({ type: "loadUsers" })
@@ -110,7 +147,7 @@ export default {
       try {
         await this.$store.dispatch({ type: "removeUser", userId })
         this.msg = 'User removed'
-      } catch(err) {
+      } catch (err) {
         this.msg = 'Failed to remove user'
       }
     }
