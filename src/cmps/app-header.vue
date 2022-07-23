@@ -12,9 +12,11 @@
           <explore-filter />
         </div>
 
-        <a class="right-header" href="/explore">Explore</a>
+        <div class="flex">
+          <a class="right-header" href="/explore">Explore</a>
 
-        <a class="right-header" href="/#/login"><img class="explore-btn" src="../assets/icons/en.svg"></a>
+          <a class="right-header" href="/#/login"><img class="explore-btn" src="../assets/icons/en.svg"></a>
+        </div>
 
         <!-- <button class="expend explore-btn">Explore</button>
 
