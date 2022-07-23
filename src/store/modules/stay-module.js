@@ -26,7 +26,7 @@ export const stayStore = {
       }
       for (let key in filters) {
         const keys = Object.keys(filters[key]);
-        console.log('stay obj keys', stay);
+        // console.log('stay obj keys', stay);
 
         switch (keys) {
           case stay.bedrooms:
