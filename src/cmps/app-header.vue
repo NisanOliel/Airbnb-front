@@ -13,20 +13,16 @@
           <explore-filter />
         </div>
 
-        <a class="right-header" href="/explore">Explore</a>
-
         <a class="right-header" href="/#/login"><img class="explore-btn" src="../assets/icons/en.svg" /></a>
 
-        <!-- <button class="expend explore-btn">Explore</button>
+        <div class="flex">
+          <a class="right-header" href="/explore">Explore</a>
 
-        <button class="expend">
-          <img src="../assets/icons/en.svg">
-        </button> -->
-
-        <button class="nav-btn expend flex">
-          <img class="menu-btn" src="../assets/icons/menu.svg" />
-          <img class="host-image" src="https://randomuser.me/api/portraits/men/10.jpg" />
-        </button>
+          <button class="nav-btn expend flex">
+            <img class="menu-btn" src="../assets/icons/menu.svg" />
+            <img class="host-image" src="https://randomuser.me/api/portraits/men/10.jpg" />
+          </button>
+        </div>
       </nav>
 
       <div v-if="headerLocation" class="header-labels flex justify-space-between align-center">
@@ -82,8 +78,6 @@
         let params = this.$route.params;
         let isEmpty = Object.keys(params).length === 0;
         return isEmpty;
-
-        // return (this.location = isEmpty);
       },
     },
     methods: {
@@ -93,7 +87,12 @@
       onClickAway() {
         this.isShow = false;
       },
+
+      closeModal() {
+        this.isShow = false;
+      },
     },
+
     components: {
       exploreFilter,
       exploreLabels,
