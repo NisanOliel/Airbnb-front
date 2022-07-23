@@ -13,13 +13,9 @@
           <explore-filter />
         </div>
 
-
-        <a class="right-header" href="/#/login"><img class="explore-btn" src="../assets/icons/en.svg" /></a>
-
-
         <div class="flex">
-
           <a class="right-header" href="/explore">Explore</a>
+          <a class="right-header" href="/#/login"><img class="explore-btn" src="../assets/icons/en.svg" /></a>
 
           <button class="nav-btn expend flex">
             <img class="menu-btn" src="../assets/icons/menu.svg" />
@@ -73,15 +69,18 @@ export default {
       let params = this.$route.params;
       let isEmpty = Object.keys(params).length === 0;
       return isEmpty;
-
-      // return (this.location = isEmpty);
     },
   },
   methods: {
     closeModal() {
       this.isShow = false;
     },
+    onClickAway() {
+      this.isShow = false;
+    },
+
   },
+
   components: {
     exploreFilter,
     exploreLabels,
