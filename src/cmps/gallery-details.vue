@@ -17,6 +17,7 @@ export default {
         `src/assets/Images/${this.stay.imgUrls[1]}`,
         `src/assets/Images/${this.stay.imgUrls[2]}`,
         `src/assets/Images/${this.stay.imgUrls[3]}`,
+        `src/assets/Images/${this.stay.imgUrls[4]}`,
       ],
     };
   },
