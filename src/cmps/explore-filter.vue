@@ -253,7 +253,8 @@
     methods: {
       formSubmit() {
         console.log('hellow');
-        this.$router.push(`/explore?location=${this.filterBy.where}`);
+        let url = `/explore?location=${this.filterBy.where}`;
+        this.$router.push(url);
       },
       expendForm(ev) {
         console.log('ev', ev.target.innerText);
@@ -292,6 +293,9 @@
     computed: {
       filterShow() {
         this.filterPreview = !this.filterPreview;
+      },
+      unmounted() {
+        // this.formSubmit();
       },
     },
   };
