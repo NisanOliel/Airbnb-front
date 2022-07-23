@@ -134,9 +134,5 @@ export default {
   components: {
   },
 };
-<<<<<<< HEAD
-</script>
-=======
 
 </script>
->>>>>>> 610108007ee8cf0297403ab4ce038e2db1281a12
