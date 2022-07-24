@@ -254,7 +254,7 @@
     methods: {
       handleScroll(event) {
         console.log('this.filter', this.filterPreview);
-        if (window.scrollY > 0) {
+        if (window.scrollY === 0) {
           console.log('window', window);
           this.filterPreview = true;
         }
