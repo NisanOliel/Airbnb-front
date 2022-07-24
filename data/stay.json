@@ -46,7 +46,8 @@
       "thumbnailUrl": "https://a0.muscache.com/im/pictures/542dba0c-eb1b-4ab3-85f3-94d3cc8f87a4.jpg?aki_policy=profile_small",
       "pictureUrl": "https://a0.muscache.com/im/pictures/542dba0c-eb1b-4ab3-85f3-94d3cc8f87a4.jpg?aki_policy=profile_x_medium",
       "isSuperhost": true,
-      "id": "36133410"
+      "id": "36133410",
+      "hostLanguage": "English"
     },
     "address": {
       "street": "Lahaina, HI, United States",
@@ -225,7 +226,8 @@
       "thumbnailUrl": "https://a0.muscache.com/im/pictures/12be1141-74de-4f04-bf28-82c3ed589d11.jpg?aki_policy=profile_small",
       "pictureUrl": "https://a0.muscache.com/im/pictures/12be1141-74de-4f04-bf28-82c3ed589d11.jpg?aki_policy=profile_x_medium",
       "isSuperhost": false,
-      "id": "80344827"
+      "id": "80344827",
+      "hostLanguage": "Japanese"
     },
     "address": {
       "street": "Montréal, QC, Canada",
@@ -346,7 +348,8 @@
       "thumbnailUrl": "https://a0.muscache.com/im/pictures/c9b876fc-b30e-4951-8f88-af9add00939e.jpg?aki_policy=profile_small",
       "pictureUrl": "https://a0.muscache.com/im/pictures/c9b876fc-b30e-4951-8f88-af9add00939e.jpg?aki_policy=profile_x_medium",
       "isSuperhost": true,
-      "id": "78704763"
+      "id": "78704763",
+      "hostLanguage": "English"
     },
     "address": {
       "street": "Porto, Porto, Portugal",
@@ -613,7 +616,8 @@
       "thumbnailUrl": "https://a0.muscache.com/im/users/6334250/profile_pic/1368287493/original.jpg?aki_policy=profile_small",
       "pictureUrl": "https://a0.muscache.com/im/users/6334250/profile_pic/1368287493/original.jpg?aki_policy=profile_x_medium",
       "isSuperhost": true,
-      "id": "6334250"
+      "id": "6334250",
+      "hostLanguage": "Japanese"
     },
     "address": {
       "street": "Brooklyn, NY, United States",
@@ -901,7 +905,8 @@
       "thumbnailUrl": "https://a0.muscache.com/im/users/31635864/profile_pic/1429604852/original.jpg?aki_policy=profile_small",
       "pictureUrl": "https://a0.muscache.com/im/users/31635864/profile_pic/1429604852/original.jpg?aki_policy=profile_x_medium",
       "isSuperhost": false,
-      "id": "31635864"
+      "id": "31635864",
+      "hostLanguage": "German"
     },
     "address": {
       "street": "Barcelona, Catalunya, Spain",
@@ -992,7 +997,8 @@
       "thumbnailUrl": "https://a0.muscache.com/im/pictures/72a579ce-37d7-466e-9c25-9876ee8de037.jpg?aki_policy=profile_small",
       "pictureUrl": "https://a0.muscache.com/im/pictures/72a579ce-37d7-466e-9c25-9876ee8de037.jpg?aki_policy=profile_x_medium",
       "isSuperhost": false,
-      "id": "35858044"
+      "id": "35858044",
+      "hostLanguage": "English"
     },
     "address": {
       "street": "Barcelona, Catalonia, Spain",
@@ -1285,7 +1291,8 @@
       "thumbnailUrl": "https://a0.muscache.com/im/pictures/61b62b90-e38b-4609-a3c4-ff5ff06b5c08.jpg?aki_policy=profile_small",
       "pictureUrl": "https://a0.muscache.com/im/pictures/61b62b90-e38b-4609-a3c4-ff5ff06b5c08.jpg?aki_policy=profile_x_medium",
       "isSuperhost": false,
-      "id": "24800102"
+      "id": "24800102",
+      "hostLanguage": "Japanese"
     },
     "address": {
       "street": "New York, NY, United States",
@@ -1574,7 +1581,8 @@
       "thumbnailUrl": "https://a0.muscache.com/im/pictures/f3e85f0c-e28d-4698-9da9-2f203aea1f3d.jpg?aki_policy=profile_small",
       "pictureUrl": "https://a0.muscache.com/im/pictures/f3e85f0c-e28d-4698-9da9-2f203aea1f3d.jpg?aki_policy=profile_x_medium",
       "isSuperhost": true,
-      "id": "9320470"
+      "id": "9320470",
+      "hostLanguage": "English"
     },
     "address": {
       "street": "Porto, Porto, Portugal",
@@ -1871,7 +1879,8 @@
       "thumbnailUrl": "https://a0.muscache.com/im/pictures/87b9ccba-154a-4546-8cbe-8bdb25ddb36c.jpg?aki_policy=profile_small",
       "pictureUrl": "https://a0.muscache.com/im/pictures/87b9ccba-154a-4546-8cbe-8bdb25ddb36c.jpg?aki_policy=profile_x_medium",
       "isSuperhost": false,
-      "id": "80558077"
+      "id": "80558077",
+      "hostLanguage": "French"
     },
     "address": {
       "street": "Porto, Porto District, Portugal",
@@ -2003,7 +2012,8 @@
       "thumbnailUrl": "https://a0.muscache.com/im/pictures/user/6bf03261-e7ac-4e0e-8121-3828612bbb6a.jpg?aki_policy=profile_small",
       "pictureUrl": "https://a0.muscache.com/im/pictures/user/6bf03261-e7ac-4e0e-8121-3828612bbb6a.jpg?aki_policy=profile_x_medium",
       "isSuperhost": true,
-      "id": "5823933"
+      "id": "5823933",
+      "hostLanguage": "French"
     },
     "address": {
       "street": "Taksim, Cihangir, Istanbul , Beyoğlu, Turkey",
@@ -2266,7 +2276,7 @@
     "summary": "Price includes nightly rate & 14.42% tax.  Our fully remodeled 9th floor Penthouse unit offers the most amazing views.  The entire front of the condo is windows offering you a fantastic view of beautiful Pacific Ocean, Molokai & Lana'i.  Perfect location for watching beautiful sunsets, see our resident sea turtles & an excellent place for spotting whales during the whale migration season. This spacious two level 3 bedroom and 3 full bath Penthouse unit has over 2,050 sq ft of living space w/ AC.",
     "interaction": "As your host I will be available via phone for any questions or concerns.  I am always happy to answer any questions or give assistance prior to your arrival.",
     "houseRules": "Resort fee of $75 collected by front desk at time of check in.  One time fee. - Rates are for 6 guests.  An additional $25 per night per person for up to 2 more guests. - Resort Quiet Hours 10:00 p.m. - 8:00 a.m. - No smoking on the lanai or in unit per Hawaii state law",
-    "propertyType": "Beaches",
+    "propertyType": "Beach",
     "roomType": "Entire home/apt",
     "bedType": "Real Bed",
     "capacity": 9,
@@ -2308,7 +2318,8 @@
       "thumbnailUrl": "https://a0.muscache.com/im/pictures/07c98f2f-9ffe-4ed8-82ca-1e9cd00c673f.jpg?aki_policy=profile_small",
       "pictureUrl": "https://a0.muscache.com/im/pictures/07c98f2f-9ffe-4ed8-82ca-1e9cd00c673f.jpg?aki_policy=profile_x_medium",
       "isSuperhost": true,
-      "id": "82827178"
+      "id": "82827178",
+      "hostLanguage": "English"
     },
     "address": {
       "street": "Lahaina, HI, United States",
@@ -2568,7 +2579,8 @@
       "thumbnailUrl": "https://a0.muscache.com/im/pictures/user/7620074d-86d6-49c3-b7fe-cafe084051dd.jpg?aki_policy=profile_small",
       "pictureUrl": "https://a0.muscache.com/im/pictures/user/7620074d-86d6-49c3-b7fe-cafe084051dd.jpg?aki_policy=profile_x_medium",
       "isSuperhost": false,
-      "id": "98780303"
+      "id": "98780303",
+      "hostLanguage": "Japanese"
     },
     "address": {
       "street": "Fatih, İstanbul, Turkey",
@@ -2865,7 +2877,8 @@
       "thumbnailUrl": "https://a0.muscache.com/im/pictures/user/3fceba9a-ce84-4841-88df-b699105119b4.jpg?aki_policy=profile_small",
       "pictureUrl": "https://a0.muscache.com/im/pictures/user/3fceba9a-ce84-4841-88df-b699105119b4.jpg?aki_policy=profile_x_medium",
       "isSuperhost": false,
-      "id": "54320669"
+      "id": "54320669",
+      "hostLanguage": "Japanese"
     },
     "address": {
       "street": "Barcelona, Catalunya, Spain",
@@ -3162,7 +3175,8 @@
       "thumbnailUrl": "https://a0.muscache.com/im/users/6107595/profile_pic/1442432675/original.jpg?aki_policy=profile_small",
       "pictureUrl": "https://a0.muscache.com/im/users/6107595/profile_pic/1442432675/original.jpg?aki_policy=profile_x_medium",
       "isSuperhost": true,
-      "id": "6107595"
+      "id": "6107595",
+      "hostLanguage": "English"
     },
     "address": {
       "street": "Barcelona, Catalunya, Spain",
@@ -3455,7 +3469,8 @@
       "thumbnailUrl": "https://a0.muscache.com/im/pictures/217e78d8-bb65-46c5-af28-ecd1939e1945.jpg?aki_policy=profile_small",
       "pictureUrl": "https://a0.muscache.com/im/pictures/217e78d8-bb65-46c5-af28-ecd1939e1945.jpg?aki_policy=profile_x_medium",
       "isSuperhost": false,
-      "id": "62130666"
+      "id": "62130666",
+      "hostLanguage": "English"
     },
     "address": {
       "street": "Brooklyn, NY, United States",
@@ -3718,7 +3733,7 @@
     "summary": "The comfortable apartment at the heart of busy Tsim Sha Tsui.2minutes walk to the MTR/Subway station.There are many biggest shopping mall around here:K-11,The One,Harbour city ect.",
     "interaction": "We are always contactable by mobile,Email or Airbnb.Feel free to let us know if there's anything we can do to make your stay more pleasant!",
     "houseRules": "",
-    "propertyType": "Beaches",
+    "propertyType": "Beach",
     "roomType": "Entire home/apt",
     "bedType": "Real Bed",
     "capacity": 2,
@@ -3752,7 +3767,8 @@
       "thumbnailUrl": "https://a0.muscache.com/im/users/37031267/profile_pic/1441373303/original.jpg?aki_policy=profile_small",
       "pictureUrl": "https://a0.muscache.com/im/users/37031267/profile_pic/1441373303/original.jpg?aki_policy=profile_x_medium",
       "isSuperhost": false,
-      "id": "37031267"
+      "id": "37031267",
+      "hostLanguage": "English"
     },
     "address": {
       "street": "香港, 九龍, Hong Kong",
@@ -4015,7 +4031,7 @@
     "summary": "Welcome to Kana'i A Nalu a quiet resort that sits on the ocean away from the road. This property has the BEST ocean front views of Molokini Crater and Kaho'Olawe Island. There is a resort swimming pool and BBQs next to the ocean. This gorgeous 2 bed 2 bath unit is on the third floor look over the Pacific Ocean with views of Sugar Beach and Mount Haleakalea!  The condo is light and bright with all the creature comforts of home.  The beds are very comfortable.",
     "interaction": "We will email you PDF check-in letter and documents at least 60 days prior to check-in.",
     "houseRules": "MVFA LLC dba Maui Vision Rentals (Agent) Cancellation, Deposit & Booking Policies Rental Rules: Guest agrees to abide by the Rental Rules.  Guest shall cause all members of the rental party and anyone else Guest permits on the property to abide by the following rules at all times while at the property including rules posted at the condominium complex.  By accepting this reservation and paying for the rental, guest enters the condo agreeing to all terms and conditions of this agreement and accepts responsibility for all guests of the property. Guest shall not permit any use of the pool by unsupervised children.  An adult Guest must accompany children and be present at all times. Guest and other invitees shall use the pool at their own risk.  Please respect the posted rules. Mandatory Occupancy Disclosures: You must disclose to us the exact number and names of guests (subject to maximum) who will be occupying the Property during the rental term.  You must immediately notify us, by phone ",
-    "propertyType": "Beaches",
+    "propertyType": "Beach",
     "roomType": "Entire home/apt",
     "bedType": "Real Bed",
     "capacity": 6,
@@ -4057,7 +4073,8 @@
       "thumbnailUrl": "https://a0.muscache.com/im/pictures/ddcc4146-9abc-4f4d-b347-8f30deb10f6c.jpg?aki_policy=profile_small",
       "pictureUrl": "https://a0.muscache.com/im/pictures/ddcc4146-9abc-4f4d-b347-8f30deb10f6c.jpg?aki_policy=profile_x_medium",
       "isSuperhost": true,
-      "id": "733802"
+      "id": "733802",
+      "hostLanguage": "English"
     },
     "address": {
       "street": "Wailuku, HI, United States",
@@ -4199,7 +4216,8 @@
       "thumbnailUrl": "https://a0.muscache.com/im/users/24253453/profile_pic/1434065920/original.jpg?aki_policy=profile_small",
       "pictureUrl": "https://a0.muscache.com/im/users/24253453/profile_pic/1434065920/original.jpg?aki_policy=profile_x_medium",
       "isSuperhost": false,
-      "id": "24253453"
+      "id": "24253453",
+      "hostLanguage": "Japanese"
     },
     "address": {
       "street": "Brooklyn, NY, United States",
@@ -4287,7 +4305,8 @@
       "thumbnailUrl": "https://a0.muscache.com/im/users/22076771/profile_pic/1415724202/original.jpg?aki_policy=profile_small",
       "pictureUrl": "https://a0.muscache.com/im/users/22076771/profile_pic/1415724202/original.jpg?aki_policy=profile_x_medium",
       "isSuperhost": false,
-      "id": "22076771"
+      "id": "22076771",
+      "hostLanguage": "Japanese"
     },
     "address": {
       "street": "Barcelona, Catalunya, Spain",
@@ -4437,7 +4456,8 @@
       "thumbnailUrl": "https://a0.muscache.com/im/pictures/d741db02-7680-4a52-940e-52dae808cd1f.jpg?aki_policy=profile_small",
       "pictureUrl": "https://a0.muscache.com/im/pictures/d741db02-7680-4a52-940e-52dae808cd1f.jpg?aki_policy=profile_x_medium",
       "isSuperhost": true,
-      "id": "2769925"
+      "id": "2769925",
+      "hostLanguage": "German"
     },
     "address": {
       "street": "Istanbul, Istanbul, Turkey",
@@ -4555,7 +4575,8 @@
       "thumbnailUrl": "https://a0.muscache.com/im/pictures/542dba0c-eb1b-4ab3-85f3-94d3cc8f87a4.jpg?aki_policy=profile_small",
       "pictureUrl": "https://a0.muscache.com/im/pictures/542dba0c-eb1b-4ab3-85f3-94d3cc8f87a4.jpg?aki_policy=profile_x_medium",
       "isSuperhost": true,
-      "id": "36133410"
+      "id": "36133410",
+      "hostLanguage": "English"
     },
     "address": {
       "street": "Lahaina, HI, United States",
@@ -4683,7 +4704,8 @@
       "thumbnailUrl": "https://a0.muscache.com/im/pictures/fda23efa-e51c-40be-8cd8-3ab6ee05c140.jpg?aki_policy=profile_small",
       "pictureUrl": "https://a0.muscache.com/im/pictures/fda23efa-e51c-40be-8cd8-3ab6ee05c140.jpg?aki_policy=profile_x_medium",
       "isSuperhost": true,
-      "id": "57921954"
+      "id": "57921954",
+      "hostLanguage": "English"
     },
     "address": {
       "street": "TR, Turkey",
@@ -4980,7 +5002,8 @@
       "thumbnailUrl": "https://a0.muscache.com/im/pictures/user/c92b0b12-e019-4bb1-b0a8-c0b671096eb2.jpg?aki_policy=profile_small",
       "pictureUrl": "https://a0.muscache.com/im/pictures/user/c92b0b12-e019-4bb1-b0a8-c0b671096eb2.jpg?aki_policy=profile_x_medium",
       "isSuperhost": false,
-      "id": "12243051"
+      "id": "12243051",
+      "hostLanguage": "English"
     },
     "address": {
       "street": "Montreal, QC, Canada",
@@ -5276,7 +5299,8 @@
       "thumbnailUrl": "https://a0.muscache.com/im/pictures/4d361f57-f65e-4885-b934-0e92eebf288d.jpg?aki_policy=profile_small",
       "pictureUrl": "https://a0.muscache.com/im/pictures/4d361f57-f65e-4885-b934-0e92eebf288d.jpg?aki_policy=profile_x_medium",
       "isSuperhost": false,
-      "id": "52004369"
+      "id": "52004369",
+      "hostLanguage": "English"
     },
     "address": {
       "street": "New York, NY, United States",
@@ -5440,7 +5464,8 @@
       "thumbnailUrl": "https://a0.muscache.com/im/users/50124/profile_pic/1443072360/original.jpg?aki_policy=profile_small",
       "pictureUrl": "https://a0.muscache.com/im/users/50124/profile_pic/1443072360/original.jpg?aki_policy=profile_x_medium",
       "isSuperhost": true,
-      "id": "50124"
+      "id": "50124",
+      "hostLanguage": "German"
     },
     "address": {
       "street": "Queens, NY, United States",
@@ -5737,7 +5762,8 @@
       "thumbnailUrl": "https://a0.muscache.com/im/users/6544866/profile_pic/1400529085/original.jpg?aki_policy=profile_small",
       "pictureUrl": "https://a0.muscache.com/im/users/6544866/profile_pic/1400529085/original.jpg?aki_policy=profile_x_medium",
       "isSuperhost": true,
-      "id": "6544866"
+      "id": "6544866",
+      "hostLanguage": "English"
     },
     "address": {
       "street": "Barcelona, Catalunya, Spain",
@@ -6030,7 +6056,8 @@
       "thumbnailUrl": "https://a0.muscache.com/im/pictures/fdb58b71-1613-4905-8850-024dc23f1cb0.jpg?aki_policy=profile_small",
       "pictureUrl": "https://a0.muscache.com/im/pictures/fdb58b71-1613-4905-8850-024dc23f1cb0.jpg?aki_policy=profile_x_medium",
       "isSuperhost": false,
-      "id": "80740340"
+      "id": "80740340",
+      "hostLanguage": "French"
     },
     "address": {
       "street": "Barcelona, Catalunya, Spain",
@@ -6322,7 +6349,8 @@
       "thumbnailUrl": "https://a0.muscache.com/im/pictures/440690bd-73f1-411a-8194-5e6a17bc39ff.jpg?aki_policy=profile_small",
       "pictureUrl": "https://a0.muscache.com/im/pictures/440690bd-73f1-411a-8194-5e6a17bc39ff.jpg?aki_policy=profile_x_medium",
       "isSuperhost": false,
-      "id": "9031139"
+      "id": "9031139",
+      "hostLanguage": "French"
     },
     "address": {
       "street": "Darlington, NSW, Australia",
@@ -6424,7 +6452,8 @@
       "thumbnailUrl": "https://a0.muscache.com/im/users/528512/profile_pic/1303510673/original.jpg?aki_policy=profile_small",
       "pictureUrl": "https://a0.muscache.com/im/users/528512/profile_pic/1303510673/original.jpg?aki_policy=profile_x_medium",
       "isSuperhost": false,
-      "id": "528512"
+      "id": "528512",
+      "hostLanguage": "French"
     },
     "address": {
       "street": "Montreal, QC, Canada",

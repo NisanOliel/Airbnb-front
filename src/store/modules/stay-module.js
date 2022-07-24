@@ -31,7 +31,7 @@ export const stayStore = {
           case 'beds':
             if (value && value !== 'Any') {
               filters = filters.filter(stay => {
-                return stay[key] === Number(value);
+                return stay[key] === value;
               });
               break;
             }
@@ -39,15 +39,14 @@ export const stayStore = {
             if (value) {
               const { minPrice, maxPrice } = value;
               filters = filters.filter(stay => {
-                return stay.price >= Number(minPrice) && stay.price <= Number(maxPrice);
+                return stay.price >= minPrice && stay.price <= maxPrice;
               });
             }
             break;
           case 'propertyType':
+          case 'label':
             if (value) {
-              filters = filters.filter(stay => {
-                return stay.propertyType.includes(value);
-              });
+              filters = filters.filter(stay => stay.propertyType === value);
             }
             break;
           case 'amenities':
@@ -57,11 +56,11 @@ export const stayStore = {
               });
             }
             break;
-          case 'label':
-            if (value) {
-              filters = filters.filter(stay => stay.propertyType === value);
+          case 'hostLanguage':
+            if (value.length > 0) {
+              filters = filters.filter(stay => value.includes(stay.host.hostLanguage));
             }
-            break;
+            break
           default:
             break;
         }
@@ -85,7 +84,6 @@ export const stayStore = {
       return typeMap;
     },
   },
-
   mutations: {
     setStays(state, { stays }) {
       state.stays = stays;
@@ -156,7 +154,6 @@ export const stayStore = {
       return stayService.getById(stayId);
     },
     setFilterBy({ commit }, { filterBy }) {
-      console.log('filter where', filterBy);
       commit({ type: 'setFilterBy', filterBy });
     },
     setFilteredStays({ commit }) {
