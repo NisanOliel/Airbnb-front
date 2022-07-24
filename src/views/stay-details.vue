@@ -12,11 +12,13 @@
         <section class="box-padding flex justify-space-between gray-box">
           <div>
             <h2>{{ stay.roomType }} by {{ stay.host.fullname }}</h2>
-            <ul class="flex include">
-              <li><span>{{ stay.capacity }} guests </span></li>
-              <li class="order-disc"><span>{{ stay.bedrooms }} bedrooms</span></li>
-              <li class="order-disc"><span>{{ stay.beds }} beds </span></li>
-            </ul>
+            <div class="flex include">
+              <span>{{ stay.capacity }} guests </span>
+              <span class="gray">•</span>
+              <span>{{ stay.bedrooms }} bedrooms</span>
+              <span class="gray">•</span>
+              <span>{{ stay.beds }} beds </span>
+            </div>
           </div>
           <img class="host-image" :src="stay.host.thumbnailUrl" />
         </section>

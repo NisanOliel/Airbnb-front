@@ -69,10 +69,14 @@
   .main-title {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 4px;
   }
 
   .content-wrapper {
+    h2 {
+      margin-bottom: 10px;
+    }
+
     section.left-side {
       flex-basis: 62%;
 
@@ -81,9 +85,7 @@
         padding-bottom: 24px;
       }
 
-      // ul {
-      //   gap: 25px;
-      // }
+
       .amenities {
         max-width: fit-content;
         width: 100%;
@@ -94,7 +96,12 @@
       }
 
       .include {
-        gap: 30px;
+        gap: 5px;
+
+        .gray {
+          color: #717171;
+
+        }
       }
 
       .description {
