@@ -68,7 +68,6 @@ export default {
     // const headerLoc = this.$route.path;
     // const params = this.$route.params;
     // const isEmpty = Object.keys(params).length === 0;
-    // console.log('heder loc', isEmpty);
     // this.location = isEmpty;
   },
   computed: {
