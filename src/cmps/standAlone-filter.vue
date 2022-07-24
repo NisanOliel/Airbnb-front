@@ -74,7 +74,7 @@
     </div>
     <div class="form-footer">
       <button @click="clearAll()">Clear all</button>
-      <button @click="onSaveFilters">Show stays {{ getStay }}</button>
+      <button @click="onSaveFilters($event)">Show stays {{ getStay }}</button>
     </div>
   </form>
 </template>
@@ -143,11 +143,13 @@
         }
         this.$store.dispatch({ type: 'setFilterBy', filterBy: this.filterBy });
       },
-      onSaveFilters(value) {
+      onSaveFilters(ev, value) {
         this.$store.dispatch({ type: 'setFilteredStays' });
         this.propertyNum = this.$store.getters.getStays.length;
-        console.log('change form stand', this.propertyNum);
-        // this.closeForm();
+
+        if (ev.type === 'click') {
+          this.closeForm();
+        }
       },
       clearAll() {
         this.filterBy = this.getInitialFilterState();
