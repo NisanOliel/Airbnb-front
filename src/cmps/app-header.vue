@@ -71,18 +71,6 @@ export default {
       let isEmpty = Object.keys(params).length === 0;
       return isEmpty;
     },
-<<<<<<< HEAD
-
-    computed: {
-      // loggedInUser() {
-      //   return this.$store.getters.loggedinUser;
-      // },
-      headerLocation() {
-        let params = this.$route.params;
-        let isEmpty = Object.keys(params).length === 0;
-        return isEmpty;
-      },
-=======
   },
   methods: {
     closeModal() {
@@ -90,7 +78,6 @@ export default {
     },
     onClickAway() {
       this.isShow = false;
->>>>>>> 04e4a2a0cebd4b074e66d3e7e5af6d4a44fa5f57
     },
 
   },
