@@ -11,19 +11,72 @@
     object-fit: cover;
   }
 
-  section.up-info.flex {
+  .up-info.flex {
     flex: 1;
     align-items: center;
-    gap: 10px;
+
+    .left-side {
+      font-family: Cereal-medium;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .stared {
+      display: contents;
+    }
+
+    .dot {
+      font-size: 10px;
+    }
+
+    .right-info {
+      .margin20 {
+        margin-right: 14px;
+      }
+
+      button {
+        font-family: Cereal-medium !important;
+        cursor: pointer;
+        display: inline-block;
+        margin: 0px -8px;
+        font-size: 14px;
+        line-height: 18px;
+        border-radius: 8px;
+        padding: 8px;
+        border: none;
+        background: transparent;
+        text-decoration: underline;
+
+        &:hover {
+          background-color: #F7F7F7;
+          color: black;
+        }
+
+        span {
+          margin-right: 8px;
+          height: 16px;
+          width: 16px;
+        }
+
+        img {
+          height: 16px;
+          width: 16px;
+        }
+      }
+    }
   }
 
   .main-title {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 4px;
   }
 
   .content-wrapper {
+    h2 {
+      margin-bottom: 10px;
+    }
+
     section.left-side {
       flex-basis: 62%;
 
@@ -32,9 +85,7 @@
         padding-bottom: 24px;
       }
 
-      // ul {
-      //   gap: 25px;
-      // }
+
       .amenities {
         max-width: fit-content;
         width: 100%;
@@ -45,7 +96,12 @@
       }
 
       .include {
-        gap: 30px;
+        gap: 5px;
+
+        .gray {
+          color: #717171;
+
+        }
       }
 
       .description {
@@ -58,16 +114,12 @@
 
         .aircover {
           height: 30px;
-          margin-bottom: 5px;
+          margin-bottom: 15px;
         }
 
         p {
-          line-height: 24px;
-          overflow: hidden;
-          text-overflow: ellipsis;
-          display: -webkit-box;
-          -webkit-line-clamp: 6;
-          -webkit-box-orient: vertical;
+          font-size: 16px;
+
         }
       }
     }
@@ -78,18 +130,26 @@
     padding-bottom: 32px;
 
     img {
-      height: 20px;
+      height: 23px;
+      margin-right: 14px;
     }
 
-    .feature-self {
-      margin-bottom: 24px;
+    h5 {
+      margin: 5px 0px 26px 0px;
+      color: rgb(113, 113, 113);
+      font-size: 14px;
+      font-weight: 100;
     }
+
   }
 
   .amenities-details {
+    padding-top: 48px;
+    padding-bottom: 48px;
+
     h2 {
       margin: 0;
-      padding-bottom: 24px;
+      margin-bottom: 25px;
     }
   }
 
@@ -381,7 +441,7 @@
       font-weight: 600;
       padding-top: 16px;
       margin-top: 8px;
-      border-top: 1px solid #ddd !important;
+      border-top: 1px solid #ddd;
       display: flex;
       justify-content: space-between;
     }

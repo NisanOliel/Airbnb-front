@@ -57,6 +57,7 @@
   </header>
 </template>
 <script>
+  // import { getImageUrl } from '../services/util.service';
   import exploreFilter from './explore-filter.vue';
   import exploreLabels from './explore-labels.vue';
   import standAloneFilter from './standAlone-filter.vue';
@@ -66,42 +67,37 @@
       return {
         isShow: false,
         location: false,
-        isSticky: false,
       };
     },
     created() {
-      window.addEventListener('scroll', this.handleScroll);
-    },
-    destroyed() {
-      window.removeEventListener('scroll', this.handleScroll);
+      // const headerLoc = this.$route.path;
+      // const params = this.$route.params;
+      // const isEmpty = Object.keys(params).length === 0;
+      // this.location = isEmpty;
     },
     computed: {
+      // loggedInUser() {
+      //   return this.$store.getters.loggedinUser;
+      // },
       headerLocation() {
         let params = this.$route.params;
         let isEmpty = Object.keys(params).length === 0;
         return isEmpty;
       },
     },
-
     methods: {
-      stickHeader(entries) {
-        const [entry] = entries;
-        console.log('entry', entry);
-      },
       closeModal() {
         this.isShow = false;
       },
       onClickAway() {
         this.isShow = false;
       },
-      handleScroll(event) {
-        let pos = window.scrollY;
-        if (pos === 0) {
-          this.isSticky = false;
-        } else {
-          this.isSticky = true;
-        }
-      },
+    },
+
+    components: {
+      exploreFilter,
+      exploreLabels,
+      standAloneFilter,
     },
 
     watch: {
@@ -114,20 +110,5 @@
         document.documentElement.style.overflow = 'auto';
       },
     },
-    mounted() {
-      // const observer = new IntersectionObserver(entries => {
-      //   const [entry] = entries;
-      //   console.log('entry', entry);
-      //   if (entry.intersectionRatio > 0) {
-      //     mainHeader.value = entry.target.getAttribute('header');
-      //   }
-      // });
-    },
-    components: {
-      exploreFilter,
-      exploreLabels,
-      standAloneFilter,
-    },
-    setup() {},
   };
 </script>

@@ -6,17 +6,21 @@
         <up-info-details :stay="stay" />
       </div>
     </div>
+
     <gallery-details :stay="stay" />
+
     <div class="content-wrapper flex justify-space-between gray-box">
       <section class="left-side">
         <section class="box-padding flex justify-space-between gray-box">
           <div>
             <h2>{{ stay.roomType }} by {{ stay.host.fullname }}</h2>
-            <ul class="flex include">
-              <li><span>{{ stay.capacity }} guests </span></li>
-              <li class="order-disc"><span>{{ stay.bedrooms }} bedrooms</span></li>
-              <li class="order-disc"><span>{{ stay.beds }} beds </span></li>
-            </ul>
+            <div class="flex include">
+              <span>{{ stay.capacity }} guests </span>
+              <span class="gray">•</span>
+              <span>{{ stay.bedrooms }} bedrooms</span>
+              <span class="gray">•</span>
+              <span>{{ stay.beds }} beds </span>
+            </div>
           </div>
           <img class="host-image" :src="stay.host.thumbnailUrl" />
         </section>
@@ -24,15 +28,17 @@
         <features-details />
 
         <section class="gray-box description">
-          <h2>Description</h2>
-          <p>{{ stay.summary }}</p>
-        </section>
-
-        <section class="gray-box description">
           <img class="aircover" src="../assets/icons/aircover.webp">
           <p>Every booking includes free protection from Host cancellations, listing inaccuracies, and other issues like
             trouble checking in.</p>
         </section>
+
+
+        <section class="gray-box description">
+          <h2>Description</h2>
+          <p>{{ stay.summary }}</p>
+        </section>
+
         <amenities-details :stay="stay" />
       </section>
       <section class="right-side">
