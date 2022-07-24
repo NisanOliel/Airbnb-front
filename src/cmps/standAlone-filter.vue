@@ -13,12 +13,12 @@
         <HistogramSlider :width="360" :bar-height="100" :data="prices" :clip="false" :min="10" :max="1000" :barGap="1"
           :barRadius="2" :lineHeight="2" :primaryColor="primaryColor" :labelColor="labelColor"
           :handleColor="handleColor" :holderColor="holderColor" @finish="sliderChanged" />
-        <div class="form-inputs">
+        <!-- <div class="form-inputs">
           min price
           <input @input="setFilter" v-model="filterBy.price.minPrice" type="number" min="0" />
           max price
           <input @input="setFilter" v-model="filterBy.price.maxPrice" type="number" max="1000" />
-        </div>
+        </div> -->
       </div>
       <div class="form-rooms-and-beds">
         <h2>Rooms and beds</h2>
@@ -86,10 +86,10 @@ export default {
   methods: {
     getInitialFilterState() {
       return {
-        price: {
-          minPrice: 0,
-          maxPrice: 1000,
-        },
+        // price: {
+        //   minPrice: 0,
+        //   maxPrice: 1000,
+        // },
         bedrooms: null,
         beds: null,
         amenities: [],
