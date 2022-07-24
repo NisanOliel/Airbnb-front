@@ -6,7 +6,9 @@
         <up-info-details :stay="stay" />
       </div>
     </div>
+
     <gallery-details :stay="stay" />
+
     <div class="content-wrapper flex justify-space-between gray-box">
       <section class="left-side">
         <section class="box-padding flex justify-space-between gray-box">
@@ -24,6 +26,7 @@
         </section>
 
         <features-details />
+
         <section class="gray-box description">
           <img class="aircover" src="../assets/icons/aircover.webp">
           <p>Every booking includes free protection from Host cancellations, listing inaccuracies, and other issues like
