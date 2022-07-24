@@ -1,7 +1,6 @@
 <template>
   <div class="gray-box features-details">
 
-
     <section class="flex">
       <div>
         <img src="../assets/icons/check-in.svg" style="height: 20px;">

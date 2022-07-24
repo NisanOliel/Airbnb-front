@@ -1,5 +1,5 @@
 <template>
-  <section class="box-padding amenities-details">
+  <section class=" amenities-details">
     <h2>What this place offers</h2>
     <ul class="amenities flex flex-flow-wrap gap-row">
       <li class="" v-for="amenity in stay.amenities" :key="amenity">
@@ -15,14 +15,15 @@
 </template>
 
 <script>
-  export default {
-    name: 'amenities-details',
-    props: {
-      stay: { type: Object },
-    },
+export default {
+  name: 'amenities-details',
+  props: {
+    stay: { type: Object },
+  },
 
-    computed: {},
-  };
+  computed: {},
+};
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+</style>
