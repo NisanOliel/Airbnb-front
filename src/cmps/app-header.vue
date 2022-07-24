@@ -5,6 +5,8 @@
       <nav class="top-nav flex justify-space-between align-center">
         <router-link to="/">
           <div class="main-logo flex">
+
+
             <div class=""><img src="src/assets/airbnb-logo.svg" /></div>
             <h1>air2b</h1>
           </div>
@@ -44,9 +46,11 @@
   </header>
 </template>
 <script>
+// import { getImageUrl } from '../services/util.service';
 import exploreFilter from './explore-filter.vue';
 import exploreLabels from './explore-labels.vue';
 import standAloneFilter from './standAlone-filter.vue';
+
 
 export default {
   data() {
