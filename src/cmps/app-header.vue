@@ -45,8 +45,9 @@
             ></button
           >
         </div>
-
-        <standAlone-filter @closeFilersForm="closeModal" v-if="isShow" v-click-away="onClickAway" />
+        <Transition duration="550" name="nested">
+          <standAlone-filter @closeFilersForm="closeModal" v-if="isShow" v-click-away="onClickAway" />
+        </Transition>
       </div>
     </div>
   </header>
@@ -63,13 +64,7 @@
         location: false,
       };
     },
-    created() {
-      // const headerLoc = this.$route.path;
-      // const params = this.$route.params;
-      // const isEmpty = Object.keys(params).length === 0;
-      // console.log('heder loc', isEmpty);
-      // this.location = isEmpty;
-    },
+
     computed: {
       // loggedInUser() {
       //   return this.$store.getters.loggedinUser;
