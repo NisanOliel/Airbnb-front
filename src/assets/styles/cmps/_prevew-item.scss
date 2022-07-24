@@ -3,6 +3,27 @@
   max-width: 300px;
   cursor: pointer;
 
+  // ------- el-carousel
+
+
+  .el-carousel__button {
+    height: 6px;
+    width: 6px;
+    margin-bottom: 15px;
+    border-radius: 50%;
+  }
+
+  .el-carousel__arrow {
+    background-color: rgba(255, 255, 255, 0.801);
+    color: rgb(34, 34, 34);
+    font-size: 20px;
+
+    &:hover {
+      box-shadow: 0 0 3px 1px #ffffff;
+      background-color: white;
+      color: black;
+    }
+  }
 
   span.material-icons-outlined {
     position: absolute;
@@ -66,29 +87,5 @@
 
   .gray {
     color: $clr7;
-  }
-}
-
-
-
-// ------- el-carousel
-
-
-.el-carousel__button {
-  height: 6px;
-  width: 6px;
-  margin-bottom: 15px;
-  border-radius: 50%;
-}
-
-.el-carousel__arrow {
-  background-color: rgba(255, 255, 255, 0.801);
-  color: rgb(34, 34, 34);
-  font-size: 20px;
-
-  &:hover {
-    box-shadow: 0 0 3px 1px #ffffff;
-    background-color: white;
-    color: black;
   }
 }
