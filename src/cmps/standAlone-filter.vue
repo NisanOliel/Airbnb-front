@@ -40,19 +40,19 @@
       <div class="form-rooms-and-beds">
         <h2>Rooms and beds</h2>
         <h3>BedRooms</h3>
-        <el-radio-group @change="setFilter" v-model="filterBy.bedrooms">
+        <el-radio-group text-color="#ffffff" fill="#000000" @change="setFilter" v-model="filterBy.bedrooms">
           <el-radio-button label="Any" />
           <el-radio-button v-for="(opt, idx) in numLabels" :key="idx" :label="opt" />
         </el-radio-group>
         <h3>beds</h3>
-        <el-radio-group text-color="#000000" fill="#131212" @change="setFilter" v-model="filterBy.beds">
+        <el-radio-group text-color="#ffffff" fill="#000000" @change="setFilter" v-model="filterBy.beds">
           <el-radio-button label="Any" />
           <el-radio-button v-for="(opt, idx) in numLabels" :key="idx" :label="opt" />
         </el-radio-group>
       </div>
       <div class="form-property-type">
         <h2>Property type</h2>
-        <el-radio-group text-color="#000000" fill="#131212" @change="setFilter" v-model="filterBy.propertyType">
+        <el-radio-group text-color="#ffffff" fill="#000000" @change="setFilter" v-model="filterBy.propertyType">
           <el-radio-button v-for="(opt, idx) in propertyType" :key="idx" :label="opt" />
         </el-radio-group>
       </div>
