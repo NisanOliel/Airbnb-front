@@ -1,7 +1,19 @@
 <template>
+  <!-- <div v-if="isShow" class="overlay"></div> -->
   <div class="preview" @click="goToDetails">
+
+    <div v-if="isShow" class="wish-container form-filter">
+      <header class="flex justify-center">
+        <span @click.stop="toggleWishModal" class="material-icons-outlined gray">
+          close
+        </span>
+        <h1>Your wishlists</h1>
+      </header>
+    </div>
+
     <div class="like">
-      <span class="material-icons favorite" :class="{ active: isLiked }" @click.stop="toggleWishList"> favorite </span>
+      <span @click="toggleWishModal" class="material-icons favorite" :class="{ active: isLiked }"
+        @click.stop="toggleWishList"> favorite </span>
     </div>
     <el-carousel trigger="click" :autoplay="false">
       <el-carousel-item v-for="image in images" :key="image">
@@ -40,6 +52,7 @@ export default {
         `src/assets/Images/${this.stay.imgUrls[3]}`,
       ],
       isLiked: false,
+      isShow: false,
     };
   },
   methods: {
@@ -48,7 +61,22 @@ export default {
     },
     toggleWishList() {
       this.isLiked = !this.isLiked;
+      console.log(this.isShow);
       console.log('heart is active', this.isLiked);
+    },
+
+    toggleWishModal() {
+      this.isShow = !this.isShow
+    }
+  },
+  watch: {
+    isShow: function () {
+      if (this.isShow) {
+        document.documentElement.style.overflow = 'hidden';
+        return;
+      }
+
+      document.documentElement.style.overflow = 'auto';
     },
   },
 };
