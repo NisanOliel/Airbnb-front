@@ -21,7 +21,7 @@
           </el-tooltip>
 
           <el-tooltip content="Explore" placement="bottom" effect="light">
-            <a class="right-header" href="/#/explore"><img class="explore-btn" src="../assets/icons/en.svg" /></a>
+            <a class="right-header " href="/#/explore"><img class="explore-btn" src="../assets/icons/en.svg" /></a>
           </el-tooltip>
 
           <button class="nav-btn expend flex">

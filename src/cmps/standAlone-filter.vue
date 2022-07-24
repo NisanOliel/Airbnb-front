@@ -9,16 +9,16 @@
     <div class="form-wrapper">
       <div class="form-price">
         <h2>Price range</h2>
-        <p>The average nightly price is 100$</p>
+        <p>The average nightly price is {{ getPricesAvg }}</p>
         <HistogramSlider :width="360" :bar-height="100" :data="prices" :clip="false" :min="10" :max="1000" :barGap="1"
           :barRadius="2" :lineHeight="2" :primaryColor="primaryColor" :labelColor="labelColor"
           :handleColor="handleColor" :holderColor="holderColor" @finish="sliderChanged" />
-        <!-- <div class="form-inputs">
+        <div class="form-inputs">
           min price
           <input @input="setFilter" v-model="filterBy.price.minPrice" type="number" min="0" />
           max price
           <input @input="setFilter" v-model="filterBy.price.maxPrice" type="number" max="1000" />
-        </div> -->
+        </div>
       </div>
       <div class="form-rooms-and-beds">
         <h2>Rooms and beds</h2>
@@ -74,10 +74,10 @@ export default {
       essentials: ['Wifi', 'Washer', 'Air conditioning', 'Kitchen', 'Dryer'],
       checked: ref(false),
       prices: null,
-      primaryColor: '#FF385C',
-      holderColor: '#B0B0B0',
-      labelColor: '#E7DA0E',
-      handleColor: '#0ECDE7',
+      primaryColor: '#b0b0b0',
+      holderColor: '#dddddd',
+      labelColor: '#bdd6f8',
+      handleColor: '#dddddd',
     };
   },
   created() {
@@ -86,10 +86,10 @@ export default {
   methods: {
     getInitialFilterState() {
       return {
-        // price: {
-        //   minPrice: 0,
-        //   maxPrice: 1000,
-        // },
+        price: {
+          minPrice: 0,
+          maxPrice: 1000,
+        },
         bedrooms: null,
         beds: null,
         amenities: [],
@@ -138,7 +138,15 @@ export default {
   // created() {
   //   this.labels = this.$store.getters.getLabels;
   // },
-  computed: {},
+  computed: {
+    getPricesAvg() {
+      if (!this.prices) return "0$";
+      var Sum = this.prices.reduce((a, b) => a + b);
+      Sum = Sum / this.prices.length;
+      Sum = Sum.toFixed(0);
+      return Sum + "$";
+    },
+  },
   components: {
   },
 };
