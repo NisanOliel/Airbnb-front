@@ -10,22 +10,9 @@
       <div class="form-price">
         <h2>Price range</h2>
         <p>The average nightly price is {{ getPricesAvg }}</p>
-        <HistogramSlider
-          @change="setPrice"
-          :width="360"
-          :bar-height="100"
-          :data="prices"
-          :clip="false"
-          :min="0"
-          :max="800"
-          :barGap="1"
-          :barRadius="2"
-          :lineHeight="2"
-          :primaryColor="primaryColor"
-          :labelColor="labelColor"
-          :handleColor="handleColor"
-          :holderColor="holderColor"
-        />
+        <HistogramSlider @change="setPrice" :width="360" :bar-height="100" :data="prices" :clip="false" :min="1"
+          :max="800" :barGap="1" :barRadius="2" :lineHeight="2" :primaryColor="primaryColor" :labelColor="labelColor"
+          :handleColor="handleColor" :holderColor="holderColor" />
         <div class="form-inputs">
           <div class="price-inner">
             <label for="min">min price</label>
@@ -79,102 +66,102 @@
   </form>
 </template>
 <script>
-  import { ref } from 'vue';
-  export default {
-    name: 'standAlone-filter',
-    data() {
+import { ref } from 'vue';
+export default {
+  name: 'standAlone-filter',
+  data() {
+    return {
+      filterBy: this.getInitialFilterState(),
+      numLabels: [0, 1, 2, 3, 4, 5, 6, 7, 8],
+      propertyType: ['House', 'Apartment', 'Guesthouse', 'Hotel', 'Townhouse'],
+      language: ['English', 'German', 'French', 'Japanese'],
+      essentials: ['Wifi', 'Washer', 'Air conditioning', 'Kitchen', 'Dryer'],
+      checked: ref(false),
+      prices: null,
+      primaryColor: '#b0b0b0',
+      holderColor: '#dddddd',
+      labelColor: '#bdd6f8',
+      handleColor: '#dddddd',
+      propertyNum: null,
+    };
+  },
+  created() {
+    this.getStaysPrices();
+  },
+  methods: {
+    getInitialFilterState() {
       return {
-        filterBy: this.getInitialFilterState(),
-        numLabels: [0, 1, 2, 3, 4, 5, 6, 7, 8],
-        propertyType: ['House', 'Apartment', 'Guesthouse', 'Hotel', 'Townhouse'],
-        language: ['English', 'German', 'French', 'Japanese'],
-        essentials: ['Wifi', 'Washer', 'Air conditioning', 'Kitchen', 'Dryer'],
-        checked: ref(false),
-        prices: null,
-        primaryColor: '#b0b0b0',
-        holderColor: '#dddddd',
-        labelColor: '#bdd6f8',
-        handleColor: '#dddddd',
-        propertyNum: null,
+        price: {
+          minPrice: 1,
+          maxPrice: 800,
+        },
+        bedrooms: null,
+        beds: null,
+        amenities: [],
+        hostLanguage: [],
+        propertyType: null,
       };
     },
-    created() {
-      this.getStaysPrices();
+    setPrice(value) {
+      this.filterBy.price.minPrice = value.from;
+      this.filterBy.price.maxPrice = value.to;
     },
-    methods: {
-      getInitialFilterState() {
-        return {
-          price: {
-            minPrice: 0,
-            maxPrice: 800,
-          },
-          bedrooms: null,
-          beds: null,
-          amenities: [],
-          hostLanguage: [],
-          propertyType: null,
-        };
-      },
-      setPrice(value) {
-        this.filterBy.price.minPrice = value.from;
-        this.filterBy.price.maxPrice = value.to;
-      },
-      getStaysPrices() {
-        const stays = this.$store.getters.getStays;
-        const staysPrices = stays.map(stay => stay.price);
-        this.prices = staysPrices;
-      },
-      setFilter() {
-        this.$store.dispatch({ type: 'setFilterBy', filterBy: this.filterBy });
-      },
-      setAmenities(currAmenity, isChecked) {
-        if (isChecked) {
-          this.filterBy.amenities.push(currAmenity);
-        } else {
-          this.filterBy.amenities = this.filterBy.amenities.filter(amenity => amenity !== currAmenity);
-        }
-        this.$store.dispatch({ type: 'setFilterBy', filterBy: this.filterBy });
-      },
-      setLanguage(currLanguage, isChecked) {
-        if (isChecked) {
-          this.filterBy.hostLanguage.push(currLanguage);
-        } else {
-          this.filterBy.hostLanguage = this.filterBy.hostLanguage.filter(language => language !== currLanguage);
-        }
-        this.$store.dispatch({ type: 'setFilterBy', filterBy: this.filterBy });
-      },
-      onSaveFilters(ev, value) {
-        this.$store.dispatch({ type: 'setFilteredStays' });
-        this.propertyNum = this.$store.getters.getStays.length;
+    getStaysPrices() {
+      const stays = this.$store.getters.getStays;
+      const staysPrices = stays.map(stay => stay.price);
+      this.prices = staysPrices;
+    },
+    setFilter() {
+      this.$store.dispatch({ type: 'setFilterBy', filterBy: this.filterBy });
+    },
+    setAmenities(currAmenity, isChecked) {
+      if (isChecked) {
+        this.filterBy.amenities.push(currAmenity);
+      } else {
+        this.filterBy.amenities = this.filterBy.amenities.filter(amenity => amenity !== currAmenity);
+      }
+      this.$store.dispatch({ type: 'setFilterBy', filterBy: this.filterBy });
+    },
+    setLanguage(currLanguage, isChecked) {
+      if (isChecked) {
+        this.filterBy.hostLanguage.push(currLanguage);
+      } else {
+        this.filterBy.hostLanguage = this.filterBy.hostLanguage.filter(language => language !== currLanguage);
+      }
+      this.$store.dispatch({ type: 'setFilterBy', filterBy: this.filterBy });
+    },
+    onSaveFilters(ev, value) {
+      this.$store.dispatch({ type: 'setFilteredStays' });
+      this.propertyNum = this.$store.getters.getStays.length;
 
-        if (ev.type === 'click') {
-          this.closeForm();
-        }
-      },
-      clearAll() {
-        this.filterBy = this.getInitialFilterState();
-        this.$store.dispatch({ type: 'setFilterBy', filterBy: this.filterBy });
-      },
-      closeForm() {
-        this.$emit('closeFilersForm');
-      },
+      if (ev.type === 'click') {
+        this.closeForm();
+      }
     },
-    // created() {
-    //   this.labels = this.$store.getters.getLabels;
-    // },
-    computed: {
-      getPricesAvg() {
-        if (!this.prices) return '0$';
-        var Sum = this.prices.reduce((a, b) => a + b);
-        Sum = Sum / this.prices.length;
-        Sum = Sum.toFixed(0);
-        return Sum + '$';
-      },
-      getStay() {
-        console.log('stays', this.$store.getters.getFilteredStays.length);
-        return this.$store.getters.getFilteredStays.length;
-      },
+    clearAll() {
+      this.filterBy = this.getInitialFilterState();
+      this.$store.dispatch({ type: 'setFilterBy', filterBy: this.filterBy });
     },
-    components: {},
-  };
+    closeForm() {
+      this.$emit('closeFilersForm');
+    },
+  },
+  // created() {
+  //   this.labels = this.$store.getters.getLabels;
+  // },
+  computed: {
+    getPricesAvg() {
+      if (!this.prices) return '0$';
+      var Sum = this.prices.reduce((a, b) => a + b);
+      Sum = Sum / this.prices.length;
+      Sum = Sum.toFixed(0);
+      return Sum + '$';
+    },
+    getStay() {
+      console.log('stays', this.$store.getters.getFilteredStays.length);
+      return this.$store.getters.getFilteredStays.length;
+    },
+  },
+  components: {},
+};
 </script>
