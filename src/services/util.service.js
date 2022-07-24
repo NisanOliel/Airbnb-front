@@ -2,7 +2,9 @@
 export const utilService = {
     delay,
     getRandomInt,
-    makeId
+    makeId,
+    getImageUrl
+
 }
 
 function delay(ms = 1500) {
@@ -10,7 +12,6 @@ function delay(ms = 1500) {
         setTimeout(resolve, ms)
     })
 }
-
 function getRandomInt(min, max) {
     min = Math.ceil(min)
     max = Math.floor(max)
@@ -24,4 +25,13 @@ function makeId(length = 5) {
         txt += possible.charAt(Math.floor(Math.random() * possible.length))
     }
     return txt
+}
+
+function getImageUrl(path, alt) {
+    try {
+        return new URL(`assets/${path}`, import.meta.url).href
+    } catch (err) {
+        if (alt) getImageUrl(alt);
+        return null;
+    }
 }

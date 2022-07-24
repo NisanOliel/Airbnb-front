@@ -1,5 +1,5 @@
 <template>
-  <carousel :transition="330" :items-to-show="3.5" :wrap-around="true" snapAlign="start">
+  <carousel :transition="330" :items-to-show="20" snapAlign="start" :slideWidth="3">
     <slide v-for="label in labels" :key="label" @click="filter(label.propertyType)">
       <div class="labels">
         <img :src="label.src" />
