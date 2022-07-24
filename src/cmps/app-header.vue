@@ -13,10 +13,14 @@
           <explore-filter />
         </div>
 
-        <a class="right-header" href="/#/login"><img class="explore-btn" src="../assets/icons/en.svg" /></a>
+        <div class="flex align-center">
+          <el-tooltip content="Become a host" placement="bottom" effect="light">
+            <a class="right-header bold become-host" href="/#/login">Become a host</a>
+          </el-tooltip>
 
-        <div class="flex">
-          <a class="right-header" href="/explore">Explore</a>
+          <el-tooltip content="Explore" placement="bottom" effect="light">
+            <a class="right-header" href="/#/explore"><img class="explore-btn" src="../assets/icons/en.svg" /></a>
+          </el-tooltip>
 
           <button class="nav-btn expend flex">
             <img class="menu-btn" src="../assets/icons/menu.svg" />
@@ -53,6 +57,7 @@
   </header>
 </template>
 <script>
+  // import { getImageUrl } from '../services/util.service';
   import exploreFilter from './explore-filter.vue';
   import exploreLabels from './explore-labels.vue';
   import standAloneFilter from './standAlone-filter.vue';
@@ -64,7 +69,12 @@
         location: false,
       };
     },
-
+    created() {
+      // const headerLoc = this.$route.path;
+      // const params = this.$route.params;
+      // const isEmpty = Object.keys(params).length === 0;
+      // this.location = isEmpty;
+    },
     computed: {
       // loggedInUser() {
       //   return this.$store.getters.loggedinUser;
@@ -80,10 +90,6 @@
         this.isShow = false;
       },
       onClickAway() {
-        this.isShow = false;
-      },
-
-      closeModal() {
         this.isShow = false;
       },
     },
