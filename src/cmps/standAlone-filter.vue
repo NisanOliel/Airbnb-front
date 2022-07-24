@@ -74,7 +74,7 @@
     </div>
     <div class="form-footer">
       <button @click="clearAll()">Clear all</button>
-      <button @click="onSaveFilters">Show stays{{ getStay }}</button>
+      <button @click="onSaveFilters">Show stays {{ getStay }}</button>
     </div>
   </form>
 </template>
