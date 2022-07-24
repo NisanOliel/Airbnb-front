@@ -1,6 +1,6 @@
 <template>
   <div v-if="isShow" class="overlay"></div>
-  <header ref="header" class="main-header flex column" :class="{ sticky: isSticky }">
+  <header class="main-header flex column" :class="{ sticky: isSticky }">
     <div :class="{ container: headerLocation, 'inner-container': !headerLocation }">
       <nav class="top-nav flex justify-space-between align-center">
         <router-link to="/">
@@ -57,7 +57,6 @@
   </header>
 </template>
 <script>
-  // import { getImageUrl } from '../services/util.service';
   import exploreFilter from './explore-filter.vue';
   import exploreLabels from './explore-labels.vue';
   import standAloneFilter from './standAlone-filter.vue';
@@ -67,37 +66,42 @@
       return {
         isShow: false,
         location: false,
+        isSticky: false,
       };
     },
     created() {
-      // const headerLoc = this.$route.path;
-      // const params = this.$route.params;
-      // const isEmpty = Object.keys(params).length === 0;
-      // this.location = isEmpty;
+      window.addEventListener('scroll', this.handleScroll);
+    },
+    destroyed() {
+      window.removeEventListener('scroll', this.handleScroll);
     },
     computed: {
-      // loggedInUser() {
-      //   return this.$store.getters.loggedinUser;
-      // },
       headerLocation() {
         let params = this.$route.params;
         let isEmpty = Object.keys(params).length === 0;
         return isEmpty;
       },
     },
+
     methods: {
+      stickHeader(entries) {
+        const [entry] = entries;
+        console.log('entry', entry);
+      },
       closeModal() {
         this.isShow = false;
       },
       onClickAway() {
         this.isShow = false;
       },
-    },
-
-    components: {
-      exploreFilter,
-      exploreLabels,
-      standAloneFilter,
+      handleScroll(event) {
+        let pos = window.scrollY;
+        if (pos === 0) {
+          this.isSticky = false;
+        } else {
+          this.isSticky = true;
+        }
+      },
     },
 
     watch: {
@@ -110,5 +114,20 @@
         document.documentElement.style.overflow = 'auto';
       },
     },
+    mounted() {
+      // const observer = new IntersectionObserver(entries => {
+      //   const [entry] = entries;
+      //   console.log('entry', entry);
+      //   if (entry.intersectionRatio > 0) {
+      //     mainHeader.value = entry.target.getAttribute('header');
+      //   }
+      // });
+    },
+    components: {
+      exploreFilter,
+      exploreLabels,
+      standAloneFilter,
+    },
+    setup() {},
   };
 </script>
