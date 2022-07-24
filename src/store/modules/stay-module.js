@@ -1,3 +1,4 @@
+import { storeKey } from 'vuex';
 import { stayService } from '../../services/stay.service.js';
 
 export const stayStore = {
@@ -6,6 +7,7 @@ export const stayStore = {
     filterBy: null,
     lastRemoveStay: null,
     labels: stayService.getLabels(),
+    num: null,
   },
 
   getters: {
@@ -60,7 +62,7 @@ export const stayStore = {
             if (value.length > 0) {
               filters = filters.filter(stay => value.includes(stay.host.hostLanguage));
             }
-            break
+            break;
           default:
             break;
         }
