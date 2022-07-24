@@ -54,5 +54,45 @@
   {
     "propertyType": "Ski-in/out",
     "src": "src/assets/app-filter-img/757deeaa-c78f-488f-992b-d3b1ecc06fc9.jpg"
+  },
+  {
+    "propertyType": "Treehouses",
+    "src": "src/assets/app-filter-img/4d4a4eba-c7e4-43eb-9ce2-95e1d200d10e.jpg"
+  },
+  {
+    "propertyType": "Surfing",
+    "src": "src/assets/app-filter-img/957f8022-dfd7-426c-99fd-77ed792f6d7a.jpg"
+  },
+  {
+    "propertyType": "Creative spaces",
+    "src": "src/assets/app-filter-img/8a43b8c6-7eb4-421c-b3a9-1bd9fcb26622.jpg"
+  },
+  {
+    "propertyType": "Golfing",
+    "src": "src/assets/app-filter-img/6b639c8d-cf9b-41fb-91a0-91af9d7677cc.jpg"
+  },
+  {
+    "propertyType": "Desert",
+    "src": "src/assets/app-filter-img/a6dd2bae-5fd0-4b28-b123-206783b5de1d.jpg"
+  },
+  {
+    "propertyType": "Campers",
+    "src": "src/assets/app-filter-img/31c1d523-cc46-45b3-957a-da76c30c85f9.jpg"
+  },
+  {
+    "propertyType": "Iconic cities",
+    "src": "src/assets/app-filter-img/ed8b9e47-609b-44c2-9768-33e6a22eccb2.jpg"
+  },
+  {
+    "propertyType": "Windmills",
+    "src": "src/assets/app-filter-img/5cdb8451-8f75-4c5f-a17d-33ee228e3db8.jpg"
+  },
+  {
+    "propertyType": "Shepherd's huts",
+    "src": "src/assets/app-filter-img/747b326c-cb8f-41cf-a7f9-809ab646e10c.jpg"
+  },
+  {
+    "propertyType": "Ryokans",
+    "src": "src/assets/app-filter-img/827c5623-d182-474a-823c-db3894490896.jpg"
   }
 ]
