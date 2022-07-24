@@ -8,6 +8,7 @@
   /* gap: 10px; */
   grid-auto-rows: minmax(0, 1fr);
   grid-gap: $row-list-gap $column-list-gap;
+  min-height: 73vh;
 }
 
 ul {
