@@ -197,6 +197,12 @@
           </button>
         </div>
       </div>
+      <div class="flex under-line close-btn">
+        <button @click="isShow = !isShow">
+          Close
+        </button>
+
+      </div>
     </div>
 
     <div class="pricing" v-if="dateCheck">

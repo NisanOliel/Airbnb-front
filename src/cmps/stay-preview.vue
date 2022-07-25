@@ -24,14 +24,14 @@
     <div class="preview-info">
       <div class="location-info flex justify-space-between">
         <span>{{ stay.address.city }}, {{ stay.address.country }}</span>
-        <span class="stared">{{ $filters.reviewsRateAvg(stay) }}</span>
+        <span class="stared">{{ $filters.reviewsRateAvg(stay) }} <span class="gray"> ({{ reviewsCount }})</span></span>
       </div>
       <div class="gray">
 
         <div>{{ stay.name }} </div>
         <div>{{ stay.beds }} beds </div>
       </div>
-      <div><span class="bold">£{{ stay.price }}</span> night </div>
+      <div><span class="bold">${{ stay.price }}</span> night </div>
 
     </div>
   </div>
@@ -54,6 +54,11 @@ export default {
       isLiked: false,
       isShow: false,
     };
+  },
+  computed: {
+    reviewsCount() {
+      return this.stay.reviews.length;
+    },
   },
   methods: {
     goToDetails() {

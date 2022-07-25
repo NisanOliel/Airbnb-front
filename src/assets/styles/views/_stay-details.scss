@@ -549,4 +549,24 @@ p.text-desc {
       border-top: 1px solid #ddd;
     }
   }
+
+  .close-btn {
+    justify-content: end;
+    margin-right: 10px;
+    margin-top: 5px;
+
+    button {
+      font-size: 16px;
+      font-family: Cereal-bold;
+      color: $clr1;
+      padding: 10px;
+      border-radius: 8px;
+
+      &:hover {
+        border: none !important;
+        background: #F7F7F7;
+        color: #000000;
+      }
+    }
+  }
 }

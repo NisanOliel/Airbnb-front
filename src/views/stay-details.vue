@@ -86,7 +86,11 @@ export default {
   methods: {
 
   },
-  computed: {},
+  computed: {
+    reviewsCount() {
+      return this.stay.reviews.length;
+    },
+  },
 };
 </script>
 

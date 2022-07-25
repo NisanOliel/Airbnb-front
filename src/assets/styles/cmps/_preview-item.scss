@@ -88,4 +88,10 @@
   .gray {
     color: $clr7;
   }
+
+  .gray {
+    color: rgba(0, 0, 0, 0.4392156863);
+    font-size: 0.85em;
+    text-decoration: underline;
+  }
 }
