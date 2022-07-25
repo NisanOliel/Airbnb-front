@@ -18,6 +18,7 @@ export const stayStore = {
       return labels;
     },
     getFilteredStays({ filterBy, stays }) {
+
       const loc = filterBy?.location;
       const deepStays = JSON.parse(JSON.stringify(stays));
 
@@ -48,7 +49,8 @@ export const stayStore = {
           case 'propertyType':
           case 'label':
             if (value) {
-              filters = filters.filter(stay => stay.propertyType === value);
+              const filteredStays = filters.filter(stay => stay.propertyType.includes(value));
+              filters = filteredStays.length === 0 ? stays : filteredStays;
             }
             break;
           case 'amenities':
@@ -68,7 +70,7 @@ export const stayStore = {
         }
       }
 
-      console.log('filter by explore', filters);
+      // console.log('filter by explore', filters);
 
       return filters;
     },

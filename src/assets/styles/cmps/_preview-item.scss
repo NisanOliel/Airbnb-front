@@ -15,7 +15,7 @@
 
   .el-carousel__arrow {
     background-color: rgba(255, 255, 255, 0.801);
-    color: rgb(34, 34, 34);
+    color: $clr1;
     font-size: 20px;
 
     &:hover {
@@ -87,5 +87,11 @@
 
   .gray {
     color: $clr7;
+  }
+
+  .gray {
+    color: rgba(0, 0, 0, 0.4392156863);
+    font-size: 0.85em;
+    text-decoration: underline;
   }
 }

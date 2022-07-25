@@ -49,14 +49,18 @@
         </div>
         <div class="Essentials">
           <h3>Essentials</h3>
-          <el-checkbox v-for="(opt, idx) in essentials" @change="setAmenities(opt, $event)" :key="idx" :label="opt" />
+          <el-checkbox-group v-model="checkList">
+            <el-checkbox v-for="(opt, idx) in essentials" @change="setAmenities(opt, $event)" :key="idx" :label="opt" />
+          </el-checkbox-group>
         </div>
       </div>
       <div class="form-host-language">
         <div>
           <h2>Host language</h2>
         </div>
-        <el-checkbox v-for="(opt, idx) in language" @change="setLanguage(opt, $event)" :key="idx" :label="opt" />
+        <el-checkbox-group v-model="checkList">
+          <el-checkbox v-for="(opt, idx) in language" @change="setLanguage(opt, $event)" :key="idx" :label="opt" />
+        </el-checkbox-group>
       </div>
     </div>
     <div class="form-footer">
@@ -76,8 +80,8 @@ export default {
       propertyType: ['House', 'Apartment', 'Guesthouse', 'Hotel', 'Townhouse'],
       language: ['English', 'German', 'French', 'Japanese'],
       essentials: ['Wifi', 'Washer', 'Air conditioning', 'Kitchen', 'Dryer'],
-      checked: ref(false),
       prices: null,
+      checkList: ref(false),
       primaryColor: '#b0b0b0',
       holderColor: '#dddddd',
       labelColor: '#bdd6f8',
@@ -95,12 +99,13 @@ export default {
           minPrice: 1,
           maxPrice: 800,
         },
+        // checkList: ref(false),
         bedrooms: null,
         beds: null,
         amenities: [],
         hostLanguage: [],
         propertyType: null,
-      };
+      }
     },
     setPrice(value) {
       this.filterBy.price.minPrice = value.from;
@@ -140,7 +145,7 @@ export default {
     },
     clearAll() {
       this.filterBy = this.getInitialFilterState();
-      this.$store.dispatch({ type: 'setFilterBy', filterBy: this.filterBy });
+      this.$store.dispatch({ type: 'setFilterBy', filterBy: this.filterBy })
     },
     closeForm() {
       this.$emit('closeFilersForm');

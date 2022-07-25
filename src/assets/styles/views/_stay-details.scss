@@ -89,6 +89,9 @@
       .amenities {
         max-width: fit-content;
         width: 100%;
+        white-space: nowrap;
+        font-size: 16px;
+
 
         li {
           flex-basis: 40%;
@@ -156,11 +159,92 @@
   .reviews-container {
     padding-block: 48px;
 
+    .host-image {
+      height: 43px;
+      width: 43px;
+      border-radius: 50%;
+      -o-object-fit: cover;
+      object-fit: cover;
+    }
+
+    .stared {
+      gap: 10px;
+    }
+
     h2 {
       padding-bottom: 32px;
     }
   }
 }
+
+p.text-desc {
+  font-size: 16px;
+
+  .read-more {
+    cursor: pointer;
+    font-family: Cereal-medium;
+  }
+}
+
+.reviews-stats {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+
+  .stats {
+    flex-basis: 50%;
+
+
+    label {
+      margin-right: auto;
+      // margin-left: 20px;
+
+    }
+
+    &:nth-child(1),
+    &:nth-child(5),
+    &:nth-child(3) {
+      padding-right: 107px;
+    }
+
+    &:nth-child(2),
+    &:nth-child(4),
+    &:nth-child(6) {
+      padding-right: 90px;
+    }
+
+  }
+
+  .stats {
+    margin-bottom: 16px;
+    width: fit-content;
+  }
+
+  label {
+    text-transform: capitalize;
+    font-size: 16px;
+  }
+
+  span {
+    font-size: 12px;
+    margin-left: 6px;
+    font-family: Cereal-medium;
+
+  }
+
+  .el-progress-bar__outer {
+    background-color: #ddd;
+  }
+
+  .el-progress-bar__inner {
+    background-color: #222222;
+  }
+
+  .el-progress-bar__outer {
+    width: 120px;
+  }
+}
+
 
 .stay-name {
   font-size: 1.46875rem;
@@ -206,7 +290,7 @@
 }
 
 .amenity-icons {
-  height: 15px;
+  height: 18px;
 }
 
 .reviews-list-container {
@@ -256,15 +340,27 @@
   border: 1px solid #00000030;
   border-radius: 13px;
   padding: 20px;
-  width: 300px;
+  width: 372px;
+  min-height: 275px;
   margin: 50px auto 10px;
-  box-shadow: 0 0 5px 5px #00000015;
+  box-shadow: rgb(0 0 0 / 12%) 0px 6px 16px;
 
   .order-form-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    margin-bottom: 22px;
+    margin-top: 7px;
+
+
+    p {
+      &:nth-child(1) {
+        span {
+          font-size: 22px;
+        }
+      }
+    }
   }
 
   input {
@@ -283,15 +379,16 @@
     cursor: pointer;
   }
 
-  label {
-    font-weight: 600;
-    font-size: 0.75em;
-  }
-
   .order-data {
-    border: 1px solid #00000050;
-    border-radius: 13px;
+    border: 1px solid rgb(0 0 0 / 32%);
+    border-radius: 8px;
     margin-bottom: 15px;
+
+    label {
+      font-family: Cereal-bold;
+      color: black;
+      font-size: 10px;
+    }
 
     .date-picker {
       display: flex;
@@ -301,7 +398,7 @@
         display: flex;
         flex-direction: column;
         gap: 5px;
-        padding: 7px 12px;
+        padding: 11px 16px;
 
         &:last-of-type {
           border-left: 1px solid #00000050;
@@ -314,7 +411,7 @@
       flex-direction: column;
       gap: 5px;
       border-top: 1px solid #00000050;
-      padding: 7px 12px;
+      padding: 11px 16px;
       position: relative;
     }
   }
@@ -355,7 +452,6 @@
       width: 100%;
       height: 100%;
       z-index: 1;
-      // border: 1px solid rgba(128, 128, 128, 0.753);
     }
 
     .content {
@@ -402,17 +498,11 @@
     }
   }
 
-  // .guests-container {
-  //   -webkit-box-align: center;
-  //   align-items: center;
-  //   width: 100%;
-  //   color: rgb(34, 34, 34);
-  //   font-weight: 400;
-  // }
+
   .guests-btns {
     justify-content: space-between;
     width: 104px;
-    color: rgb(34, 34, 34);
+    color: $clr1;
     font-weight: 400;
     font-size: 16px;
 
@@ -432,18 +522,77 @@
     }
   }
 
+  .guest-add {
+
+    position: absolute;
+    line-height: 20px;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: rgb(0 0 0 / 12%) 0px 6px 16px;
+    z-index: 2;
+    padding: 20px;
+
+    .guests-container {
+      .titles {
+        h5 {
+          margin: 10px 0px 0px 0px;
+          font-size: 16px;
+          font-family: Cereal-bold;
+          color: $clr1;
+
+        }
+
+      }
+
+    }
+  }
+
   .pricing {
     h4 {
       text-align: center;
+      margin-top: 15px;
+      font-weight: 100;
+    }
+
+    h5 {
+      font-size: 16px;
+      font-weight: 100;
+      color: $clr1;
+      margin: 10px 0px 15px 0px;
+
+
     }
 
     p {
-      font-weight: 600;
+      font-size: 16px;
+      color: $clr1;
+      font-family: Cereal-bold;
       padding-top: 16px;
       margin-top: 8px;
       border-top: 1px solid #ddd;
-      display: flex;
-      justify-content: space-between;
+    }
+  }
+
+  .close-btn {
+    justify-content: end;
+    margin-right: 10px;
+    margin-top: 5px;
+
+    button {
+      font-size: 16px;
+      font-family: Cereal-bold;
+      color: $clr1;
+      padding: 10px;
+      border-radius: 8px;
+
+      &:hover {
+        border: none !important;
+        background: #F7F7F7;
+        color: #000000;
+      }
     }
   }
 }
