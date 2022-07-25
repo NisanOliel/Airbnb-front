@@ -23,9 +23,10 @@
             </div>
           </div>
 
-          <div>
+          <reviews-text :reviews="reviews.txt" />
+          <!-- <div>
             <span> {{ reviews.txt }} </span>
-          </div>
+          </div> -->
         </li>
       </ul>
     </div>
@@ -35,6 +36,7 @@
 <script>
 
 import reviewsStats from '../cmps/reviews-stats.vue';
+import reviewsText from '../cmps/reviews-text.vue';
 
 export default {
   name: 'reviews-details',
@@ -44,6 +46,7 @@ export default {
 
   components: {
     reviewsStats,
+    reviewsText
   },
 
   computed: {

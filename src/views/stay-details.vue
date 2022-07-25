@@ -27,6 +27,8 @@
 
         <features-details />
 
+
+
         <section class="gray-box description">
           <img class="aircover" src="../assets/icons/aircover.webp">
           <p>Every booking includes free protection from Host cancellations, listing inaccuracies, and other issues like
@@ -34,10 +36,8 @@
         </section>
 
 
-        <section class="gray-box description">
-          <h2>Description</h2>
-          <p>{{ stay.summary }}</p>
-        </section>
+        <description-details :stay="stay" />
+
 
         <amenities-details :stay="stay" />
       </section>
@@ -54,6 +54,7 @@ import { stayService } from '../services/stay.service.js';
 import upInfoDetails from '../cmps/up-info-details.vue';
 import galleryDetails from '../cmps/gallery-details.vue';
 import featuresDetails from '../cmps/features-details.vue';
+import descriptionDetails from '../cmps/description-details.vue';
 import amenitiesDetails from '../cmps/amenities-details.vue';
 import reviewsDetails from '../cmps/reviews-details.vue';
 import orderDetails from '../cmps/order-details.vue';
@@ -67,6 +68,7 @@ export default {
     amenitiesDetails,
     reviewsDetails,
     orderDetails,
+    descriptionDetails
   },
 
   data() {
