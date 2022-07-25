@@ -1,5 +1,8 @@
 <template>
   <section class="reviews-container box-padding">
+    <reviews-stats :stay="stay" />
+
+
     <div class="flex">
       <h2 class="stared">
         {{ $filters.reviewsRateAvg(stay) }}
@@ -30,10 +33,17 @@
 </template>
 
 <script>
+
+import reviewsStats from '../cmps/reviews-stats.vue';
+
 export default {
   name: 'reviews-details',
   props: {
     stay: { type: Object },
+  },
+
+  components: {
+    reviewsStats,
   },
 
   computed: {

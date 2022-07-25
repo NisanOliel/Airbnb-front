@@ -66,12 +66,12 @@
     "cleaningFee": null,
     "extraPeople": 0,
     "reviewScores": {
-      "accuracy": 5,
-      "cleanliness": 5,
-      "checkin": 5,
-      "communication": 5,
+      "accuracy": 4.8,
+      "cleanliness": 4.9,
+      "checkin": 4.6,
+      "communication": 4.7,
       "location": 5,
-      "value": 5,
+      "value": 4.7,
       "rating": 98
     },
     "reviews": [
@@ -246,12 +246,12 @@
     "cleaningFee": 8,
     "extraPeople": 15,
     "reviewScores": {
-      "accuracy": 5,
-      "cleanliness": 4,
-      "checkin": 5,
-      "communication": 5,
-      "location": 4,
-      "value": 5,
+      "accuracy": 4.8,
+      "cleanliness": 4.5,
+      "checkin": 4.6,
+      "communication": 4.7,
+      "location": 4.8,
+      "value": 4.7,
       "rating": 100
     },
     "reviews": [
@@ -368,12 +368,12 @@
     "cleaningFee": 0,
     "extraPeople": 0,
     "reviewScores": {
-      "accuracy": 4,
-      "cleanliness": 5,
-      "checkin": 5,
-      "communication": 5,
-      "location": 4,
-      "value": 5,
+      "accuracy": 4.6,
+      "cleanliness": 4.9,
+      "checkin": 4.6,
+      "communication": 4.7,
+      "location": 4.8,
+      "value": 4.7,
       "rating": 96
     },
     "reviews": [
@@ -636,12 +636,12 @@
     "cleaningFee": 80,
     "extraPeople": 0,
     "reviewScores": {
-      "accuracy": 5,
-      "cleanliness": 5,
-      "checkin": 5,
-      "communication": 5,
-      "location": 4,
-      "value": 5,
+      "accuracy": 4.8,
+      "cleanliness": 4.9,
+      "checkin": 4.6,
+      "communication": 4.7,
+      "location": 4.8,
+      "value": 4.7,
       "rating": 93
     },
     "reviews": [
@@ -925,12 +925,12 @@
     "cleaningFee": null,
     "extraPeople": 20,
     "reviewScores": {
-      "accuracy": 5,
-      "cleanliness": 5,
-      "checkin": 5,
-      "communication": 4,
+      "accuracy": 4.8,
+      "cleanliness": 4.9,
+      "checkin": 4.6,
+      "communication": 4.8,
       "location": 5,
-      "value": 4,
+      "value": 4.3,
       "rating": 90
     },
     "reviews": [
@@ -1017,12 +1017,12 @@
     "cleaningFee": 25,
     "extraPeople": 20,
     "reviewScores": {
-      "accuracy": 4,
-      "cleanliness": 4,
-      "checkin": 4,
-      "communication": 5,
+      "accuracy": 4.6,
+      "cleanliness": 4.5,
+      "checkin": 4.4,
+      "communication": 4.7,
       "location": 5,
-      "value": 4,
+      "value": 4.3,
       "rating": 90
     },
     "reviews": [
@@ -1311,12 +1311,12 @@
     "cleaningFee": 10,
     "extraPeople": 25,
     "reviewScores": {
-      "accuracy": 4,
-      "cleanliness": 5,
-      "checkin": 5,
-      "communication": 5,
-      "location": 4,
-      "value": 4,
+      "accuracy": 4.6,
+      "cleanliness": 4.9,
+      "checkin": 4.6,
+      "communication": 4.7,
+      "location": 4.8,
+      "value": 4.3,
       "rating": 90
     },
     "reviews": [
@@ -1601,12 +1601,12 @@
     "cleaningFee": 10,
     "extraPeople": 0,
     "reviewScores": {
-      "accuracy": 4,
-      "cleanliness": 4,
-      "checkin": 4,
-      "communication": 4,
-      "location": 4,
-      "value": 4,
+      "accuracy": 4.6,
+      "cleanliness": 4.5,
+      "checkin": 4.4,
+      "communication": 4.8,
+      "location": 4.8,
+      "value": 4.3,
       "rating": 89
     },
     "reviews": [
@@ -1899,12 +1899,12 @@
     "cleaningFee": 8,
     "extraPeople": 5,
     "reviewScores": {
-      "accuracy": 5,
-      "cleanliness": 5,
-      "checkin": 5,
-      "communication": 5,
-      "location": 4,
-      "value": 5,
+      "accuracy": 4.8,
+      "cleanliness": 4.9,
+      "checkin": 4.6,
+      "communication": 4.7,
+      "location": 4.8,
+      "value": 4.7,
       "rating": 96
     },
     "reviews": [
@@ -2032,12 +2032,12 @@
     "cleaningFee": 60,
     "extraPeople": 60,
     "reviewScores": {
-      "accuracy": 5,
-      "cleanliness": 5,
-      "checkin": 5,
-      "communication": 5,
+      "accuracy": 4.8,
+      "cleanliness": 4.9,
+      "checkin": 4.6,
+      "communication": 4.7,
       "location": 5,
-      "value": 4,
+      "value": 4.3,
       "rating": 96
     },
     "reviews": [
@@ -2338,12 +2338,12 @@
     "cleaningFee": 325,
     "extraPeople": 50,
     "reviewScores": {
-      "accuracy": 5,
-      "cleanliness": 5,
-      "checkin": 5,
-      "communication": 5,
+      "accuracy": 4.8,
+      "cleanliness": 4.9,
+      "checkin": 4.6,
+      "communication": 4.7,
       "location": 5,
-      "value": 5,
+      "value": 4.7,
       "rating": 100
     },
     "reviews": [
@@ -2599,12 +2599,12 @@
     "cleaningFee": 0,
     "extraPeople": 26,
     "reviewScores": {
-      "accuracy": 4,
-      "cleanliness": 5,
-      "checkin": 4,
-      "communication": 4,
-      "location": 4,
-      "value": 4,
+      "accuracy": 4.6,
+      "cleanliness": 4.9,
+      "checkin": 4.4,
+      "communication": 4.8,
+      "location": 4.8,
+      "value": 4.3,
       "rating": 78
     },
     "reviews": [
@@ -2897,12 +2897,12 @@
     "cleaningFee": 60,
     "extraPeople": 0,
     "reviewScores": {
-      "accuracy": 5,
-      "cleanliness": 4,
-      "checkin": 4,
-      "communication": 4,
-      "location": 4,
-      "value": 4,
+      "accuracy": 4.8,
+      "cleanliness": 4.5,
+      "checkin": 4.4,
+      "communication": 4.8,
+      "location": 4.8,
+      "value": 4.3,
       "rating": 90
     },
     "reviews": [
@@ -3195,12 +3195,12 @@
     "cleaningFee": 65,
     "extraPeople": 35,
     "reviewScores": {
-      "accuracy": 5,
-      "cleanliness": 5,
-      "checkin": 5,
-      "communication": 5,
+      "accuracy": 4.8,
+      "cleanliness": 4.9,
+      "checkin": 4.6,
+      "communication": 4.7,
       "location": 5,
-      "value": 5,
+      "value": 4.7,
       "rating": 95
     },
     "reviews": [
@@ -3489,12 +3489,12 @@
     "cleaningFee": null,
     "extraPeople": 0,
     "reviewScores": {
-      "accuracy": 5,
-      "cleanliness": 5,
-      "checkin": 5,
-      "communication": 5,
+      "accuracy": 4.8,
+      "cleanliness": 4.9,
+      "checkin": 4.6,
+      "communication": 4.7,
       "location": 5,
-      "value": 5,
+      "value": 4.7,
       "rating": 97
     },
     "reviews": [
@@ -3787,12 +3787,12 @@
     "cleaningFee": 120,
     "extraPeople": 80,
     "reviewScores": {
-      "accuracy": 5,
-      "cleanliness": 5,
-      "checkin": 5,
-      "communication": 5,
+      "accuracy": 4.8,
+      "cleanliness": 4.9,
+      "checkin": 4.6,
+      "communication": 4.7,
       "location": 5,
-      "value": 5,
+      "value": 4.7,
       "rating": 94
     },
     "reviews": [
@@ -4093,12 +4093,12 @@
     "cleaningFee": 270,
     "extraPeople": 20,
     "reviewScores": {
-      "accuracy": 5,
-      "cleanliness": 5,
-      "checkin": 5,
-      "communication": 5,
+      "accuracy": 4.8,
+      "cleanliness": 4.9,
+      "checkin": 4.6,
+      "communication": 4.7,
       "location": 5,
-      "value": 4,
+      "value": 4.3,
       "rating": 97
     },
     "reviews": [
@@ -4236,12 +4236,12 @@
     "cleaningFee": null,
     "extraPeople": 0,
     "reviewScores": {
-      "accuracy": 5,
-      "cleanliness": 5,
-      "checkin": 5,
-      "communication": 5,
+      "accuracy": 4.8,
+      "cleanliness": 4.9,
+      "checkin": 4.6,
+      "communication": 4.7,
       "location": 5,
-      "value": 5,
+      "value": 4.7,
       "rating": 100
     },
     "reviews": [
@@ -4325,12 +4325,12 @@
     "cleaningFee": 80,
     "extraPeople": 0,
     "reviewScores": {
-      "accuracy": 4,
-      "cleanliness": 4,
-      "checkin": 5,
-      "communication": 5,
+      "accuracy": 4.6,
+      "cleanliness": 4.5,
+      "checkin": 4.6,
+      "communication": 4.7,
       "location": 5,
-      "value": 4,
+      "value": 4.3,
       "rating": 93
     },
     "reviews": [
@@ -4476,12 +4476,12 @@
     "cleaningFee": 105,
     "extraPeople": 0,
     "reviewScores": {
-      "accuracy": 5,
-      "cleanliness": 5,
-      "checkin": 5,
-      "communication": 5,
+      "accuracy": 4.8,
+      "cleanliness": 4.9,
+      "checkin": 4.6,
+      "communication": 4.7,
       "location": 5,
-      "value": 5,
+      "value": 4.7,
       "rating": 100
     },
     "reviews": [
@@ -4595,12 +4595,12 @@
     "cleaningFee": null,
     "extraPeople": 0,
     "reviewScores": {
-      "accuracy": 5,
-      "cleanliness": 5,
-      "checkin": 5,
-      "communication": 5,
+      "accuracy": 4.8,
+      "cleanliness": 4.9,
+      "checkin": 4.6,
+      "communication": 4.7,
       "location": 5,
-      "value": 4,
+      "value": 4.3,
       "rating": 100
     },
     "reviews": [
@@ -4724,12 +4724,12 @@
     "cleaningFee": 50,
     "extraPeople": 0,
     "reviewScores": {
-      "accuracy": 5,
-      "cleanliness": 4,
-      "checkin": 5,
-      "communication": 5,
+      "accuracy": 4.8,
+      "cleanliness": 4.5,
+      "checkin": 4.6,
+      "communication": 4.7,
       "location": 5,
-      "value": 4,
+      "value": 4.3,
       "rating": 94
     },
     "reviews": [
@@ -5022,12 +5022,12 @@
     "cleaningFee": 165,
     "extraPeople": 7,
     "reviewScores": {
-      "accuracy": 5,
-      "cleanliness": 5,
-      "checkin": 5,
-      "communication": 5,
+      "accuracy": 4.8,
+      "cleanliness": 4.9,
+      "checkin": 4.6,
+      "communication": 4.7,
       "location": 5,
-      "value": 5,
+      "value": 4.7,
       "rating": 94
     },
     "reviews": [
@@ -5319,12 +5319,12 @@
     "cleaningFee": 35,
     "extraPeople": 0,
     "reviewScores": {
-      "accuracy": 4,
-      "cleanliness": 5,
-      "checkin": 5,
-      "communication": 4,
-      "location": 4,
-      "value": 4,
+      "accuracy": 4.6,
+      "cleanliness": 4.9,
+      "checkin": 4.6,
+      "communication": 4.8,
+      "location": 4.8,
+      "value": 4.3,
       "rating": 90
     },
     "reviews": [
@@ -5484,12 +5484,12 @@
     "cleaningFee": null,
     "extraPeople": 70,
     "reviewScores": {
-      "accuracy": 5,
-      "cleanliness": 5,
-      "checkin": 5,
-      "communication": 5,
+      "accuracy": 4.8,
+      "cleanliness": 4.9,
+      "checkin": 4.6,
+      "communication": 4.7,
       "location": 5,
-      "value": 5,
+      "value": 4.7,
       "rating": 98
     },
     "reviews": [
@@ -5782,12 +5782,12 @@
     "cleaningFee": 30,
     "extraPeople": 35,
     "reviewScores": {
-      "accuracy": 5,
-      "cleanliness": 5,
-      "checkin": 5,
-      "communication": 5,
+      "accuracy": 4.8,
+      "cleanliness": 4.9,
+      "checkin": 4.6,
+      "communication": 4.7,
       "location": 5,
-      "value": 5,
+      "value": 4.7,
       "rating": 98
     },
     "reviews": [
@@ -6076,12 +6076,12 @@
     "cleaningFee": null,
     "extraPeople": 0,
     "reviewScores": {
-      "accuracy": 5,
-      "cleanliness": 5,
-      "checkin": 5,
-      "communication": 5,
+      "accuracy": 4.8,
+      "cleanliness": 4.9,
+      "checkin": 4.6,
+      "communication": 4.7,
       "location": 5,
-      "value": 4,
+      "value": 4.3,
       "rating": 93
     },
     "reviews": [
@@ -6369,12 +6369,12 @@
     "cleaningFee": 0,
     "extraPeople": 0,
     "reviewScores": {
-      "accuracy": 5,
-      "cleanliness": 5,
-      "checkin": 5,
-      "communication": 5,
+      "accuracy": 4.8,
+      "cleanliness": 4.9,
+      "checkin": 4.6,
+      "communication": 4.7,
       "location": 5,
-      "value": 5,
+      "value": 4.7,
       "rating": 100
     },
     "reviews": [
@@ -6472,12 +6472,12 @@
     "cleaningFee": 20,
     "extraPeople": 0,
     "reviewScores": {
-      "accuracy": 4,
-      "cleanliness": 5,
-      "checkin": 5,
-      "communication": 4,
+      "accuracy": 4.6,
+      "cleanliness": 4.9,
+      "checkin": 4.6,
+      "communication": 4.8,
       "location": 5,
-      "value": 4,
+      "value": 4.3,
       "rating": 88
     },
     "reviews": [
