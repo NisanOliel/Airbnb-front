@@ -162,6 +162,8 @@
             <span> + </span>
           </button>
         </div>
+
+
       </div>
       <div class="guests-container flex justify-space-between align-center">
         <div class="flex column titles">
@@ -174,6 +176,23 @@
           </button>
           <span>{{ trip.guests.children }}</span>
           <button @click.stop="updateGuests('children', 1)">
+            <span> + </span>
+          </button>
+        </div>
+      </div>
+
+
+      <div class="guests-container flex justify-space-between align-center">
+        <div class="flex column titles">
+          <h5>Infants</h5>
+          <span>Under 2</span>
+        </div>
+        <div class="guests-btns flex align-center justify-space-between">
+          <button @click.stop="updateGuests('Infants', -1)">
+            <span> - </span>
+          </button>
+          <span>{{ trip.guests.Infants }}</span>
+          <button @click.stop="updateGuests('Infants', 1)">
             <span> + </span>
           </button>
         </div>
@@ -209,6 +228,7 @@ export default {
         guests: {
           adults: 0,
           children: 0,
+          Infants: 0
         },
         dates: {},
       },
@@ -232,7 +252,9 @@ export default {
     },
 
     guestsCount() {
-      const guestsCount = this.trip.guests.children + this.trip.guests.adults;
+      const { children, adults, Infants } = this.trip.guests
+
+      const guestsCount = children + adults + Infants;
       if (guestsCount >= 1) return guestsCount + ' guests';
       else return 'Add guests';
     },
@@ -262,7 +284,8 @@ export default {
   },
   methods: {
     updateGuests(type, number) {
-      const guestsCount = this.trip.guests.children + this.trip.guests.adults;
+      const { children, adults, Infants } = this.trip.guests
+      const guestsCount = children + adults + Infants;
       if (this.trip.guests[type] === 0 && number === -1) return;
       if (this.stay.capacity === guestsCount && number == 1) return ElMessage.error('You over the guests capacity');
 
@@ -270,7 +293,7 @@ export default {
     },
     sendOrder() {
       if (this.dateCheck === 0) return ElMessage.error('Fill check in and check out date ')
-      const { adults, children } = this.trip.guests
+      const { adults, children, Infants } = this.trip.guests
       if (children === 0 && adults === 0) return ElMessage.error('Add guests! ')
 
       const time = JSON.parse(JSON.stringify(this.trip.dates));
@@ -289,6 +312,7 @@ export default {
         "guests": {
           "adults": adults,
           "children": children,
+          "Infants": Infants
         },
         "stay": {
           "_id": this.stay._id,
