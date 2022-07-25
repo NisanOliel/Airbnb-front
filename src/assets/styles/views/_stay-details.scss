@@ -179,20 +179,36 @@ p.text-desc {
 }
 
 .reviews-stats {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
 
   .stats {
+    flex-basis: 50%;
 
-    &:nth-child(4),
-    &:nth-child(5),
-    &:nth-child(6) {
-      display: flex;
-      flex-direction: column;
-      background: #ca2a2a;
+
+    label {
+      margin-right: auto;
+      // margin-left: 20px;
+
     }
+
+    &:nth-child(1),
+    &:nth-child(5),
+    &:nth-child(3) {
+      padding-right: 107px;
+    }
+
+    &:nth-child(2),
+    &:nth-child(4),
+    &:nth-child(6) {
+      padding-right: 90px;
+    }
+
   }
 
   .stats {
-    margin-bottom: 30px;
+    margin-bottom: 16px;
     width: fit-content;
   }
 
@@ -215,7 +231,7 @@ p.text-desc {
   }
 
   .el-progress-bar__outer {
-    width: 100px;
+    width: 120px;
   }
 }
 
@@ -500,7 +516,7 @@ p.text-desc {
 
     position: absolute;
     line-height: 20px;
-    bottom: 47px;
+    bottom: 10px;
     left: 0;
     width: 100%;
     background-color: #fff;
