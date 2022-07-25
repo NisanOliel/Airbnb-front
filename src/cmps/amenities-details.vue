@@ -1,9 +1,9 @@
 <template>
-  <section class=" amenities-details">
+  <section class=" amenities-details ">
     <h2>What this place offers</h2>
-    <ul class="amenities flex flex-flow-wrap gap-row">
+    <ul class="amenities flex flex-flow-wrap gap-row ">
       <li class="" v-for="amenity in stay.amenities" :key="amenity">
-        <div class="flex gap-row">
+        <div class="flex gap-row align-center">
           <img class="amenity-icons" :src="amenity.src" />
           <span>
             {{ amenity.name }}
