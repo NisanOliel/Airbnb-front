@@ -24,13 +24,13 @@ export default {
   data() {
     return {
       isMore: false,
-      longText: this.reviews.length > 171,
+      longText: this.reviews.length > 160,
     }
   },
 
   computed: {
     formatedText() {
-      return this.isMore ? this.reviews : this.reviews.slice(0, 171)
+      return this.isMore ? this.reviews : this.reviews.slice(0, 160)
     },
     readText() {
       return this.isMore ? ' Show Less' : ' Show more'
