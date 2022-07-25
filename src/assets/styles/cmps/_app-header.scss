@@ -1,6 +1,6 @@
 header {
   position: relative;
-  padding: 10px;
+
   display: flex;
   justify-content: space-between;
   z-index: 100;
@@ -13,8 +13,21 @@ header {
 
     top: -1px;
     width: 100%;
-    transition: all 500ms ease-out;
     box-shadow: 1px 1px 6px #8080802b;
+    transition: all 500ms ease-out;
+    .header-labels {
+      padding: 0;
+      transition: all 200ms ease-out;
+    }
+  }
+  .container {
+    padding: 0;
+  }
+  .nav-wrapper {
+    border-bottom: $border;
+    &.expend {
+      height: 160px;
+    }
   }
 
   nav {
@@ -22,6 +35,8 @@ header {
 
     img {
       height: 32px;
+    }
+    &::after {
     }
   }
 
@@ -39,7 +54,6 @@ header {
   .header-labels {
     height: 80px;
     align-items: center;
-    margin-top: 30px;
 
     ul {
       gap: 32px;
@@ -147,11 +161,6 @@ header {
   .checkout {
     display: flex;
     flex-direction: column;
-  }
-
-  .expend {
-    border: 1px solid #dddddd;
-    border-radius: 32px;
   }
 
   .btn-container.on-filter {
