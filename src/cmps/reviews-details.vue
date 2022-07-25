@@ -24,9 +24,7 @@
           </div>
 
           <reviews-text :reviews="reviews.txt" />
-          <!-- <div>
-            <span> {{ reviews.txt }} </span>
-          </div> -->
+
         </li>
       </ul>
     </div>
