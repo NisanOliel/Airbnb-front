@@ -1,12 +1,27 @@
 <template>
-  <el-progress :show-text=false :percentage="80" />
 
-  <pre>{{ stay.reviewScores }}</pre>
+  <div class="reviews-stats" v-if="stay">
 
+    <div v-for="reviewScore, key of percentageFormat" class="stats">
+      <div class="flex align-center ustify-space-between">
+
+        <label>{{ key }} </label>
+        <div class="bar-label flex">
+
+          <el-progress :stroke-width="4" :show-text=false :percentage=reviewScore />
+          <span class="bold">{{ reviewScore / 20 }}</span>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+  </div>
 </template>
 
 <script>
-
 
 export default {
   name: 'reviews-stats',
@@ -15,13 +30,7 @@ export default {
   },
   data() {
     return {
-      Cleanliness: 0,
-      Communication: 0,
-      CheckIn: 0,
 
-      Accuracy: 0,
-      Location: 0,
-      Value: 0,
     };
   },
   created() {
@@ -32,6 +41,12 @@ export default {
     reviewsCount() {
       return this.stay.reviews.length;
     },
+    percentageFormat() {
+      return Object.entries(this.stay.reviewScores).reduce((sum, val) => {
+        sum[val[0]] = val[1] * 20
+        return sum
+      }, {})
+    }
   },
 };
 </script>

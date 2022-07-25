@@ -1,6 +1,5 @@
 <template>
   <section class="reviews-container box-padding">
-    <reviews-stats :stay="stay" />
 
 
     <div class="flex">
@@ -10,6 +9,7 @@
         {{ reviewsCount }} reviews
       </h2>
     </div>
+    <reviews-stats :stay="stay" />
 
     <div>
       <ul class="clean-list reviews-list-container">

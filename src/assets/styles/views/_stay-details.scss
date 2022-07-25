@@ -166,6 +166,48 @@
   }
 }
 
+.reviews-stats {
+
+  .stats {
+
+    &:nth-child(4),
+    &:nth-child(5),
+    &:nth-child(6) {
+      display: flex;
+      flex-direction: column;
+      background: #ca2a2a;
+    }
+  }
+
+  .stats {
+    margin-bottom: 30px;
+    width: fit-content;
+  }
+
+  label {
+    text-transform: capitalize;
+    font-size: 16px;
+  }
+
+  span {
+    font-size: 12px;
+    margin-left: 6px;
+  }
+
+  .el-progress-bar__outer {
+    background-color: #ddd;
+  }
+
+  .el-progress-bar__inner {
+    background-color: #222222;
+  }
+
+  .el-progress-bar__outer {
+    width: 100px;
+  }
+}
+
+
 .stay-name {
   font-size: 1.46875rem;
   line-height: 1.6875rem;
