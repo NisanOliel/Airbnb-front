@@ -1,7 +1,7 @@
 <template>
   <section class="reviews-container box-padding">
     <div class="flex">
-      <h2>
+      <h2 class="stared">
         {{ $filters.reviewsRateAvg(stay) }}
         <span>·</span>
         {{ reviewsCount }} reviews

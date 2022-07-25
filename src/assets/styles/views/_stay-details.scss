@@ -156,6 +156,10 @@
   .reviews-container {
     padding-block: 48px;
 
+    .stared {
+      gap: 10px;
+    }
+
     h2 {
       padding-bottom: 32px;
     }
