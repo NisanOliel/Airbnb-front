@@ -1,25 +1,25 @@
 <template>
   <section class="order-container sticky">
     <div class="order-form-header">
-      <p><span class="cost">${{ stay.price }}</span> / night</p>
+      <p><span class="cost bold">${{ stay.price }}</span> / night</p>
       <p class="stared">
         {{ $filters.reviewsRateAvg(stay) }} <span class="reviews"> ({{ reviewsCount }})</span></p>
     </div>
 
     <!-- Date !! -->
     <div class="order-data">
-      <v-date-picker v-model="trip.dates" is-range :columns="2">
+      <v-date-picker color="gray" v-model="trip.dates" is-range :columns="2">
         <template v-slot="{ inputValue, inputEvents }">
           <div class="flex justify-center items-center">
             <div class="date-picker">
               <div class="date-input">
-                <label>check in</label>
+                <label>CHECK-IN</label>
                 <input :placeholder="checkIn" :value="inputValue.start" v-on="inputEvents.start"
                   class="border px-2 py-1 w-32 rounded focus:outline-none focus:border-indigo-300" />
               </div>
 
               <div class="date-input">
-                <label>check out</label>
+                <label>CHECK-OUT</label>
                 <input :placeholder="checkOut" :value="inputValue.end" v-on="inputEvents.end"
                   class="border px-2 py-1 w-32 rounded focus:outline-none focus:border-indigo-300" />
               </div>
@@ -30,7 +30,7 @@
       <!--  -->
 
       <div @click="isShow = !isShow" class="guest-input">
-        <label>guests
+        <label>GUESTS
           <div class="expand-order">
             <span class="material-icons-outlined" :class="{ flip: !isShow }"> expand_less </span>
           </div>
@@ -181,7 +181,13 @@
 
     <div class="pricing" v-if="dateCheck">
       <h4>You won't be charged yet</h4>
-      <p>
+      <h5 class="flex justify-space-between">
+        <span class="under-line ">${{ stay.price }} X {{ daysTotal }}</span><span> ${{ totalPriceSum }}</span>
+      </h5>
+      <h5 class="flex justify-space-between">
+        <span class="under-line ">Service fee</span><span> ${{ serviceFee }}</span>
+      </h5>
+      <p class="flex justify-space-between">
         <span>Total</span><span> ${{ totalPrice }}</span>
       </p>
     </div>
@@ -206,6 +212,10 @@ export default {
         dates: {},
       },
       loggedinUser: null,
+      fee: 1.18,
+      serviceFee: null,
+      daysTotal: null,
+      totalPriceWithFee: null
     };
   },
   created() {
@@ -226,10 +236,12 @@ export default {
       else return 'Add guests';
     },
     checkIn() {
-      return this.trip.dates[0];
+      if (!this.trip.dates[0]) return "Add date"
+      else return this.trip.dates[0]
     },
     checkOut() {
-      return this.trip.dates[1];
+      if (!this.trip.dates[1]) return "Add date"
+      else return this.trip.dates[1]
     },
     totalPrice() {
       let size = Object.keys(this.trip.dates).length;
@@ -238,8 +250,12 @@ export default {
         const { start, end } = time;
 
         const timeDiff = (new Date(end).getTime() - new Date(start).getTime()) / (1000 * 3600 * 24);
+        this.daysTotal = timeDiff.toLocaleString()
         this.totalPriceSum = Number(parseInt(this.stay.price * timeDiff)).toLocaleString();
-        return Number(parseInt(this.stay.price * timeDiff)).toLocaleString();
+        this.serviceFee = Number((this.totalPriceSum * this.fee) - this.totalPriceSum).toFixed(0)
+        const totalWithFee = (+this.totalPriceSum + +this.serviceFee).toFixed(0)
+        this.totalPriceWithFee = totalWithFee
+        return totalWithFee
       }
     },
   },
@@ -252,7 +268,6 @@ export default {
       this.trip.guests[type] += number;
     },
     sendOrder() {
-      console.log('this.stay.host._id:', this.stay.host._id)
       if (this.dateCheck === 0) return ElMessage.error('Fill check in and check out date ')
       const { adults, children } = this.trip.guests
       if (children === 0 && adults === 0) return ElMessage.error('Add guests! ')

@@ -302,15 +302,27 @@
   border: 1px solid #00000030;
   border-radius: 13px;
   padding: 20px;
-  width: 300px;
+  width: 372px;
+  min-height: 275px;
   margin: 50px auto 10px;
-  box-shadow: 0 0 5px 5px #00000015;
+  box-shadow: rgb(0 0 0 / 12%) 0px 6px 16px;
 
   .order-form-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    margin-bottom: 22px;
+    margin-top: 7px;
+
+
+    p {
+      &:nth-child(1) {
+        span {
+          font-size: 22px;
+        }
+      }
+    }
   }
 
   input {
@@ -329,15 +341,16 @@
     cursor: pointer;
   }
 
-  label {
-    font-weight: 600;
-    font-size: 0.75em;
-  }
-
   .order-data {
-    border: 1px solid #00000050;
-    border-radius: 13px;
+    border: 1px solid rgb(0 0 0 / 32%);
+    border-radius: 8px;
     margin-bottom: 15px;
+
+    label {
+      font-family: Cereal-bold;
+      color: black;
+      font-size: 10px;
+    }
 
     .date-picker {
       display: flex;
@@ -347,7 +360,7 @@
         display: flex;
         flex-direction: column;
         gap: 5px;
-        padding: 7px 12px;
+        padding: 11px 16px;
 
         &:last-of-type {
           border-left: 1px solid #00000050;
@@ -360,7 +373,7 @@
       flex-direction: column;
       gap: 5px;
       border-top: 1px solid #00000050;
-      padding: 7px 12px;
+      padding: 11px 16px;
       position: relative;
     }
   }
@@ -448,13 +461,7 @@
     }
   }
 
-  // .guests-container {
-  //   -webkit-box-align: center;
-  //   align-items: center;
-  //   width: 100%;
-  //   color: rgb(34, 34, 34);
-  //   font-weight: 400;
-  // }
+
   .guests-btns {
     justify-content: space-between;
     width: 104px;
@@ -481,15 +488,26 @@
   .pricing {
     h4 {
       text-align: center;
+      margin-top: 15px;
+      font-weight: 100;
+    }
+
+    h5 {
+      font-size: 16px;
+      font-weight: 100;
+      color: rgb(34, 34, 34);
+      margin: 10px 0px 15px 0px;
+
+
     }
 
     p {
-      font-weight: 600;
+      font-size: 16px;
+      color: rgb(34, 34, 34);
+      font-family: Cereal-bold;
       padding-top: 16px;
       margin-top: 8px;
       border-top: 1px solid #ddd;
-      display: flex;
-      justify-content: space-between;
     }
   }
 }
