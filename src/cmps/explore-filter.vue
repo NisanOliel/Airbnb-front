@@ -252,13 +252,13 @@
       };
     },
     methods: {
-      handleScroll(event) {
-        console.log('this.filter', this.filterPreview);
-        if (window.scrollY > 0) {
-          console.log('window', window);
-          this.filterPreview = true;
-        }
-      },
+      // handleScroll(event) {
+      //   console.log('this.filter', this.filterPreview);
+      //   if (window.scrollY === 0) {
+      //     console.log('window', window);
+      //     this.filterPreview = true;
+      //   }
+      // },
       formSubmit() {
         console.log('hellow');
         let url = `/explore?location=${this.filterBy.where}`;
@@ -296,12 +296,12 @@
         this.filterPreview = !this.filterPreview;
       },
     },
-    created() {
-      window.addEventListener('scroll', this.handleScroll);
-    },
-    unmounted() {
-      // this.formSubmit();
-      window.addEventListener('scroll', this.handleScroll);
-    },
+    // created() {
+    //   window.addEventListener('scroll', this.handleScroll);
+    // },
+    // unmounted() {
+    //   // this.formSubmit();
+    //   window.addEventListener('scroll', this.handleScroll);
+    // },
   };
 </script>

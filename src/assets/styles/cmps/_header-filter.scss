@@ -1,4 +1,5 @@
 .search-wrapper {
+  cursor: pointer;
   width: fit-content;
   border-radius: 40px;
   box-shadow: 0 1px 2px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 5%);
@@ -15,12 +16,13 @@
       justify-content: space-between;
       flex: 1.1;
       align-items: center;
+
       span {
         background: $clr2;
         height: 32px;
         width: 32px;
         border-radius: 50%;
-        padding: 5px 0 10px 10px;
+        padding: 8px 0 10px 10px;
         img {
           width: 12px;
           height: 12px;

@@ -43,7 +43,7 @@
       "location": "Eureka, California, United States",
       "about": "Adventurous couple loves to travel :)",
       "responseTime": "within an hour",
-      "thumbnailUrl": "https://a0.muscache.com/im/pictures/542dba0c-eb1b-4ab3-85f3-94d3cc8f87a4.jpg?aki_policy=profile_small",
+      "thumbnailUrl": "https://randomuser.me/api/portraits/men/10.jpg",
       "pictureUrl": "https://a0.muscache.com/im/pictures/542dba0c-eb1b-4ab3-85f3-94d3cc8f87a4.jpg?aki_policy=profile_x_medium",
       "isSuperhost": true,
       "id": "36133410",
@@ -66,18 +66,17 @@
     "cleaningFee": null,
     "extraPeople": 0,
     "reviewScores": {
-      "accuracy": 10,
-      "cleanliness": 10,
-      "checkin": 10,
-      "communication": 10,
-      "location": 10,
-      "value": 10,
-      "rating": 98
+      "accuracy": 4.8,
+      "cleanliness": 4.9,
+      "checkin": 4.6,
+      "communication": 4.7,
+      "location": 5,
+      "value": 4.7
     },
     "reviews": [
       {
         "at": "2016-06-12T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3407e36c59e6164fc004",
           "fullname": "Kiesha",
@@ -110,7 +109,7 @@
       },
       {
         "at": "2017-01-07T05:00:00.000Z",
-        "rate": 2,
+        "rate": 4,
         "by": {
           "_id": "622f3404e36c59e6164fb37f",
           "fullname": "Tracy",
@@ -121,7 +120,7 @@
       },
       {
         "at": "2017-04-07T04:00:00.000Z",
-        "rate": 1,
+        "rate": 5,
         "by": {
           "_id": "622f3403e36c59e6164fb105",
           "fullname": "Duyen",
@@ -143,7 +142,7 @@
       },
       {
         "at": "2018-02-24T05:00:00.000Z",
-        "rate": 1,
+        "rate": 5,
         "by": {
           "_id": "622f3404e36c59e6164fb4af",
           "fullname": "Samy",
@@ -165,7 +164,7 @@
       },
       {
         "at": "2018-06-29T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3405e36c59e6164fb713",
           "fullname": "Kimberly",
@@ -223,7 +222,7 @@
       "fullname": "Angel",
       "location": "Montreal, Québec, Canada",
       "about": "",
-      "thumbnailUrl": "https://a0.muscache.com/im/pictures/12be1141-74de-4f04-bf28-82c3ed589d11.jpg?aki_policy=profile_small",
+      "thumbnailUrl": "https://randomuser.me/api/portraits/men/11.jpg",
       "pictureUrl": "https://a0.muscache.com/im/pictures/12be1141-74de-4f04-bf28-82c3ed589d11.jpg?aki_policy=profile_x_medium",
       "isSuperhost": false,
       "id": "80344827",
@@ -246,18 +245,17 @@
     "cleaningFee": 8,
     "extraPeople": 15,
     "reviewScores": {
-      "accuracy": 10,
-      "cleanliness": 9,
-      "checkin": 10,
-      "communication": 10,
-      "location": 9,
-      "value": 10,
-      "rating": 100
+      "accuracy": 4.8,
+      "cleanliness": 4.5,
+      "checkin": 4.6,
+      "communication": 4.7,
+      "location": 4.8,
+      "value": 4.7
     },
     "reviews": [
       {
         "at": "2016-07-07T04:00:00.000Z",
-        "rate": 2,
+        "rate": 4,
         "by": {
           "_id": "622f3407e36c59e6164fc058",
           "fullname": "Rowan",
@@ -268,7 +266,7 @@
       },
       {
         "at": "2016-07-08T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3403e36c59e6164fb274",
           "fullname": "Adriana",
@@ -279,7 +277,7 @@
       },
       {
         "at": "2016-07-12T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3405e36c59e6164fb87c",
           "fullname": "Emma",
@@ -290,7 +288,7 @@
       },
       {
         "at": "2016-08-02T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3408e36c59e6164fc082",
           "fullname": "Jeffery",
@@ -345,7 +343,7 @@
       "location": "Porto, Porto District, Portugal",
       "about": "Simples, muito comunicativa, mas de elevado sentido de responsabilidade, de organização e de confiança.\r\nGosto muito de contacto humano, sem o qual não me sinto estável. Adoro conhecer pessoas de culturas diferentes.\r\nFaço várias viagens, mas de curta duração, pois tenho necessidade de sentir o lar e a família. Por ser assim, tento fazer tudo para que os meus hospedes se sintam confortáveis como em suas casas.",
       "responseTime": "within an hour",
-      "thumbnailUrl": "https://a0.muscache.com/im/pictures/c9b876fc-b30e-4951-8f88-af9add00939e.jpg?aki_policy=profile_small",
+      "thumbnailUrl": "https://randomuser.me/api/portraits/women/12.jpg",
       "pictureUrl": "https://a0.muscache.com/im/pictures/c9b876fc-b30e-4951-8f88-af9add00939e.jpg?aki_policy=profile_x_medium",
       "isSuperhost": true,
       "id": "78704763",
@@ -368,13 +366,12 @@
     "cleaningFee": 0,
     "extraPeople": 0,
     "reviewScores": {
-      "accuracy": 9,
-      "cleanliness": 10,
-      "checkin": 10,
-      "communication": 10,
-      "location": 9,
-      "value": 10,
-      "rating": 96
+      "accuracy": 4.6,
+      "cleanliness": 4.9,
+      "checkin": 4.6,
+      "communication": 4.7,
+      "location": 4.8,
+      "value": 4.7
     },
     "reviews": [
       {
@@ -390,7 +387,7 @@
       },
       {
         "at": "2016-08-10T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3404e36c59e6164fb4e7",
           "fullname": "Mario R.",
@@ -401,7 +398,7 @@
       },
       {
         "at": "2016-08-14T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3403e36c59e6164fb110",
           "fullname": "Patricia",
@@ -412,7 +409,7 @@
       },
       {
         "at": "2016-09-12T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3401e36c59e6164fab5b",
           "fullname": "Ingrid",
@@ -423,7 +420,7 @@
       },
       {
         "at": "2017-05-13T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3403e36c59e6164fb27c",
           "fullname": "Marie Odile",
@@ -434,7 +431,7 @@
       },
       {
         "at": "2017-06-13T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3407e36c59e6164fbd3c",
           "fullname": "Anne",
@@ -445,7 +442,7 @@
       },
       {
         "at": "2017-06-30T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3407e36c59e6164fbd39",
           "fullname": "Armelle",
@@ -456,7 +453,7 @@
       },
       {
         "at": "2017-08-01T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3406e36c59e6164fbc52",
           "fullname": "Domingo",
@@ -467,7 +464,7 @@
       },
       {
         "at": "2017-08-11T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3406e36c59e6164fbb3f",
           "fullname": "Estelle",
@@ -478,7 +475,7 @@
       },
       {
         "at": "2017-09-21T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3403e36c59e6164fb06f",
           "fullname": "Alfredo Julio Leandro",
@@ -489,7 +486,7 @@
       },
       {
         "at": "2017-10-17T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3405e36c59e6164fb78f",
           "fullname": "Nataliia",
@@ -500,7 +497,7 @@
       },
       {
         "at": "2017-12-09T05:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3402e36c59e6164fad62",
           "fullname": "Liz",
@@ -511,7 +508,7 @@
       },
       {
         "at": "2018-01-09T05:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3403e36c59e6164fb1c3",
           "fullname": "Ariadne",
@@ -522,7 +519,7 @@
       },
       {
         "at": "2018-02-27T05:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3404e36c59e6164fb5f5",
           "fullname": "Bruno",
@@ -533,7 +530,7 @@
       },
       {
         "at": "2018-06-24T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3402e36c59e6164fad10",
           "fullname": "João",
@@ -544,7 +541,7 @@
       },
       {
         "at": "2018-07-18T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3408e36c59e6164fc075",
           "fullname": "Alcides",
@@ -555,7 +552,7 @@
       },
       {
         "at": "2018-12-09T05:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3406e36c59e6164fbad8",
           "fullname": "Miguel Angel",
@@ -566,7 +563,7 @@
       },
       {
         "at": "2018-12-29T05:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3407e36c59e6164fbede",
           "fullname": "Alessandro",
@@ -613,7 +610,7 @@
       "location": "New York, New York, United States",
       "about": "I'm a journalist from Texas and my husband is an artist from the Ukraine by way of Kansas City. We recently welcomed our son into the world. (Don't worry, he sleeps all night.)  We love exploring New York, especially Brooklyn, from the Brooklyn Flea to tiny taco joints to the Botanic Gardens to performance art in Bushwick storefronts (really). We've both spent a lot of time in the South, so hospitality is second nature to us. ",
       "responseTime": "within an hour",
-      "thumbnailUrl": "https://a0.muscache.com/im/users/6334250/profile_pic/1368287493/original.jpg?aki_policy=profile_small",
+      "thumbnailUrl": "https://randomuser.me/api/portraits/women/13.jpg",
       "pictureUrl": "https://a0.muscache.com/im/users/6334250/profile_pic/1368287493/original.jpg?aki_policy=profile_x_medium",
       "isSuperhost": true,
       "id": "6334250",
@@ -636,18 +633,17 @@
     "cleaningFee": 80,
     "extraPeople": 0,
     "reviewScores": {
-      "accuracy": 10,
-      "cleanliness": 10,
-      "checkin": 10,
-      "communication": 10,
-      "location": 9,
-      "value": 10,
-      "rating": 93
+      "accuracy": 4.8,
+      "cleanliness": 4.9,
+      "checkin": 4.6,
+      "communication": 4.7,
+      "location": 4.8,
+      "value": 4.7
     },
     "reviews": [
       {
         "at": "2013-05-27T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3407e36c59e6164fbfd2",
           "fullname": "Nicolas",
@@ -658,7 +654,7 @@
       },
       {
         "at": "2013-06-04T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3403e36c59e6164fb048",
           "fullname": "Jeff",
@@ -669,7 +665,7 @@
       },
       {
         "at": "2013-06-13T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3406e36c59e6164fba55",
           "fullname": "Carla",
@@ -680,7 +676,7 @@
       },
       {
         "at": "2013-06-20T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3407e36c59e6164fbf76",
           "fullname": "Dan",
@@ -691,7 +687,7 @@
       },
       {
         "at": "2013-06-25T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3407e36c59e6164fbe9d",
           "fullname": "Ariane",
@@ -702,7 +698,7 @@
       },
       {
         "at": "2013-07-03T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3402e36c59e6164fad91",
           "fullname": "Ilka",
@@ -713,7 +709,7 @@
       },
       {
         "at": "2013-07-12T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3401e36c59e6164fab81",
           "fullname": "Kristy",
@@ -724,7 +720,7 @@
       },
       {
         "at": "2013-07-24T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3405e36c59e6164fb785",
           "fullname": "Barbara",
@@ -735,7 +731,7 @@
       },
       {
         "at": "2013-07-29T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3404e36c59e6164fb515",
           "fullname": "Gloria",
@@ -746,7 +742,7 @@
       },
       {
         "at": "2013-09-07T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3403e36c59e6164fb079",
           "fullname": "Javier",
@@ -757,7 +753,7 @@
       },
       {
         "at": "2013-10-09T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3402e36c59e6164fabc4",
           "fullname": "Ivan",
@@ -768,7 +764,7 @@
       },
       {
         "at": "2013-11-01T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3402e36c59e6164fada2",
           "fullname": "India",
@@ -779,7 +775,7 @@
       },
       {
         "at": "2013-11-10T05:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3406e36c59e6164fb9f9",
           "fullname": "Pamela",
@@ -790,7 +786,7 @@
       },
       {
         "at": "2013-11-14T05:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3402e36c59e6164fae8c",
           "fullname": "Lindsay",
@@ -801,7 +797,7 @@
       },
       {
         "at": "2013-12-01T05:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3407e36c59e6164fbf31",
           "fullname": "Nadia",
@@ -812,7 +808,7 @@
       },
       {
         "at": "2014-01-04T05:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3407e36c59e6164fbdab",
           "fullname": "Barbara",
@@ -823,7 +819,7 @@
       },
       {
         "at": "2014-03-11T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3404e36c59e6164fb2c1",
           "fullname": "Chris",
@@ -834,7 +830,7 @@
       },
       {
         "at": "2014-03-26T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3405e36c59e6164fb8fc",
           "fullname": "Melody",
@@ -845,7 +841,7 @@
       },
       {
         "at": "2014-04-10T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3404e36c59e6164fb41e",
           "fullname": "Carlos",
@@ -856,7 +852,7 @@
       },
       {
         "at": "2014-04-21T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3403e36c59e6164fb087",
           "fullname": "Sergei",
@@ -902,7 +898,7 @@
       "fullname": "Marián",
       "location": "Barcelona, Catalonia, Spain",
       "about": "",
-      "thumbnailUrl": "https://a0.muscache.com/im/users/31635864/profile_pic/1429604852/original.jpg?aki_policy=profile_small",
+      "thumbnailUrl": "https://randomuser.me/api/portraits/women/15.jpg",
       "pictureUrl": "https://a0.muscache.com/im/users/31635864/profile_pic/1429604852/original.jpg?aki_policy=profile_x_medium",
       "isSuperhost": false,
       "id": "31635864",
@@ -925,13 +921,12 @@
     "cleaningFee": null,
     "extraPeople": 20,
     "reviewScores": {
-      "accuracy": 10,
-      "cleanliness": 10,
-      "checkin": 10,
-      "communication": 9,
-      "location": 10,
-      "value": 9,
-      "rating": 90
+      "accuracy": 4.8,
+      "cleanliness": 4.9,
+      "checkin": 4.6,
+      "communication": 4.8,
+      "location": 5,
+      "value": 4.3
     },
     "reviews": [
       {
@@ -947,7 +942,7 @@
       },
       {
         "at": "2016-08-11T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3403e36c59e6164faf56",
           "fullname": "Pauline",
@@ -994,7 +989,7 @@
       "location": "Barcelona, Catalonia, Spain",
       "about": "Mi nombre es Isabel, pero me llamo Isa. Nací en Vigo (Galicia). Con 20 años me fuí a vivir a Madrid con intención de ser actriz; ahora resido en Barcelona desde los 28. Soy una joven de 43 años, cantante de Jazz. Me gusta salir, pero también quedarme en casa a leer o ver alguna buena película.\r\nHe compartido piso muchos años, pero estas serán mis primeras experiencias como anfitriona.\r\n\r\n¡Sed bienvenidos!\r\n",
       "responseTime": "within an hour",
-      "thumbnailUrl": "https://a0.muscache.com/im/pictures/72a579ce-37d7-466e-9c25-9876ee8de037.jpg?aki_policy=profile_small",
+      "thumbnailUrl": "https://randomuser.me/api/portraits/women/16.jpg",
       "pictureUrl": "https://a0.muscache.com/im/pictures/72a579ce-37d7-466e-9c25-9876ee8de037.jpg?aki_policy=profile_x_medium",
       "isSuperhost": false,
       "id": "35858044",
@@ -1017,18 +1012,17 @@
     "cleaningFee": 25,
     "extraPeople": 20,
     "reviewScores": {
-      "accuracy": 9,
-      "cleanliness": 9,
-      "checkin": 9,
-      "communication": 10,
-      "location": 10,
-      "value": 9,
-      "rating": 90
+      "accuracy": 4.6,
+      "cleanliness": 4.5,
+      "checkin": 4.4,
+      "communication": 4.7,
+      "location": 5,
+      "value": 4.3
     },
     "reviews": [
       {
         "at": "2016-02-24T05:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3405e36c59e6164fb95e",
           "fullname": "Pierre",
@@ -1039,7 +1033,7 @@
       },
       {
         "at": "2016-03-24T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3403e36c59e6164fafa6",
           "fullname": "Isabelle",
@@ -1050,7 +1044,7 @@
       },
       {
         "at": "2016-04-07T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3406e36c59e6164fbaf2",
           "fullname": "Hélène",
@@ -1061,7 +1055,7 @@
       },
       {
         "at": "2016-04-13T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3407e36c59e6164fbdc3",
           "fullname": "Daniel",
@@ -1072,7 +1066,7 @@
       },
       {
         "at": "2016-04-25T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3401e36c59e6164fabad",
           "fullname": "Maria Isabel",
@@ -1083,7 +1077,7 @@
       },
       {
         "at": "2016-05-04T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3405e36c59e6164fb967",
           "fullname": "Aitana",
@@ -1094,7 +1088,7 @@
       },
       {
         "at": "2016-05-12T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3406e36c59e6164fbb88",
           "fullname": "Valentina",
@@ -1105,7 +1099,7 @@
       },
       {
         "at": "2016-05-16T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3405e36c59e6164fb715",
           "fullname": "Jeremy",
@@ -1116,7 +1110,7 @@
       },
       {
         "at": "2016-05-25T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3403e36c59e6164fb0b2",
           "fullname": "Mei-Lin",
@@ -1127,7 +1121,7 @@
       },
       {
         "at": "2016-06-10T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3403e36c59e6164fb1f7",
           "fullname": "Taneli",
@@ -1138,7 +1132,7 @@
       },
       {
         "at": "2016-06-16T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3404e36c59e6164fb623",
           "fullname": "Natasha",
@@ -1149,7 +1143,7 @@
       },
       {
         "at": "2016-06-23T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3407e36c59e6164fc013",
           "fullname": "Elizabeth",
@@ -1160,7 +1154,7 @@
       },
       {
         "at": "2016-06-28T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3403e36c59e6164fb0af",
           "fullname": "Monika",
@@ -1171,7 +1165,7 @@
       },
       {
         "at": "2016-07-03T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3403e36c59e6164fb23a",
           "fullname": "Margaux",
@@ -1182,7 +1176,7 @@
       },
       {
         "at": "2016-07-11T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3403e36c59e6164fb21c",
           "fullname": "Elisabeth",
@@ -1193,7 +1187,7 @@
       },
       {
         "at": "2016-07-23T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3407e36c59e6164fbd7f",
           "fullname": "Ingrid",
@@ -1204,7 +1198,7 @@
       },
       {
         "at": "2016-07-30T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3403e36c59e6164fb1ac",
           "fullname": "Liliane",
@@ -1215,7 +1209,7 @@
       },
       {
         "at": "2016-08-10T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3405e36c59e6164fb8e1",
           "fullname": "Murat",
@@ -1226,7 +1220,7 @@
       },
       {
         "at": "2016-08-26T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3406e36c59e6164fbcb4",
           "fullname": "Mina",
@@ -1237,7 +1231,7 @@
       },
       {
         "at": "2016-09-07T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3405e36c59e6164fb85f",
           "fullname": "Jessy",
@@ -1288,7 +1282,7 @@
       "location": "New York, New York, United States",
       "about": "Welcome Everyone! Thank you for stopping by. \r\n\r\nI was born and raised in Manhattan and I am here to help  share the New York City Experience with others through Airbnb!  I am easy to connect with and very reachable and always willing to interact with people. \r\n\r\nI am big on cleanliness and hospitality. I strive on making Guests feel as comfortable as possible. \r\n\r\nI hope you would like to get a chance to visit my location and enjoy the hosting I provide. If you have any questions/ comments, feel free to contact me. \r\n",
       "responseTime": "within a few hours",
-      "thumbnailUrl": "https://a0.muscache.com/im/pictures/61b62b90-e38b-4609-a3c4-ff5ff06b5c08.jpg?aki_policy=profile_small",
+      "thumbnailUrl": "https://randomuser.me/api/portraits/men/16.jpg",
       "pictureUrl": "https://a0.muscache.com/im/pictures/61b62b90-e38b-4609-a3c4-ff5ff06b5c08.jpg?aki_policy=profile_x_medium",
       "isSuperhost": false,
       "id": "24800102",
@@ -1311,18 +1305,17 @@
     "cleaningFee": 10,
     "extraPeople": 25,
     "reviewScores": {
-      "accuracy": 9,
-      "cleanliness": 10,
-      "checkin": 10,
-      "communication": 10,
-      "location": 9,
-      "value": 9,
-      "rating": 90
+      "accuracy": 4.6,
+      "cleanliness": 4.9,
+      "checkin": 4.6,
+      "communication": 4.7,
+      "location": 4.8,
+      "value": 4.3
     },
     "reviews": [
       {
         "at": "2016-03-26T04:00:00.000Z",
-        "rate": 2,
+        "rate": 4,
         "by": {
           "_id": "622f3405e36c59e6164fb8b4",
           "fullname": "Christine",
@@ -1333,7 +1326,7 @@
       },
       {
         "at": "2016-04-17T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3407e36c59e6164fbdb9",
           "fullname": "Hector",
@@ -1344,7 +1337,7 @@
       },
       {
         "at": "2016-04-23T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3407e36c59e6164fbdca",
           "fullname": "Jaime",
@@ -1355,7 +1348,7 @@
       },
       {
         "at": "2016-04-24T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3402e36c59e6164fae69",
           "fullname": "Anan",
@@ -1366,7 +1359,7 @@
       },
       {
         "at": "2016-05-04T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3407e36c59e6164fbf23",
           "fullname": "Yamilis",
@@ -1377,7 +1370,7 @@
       },
       {
         "at": "2016-05-08T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3405e36c59e6164fb6a4",
           "fullname": "Leonam",
@@ -1388,7 +1381,7 @@
       },
       {
         "at": "2016-05-11T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3407e36c59e6164fc063",
           "fullname": "Amy",
@@ -1399,7 +1392,7 @@
       },
       {
         "at": "2016-05-17T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3401e36c59e6164fab7d",
           "fullname": "Vlad",
@@ -1410,7 +1403,7 @@
       },
       {
         "at": "2016-05-19T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3407e36c59e6164fbe7b",
           "fullname": "Derick",
@@ -1421,7 +1414,7 @@
       },
       {
         "at": "2016-05-21T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3407e36c59e6164fbefb",
           "fullname": "Derek",
@@ -1432,7 +1425,7 @@
       },
       {
         "at": "2016-05-22T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3404e36c59e6164fb484",
           "fullname": "Shiann",
@@ -1443,7 +1436,7 @@
       },
       {
         "at": "2016-05-26T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3403e36c59e6164fb208",
           "fullname": "Stephanie",
@@ -1454,7 +1447,7 @@
       },
       {
         "at": "2016-05-29T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3404e36c59e6164fb52c",
           "fullname": "Virginie",
@@ -1465,7 +1458,7 @@
       },
       {
         "at": "2016-06-06T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3405e36c59e6164fb803",
           "fullname": "Ada",
@@ -1476,7 +1469,7 @@
       },
       {
         "at": "2016-06-11T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3406e36c59e6164fbc21",
           "fullname": "Fernando",
@@ -1487,7 +1480,7 @@
       },
       {
         "at": "2016-06-14T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3407e36c59e6164fbdfe",
           "fullname": "Francesca",
@@ -1498,7 +1491,7 @@
       },
       {
         "at": "2016-06-20T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3404e36c59e6164fb4de",
           "fullname": "Alex",
@@ -1509,7 +1502,7 @@
       },
       {
         "at": "2016-06-24T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3407e36c59e6164fbd08",
           "fullname": "Johanna",
@@ -1520,7 +1513,7 @@
       },
       {
         "at": "2016-07-03T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3405e36c59e6164fb7a6",
           "fullname": "Bandele",
@@ -1531,7 +1524,7 @@
       },
       {
         "at": "2016-07-13T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3405e36c59e6164fb80a",
           "fullname": "Bryan",
@@ -1578,7 +1571,7 @@
       "location": "Porto, Porto District, Portugal",
       "about": "Welcome!\r\nThe apartments has all the things to provide you a perfect days in Porto. It is located in a very central area, inside a typical oporto building. \r\nI will give you lots of informations about Porto, my personal tips, and I'll always be available to help you with anything. All I want is for you to go home knowing Porto and inevitably loving the city! :)\r\n\r\n",
       "responseTime": "within a day",
-      "thumbnailUrl": "https://a0.muscache.com/im/pictures/f3e85f0c-e28d-4698-9da9-2f203aea1f3d.jpg?aki_policy=profile_small",
+      "thumbnailUrl": "https://randomuser.me/api/portraits/men/17.jpg",
       "pictureUrl": "https://a0.muscache.com/im/pictures/f3e85f0c-e28d-4698-9da9-2f203aea1f3d.jpg?aki_policy=profile_x_medium",
       "isSuperhost": true,
       "id": "9320470",
@@ -1601,18 +1594,17 @@
     "cleaningFee": 10,
     "extraPeople": 0,
     "reviewScores": {
-      "accuracy": 9,
-      "cleanliness": 9,
-      "checkin": 9,
-      "communication": 9,
-      "location": 9,
-      "value": 9,
-      "rating": 89
+      "accuracy": 4.6,
+      "cleanliness": 4.5,
+      "checkin": 4.4,
+      "communication": 4.8,
+      "location": 4.8,
+      "value": 4.3
     },
     "reviews": [
       {
         "at": "2016-02-06T05:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3404e36c59e6164fb449",
           "fullname": "Tejovra",
@@ -1623,7 +1615,7 @@
       },
       {
         "at": "2016-02-21T05:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3403e36c59e6164fafcc",
           "fullname": "Sara",
@@ -1634,7 +1626,7 @@
       },
       {
         "at": "2016-03-06T05:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3403e36c59e6164faf68",
           "fullname": "Jennifer",
@@ -1645,7 +1637,7 @@
       },
       {
         "at": "2016-03-22T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3404e36c59e6164fb5b1",
           "fullname": "Irune",
@@ -1656,7 +1648,7 @@
       },
       {
         "at": "2016-04-30T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3403e36c59e6164fb0c1",
           "fullname": "Marlene",
@@ -1667,7 +1659,7 @@
       },
       {
         "at": "2016-05-11T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3402e36c59e6164fae67",
           "fullname": "Елизавета",
@@ -1678,7 +1670,7 @@
       },
       {
         "at": "2016-08-05T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3404e36c59e6164fb3e7",
           "fullname": "Teresa",
@@ -1689,7 +1681,7 @@
       },
       {
         "at": "2016-08-11T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3407e36c59e6164fbf5b",
           "fullname": "Joyce",
@@ -1700,7 +1692,7 @@
       },
       {
         "at": "2016-08-27T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3406e36c59e6164fbaad",
           "fullname": "Jess",
@@ -1711,7 +1703,7 @@
       },
       {
         "at": "2016-09-27T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3402e36c59e6164faeed",
           "fullname": "Jennifer",
@@ -1722,7 +1714,7 @@
       },
       {
         "at": "2016-12-11T05:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3401e36c59e6164fab65",
           "fullname": "Joana",
@@ -1733,7 +1725,7 @@
       },
       {
         "at": "2017-01-01T05:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3405e36c59e6164fb749",
           "fullname": "Nicolas",
@@ -1744,7 +1736,7 @@
       },
       {
         "at": "2017-03-17T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3403e36c59e6164fb10c",
           "fullname": "Marina",
@@ -1755,7 +1747,7 @@
       },
       {
         "at": "2017-04-13T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3402e36c59e6164fad5b",
           "fullname": "Diogo",
@@ -1766,7 +1758,7 @@
       },
       {
         "at": "2017-06-02T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3405e36c59e6164fb79e",
           "fullname": "Anastasia",
@@ -1777,7 +1769,7 @@
       },
       {
         "at": "2017-06-18T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3401e36c59e6164fab70",
           "fullname": "Raphael",
@@ -1788,7 +1780,7 @@
       },
       {
         "at": "2017-06-30T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3406e36c59e6164fbc99",
           "fullname": "Judith",
@@ -1799,7 +1791,7 @@
       },
       {
         "at": "2017-07-11T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3405e36c59e6164fb694",
           "fullname": "Marta",
@@ -1810,7 +1802,7 @@
       },
       {
         "at": "2017-07-30T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3402e36c59e6164fadc4",
           "fullname": "Aron",
@@ -1821,7 +1813,7 @@
       },
       {
         "at": "2017-11-15T05:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3406e36c59e6164fba79",
           "fullname": "Márcio",
@@ -1876,7 +1868,7 @@
       "location": "Senhora da Hora, Porto, Portugal",
       "about": "",
       "responseTime": "a few days or more",
-      "thumbnailUrl": "https://a0.muscache.com/im/pictures/87b9ccba-154a-4546-8cbe-8bdb25ddb36c.jpg?aki_policy=profile_small",
+      "thumbnailUrl": "https://randomuser.me/api/portraits/women/18.jpg",
       "pictureUrl": "https://a0.muscache.com/im/pictures/87b9ccba-154a-4546-8cbe-8bdb25ddb36c.jpg?aki_policy=profile_x_medium",
       "isSuperhost": false,
       "id": "80558077",
@@ -1899,13 +1891,12 @@
     "cleaningFee": 8,
     "extraPeople": 5,
     "reviewScores": {
-      "accuracy": 10,
-      "cleanliness": 10,
-      "checkin": 10,
-      "communication": 10,
-      "location": 9,
-      "value": 10,
-      "rating": 96
+      "accuracy": 4.8,
+      "cleanliness": 4.9,
+      "checkin": 4.6,
+      "communication": 4.7,
+      "location": 4.8,
+      "value": 4.7
     },
     "reviews": [
       {
@@ -1921,7 +1912,7 @@
       },
       {
         "at": "2016-08-14T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3402e36c59e6164fadf0",
           "fullname": "Martin",
@@ -1932,7 +1923,7 @@
       },
       {
         "at": "2016-08-15T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3402e36c59e6164faedf",
           "fullname": "Sandra",
@@ -1943,7 +1934,7 @@
       },
       {
         "at": "2016-08-20T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3404e36c59e6164fb3ed",
           "fullname": "Erika",
@@ -1954,7 +1945,7 @@
       },
       {
         "at": "2016-08-22T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3405e36c59e6164fb9bd",
           "fullname": "Guy",
@@ -2009,7 +2000,7 @@
       "location": "Istanbul",
       "about": "I live alone in Taksim area and i work at bar.\r\nI like meet new friends from all of the world.\r\nI like to Travel a lot ofcourse if i have free time :) East Asia , Sun , Sea , Sand , Movie  :) ",
       "responseTime": "within an hour",
-      "thumbnailUrl": "https://a0.muscache.com/im/pictures/user/6bf03261-e7ac-4e0e-8121-3828612bbb6a.jpg?aki_policy=profile_small",
+      "thumbnailUrl": "https://randomuser.me/api/portraits/men/19.jpg",
       "pictureUrl": "https://a0.muscache.com/im/pictures/user/6bf03261-e7ac-4e0e-8121-3828612bbb6a.jpg?aki_policy=profile_x_medium",
       "isSuperhost": true,
       "id": "5823933",
@@ -2032,13 +2023,12 @@
     "cleaningFee": 60,
     "extraPeople": 60,
     "reviewScores": {
-      "accuracy": 10,
-      "cleanliness": 10,
-      "checkin": 10,
-      "communication": 10,
-      "location": 10,
-      "value": 9,
-      "rating": 96
+      "accuracy": 4.8,
+      "cleanliness": 4.9,
+      "checkin": 4.6,
+      "communication": 4.7,
+      "location": 5,
+      "value": 4.3
     },
     "reviews": [
       {
@@ -2054,7 +2044,7 @@
       },
       {
         "at": "2015-04-02T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3405e36c59e6164fb7f6",
           "fullname": "Steve",
@@ -2065,7 +2055,7 @@
       },
       {
         "at": "2015-05-19T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3404e36c59e6164fb624",
           "fullname": "Jess",
@@ -2076,7 +2066,7 @@
       },
       {
         "at": "2015-08-25T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3406e36c59e6164fbcb6",
           "fullname": "Irina",
@@ -2087,7 +2077,7 @@
       },
       {
         "at": "2015-09-21T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3402e36c59e6164fae1a",
           "fullname": "Matthew",
@@ -2098,7 +2088,7 @@
       },
       {
         "at": "2015-11-09T05:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3407e36c59e6164fc03f",
           "fullname": "Valon",
@@ -2109,7 +2099,7 @@
       },
       {
         "at": "2015-12-28T05:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3405e36c59e6164fb7a0",
           "fullname": "Amanda",
@@ -2120,7 +2110,7 @@
       },
       {
         "at": "2016-01-09T05:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3404e36c59e6164fb3fe",
           "fullname": "Mathieu & Hilal",
@@ -2131,7 +2121,7 @@
       },
       {
         "at": "2016-03-20T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3403e36c59e6164fb225",
           "fullname": "Christie",
@@ -2142,7 +2132,7 @@
       },
       {
         "at": "2017-05-11T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3402e36c59e6164fad81",
           "fullname": "Vanessa",
@@ -2153,7 +2143,7 @@
       },
       {
         "at": "2017-05-21T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3404e36c59e6164fb2d1",
           "fullname": "Florentin",
@@ -2164,7 +2154,7 @@
       },
       {
         "at": "2017-08-27T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3402e36c59e6164fae29",
           "fullname": "Harshak",
@@ -2175,7 +2165,7 @@
       },
       {
         "at": "2017-09-26T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3406e36c59e6164fbc70",
           "fullname": "Haytham",
@@ -2186,7 +2176,7 @@
       },
       {
         "at": "2017-10-03T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3404e36c59e6164fb5fd",
           "fullname": "Vural",
@@ -2197,7 +2187,7 @@
       },
       {
         "at": "2017-12-03T05:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3406e36c59e6164fba05",
           "fullname": "Wasseem",
@@ -2208,7 +2198,7 @@
       },
       {
         "at": "2018-02-23T05:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3402e36c59e6164fac4c",
           "fullname": "Mr Joseph",
@@ -2219,7 +2209,7 @@
       },
       {
         "at": "2018-03-05T05:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3405e36c59e6164fb8b8",
           "fullname": "Gökçe",
@@ -2230,7 +2220,7 @@
       },
       {
         "at": "2018-04-01T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3405e36c59e6164fb952",
           "fullname": "Bruno",
@@ -2241,7 +2231,7 @@
       },
       {
         "at": "2018-04-04T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3405e36c59e6164fb73d",
           "fullname": "Vichapas",
@@ -2252,7 +2242,7 @@
       },
       {
         "at": "2018-04-23T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3403e36c59e6164fb0fe",
           "fullname": "Show",
@@ -2315,7 +2305,7 @@
       "location": "California, United States",
       "about": "My husband and I are Real Estate Investors.  We enjoy traveling and no matter where we go, we always find ourselves looking at properties.  Since we still have school age children I have found that a beach vacation is usually the most enjoyable for everyone.  Living on the West Coast, Hawaii continued to be a place that we would return to time and time again.",
       "responseTime": "within an hour",
-      "thumbnailUrl": "https://a0.muscache.com/im/pictures/07c98f2f-9ffe-4ed8-82ca-1e9cd00c673f.jpg?aki_policy=profile_small",
+      "thumbnailUrl": "https://randomuser.me/api/portraits/women/20.jpg",
       "pictureUrl": "https://a0.muscache.com/im/pictures/07c98f2f-9ffe-4ed8-82ca-1e9cd00c673f.jpg?aki_policy=profile_x_medium",
       "isSuperhost": true,
       "id": "82827178",
@@ -2338,18 +2328,17 @@
     "cleaningFee": 325,
     "extraPeople": 50,
     "reviewScores": {
-      "accuracy": 10,
-      "cleanliness": 10,
-      "checkin": 10,
-      "communication": 10,
-      "location": 10,
-      "value": 10,
-      "rating": 100
+      "accuracy": 4.8,
+      "cleanliness": 4.9,
+      "checkin": 4.6,
+      "communication": 4.7,
+      "location": 5,
+      "value": 4.7
     },
     "reviews": [
       {
         "at": "2016-12-08T05:00:00.000Z",
-        "rate": 2,
+        "rate": 4,
         "by": {
           "_id": "622f3407e36c59e6164fbfd3",
           "fullname": "Therese",
@@ -2360,7 +2349,7 @@
       },
       {
         "at": "2017-03-23T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3406e36c59e6164fbb9b",
           "fullname": "Alexandra",
@@ -2371,7 +2360,7 @@
       },
       {
         "at": "2017-04-28T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3403e36c59e6164fb19f",
           "fullname": "Daisy",
@@ -2382,7 +2371,7 @@
       },
       {
         "at": "2017-07-29T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3402e36c59e6164fac44",
           "fullname": "Peter",
@@ -2393,7 +2382,7 @@
       },
       {
         "at": "2017-11-03T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3405e36c59e6164fb70f",
           "fullname": "Megan",
@@ -2404,7 +2393,7 @@
       },
       {
         "at": "2018-01-30T05:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3402e36c59e6164fae2f",
           "fullname": "Brenda",
@@ -2415,7 +2404,7 @@
       },
       {
         "at": "2018-03-24T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3403e36c59e6164fb04f",
           "fullname": "Daria",
@@ -2426,7 +2415,7 @@
       },
       {
         "at": "2018-04-14T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3402e36c59e6164faec7",
           "fullname": "Amy",
@@ -2437,7 +2426,7 @@
       },
       {
         "at": "2018-05-19T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3406e36c59e6164fba90",
           "fullname": "Stacey",
@@ -2448,7 +2437,7 @@
       },
       {
         "at": "2018-06-03T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3406e36c59e6164fbb28",
           "fullname": "Rebekah",
@@ -2459,7 +2448,7 @@
       },
       {
         "at": "2018-08-25T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3407e36c59e6164fbda0",
           "fullname": "Chris",
@@ -2470,7 +2459,7 @@
       },
       {
         "at": "2018-09-13T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3406e36c59e6164fbc74",
           "fullname": "Esther",
@@ -2481,7 +2470,7 @@
       },
       {
         "at": "2018-10-18T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3403e36c59e6164fb016",
           "fullname": "Elaine",
@@ -2492,7 +2481,7 @@
       },
       {
         "at": "2019-01-11T05:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3403e36c59e6164fb239",
           "fullname": "Dan",
@@ -2503,7 +2492,7 @@
       },
       {
         "at": "2019-01-22T05:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3403e36c59e6164faf7d",
           "fullname": "Jess",
@@ -2514,7 +2503,7 @@
       },
       {
         "at": "2019-02-14T05:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3403e36c59e6164fb1af",
           "fullname": "Anna-Mae",
@@ -2525,7 +2514,7 @@
       },
       {
         "at": "2019-02-27T05:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3405e36c59e6164fb766",
           "fullname": "Lj",
@@ -2576,7 +2565,7 @@
       "location": "Istanbul, İstanbul, Turkey",
       "about": "",
       "responseTime": "within an hour",
-      "thumbnailUrl": "https://a0.muscache.com/im/pictures/user/7620074d-86d6-49c3-b7fe-cafe084051dd.jpg?aki_policy=profile_small",
+      "thumbnailUrl": "https://randomuser.me/api/portraits/women/21.jpg",
       "pictureUrl": "https://a0.muscache.com/im/pictures/user/7620074d-86d6-49c3-b7fe-cafe084051dd.jpg?aki_policy=profile_x_medium",
       "isSuperhost": false,
       "id": "98780303",
@@ -2599,18 +2588,17 @@
     "cleaningFee": 0,
     "extraPeople": 26,
     "reviewScores": {
-      "accuracy": 8,
-      "cleanliness": 8,
-      "checkin": 9,
-      "communication": 9,
-      "location": 9,
-      "value": 9,
-      "rating": 78
+      "accuracy": 4.6,
+      "cleanliness": 4.9,
+      "checkin": 4.4,
+      "communication": 4.8,
+      "location": 4.8,
+      "value": 4.3
     },
     "reviews": [
       {
         "at": "2016-11-06T04:00:00.000Z",
-        "rate": 1,
+        "rate": 5,
         "by": {
           "_id": "622f3404e36c59e6164fb5a5",
           "fullname": "Sime",
@@ -2621,7 +2609,7 @@
       },
       {
         "at": "2016-11-09T05:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3406e36c59e6164fbcdd",
           "fullname": "Liberato",
@@ -2632,7 +2620,7 @@
       },
       {
         "at": "2016-12-10T05:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3406e36c59e6164fbb72",
           "fullname": "Tash",
@@ -2643,7 +2631,7 @@
       },
       {
         "at": "2017-01-26T05:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3408e36c59e6164fc07f",
           "fullname": "Magdi",
@@ -2654,7 +2642,7 @@
       },
       {
         "at": "2017-02-06T05:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3403e36c59e6164fb1d3",
           "fullname": "Daria",
@@ -2665,7 +2653,7 @@
       },
       {
         "at": "2017-02-26T05:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3404e36c59e6164fb406",
           "fullname": "Ziying",
@@ -2676,7 +2664,7 @@
       },
       {
         "at": "2017-03-12T05:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3403e36c59e6164fb0da",
           "fullname": "Florianne",
@@ -2687,7 +2675,7 @@
       },
       {
         "at": "2017-04-10T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3405e36c59e6164fb843",
           "fullname": "Zakiuddin",
@@ -2698,7 +2686,7 @@
       },
       {
         "at": "2017-04-26T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3407e36c59e6164fbebe",
           "fullname": "Kristy",
@@ -2709,7 +2697,7 @@
       },
       {
         "at": "2017-06-14T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3407e36c59e6164fbfdf",
           "fullname": "Bas",
@@ -2720,7 +2708,7 @@
       },
       {
         "at": "2017-06-17T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3403e36c59e6164fb299",
           "fullname": "Mahgrine",
@@ -2731,7 +2719,7 @@
       },
       {
         "at": "2017-08-17T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3407e36c59e6164fbd57",
           "fullname": "Tolga",
@@ -2742,7 +2730,7 @@
       },
       {
         "at": "2017-09-24T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3404e36c59e6164fb4ad",
           "fullname": "Öner",
@@ -2753,7 +2741,7 @@
       },
       {
         "at": "2017-10-03T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3403e36c59e6164fb129",
           "fullname": "Med Zied",
@@ -2764,7 +2752,7 @@
       },
       {
         "at": "2017-10-14T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3406e36c59e6164fbb01",
           "fullname": "Danielle",
@@ -2775,7 +2763,7 @@
       },
       {
         "at": "2017-10-21T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3402e36c59e6164fae6a",
           "fullname": "Arifur",
@@ -2786,7 +2774,7 @@
       },
       {
         "at": "2017-10-30T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3402e36c59e6164fad87",
           "fullname": "Nass",
@@ -2797,7 +2785,7 @@
       },
       {
         "at": "2017-11-06T05:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3401e36c59e6164fab5f",
           "fullname": "Fadi",
@@ -2808,7 +2796,7 @@
       },
       {
         "at": "2017-11-19T05:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3403e36c59e6164fb185",
           "fullname": "Igor",
@@ -2819,7 +2807,7 @@
       },
       {
         "at": "2018-01-03T05:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3402e36c59e6164faca0",
           "fullname": "Sarah",
@@ -2874,7 +2862,7 @@
       "location": "Barcelona, Catalonia, Spain",
       "about": "Hola, \r\n\r\nSomos Alexandra y Juan dos amigos que estamos enamorados de Barcelona, nuestras pasiones son viajar y conocer gente por lo que nos encantaría compartir con vosotros nuestros espacios  para que disfrutéis a vuestro gusto de toda la cultura, actualidad y diversidad de ofertas que la ciudad os ofrece.\r\nPara nosotros lo mas importante es que nuestros huéspedes puedan aprovechar al máximo su estancia en Barcelona,  que viváis vuestra historia  reflejada en  rincones únicos de la ciudad y por supuesto nuestra mayor satisfacción es que os sintáis como en casa según lo que busquéis.\r\n\r\nHello, \r\n\r\nWe are Alexandra and Juan two friends who are in love with Barcelona, our passion is to travel and meet new people so we would love to share our spaces with you and that you can enjoy the culture, the present and the diversity of offers that the city has to offer. \r\nFor us the most important thing is that our guests can make the most of their stay in Barcelona, that you live our history full of unique places and of course our greatest satisfaction is that you feel as if you where at home according to what you are looking for.",
       "responseTime": "within an hour",
-      "thumbnailUrl": "https://a0.muscache.com/im/pictures/user/3fceba9a-ce84-4841-88df-b699105119b4.jpg?aki_policy=profile_small",
+      "thumbnailUrl": "https://randomuser.me/api/portraits/women/22.jpg",
       "pictureUrl": "https://a0.muscache.com/im/pictures/user/3fceba9a-ce84-4841-88df-b699105119b4.jpg?aki_policy=profile_x_medium",
       "isSuperhost": false,
       "id": "54320669",
@@ -2897,18 +2885,17 @@
     "cleaningFee": 60,
     "extraPeople": 0,
     "reviewScores": {
-      "accuracy": 10,
-      "cleanliness": 9,
-      "checkin": 9,
-      "communication": 9,
-      "location": 9,
-      "value": 9,
-      "rating": 90
+      "accuracy": 4.8,
+      "cleanliness": 4.5,
+      "checkin": 4.4,
+      "communication": 4.8,
+      "location": 4.8,
+      "value": 4.3
     },
     "reviews": [
       {
         "at": "2016-03-30T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3402e36c59e6164faec0",
           "fullname": "Lenny",
@@ -2919,7 +2906,7 @@
       },
       {
         "at": "2016-04-05T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3403e36c59e6164fb082",
           "fullname": "Albe Birio",
@@ -2930,7 +2917,7 @@
       },
       {
         "at": "2016-04-17T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3402e36c59e6164faeeb",
           "fullname": "Daniel",
@@ -2941,7 +2928,7 @@
       },
       {
         "at": "2016-04-30T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3402e36c59e6164fad11",
           "fullname": "Bram",
@@ -2952,7 +2939,7 @@
       },
       {
         "at": "2016-05-08T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3407e36c59e6164fbcec",
           "fullname": "Joel",
@@ -2963,7 +2950,7 @@
       },
       {
         "at": "2016-05-16T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3405e36c59e6164fb73f",
           "fullname": "Paul",
@@ -2974,7 +2961,7 @@
       },
       {
         "at": "2016-05-23T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3406e36c59e6164fba01",
           "fullname": "Daniel",
@@ -2985,7 +2972,7 @@
       },
       {
         "at": "2016-07-10T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3406e36c59e6164fbb75",
           "fullname": "Guowei",
@@ -2996,7 +2983,7 @@
       },
       {
         "at": "2016-07-16T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3407e36c59e6164fbf02",
           "fullname": "Glen",
@@ -3007,7 +2994,7 @@
       },
       {
         "at": "2016-07-23T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3407e36c59e6164fbd6b",
           "fullname": "Andrea",
@@ -3018,7 +3005,7 @@
       },
       {
         "at": "2016-07-29T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3402e36c59e6164fad90",
           "fullname": "Jacob",
@@ -3029,7 +3016,7 @@
       },
       {
         "at": "2016-08-08T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3403e36c59e6164fb0e3",
           "fullname": "Yuri",
@@ -3040,7 +3027,7 @@
       },
       {
         "at": "2016-08-28T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3406e36c59e6164fbc92",
           "fullname": "Anne-Sophie",
@@ -3051,7 +3038,7 @@
       },
       {
         "at": "2016-09-19T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3405e36c59e6164fb647",
           "fullname": "Julie",
@@ -3062,7 +3049,7 @@
       },
       {
         "at": "2016-09-23T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3403e36c59e6164fb09e",
           "fullname": "Manuel",
@@ -3073,7 +3060,7 @@
       },
       {
         "at": "2016-10-21T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3408e36c59e6164fc065",
           "fullname": "Maxim",
@@ -3084,7 +3071,7 @@
       },
       {
         "at": "2016-10-24T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3401e36c59e6164fab87",
           "fullname": "Rebecca",
@@ -3095,7 +3082,7 @@
       },
       {
         "at": "2016-10-31T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3407e36c59e6164fbfe5",
           "fullname": "Luke",
@@ -3106,7 +3093,7 @@
       },
       {
         "at": "2016-11-02T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3403e36c59e6164fafc3",
           "fullname": "Karla",
@@ -3117,7 +3104,7 @@
       },
       {
         "at": "2016-11-14T05:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3403e36c59e6164faf4f",
           "fullname": "Katherine",
@@ -3172,7 +3159,7 @@
       "location": "Barcelona, Catalonia, Spain",
       "about": "(ES) Soy mujer, mamá y traductora. Me gusta tener tiempo para pensar, viajar, jugar con mis hijas y descubrir algo nuevo cada día. A veces por trabajo tengo que viajar, y entonces mi amiga Yamila, gran mujer y fantástica anfitriona, amante del campo y fotógrafa de profesión, me ayuda con los huéspedes.\r\n\r\n(EN) I am a woman, a mother and a translator. I like having time to think, to travel, to play with my daughters and to discover something new every day. Sometimes I have to travel because of my job: in those occasions my friend Yamila, great woman and fantastic host, outdoor lover and photographer, helps me out with guests.",
       "responseTime": "within an hour",
-      "thumbnailUrl": "https://a0.muscache.com/im/users/6107595/profile_pic/1442432675/original.jpg?aki_policy=profile_small",
+      "thumbnailUrl": "https://randomuser.me/api/portraits/women/23.jpg",
       "pictureUrl": "https://a0.muscache.com/im/users/6107595/profile_pic/1442432675/original.jpg?aki_policy=profile_x_medium",
       "isSuperhost": true,
       "id": "6107595",
@@ -3195,13 +3182,12 @@
     "cleaningFee": 65,
     "extraPeople": 35,
     "reviewScores": {
-      "accuracy": 10,
-      "cleanliness": 10,
-      "checkin": 10,
-      "communication": 10,
-      "location": 10,
-      "value": 10,
-      "rating": 95
+      "accuracy": 4.8,
+      "cleanliness": 4.9,
+      "checkin": 4.6,
+      "communication": 4.7,
+      "location": 5,
+      "value": 4.7
     },
     "reviews": [
       {
@@ -3217,7 +3203,7 @@
       },
       {
         "at": "2013-06-17T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3402e36c59e6164fadce",
           "fullname": "Ove M.",
@@ -3228,7 +3214,7 @@
       },
       {
         "at": "2013-07-12T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3403e36c59e6164fb078",
           "fullname": "Andrew",
@@ -3239,7 +3225,7 @@
       },
       {
         "at": "2013-08-06T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3407e36c59e6164fbce7",
           "fullname": "Juan Daniel",
@@ -3250,7 +3236,7 @@
       },
       {
         "at": "2013-08-09T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3406e36c59e6164fba44",
           "fullname": "Carey",
@@ -3261,7 +3247,7 @@
       },
       {
         "at": "2013-08-25T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3407e36c59e6164fbfa0",
           "fullname": "Julie",
@@ -3272,7 +3258,7 @@
       },
       {
         "at": "2013-09-16T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3402e36c59e6164fae47",
           "fullname": "Ron",
@@ -3283,7 +3269,7 @@
       },
       {
         "at": "2013-10-27T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3407e36c59e6164fc002",
           "fullname": "Christine",
@@ -3294,7 +3280,7 @@
       },
       {
         "at": "2013-11-05T05:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3405e36c59e6164fb814",
           "fullname": "Jeremie",
@@ -3305,7 +3291,7 @@
       },
       {
         "at": "2014-02-27T05:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3404e36c59e6164fb306",
           "fullname": "Kirstin",
@@ -3316,7 +3302,7 @@
       },
       {
         "at": "2014-03-04T05:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3406e36c59e6164fbbcc",
           "fullname": "Oliver",
@@ -3327,7 +3313,7 @@
       },
       {
         "at": "2014-03-18T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3404e36c59e6164fb476",
           "fullname": "Okan",
@@ -3338,7 +3324,7 @@
       },
       {
         "at": "2014-03-25T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3404e36c59e6164fb510",
           "fullname": "Lisa",
@@ -3349,7 +3335,7 @@
       },
       {
         "at": "2014-04-12T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3404e36c59e6164fb5a8",
           "fullname": "Danielle",
@@ -3360,7 +3346,7 @@
       },
       {
         "at": "2014-04-27T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3406e36c59e6164fbc22",
           "fullname": "Henrik",
@@ -3371,7 +3357,7 @@
       },
       {
         "at": "2014-05-01T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3403e36c59e6164fb07b",
           "fullname": "Marie-Pierre",
@@ -3382,7 +3368,7 @@
       },
       {
         "at": "2014-05-05T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3406e36c59e6164fbb13",
           "fullname": "Céline",
@@ -3393,7 +3379,7 @@
       },
       {
         "at": "2014-05-08T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3404e36c59e6164fb401",
           "fullname": "Véronique",
@@ -3404,7 +3390,7 @@
       },
       {
         "at": "2014-06-17T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3402e36c59e6164faf30",
           "fullname": "Thorsten",
@@ -3415,7 +3401,7 @@
       },
       {
         "at": "2014-06-21T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3407e36c59e6164fbf72",
           "fullname": "Birgit",
@@ -3466,7 +3452,7 @@
       "location": "US",
       "about": "",
       "responseTime": "within an hour",
-      "thumbnailUrl": "https://a0.muscache.com/im/pictures/217e78d8-bb65-46c5-af28-ecd1939e1945.jpg?aki_policy=profile_small",
+      "thumbnailUrl": "https://randomuser.me/api/portraits/women/24.jpg",
       "pictureUrl": "https://a0.muscache.com/im/pictures/217e78d8-bb65-46c5-af28-ecd1939e1945.jpg?aki_policy=profile_x_medium",
       "isSuperhost": false,
       "id": "62130666",
@@ -3489,13 +3475,12 @@
     "cleaningFee": null,
     "extraPeople": 0,
     "reviewScores": {
-      "accuracy": 10,
-      "cleanliness": 10,
-      "checkin": 10,
-      "communication": 10,
-      "location": 10,
-      "value": 10,
-      "rating": 97
+      "accuracy": 4.8,
+      "cleanliness": 4.9,
+      "checkin": 4.6,
+      "communication": 4.7,
+      "location": 5,
+      "value": 4.7
     },
     "reviews": [
       {
@@ -3511,7 +3496,7 @@
       },
       {
         "at": "2016-05-09T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3403e36c59e6164faf76",
           "fullname": "Shanna",
@@ -3522,7 +3507,7 @@
       },
       {
         "at": "2016-05-15T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3404e36c59e6164fb2cc",
           "fullname": "Agustin",
@@ -3533,7 +3518,7 @@
       },
       {
         "at": "2016-05-20T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3404e36c59e6164fb2d9",
           "fullname": "Raymond",
@@ -3544,7 +3529,7 @@
       },
       {
         "at": "2016-05-24T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3402e36c59e6164fac18",
           "fullname": "Robert",
@@ -3555,7 +3540,7 @@
       },
       {
         "at": "2016-06-09T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3407e36c59e6164fbe19",
           "fullname": "Jack",
@@ -3566,7 +3551,7 @@
       },
       {
         "at": "2016-06-11T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3402e36c59e6164fad2e",
           "fullname": "Nick",
@@ -3577,7 +3562,7 @@
       },
       {
         "at": "2016-07-29T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3405e36c59e6164fb6dc",
           "fullname": "Rocio",
@@ -3588,7 +3573,7 @@
       },
       {
         "at": "2016-09-12T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3407e36c59e6164fbf07",
           "fullname": "Marek",
@@ -3599,7 +3584,7 @@
       },
       {
         "at": "2016-09-20T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3403e36c59e6164fb092",
           "fullname": "Eric",
@@ -3610,7 +3595,7 @@
       },
       {
         "at": "2016-09-23T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3403e36c59e6164fb12b",
           "fullname": "Micheal",
@@ -3621,7 +3606,7 @@
       },
       {
         "at": "2016-09-25T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3402e36c59e6164fae81",
           "fullname": "Carolyn",
@@ -3632,7 +3617,7 @@
       },
       {
         "at": "2016-10-03T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3404e36c59e6164fb40c",
           "fullname": "Stuart",
@@ -3643,7 +3628,7 @@
       },
       {
         "at": "2016-10-06T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3404e36c59e6164fb327",
           "fullname": "Martin",
@@ -3654,7 +3639,7 @@
       },
       {
         "at": "2016-10-14T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3405e36c59e6164fb779",
           "fullname": "Gianna",
@@ -3665,7 +3650,7 @@
       },
       {
         "at": "2016-10-23T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3405e36c59e6164fb762",
           "fullname": "Lene",
@@ -3676,7 +3661,7 @@
       },
       {
         "at": "2016-11-02T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3407e36c59e6164fbffb",
           "fullname": "Jacques",
@@ -3687,7 +3672,7 @@
       },
       {
         "at": "2016-11-05T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3404e36c59e6164fb378",
           "fullname": "Erin",
@@ -3698,7 +3683,7 @@
       },
       {
         "at": "2016-11-14T05:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3407e36c59e6164fbfc7",
           "fullname": "Barry",
@@ -3709,7 +3694,7 @@
       },
       {
         "at": "2016-12-12T05:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3404e36c59e6164fb439",
           "fullname": "Adam",
@@ -3764,7 +3749,7 @@
       "location": "Hong Kong",
       "about": "",
       "responseTime": "within an hour",
-      "thumbnailUrl": "https://a0.muscache.com/im/users/37031267/profile_pic/1441373303/original.jpg?aki_policy=profile_small",
+      "thumbnailUrl": "https://randomuser.me/api/portraits/women/25.jpg",
       "pictureUrl": "https://a0.muscache.com/im/users/37031267/profile_pic/1441373303/original.jpg?aki_policy=profile_x_medium",
       "isSuperhost": false,
       "id": "37031267",
@@ -3787,18 +3772,17 @@
     "cleaningFee": 120,
     "extraPeople": 80,
     "reviewScores": {
-      "accuracy": 10,
-      "cleanliness": 10,
-      "checkin": 10,
-      "communication": 10,
-      "location": 10,
-      "value": 10,
-      "rating": 94
+      "accuracy": 4.8,
+      "cleanliness": 4.9,
+      "checkin": 4.6,
+      "communication": 4.7,
+      "location": 5,
+      "value": 4.7
     },
     "reviews": [
       {
         "at": "2016-03-26T04:00:00.000Z",
-        "rate": 2,
+        "rate": 4,
         "by": {
           "_id": "622f3407e36c59e6164fbf0f",
           "fullname": "Sindy",
@@ -3809,7 +3793,7 @@
       },
       {
         "at": "2016-04-03T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3404e36c59e6164fb4da",
           "fullname": "William",
@@ -3820,7 +3804,7 @@
       },
       {
         "at": "2016-04-05T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3405e36c59e6164fb903",
           "fullname": "Molinta",
@@ -3831,7 +3815,7 @@
       },
       {
         "at": "2016-04-11T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3407e36c59e6164fbda8",
           "fullname": "丹琳",
@@ -3842,7 +3826,7 @@
       },
       {
         "at": "2016-04-11T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3403e36c59e6164fb1b4",
           "fullname": "Daniel",
@@ -3853,7 +3837,7 @@
       },
       {
         "at": "2016-04-15T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3405e36c59e6164fb68f",
           "fullname": "Kally",
@@ -3864,7 +3848,7 @@
       },
       {
         "at": "2016-04-28T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3406e36c59e6164fbc83",
           "fullname": "Phan",
@@ -3875,7 +3859,7 @@
       },
       {
         "at": "2016-05-03T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3405e36c59e6164fb653",
           "fullname": "J",
@@ -3886,7 +3870,7 @@
       },
       {
         "at": "2016-05-18T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3402e36c59e6164fae4b",
           "fullname": "Mengdi",
@@ -3897,7 +3881,7 @@
       },
       {
         "at": "2016-05-22T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3402e36c59e6164fae1d",
           "fullname": "Cat",
@@ -3908,7 +3892,7 @@
       },
       {
         "at": "2016-06-01T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3405e36c59e6164fb701",
           "fullname": "小芳",
@@ -3919,7 +3903,7 @@
       },
       {
         "at": "2016-06-03T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3404e36c59e6164fb4bf",
           "fullname": "Yan",
@@ -3930,7 +3914,7 @@
       },
       {
         "at": "2016-06-13T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3403e36c59e6164fb009",
           "fullname": "Sally",
@@ -3941,7 +3925,7 @@
       },
       {
         "at": "2016-06-16T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3404e36c59e6164fb33d",
           "fullname": "Maggie",
@@ -3952,7 +3936,7 @@
       },
       {
         "at": "2016-06-17T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3403e36c59e6164faff9",
           "fullname": "萌",
@@ -3963,7 +3947,7 @@
       },
       {
         "at": "2016-06-24T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3405e36c59e6164fb719",
           "fullname": "Miaoqi",
@@ -3974,7 +3958,7 @@
       },
       {
         "at": "2016-06-26T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3403e36c59e6164fb1e6",
           "fullname": "Rosa",
@@ -3985,7 +3969,7 @@
       },
       {
         "at": "2016-07-07T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3403e36c59e6164fb16f",
           "fullname": "Kaye",
@@ -3996,7 +3980,7 @@
       },
       {
         "at": "2016-07-12T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3406e36c59e6164fbac7",
           "fullname": "Lilia",
@@ -4007,7 +3991,7 @@
       },
       {
         "at": "2016-07-23T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3404e36c59e6164fb404",
           "fullname": "Weiwei",
@@ -4070,7 +4054,7 @@
       "location": "Hawaii, United States",
       "about": "I am the owner of Maui Vision Rental. Maui Vision became a reality and a business starting with my personal condo at the Kihei Akahi Resort C618.\r\n\r\nMaui Vision is a business I love because I get to share the Aloha Spirit, the beauty of the land, and talk story with people from around the world. It is nice to know that we can contribute to someone’s Hawaiian vacation experience in a positive way. We love to hear back from our happy guests.\r\n\r\nI used to live on the island of Oahu with my US Navy family when I was young.  We later moved to Southern California.  I knew one day I would return to Hawaii, the place I fell in love with long ago. I took a leap of faith and purchased my Maui condo June 2002 this was the beginning of fulfilling her prophecy to once again return to Hawaii soil.\r\n\r\nI am a tropical expression artist who paints on canvas and etched metal.  My work is inspired by the beauty of the islands and has been displayed in several Maui art galleries over the years.  I am a writer and have my first book on Amazon.  I recently took up hula dancing and love to immerse myself in the culture and grace of this island.\r\n\r\nI have over 25 years of business administration and customer service experience working for large corporations and high tech startups.\r\n\r\nIf you are in need of a caring Realtor here on Maui, please contact Kathy McCartney RS#77317 of La Costa Realty Hawai’i, LLC Brokerage Lic #18349 .",
       "responseTime": "within an hour",
-      "thumbnailUrl": "https://a0.muscache.com/im/pictures/ddcc4146-9abc-4f4d-b347-8f30deb10f6c.jpg?aki_policy=profile_small",
+      "thumbnailUrl": "https://randomuser.me/api/portraits/women/26.jpg",
       "pictureUrl": "https://a0.muscache.com/im/pictures/ddcc4146-9abc-4f4d-b347-8f30deb10f6c.jpg?aki_policy=profile_x_medium",
       "isSuperhost": true,
       "id": "733802",
@@ -4093,13 +4077,12 @@
     "cleaningFee": 270,
     "extraPeople": 20,
     "reviewScores": {
-      "accuracy": 10,
-      "cleanliness": 10,
-      "checkin": 10,
-      "communication": 10,
-      "location": 10,
-      "value": 9,
-      "rating": 97
+      "accuracy": 4.8,
+      "cleanliness": 4.9,
+      "checkin": 4.6,
+      "communication": 4.7,
+      "location": 5,
+      "value": 4.3
     },
     "reviews": [
       {
@@ -4115,7 +4098,7 @@
       },
       {
         "at": "2016-12-25T05:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3403e36c59e6164fb1f2",
           "fullname": "Jerome",
@@ -4126,7 +4109,7 @@
       },
       {
         "at": "2016-12-30T05:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3407e36c59e6164fbcf9",
           "fullname": "Chris",
@@ -4137,7 +4120,7 @@
       },
       {
         "at": "2017-01-02T05:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3406e36c59e6164fbbfa",
           "fullname": "Anne",
@@ -4148,7 +4131,7 @@
       },
       {
         "at": "2017-01-05T05:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3405e36c59e6164fb64e",
           "fullname": "Tiffany",
@@ -4159,7 +4142,7 @@
       },
       {
         "at": "2018-06-24T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3405e36c59e6164fb888",
           "fullname": "Lindsay",
@@ -4170,7 +4153,7 @@
       },
       {
         "at": "2018-08-30T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3407e36c59e6164fbf97",
           "fullname": "Ryan",
@@ -4213,7 +4196,7 @@
       "location": "New York, New York, United States",
       "about": "",
       "responseTime": "within an hour",
-      "thumbnailUrl": "https://a0.muscache.com/im/users/24253453/profile_pic/1434065920/original.jpg?aki_policy=profile_small",
+      "thumbnailUrl": "https://randomuser.me/api/portraits/women/27.jpg",
       "pictureUrl": "https://a0.muscache.com/im/users/24253453/profile_pic/1434065920/original.jpg?aki_policy=profile_x_medium",
       "isSuperhost": false,
       "id": "24253453",
@@ -4236,13 +4219,12 @@
     "cleaningFee": null,
     "extraPeople": 0,
     "reviewScores": {
-      "accuracy": 10,
-      "cleanliness": 10,
-      "checkin": 10,
-      "communication": 10,
-      "location": 10,
-      "value": 10,
-      "rating": 100
+      "accuracy": 4.8,
+      "cleanliness": 4.9,
+      "checkin": 4.6,
+      "communication": 4.7,
+      "location": 5,
+      "value": 4.7
     },
     "reviews": [
       {
@@ -4302,7 +4284,7 @@
       "location": "Barcelona, Catalonia, Spain",
       "about": "",
       "responseTime": "within a few hours",
-      "thumbnailUrl": "https://a0.muscache.com/im/users/22076771/profile_pic/1415724202/original.jpg?aki_policy=profile_small",
+      "thumbnailUrl": "https://randomuser.me/api/portraits/men/27.jpg",
       "pictureUrl": "https://a0.muscache.com/im/users/22076771/profile_pic/1415724202/original.jpg?aki_policy=profile_x_medium",
       "isSuperhost": false,
       "id": "22076771",
@@ -4325,18 +4307,17 @@
     "cleaningFee": 80,
     "extraPeople": 0,
     "reviewScores": {
-      "accuracy": 9,
-      "cleanliness": 9,
-      "checkin": 10,
-      "communication": 10,
-      "location": 10,
-      "value": 9,
-      "rating": 93
+      "accuracy": 4.6,
+      "cleanliness": 4.5,
+      "checkin": 4.6,
+      "communication": 4.7,
+      "location": 5,
+      "value": 4.3
     },
     "reviews": [
       {
         "at": "2016-06-01T04:00:00.000Z",
-        "rate": 2,
+        "rate": 4,
         "by": {
           "_id": "622f3404e36c59e6164fb3db",
           "fullname": "Tim",
@@ -4347,7 +4328,7 @@
       },
       {
         "at": "2016-07-31T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3407e36c59e6164fbeae",
           "fullname": "Danny",
@@ -4358,7 +4339,7 @@
       },
       {
         "at": "2017-02-19T05:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3407e36c59e6164fbe8c",
           "fullname": "Artea",
@@ -4369,7 +4350,7 @@
       },
       {
         "at": "2017-09-01T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3403e36c59e6164fb058",
           "fullname": "Andrew",
@@ -4380,7 +4361,7 @@
       },
       {
         "at": "2017-10-27T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3404e36c59e6164fb4c6",
           "fullname": "Kar",
@@ -4391,7 +4372,7 @@
       },
       {
         "at": "2018-01-13T05:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3404e36c59e6164fb3d0",
           "fullname": "Rosario",
@@ -4402,7 +4383,7 @@
       },
       {
         "at": "2018-02-06T05:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3406e36c59e6164fba64",
           "fullname": "Александр",
@@ -4453,7 +4434,7 @@
       "location": "Çalışıyorum",
       "about": "I live in Cihangir and love to meet people and share our lively neighbourhood with them.",
       "responseTime": "within an hour",
-      "thumbnailUrl": "https://a0.muscache.com/im/pictures/d741db02-7680-4a52-940e-52dae808cd1f.jpg?aki_policy=profile_small",
+      "thumbnailUrl": "https://randomuser.me/api/portraits/men/28.jpg",
       "pictureUrl": "https://a0.muscache.com/im/pictures/d741db02-7680-4a52-940e-52dae808cd1f.jpg?aki_policy=profile_x_medium",
       "isSuperhost": true,
       "id": "2769925",
@@ -4476,13 +4457,12 @@
     "cleaningFee": 105,
     "extraPeople": 0,
     "reviewScores": {
-      "accuracy": 10,
-      "cleanliness": 10,
-      "checkin": 10,
-      "communication": 10,
-      "location": 10,
-      "value": 10,
-      "rating": 100
+      "accuracy": 4.8,
+      "cleanliness": 4.9,
+      "checkin": 4.6,
+      "communication": 4.7,
+      "location": 5,
+      "value": 4.7
     },
     "reviews": [
       {
@@ -4498,7 +4478,7 @@
       },
       {
         "at": "2017-10-16T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3407e36c59e6164fbf34",
           "fullname": "Rene",
@@ -4509,7 +4489,7 @@
       },
       {
         "at": "2017-11-17T05:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3403e36c59e6164fb0e7",
           "fullname": "Elizabeth",
@@ -4572,7 +4552,7 @@
       "location": "Eureka, California, United States",
       "about": "Adventurous couple loves to travel :)",
       "responseTime": "within an hour",
-      "thumbnailUrl": "https://a0.muscache.com/im/pictures/542dba0c-eb1b-4ab3-85f3-94d3cc8f87a4.jpg?aki_policy=profile_small",
+      "thumbnailUrl": "https://randomuser.me/api/portraits/men/10.jpg",
       "pictureUrl": "https://a0.muscache.com/im/pictures/542dba0c-eb1b-4ab3-85f3-94d3cc8f87a4.jpg?aki_policy=profile_x_medium",
       "isSuperhost": true,
       "id": "36133410",
@@ -4595,13 +4575,12 @@
     "cleaningFee": null,
     "extraPeople": 0,
     "reviewScores": {
-      "accuracy": 10,
-      "cleanliness": 10,
-      "checkin": 10,
-      "communication": 10,
-      "location": 10,
-      "value": 9,
-      "rating": 100
+      "accuracy": 4.8,
+      "cleanliness": 4.9,
+      "checkin": 4.6,
+      "communication": 4.7,
+      "location": 5,
+      "value": 4.3
     },
     "reviews": [
       {
@@ -4617,7 +4596,7 @@
       },
       {
         "at": "2017-04-01T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3404e36c59e6164fb506",
           "fullname": "Charles",
@@ -4628,7 +4607,7 @@
       },
       {
         "at": "2017-12-30T05:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3404e36c59e6164fb32c",
           "fullname": "Kerrin (Kerri)",
@@ -4639,7 +4618,7 @@
       },
       {
         "at": "2018-03-31T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3407e36c59e6164fbf6d",
           "fullname": "Stacy",
@@ -4650,7 +4629,7 @@
       },
       {
         "at": "2019-02-23T05:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3403e36c59e6164fafc0",
           "fullname": "Kyle",
@@ -4705,7 +4684,7 @@
       "location": "Istanbul, İstanbul, Turkey",
       "about": "",
       "responseTime": "within a day",
-      "thumbnailUrl": "https://a0.muscache.com/im/pictures/fda23efa-e51c-40be-8cd8-3ab6ee05c140.jpg?aki_policy=profile_small",
+      "thumbnailUrl": "https://randomuser.me/api/portraits/men/29.jpg",
       "pictureUrl": "https://a0.muscache.com/im/pictures/fda23efa-e51c-40be-8cd8-3ab6ee05c140.jpg?aki_policy=profile_x_medium",
       "isSuperhost": true,
       "id": "57921954",
@@ -4728,18 +4707,17 @@
     "cleaningFee": 50,
     "extraPeople": 0,
     "reviewScores": {
-      "accuracy": 10,
-      "cleanliness": 9,
-      "checkin": 10,
-      "communication": 10,
-      "location": 10,
-      "value": 9,
-      "rating": 94
+      "accuracy": 4.8,
+      "cleanliness": 4.5,
+      "checkin": 4.6,
+      "communication": 4.7,
+      "location": 5,
+      "value": 4.3
     },
     "reviews": [
       {
         "at": "2016-04-10T04:00:00.000Z",
-        "rate": 2,
+        "rate": 4,
         "by": {
           "_id": "622f3402e36c59e6164faed0",
           "fullname": "Ayşegül",
@@ -4750,7 +4728,7 @@
       },
       {
         "at": "2016-04-22T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3407e36c59e6164fbde4",
           "fullname": "Elif",
@@ -4761,7 +4739,7 @@
       },
       {
         "at": "2016-04-24T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3407e36c59e6164fbdc1",
           "fullname": "Emre",
@@ -4772,7 +4750,7 @@
       },
       {
         "at": "2016-05-01T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3403e36c59e6164fb267",
           "fullname": "Erdinç",
@@ -4783,7 +4761,7 @@
       },
       {
         "at": "2016-05-12T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3406e36c59e6164fbc34",
           "fullname": "A Uygur",
@@ -4794,7 +4772,7 @@
       },
       {
         "at": "2016-05-15T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3403e36c59e6164fafc1",
           "fullname": "Eralp",
@@ -4805,7 +4783,7 @@
       },
       {
         "at": "2016-05-23T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3406e36c59e6164fb9d4",
           "fullname": "Gokcen",
@@ -4816,7 +4794,7 @@
       },
       {
         "at": "2016-05-26T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3402e36c59e6164facb8",
           "fullname": "Jing Yi",
@@ -4827,7 +4805,7 @@
       },
       {
         "at": "2017-03-05T05:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3406e36c59e6164fbb7e",
           "fullname": "Murat",
@@ -4838,7 +4816,7 @@
       },
       {
         "at": "2017-04-03T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3406e36c59e6164fba9c",
           "fullname": "Zeynep",
@@ -4849,7 +4827,7 @@
       },
       {
         "at": "2017-08-27T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3407e36c59e6164fbef2",
           "fullname": "Deniz",
@@ -4860,7 +4838,7 @@
       },
       {
         "at": "2018-01-01T05:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3406e36c59e6164fba8a",
           "fullname": "Nazire",
@@ -4871,7 +4849,7 @@
       },
       {
         "at": "2018-02-18T05:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3403e36c59e6164fb290",
           "fullname": "Emre",
@@ -4882,7 +4860,7 @@
       },
       {
         "at": "2018-05-06T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3406e36c59e6164fba50",
           "fullname": "Larissa",
@@ -4893,7 +4871,7 @@
       },
       {
         "at": "2018-05-28T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3403e36c59e6164faf6f",
           "fullname": "Christophe",
@@ -4904,7 +4882,7 @@
       },
       {
         "at": "2018-06-03T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3405e36c59e6164fb74b",
           "fullname": "Nefise",
@@ -4915,7 +4893,7 @@
       },
       {
         "at": "2018-06-10T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3405e36c59e6164fb7f5",
           "fullname": "Edip",
@@ -4926,7 +4904,7 @@
       },
       {
         "at": "2018-06-27T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3405e36c59e6164fb775",
           "fullname": "Şilan",
@@ -4937,7 +4915,7 @@
       },
       {
         "at": "2018-07-08T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3402e36c59e6164fad5c",
           "fullname": "Cemre",
@@ -4948,7 +4926,7 @@
       },
       {
         "at": "2018-07-16T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3402e36c59e6164facff",
           "fullname": "Ayça",
@@ -5003,7 +4981,7 @@
       "location": "San Francisco, California, United States",
       "about": "Sonder provides everything you need for an exceptional stay. Every booking is instantly confirmed. Every call or message is answered within minutes. Every home is equipped with crisp linens, high-speed Wi-Fi, and kitchen and bath essentials. And every experience is one-of-a-kind, thanks to our unique spaces and Neighborhood Guides.\r\n\r\nTo provide a better Sonder guest experience, we're creating local Airbnb accounts, and moving our listings to those new accounts. If you don't see a property you like here, there may be more on one of our new local profiles. Please reach out for more information!",
       "responseTime": "within an hour",
-      "thumbnailUrl": "https://a0.muscache.com/im/pictures/user/c92b0b12-e019-4bb1-b0a8-c0b671096eb2.jpg?aki_policy=profile_small",
+      "thumbnailUrl": "https://randomuser.me/api/portraits/men/30.jpg",
       "pictureUrl": "https://a0.muscache.com/im/pictures/user/c92b0b12-e019-4bb1-b0a8-c0b671096eb2.jpg?aki_policy=profile_x_medium",
       "isSuperhost": false,
       "id": "12243051",
@@ -5026,18 +5004,17 @@
     "cleaningFee": 165,
     "extraPeople": 7,
     "reviewScores": {
-      "accuracy": 10,
-      "cleanliness": 10,
-      "checkin": 10,
-      "communication": 10,
-      "location": 10,
-      "value": 10,
-      "rating": 94
+      "accuracy": 4.8,
+      "cleanliness": 4.9,
+      "checkin": 4.6,
+      "communication": 4.7,
+      "location": 5,
+      "value": 4.7
     },
     "reviews": [
       {
         "at": "2016-07-16T04:00:00.000Z",
-        "rate": 1,
+        "rate": 5,
         "by": {
           "_id": "622f3403e36c59e6164fb212",
           "fullname": "Lawrence",
@@ -5048,7 +5025,7 @@
       },
       {
         "at": "2016-08-11T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3407e36c59e6164fbffc",
           "fullname": "Christopher",
@@ -5059,7 +5036,7 @@
       },
       {
         "at": "2016-08-15T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3407e36c59e6164fbdbd",
           "fullname": "Neil",
@@ -5070,7 +5047,7 @@
       },
       {
         "at": "2016-08-27T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3402e36c59e6164facd1",
           "fullname": "Diego & Amy",
@@ -5081,7 +5058,7 @@
       },
       {
         "at": "2017-06-19T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3401e36c59e6164fab60",
           "fullname": "Bolivar",
@@ -5092,7 +5069,7 @@
       },
       {
         "at": "2017-07-04T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3404e36c59e6164fb4e1",
           "fullname": "Owni",
@@ -5103,7 +5080,7 @@
       },
       {
         "at": "2017-07-09T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3405e36c59e6164fb987",
           "fullname": "Nichole",
@@ -5114,7 +5091,7 @@
       },
       {
         "at": "2017-08-28T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3406e36c59e6164fbc3a",
           "fullname": "Ahmed",
@@ -5125,7 +5102,7 @@
       },
       {
         "at": "2018-06-04T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3403e36c59e6164fb0df",
           "fullname": "Courtney",
@@ -5136,7 +5113,7 @@
       },
       {
         "at": "2018-08-28T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3404e36c59e6164fb5f1",
           "fullname": "Anne Patricia",
@@ -5147,7 +5124,7 @@
       },
       {
         "at": "2018-08-29T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3407e36c59e6164fbec7",
           "fullname": "Cynthia",
@@ -5158,7 +5135,7 @@
       },
       {
         "at": "2018-09-23T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3406e36c59e6164fbbef",
           "fullname": "Ivan",
@@ -5169,7 +5146,7 @@
       },
       {
         "at": "2018-09-30T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3403e36c59e6164fb0e8",
           "fullname": "Léa",
@@ -5180,7 +5157,7 @@
       },
       {
         "at": "2018-10-12T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3402e36c59e6164fac36",
           "fullname": "Juan Pablo",
@@ -5191,7 +5168,7 @@
       },
       {
         "at": "2018-11-02T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3403e36c59e6164fb273",
           "fullname": "Melanie",
@@ -5202,7 +5179,7 @@
       },
       {
         "at": "2018-11-09T05:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3404e36c59e6164fb2f5",
           "fullname": "Puck",
@@ -5213,7 +5190,7 @@
       },
       {
         "at": "2018-11-25T05:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3407e36c59e6164fbe3d",
           "fullname": "Shawn",
@@ -5224,7 +5201,7 @@
       },
       {
         "at": "2018-12-09T05:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3407e36c59e6164fbf94",
           "fullname": "Sebastian",
@@ -5235,7 +5212,7 @@
       },
       {
         "at": "2019-01-01T05:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3404e36c59e6164fb346",
           "fullname": "Brendan",
@@ -5246,7 +5223,7 @@
       },
       {
         "at": "2019-01-04T05:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3407e36c59e6164fbe63",
           "fullname": "Craig",
@@ -5300,7 +5277,7 @@
       "fullname": "Chelsea",
       "location": "Sea Cliff, New York, United States",
       "about": "",
-      "thumbnailUrl": "https://a0.muscache.com/im/pictures/4d361f57-f65e-4885-b934-0e92eebf288d.jpg?aki_policy=profile_small",
+      "thumbnailUrl": "https://randomuser.me/api/portraits/men/31.jpg",
       "pictureUrl": "https://a0.muscache.com/im/pictures/4d361f57-f65e-4885-b934-0e92eebf288d.jpg?aki_policy=profile_x_medium",
       "isSuperhost": false,
       "id": "52004369",
@@ -5323,18 +5300,17 @@
     "cleaningFee": 35,
     "extraPeople": 0,
     "reviewScores": {
-      "accuracy": 9,
-      "cleanliness": 8,
-      "checkin": 10,
-      "communication": 9,
-      "location": 9,
-      "value": 9,
-      "rating": 90
+      "accuracy": 4.6,
+      "cleanliness": 4.9,
+      "checkin": 4.6,
+      "communication": 4.8,
+      "location": 4.8,
+      "value": 4.3
     },
     "reviews": [
       {
         "at": "2016-05-28T04:00:00.000Z",
-        "rate": 1,
+        "rate": 5,
         "by": {
           "_id": "622f3403e36c59e6164fb0e2",
           "fullname": "Danielle",
@@ -5345,7 +5321,7 @@
       },
       {
         "at": "2016-08-13T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3402e36c59e6164fae96",
           "fullname": "Kelly",
@@ -5356,7 +5332,7 @@
       },
       {
         "at": "2016-10-02T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3404e36c59e6164fb551",
           "fullname": "William",
@@ -5367,7 +5343,7 @@
       },
       {
         "at": "2016-10-08T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3402e36c59e6164fac59",
           "fullname": "Harry",
@@ -5378,7 +5354,7 @@
       },
       {
         "at": "2016-10-11T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3403e36c59e6164fafbd",
           "fullname": "Kayla",
@@ -5389,7 +5365,7 @@
       },
       {
         "at": "2016-11-26T05:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3406e36c59e6164fbca1",
           "fullname": "Kristin",
@@ -5400,7 +5376,7 @@
       },
       {
         "at": "2016-12-30T05:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3402e36c59e6164fac95",
           "fullname": "Alex",
@@ -5411,7 +5387,7 @@
       },
       {
         "at": "2017-06-05T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3405e36c59e6164fb879",
           "fullname": "Mateus",
@@ -5422,7 +5398,7 @@
       },
       {
         "at": "2017-08-19T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3405e36c59e6164fb70d",
           "fullname": "Francesco",
@@ -5469,7 +5445,7 @@
       "location": "New York, New York, United States",
       "about": "Photographer/Developer. \r\nI enjoy NYC tremendously but love traveling and have visited\r\nover 40 countries. My house is filled with artwork from those travels.\r\nI work my photography business from my home studio, in a restored 1890 landmark townhouse with all the modern amenities.\r\nMy house has been used for filming scenes for Sex & The City, The Sopranos, Gossip Girl & White Collar.\r\nMy photography column,\"Orestes'LIC\", appears every month in the local paper.\r\nI love Asian, Spanish & Cuban food, along with a good bottle of red wine.\r\nTalking about travel, art, design and photograph,is my favorite pastime. Sorry,I dont shop or know where the best electronics bargains are located ! \r\nI love giving great walking tour information of different parts of NYC, and info on non-touristy places to eat real food in the area.\r\nI will provide you the privacy level you require to make your stay here is as comfortable as possible.\r\nEnjoy a great, clean, stylish place to stay, only 7 minutes from Manhattan!\r\n",
       "responseTime": "within an hour",
-      "thumbnailUrl": "https://a0.muscache.com/im/users/50124/profile_pic/1443072360/original.jpg?aki_policy=profile_small",
+      "thumbnailUrl": "https://randomuser.me/api/portraits/men/33.jpg",
       "pictureUrl": "https://a0.muscache.com/im/users/50124/profile_pic/1443072360/original.jpg?aki_policy=profile_x_medium",
       "isSuperhost": true,
       "id": "50124",
@@ -5492,13 +5468,12 @@
     "cleaningFee": null,
     "extraPeople": 70,
     "reviewScores": {
-      "accuracy": 10,
-      "cleanliness": 10,
-      "checkin": 10,
-      "communication": 10,
-      "location": 10,
-      "value": 10,
-      "rating": 98
+      "accuracy": 4.8,
+      "cleanliness": 4.9,
+      "checkin": 4.6,
+      "communication": 4.7,
+      "location": 5,
+      "value": 4.7
     },
     "reviews": [
       {
@@ -5514,7 +5489,7 @@
       },
       {
         "at": "2010-09-27T04:00:00.000Z",
-        "rate": 1,
+        "rate": 5,
         "by": {
           "_id": "622f3405e36c59e6164fb97a",
           "fullname": "Sharinne",
@@ -5525,7 +5500,7 @@
       },
       {
         "at": "2010-10-05T04:00:00.000Z",
-        "rate": 1,
+        "rate": 5,
         "by": {
           "_id": "622f3406e36c59e6164fb9ce",
           "fullname": "Virginia",
@@ -5536,7 +5511,7 @@
       },
       {
         "at": "2010-10-11T04:00:00.000Z",
-        "rate": 1,
+        "rate": 5,
         "by": {
           "_id": "622f3406e36c59e6164fbca2",
           "fullname": "Jean",
@@ -5547,7 +5522,7 @@
       },
       {
         "at": "2010-10-24T04:00:00.000Z",
-        "rate": 1,
+        "rate": 5,
         "by": {
           "_id": "622f3406e36c59e6164fbc01",
           "fullname": "Susan",
@@ -5558,7 +5533,7 @@
       },
       {
         "at": "2010-10-26T04:00:00.000Z",
-        "rate": 1,
+        "rate": 5,
         "by": {
           "_id": "622f3403e36c59e6164fb1f8",
           "fullname": "Cassie",
@@ -5569,7 +5544,7 @@
       },
       {
         "at": "2010-10-29T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3403e36c59e6164fafde",
           "fullname": "Lydia",
@@ -5591,7 +5566,7 @@
       },
       {
         "at": "2011-05-04T04:00:00.000Z",
-        "rate": 1,
+        "rate": 5,
         "by": {
           "_id": "622f3402e36c59e6164fae19",
           "fullname": "Delia",
@@ -5602,7 +5577,7 @@
       },
       {
         "at": "2011-10-03T04:00:00.000Z",
-        "rate": 2,
+        "rate": 4,
         "by": {
           "_id": "622f3403e36c59e6164fb226",
           "fullname": "Mandy",
@@ -5635,7 +5610,7 @@
       },
       {
         "at": "2012-03-23T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3402e36c59e6164faf2b",
           "fullname": "Cleo & Laure",
@@ -5646,7 +5621,7 @@
       },
       {
         "at": "2012-04-13T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3406e36c59e6164fbbeb",
           "fullname": "Morten",
@@ -5657,7 +5632,7 @@
       },
       {
         "at": "2012-06-03T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3405e36c59e6164fb783",
           "fullname": "Francois",
@@ -5668,7 +5643,7 @@
       },
       {
         "at": "2012-06-15T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3406e36c59e6164fbc87",
           "fullname": "Oliver",
@@ -5679,7 +5654,7 @@
       },
       {
         "at": "2012-06-22T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3404e36c59e6164fb619",
           "fullname": "Vince",
@@ -5690,7 +5665,7 @@
       },
       {
         "at": "2012-07-10T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3407e36c59e6164fbe54",
           "fullname": "James",
@@ -5701,7 +5676,7 @@
       },
       {
         "at": "2012-07-26T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3404e36c59e6164fb3e4",
           "fullname": "Yat & René",
@@ -5712,7 +5687,7 @@
       },
       {
         "at": "2012-08-07T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3404e36c59e6164fb55d",
           "fullname": "Hagay",
@@ -5767,7 +5742,7 @@
       "location": "Barcelona, Catalonia, Spain",
       "about": "Nos encanta Barcelona, conocemos la ciudad y algunos de sus secretos. Podemos ayudarte a planificar tu visita.",
       "responseTime": "within an hour",
-      "thumbnailUrl": "https://a0.muscache.com/im/users/6544866/profile_pic/1400529085/original.jpg?aki_policy=profile_small",
+      "thumbnailUrl": "https://randomuser.me/api/portraits/men/34.jpg",
       "pictureUrl": "https://a0.muscache.com/im/users/6544866/profile_pic/1400529085/original.jpg?aki_policy=profile_x_medium",
       "isSuperhost": true,
       "id": "6544866",
@@ -5790,13 +5765,12 @@
     "cleaningFee": 30,
     "extraPeople": 35,
     "reviewScores": {
-      "accuracy": 10,
-      "cleanliness": 10,
-      "checkin": 10,
-      "communication": 10,
-      "location": 10,
-      "value": 10,
-      "rating": 98
+      "accuracy": 4.8,
+      "cleanliness": 4.9,
+      "checkin": 4.6,
+      "communication": 4.7,
+      "location": 5,
+      "value": 4.7
     },
     "reviews": [
       {
@@ -5812,7 +5786,7 @@
       },
       {
         "at": "2016-06-10T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3403e36c59e6164fb093",
           "fullname": "Kris",
@@ -5823,7 +5797,7 @@
       },
       {
         "at": "2016-07-13T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3404e36c59e6164fb5d6",
           "fullname": "Nicholas",
@@ -5834,7 +5808,7 @@
       },
       {
         "at": "2016-08-07T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3404e36c59e6164fb30c",
           "fullname": "Kim",
@@ -5845,7 +5819,7 @@
       },
       {
         "at": "2018-02-11T05:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3404e36c59e6164fb5c1",
           "fullname": "Ian",
@@ -5856,7 +5830,7 @@
       },
       {
         "at": "2018-02-19T05:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3403e36c59e6164fb0a3",
           "fullname": "Tommy",
@@ -5867,7 +5841,7 @@
       },
       {
         "at": "2018-02-25T05:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3403e36c59e6164faff8",
           "fullname": "Andrea",
@@ -5878,7 +5852,7 @@
       },
       {
         "at": "2018-03-18T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3404e36c59e6164fb3c4",
           "fullname": "Igor",
@@ -5889,7 +5863,7 @@
       },
       {
         "at": "2018-04-18T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3407e36c59e6164fbfb4",
           "fullname": "Dawn",
@@ -5900,7 +5874,7 @@
       },
       {
         "at": "2018-04-22T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3403e36c59e6164fb1ad",
           "fullname": "Zhanna",
@@ -5911,7 +5885,7 @@
       },
       {
         "at": "2018-04-25T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3407e36c59e6164fbe78",
           "fullname": "Echo",
@@ -5922,7 +5896,7 @@
       },
       {
         "at": "2018-05-13T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3403e36c59e6164fb29a",
           "fullname": "Pat",
@@ -5933,7 +5907,7 @@
       },
       {
         "at": "2018-05-14T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3403e36c59e6164fafc6",
           "fullname": "Jae Keun",
@@ -5944,7 +5918,7 @@
       },
       {
         "at": "2018-05-20T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3407e36c59e6164fc034",
           "fullname": "Dawn",
@@ -5955,7 +5929,7 @@
       },
       {
         "at": "2018-05-27T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3406e36c59e6164fb9f7",
           "fullname": "Jessica",
@@ -5966,7 +5940,7 @@
       },
       {
         "at": "2018-06-29T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3404e36c59e6164fb46f",
           "fullname": "Celestina",
@@ -5977,7 +5951,7 @@
       },
       {
         "at": "2018-07-12T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3404e36c59e6164fb423",
           "fullname": "Jein",
@@ -5988,7 +5962,7 @@
       },
       {
         "at": "2018-07-22T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3403e36c59e6164fafaa",
           "fullname": "Liliana",
@@ -5999,7 +5973,7 @@
       },
       {
         "at": "2018-08-12T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3404e36c59e6164fb3cb",
           "fullname": "Marsha",
@@ -6010,7 +5984,7 @@
       },
       {
         "at": "2018-08-26T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3404e36c59e6164fb2df",
           "fullname": "Leonard",
@@ -6061,7 +6035,7 @@
       "location": "Barcelona, Catalonia, Spain",
       "about": "\r\nI love traveling. Therefore, I am delighted to help travelers to discover the magical places of this incredible city. I am completely available to give any kind of suggestions, information and help on what they need to make the stay in Barcelona as pleasant as possible !!\r\n\r\n",
       "responseTime": "within an hour",
-      "thumbnailUrl": "https://a0.muscache.com/im/pictures/fdb58b71-1613-4905-8850-024dc23f1cb0.jpg?aki_policy=profile_small",
+      "thumbnailUrl": "https://randomuser.me/api/portraits/men/35.jpg",
       "pictureUrl": "https://a0.muscache.com/im/pictures/fdb58b71-1613-4905-8850-024dc23f1cb0.jpg?aki_policy=profile_x_medium",
       "isSuperhost": false,
       "id": "80740340",
@@ -6084,18 +6058,17 @@
     "cleaningFee": null,
     "extraPeople": 0,
     "reviewScores": {
-      "accuracy": 10,
-      "cleanliness": 10,
-      "checkin": 10,
-      "communication": 10,
-      "location": 10,
-      "value": 9,
-      "rating": 93
+      "accuracy": 4.8,
+      "cleanliness": 4.9,
+      "checkin": 4.6,
+      "communication": 4.7,
+      "location": 5,
+      "value": 4.3
     },
     "reviews": [
       {
         "at": "2016-07-24T04:00:00.000Z",
-        "rate": 2,
+        "rate": 4,
         "by": {
           "_id": "622f3402e36c59e6164faf17",
           "fullname": "Ida",
@@ -6106,7 +6079,7 @@
       },
       {
         "at": "2016-08-07T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3406e36c59e6164fbcca",
           "fullname": "Alicja",
@@ -6117,7 +6090,7 @@
       },
       {
         "at": "2016-08-14T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3407e36c59e6164fbdf5",
           "fullname": "Marvin & Henrica",
@@ -6128,7 +6101,7 @@
       },
       {
         "at": "2016-08-15T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3406e36c59e6164fbafe",
           "fullname": "Francesco",
@@ -6139,7 +6112,7 @@
       },
       {
         "at": "2016-08-24T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3402e36c59e6164fae90",
           "fullname": "Lola",
@@ -6150,7 +6123,7 @@
       },
       {
         "at": "2016-08-29T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3403e36c59e6164fb069",
           "fullname": "Sébastien",
@@ -6161,7 +6134,7 @@
       },
       {
         "at": "2016-09-03T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3408e36c59e6164fc06c",
           "fullname": "Olesya",
@@ -6172,7 +6145,7 @@
       },
       {
         "at": "2016-09-05T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3406e36c59e6164fb9ef",
           "fullname": "Alice",
@@ -6183,7 +6156,7 @@
       },
       {
         "at": "2016-09-07T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3406e36c59e6164fbc26",
           "fullname": "Jenny",
@@ -6194,7 +6167,7 @@
       },
       {
         "at": "2016-09-09T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3407e36c59e6164fc04f",
           "fullname": "Dora",
@@ -6205,7 +6178,7 @@
       },
       {
         "at": "2016-09-20T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3407e36c59e6164fbf4e",
           "fullname": "Marie Laure",
@@ -6216,7 +6189,7 @@
       },
       {
         "at": "2016-10-02T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3404e36c59e6164fb325",
           "fullname": "Federica",
@@ -6227,7 +6200,7 @@
       },
       {
         "at": "2016-10-08T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3407e36c59e6164fbd00",
           "fullname": "Lucia",
@@ -6238,7 +6211,7 @@
       },
       {
         "at": "2016-10-16T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3403e36c59e6164fb1c6",
           "fullname": "Friedrich",
@@ -6249,7 +6222,7 @@
       },
       {
         "at": "2016-10-18T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3403e36c59e6164fb03f",
           "fullname": "Irene",
@@ -6260,7 +6233,7 @@
       },
       {
         "at": "2016-10-22T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3405e36c59e6164fb6e2",
           "fullname": "Simen",
@@ -6271,7 +6244,7 @@
       },
       {
         "at": "2016-10-26T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3404e36c59e6164fb5e3",
           "fullname": "Ines",
@@ -6282,7 +6255,7 @@
       },
       {
         "at": "2016-10-28T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3407e36c59e6164fbd45",
           "fullname": "Ylenia",
@@ -6293,7 +6266,7 @@
       },
       {
         "at": "2016-11-02T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3403e36c59e6164fb09a",
           "fullname": "Ainara",
@@ -6304,7 +6277,7 @@
       },
       {
         "at": "2016-11-13T05:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3407e36c59e6164fbeeb",
           "fullname": "Ольга",
@@ -6358,7 +6331,7 @@
       "fullname": "Jason",
       "location": "New South Wales, Australia",
       "about": "Hey I'm Jason. I enjoy travelling, photography and beer!\r\n\r\nWe have had a little girl!\r\nOur calender will be closed for a while. If you are a repeat guest send me a message and we might be able to open the calender for you.\r\n\r\nI spent many years living in England, Ireland and Italy; and have travelled to Andorra, Austria, Bali, Belgium, Bulgaria, France, Germany, Hungary, Malaysia, Portugal, Romania, Singapore, Spain, Switzerland, Thailand & Vietnam. \r\n\r\nMy partner Luana is from Verona, Italy. \r\n\r\nWe started hosting in Oct 2015 and enjoy meeting people from around the world and listening to stories about their country and travels.\r\n\r\nWe have a good knowledge of Sydney (sights, attractions, shopping, beaches, day treks, restaurants, pubs & night clubs) and various places around Australia. ",
-      "thumbnailUrl": "https://a0.muscache.com/im/pictures/440690bd-73f1-411a-8194-5e6a17bc39ff.jpg?aki_policy=profile_small",
+      "thumbnailUrl": "https://randomuser.me/api/portraits/men/36.jpg",
       "pictureUrl": "https://a0.muscache.com/im/pictures/440690bd-73f1-411a-8194-5e6a17bc39ff.jpg?aki_policy=profile_x_medium",
       "isSuperhost": false,
       "id": "9031139",
@@ -6381,18 +6354,17 @@
     "cleaningFee": 0,
     "extraPeople": 0,
     "reviewScores": {
-      "accuracy": 10,
-      "cleanliness": 10,
-      "checkin": 10,
-      "communication": 10,
-      "location": 10,
-      "value": 10,
-      "rating": 100
+      "accuracy": 4.8,
+      "cleanliness": 4.9,
+      "checkin": 4.6,
+      "communication": 4.7,
+      "location": 5,
+      "value": 4.7
     },
     "reviews": [
       {
         "at": "2016-08-15T04:00:00.000Z",
-        "rate": 1,
+        "rate": 5,
         "by": {
           "_id": "622f3407e36c59e6164fbfd7",
           "fullname": "Joshua",
@@ -6403,7 +6375,7 @@
       },
       {
         "at": "2016-11-05T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3404e36c59e6164fb4f4",
           "fullname": "Sung Hui(Audrey)",
@@ -6414,7 +6386,7 @@
       },
       {
         "at": "2017-06-11T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3403e36c59e6164fb109",
           "fullname": "Jiaojie",
@@ -6461,7 +6433,7 @@
       "location": "Montreal, Quebec, Canada",
       "about": "Massage therapist, artist, writer, gardener, traveler, filmmaker and B&B Host.",
       "responseTime": "within a few hours",
-      "thumbnailUrl": "https://a0.muscache.com/im/users/528512/profile_pic/1303510673/original.jpg?aki_policy=profile_small",
+      "thumbnailUrl": "https://randomuser.me/api/portraits/women/36.jpg",
       "pictureUrl": "https://a0.muscache.com/im/users/528512/profile_pic/1303510673/original.jpg?aki_policy=profile_x_medium",
       "isSuperhost": false,
       "id": "528512",
@@ -6484,13 +6456,12 @@
     "cleaningFee": 20,
     "extraPeople": 0,
     "reviewScores": {
-      "accuracy": 9,
-      "cleanliness": 8,
-      "checkin": 10,
-      "communication": 9,
-      "location": 10,
-      "value": 9,
-      "rating": 88
+      "accuracy": 4.6,
+      "cleanliness": 4.9,
+      "checkin": 4.6,
+      "communication": 4.8,
+      "location": 5,
+      "value": 4.3
     },
     "reviews": [
       {
@@ -6506,7 +6477,7 @@
       },
       {
         "at": "2011-06-25T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3402e36c59e6164fae87",
           "fullname": "Peter",
@@ -6517,7 +6488,7 @@
       },
       {
         "at": "2011-07-01T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3407e36c59e6164fbeec",
           "fullname": "Kim",
@@ -6528,7 +6499,7 @@
       },
       {
         "at": "2011-07-07T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3407e36c59e6164fbe06",
           "fullname": "Robert Halley",
@@ -6539,7 +6510,7 @@
       },
       {
         "at": "2011-07-08T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3406e36c59e6164fba59",
           "fullname": "Hana",
@@ -6550,7 +6521,7 @@
       },
       {
         "at": "2011-07-10T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3404e36c59e6164fb586",
           "fullname": "Rosa",
@@ -6561,7 +6532,7 @@
       },
       {
         "at": "2011-07-16T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3402e36c59e6164fac57",
           "fullname": "Kristin",
@@ -6572,7 +6543,7 @@
       },
       {
         "at": "2011-07-18T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3404e36c59e6164fb323",
           "fullname": "Antonia",
@@ -6583,7 +6554,7 @@
       },
       {
         "at": "2011-08-06T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3407e36c59e6164fc014",
           "fullname": "Alex",
@@ -6594,7 +6565,7 @@
       },
       {
         "at": "2011-08-08T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3403e36c59e6164fb1b1",
           "fullname": "Danielle",
@@ -6605,7 +6576,7 @@
       },
       {
         "at": "2011-08-13T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3404e36c59e6164fb555",
           "fullname": "Jean",
@@ -6616,7 +6587,7 @@
       },
       {
         "at": "2012-05-21T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3403e36c59e6164faffb",
           "fullname": "Huda",
@@ -6627,7 +6598,7 @@
       },
       {
         "at": "2012-05-24T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3403e36c59e6164fb083",
           "fullname": "Matthew",
@@ -6638,7 +6609,7 @@
       },
       {
         "at": "2012-06-12T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3402e36c59e6164fae33",
           "fullname": "Tara",
@@ -6649,7 +6620,7 @@
       },
       {
         "at": "2012-06-29T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3402e36c59e6164fad61",
           "fullname": "Bill",
@@ -6660,7 +6631,7 @@
       },
       {
         "at": "2012-07-02T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3406e36c59e6164fbc84",
           "fullname": "Anna",
@@ -6671,7 +6642,7 @@
       },
       {
         "at": "2012-07-06T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3402e36c59e6164fac71",
           "fullname": "Marshall And Denise",
@@ -6682,7 +6653,7 @@
       },
       {
         "at": "2012-07-15T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3402e36c59e6164faf25",
           "fullname": "Steve",
@@ -6693,7 +6664,7 @@
       },
       {
         "at": "2012-07-19T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3402e36c59e6164faf25",
           "fullname": "Steve",
@@ -6704,7 +6675,7 @@
       },
       {
         "at": "2012-07-23T04:00:00.000Z",
-        "rate": 3,
+        "rate": 5,
         "by": {
           "_id": "622f3403e36c59e6164faffd",
           "fullname": "Jackie",

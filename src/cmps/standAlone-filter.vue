@@ -1,5 +1,5 @@
 <template>
-  <form class="form-filter" @submit.prevent>
+  <form @change="onSaveFilters" class="form-filter" @submit.prevent>
     <div class="form-header">
       <div class="close-filter">
         <span @click="closeForm" class="material-icons-outlined"> close </span>
@@ -10,32 +10,36 @@
       <div class="form-price">
         <h2>Price range</h2>
         <p>The average nightly price is {{ getPricesAvg }}</p>
-        <HistogramSlider :width="360" :bar-height="100" :data="prices" :clip="false" :min="10" :max="1000" :barGap="1"
-          :barRadius="2" :lineHeight="2" :primaryColor="primaryColor" :labelColor="labelColor"
-          :handleColor="handleColor" :holderColor="holderColor" @finish="sliderChanged" />
+        <HistogramSlider @change="setPrice" :width="360" :bar-height="100" :data="prices" :clip="false" :min="1"
+          :max="800" :barGap="1" :barRadius="2" :lineHeight="2" :primaryColor="primaryColor" :labelColor="labelColor"
+          :handleColor="handleColor" :holderColor="holderColor" />
         <div class="form-inputs">
-          min price
-          <input @input="setFilter" v-model="filterBy.price.minPrice" type="number" min="0" />
-          max price
-          <input @input="setFilter" v-model="filterBy.price.maxPrice" type="number" max="1000" />
+          <div class="price-inner">
+            <label for="min">min price</label>
+            <input name="min" @input="setFilter" v-model="filterBy.price.minPrice" type="number" min="1" />
+          </div>
+          <div class="price-inner">
+            <label for="max"> max price</label>
+            <input name="max" @input="setFilter" v-model="filterBy.price.maxPrice" type="number" max="£800" />
+          </div>
         </div>
       </div>
       <div class="form-rooms-and-beds">
         <h2>Rooms and beds</h2>
         <h3>BedRooms</h3>
-        <el-radio-group @change="setFilter" v-model="filterBy.bedrooms">
+        <el-radio-group text-color="#ffffff" fill="#000000" @change="setFilter" v-model="filterBy.bedrooms">
           <el-radio-button label="Any" />
           <el-radio-button v-for="(opt, idx) in numLabels" :key="idx" :label="opt" />
         </el-radio-group>
         <h3>beds</h3>
-        <el-radio-group @change="setFilter" v-model="filterBy.beds">
+        <el-radio-group text-color="#ffffff" fill="#000000" @change="setFilter" v-model="filterBy.beds">
           <el-radio-button label="Any" />
           <el-radio-button v-for="(opt, idx) in numLabels" :key="idx" :label="opt" />
         </el-radio-group>
       </div>
       <div class="form-property-type">
         <h2>Property type</h2>
-        <el-radio-group @change="setFilter" v-model="filterBy.propertyType">
+        <el-radio-group text-color="#ffffff" fill="#000000" @change="setFilter" v-model="filterBy.propertyType">
           <el-radio-button v-for="(opt, idx) in propertyType" :key="idx" :label="opt" />
         </el-radio-group>
       </div>
@@ -61,7 +65,7 @@
     </div>
     <div class="form-footer">
       <button @click="clearAll()">Clear all</button>
-      <button @click="onSaveFilters()">Save Information</button>
+      <button @click="onSaveFilters($event)">Show stays {{ getStay }}</button>
     </div>
   </form>
 </template>
@@ -82,6 +86,7 @@ export default {
       holderColor: '#dddddd',
       labelColor: '#bdd6f8',
       handleColor: '#dddddd',
+      propertyNum: null,
     };
   },
   created() {
@@ -91,8 +96,8 @@ export default {
     getInitialFilterState() {
       return {
         price: {
-          minPrice: 0,
-          maxPrice: 1000,
+          minPrice: 1,
+          maxPrice: 800,
         },
         // checkList: ref(false),
         bedrooms: null,
@@ -102,12 +107,14 @@ export default {
         propertyType: null,
       }
     },
+    setPrice(value) {
+      this.filterBy.price.minPrice = value.from;
+      this.filterBy.price.maxPrice = value.to;
+    },
     getStaysPrices() {
       const stays = this.$store.getters.getStays;
       const staysPrices = stays.map(stay => stay.price);
       this.prices = staysPrices;
-      console.log('staysPrices:', staysPrices);
-      console.log(' this.prices:', this.prices);
     },
     setFilter() {
       this.$store.dispatch({ type: 'setFilterBy', filterBy: this.filterBy });
@@ -124,13 +131,17 @@ export default {
       if (isChecked) {
         this.filterBy.hostLanguage.push(currLanguage);
       } else {
-        this.filterBy.hostLanguage = this.filterBy.hostLanguage.filter(language => language !== currLanguage)
+        this.filterBy.hostLanguage = this.filterBy.hostLanguage.filter(language => language !== currLanguage);
       }
-      this.$store.dispatch({ type: 'setFilterBy', filterBy: this.filterBy })
+      this.$store.dispatch({ type: 'setFilterBy', filterBy: this.filterBy });
     },
-    onSaveFilters() {
+    onSaveFilters(ev, value) {
       this.$store.dispatch({ type: 'setFilteredStays' });
-      this.closeForm();
+      this.propertyNum = this.$store.getters.getStays.length;
+
+      if (ev.type === 'click') {
+        this.closeForm();
+      }
     },
     clearAll() {
       this.filterBy = this.getInitialFilterState();
@@ -145,15 +156,17 @@ export default {
   // },
   computed: {
     getPricesAvg() {
-      if (!this.prices) return "0$";
+      if (!this.prices) return '0$';
       var Sum = this.prices.reduce((a, b) => a + b);
       Sum = Sum / this.prices.length;
       Sum = Sum.toFixed(0);
-      return Sum + "$";
+      return Sum + '$';
+    },
+    getStay() {
+      console.log('stays', this.$store.getters.getFilteredStays.length);
+      return this.$store.getters.getFilteredStays.length;
     },
   },
-  components: {
-  },
+  components: {},
 };
-
 </script>
