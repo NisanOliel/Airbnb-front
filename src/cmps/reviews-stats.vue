@@ -9,7 +9,7 @@
         <div class="bar-label flex">
 
           <el-progress :stroke-width="4" :show-text=false :percentage=reviewScore />
-          <span class="bold">{{ reviewScore / 20 }}</span>
+          <span>{{ reviewScore / 20 }}</span>
         </div>
       </div>
     </div>
