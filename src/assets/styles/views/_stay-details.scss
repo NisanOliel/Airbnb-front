@@ -476,7 +476,7 @@ p.text-desc {
   .guests-btns {
     justify-content: space-between;
     width: 104px;
-    color: rgb(34, 34, 34);
+    color: $clr1;
     font-weight: 400;
     font-size: 16px;
 
@@ -509,6 +509,19 @@ p.text-desc {
     z-index: 2;
     padding: 20px;
 
+    .guests-container {
+      .titles {
+        h5 {
+          margin: 10px 0px 0px 0px;
+          font-size: 16px;
+          font-family: Cereal-bold;
+          color: $clr1;
+
+        }
+
+      }
+
+    }
   }
 
   .pricing {
@@ -521,7 +534,7 @@ p.text-desc {
     h5 {
       font-size: 16px;
       font-weight: 100;
-      color: rgb(34, 34, 34);
+      color: $clr1;
       margin: 10px 0px 15px 0px;
 
 
@@ -529,7 +542,7 @@ p.text-desc {
 
     p {
       font-size: 16px;
-      color: rgb(34, 34, 34);
+      color: $clr1;
       font-family: Cereal-bold;
       padding-top: 16px;
       margin-top: 8px;

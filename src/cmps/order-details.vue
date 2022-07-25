@@ -149,9 +149,9 @@
     <div class="flex column guest-add" v-if="isShow" v-click-away="onClickAway">
 
       <div class="guests-container flex justify-space-between align-center">
-        <div class="flex column">
+        <div class="flex column titles">
           <h5>Adults</h5>
-          <span>Ages 13+</span>
+          <span>Age 13+</span>
         </div>
         <div class="guests-btns flex align-center justify-space-between">
           <button @click.stop="updateGuests('adults', -1)">
@@ -164,7 +164,7 @@
         </div>
       </div>
       <div class="guests-container flex justify-space-between align-center">
-        <div class="flex column">
+        <div class="flex column titles">
           <h5>Children</h5>
           <span>Ages 2-12</span>
         </div>
