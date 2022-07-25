@@ -159,6 +159,14 @@
   .reviews-container {
     padding-block: 48px;
 
+    .host-image {
+      height: 43px;
+      width: 43px;
+      border-radius: 50%;
+      -o-object-fit: cover;
+      object-fit: cover;
+    }
+
     .stared {
       gap: 10px;
     }
