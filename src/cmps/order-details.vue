@@ -146,7 +146,8 @@
       </div>
     </div>
 
-    <div class="flex column" v-if="isShow" v-click-away="onClickAway">
+    <div class="flex column guest-add" v-if="isShow" v-click-away="onClickAway">
+
       <div class="guests-container flex justify-space-between align-center">
         <div class="flex column">
           <h5>Adults</h5>
@@ -212,7 +213,7 @@ export default {
         dates: {},
       },
       loggedinUser: null,
-      fee: 1.18,
+      fee: 1.10,
       serviceFee: null,
       daysTotal: null,
       totalPriceWithFee: null
@@ -251,8 +252,8 @@ export default {
 
         const timeDiff = (new Date(end).getTime() - new Date(start).getTime()) / (1000 * 3600 * 24);
         this.daysTotal = timeDiff.toLocaleString()
-        this.totalPriceSum = Number(parseInt(this.stay.price * timeDiff)).toLocaleString();
-        this.serviceFee = Number((this.totalPriceSum * this.fee) - this.totalPriceSum).toFixed(0)
+        this.totalPriceSum = Number(parseInt(this.stay.price * timeDiff));
+        this.serviceFee = Number(parseInt((this.totalPriceSum * this.fee) - this.totalPriceSum))
         const totalWithFee = (+this.totalPriceSum + +this.serviceFee).toFixed(0)
         this.totalPriceWithFee = totalWithFee
         return totalWithFee
