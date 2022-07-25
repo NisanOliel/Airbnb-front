@@ -4693,6 +4693,10 @@
       {
         "name": "Washer",
         "src": "src/assets/icons/washer.svg"
+      },
+      {
+        "name": "wifi",
+        "src": "src/assets/icons/washer.svg"
       }
     ],
     "host": {
@@ -5452,6 +5456,10 @@
     "amenities": [
       {
         "name": "Air conditioning",
+        "src": "src/assets/icons/air-conditioning.svg"
+      },
+      {
+        "name": "wifi",
         "src": "src/assets/icons/air-conditioning.svg"
       }
     ],
@@ -6338,6 +6346,10 @@
       },
       {
         "name": "Washer",
+        "src": "src/assets/icons/washer.svg"
+      },
+      {
+        "name": "wifi",
         "src": "src/assets/icons/washer.svg"
       }
     ],
