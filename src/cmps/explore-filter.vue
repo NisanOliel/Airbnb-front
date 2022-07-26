@@ -19,7 +19,6 @@
           <label for="where">Where</label>
           <!-- <input name="where" @focus="showInitModal($event)" v-model="form.where" placeholder="Search destination" /> -->
           <input name="where" v-model="filterBy.where" placeholder="Search destination" />
-
           <!-- <div v-if="showModal">dflkgjldfkjgdlsfgjdfslkgjdfsljl</div> -->
         </div>
         <div class="filter-option check">
@@ -244,50 +243,6 @@ export default {
           infants: 0,
           pets: 0,
         },
-<<<<<<< HEAD
-        filterPreview: this.isExpend,
-        showModal: false,
-      };
-    },
-    methods: {
-      // handleScroll(event) {
-      //   console.log('this.filter', this.filterPreview);
-      //   if (window.scrollY === 0) {
-      //     console.log('window', window);
-      //     this.filterPreview = true;
-      //   }
-      // },
-      formSubmit() {
-        console.log('hellow');
-        let url = `/explore?location=${this.filterBy.where}`;
-        this.$router.push(url);
-      },
-      expendForm() {
-        this.$emit('expendForm', this.filterPreview);
-        // this.filterShow;
-      },
-      showInitModal(ev) {
-        this.toggleShowModal();
-        console.log('show modal', ev);
-        // this.showModal = !this.showModal
-        console.log(this.showModal);
-      },
-      dropDownMenu(ev) {
-        // this.showModal = !this.showModal;
-        this.toggleShowModal(ev);
-        console.log('dropdown');
-        console.log(this.showModal);
-      },
-      updateGuests(type, number) {
-        this.filterBy.guests[type] += number;
-      },
-      toggleShowModal(ev) {
-        this.showModal = !this.showModal;
-      },
-      onClickAway() {
-        this.showModal = false;
-=======
->>>>>>> 29e7bda8c125618fb0160173554256592f1bcc01
       },
       filterPreview: true,
       showModal: false,

@@ -10,7 +10,7 @@
       <div class="form-price">
         <h2>Price range</h2>
         <p>The average nightly price is {{ getPricesAvg }}</p>
-        <HistogramSlider @change="setPrice" :bar-height="100" :data="prices" :clip="false" :min="1" :max="800"
+        <HistogramSlider @change="setPrice" :bar-height="100" :data="prices" :clip="false" :min="0" :max="25"
           :barGap="1" :barRadius="2" :lineHeight="2" :primaryColor="primaryColor" :labelColor="labelColor"
           :holderColor="holderColor" />
         <div class="form-inputs">
@@ -59,8 +59,7 @@
         <div class="essentials">
           <h3>Essentials</h3>
           <el-checkbox-group v-model="checkList">
-              <el-checkbox v-for="(opt, idx) in essentials" @change="setAmenities(opt, $event)" :key="idx"
-                :label="opt" />
+            <el-checkbox v-for="(opt, idx) in essentials" @change="setAmenities(opt, $event)" :key="idx" :label="opt" />
           </el-checkbox-group>
         </div>
       </div>
@@ -106,7 +105,7 @@ export default {
     getInitialFilterState() {
       return {
         price: {
-          minPrice: 1,
+          minPrice: 25,
           maxPrice: 800,
         },
         bedrooms: null,
