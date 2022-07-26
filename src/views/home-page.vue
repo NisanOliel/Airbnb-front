@@ -14,7 +14,7 @@ export default {
   },
   computed: {
     stays() {
-      return this.$store.getters.getFilteredStays;
+      return this.$store.getters.getStays;
     },
   },
   created() {

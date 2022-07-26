@@ -59,8 +59,7 @@
         <div class="essentials">
           <h3>Essentials</h3>
           <el-checkbox-group v-model="checkList">
-              <el-checkbox v-for="(opt, idx) in essentials" @change="setAmenities(opt, $event)" :key="idx"
-                :label="opt" />
+            <el-checkbox v-for="(opt, idx) in essentials" @change="setAmenities(opt, $event)" :key="idx" :label="opt" />
           </el-checkbox-group>
         </div>
       </div>
@@ -75,7 +74,7 @@
     </div>
     <div class="form-footer">
       <button @click="clearAll()">Clear all</button>
-      <button @click="onSaveFilters($event)">Show stays {{ getStay }}</button>
+      <button type="button" @click="onSaveFilters($event)">Show stays {{ getStay }}</button>
     </div>
   </form>
 </template>
@@ -172,8 +171,8 @@ export default {
       return Sum + '$';
     },
     getStay() {
-      console.log('stays', this.$store.getters.getFilteredStays.length);
-      return this.$store.getters.getFilteredStays.length;
+      console.log('stays', this.$store.getters.getStays.length);
+      return this.$store.getters.getStays.length;
     },
   },
   components: {},

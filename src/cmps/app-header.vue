@@ -36,7 +36,8 @@
 
     <div v-if="headerLocation" class="header-labels flex justify-space-between align-center">
       <div class="container header-bottom flex">
-        <explore-labels />
+        <explore-labels v-if="!isExplore" />
+        <div v-else class="stay-count">1234</div>
         <div class="stand-alone-filter">
           <button @click="isShow = !isShow" style="--filter-button_border: 1px solid var(--j-qkgmf)" type="button"
             class="v1tureqs dir dir-ltr"><span class="i3c9txn dir dir-ltr"><svg viewBox="0 0 16 16"
@@ -66,6 +67,7 @@ export default {
       location: false,
       isSticky: false,
       isExpend: false,
+      isExplore: false
     };
   },
   created() {
@@ -77,6 +79,11 @@ export default {
   computed: {
     headerLocation() {
       let params = this.$route.params;
+      const queryString = window.location.search;
+      if (queryString.length >= 27) {
+        this.isExplore = true
+      }
+
       let isEmpty = Object.keys(params).length === 0;
       return isEmpty;
     },
