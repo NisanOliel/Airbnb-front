@@ -70,6 +70,7 @@
     display: flex;
     flex-direction: column;
     gap: 4px;
+    margin-top: 20px;
   }
 
   .content-wrapper {
@@ -202,8 +203,8 @@ p.text-desc {
     }
 
     &:nth-child(1),
-    &:nth-child(5),
-    &:nth-child(3) {
+    &:nth-child(3),
+    &:nth-child(5) {
       padding-right: 107px;
     }
 

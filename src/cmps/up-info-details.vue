@@ -17,7 +17,7 @@
 
         <button @click="copyUrl" class="margin20">
           <div class="flex align-center">
-            <span><img src="../assets/icons/share.svg"></span>
+            <span><img src="@/assets/icons/share.svg"></span>
             Share
           </div>
         </button>
@@ -26,7 +26,7 @@
 
       <button @click="toggleWishList">
         <div class="flex align-center">
-          <span><img src="../assets/icons/love.svg"></span>
+          <span><img src="@/assets/icons/love.svg"></span>
           Save
         </div>
       </button>

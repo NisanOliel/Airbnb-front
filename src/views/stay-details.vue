@@ -3,6 +3,7 @@
     <div class="main-title">
       <h1>{{ stay.name }}</h1>
       <div class="reviews-title flex align-center">
+
         <up-info-details :stay="stay" />
       </div>
     </div>
@@ -28,9 +29,8 @@
         <features-details />
 
 
-
         <section class="gray-box description">
-          <img class="aircover" src="../assets/icons/aircover.webp">
+          <img class="aircover" src="@/assets/icons/aircover.webp">
           <p>Every booking includes free protection from Host cancellations, listing inaccuracies, and other issues like
             trouble checking in.</p>
         </section>

@@ -3,7 +3,7 @@ export const utilService = {
     delay,
     getRandomInt,
     makeId,
-    getImageUrl
+    // getImageUrl
 
 }
 
@@ -27,11 +27,11 @@ function makeId(length = 5) {
     return txt
 }
 
-function getImageUrl(path, alt) {
-    try {
-        return new URL(`assets/${path}`, import.meta.url).href
-    } catch (err) {
-        if (alt) getImageUrl(alt);
-        return null;
-    }
-}
+// function getImageUrl(path, alt) {
+//     try {
+//         return new URL(`assets/${path}`, import.meta.url).href
+//     } catch (err) {
+//         if (alt) getImageUrl(alt);
+//         return null;
+//     }
+// }

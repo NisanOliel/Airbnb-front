@@ -1,18 +1,18 @@
 <template>
   <div class="container home">
-    <!-- <img alt="Vue logo" src="../assets/logo.png"> -->
+    <!-- <img alt="Vue logo" src="@/assets/logo.png"> -->
     <ul class="review-list">
       <li v-for="review in reviews" :key="review._id">
         <p>
           About
           <router-link :to="`user/${review.aboutUser._id}`">
-            {{review.aboutUser.fullname}}
-          </router-link> 
+            {{ review.aboutUser.fullname }}
+          </router-link>
         </p>
-        <pre>{{review.txt}}</pre>
-        <p>By 
+        <pre>{{ review.txt }}</pre>
+        <p>By
           <router-link :to="`user/${review.byUser._id}`">
-            {{review.byUser.fullname}}
+            {{ review.byUser.fullname }}
           </router-link>
         </p>
       </li>
@@ -21,8 +21,8 @@
     <form v-if="loggedInUser" @submit.prevent="addReview()">
       <h2>Your gossip:</h2>
       <select v-model="reviewToEdit.aboutUserId">
-        <option v-for="user in users" :key="user._id" :value="user._id" >
-          {{user.fullname}}
+        <option v-for="user in users" :key="user._id" :value="user._id">
+          {{ user.fullname }}
         </option>
       </select>
       <textarea placeholder="Your Opinion Matters..." v-model="reviewToEdit.txt"></textarea>
@@ -32,7 +32,7 @@
 </template>
 
 <script>
-import {showErrorMsg, showSuccessMsg} from '../services/event-bus.service'
+import { showErrorMsg, showSuccessMsg } from '../services/event-bus.service'
 export default {
   name: 'home',
   data() {
@@ -55,21 +55,21 @@ export default {
     }
   },
   created() {
-    this.$store.dispatch({type: 'loadUsers'})
-    this.$store.dispatch({type: 'loadReviews'})
+    this.$store.dispatch({ type: 'loadUsers' })
+    this.$store.dispatch({ type: 'loadReviews' })
   },
   methods: {
     async addReview() {
       try {
-        await this.$store.dispatch({type: 'addReview', review: this.reviewToEdit})
+        await this.$store.dispatch({ type: 'addReview', review: this.reviewToEdit })
         showSuccessMsg('Review added')
-        this.reviewToEdit = {txt: '', aboutUserId: null}
-      } catch(err) {
+        this.reviewToEdit = { txt: '', aboutUserId: null }
+      } catch (err) {
         showErrorMsg('Cannot add review')
       }
     }
   }
 
-  
+
 }
 </script>

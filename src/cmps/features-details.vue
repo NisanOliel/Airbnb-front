@@ -3,7 +3,7 @@
 
     <section class="flex">
       <div>
-        <img src="../assets/icons/check-in.svg" style="height: 20px;">
+        <img src="@/assets/icons/check-in.svg" style="height: 20px;">
       </div>
       <div>
         <h3>Self check-in</h3>
@@ -13,7 +13,7 @@
 
     <section class="flex">
       <div>
-        <img src="../assets/icons/location.svg" style="height: 20px;">
+        <img src="@/assets/icons/location.svg" style="height: 20px;">
       </div>
       <div>
         <h3>Great location</h3>
@@ -23,7 +23,7 @@
 
     <section class="flex">
       <div>
-        <img src="../assets/icons/cancellation.svg" style="height: 20px;">
+        <img src="@/assets/icons/cancellation.svg" style="height: 20px;">
       </div>
       <div>
         <h3>Free cancellation for 48 hours.</h3>
