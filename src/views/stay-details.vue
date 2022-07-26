@@ -30,7 +30,7 @@
 
 
         <section class="gray-box description">
-          <img class="aircover" src="../assets/icons/aircover.webp">
+          <img class="aircover" src="@/assets/icons/aircover.webp">
           <p>Every booking includes free protection from Host cancellations, listing inaccuracies, and other issues like
             trouble checking in.</p>
         </section>

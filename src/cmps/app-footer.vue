@@ -13,7 +13,7 @@
       </div>
 
       <div class="right-side flex gap bold align-center">
-        <img src="../assets/icons/en.svg" style="height: 15px;">
+        <img src="@/assets/icons/en.svg" style="height: 15px;">
         <span>English (US)</span>
         <span>$ USD</span>
         <span>Support & resources</span>

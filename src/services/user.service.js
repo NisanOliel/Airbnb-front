@@ -59,7 +59,7 @@ async function login(userCred) {
   // const user = users.find(user => user.username === userCred.username)
   const user = await httpService.post('auth/login', userCred);
   if (user) {
-    socketService.login(user._id);
+    // socketService.login(user._id);
     return saveLocalUser(user);
   }
 }
@@ -67,7 +67,7 @@ async function signup(userCred) {
   // userCred.score = 10000;
   // const user = await storageService.post('user', userCred)
   const user = await httpService.post('auth/signup', userCred);
-  socketService.login(user._id);
+  // socketService.login(user._id);
   return saveLocalUser(user);
 }
 async function logout() {

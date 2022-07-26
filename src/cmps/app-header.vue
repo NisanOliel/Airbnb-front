@@ -8,7 +8,7 @@
         <nav class="top-nav flex justify-space-between align-center">
           <router-link to="/">
             <div class="main-logo flex">
-              <div class=""><img src="src/assets/airbnb-logo.svg" /></div>
+              <div class=""><img src="@/assets/airbnb-logo.svg" /></div>
               <h1>air2b</h1>
             </div>
           </router-link>
@@ -22,11 +22,11 @@
             </el-tooltip>
 
             <el-tooltip content="Explore" placement="bottom" effect="light">
-              <a class="right-header" href="/#/explore"><img class="explore-btn" src="../assets/icons/en.svg" /></a>
+              <a class="right-header" href="/#/explore"><img class="explore-btn" src="@/assets/icons/en.svg" /></a>
             </el-tooltip>
 
             <button class="nav-btn expend flex">
-              <img class="menu-btn" src="../assets/icons/menu.svg" />
+              <img class="menu-btn" src="@/assets/icons/menu.svg" />
               <img class="host-image" src="https://randomuser.me/api/portraits/men/10.jpg" />
             </button>
           </div>
@@ -88,9 +88,14 @@ export default {
       // this.filterShow;
       this.isExpend = !this.isExpend;
     },
+<<<<<<< HEAD
+    destroyed() {
+      window.removeEventListener('scroll', this.handleScroll);
+=======
     stickHeader(entries) {
       const [entry] = entries;
       console.log('entry', entry);
+>>>>>>> 29e7bda8c125618fb0160173554256592f1bcc01
     },
     closeModal() {
       this.isShow = false;
@@ -105,6 +110,67 @@ export default {
         this.isExpend = false;
       }
 
+<<<<<<< HEAD
+    methods: {
+      expendForm() {
+        console.log('expend clickd');
+        this.isExpend = !this.isExpend;
+        // this.filterShow;
+        // if (!this.isExpend) {
+        //   this.isExpend = true;
+        // }
+      },
+      stickHeader(entries) {
+        const [entry] = entries;
+        console.log('entry', entry);
+      },
+      closeModal() {
+        this.isShow = false;
+      },
+      onClickAway() {
+        this.isShow = false;
+      },
+      handleScroll($event) {
+        // if (this.isExpend) {
+        //   this.isExpend = false;
+        // }
+
+        let pos = window.scrollY;
+        let posTop = window.scroll;
+        var lastScrollTop = 0;
+        var st = window.pageYOffset || document.documentElement.scrollTop; // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
+        if (st > lastScrollTop) {
+          // downscroll code
+          this.isSticky = true;
+
+          console.log('scroll down');
+        } else {
+          // upscroll code
+          console.log('scroll up');
+          this.isSticky = false;
+          this.isExpend = false;
+        }
+        lastScrollTop = st <= 0 ? 0 : st;
+        // if (pos === 0) {
+        //   this.isSticky = false;
+        //   this.isExpend = false;
+        // }
+
+        // if (pos > 0) {
+        //   this.isSticky = true;
+        // }
+        // if()
+        // if (this.isExpend) {
+        //   // let currPos = window.screenY;
+        //   // console.log('currpos', currPos);
+        //   // if (currPos && this.isExpend) console.log('pos', pos);
+        //   // this.isExpend = false;
+        //   // if (pos > currPos) {
+        //   //   this.isExpend = false;
+        //   // }
+        // }
+      },
+=======
       if (pos > 0) {
         this.isSticky = true;
       }
@@ -117,6 +183,7 @@ export default {
       //   //   this.isExpend = false;
       //   // }
       // }
+>>>>>>> 29e7bda8c125618fb0160173554256592f1bcc01
     },
   },
 

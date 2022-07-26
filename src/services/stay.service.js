@@ -1,15 +1,15 @@
 import { utilService } from './util.service.js';
 import { storageService } from './async-storage.service.js';
 import axios from 'axios';
-
+import { httpService } from "./http.service"
 import staysJason from '../../data/stay.json' assert { type: 'json' }
 import labelsJason from '../../data/labels.json' assert {type: 'json'}
 
 const KEY = 'staysDB';
 // const API = '//localhost:3030/api/stay/'
 
-const API = process.env.NODE_ENV !== 'development' ? '/api/stay/' : '//localhost:3030/api/stay/';
-
+// const API = process.env.NODE_ENV !== 'development' ? 'api/stay/' : 'localhost:3030/api/stay';
+const API = 'stay'
 export const stayService = {
   query,
   getById,
@@ -23,11 +23,11 @@ export const stayService = {
 
 _createstays()
 
-async function query(filterBy) {
-  const stays = storageService.query(KEY);
-
-  // return axios.get(API, { params: filterBy }).then((res) => res.data)
-  return filterStays(filterBy, await stays);
+async function query(filterBy = "") {
+  return await httpService.get(API, filterBy)
+  // const stays = storageService.query(KEY);
+  // return await axios.get(API, { params: filterBy })
+  // return filterStays(filterBy, await stays);
 }
 
 function getById(id) {
