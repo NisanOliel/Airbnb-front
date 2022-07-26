@@ -238,7 +238,7 @@ export default {
         },
         dates: {},
       },
-      loggedinUser: null,
+      // loggedinUser: null,
       fee: 1.10,
       serviceFee: null,
       daysTotal: null,
@@ -246,7 +246,8 @@ export default {
     };
   },
   created() {
-    this.loggedinUser = this.$store.getters.loggedinUser;
+    // this.loggedinUser = this.$store.getters.loggedinUser;
+    // console.log('this.loggedinUser:', this.loggedinUser)
 
   },
   computed: {
@@ -298,6 +299,9 @@ export default {
       this.trip.guests[type] += number;
     },
     sendOrder() {
+      const loggedinUser = this.$store.getters.loggedinUser;
+      if (!loggedinUser) return ElMessage.error("log in first");
+
       if (this.dateCheck === 0) return ElMessage.error('Fill check in and check out date ')
       const { adults, children, Infants } = this.trip.guests
       if (children === 0 && adults === 0) return ElMessage.error('Add guests! ')
@@ -309,8 +313,8 @@ export default {
         "hostId": this.stay.host._id,
         "createdAt": Date.now(),
         "buyer": {
-          "_id": "logininuser",   //this.loggedinUser._id
-          "fullname": "logininuser"  //this.loggedinUser.fullname
+          "_id": loggedinUser._id,
+          "fullname": loggedinUser.fullname
         },
         "totalPrice": this.totalPriceSum,
         "startDate": start,
