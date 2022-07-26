@@ -42,7 +42,7 @@ export const orderStore = {
     },
     actions: {
         loadOrders({ commit }) {
-
+            console.log('Load orders');
             orderService.query().then(orders => {
                 commit({ type: 'setOrders', orders });
             })
