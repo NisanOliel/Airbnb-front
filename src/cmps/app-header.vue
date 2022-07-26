@@ -79,7 +79,7 @@
     created() {
       window.addEventListener('scroll', this.handleScroll);
     },
-    beforeUnmount() {
+    destroyed() {
       window.removeEventListener('scroll', this.handleScroll);
     },
     computed: {
@@ -93,8 +93,11 @@
     methods: {
       expendForm() {
         console.log('expend clickd');
-        // this.filterShow;
         this.isExpend = !this.isExpend;
+        // this.filterShow;
+        // if (!this.isExpend) {
+        //   this.isExpend = true;
+        // }
       },
       stickHeader(entries) {
         const [entry] = entries;
@@ -107,15 +110,35 @@
         this.isShow = false;
       },
       handleScroll($event) {
+        // if (this.isExpend) {
+        //   this.isExpend = false;
+        // }
+
         let pos = window.scrollY;
-        if (pos === 0) {
+        let posTop = window.scroll;
+        var lastScrollTop = 0;
+        var st = window.pageYOffset || document.documentElement.scrollTop; // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
+        if (st > lastScrollTop) {
+          // downscroll code
+          this.isSticky = true;
+
+          console.log('scroll down');
+        } else {
+          // upscroll code
+          console.log('scroll up');
           this.isSticky = false;
           this.isExpend = false;
         }
+        lastScrollTop = st <= 0 ? 0 : st;
+        // if (pos === 0) {
+        //   this.isSticky = false;
+        //   this.isExpend = false;
+        // }
 
-        if (pos > 0) {
-          this.isSticky = true;
-        }
+        // if (pos > 0) {
+        //   this.isSticky = true;
+        // }
+        // if()
         // if (this.isExpend) {
         //   // let currPos = window.screenY;
         //   // console.log('currpos', currPos);

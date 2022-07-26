@@ -1,6 +1,6 @@
 <template>
   <div class="search-wrapper flex">
-    <div v-show="!isExpend" @click="expendForm" class="filter-preview flex align-center">
+    <div v-show="!filterPreview" @click="expendForm" class="filter-preview flex align-center">
       <div class="filter btn header-location">Anywhere</div>
       <div class="filter btn header-time">Any week</div>
       <div class="filter btn header-guests search" value="hellow"
@@ -8,7 +8,7 @@
       </div>
     </div>
 
-    <div v-show="isExpend" class="filter-expend flex">
+    <div v-show="filterPreview" class="filter-expend flex">
       <div class="navigation">
         <a href="http://">Stays</a>
         <a href="http://">Experiences</a>
@@ -255,7 +255,7 @@
             pets: 0,
           },
         },
-        filterPreview: true,
+        filterPreview: this.isExpend,
         showModal: false,
       };
     },
@@ -274,7 +274,7 @@
       },
       expendForm() {
         this.$emit('expendForm', this.filterPreview);
-        this.filterShow;
+        // this.filterShow;
       },
       showInitModal(ev) {
         this.toggleShowModal();
