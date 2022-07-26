@@ -10,17 +10,24 @@
       <div class="form-price">
         <h2>Price range</h2>
         <p>The average nightly price is {{ getPricesAvg }}</p>
-        <HistogramSlider @change="setPrice" :width="360" :bar-height="100" :data="prices" :clip="false" :min="1"
-          :max="800" :barGap="1" :barRadius="2" :lineHeight="2" :primaryColor="primaryColor" :labelColor="labelColor"
-          :handleColor="handleColor" :holderColor="holderColor" />
+        <HistogramSlider @change="setPrice" :bar-height="100" :data="prices" :clip="false" :min="1" :max="800"
+          :barGap="1" :barRadius="2" :lineHeight="2" :primaryColor="primaryColor" :labelColor="labelColor"
+          :holderColor="holderColor" />
         <div class="form-inputs">
           <div class="price-inner">
             <label for="min">min price</label>
-            <input name="min" @input="setFilter" v-model="filterBy.price.minPrice" type="number" min="1" />
+            <div class="flex form-input">
+              <span>$</span>
+              <input name="min" @input="setFilter" v-model="filterBy.price.minPrice" type="number" min="1" />
+            </div>
           </div>
+          <div class="between-prices">-</div>
           <div class="price-inner">
             <label for="max"> max price</label>
-            <input name="max" @input="setFilter" v-model="filterBy.price.maxPrice" type="number" max="£800" />
+            <div class="flex form-input">
+              <span>$</span>
+              <input name="max" @input="setFilter" v-model="filterBy.price.maxPrice" type="number" max="£800" />
+            </div>
           </div>
         </div>
       </div>
@@ -40,17 +47,20 @@
       <div class="form-property-type">
         <h2>Property type</h2>
         <el-radio-group text-color="#ffffff" fill="#000000" @change="setFilter" v-model="filterBy.propertyType">
-          <el-radio-button v-for="(opt, idx) in propertyType" :key="idx" :label="opt" />
+          <div class="property-type">
+            <el-radio-button v-for="(opt, idx) in propertyType" :key="idx" :label="opt" />
+          </div>
         </el-radio-group>
       </div>
       <div class="form-amenities">
-        <div>
+        <div class="form-title-amenities">
           <h2>Amenities</h2>
         </div>
-        <div class="Essentials">
+        <div class="essentials">
           <h3>Essentials</h3>
           <el-checkbox-group v-model="checkList">
-            <el-checkbox v-for="(opt, idx) in essentials" @change="setAmenities(opt, $event)" :key="idx" :label="opt" />
+              <el-checkbox v-for="(opt, idx) in essentials" @change="setAmenities(opt, $event)" :key="idx"
+                :label="opt" />
           </el-checkbox-group>
         </div>
       </div>
@@ -81,7 +91,7 @@ export default {
       language: ['English', 'German', 'French', 'Japanese'],
       essentials: ['Wifi', 'Washer', 'Air conditioning', 'Kitchen', 'Dryer'],
       prices: null,
-      checkList: ref(false),
+      checkList: ref([]),
       primaryColor: '#b0b0b0',
       holderColor: '#dddddd',
       labelColor: '#bdd6f8',
@@ -99,7 +109,6 @@ export default {
           minPrice: 1,
           maxPrice: 800,
         },
-        // checkList: ref(false),
         bedrooms: null,
         beds: null,
         amenities: [],
@@ -113,7 +122,7 @@ export default {
     },
     getStaysPrices() {
       const stays = this.$store.getters.getStays;
-      const staysPrices = stays.map(stay => stay.price);
+      const staysPrices = stays.map(stay => stay.price)
       this.prices = staysPrices;
     },
     setFilter() {
@@ -138,13 +147,13 @@ export default {
     onSaveFilters(ev, value) {
       this.$store.dispatch({ type: 'setFilteredStays' });
       this.propertyNum = this.$store.getters.getStays.length;
-
       if (ev.type === 'click') {
         this.closeForm();
       }
     },
     clearAll() {
       this.filterBy = this.getInitialFilterState();
+      this.checkList = ref([])
       this.$store.dispatch({ type: 'setFilterBy', filterBy: this.filterBy })
     },
     closeForm() {

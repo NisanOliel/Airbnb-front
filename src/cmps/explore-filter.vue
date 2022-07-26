@@ -1,6 +1,6 @@
 <template>
   <div class="search-wrapper flex">
-    <div v-show="!isExpend" @click="expendForm" class="filter-preview flex align-center">
+    <div v-show="!filterPreview" @click="expendForm" class="filter-preview flex align-center">
       <div class="filter btn header-location">Anywhere</div>
       <div class="filter btn header-time">Any week</div>
       <div class="filter btn header-guests search" value="hellow">Add guests <span><img
@@ -8,7 +8,7 @@
       </div>
     </div>
 
-    <div v-show="isExpend" class="filter-expend flex">
+    <div v-show="filterPreview" class="filter-expend flex">
       <div class="navigation">
         <a href="http://">Stays</a>
         <a href="http://">Experiences</a>
@@ -244,6 +244,50 @@ export default {
           infants: 0,
           pets: 0,
         },
+<<<<<<< HEAD
+        filterPreview: this.isExpend,
+        showModal: false,
+      };
+    },
+    methods: {
+      // handleScroll(event) {
+      //   console.log('this.filter', this.filterPreview);
+      //   if (window.scrollY === 0) {
+      //     console.log('window', window);
+      //     this.filterPreview = true;
+      //   }
+      // },
+      formSubmit() {
+        console.log('hellow');
+        let url = `/explore?location=${this.filterBy.where}`;
+        this.$router.push(url);
+      },
+      expendForm() {
+        this.$emit('expendForm', this.filterPreview);
+        // this.filterShow;
+      },
+      showInitModal(ev) {
+        this.toggleShowModal();
+        console.log('show modal', ev);
+        // this.showModal = !this.showModal
+        console.log(this.showModal);
+      },
+      dropDownMenu(ev) {
+        // this.showModal = !this.showModal;
+        this.toggleShowModal(ev);
+        console.log('dropdown');
+        console.log(this.showModal);
+      },
+      updateGuests(type, number) {
+        this.filterBy.guests[type] += number;
+      },
+      toggleShowModal(ev) {
+        this.showModal = !this.showModal;
+      },
+      onClickAway() {
+        this.showModal = false;
+=======
+>>>>>>> 29e7bda8c125618fb0160173554256592f1bcc01
       },
       filterPreview: true,
       showModal: false,
