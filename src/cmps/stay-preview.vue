@@ -26,7 +26,7 @@
         <span>{{ stay.address.city }}, {{ stay.address.country }}</span>
         <span class="stared">{{ $filters.reviewsRateAvg(stay) }} <span class="gray"> ({{ reviewsCount }})</span></span>
       </div>
-      <div class="gray">
+      <div class="name-bed">
 
         <div>{{ stay.name }} </div>
         <div>{{ stay.beds }} beds </div>
