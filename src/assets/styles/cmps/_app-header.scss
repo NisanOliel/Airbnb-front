@@ -29,7 +29,10 @@ header {
       height: 160px;
     }
   }
-
+  .container.header-bottom.flex {
+    height: 100%;
+    align-items: center;
+  }
   nav {
     height: 80px;
 
