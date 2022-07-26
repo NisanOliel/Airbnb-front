@@ -15,8 +15,7 @@
           <div class="explore-filter">
             <explore-filter :isExpend="isExpend" @expend-form="expendForm" />
           </div>
-
-          <div class="flex align-center">
+          <div class="last-section-nav">
             <el-tooltip content="Become a host" placement="bottom" effect="light">
               <a class="right-header bold become-host" href="/#/login">Become a host</a>
             </el-tooltip>
@@ -79,10 +78,7 @@
     created() {
       window.addEventListener('scroll', this.handleScroll);
     },
-    stickHeader(entries) {
-      const [entry] = entries;
-      console.log('entry', entry);
-    },
+
     closeModal() {
       this.isShow = false;
     },
@@ -95,14 +91,10 @@
     },
 
     methods: {
-      expendForm() {
+      expendForm(value) {
+        console.log('value', value);
         console.log('expend clickd');
-        // this.filterShow;
-        this.isExpend = !this.isExpend;
-      },
-      stickHeader(entries) {
-        const [entry] = entries;
-        console.log('entry', entry);
+        this.isExpend = value;
       },
       closeModal() {
         this.isShow = false;
@@ -110,7 +102,7 @@
       onClickAway() {
         this.isShow = false;
       },
-      handleScroll($event) {
+      handleScroll(ev) {
         let pos = window.scrollY;
         if (pos === 0) {
           this.isSticky = false;
@@ -120,28 +112,11 @@
         if (pos > 0) {
           this.isSticky = true;
         }
-        // if (this.isExpend) {
-        //   // let currPos = window.screenY;
-        //   // console.log('currpos', currPos);
-        //   // if (currPos && this.isExpend) console.log('pos', pos);
-        //   // this.isExpend = false;
-        //   // if (pos > currPos) {
-        //   //   this.isExpend = false;
-        //   // }
-        // }
-        if (pos > 0) {
-          this.isSticky = true;
+
+        if (this.isExpend) {
+          this.isExpend = false;
         }
       },
-      // if (this.isExpend) {
-      //   // let currPos = window.screenY;
-      //   // console.log('currpos', currPos);
-      //   // if (currPos && this.isExpend) console.log('pos', pos);
-      //   // this.isExpend = false;
-      //   // if (pos > currPos) {
-      //   //   this.isExpend = false;
-      //   // }
-      // }
     },
 
     watch: {

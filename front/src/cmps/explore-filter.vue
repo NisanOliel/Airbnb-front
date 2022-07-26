@@ -1,6 +1,6 @@
 <template>
   <div class="search-wrapper flex">
-    <div v-show="!filterPreview" @click="expendForm" class="filter-preview flex align-center">
+    <div v-show="!isExpend" @click="expendForm" class="filter-preview flex align-center">
       <div class="filter btn header-location">Anywhere</div>
       <div class="filter btn header-time">Any week</div>
       <div class="filter btn header-guests search" value="hellow"
@@ -8,7 +8,7 @@
       </div>
     </div>
 
-    <div v-show="filterPreview" class="filter-expend flex">
+    <div v-show="isExpend" class="filter-expend flex">
       <div class="navigation">
         <a href="http://">Stays</a>
         <a href="http://">Experiences</a>
@@ -255,26 +255,18 @@
             pets: 0,
           },
         },
-        filterPreview: true,
+        // filterPreview: true,
         showModal: false,
       };
     },
     methods: {
-      // handleScroll(event) {
-      //   console.log('this.filter', this.filterPreview);
-      //   if (window.scrollY === 0) {
-      //     console.log('window', window);
-      //     this.filterPreview = true;
-      //   }
-      // },
       formSubmit() {
         console.log('hellow');
         let url = `/explore?location=${this.filterBy.where}`;
         this.$router.push(url);
       },
       expendForm() {
-        this.$emit('expendForm', this.filterPreview);
-        this.filterShow;
+        this.$emit('expendForm', true);
       },
       showInitModal(ev) {
         this.toggleShowModal();
@@ -298,17 +290,5 @@
         this.showModal = false;
       },
     },
-    computed: {
-      filterShow() {
-        this.filterPreview = !this.filterPreview;
-      },
-    },
-    // created() {
-    //   window.addEventListener('scroll', this.handleScroll);
-    // },
-    // unmounted() {
-    //   // this.formSubmit();
-    //   window.addEventListener('scroll', this.handleScroll);
-    // },
   };
 </script>
