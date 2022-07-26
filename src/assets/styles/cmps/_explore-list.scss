@@ -26,7 +26,7 @@ ul {
 }
 .carousel__viewport {
   overflow: hidden;
-  padding: 11px;
+
   .carousel__prev {
     top: 50%;
     left: 0;
@@ -39,19 +39,14 @@ ul {
   flex-direction: column;
   align-items: center;
   font-size: 12px;
-  gap: 5px;
+
   cursor: pointer;
   img {
     width: 24px;
   }
 }
 
-.labels:hover {
-  border-bottom: 1px solid black;
-}
-
 .labels span {
-  padding-bottom: 14px;
 }
 .el-carousel__item {
   border-radius: 15px;
