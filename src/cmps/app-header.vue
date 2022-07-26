@@ -79,8 +79,12 @@
     created() {
       window.addEventListener('scroll', this.handleScroll);
     },
-    beforeUnmount() {
-      window.removeEventListener('scroll', this.handleScroll);
+    stickHeader(entries) {
+      const [entry] = entries;
+      console.log('entry', entry);
+    },
+    closeModal() {
+      this.isShow = false;
     },
     computed: {
       headerLocation() {
@@ -125,7 +129,19 @@
         //   //   this.isExpend = false;
         //   // }
         // }
+        if (pos > 0) {
+          this.isSticky = true;
+        }
       },
+      // if (this.isExpend) {
+      //   // let currPos = window.screenY;
+      //   // console.log('currpos', currPos);
+      //   // if (currPos && this.isExpend) console.log('pos', pos);
+      //   // this.isExpend = false;
+      //   // if (pos > currPos) {
+      //   //   this.isExpend = false;
+      //   // }
+      // }
     },
 
     watch: {

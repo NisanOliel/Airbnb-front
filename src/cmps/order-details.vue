@@ -1,7 +1,7 @@
 <template>
   <section class="order-container sticky">
     <div class="order-form-header">
-      <p><span class="cost bold">${{ stay.price }}</span> / night</p>
+      <p><span class="cost bold">${{ stay.price }}</span> night</p>
       <p class="stared">
         {{ $filters.reviewsRateAvg(stay) }} <span class="reviews"> ({{ reviewsCount }})</span></p>
     </div>
