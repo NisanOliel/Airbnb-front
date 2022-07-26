@@ -15,7 +15,7 @@ export const stayService = {
   getById,
   remove,
   save,
-  getEmptystay,
+  // getEmptystay,
   getstay,
   getLabels,
   filterStays
