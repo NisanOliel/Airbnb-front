@@ -3,6 +3,7 @@
     <div class="main-title">
       <h1>{{ stay.name }}</h1>
       <div class="reviews-title flex align-center">
+
         <up-info-details :stay="stay" />
       </div>
     </div>
@@ -26,7 +27,6 @@
         </section>
 
         <features-details />
-
 
 
         <section class="gray-box description">
