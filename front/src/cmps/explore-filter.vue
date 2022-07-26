@@ -3,8 +3,8 @@
     <div v-show="!filterPreview" @click="expendForm" class="filter-preview flex align-center">
       <div class="filter btn header-location">Anywhere</div>
       <div class="filter btn header-time">Any week</div>
-      <div class="filter btn header-guests search" value="hellow">Add guests <span><img
-            src="@/assets/search-icon.svg" /></span>
+      <div class="filter btn header-guests search" value="hellow"
+        >Add guests <span><img src="@/assets/search-icon.svg" /></span>
       </div>
     </div>
 
@@ -28,13 +28,23 @@
                 <div class="flex justify-center items-center">
                   <div class="checkin">
                     <label for="checkin">Check in</label>
-                    <input name="checkin" :value="inputValue.start" v-on="inputEvents.start" placeholder="Add dates"
-                      class="border px-2 py-1 w-32 rounded focus:outline-none focus:border-indigo-300" />
+                    <input
+                      name="checkin"
+                      :value="inputValue.start"
+                      v-on="inputEvents.start"
+                      placeholder="Add dates"
+                      class="border px-2 py-1 w-32 rounded focus:outline-none focus:border-indigo-300"
+                    />
                   </div>
                   <div class="checkout">
                     <label for="checkout">Check out</label>
-                    <input name="checkout" :value="inputValue.end" v-on="inputEvents.end" placeholder="Add dates"
-                      class="border px-2 py-1 w-32 rounded focus:outline-none focus:border-indigo-300" />
+                    <input
+                      name="checkout"
+                      :value="inputValue.end"
+                      v-on="inputEvents.end"
+                      placeholder="Add dates"
+                      class="border px-2 py-1 w-32 rounded focus:outline-none focus:border-indigo-300"
+                    />
                   </div>
                 </div>
               </template>
@@ -225,79 +235,82 @@
 </template>
 
 <script>
-// import { ref } from 'vue';
-export default {
-  emits: ['expendForm'],
-  name: 'explore-filter',
-  props: {
-    isExpend: Boolean,
-  },
-  data() {
-    return {
-      filterBy: {
-        where: '',
-        date: [],
-        guests: {
-          adults: 0,
-          children: 0,
-          infants: 0,
-          pets: 0,
+  // import { ref } from 'vue';
+  export default {
+    emits: ['expendForm'],
+    name: 'explore-filter',
+    props: {
+      isExpend: Boolean,
+    },
+    data() {
+      return {
+        filterBy: {
+          where: '',
+          date: [],
+          guests: {
+            adults: 0,
+            children: 0,
+            infants: 0,
+            pets: 0,
+          },
         },
+<<<<<<< HEAD:src/cmps/explore-filter.vue
+=======
+        filterPreview: true,
+        showModal: false,
+      };
+    },
+    methods: {
+      // handleScroll(event) {
+      //   console.log('this.filter', this.filterPreview);
+      //   if (window.scrollY === 0) {
+      //     console.log('window', window);
+      //     this.filterPreview = true;
+      //   }
+      // },
+      formSubmit() {
+        console.log('hellow');
+        let url = `/explore?location=${this.filterBy.where}`;
+        this.$router.push(url);
       },
-      filterPreview: true,
-      showModal: false,
-    };
-  },
-  methods: {
-    // handleScroll(event) {
-    //   console.log('this.filter', this.filterPreview);
-    //   if (window.scrollY === 0) {
-    //     console.log('window', window);
-    //     this.filterPreview = true;
-    //   }
+      expendForm() {
+        this.$emit('expendForm', this.filterPreview);
+        this.filterShow;
+      },
+      showInitModal(ev) {
+        this.toggleShowModal();
+        console.log('show modal', ev);
+        // this.showModal = !this.showModal
+        console.log(this.showModal);
+      },
+      dropDownMenu(ev) {
+        // this.showModal = !this.showModal;
+        this.toggleShowModal(ev);
+        console.log('dropdown');
+        console.log(this.showModal);
+      },
+      updateGuests(type, number) {
+        this.filterBy.guests[type] += number;
+      },
+      toggleShowModal(ev) {
+        this.showModal = !this.showModal;
+      },
+      onClickAway() {
+        this.showModal = false;
+>>>>>>> 66edf8ac27359a15fb308c232f165d5a73ef4ad9:front/src/cmps/explore-filter.vue
+      },
+    },
+    computed: {
+      filterShow() {
+        this.filterPreview = !this.filterPreview;
+      },
+    },
+    // created() {
+    //   window.addEventListener('scroll', this.handleScroll);
     // },
-    formSubmit() {
-      console.log('hellow');
-      let url = `/explore?location=${this.filterBy.where}`;
-      this.$router.push(url);
-    },
-    expendForm() {
-      this.$emit('expendForm', this.filterPreview);
-      this.filterShow;
-    },
-    showInitModal(ev) {
-      this.toggleShowModal();
-      console.log('show modal', ev);
-      // this.showModal = !this.showModal
-      console.log(this.showModal);
-    },
-    dropDownMenu(ev) {
-      // this.showModal = !this.showModal;
-      this.toggleShowModal(ev);
-      console.log('dropdown');
-      console.log(this.showModal);
-    },
-    updateGuests(type, number) {
-      this.filterBy.guests[type] += number;
-    },
-    toggleShowModal(ev) {
-      this.showModal = !this.showModal;
-    },
-    onClickAway() {
-      this.showModal = false;
-    },
-  },
-  computed: {
-    filterShow() {
-      this.filterPreview = !this.filterPreview;
-    },
-  },
-  // created() {
-  //   window.addEventListener('scroll', this.handleScroll);
-  // },
-  // unmounted() {
-  //   // this.formSubmit();
-  //   window.addEventListener('scroll', this.handleScroll);
-  // },
-};
+    // unmounted() {
+    //   // this.formSubmit();
+    //   window.addEventListener('scroll', this.handleScroll);
+    // },
+  };
 </script>

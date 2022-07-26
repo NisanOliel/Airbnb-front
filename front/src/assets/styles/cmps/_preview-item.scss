@@ -68,6 +68,11 @@
 
     grid-template-columns: 1fr;
     grid-gap: 6px;
+
+    .name-bed {
+      font-size: 15px;
+      color: $clr7;
+    }
   }
 
   .favorite {
@@ -81,7 +86,7 @@
   }
 
   .location-info {
-    font-size: em(16px);
+    font-size: 15px;
     font-family: 'Cereal-medium', Arial, sans-serif;
   }
 

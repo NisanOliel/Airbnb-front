@@ -30,7 +30,7 @@
 
 
         <section class="gray-box description">
-          <img class="aircover" src="@/assets/icons/aircover.webp">
+          <img class="aircover" src="../assets/icons/aircover.webp">
           <p>Every booking includes free protection from Host cancellations, listing inaccuracies, and other issues like
             trouble checking in.</p>
         </section>
@@ -76,12 +76,13 @@ export default {
       stay: null,
     };
   },
-  created() {
+  async created() {
     const { stayId } = this.$route.params;
+    const stay = await stayService.getById(stayId)
     console.log('styid', stayId);
-    stayService.getById(stayId).then(stay => {
-      this.stay = stay;
-    });
+    console.log('stay:', stay)
+    this.stay = stay;
+
   },
   methods: {
 

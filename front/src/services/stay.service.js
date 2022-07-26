@@ -15,12 +15,17 @@ export const stayService = {
   getById,
   remove,
   save,
-  getEmptystay,
+  // getEmptystay,
   getstay,
+<<<<<<< HEAD:src/services/stay.service.js
   getLabels
+=======
+  getLabels,
+  // filterStays
+>>>>>>> 66edf8ac27359a15fb308c232f165d5a73ef4ad9:front/src/services/stay.service.js
 }
 
-_createstays()
+// _createstays()
 
 async function query(filterBy = "") {
   return await httpService.get(API, filterBy)
@@ -29,50 +34,58 @@ async function query(filterBy = "") {
   // return filterStays(filterBy, await stays);
 }
 
-function getById(id) {
+async function getById(id) {
+  console.log('id:', id)
   // return axios.get(API + id).then(res => res.data);
-  return storageService.get(KEY, id)
+  console.log('`${API}/${id}`:', `${API}/${id}`)
+  return await httpService.get(`${API}/${id}`)
+  // return storageService.get(KEY, id)
 }
 
-function remove(id) {
+async function remove(id) {
   // return axios.delete(API + id).then(res => res.data);
-  return storageService.remove(KEY, id)
+  return await httpService.delete(API, id)
+
+  // return storageService.remove(KEY, id)
 }
 
-function save(stay) {
+async function save(stay) {
   if (stay._id) {
-    return axios.put(API + stay._id, stay).then(res => res.data);
+    // return axios.put(API + stay._id, stay).then(res => res.data);
+    return await httpService.put(API, stay)
+
   } else {
-    return axios.post(API, stay).then(res => res.data);
+    return await httpService.post(API, stay)
+    // return axios.post(API, stay).then(res => res.data);
   }
 
   // const savedStay = (stay._id) ? storageService.put(KEY, stay) : storageService.post(KEY, stay)
   // return savedStay
 }
 
-function getEmptystay() {
-  return {
-    _id: '',
-    name: '',
-    price: '',
-    labels: '',
-    createdAt: Date.now(),
-    inStock: false,
-    reviews: ['review 1 best 1', 'review 2 almost 1', 'review 3 far from 1'],
-  };
-}
+// function getEmptystay() {
+//   return {
+//     _id: '',
+//     name: '',
+//     price: '',
+//     labels: '',
+//     createdAt: Date.now(),
+//     inStock: false,
+//     reviews: ['review 1 best 1', 'review 2 almost 1', 'review 3 far from 1'],
+//   };
+// }
 
 function getstay(stayId) {
   return storageService.get(KEY, stayId);
 }
 
-function _createstays() {
-  let stays = JSON.parse(localStorage.getItem(KEY))
-  if (!stays || !stays.length) {
-    localStorage.setItem(KEY, JSON.stringify(staysJason))
-  }
-  return stays;
-}
+// function _createstays() {
+//   let stays = JSON.parse(localStorage.getItem(KEY))
+//   if (!stays || !stays.length) {
+//     localStorage.setItem(KEY, JSON.stringify(staysJason))
+//   }
+//   return stays;
+// }
 
 function getLabels() {
   return labelsJason
