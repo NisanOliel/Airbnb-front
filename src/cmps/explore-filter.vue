@@ -1,6 +1,6 @@
 <template>
   <div class="search-wrapper flex">
-    <div v-show="!filterPreview" @click="expendForm" class="filter-preview flex align-center">
+    <div v-show="!isExpend" @click="expendForm" class="filter-preview flex align-center">
       <div class="filter btn header-location">Anywhere</div>
       <div class="filter btn header-time">Any week</div>
       <div class="filter btn header-guests search" value="hellow"
@@ -8,7 +8,7 @@
       </div>
     </div>
 
-    <div v-show="filterPreview" class="filter-expend flex">
+    <div v-show="isExpend" class="filter-expend flex">
       <div class="navigation">
         <a href="http://">Stays</a>
         <a href="http://">Experiences</a>
@@ -19,6 +19,7 @@
           <label for="where">Where</label>
           <!-- <input name="where" @focus="showInitModal($event)" v-model="form.where" placeholder="Search destination" /> -->
           <input name="where" v-model="filterBy.where" placeholder="Search destination" />
+
           <!-- <div v-if="showModal">dflkgjldfkjgdlsfgjdfslkgjdfsljl</div> -->
         </div>
         <div class="filter-option check">
@@ -254,28 +255,18 @@
             pets: 0,
           },
         },
-<<<<<<< HEAD:src/cmps/explore-filter.vue
-=======
-        filterPreview: true,
+        // filterPreview: true,
         showModal: false,
       };
     },
     methods: {
-      // handleScroll(event) {
-      //   console.log('this.filter', this.filterPreview);
-      //   if (window.scrollY === 0) {
-      //     console.log('window', window);
-      //     this.filterPreview = true;
-      //   }
-      // },
       formSubmit() {
         console.log('hellow');
         let url = `/explore?location=${this.filterBy.where}`;
         this.$router.push(url);
       },
       expendForm() {
-        this.$emit('expendForm', this.filterPreview);
-        this.filterShow;
+        this.$emit('expendForm', true);
       },
       showInitModal(ev) {
         this.toggleShowModal();
@@ -297,20 +288,7 @@
       },
       onClickAway() {
         this.showModal = false;
->>>>>>> 66edf8ac27359a15fb308c232f165d5a73ef4ad9:front/src/cmps/explore-filter.vue
       },
     },
-    computed: {
-      filterShow() {
-        this.filterPreview = !this.filterPreview;
-      },
-    },
-    // created() {
-    //   window.addEventListener('scroll', this.handleScroll);
-    // },
-    // unmounted() {
-    //   // this.formSubmit();
-    //   window.addEventListener('scroll', this.handleScroll);
-    // },
   };
 </script>

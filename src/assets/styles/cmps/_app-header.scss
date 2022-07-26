@@ -9,7 +9,7 @@ header {
   transition: all 500ms ease-out;
   // transition-delay: 23s;
   &.sticky {
-    position: sticky;
+    position: fixed;
 
     top: -1px;
     width: 100%;
@@ -137,6 +137,9 @@ header {
     input {
       border: none;
     }
+    label {
+      display: block;
+    }
   }
 
   .filter-option:first-child {
@@ -155,11 +158,19 @@ header {
 
   .filter-option,
   .add-guest-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
   }
-
+  background: none;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  margin: 0;
+  max-width: 110px;
+  height: 48px;
+  margin-right: -20px;
+  height: none;
+  /* height: 100%; */
+  width: 124px;
+  min-height: 0px;
   .checkin,
   .checkout {
     display: flex;

@@ -17,12 +17,8 @@ export const stayService = {
   save,
   // getEmptystay,
   getstay,
-<<<<<<< HEAD:src/services/stay.service.js
-  getLabels
-=======
   getLabels,
   // filterStays
->>>>>>> 66edf8ac27359a15fb308c232f165d5a73ef4ad9:front/src/services/stay.service.js
 }
 
 // _createstays()

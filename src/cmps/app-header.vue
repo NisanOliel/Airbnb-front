@@ -1,5 +1,6 @@
 <template>
   <div v-if="isShow" class="overlay"></div>
+
   <!-- <Transition name="bounce"> </Transition> -->
   <header class="main-header flex column" :class="{ sticky: isSticky }">
     <div class="nav-wrapper" :class="{ expend: isExpend }">
@@ -14,8 +15,7 @@
           <div class="explore-filter">
             <explore-filter :isExpend="isExpend" @expend-form="expendForm" />
           </div>
-
-          <div class="flex align-center">
+          <div class="last-section-nav">
             <el-tooltip content="Become a host" placement="bottom" effect="light">
               <a class="right-header bold become-host" href="/#/login">Become a host</a>
             </el-tooltip>
@@ -35,8 +35,7 @@
 
     <div v-if="headerLocation" class="header-labels flex justify-space-between align-center">
       <div class="container header-bottom flex">
-        <explore-labels v-if="!isExplore" />
-        <div v-else class="stay-count">1234</div>
+        <explore-labels />
         <div class="stand-alone-filter">
           <button @click="isShow = !isShow" style="--filter-button_border: 1px solid var(--j-qkgmf)" type="button" class="v1tureqs dir dir-ltr"
             ><span class="i3c9txn dir dir-ltr"
@@ -67,34 +66,6 @@
   import exploreLabels from './explore-labels.vue';
   import standAloneFilter from './standAlone-filter.vue';
 
-<<<<<<< HEAD:src/cmps/app-header.vue
-export default {
-  data() {
-    return {
-      isShow: false,
-      location: false,
-      isSticky: false,
-      isExpend: false,
-      isExplore: false
-    };
-  },
-  created() {
-    window.addEventListener('scroll', this.handleScroll);
-  },
-  beforeUnmount() {
-    window.removeEventListener('scroll', this.handleScroll);
-  },
-  computed: {
-    headerLocation() {
-      let params = this.$route.params;
-      const queryString = window.location.search;
-      if (queryString.length >= 27) {
-        this.isExplore = true
-      }
-
-      let isEmpty = Object.keys(params).length === 0;
-      return isEmpty;
-=======
   export default {
     data() {
       return {
@@ -103,27 +74,13 @@ export default {
         isSticky: false,
         isExpend: false,
       };
->>>>>>> 17949f9b754b380958449cabbd7be4f1bc1af156:front/src/cmps/app-header.vue
     },
-<<<<<<< HEAD:src/cmps/app-header.vue
-  },
-
-  methods: {
-    expendForm() {
-      console.log('expend clickd');
-      // this.filterShow;
-      this.isExpend = !this.isExpend;
-      window.removeEventListener('scroll', this.handleScroll);
-=======
     created() {
       window.addEventListener('scroll', this.handleScroll);
     },
-    stickHeader(entries) {
-      const [entry] = entries;
-      console.log('entry', entry);
->>>>>>> 66edf8ac27359a15fb308c232f165d5a73ef4ad9:front/src/cmps/app-header.vue
-    },
-    stickHeader(entries) {
+
+    closeModal() {
+      this.isShow = false;
     },
     computed: {
       headerLocation() {
@@ -133,20 +90,11 @@ export default {
       },
     },
 
-<<<<<<< HEAD:src/cmps/app-header.vue
-      if (pos > 0) {
-        this.isSticky = true;
-      }
-=======
     methods: {
-      expendForm() {
+      expendForm(value) {
+        console.log('value', value);
         console.log('expend clickd');
-        // this.filterShow;
-        this.isExpend = !this.isExpend;
-      },
-      stickHeader(entries) {
-        const [entry] = entries;
-        console.log('entry', entry);
+        this.isExpend = value;
       },
       closeModal() {
         this.isShow = false;
@@ -154,7 +102,7 @@ export default {
       onClickAway() {
         this.isShow = false;
       },
-      handleScroll($event) {
+      handleScroll(ev) {
         let pos = window.scrollY;
         if (pos === 0) {
           this.isSticky = false;
@@ -164,29 +112,11 @@ export default {
         if (pos > 0) {
           this.isSticky = true;
         }
-        // if (this.isExpend) {
-        //   // let currPos = window.screenY;
-        //   // console.log('currpos', currPos);
-        //   // if (currPos && this.isExpend) console.log('pos', pos);
-        //   // this.isExpend = false;
-        //   // if (pos > currPos) {
-        //   //   this.isExpend = false;
-        //   // }
-        // }
-        if (pos > 0) {
-          this.isSticky = true;
+
+        if (this.isExpend) {
+          this.isExpend = false;
         }
       },
->>>>>>> 66edf8ac27359a15fb308c232f165d5a73ef4ad9:front/src/cmps/app-header.vue
-      // if (this.isExpend) {
-      //   // let currPos = window.screenY;
-      //   // console.log('currpos', currPos);
-      //   // if (currPos && this.isExpend) console.log('pos', pos);
-      //   // this.isExpend = false;
-      //   // if (pos > currPos) {
-      //   //   this.isExpend = false;
-      //   // }
-      // }
     },
 
     watch: {
@@ -199,25 +129,6 @@ export default {
         document.documentElement.style.overflow = 'auto';
       },
     },
-<<<<<<< HEAD:src/cmps/app-header.vue
-  },
-  mounted() {
-    // const observer = new IntersectionObserver(entries => {
-    //   const [entry] = entries;
-    //   console.log('entry', entry);
-    //   if (entry.intersectionRatio > 0) {
-    //     mainHeader.value = entry.target.getAttribute('header');
-    //   }
-    // });
-  },
-  components: {
-    exploreFilter,
-    exploreLabels,
-    standAloneFilter,
-  },
-  setup() { },
-}
-=======
     mounted() {
       // const observer = new IntersectionObserver(entries => {
       //   const [entry] = entries;
@@ -234,5 +145,4 @@ export default {
     },
     setup() {},
   };
->>>>>>> 66edf8ac27359a15fb308c232f165d5a73ef4ad9:front/src/cmps/app-header.vue
 </script>

@@ -11,10 +11,13 @@ export const stayStore = {
   },
 
   getters: {
+    getStays({ stays }) {
+      return stays;
+    },
     getLabels({ labels }) {
       return labels;
     },
-    getStays({ filterBy, stays }) {
+    getFilteredStays({ filterBy, stays }) {
 
       const loc = filterBy?.location;
       const deepStays = JSON.parse(JSON.stringify(stays));
