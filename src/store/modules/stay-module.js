@@ -84,7 +84,7 @@ export const stayStore = {
           console.log('typeMap:', typeMap);
         }
         typeMap[stay.type]++;
-      });
+      })
       return typeMap;
     },
   },
