@@ -47,7 +47,12 @@ export default {
       newUser: false,
       msg: '',
       loginCred: { username: '', password: '' },
-      signupCred: { username: '', password: '', fullname: '' },
+      signupCred: {
+        username: '',
+        password: '',
+        fullname: '',
+        imgUrl: 'https://res.cloudinary.com/nisan/image/upload/v1658872030/air2b/unprofile_ji7zus.png'
+      },
     }
   },
   computed: {

@@ -314,7 +314,8 @@ export default {
         "createdAt": Date.now(),
         "buyer": {
           "_id": loggedinUser._id,
-          "fullname": loggedinUser.fullname
+          "fullname": loggedinUser.fullname,
+          "imgUrl": loggedinUser.imgUrl
         },
         "totalPrice": this.totalPriceSum,
         "startDate": start,
