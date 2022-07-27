@@ -45,6 +45,7 @@ async function remove(id) {
 }
 
 async function save(order) {
+    console.log('order service:', order)
     // if (order._id) {
     //     return axios.put(API + order._id, order).then(res => res.data)
     // } else {
