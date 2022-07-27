@@ -15,7 +15,7 @@
         <a href="http://">Online Experiences</a>
       </div>
       <el-form :model="filterBy">
-        <div class="filter-option">
+        <div class="filter-option where">
           <label for="where">Where</label>
           <!-- <input name="where" @focus="showInitModal($event)" v-model="form.where" placeholder="Search destination" /> -->
           <input name="where" v-model="filterBy.where" placeholder="Search destination" />
@@ -236,6 +236,8 @@
 </template>
 
 <script>
+  import { eventBus } from '../services/event-bus.service';
+
   // import { ref } from 'vue';
   export default {
     emits: ['expendForm'],
@@ -257,10 +259,13 @@
         },
         // filterPreview: true,
         showModal: false,
+        isShow: false,
       };
     },
     methods: {
       formSubmit() {
+        this.isShow = !this.isShow;
+        eventBus.emit('overlay', this.isShow);
         console.log('hellow');
         let url = `/explore?location=${this.filterBy.where}`;
         this.$router.push(url);

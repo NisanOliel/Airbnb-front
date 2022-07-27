@@ -10,9 +10,9 @@
       <div class="form-price">
         <h2>Price range</h2>
         <p>The average nightly price is {{ getPricesAvg }}</p>
-        <HistogramSlider @change="setPrice" :bar-height="100" :data="prices" :clip="false" :min="1" :max="800"
-          :barGap="1" :barRadius="2" :lineHeight="2" :primaryColor="primaryColor" :labelColor="labelColor"
-          :holderColor="holderColor" />
+        <HistogramSlider :barRadius="0" @change="setPrice" :bar-height="64" :data="prices" :clip="false" :min="1"
+          :barWidth="12" :max="800" hideFromTo="true" :barGap="0.01" :lineHeight="3" :primaryColor="primaryColor"
+          :labelColor="labelColor" :holderColor="holderColor" />
         <div class="form-inputs">
           <div class="price-inner">
             <label for="min">min price</label>
@@ -39,8 +39,9 @@
           <el-radio-button v-for="(opt, idx) in numLabels" :key="idx" :label="opt" />
         </el-radio-group>
         <h3>beds</h3>
-        <el-radio-group text-color="#ffffff" fill="#000000" @change="setFilter" v-model="filterBy.beds">
-          <el-radio-button label="Any" />
+        <el-radio-group @click="changeClick" text-color="#ffffff" fill="#000000" @change="setFilter"
+          v-model="filterBy.beds">
+          <el-radio-button :class="{ activeBg: isActive }" :label="Any" />
           <el-radio-button v-for="(opt, idx) in numLabels" :key="idx" :label="opt" />
         </el-radio-group>
       </div>
@@ -133,54 +134,7 @@ export default {
       console.log(this.price);
       this.$store.dispatch({ type: 'setFilterBy', filterBy: this.filterBy });
     },
-    setAmenities(currAmenity, isChecked) {
-      if (isChecked) {
-        this.filterBy.amenities.push(currAmenity);
-      } else {
-        this.filterBy.amenities = this.filterBy.amenities.filter(amenity => amenity !== currAmenity);
-      }
-      this.$store.dispatch({ type: 'setFilterBy', filterBy: this.filterBy });
-    },
-    setLanguage(currLanguage, isChecked) {
-      if (isChecked) {
-        this.filterBy.hostLanguage.push(currLanguage);
-      } else {
-        this.filterBy.hostLanguage = this.filterBy.hostLanguage.filter(language => language !== currLanguage);
-      }
-      this.$store.dispatch({ type: 'setFilterBy', filterBy: this.filterBy });
-    },
-    onSaveFilters(ev, value) {
-      this.$store.dispatch({ type: 'setFilteredStays' });
-      this.propertyNum = this.$store.getters.getStays.length;
-      if (ev.type === 'click') {
-        this.closeForm();
-      }
-    },
-    clearAll() {
-      this.filterBy = this.getInitialFilterState();
-      this.checkList = ref([])
-      this.$store.dispatch({ type: 'setFilterBy', filterBy: this.filterBy })
-    },
-    closeForm() {
-      this.$emit('closeFilersForm');
-    },
-  },
-  // created() {
-  //   this.labels = this.$store.getters.getLabels;
-  // },
-  computed: {
-    getPricesAvg() {
-      if (!this.prices) return '0$';
-      var Sum = this.prices.reduce((a, b) => a + b);
-      Sum = Sum / this.prices.length;
-      Sum = Sum.toFixed(0);
-      return Sum + '$';
-    },
-    getStay() {
-      console.log('stays', this.$store.getters.getFilteredStays.length);
-      return this.$store.getters.getFilteredStays.length;
-    },
-  },
-  components: {},
-};
+    components: {},
+  }
+}
 </script>

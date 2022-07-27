@@ -1,15 +1,16 @@
+.host-image {
+  height: 56px;
+  width: 56px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
 .details-container {
   max-width: 1120px;
   width: 100%;
   margin: auto;
 
-  .host-image {
-    height: 56px;
-    width: 56px;
-    border-radius: 50%;
-    -o-object-fit: cover;
-    object-fit: cover;
-  }
 
   .up-info.flex {
     flex: 1;
