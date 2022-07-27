@@ -321,6 +321,7 @@ export default {
         "startDate": start,
         "endDate": end,
         "guests": {
+          "total": (adults + children + Infants),
           "adults": adults,
           "children": children,
           "Infants": Infants

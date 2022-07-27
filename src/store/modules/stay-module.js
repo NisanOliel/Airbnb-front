@@ -75,13 +75,10 @@ export const stayStore = {
       return filters;
     },
     chartLabel({ stays }) {
-      console.log('stays', stays);
       const typeMap = {};
       stays.forEach(stay => {
-        console.log('stay:', stay);
         if (!typeMap[stay.type]) {
           typeMap[stay.type] = 0;
-          console.log('typeMap:', typeMap);
         }
         typeMap[stay.type]++;
       });
