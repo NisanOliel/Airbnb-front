@@ -1,4 +1,5 @@
 <template>
+  <span class="shadow-left"></span>
   <carousel :transition="330" :items-to-show="20" snapAlign="start">
     <slide v-for="label in labels" :key="label" @click="filter(label.propertyType)">
       <div class="labels">
@@ -8,6 +9,7 @@
     </slide>
 
     <template #addons>
+      <span class="shadow-right"></span>
       <navigation />
     </template>
   </carousel>

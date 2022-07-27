@@ -55,6 +55,12 @@
 }
 @media screen and (max-width: 1600px) {
   .container {
-    width: calc(100% - 40px);
+    width: calc(100% - 318px);
+  }
+}
+
+@media screen and (max-width: 1447px) {
+  .container {
+    width: calc(100% - 80px);
   }
 }
