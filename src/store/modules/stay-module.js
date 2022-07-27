@@ -105,7 +105,9 @@ export const stayStore = {
       state.lastRemovestay = null;
     },
     setFilterBy(state, { filterBy }) {
+      console.log('blss ', filterBy);
       stayStore.state.filterBy = filterBy;
+      console.log(filterBy);
     },
     setFilteredStays(state) {
       state.filterBy = { ...state.filterBy };

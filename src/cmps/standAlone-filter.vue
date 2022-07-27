@@ -59,8 +59,7 @@
         <div class="essentials">
           <h3>Essentials</h3>
           <el-checkbox-group v-model="checkList">
-              <el-checkbox v-for="(opt, idx) in essentials" @change="setAmenities(opt, $event)" :key="idx"
-                :label="opt" />
+            <el-checkbox v-for="(opt, idx) in essentials" @change="setAmenities(opt, $event)" :key="idx" :label="opt" />
           </el-checkbox-group>
         </div>
       </div>
@@ -90,8 +89,8 @@ export default {
       propertyType: ['House', 'Apartment', 'Guesthouse', 'Hotel', 'Townhouse'],
       language: ['English', 'German', 'French', 'Japanese'],
       essentials: ['Wifi', 'Washer', 'Air conditioning', 'Kitchen', 'Dryer'],
-      prices: null,
       checkList: ref([]),
+      prices: null,
       primaryColor: '#b0b0b0',
       holderColor: '#dddddd',
       labelColor: '#bdd6f8',
@@ -109,6 +108,7 @@ export default {
           minPrice: 1,
           maxPrice: 800,
         },
+        prices: null,
         bedrooms: null,
         beds: null,
         amenities: [],
@@ -117,15 +117,20 @@ export default {
       }
     },
     setPrice(value) {
-      this.filterBy.price.minPrice = value.from;
-      this.filterBy.price.maxPrice = value.to;
+      // this.filterBy.price.minPrice = value.from;
+      // this.filterBy.price.maxPrice = value.to;
+      this.filterBy.price = {
+        minPrice: value.from,
+        maxPrice: value.to
+      }
     },
     getStaysPrices() {
       const stays = this.$store.getters.getStays;
       const staysPrices = stays.map(stay => stay.price)
-      this.prices = staysPrices;
+      this.prices = staysPrices
     },
     setFilter() {
+      console.log(this.price);
       this.$store.dispatch({ type: 'setFilterBy', filterBy: this.filterBy });
     },
     setAmenities(currAmenity, isChecked) {
