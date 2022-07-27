@@ -47,11 +47,13 @@
       </div>
     </div>
   </header>
+  <div v-if="isShow" class="overlay"></div>
 </template>
 <script>
   import exploreFilter from './explore-filter.vue';
   import exploreLabels from './explore-labels.vue';
   import standAloneFilter from './standAlone-filter.vue';
+  import { eventBus } from '../services/event-bus.service.js';
 
   export default {
     data() {
@@ -98,6 +100,8 @@
 
         if (pos > 0) {
           this.isSticky = true;
+          this.isShow = false;
+          eventBus.emit('overlay', this.isShow);
         }
 
         if (this.isExpend) {
@@ -129,6 +133,7 @@
       exploreFilter,
       exploreLabels,
       standAloneFilter,
+      eventBus,
     },
     setup() {},
   };

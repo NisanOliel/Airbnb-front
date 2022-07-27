@@ -236,6 +236,8 @@
 </template>
 
 <script>
+  import { eventBus } from '../services/event-bus.service';
+
   // import { ref } from 'vue';
   export default {
     emits: ['expendForm'],
@@ -257,10 +259,13 @@
         },
         // filterPreview: true,
         showModal: false,
+        isShow: false,
       };
     },
     methods: {
       formSubmit() {
+        this.isShow = !this.isShow;
+        eventBus.emit('overlay', this.isShow);
         console.log('hellow');
         let url = `/explore?location=${this.filterBy.where}`;
         this.$router.push(url);
