@@ -74,7 +74,7 @@ async function logout() {
   console.log("logout");
 
   sessionStorage.removeItem(STORAGE_KEY_LOGGEDIN_USER);
-  socketService.logout();
+  // socketService.logout();
   return await httpService.post('auth/logout');
 }
 
