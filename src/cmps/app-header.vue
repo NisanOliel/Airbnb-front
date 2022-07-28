@@ -8,7 +8,7 @@
         <nav class="top-nav flex justify-space-between align-center">
           <router-link to="/">
             <div class="main-logo flex">
-              <div class=""><img src="@/assets/airbnb-logo.svg" /></div>
+              <div><img class="logo-img" src="@/assets/airbnb-logo.svg" /></div>
               <h1>air2b</h1>
             </div>
           </router-link>

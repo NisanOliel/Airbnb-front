@@ -8,6 +8,8 @@ header {
   width: 100%;
   transition: all 500ms ease-out;
 
+
+
   &.sticky {
     top: 0;
     position: fixed;
@@ -22,6 +24,26 @@ header {
 
   img {
     max-height: 30px;
+  }
+
+  a {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  .main-logo {
+    h1 {
+      text-align: center;
+      font-size: 30px;
+      color: $clr2;
+      font-family: Cereal-medium;
+    }
+
+    .logo-img {
+      margin-top: 5px;
+      margin-right: 5px;
+    }
   }
 
   .header-bottom {
