@@ -69,10 +69,11 @@ li {
 }
 
 .overlay {
-  background: #00000061;
+  background: rgba(0, 0, 0, 0.3803921569);
   width: 100vw;
-  height: 100vh;
+  height: 10000vh;
   position: absolute;
   z-index: 3;
   transition: all 200ms ease-out;
+  overflow: auto;
 }

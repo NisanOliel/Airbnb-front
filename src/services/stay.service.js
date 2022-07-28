@@ -31,9 +31,7 @@ async function query(filterBy = "") {
 }
 
 async function getById(id) {
-  console.log('id:', id)
   // return axios.get(API + id).then(res => res.data);
-  console.log('`${API}/${id}`:', `${API}/${id}`)
   return await httpService.get(`${API}/${id}`)
   // return storageService.get(KEY, id)
 }

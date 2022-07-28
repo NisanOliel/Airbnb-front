@@ -7,8 +7,11 @@
             </router-link>
         </h1>
     </div>
-    <h1 v-else>My wishlist:</h1>
-    <stay-list :stays="wishStays" />
+    <h1 class="text-center" v-else>My wishlist:</h1>
+    <div class="container">
+
+        <stay-list class="container" :stays="wishStays" />
+    </div>
 </template>
 
 <script>
