@@ -148,6 +148,7 @@ export default {
       }
     },
     setPrice(value) {
+      console.log(value);
       this.filterBy.price.minPrice = value.from;
       this.filterBy.price.maxPrice = value.to;
       this.setFilter()
@@ -157,6 +158,7 @@ export default {
       const staysPrices = stays.map(stay => stay.price)
       this.prices = staysPrices
     },
+
     setFilter() {
       this.$store.dispatch({ type: 'setFilterBy', filterBy: this.filterBy });
     },
@@ -167,7 +169,7 @@ export default {
       } else {
         this.filterBy.amenities = this.filterBy.amenities.filter(amenity => amenity !== currAmenity);
       }
-      this.$store.dispatch({ type: 'setFilterBy', filterBy: this.filterBy });
+      setFilter()
     },
     setPropertyType(propertyType) {
       console.log('propertyType');
@@ -177,16 +179,19 @@ export default {
       } else {
         this.filterBy.propertyType = this.filterBy.propertyType.filter(propertyType => propertyType.selected);
       }
-      this.$store.dispatch({ type: 'setFilterBy', filterBy: this.filterBy });
+      setFilter()
     },
+
     setLanguage(currLanguage, isChecked) {
       if (isChecked) {
         this.filterBy.hostLanguage.push(currLanguage);
       } else {
         this.filterBy.hostLanguage = this.filterBy.hostLanguage.filter(language => language !== currLanguage);
       }
-      this.$store.dispatch({ type: 'setFilterBy', filterBy: this.filterBy });
+      setFilter()
     },
+
+
     onSaveFilters(ev, value) {
       this.$store.dispatch({ type: 'setFilteredStays' });
       this.propertyNum = this.$store.getters.getStays.length;
@@ -194,10 +199,12 @@ export default {
         this.closeForm();
       }
     },
+
+
     clearAll() {
       this.filterBy = this.getInitialFilterState();
       this.checkList = ref([])
-      this.$store.dispatch({ type: 'setFilterBy', filterBy: this.filterBy })
+      setFilter()
     },
     closeForm() {
       this.$emit('closeFilersForm');
@@ -215,7 +222,7 @@ export default {
       return Sum + '$';
     },
     getStay() {
-      return this.$store.getters.getFilteredStays.length;
+      return this.$store.getters.getFilteredStays.length
     },
   },
   components: {},
