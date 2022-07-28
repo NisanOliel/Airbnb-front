@@ -120,7 +120,7 @@ export default {
       propertyType: null,
       language: ['English', 'German', 'French', 'Japanese'],
       essentials: ['Wifi', 'Washer', 'Air conditioning', 'Kitchen', 'Dryer'],
-      prices: null,
+      price: null,
       checkList: ref([]),
       primaryColor: '#b0b0b0',
       holderColor: '#dddddd',
@@ -149,8 +149,15 @@ export default {
     },
     setPrice(value) {
       console.log(value);
-      this.filterBy.price.minPrice = value.from;
-      this.filterBy.price.maxPrice = value.to;
+      this.filterBy = {
+        price: {
+          minPrice: value.from,
+          maxPrice: value.to,
+        }
+      }
+      // this.filterBy.price.minPrice = value.from;
+      // this.filterBy.price.maxPrice = value.to;
+      console.log(value.from);
       this.setFilter()
     },
     getStaysPrices() {
@@ -170,7 +177,7 @@ export default {
       } else {
         this.filterBy.amenities = this.filterBy.amenities.filter(amenity => amenity !== currAmenity);
       }
-      setFilter()
+      this.setFilter()
     },
     setPropertyType(propertyType) {
       console.log('propertyType');
@@ -180,7 +187,7 @@ export default {
       } else {
         this.filterBy.propertyType = this.filterBy.propertyType.filter(propertyType => propertyType.selected);
       }
-      setFilter()
+      this.setFilter()
     },
 
     setLanguage(currLanguage, isChecked) {
@@ -189,7 +196,7 @@ export default {
       } else {
         this.filterBy.hostLanguage = this.filterBy.hostLanguage.filter(language => language !== currLanguage);
       }
-      setFilter()
+      this.setFilter()
     },
 
 
@@ -205,7 +212,7 @@ export default {
     clearAll() {
       this.filterBy = this.getInitialFilterState();
       this.checkList = ref([])
-      setFilter()
+      this.setFilter()
     },
     closeForm() {
       this.$emit('closeFilersForm');
