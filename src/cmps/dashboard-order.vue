@@ -44,15 +44,12 @@ export default {
   },
   methods: {
     approve() {
-      console.log("approved");
       // this.hostOrder.status = "approved";
-      console.log("approved2");
+      // this.$store.dispatch({ type: "updateStay", order })
       const order = JSON.parse(JSON.stringify(this.hostOrder));
-      console.log('hostOrder:', order)
       this.$store.dispatch({ type: "saveOrder", order, status: 'approved' });
     },
     decline() {
-      console.log("declined");
       // this.hostOrder.status = "declined";
       const order = JSON.parse(JSON.stringify(this.hostOrder));
       this.$store.dispatch({ type: "saveOrder", order, status: 'declined' });

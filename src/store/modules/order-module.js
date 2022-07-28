@@ -62,10 +62,7 @@ export const orderStore = {
         },
         saveOrder({ commit }, { order, status }) {
             order.status = status
-            console.log('status:', status)
-            console.log(' order.status:', order.status)
 
-            console.log('order store:', order)
             const actionType = order._id ? 'updateOrder' : 'addOrder';
             return orderService.save(order).then(savedOrder => {
                 commit({ type: actionType, order: savedOrder });
