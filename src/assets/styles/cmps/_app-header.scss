@@ -263,7 +263,6 @@ header {
   .checkout {
     max-width: 130px;
   }
-  // $classes: (where:val, checkin, checkout, guest-dropdown);
 
   @each $name in where, checkin, checkout, guest-dropdown {
     .#{$name}:is(.active-btn):hover {
@@ -274,25 +273,4 @@ header {
       border-radius: 32px;
     }
   }
-
-  //   border-radius: 32px;
-  //   @if $class != $active {
-  //     &:hover {
-  //       background: #dddddd;
-  //     }
-  //   }
-  //   body:has(.app.rtl) .blah {
-  //     some: blah;
-  //   }
-  //   // &.active-btn:hover {
-  //   //   background: white;
-  //   // }
-  // }
-
-  // @each $class in $classes, none {
-  //   $selector: 'body';
-  //   @if $class != $active {
-  //     $selector: 'body.' + $class;
-  //   }
-  // }
 }
