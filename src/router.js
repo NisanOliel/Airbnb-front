@@ -7,6 +7,7 @@ import stayDetails from './views/stay-details.vue'
 import stayExplore from './views/stay-explore.vue'
 import hostDashboard from './views/host-dashboard.vue'
 import wishList from './views/wish-list.vue'
+import becomeHost from './views/become-host.vue'
 
 
 
@@ -42,11 +43,15 @@ const routes = [
     name: 'host-dashboard',
     component: hostDashboard
   },
-
   {
     path: '/wishlist',
     name: 'wish-list',
     component: wishList
+  },
+  {
+    path: '/host/homes',
+    name: 'become-host',
+    component: becomeHost
   },
 ]
 
