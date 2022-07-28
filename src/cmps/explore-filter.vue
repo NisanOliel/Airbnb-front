@@ -15,7 +15,7 @@
         <a href="http://">Online Experiences</a>
       </div>
       <el-form :model="filterBy">
-        <div class="filter-option where">
+        <div @click="activeTab('where')" class="filter-option where" data-field="where" :class="{ 'active-btn': isExpend ? !isActive : isActive }">
           <label for="where">Where</label>
           <!-- <input name="where" @focus="showInitModal($event)" v-model="form.where" placeholder="Search destination" /> -->
           <input name="where" v-model="filterBy.where" placeholder="Search destination" />
@@ -27,7 +27,7 @@
             <v-date-picker :columns="2" v-model="filterBy.date" is-range>
               <template v-slot="{ inputValue, inputEvents }">
                 <div class="flex justify-center items-center">
-                  <div class="checkin">
+                  <div @click.native="activeTab('checkin')" class="checkin" data-field="checkin" :class="{ 'hover-btn': isExpend, 'active-btn': startActive }">
                     <label for="checkin">Check in</label>
                     <input
                       name="checkin"
@@ -37,7 +37,7 @@
                       class="border px-2 py-1 w-32 rounded focus:outline-none focus:border-indigo-300"
                     />
                   </div>
-                  <div class="checkout">
+                  <div :class="{ 'active-btn': endActive }" class="checkout" @click.native="activeTab('checkout')">
                     <label for="checkout">Check out</label>
                     <input
                       name="checkout"
@@ -52,10 +52,10 @@
             </v-date-picker>
           </div>
         </div>
-        <div class="filter-option guest-dropdown">
-          <div @click.stop="dropDownMenu($event)" class="add-guest-wrapper">
+        <div @click.native="activeTab('guest')" class="filter-option guest-dropdown" :class="{ 'active-btn': guestActive }">
+          <div data-field="guest" class="add-guest-wrapper">
             <label for="add-guest">Who</label>
-            <input disabled type="text" placeholder="Add guests" />
+            <input disabled type="text" data-field="guest" placeholder="Add guests" />
           </div>
 
           <div @click="formSubmit" class="order-container header-filter-search">
@@ -236,6 +236,7 @@
 </template>
 
 <script>
+  // import { fa } from 'element-plus/es/locale';
   import { eventBus } from '../services/event-bus.service';
 
   // import { ref } from 'vue';
@@ -260,9 +261,44 @@
         // filterPreview: true,
         showModal: false,
         isShow: false,
+        isActive: false,
+        isHover: false,
+        currentActive: false,
+        guestActive: false,
+        startActive: false,
+        endActive: false,
       };
     },
     methods: {
+      activeTab(value) {
+        console.log('the value', value);
+
+        if (value === 'where') {
+          this.isActive = false;
+          this.startActive = false;
+          this.endActive = false;
+          this.guestActive = false;
+        }
+        if (value === 'guest') {
+          this.isActive = true;
+          this.guestActive = true;
+          this.startActive = false;
+          this.endActive = false;
+        }
+
+        if (value === 'checkin') {
+          this.isActive = true;
+          this.guestActive = false;
+          this.startActive = true;
+          this.endActive = false;
+        }
+        if (value === 'checkout') {
+          this.isActive = true;
+          this.guestActive = false;
+          this.startActive = false;
+          this.endActive = true;
+        }
+      },
       formSubmit() {
         this.isShow = !this.isShow;
         eventBus.emit('overlay', this.isShow);
@@ -279,12 +315,12 @@
         // this.showModal = !this.showModal
         console.log(this.showModal);
       },
-      dropDownMenu(ev) {
-        // this.showModal = !this.showModal;
-        this.toggleShowModal(ev);
-        console.log('dropdown');
-        console.log(this.showModal);
-      },
+      // dropDownMenu(ev) {
+      //   // this.showModal = !this.showModal;
+      //   this.toggleShowModal(ev);
+      //   console.log('dropdown');
+      //   console.log(this.showModal);
+      // },
       updateGuests(type, number) {
         this.filterBy.guests[type] += number;
       },

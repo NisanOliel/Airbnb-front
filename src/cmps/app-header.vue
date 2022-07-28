@@ -101,6 +101,7 @@
         if (pos > 0) {
           this.isSticky = true;
           this.isShow = false;
+
           eventBus.emit('overlay', this.isShow);
         }
 
