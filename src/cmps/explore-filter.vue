@@ -15,7 +15,7 @@
         <a href="http://">Online Experiences</a>
       </div>
       <el-form :model="filterBy">
-        <div @click="activeTab('where')" class="filter-option where" data-field="where" :class="{ 'active-btn': isExpend ? !isActive : isActive }">
+        <div @click="activeTab('where')" class="filter-option where" data-field="where" :class="{ 'active-btn': isExpend ? isActive : !isActive }">
           <label for="where">Where</label>
           <!-- <input name="where" @focus="showInitModal($event)" v-model="form.where" placeholder="Search destination" /> -->
           <input name="where" v-model="filterBy.where" placeholder="Search destination" />
@@ -27,7 +27,12 @@
             <v-date-picker :columns="2" v-model="filterBy.date" is-range>
               <template v-slot="{ inputValue, inputEvents }">
                 <div class="flex justify-center items-center">
-                  <div @click.native="activeTab('checkin')" class="checkin" data-field="checkin" :class="{ 'hover-btn': isExpend, 'active-btn': startActive }">
+                  <div
+                    @click.native="activeTab('checkin')"
+                    class="checkin"
+                    data-field="checkin"
+                    :class="{ 'hover-btn': isExpend ? isHover : !isHover, 'active-btn': startActive }"
+                  >
                     <label for="checkin">Check in</label>
                     <input
                       name="checkin"
@@ -53,7 +58,7 @@
           </div>
         </div>
         <div @click.native="activeTab('guest')" class="filter-option guest-dropdown" :class="{ 'active-btn': guestActive }">
-          <div data-field="guest" class="add-guest-wrapper">
+          <div @click="dropDownMenu($event)" class="add-guest-wrapper">
             <label for="add-guest">Who</label>
             <input disabled type="text" data-field="guest" placeholder="Add guests" />
           </div>
@@ -171,7 +176,7 @@
     </div>
   </div>
 
-  <div v-show="showModal" v-click-away="onClickAway" class="guests-modal dropdown-card order-container">
+  <div v-if="showModal" v-click-away="onClickAway" class="guests-modal dropdown-card order-container">
     <div class="row-card">
       <div class="lft-crd">
         <span class="title-sm"> Adults</span>
@@ -261,39 +266,41 @@
         // filterPreview: true,
         showModal: false,
         isShow: false,
-        isActive: false,
-        isHover: false,
+        isActive: true,
+        isHover: true,
         currentActive: false,
         guestActive: false,
         startActive: false,
         endActive: false,
+        expend: this.isExpend,
       };
     },
     methods: {
-      activeTab(value) {
+      activeTab(value, ev) {
         console.log('the value', value);
 
         if (value === 'where') {
-          this.isActive = false;
+          this.isActive = true;
           this.startActive = false;
           this.endActive = false;
           this.guestActive = false;
         }
         if (value === 'guest') {
-          this.isActive = true;
+          this.isActive = false;
           this.guestActive = true;
           this.startActive = false;
           this.endActive = false;
         }
 
         if (value === 'checkin') {
-          this.isActive = true;
+          this.isActive = false;
           this.guestActive = false;
           this.startActive = true;
           this.endActive = false;
+          this.isHover = false;
         }
         if (value === 'checkout') {
-          this.isActive = true;
+          this.isActive = false;
           this.guestActive = false;
           this.startActive = false;
           this.endActive = true;
@@ -315,12 +322,18 @@
         // this.showModal = !this.showModal
         console.log(this.showModal);
       },
-      // dropDownMenu(ev) {
-      //   // this.showModal = !this.showModal;
-      //   this.toggleShowModal(ev);
-      //   console.log('dropdown');
-      //   console.log(this.showModal);
-      // },
+      dropDownMenu() {
+        this.showModal = true;
+
+        // if (!this.expend) {
+        //   this.showModal = false;
+        // }
+
+        // this.toggleShowModal(ev);
+        console.log('dropdown', this.expend);
+        console.log('isExpend', this.isExpend);
+        console.log(this.showModal);
+      },
       updateGuests(type, number) {
         this.filterBy.guests[type] += number;
       },
@@ -329,6 +342,20 @@
       },
       onClickAway() {
         this.showModal = false;
+      },
+    },
+    created() {
+      eventBus.on('closeModal', data => {
+        console.log('data form header expend', data);
+        this.showModal = data;
+      });
+    },
+    watch: {
+      expend: function () {
+        eventBus.on('closeModal', data => {
+          console.log('data form header expend', data);
+          this.showModal = data;
+        });
       },
     },
   };

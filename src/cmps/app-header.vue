@@ -101,8 +101,9 @@
         if (pos > 0) {
           this.isSticky = true;
           this.isShow = false;
-
+          this.isExpend = false;
           eventBus.emit('overlay', this.isShow);
+          eventBus.emit('closeModal', false);
         }
 
         if (this.isExpend) {
