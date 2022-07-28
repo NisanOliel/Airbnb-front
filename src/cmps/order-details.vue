@@ -317,7 +317,7 @@ export default {
           "fullname": loggedinUser.fullname,
           "imgUrl": loggedinUser.imgUrl
         },
-        "totalPrice": this.totalPriceSum,
+        "totalPrice": this.totalPriceWithFee,
         "startDate": start,
         "endDate": end,
         "guests": {

@@ -158,6 +158,7 @@ export default {
       this.prices = staysPrices
     },
     setFilter() {
+      console.log(' this.filterBy:', this.filterBy)
       this.$store.dispatch({ type: 'setFilterBy', filterBy: this.filterBy });
     },
 
