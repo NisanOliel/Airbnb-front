@@ -75,7 +75,14 @@ export const stayStore = {
       }
       return filters;
     },
+
+    getHostOrders({ stays }) {
+      console.log('stays:', stays)
+      return stays.filter(order => order.hostId === this.$store.getters.loggedinUser._id)
+
+    }
   },
+
   mutations: {
     setStays(state, { stays }) {
       state.stays = stays;

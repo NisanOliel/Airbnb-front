@@ -113,11 +113,21 @@ export default {
         eventBus.emit('overlay', this.isShow);
       }
 
+<<<<<<< HEAD
       if (this.isExpend) {
         this.isExpend = false;
       }
     },
   },
+=======
+        if (pos > 0) {
+          this.isSticky = true;
+          this.isShow = false;
+          this.isExpend = false;
+          eventBus.emit('overlay', this.isShow);
+          eventBus.emit('closeModal', false);
+        }
+>>>>>>> 24f54f7ce6bfd33a2e9c47957fed3aee0a009709
 
   watch: {
     isShow: function () {

@@ -1,6 +1,20 @@
 <template>
 
-  <pre>{{ hostStay }}</pre>
+  <!-- <pre>{{ hostStay }}</pre> -->
+  <tr>
+    <td><img class="stay-image" :src=imageUrl></td>
+    <td>{{ hostStay.name }}</td>
+    <td>{{ hostStay.price }}$</td>
+    <td>{{ hostStay.address.street }}</td>
+    <td>
+      <el-button><span class="material-icons-outlined">
+          edit
+        </span></el-button>
+    </td>
+
+  </tr>
+
+
 
 </template>
 
@@ -12,6 +26,8 @@ export default {
   props: { hostStay: { type: Object } },
   data() {
     return {
+      imageUrl:
+        `src/assets/Images/${this.hostStay.imgUrls[0]}`,
 
     };
   },

@@ -64,3 +64,14 @@
     width: calc(100% - 80px);
   }
 }
+@media (min-width: 1128px) {
+  .container {
+    padding-inline: 60px;
+    .list-container {
+      grid-gap: 34px 13px;
+      .preview-wrapper {
+        max-width: 300px;
+      }
+    }
+  }
+}

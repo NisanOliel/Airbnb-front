@@ -47,16 +47,16 @@
       <div class="form-property-type">
         <h2>Property type</h2>
         <!-- <el-radio-group text-color="#ffffff" fill="#000000" @change="setFilter" v-model="filterBy.propertyType"> -->
-          <!-- <div class="property-type" v-for="(opt, idx) in propertyTypes" :key="idx" :label="opt"></div> -->
-          <div class="flex">
-            <div class="property-type" v-for="propertyType in propertyTypes" :key="propertyType"  @click="setPropertyType(propertyType)" 
-                :class="{'selected-item': propertyType.selected}">
-              <div>
-                <img :src="propertyType.src" />
-                <span>{{ propertyType.propertyType }}</span>
-              </div>
+        <!-- <div class="property-type" v-for="(opt, idx) in propertyTypes" :key="idx" :label="opt"></div> -->
+        <div class="flex">
+          <div class="property-type" v-for="propertyType in propertyTypes" :key="propertyType"
+            @click="setPropertyType(propertyType)" :class="{ 'selected-item': propertyType.selected }">
+            <div>
+              <img :src="propertyType.src" />
+              <span>{{ propertyType.propertyType }}</span>
             </div>
           </div>
+        </div>
         <!-- </el-radio-group> -->
       </div>
       <div class="form-amenities">

@@ -21,9 +21,8 @@
       };
     },
     created() {
-      const testbus = eventBus.on('overlay', data => {
+      const bus = eventBus.on('overlay', data => {
         this.isShow = data;
-        console.log('data', data);
       });
     },
     components: {

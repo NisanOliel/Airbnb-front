@@ -15,7 +15,7 @@
         <a href="http://">Online Experiences</a>
       </div>
       <el-form :model="filterBy">
-        <div class="filter-option where">
+        <div @click="activeTab('where')" class="filter-option where" data-field="where" :class="{ 'active-btn': isExpend ? isActive : !isActive }">
           <label for="where">Where</label>
           <!-- <input name="where" @focus="showInitModal($event)" v-model="form.where" placeholder="Search destination" /> -->
           <input name="where" v-model="filterBy.where" placeholder="Search destination" />
@@ -27,7 +27,12 @@
             <v-date-picker :columns="2" v-model="filterBy.date" is-range>
               <template v-slot="{ inputValue, inputEvents }">
                 <div class="flex justify-center items-center">
-                  <div class="checkin">
+                  <div
+                    @click.native="activeTab('checkin')"
+                    class="checkin"
+                    data-field="checkin"
+                    :class="{ 'hover-btn': isExpend ? isHover : !isHover, 'active-btn': startActive }"
+                  >
                     <label for="checkin">Check in</label>
                     <input
                       name="checkin"
@@ -37,7 +42,7 @@
                       class="border px-2 py-1 w-32 rounded focus:outline-none focus:border-indigo-300"
                     />
                   </div>
-                  <div class="checkout">
+                  <div :class="{ 'active-btn': endActive }" class="checkout" @click.native="activeTab('checkout')">
                     <label for="checkout">Check out</label>
                     <input
                       name="checkout"
@@ -52,10 +57,10 @@
             </v-date-picker>
           </div>
         </div>
-        <div class="filter-option guest-dropdown">
-          <div @click.stop="dropDownMenu($event)" class="add-guest-wrapper">
+        <div @click.native="activeTab('guest')" class="filter-option guest-dropdown" :class="{ 'active-btn': guestActive }">
+          <div @click="dropDownMenu($event)" class="add-guest-wrapper">
             <label for="add-guest">Who</label>
-            <input disabled type="text" placeholder="Add guests" />
+            <input disabled type="text" data-field="guest" placeholder="Add guests" />
           </div>
 
           <div @click="formSubmit" class="order-container header-filter-search">
@@ -171,7 +176,7 @@
     </div>
   </div>
 
-  <div v-show="showModal" v-click-away="onClickAway" class="guests-modal dropdown-card order-container">
+  <div v-if="showModal" v-click-away="onClickAway" class="guests-modal dropdown-card order-container">
     <div class="row-card">
       <div class="lft-crd">
         <span class="title-sm"> Adults</span>
@@ -236,6 +241,7 @@
 </template>
 
 <script>
+  // import { fa } from 'element-plus/es/locale';
   import { eventBus } from '../services/event-bus.service';
 
   // import { ref } from 'vue';
@@ -260,13 +266,50 @@
         // filterPreview: true,
         showModal: false,
         isShow: false,
+        isActive: true,
+        isHover: true,
+        currentActive: false,
+        guestActive: false,
+        startActive: false,
+        endActive: false,
+        expend: this.isExpend,
       };
     },
     methods: {
+      activeTab(value, ev) {
+        console.log('the value', value);
+
+        if (value === 'where') {
+          this.isActive = true;
+          this.startActive = false;
+          this.endActive = false;
+          this.guestActive = false;
+        }
+        if (value === 'guest') {
+          this.isActive = false;
+          this.guestActive = true;
+          this.startActive = false;
+          this.endActive = false;
+        }
+
+        if (value === 'checkin') {
+          this.isActive = false;
+          this.guestActive = false;
+          this.startActive = true;
+          this.endActive = false;
+          this.isHover = false;
+        }
+        if (value === 'checkout') {
+          this.isActive = false;
+          this.guestActive = false;
+          this.startActive = false;
+          this.endActive = true;
+        }
+      },
       formSubmit() {
         this.isShow = !this.isShow;
         eventBus.emit('overlay', this.isShow);
-        console.log('hellow');
+
         let url = `/explore?location=${this.filterBy.where}`;
         this.$router.push(url);
       },
@@ -275,15 +318,11 @@
       },
       showInitModal(ev) {
         this.toggleShowModal();
-        console.log('show modal', ev);
-        // this.showModal = !this.showModal
+
         console.log(this.showModal);
       },
-      dropDownMenu(ev) {
-        // this.showModal = !this.showModal;
-        this.toggleShowModal(ev);
-        console.log('dropdown');
-        console.log(this.showModal);
+      dropDownMenu() {
+        this.showModal = true;
       },
       updateGuests(type, number) {
         this.filterBy.guests[type] += number;
@@ -293,6 +332,25 @@
       },
       onClickAway() {
         this.showModal = false;
+      },
+    },
+    created() {
+      eventBus.on('closeModal', data => {
+        console.log('data form header expend', data);
+        this.showModal = data;
+        this.isActive = true;
+        this.guestActive = false;
+        this.startActive = false;
+        this.endActive = false;
+        this.isHover = true;
+      });
+    },
+    watch: {
+      expend: function () {
+        eventBus.on('closeModal', data => {
+          console.log('data form header expend', data);
+          this.showModal = data;
+        });
       },
     },
   };

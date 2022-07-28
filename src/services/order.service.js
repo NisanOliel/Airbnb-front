@@ -24,8 +24,6 @@ export const orderService = {
 async function query(filterBy = "") {
     // return axios.get(API, { params: filterBy }).then((res) => res.data)
     // return storageService.query(KEY)
-    console.log('API:', API)
-    console.log('filterBy:', filterBy)
     return await httpService.get(API, filterBy)
 
 }
@@ -45,7 +43,6 @@ async function remove(id) {
 }
 
 async function save(order) {
-    console.log('order service:', order)
     // if (order._id) {
     //     return axios.put(API + order._id, order).then(res => res.data)
     // } else {
@@ -56,7 +53,8 @@ async function save(order) {
     // return savedOrder
     if (order._id) {
         // return axios.put(API + order._id, order).then(res => res.data);
-        return await httpService.put(API, order)
+        const data = await httpService.put(`${API}/${order._id}`, order)
+        return data
 
     } else {
         return await httpService.post(API, order)

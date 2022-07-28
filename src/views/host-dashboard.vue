@@ -1,41 +1,108 @@
 <template>
-  <div class="dashboard-container">
+  <div class="dashboard-container container">
+    <div class="logIn" v-if="!getLogInUser">
+      <h1>log in first
+        <router-link to="/login">
 
-
-    <el-button @click="showStay = !showStay">{{ stayOrder }}</el-button>
-
-    <div v-if="!loggedinUser">
-      <h1>log in first</h1>
+          <span class="under-line">click Here</span>
+        </router-link>
+      </h1>
     </div>
 
-    <div v-else v-if="orders">
-      <div v-if="!showStay">
 
-        <div class="flex">
-          <img class="host-image" :src=loggedinUser.imgUrl>
-          <h1>Hello, {{ loggedinUser.fullname }}</h1>
+
+    <div v-else>
+
+      <div class="flex justify-space-between">
+        <div class="flex column left-side">
+
+          <el-button @click="showStays"><span class="material-icons-sharp">home</span>
+            <span class="btn-dashboard">My Stays</span>
+          </el-button>
+
+          <el-button witd @click="showOrder">
+            <span class="material-icons-sharp">list_alt</span>
+            <span class="btn-dashboard">My orders</span>
+          </el-button>
         </div>
 
+        <div class="flex right-side">
+          <div class="order-box">
+            <h3>Orders</h3>
+
+            <table>
+              <tr>
+                <td>Total</td>
+                <td>Pending</td>
+                <td>Approved</td>
+                <td>Declined</td>
+              </tr>
+              <tr>
+                <td class="nums-td">{{ totalOrders }}</td>
+                <td class="nums-td">{{ pendingOrders }}</td>
+                <td class="nums-td">{{ approvedOrders }}</td>
+                <td class="nums-td">{{ declinedOrders }}</td>
+              </tr>
+            </table>
+          </div>
 
 
-        <h2>Your orders</h2>
-        <div class="head-list">
-          <span>Guest name</span>
-          <span>Stay name</span>
-          <span>Check in/out</span>
-          <span>Status</span>
-          <span>Revenue</span>
-          <span>guests</span>
-          <span>Action</span>
+          <div class="order-box">
+            <h3>Total revenues</h3>
+
+            <table>
+              <tr>
+                <td>Total</td>
+              </tr>
+              <tr>
+                <td class="nums-td">{{ totalRevenues }}$</td>
+              </tr>
+            </table>
+          </div>
+
         </div>
-
-        <dashboard-order :hostOrder="hostOrder" v-for="hostOrder in hostOrders" :key="hostOrder._id" />
       </div>
-      <!-- <pre>{{ hostStays }}</pre> -->
+
+
+      <div v-if="!showStay">
+        <table class="content-table">
+          <thead>
+            <tr>
+              <th>Guest name</th>
+              <th>Stay name</th>
+              <th>Check</th>
+              <th>Check out</th>
+              <th>Status</th>
+              <th>Revenue</th>
+              <th>guests</th>
+              <th>time</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <dashboard-order :hostOrder="hostOrder" v-for="hostOrder in hostOrders" :key="hostOrder._id" />
+          </tbody>
+        </table>
+      </div>
+
+      <div v-if="showStay">
+        <table class="content-table">
+          <thead>
+            <tr>
+              <th></th>
+              <th>Stay name</th>
+              <th>Price per night</th>
+              <th>Address</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <dashboard-stay :hostStay="hostStay" v-for="hostStay in hostStays" :key="hostStay._id" />
+          </tbody>
+        </table>
+      </div>
+
     </div>
-    <dashboard-stay v-if="showStay" :hostStay="hostStay" v-for="hostStay in hostStays" :key="hostStay._id" />
-
-
   </div>
 </template>
 
@@ -53,7 +120,6 @@ export default {
     return {
       orders: null,
       stays: null,
-      loggedinUser: null,
       hostOrders: null,
       hostStays: null,
       showStay: false
@@ -62,19 +128,81 @@ export default {
   async created() {
     this.orders = this.$store.getters.getOrders
     this.stays = this.$store.getters.getStays
-    this.loggedinUser = this.$store.getters.loggedinUser;
-    this.hostOrders = this.orders.filter(order => order.hostId === this.loggedinUser._id)
-    this.hostStays = this.stays.filter(stays => stays.host._id === this.loggedinUser._id)
+    // this.loggedinUser = this.$store.getters.loggedinUser;
+    this.hostOrders = this.orders.filter(order => order.hostId === this.getLogInUser._id)
+    this.hostStays = this.stays.filter(stays => stays.host._id === this.getLogInUser._id)
 
   },
 
   computed: {
+    getLogInUser() {
+      return this.$store.getters.loggedinUser
+    },
     stayOrder() {
-      if (!this.showStay) return 'Show stays'
-      if (this.showStay) return 'Show orders'
-    }
+      if (!this.showStay) return 'Show my stays'
+      if (this.showStay) return 'Show my orders'
+    },
+    totalOrders() {
+      return this.hostOrders.length;
+    },
+    pendingOrders() {
+      var ordersCount = 0;
+      if (this.hostOrders.length > 0) {
+        this.hostOrders.forEach((order) => {
+          if (order.status === "pending") {
+            ordersCount++;
+          }
+        });
+        return ordersCount;
+      }
+    },
+    approvedOrders() {
+      var ordersCount = 0;
+      if (this.hostOrders.length > 0) {
+        this.hostOrders.forEach((order) => {
+          if (order.status === "approved") {
+            ordersCount++;
+          }
+        });
+        return ordersCount;
+      }
+    },
+    declinedOrders() {
+      var ordersCount = 0;
+      if (this.hostOrders.length > 0) {
+        this.hostOrders.forEach((order) => {
+          if (order.status === "declined") {
+            ordersCount++;
+          }
+        });
+        return ordersCount;
+      }
+    },
+
+    totalRevenues() {
+      var prices = []
+      if (this.hostOrders.length > 0) {
+        this.hostOrders.forEach((order) => {
+          prices.push(order.totalPrice);
+        });
+        var sum = prices.reduce((sum, price) => sum + price, 0)
+        return sum.toLocaleString();
+      }
+
+    },
+
   },
+  methods: {
+    showStays() {
+      this.showStay = true
+    },
+    showOrder() {
+      this.showStay = false
+    },
+
+  }
 
 
 }
 </script>
+

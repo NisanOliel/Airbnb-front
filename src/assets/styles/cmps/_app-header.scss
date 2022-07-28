@@ -11,6 +11,12 @@ header {
   &.sticky {
     top: 0;
     position: fixed;
+    box-shadow: 0px 0px 7px 1px #80808087;
+    transition: all 300ms ease-out;
+    .header-bottom {
+      padding-block-start: 0;
+      transition: all 300ms ease-out;
+    }
   }
 
   img {
@@ -21,7 +27,8 @@ header {
     height: 78px;
     box-sizing: content-box;
     padding-block-start: 20px;
-    padding-block-end: 20px;
+    transition-delay: 100ms;
+    transition: all 200ms ease-out;
     align-items: center;
   }
 
@@ -31,7 +38,13 @@ header {
   //   margin-block-end: 7px;
   //   position: relative;
   // }
+  .labels-wrap {
+    max-width: 260px;
 
+    div {
+      text-align: initial;
+    }
+  }
   .labels {
     gap: 13px;
     height: 70px;
@@ -41,6 +54,17 @@ header {
     span {
       color: rgb(83 83 83 / 35%);
     }
+  }
+
+  .checkin,
+  .checkout,
+  .add-guest-wrapper,
+  .filter-option.where {
+    padding: 14px 24px;
+  }
+
+  .add-guest-wrapper {
+    max-width: 139px;
   }
 
   .labels:hover::after {
@@ -137,6 +161,7 @@ header {
   .filter-option input {
     outline: none;
     border: none;
+    background: none;
   }
 
   .filter-option.guest-dropdown {
@@ -150,7 +175,7 @@ header {
 
   form.el-form.el-form--default.el-form--label-right {
     border: 1px solid #dddddd;
-    background-color: white;
+    background-color: #ebebeb;
     border-radius: 32px;
     height: 66px;
     display: flex;
@@ -171,9 +196,32 @@ header {
     gap: 33px;
   }
 
+<<<<<<< HEAD
+=======
+  .active-btn {
+    cursor: pointer;
+    background-clip: padding-box;
+    border: 1px solid transparent;
+    border-radius: 32px;
+    box-shadow: 0px 12px 30px 0px rgb(128 128 128 / 33%);
+    background: white !important;
+
+    outline: solid;
+    outline-color: white;
+    z-index: 3;
+
+    outline-width: 1px;
+    width: auto;
+    box-sizing: border-box;
+  }
+
+  .hover-btn {
+    background: #dddddd;
+    border-radius: 32px;
+  }
+
+>>>>>>> 24f54f7ce6bfd33a2e9c47957fed3aee0a009709
   .filter-option {
-    /* padding: 14px 32px; */
-    /* box-sizing: border-box; */
     cursor: pointer;
     background-clip: padding-box;
     border: 1px solid transparent;
@@ -182,15 +230,11 @@ header {
   }
 
   .filter-option.check {
-    flex: 1;
   }
 
   /* flex: 2; */
   .filter-option.where {
-    /* flex: 2; *
-        /* flex: 2; */
-    width: 300px;
-    padding-inline-start: 30px;
+    min-width: 328px;
   }
 
   .filter-option.guest-dropdown {
@@ -200,12 +244,12 @@ header {
   }
 
   .filter-option:after {
-    width: 1px;
-    content: '';
-    height: 39px;
-    background: #80808047;
-    position: absolute;
-    right: 34px;
+    // width: 1px;
+    // content: '';
+    // height: 39px;
+    // background: #80808047;
+    // position: absolute;
+    // right: 34px;
   }
 
   .filter-option {
@@ -240,18 +284,47 @@ header {
   }
 
   .filter-option.guest-dropdown {
-    display: flex;
-    align-items: center;
-    padding-right: 8px;
-    flex: 1;
     flex-direction: row;
   }
 
-  .filter-option.where {
-    width: 300px;
-    padding-inline-start: 30px;
+  .checkin,
+  .checkout {
+    max-width: 130px;
   }
+  // $classes: (where:val, checkin, checkout, guest-dropdown);
+
+  @each $name in where, checkin, checkout, guest-dropdown {
+    .#{$name}:is(.active-btn):hover {
+      background-color: white;
+    }
+    .#{$name}:not(.active-btn):hover {
+      background: #dddddd;
+      border-radius: 32px;
+    }
+  }
+
+  //   border-radius: 32px;
+  //   @if $class != $active {
+  //     &:hover {
+  //       background: #dddddd;
+  //     }
+  //   }
+  //   body:has(.app.rtl) .blah {
+  //     some: blah;
+  //   }
+  //   // &.active-btn:hover {
+  //   //   background: white;
+  //   // }
+  // }
+
+  // @each $class in $classes, none {
+  //   $selector: 'body';
+  //   @if $class != $active {
+  //     $selector: 'body.' + $class;
+  //   }
+  // }
 }
+<<<<<<< HEAD
 
 //     top: -1px;
 //     width: 100%;
@@ -518,3 +591,5 @@ header {
 //     background-color: rgba(248, 237, 237, 0.705);
 //   }
 // }
+=======
+>>>>>>> 24f54f7ce6bfd33a2e9c47957fed3aee0a009709
