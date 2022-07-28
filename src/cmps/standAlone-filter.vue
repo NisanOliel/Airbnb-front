@@ -46,9 +46,18 @@
       </div>
       <div class="form-property-type">
         <h2>Property type</h2>
-        <el-radio-group text-color="#ffffff" fill="#000000" @change="setFilter" v-model="filterBy.propertyType">
-          <el-radio-button v-for="(opt, idx) in propertyType" :key="idx" :label="opt" class="property-type" />
-        </el-radio-group>
+        <!-- <el-radio-group text-color="#ffffff" fill="#000000" @change="setFilter" v-model="filterBy.propertyType"> -->
+          <!-- <div class="property-type" v-for="(opt, idx) in propertyTypes" :key="idx" :label="opt"></div> -->
+          <div class="flex">
+            <div class="property-type" v-for="propertyType in propertyTypes" :key="propertyType"  @click="setPropertyType(propertyType)" 
+                :class="{'selected-item': propertyType.selected}">
+              <div>
+                <img :src="propertyType.src" />
+                <span>{{ propertyType.propertyType }}</span>
+              </div>
+            </div>
+          </div>
+        <!-- </el-radio-group> -->
       </div>
       <div class="form-amenities">
         <div class="form-title-amenities">
@@ -72,7 +81,7 @@
     </div>
     <div class="form-footer">
       <button @click="clearAll()">Clear all</button>
-      <button @click="onSaveFilters($event)">Show stays {{ getStay }}</button>
+      <button @click="onSaveFilters($event)">Show {{ getStay }} stays</button>
     </div>
   </form>
 </template>
@@ -83,8 +92,30 @@ export default {
   data() {
     return {
       filterBy: this.getInitialFilterState(),
-      numLabels: [0, 1, 2, 3, 4, 5, 6, 7, 8],
-      propertyType: ['House', 'Apartment', 'Guesthouse', 'Hotel', 'Townhouse'],
+      numLabels: [0, 1, 2, 3, 4, 5, 6, 7, `${8}+`],
+      propertyTypes: [
+        {
+          "propertyType": "House",
+          "src": "src/assets/app-filter-img/house.jpg",
+          "selected": false,
+        },
+        {
+          "propertyType": "Apartment",
+          "src": "src/assets/app-filter-img/Apartment.jpg",
+          "selected": false,
+        },
+        {
+          "propertyType": "Guesthouse",
+          "src": "src/assets/app-filter-img/Guesthouse.jpg",
+          "selected": false,
+        },
+        {
+          "propertyType": "Hotel",
+          "src": "src/assets/app-filter-img/Hotel.jpg",
+          "selected": false,
+        }
+      ],
+      propertyType: null,
       language: ['English', 'German', 'French', 'Japanese'],
       essentials: ['Wifi', 'Washer', 'Air conditioning', 'Kitchen', 'Dryer'],
       prices: null,
@@ -98,6 +129,7 @@ export default {
   },
   created() {
     this.getStaysPrices();
+    this.labels = this.$store.getters.getLabels;
   },
   methods: {
     getInitialFilterState() {
@@ -110,7 +142,7 @@ export default {
         beds: null,
         amenities: [],
         hostLanguage: [],
-        propertyType: null,
+        propertyType: [],
       }
     },
     setPrice(value) {
@@ -119,7 +151,6 @@ export default {
     },
     getStaysPrices() {
       const stays = this.$store.getters.getStays
-      console.log(stays)
       const staysPrices = stays.map(stay => stay.price)
       this.prices = staysPrices
     },
@@ -135,7 +166,16 @@ export default {
       }
       this.$store.dispatch({ type: 'setFilterBy', filterBy: this.filterBy });
     },
-
+    setPropertyType(propertyType) {
+      console.log('propertyType');
+      propertyType.selected = !propertyType?.selected;
+      if (propertyType.selected) {
+        this.filterBy.propertyType.push(propertyType.propertyType);
+      } else {
+        this.filterBy.propertyType = this.filterBy.propertyType.filter(propertyType => propertyType.selected);
+      }
+      this.$store.dispatch({ type: 'setFilterBy', filterBy: this.filterBy });
+    },
     setLanguage(currLanguage, isChecked) {
       if (isChecked) {
         this.filterBy.hostLanguage.push(currLanguage);
@@ -172,7 +212,6 @@ export default {
       return Sum + '$';
     },
     getStay() {
-      console.log('stays', this.$store.getters.getFilteredStays.length);
       return this.$store.getters.getFilteredStays.length;
     },
   },

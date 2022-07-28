@@ -47,6 +47,10 @@ export const stayStore = {
             }
             break;
           case 'propertyType':
+            if (value.length > 0) {
+              filters = filters.filter(stay => value.includes(stay.propertyType))
+            }
+            break;
           case 'label':
             if (value) {
               const filteredStays = filters.filter(stay => stay.propertyType.includes(value));
@@ -69,23 +73,7 @@ export const stayStore = {
             break;
         }
       }
-
-      // console.log('filter by explore', filters);
-
       return filters;
-    },
-    chartLabel({ stays }) {
-      console.log('stays', stays);
-      const typeMap = {};
-      stays.forEach(stay => {
-        console.log('stay:', stay);
-        if (!typeMap[stay.type]) {
-          typeMap[stay.type] = 0;
-          console.log('typeMap:', typeMap);
-        }
-        typeMap[stay.type]++;
-      })
-      return typeMap;
     },
   },
   mutations: {
@@ -105,17 +93,12 @@ export const stayStore = {
       state.lastRemovestay = null;
     },
     setFilterBy(state, { filterBy }) {
-      console.log('blss ', filterBy);
-      stayStore.state.filterBy = filterBy;
-      console.log(filterBy);
+      state.filterBy = filterBy;
     },
     setFilteredStays(state) {
       state.filterBy = { ...state.filterBy };
     },
-    markStay(state, { stayId }) {
-      const stay = state.stays.find(stay => stay._id === stayId);
-      stay.inStock = !stay.inStock;
-    },
+
     addStay(state, { stay }) {
       state.stays.push(stay);
     },
@@ -151,11 +134,7 @@ export const stayStore = {
         return savedStay;
       });
     },
-    markStay({ commit, state }, { stayId }) {
-      commit({ type: 'markStay', stayId });
-      const stay = state.stays.find(stay => stay._id === stayId);
-      stayService.save(stay);
-    },
+
     getStayById(context, { stayId }) {
       return stayService.getById(stayId);
     },

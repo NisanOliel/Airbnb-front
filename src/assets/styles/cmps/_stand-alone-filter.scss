@@ -18,7 +18,7 @@
 
 .form-wrapper {
   position: relative;
-  height: 71%;
+  height: 72%;
   padding: 0 24px;
   overflow-y: auto;
 }
@@ -74,12 +74,31 @@ h2 {
   border-bottom: $border;
 }
 
+
+.form-property-type {
+  padding-bottom: 45px;
+}
+
 .form-rooms-and-beds h2 {
   padding-bottom: 24px;
 }
 
 .form-price h2 {
   margin-bottom: 9px;
+}
+
+.form-title-amenities h2,
+.form-property-type h2 {
+  padding-bottom: 24px;
+}
+
+
+.form-host-language .el-checkbox-group {
+  padding-top: 20px;
+}
+
+.form-host-language {
+  padding: 32px 0;
 }
 
 .essentials h3 {
@@ -184,6 +203,37 @@ span.el-radio-button__inner {
   font-size: 16px;
 }
 
+
+
+.property-type {
+  border: 1px solid;
+  width: 165.75px;
+  height: 120px;
+  margin-right: 13px;
+  border-radius: 11px;
+  border: 1px solid rgba(176, 176, 176, 0.5);
+  position: relative;
+  cursor: pointer;
+}
+
+
+.property-type img {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
+.property-type span {
+  font-size: 13px;
+  position: absolute;
+  bottom: 20px;
+  left: 17px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -242,7 +292,7 @@ label {
   display: flex;
   width: 100%;
   justify-content: space-between;
-  height: 50px;
+  height: 83px;
   background: white;
   align-items: center;
 }
@@ -271,4 +321,8 @@ span.el-checkbox__inner {
 label.activeBg span {
   background-color: black;
   color: #ffffff;
+}
+
+.selected-item {
+  border: 2px solid black;
 }
