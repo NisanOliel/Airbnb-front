@@ -46,6 +46,15 @@
         <div class="header-bottom flex justify-space-between">
           <explore-labels />
           <div class="stand-alone-filter">
+            <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation"
+              focusable="false" style="display: block; height: 14px; width: 14px; fill: currentcolor;">
+              <path
+                d="M5 8c1.306 0 2.418.835 2.83 2H14v2H7.829A3.001 3.001 0 1 1 5 8zm0 2a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm6-8a3 3 0 1 1-2.829 4H2V4h6.17A3.001 3.001 0 0 1 11 2zm0 2a1 1 0 1 0 0 2 1 1 0 0 0 0-2z">
+              </path>
+            </svg>
+            <path
+              d="M5 8c1.306 0 2.418.835 2.83 2H14v2H7.829A3.001 3.001 0 1 1 5 8zm0 2a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm6-8a3 3 0 1 1-2.829 4H2V4h6.17A3.001 3.001 0 0 1 11 2zm0 2a1 1 0 1 0 0 2 1 1 0 0 0 0-2z">
+            </path>
             <a @click="isShow = !isShow">Filter</a>
             <standAlone-filter @closeFilersForm="closeModal" v-if="isShow" v-click-away="onClickAway" />
           </div>
@@ -78,6 +87,9 @@ export default {
   },
 
 
+  closeModal() {
+    this.isShow = false;
+  },
   computed: {
     headerLocation() {
       let params = this.$route.params;
@@ -117,6 +129,9 @@ export default {
       this.isShow = false;
       this.showMenu = false
     },
+    onClickAway() {
+      this.isShow = false;
+    },
     handleScroll(ev) {
       let pos = window.scrollY;
       if (pos === 0) {
@@ -130,6 +145,7 @@ export default {
         this.isExpend = false;
         eventBus.emit('overlay', this.isShow);
         eventBus.emit('closeModal', false);
+        eventBus.emit('overlay', this.isShow);
       }
 
       if (this.isExpend) {
@@ -147,24 +163,34 @@ export default {
         return;
       }
 
-      document.documentElement.style.overflow = 'auto';
     },
-  },
-  mounted() {
-    // const observer = new IntersectionObserver(entries => {
-    //   const [entry] = entries;
-    //   console.log('entry', entry);
-    //   if (entry.intersectionRatio > 0) {
-    //     mainHeader.value = entry.target.getAttribute('header');
-    //   }
-    // });
-  },
-  components: {
-    exploreFilter,
-    exploreLabels,
-    standAloneFilter,
-    eventBus,
-  },
-  setup() { },
-};
+
+    watch: {
+      isShow: function () {
+        if (this.isShow) {
+          document.documentElement.style.overflow = 'hidden';
+          return;
+        }
+
+        document.documentElement.style.overflow = 'auto';
+      },
+    },
+    mounted() {
+      // const observer = new IntersectionObserver(entries => {
+      //   const [entry] = entries;
+      //   console.log('entry', entry);
+      //   if (entry.intersectionRatio > 0) {
+      //     mainHeader.value = entry.target.getAttribute('header');
+      //   }
+      // });
+    },
+    components: {
+      exploreFilter,
+      exploreLabels,
+      standAloneFilter,
+      eventBus,
+    },
+    setup() { },
+  }
+}
 </script>

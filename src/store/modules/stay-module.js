@@ -47,6 +47,10 @@ export const stayStore = {
             }
             break;
           case 'propertyType':
+            if (value.length > 0) {
+              filters = filters.filter(stay => value.includes(stay.propertyType))
+            }
+            break;
           case 'label':
             if (value) {
               const filteredStays = filters.filter(stay => stay.propertyType.includes(value));
@@ -69,8 +73,6 @@ export const stayStore = {
             break;
         }
       }
-
-
       return filters;
     },
 
@@ -98,7 +100,7 @@ export const stayStore = {
       state.lastRemovestay = null;
     },
     setFilterBy(state, { filterBy }) {
-      stayStore.state.filterBy = filterBy;
+      state.filterBy = filterBy;
     },
     setFilteredStays(state) {
       state.filterBy = { ...state.filterBy };

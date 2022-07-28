@@ -3,8 +3,8 @@
     <img v-for="image in  images" :key="image" class="img-container clean-list" :src="image" />
   </section>
 </template>
-
 <script>
+
 export default {
   name: "gallery-details",
   props: {
