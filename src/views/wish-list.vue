@@ -1,16 +1,20 @@
 <template>
-    <div class="logIn" v-if="!loggedinUser">
-        <h1>log in first
-            <router-link to="/login">
+    <div v-if="!stays"><img src="../assets/icons/loader.gif" alt="" srcset=""></div>
+    <div v-else>
 
-                <span class="under-line">click Here</span>
-            </router-link>
-        </h1>
-    </div>
-    <h1 class="text-center" v-else>My wishlist:</h1>
-    <div class="container">
+        <div class="logIn" v-if="!loggedinUser">
+            <h1>log in first
+                <router-link to="/login">
 
-        <stay-list class="container" :stays="wishStays" />
+                    <span class="under-line">click Here</span>
+                </router-link>
+            </h1>
+        </div>
+        <h1 class="text-center" v-else>My wishlist:</h1>
+        <div class="container">
+
+            <stay-list class="container" :stays="wishStays" />
+        </div>
     </div>
 </template>
 

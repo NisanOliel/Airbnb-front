@@ -8,26 +8,26 @@
 </template>
 
 <script>
-  import stayPreview from '../cmps/stay-preview.vue';
-  import { eventBus } from '../services/event-bus.service.js';
-  export default {
-    name: 'stay-list',
-    props: {
-      stays: Array,
-    },
-    data() {
-      return {
-        isShow: false,
-      };
-    },
-    created() {
-      const bus = eventBus.on('overlay', data => {
-        this.isShow = data;
-      });
-    },
-    components: {
-      stayPreview,
-      eventBus,
-    },
-  };
+import stayPreview from '../cmps/stay-preview.vue';
+import { eventBus } from '../services/event-bus.service.js';
+export default {
+  name: 'stay-list',
+  props: {
+    stays: Array,
+  },
+  data() {
+    return {
+      isShow: false,
+    };
+  },
+  created() {
+    const bus = eventBus.on('overlay', data => {
+      this.isShow = data;
+    });
+  },
+  components: {
+    stayPreview,
+    eventBus,
+  },
+};
 </script>

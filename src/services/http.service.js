@@ -29,10 +29,10 @@ async function ajax(endpoint, method = 'GET', data = null) {
       method,
       data,
       params: method === 'GET' ? data : null,
-      headers: {
-        'Access-Control-Allow-Origin': true,
-        'Content-Type': 'application/json',
-      },
+      // headers: {
+      //   'Access-Control-Allow-Origin': true,
+      //   'Content-Type': 'application/json',
+      // },
     });
     return res.data;
   } catch (err) {
