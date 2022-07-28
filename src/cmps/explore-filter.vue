@@ -309,7 +309,7 @@
       formSubmit() {
         this.isShow = !this.isShow;
         eventBus.emit('overlay', this.isShow);
-        console.log('hellow');
+
         let url = `/explore?location=${this.filterBy.where}`;
         this.$router.push(url);
       },
@@ -318,21 +318,11 @@
       },
       showInitModal(ev) {
         this.toggleShowModal();
-        console.log('show modal', ev);
-        // this.showModal = !this.showModal
+
         console.log(this.showModal);
       },
       dropDownMenu() {
         this.showModal = true;
-
-        // if (!this.expend) {
-        //   this.showModal = false;
-        // }
-
-        // this.toggleShowModal(ev);
-        console.log('dropdown', this.expend);
-        console.log('isExpend', this.isExpend);
-        console.log(this.showModal);
       },
       updateGuests(type, number) {
         this.filterBy.guests[type] += number;
@@ -348,6 +338,11 @@
       eventBus.on('closeModal', data => {
         console.log('data form header expend', data);
         this.showModal = data;
+        this.isActive = true;
+        this.guestActive = false;
+        this.startActive = false;
+        this.endActive = false;
+        this.isHover = true;
       });
     },
     watch: {
