@@ -56,7 +56,9 @@ async function save(order) {
     // return savedOrder
     if (order._id) {
         // return axios.put(API + order._id, order).then(res => res.data);
-        return await httpService.put(API, order)
+        const data = await httpService.put(`${API}/${order._id}`, order)
+        console.log(data);
+        return data
 
     } else {
         return await httpService.post(API, order)
