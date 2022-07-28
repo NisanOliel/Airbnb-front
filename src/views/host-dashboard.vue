@@ -55,7 +55,7 @@
                 <td>Total</td>
               </tr>
               <tr>
-                <td class="nums-td">{{ totalRevenues }}</td>
+                <td class="nums-td">{{ totalRevenues }}$</td>
               </tr>
             </table>
           </div>

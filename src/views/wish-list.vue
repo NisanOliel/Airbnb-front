@@ -36,7 +36,6 @@ export default {
             var stays = [];
             this.stays.forEach((stay) => {
                 if (this.loggedinUser.wishList.includes(stay._id)) {
-                    console.log("adding", stay._id);
                     stays.push(stay);
                 }
             });

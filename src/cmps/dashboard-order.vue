@@ -10,8 +10,17 @@
     <td>{{ hostOrder.guests.total }}</td>
     <td>{{ new Date(hostOrder.createdAt).toLocaleString() }}</td>
     <td>
-      <el-button @click.prevent="approve" size="small" type="success">Aprrove</el-button>
-      <el-button @click.prevent="decline" size="small" type="danger">Decline</el-button>
+      <el-button v-if="hostOrder.status === 'pending'" @click.prevent="approve" size="small" type="success">Aprrove
+      </el-button>
+      <el-button v-if="hostOrder.status === 'pending'" @click.prevent="decline" size="small" type="danger">Decline
+      </el-button>
+      <el-button v-if="hostOrder.status === 'declined'" @click.prevent="approve" size="small" type="success">Aprrove
+      </el-button>
+      <el-button v-if="hostOrder.status === 'approved'" @click.prevent="decline" size="small" type="danger">Decline
+      </el-button>
+
+
+
     </td>
   </tr>
 
