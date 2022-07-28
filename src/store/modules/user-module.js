@@ -24,8 +24,6 @@ export const userStore = {
   },
   mutations: {
     setLoggedinUser(state, { user }) {
-      console.log(user);
-      // Yaron: needed this workaround as for score not reactive from birth
       state.loggedinUser = user ? { ...user } : null;
     },
     setWatchedUser(state, { user }) {
