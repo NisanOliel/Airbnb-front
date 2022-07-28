@@ -64,7 +64,7 @@
     width: calc(100% - 80px);
   }
 }
-@media (min-width: 1128px) {
+@media (max-width: 1128px) {
   .container {
     padding-inline: 60px;
     .list-container {

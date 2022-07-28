@@ -8,8 +8,6 @@ header {
   width: 100%;
   transition: all 500ms ease-out;
 
-
-
   &.sticky {
     top: 0;
     position: fixed;
@@ -103,7 +101,7 @@ header {
     right: 0;
   }
 
-  .labels:hover>* {
+  .labels:hover > * {
     opacity: 1;
     color: black;
     font-size: 'Cereal-medium';
@@ -125,14 +123,23 @@ header {
   }
 
   .stand-alone-filter {
-    flex: 1;
     display: flex;
     justify-content: center;
-    padding: 10px;
-    border: 1px solid gray;
+    padding: 5px 0px;
+    border: 1px solid #dddddd;
     max-width: 90px;
-    border-radius: 6px;
+    border-radius: 12px;
     text-align: -webkit-left;
+    align-items: center;
+    gap: 2px;
+    box-sizing: border-box;
+    height: 48px;
+    max-width: 90px;
+    width: 100%;
+  }
+
+  .stand-alone-filter a {
+    font-size: 12px;
   }
 
   .header-bottom.flex.justify-space-between {
@@ -248,7 +255,8 @@ header {
     height: 66px;
   }
 
-  .filter-option.check {}
+  .filter-option.check {
+  }
 
   /* flex: 2; */
   .filter-option.where {
@@ -283,7 +291,9 @@ header {
     color: rgb(34, 34, 34);
   }
 
-  a: first-child {}
+  a: first-child {
+
+  }
 
   .content.filter-content button {
     display: flex;
@@ -312,10 +322,7 @@ header {
 
   // $classes: (where:val, checkin, checkout, guest-dropdown);
 
-  @each $name in where,
-  checkin,
-  checkout,
-  guest-dropdown {
+  @each $name in where, checkin, checkout, guest-dropdown {
     .#{$name}:is(.active-btn):hover {
       background-color: white;
     }
@@ -326,26 +333,18 @@ header {
     }
   }
 
-  //   border-radius: 32px;
-  //   @if $class != $active {
-  //     &:hover {
-  //       background: #dddddd;
-  //     }
-  //   }
-  //   body:has(.app.rtl) .blah {
-  //     some: blah;
-  //   }
-  //   // &.active-btn:hover {
-  //   //   background: white;
-  //   // }
-  // }
+  .last-section-nav.flex.align-center {
+    flex: 1;
+    align-items: center;
+    justify-content: end;
+  }
+  .explore-filter {
+    flex: 1;
+  }
 
-  // @each $class in $classes, none {
-  //   $selector: 'body';
-  //   @if $class != $active {
-  //     $selector: 'body.' + $class;
-  //   }
-  // }
+  a.router-link-active.router-link-exact-active {
+    flex: 1;
+  }
 
   .user-menu-btn {
     color: #484848;
@@ -371,7 +370,6 @@ header {
       width: 35px;
       border-radius: 50%;
     }
-
   }
 
   .right-header {
@@ -385,10 +383,7 @@ header {
       border-radius: 22px;
       background-color: #f7f7f7;
       padding: 10px;
-
     }
-
-
 
     img {
       height: 15px;
@@ -455,5 +450,36 @@ header {
       }
     }
   }
-
+  nav.top-nav.flex.justify-space-between.align-center {
+    height: 80px;
+    flex: 1;
+  }
+  .header-bottom.flex.justify-space-between {
+    align-items: center;
+    padding-block-start: 20px;
+  }
+  .filter-expend.flex {
+    padding-block-start: 20px;
+    /* padding-bottom: 30px; */
+  }
+  .nav-wrapper.expend .explore-filter {
+    height: 180px;
+    position: relative;
+    align-self: baseline;
+  }
+  .nav-wrapper.expend {
+    height: 190px;
+    /* display: flex; */
+  }
+  .hide-expend {
+    display: none;
+  }
+  .nav-wrapper {
+    border-bottom: 1px solid #80808057;
+  }
+  .sticky {
+    .header-bottom {
+      padding-block-start: 5px;
+    }
+  }
 }
