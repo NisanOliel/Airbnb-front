@@ -120,7 +120,7 @@ export default {
       propertyType: null,
       language: ['English', 'German', 'French', 'Japanese'],
       essentials: ['Wifi', 'Washer', 'Air conditioning', 'Kitchen', 'Dryer'],
-      prices: null,
+      price: null,
       checkList: ref([]),
       primaryColor: '#b0b0b0',
       holderColor: '#dddddd',
@@ -148,8 +148,16 @@ export default {
       }
     },
     setPrice(value) {
-      this.filterBy.price.minPrice = value.from;
-      this.filterBy.price.maxPrice = value.to;
+      console.log(value);
+      this.filterBy = {
+        price: {
+          minPrice: value.from,
+          maxPrice: value.to,
+        }
+      }
+      // this.filterBy.price.minPrice = value.from;
+      // this.filterBy.price.maxPrice = value.to;
+      console.log(value.from);
       this.setFilter()
     },
     getStaysPrices() {
@@ -157,6 +165,7 @@ export default {
       const staysPrices = stays.map(stay => stay.price)
       this.prices = staysPrices
     },
+
     setFilter() {
       console.log(' this.filterBy:', this.filterBy)
       this.$store.dispatch({ type: 'setFilterBy', filterBy: this.filterBy });
@@ -168,7 +177,7 @@ export default {
       } else {
         this.filterBy.amenities = this.filterBy.amenities.filter(amenity => amenity !== currAmenity);
       }
-      this.$store.dispatch({ type: 'setFilterBy', filterBy: this.filterBy });
+      this.setFilter()
     },
     setPropertyType(propertyType) {
       console.log('propertyType');
@@ -178,16 +187,19 @@ export default {
       } else {
         this.filterBy.propertyType = this.filterBy.propertyType.filter(propertyType => propertyType.selected);
       }
-      this.$store.dispatch({ type: 'setFilterBy', filterBy: this.filterBy });
+      this.setFilter()
     },
+
     setLanguage(currLanguage, isChecked) {
       if (isChecked) {
         this.filterBy.hostLanguage.push(currLanguage);
       } else {
         this.filterBy.hostLanguage = this.filterBy.hostLanguage.filter(language => language !== currLanguage);
       }
-      this.$store.dispatch({ type: 'setFilterBy', filterBy: this.filterBy });
+      this.setFilter()
     },
+
+
     onSaveFilters(ev, value) {
       this.$store.dispatch({ type: 'setFilteredStays' });
       this.propertyNum = this.$store.getters.getStays.length;
@@ -195,10 +207,12 @@ export default {
         this.closeForm();
       }
     },
+
+
     clearAll() {
       this.filterBy = this.getInitialFilterState();
       this.checkList = ref([])
-      this.$store.dispatch({ type: 'setFilterBy', filterBy: this.filterBy })
+      this.setFilter()
     },
     closeForm() {
       this.$emit('closeFilersForm');
@@ -216,7 +230,7 @@ export default {
       return Sum + '$';
     },
     getStay() {
-      return this.$store.getters.getFilteredStays.length;
+      return this.$store.getters.getFilteredStays.length
     },
   },
   components: {},

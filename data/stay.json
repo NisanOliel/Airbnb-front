@@ -1,10 +1,16 @@
 [
   {
+    "_id": "622f337a75c7d36e498aaaf8",
     "name": "Westin Kaanapali KORVN 2BR",
     "summary": "Westin Kaanapali Ocean Resort Villas North timeshare - Pay resort: $14-20/day, stays under 7 night $38/res - Inquire about availability, I review then offer/approve if available :) - READ \"The Space\" for cleaning/etc AND brief explanation about timeshare reservations - Want guaranteed view for additional cost? Must be weekly rental, other restrictions - Wheelchair accessible / ADA, call resort directly to ensure U receive. If U need ADA U MUST inform us BEFORE booking.",
     "interaction": "There are activities programs and concierge activities booking services at this resort.",
     "houseRules": "No smoking; No Pets; This resort's rules apply. Please call the resort directly to verify details.",
-    "propertyType": "amazing views",
+    "propertyType": [
+      "amazing views",
+      "Amazing pools",
+      "Campers",
+      "Iconic cities"
+    ],
     "roomType": "Entire home/apt",
     "bedType": "Real Bed",
     "capacity": 8,
@@ -174,7 +180,6 @@
         "txt": "We love Westin Kaanapalli"
       }
     ],
-    "_id": "622f337a75c7d36e498aaaf8",
     "imgUrls": [
       "090.jpeg",
       "010.jpeg",
@@ -184,11 +189,17 @@
     ]
   },
   {
+    "_id": "622f337a75c7d36e498aaaf9",
     "name": "Belle chambre à côté Metro Papineau",
     "summary": "Chambre dans un bel appartement moderne avec balcon, ascenseur et terrasse. Private room in a beautiful modern apartment  with balcony, elevator and patio. La chambre est fermée avec une lit double. Vous aurez accès à une salle de bain avec une douche, terrasse. L'appartement est climatisé.  Votre chambre est équipé d'une connexion Wi-Fi illimité. Vous serez proche du centre ville, au pied du pont Jacques Cartier et à distance de marche de toutes les commodités (métro, supermarché, pharmacie",
     "interaction": "J'adore recevoir mes invités personnellement mais il arrive que je ne puis être sur place lors de votre arrivée.",
     "houseRules": "",
-    "propertyType": "Apartment",
+    "propertyType": [
+      "Apartment",
+      "Vineyards",
+      "Beach",
+      "Iconic cities"
+    ],
     "roomType": "Private room",
     "bedType": "Real Bed",
     "capacity": 2,
@@ -298,7 +309,6 @@
         "txt": "Angel was warm and welcoming and has a beautiful apartment. I'd recommend his place to anyone visiting downtown Montreal!"
       }
     ],
-    "_id": "622f337a75c7d36e498aaaf9",
     "imgUrls": [
       "074.jpeg",
       "077.jpeg",
@@ -308,11 +318,17 @@
     ]
   },
   {
+    "_id": "622f337a75c7d36e498aaafa",
     "name": "M&M Space MM2  Apartamento no centro da cidade",
     "summary": "O apartamento fica perto de arte e cultura e dos mais belos monumentos da cidade. Belos jardins e paisagens da cidade e do rio Douro ficam perto e podem ser apreciadas.  Existem restaurantes típicos e de comida internacional ao redor do apartamento.   O espaço fica numa rua típica da cidade, cheia da sua magia e magnetismo e é muito pratico e confortável. O espaço é excelente para quem pretende visitar e conhecer a zona histórica e turística do Porto. Transportes públicos ficam próximos.",
     "interaction": "Será prestada ajuda aos hospedes, 24 horas por dia, desde que solicitada.",
     "houseRules": "- Devem respeitar o restantes hospedes a morar no prédio evitando barulhos excessivos. - Animais de estimação: Questionar o proprietário. Podem ser permitidos a um custo extra a acordar. e em casos excepcionais. Fumar: Podem fumar na varanda desde que cumpram as regras de segurança necessárias. - Ter cuidado com o manuseamento dos equipamentos existentes na casa. Dão-se informações se solicitado. - Levar o lixo utilizado para os contentores no exterior. São fornecidos sacos extra para o feito. - Ter uma boa estadia.",
-    "propertyType": "Apartment",
+    "propertyType": [
+      "Vineyards",
+      "amazing views",
+      "Ski-in/out",
+      "Iconic cities"
+    ],
     "roomType": "Entire home/apt",
     "bedType": "Real Bed",
     "capacity": 4,
@@ -573,7 +589,6 @@
         "txt": "buena ubicación, piso acogedor, reformado, excelente servicio y recomendaciones"
       }
     ],
-    "_id": "622f337a75c7d36e498aaafa",
     "imgUrls": [
       "112.jpeg",
       "080.jpeg",
@@ -583,11 +598,16 @@
     ]
   },
   {
+    "_id": "622f337a75c7d36e498aaafb",
     "name": "Fresh and modern 1BR in Bed-Stuy",
     "summary": "A spacious, art-filled one-bedroom apartment near the express train (28 minutes to Times Square) and a Citibike station. Sample Bed-Stuy life at a nearby French restaurant,  a sunny Haitian cafe, a boutique grocery and more. We do NOT discriminate based on race, religion or sexual orientation.",
     "interaction": ".  Guests stay in a separate,  private apartment and we make every effort to not disturb you unless absolutely necessary. We live above the apartment and will be happy to accommodate any reasonable requests",
     "houseRules": "A/C may be used only when you are at home.  Please respect our delicate old pipes (no grease down the drain, etc.).  No smoking on premises. Guests are expected to wash take out their trash and recycling as needed. Guests are expected to wash and put away dishes prior to check-out (apartment has a dishwasher, soap packets are under the sink) Longer term guests may wish to launder the sheets and towels during their stay. This service is not provided. (There are two sets of bed linens provided and two sets of towels for each adult guest.) Owners may occasionally need to go through the apartment to access the basement. We shall endeavor to give advance notice of this and find a mutually convenient time.  $50 fee if keys are lost or not returned.",
-    "propertyType": "Apartment",
+    "propertyType": [
+      "Apartment",
+      "Islands",
+      "Beach"
+    ],
     "roomType": "Entire home/apt",
     "bedType": "Real Bed",
     "capacity": 2,
@@ -862,7 +882,6 @@
         "txt": "Great host. Very clean, nice place and friendly people. Thanks again!"
       }
     ],
-    "_id": "622f337a75c7d36e498aaafb",
     "imgUrls": [
       "101.jpeg",
       "037.jpeg",
@@ -872,11 +891,16 @@
     ]
   },
   {
+    "_id": "622f337a75c7d36e498aaafc",
     "name": "Habitación centro de Barcelona",
     "summary": "Mi piso está en el centro de Barcelona. Cerca del metro, las ramblas, los museos, el Portal del Ángel, Plaza Cataluña. Mi alojamiento es bueno para turistas, aventureros, y viajeros de negocios....y tiene ascensor.",
     "interaction": "Estaré disponible para cualquier duda o problema que se os presente. Conozco muy bien la ciudad y os puedo recomendar sitios.",
     "houseRules": "No hacer fiestas, no traer invitados a la habitación. Respetar el descanso de los vecinos. Mantener el orden y la limpieza de la casa. Recordar que alquilas una habitación, no un piso. Please: No smoking, no loud noise after 11pm, be courteous to neighbors and clean up after yourself when you use the kitchen and the bathroom. No guests.",
-    "propertyType": "Apartment",
+    "propertyType": [
+      "House",
+      "Amazing pools",
+      "Treehouses"
+    ],
     "roomType": "Private room",
     "bedType": "Real Bed",
     "capacity": 2,
@@ -952,7 +976,6 @@
         "txt": "Nous avons passé un bon séjour, l'appartement est très bien situé. La chambre est agréable et plus grande que sur la photo. Seul point négatif pas de volets dans la chambre. "
       }
     ],
-    "_id": "622f337a75c7d36e498aaafc",
     "imgUrls": [
       "088.jpeg",
       "027.jpeg",
@@ -962,11 +985,16 @@
     ]
   },
   {
+    "_id": "622f337a75c7d36e498aaafd",
     "name": "DOUBLE ROOM IN THE HEART OF BCN",
     "summary": "Lit room with balcony. The apartment is in the center, just meters from the Palau de la Musica Catalana. Well connected, a few minutes from Las Ramblas and the Born. Very close to the beach and Ciutadella Park",
     "interaction": "Te proporcionaré sábanas y toallas, para que no te preocupes de traerlas tú.",
     "houseRules": "-Mantener el espacio limpio y recogido. -No está permitido invitar a gente al apartamento. -Respetar el descanso de los vecinos. -No hacer ruido en la escalera. Apelo al sentido común de los inquilinos para una convivencia relajada y fluída. No hay normas en la casa más allá de las que dicte el sentido común.",
-    "propertyType": "Apartment",
+    "propertyType": [
+      "Vineyards",
+      "Islands",
+      "Treehouses"
+    ],
     "roomType": "Private room",
     "bedType": "Real Bed",
     "capacity": 2,
@@ -1241,7 +1269,6 @@
         "txt": "Isabel was an amazing host. She is incredible and super considerate. The apartment was by no means the best location in Barcelona, I walked everywhere and never needed a map or a taxi. Arriving late at night was always fine and there was never any disturbing street noise. The block is super cute with awesome little shops that are open during the day. Best neighborhood to be in and incredible city ! Muchísima gracias Isabel, estas invitada a visitar Los Ángeles, todo fue increíble !❤️"
       }
     ],
-    "_id": "622f337a75c7d36e498aaafd",
     "imgUrls": [
       "127.jpeg",
       "004.jpeg",
@@ -1251,11 +1278,16 @@
     ]
   },
   {
+    "_id": "622f337a75c7d36e498aaafe",
     "name": "Home, Sweet, Harlem. Welcome!",
     "summary": "Welcome! Upgrades Added as of January 2018 This listing is located in the Spanish Harlem Section of Manhattan. I offer a cozy apartment that has great transportation in and out the city! The area has a lot of ethnic restaurants and a lot of local, active residents. This residence is great for a quick, inexpensive stay in New York whether its for business, travel, or personal purposes. I am glad to welcome all guests!",
     "interaction": "I am great with communicating with my guest and making sure everyone is comfortable as possible. The apartment is yours to use but I am only a phone call away!",
     "houseRules": "I take time and effort to maintain the household with the utmost cleanliness and hospitality. It is filled with the essentials needed to enjoy your stay.  I do ask to kindly respect the household as if it was yours. Please be courteous.",
-    "propertyType": "Apartment",
+    "propertyType": [
+      "Islands",
+      "Amazing pools",
+      "Campers"
+    ],
     "roomType": "Entire home/apt",
     "bedType": "Real Bed",
     "capacity": 3,
@@ -1534,7 +1566,6 @@
         "txt": "This place was cozy, comfortable and very clean. The AC was very helpful during the heat waves. Good shower and great WiFi connection as well."
       }
     ],
-    "_id": "622f337a75c7d36e498aaafe",
     "imgUrls": [
       "026.jpeg",
       "119.jpeg",
@@ -1544,11 +1575,16 @@
     ]
   },
   {
+    "_id": "622f337a75c7d36e498aaaff",
     "name": "Heroísmo IV",
     "summary": "If the dates you wish are not available, we have other options in the same location. You can find them on my profile. My goal is for you to have your days with the most comfort i can propose. I want you to taste all the feelings in Porto, as our food, as our best places, our best pointviews. I just love to help you enjoying this beautiful city :)",
     "interaction": "I'm always available to help as much as I can for my guests to spend a wonderful time in Porto.",
     "houseRules": "I ask all the care with: - Noise from the 22 hours, especially when it comes to reach the apartment. - With decorative objects, furniture, bedding and bath, care in the handling of kitchen equipment. I am always available to answer any questions.",
-    "propertyType": "Apartment",
+    "propertyType": [
+      "Arctic",
+      "Apartment",
+      "Beach"
+    ],
     "roomType": "Entire home/apt",
     "bedType": "Real Bed",
     "capacity": 2,
@@ -1823,7 +1859,6 @@
         "txt": "Excelente relação preço qualidade, muito boa comodidade e excelentes acessos. Muitas opções para as refeições por perto e metro à porta. Recomendo."
       }
     ],
-    "_id": "622f337a75c7d36e498aaaff",
     "imgUrls": [
       "120.jpeg",
       "059.jpeg",
@@ -1833,11 +1868,16 @@
     ]
   },
   {
+    "_id": "622f337a75c7d36e498aab00",
     "name": "Monte dos Burgos - Cosy Room",
     "summary": "The neighbourhood is a quiet, family residential area, 20 minutes by bus from the historic center of Porto and 20 minutes from the beach (Matosinhos - where you may eat very GOOD fish!). You will love to stay in a very spacious, familiar and bright room, where you can enjoy a large and flowery garden, comfortable kitchen and laundry with washer and dryer machine. My space is good for couples, solo adventures, and business travelers!",
     "interaction": "Respect and confidance is the key to our hosts!!!",
     "houseRules": "",
-    "propertyType": "House",
+    "propertyType": [
+      "Historical homes",
+      "Arctic",
+      "Treehouses"
+    ],
     "roomType": "Private room",
     "bedType": "Real Bed",
     "capacity": 2,
@@ -1955,7 +1995,6 @@
         "txt": "Patricia et Casimir ont été très accueillants et nous ont donné toutes les informations pratiques pour se rendre au centre de Porto en bus. La chambre est spacieuse et la salle de bain privée est juste à coté. Le quartier est très calme et le séjour était très agréable."
       }
     ],
-    "_id": "622f337a75c7d36e498aab00",
     "imgUrls": [
       "086.jpeg",
       "016.jpeg",
@@ -1965,11 +2004,16 @@
     ]
   },
   {
+    "_id": "622f337a75c7d36e498aab01",
     "name": "Nice Cosy Room In Taksim",
     "summary": "Welcome if you want to stay at a cozy flat with local experience.:) It is in the center of Istanbul.The neighborhood is safe and close to attractions.Transportation is easy. I will help you always.",
     "interaction": "After the booking you can reach me from (Hidden by Airbnb) or whatsaap",
     "houseRules": "",
-    "propertyType": "Apartment",
+    "propertyType": [
+      "Apartment",
+      "Townhouse",
+      "Surfing"
+    ],
     "roomType": "Private room",
     "bedType": "Real Bed",
     "capacity": 2,
@@ -2252,7 +2296,6 @@
         "txt": "Nihat is very nice host, and came to wait for me in the shuttle bus station near Taksim squre, His house is very convenient for travel. He is very experirenced and warm host, the room super clean and warm, and house has everything, next time i will choose his house again in istanbul. miss you nihat. see you next time."
       }
     ],
-    "_id": "622f337a75c7d36e498aab01",
     "imgUrls": [
       "042.jpeg",
       "110.jpeg",
@@ -2262,11 +2305,16 @@
     ]
   },
   {
+    "_id": "622f337a75c7d36e498aab02",
     "name": "Penthouse Sands of Kahana Sandy Swimmable Beach",
     "summary": "Price includes nightly rate & 14.42% tax.  Our fully remodeled 9th floor Penthouse unit offers the most amazing views.  The entire front of the condo is windows offering you a fantastic view of beautiful Pacific Ocean, Molokai & Lana'i.  Perfect location for watching beautiful sunsets, see our resident sea turtles & an excellent place for spotting whales during the whale migration season. This spacious two level 3 bedroom and 3 full bath Penthouse unit has over 2,050 sq ft of living space w/ AC.",
     "interaction": "As your host I will be available via phone for any questions or concerns.  I am always happy to answer any questions or give assistance prior to your arrival.",
     "houseRules": "Resort fee of $75 collected by front desk at time of check in.  One time fee. - Rates are for 6 guests.  An additional $25 per night per person for up to 2 more guests. - Resort Quiet Hours 10:00 p.m. - 8:00 a.m. - No smoking on the lanai or in unit per Hawaii state law",
-    "propertyType": "Beach",
+    "propertyType": [
+      "Apartment",
+      "Historical homes",
+      "Surfing"
+    ],
     "roomType": "Entire home/apt",
     "bedType": "Real Bed",
     "capacity": 9,
@@ -2524,7 +2572,6 @@
         "txt": "I cannot say enough good things about this condo. There was more than enough space for my friends and I to spread out. Each room was beautifully decorated. the bathrooms we're impeccably remodeled, I even took inspiration pictures! Cynthia thought of everything to make this a home away from home. AC was in every room, but with the trade winds, we never needed it. Don't hesitate, book this place now!!!"
       }
     ],
-    "_id": "622f337a75c7d36e498aab02",
     "imgUrls": [
       "100.jpeg",
       "001.jpeg",
@@ -2534,11 +2581,16 @@
     ]
   },
   {
+    "_id": "622f337a75c7d36e498aab03",
     "name": "+Spacious Studio&Kitchenette near Blue Mosque+",
     "summary": "A spacious, private studio with high speed Wi-Fi wireless internet. It is located in historical district of Sultanahmet oldcity center. It's Only 10 minutes (by walking) away from Sultanahmet  Blue Mosque, Hagia Sophia, Topkapı Palace, Underground Cistern and Hippodrome. This area is called Kadirga and it's famous with it's local restaurants. There are more gorcery stores and supermarkets in this are since it's not %100 touristic area. There is children playground right in front of the building.",
     "interaction": "I was born in Istanbul and worked as receptionist and as a concierge for more than 20 years. I am doing my best to make my guests' visit easier. *After the reservation is complete, my guests will receive an e-mail consisting of the exact adress, contact number ( (Hidden by Airbnb) available), description about how to reach from the airports and most importantly the Wi-Fi password for communication at arrival. You can simply connect to Wi-Fi when you arrive at the front door and call us fron (Hidden by Airbnb) or Viber. Airport shuttle service is also available on reasonable prices.",
     "houseRules": "",
-    "propertyType": "Apartment",
+    "propertyType": [
+      "Lakefront",
+      "Off-the-grid",
+      "Surfing"
+    ],
     "roomType": "Entire home/apt",
     "bedType": "Real Bed",
     "capacity": 5,
@@ -2817,7 +2869,6 @@
         "txt": "L'appartement d'Emre est davantage une petite chambre d’hôtel où l'on a les équipements attendus sauf la machine à laver. L'appartement est globalement assez propre.\nIl est très bien placé (à 10 min à pied de la mosquée bleue et de sainte Sophie) et dans un quartier authentique. Nous avons aussi apprécié qu'il y ait en face un supérette où nous avons pu faire des courses.\nEmre est très réactif et très sympa. Nous recommandons cet appartement."
       }
     ],
-    "_id": "622f337a75c7d36e498aab03",
     "imgUrls": [
       "015.jpeg",
       "144.jpeg",
@@ -2827,11 +2878,16 @@
     ]
   },
   {
+    "_id": "622f337a75c7d36e498aab04",
     "name": "Grand apartment Sagrada Familia",
     "summary": "4 rooms apartment in the heart of the right “Eixample” broadening. Perfect location in the notorious area of Sagrada Familia that will ensure and unforgettable stay in Barcelona. HUTB-003275",
     "interaction": "24h",
     "houseRules": "Check-in: from 14:00 pm.  Check-out: till 11:00 am. Charges for electricity, gas, water and community included. Any noises that could disturb the neighbors is not allowed. Certainly from the 22: 00h.  Smoking in the apartment is not allowed. Any parties are strictly prohibited.",
-    "propertyType": "Apartment",
+    "propertyType": [
+      "Vineyards",
+      "Apartment",
+      "Creative spaces"
+    ],
     "roomType": "Entire home/apt",
     "bedType": "Real Bed",
     "capacity": 8,
@@ -3114,7 +3170,6 @@
         "txt": "We stayed here with 8 people for a fun weekend in Barcelona and this apartment was a great home base for us. The apartment is exactly what the pictures showed and Regina and Juan were great hosts. Location is a little bit out of the way if you want to be central but proximity to la Sagrada Familia was nice!"
       }
     ],
-    "_id": "622f337a75c7d36e498aab04",
     "imgUrls": [
       "123.jpeg",
       "130.jpeg",
@@ -3124,11 +3179,16 @@
     ]
   },
   {
+    "_id": "622f337a75c7d36e498aab05",
     "name": "Spacious and quiet duplex apartment in Poble Sec",
     "summary": "Spacious apartment in a peculiar building in the central neighbourhood of Poble Sec, with patio and terrace, ideal for families with children or groups. Walking distance from center, Montjuïc, Plaza España, Fira Montjuïc/Gran Vía, Sant Antoni, Raval.",
     "interaction": "Yamila lives in the neighborhood. Should you need it she will be near! Before your arrival, you might interact by e-mail either with Yamila or with me (Cristina, the apartment's owner).",
     "houseRules": "RIGHT AFTER RESERVATION: 1. Send us your e-mail address so that we can send you a PDF file with all the info. 2. Send us by e-mail the following personal data FOR ALL GUESTS (children included), for the compulsory tourist registration with the local authorities: ID number*  Type of document (national ID or passport)* Date of issue (if visible)* Family name*  First name*   M/F* Birth date*  Nationality*  Date of arrival* Personal address  Phone number  Expected days of stay BEFORE YOUR ARRIVAL: 1. Make sure you provide us your arrival's details (time of arrival and mean of transportation) and a phone number so that we can contact you in case of need. 2. Let us know your preferences regarding the beds according to your group's composition: ex. if you are a family of 2 parents + 2 kids we will prepare the main room and the bulk beds; if you are 2 couples we will prepare the main room and the other double bed room; if there is a child we will prepare the baby bed or the little bed, etc.  3",
-    "propertyType": "Apartment",
+    "propertyType": [
+      "Historical homes",
+      "House",
+      "Beach"
+    ],
     "roomType": "Entire home/apt",
     "bedType": "Real Bed",
     "capacity": 7,
@@ -3411,7 +3471,6 @@
         "txt": "GREAT!!! Christina and Yamila are very hospitable and very helpful. \r\nThe flat was very nice and spacious, clean and outfitted with everything we needed. The flat is super located (metro station, supermarket, bakery, ...).\r\n\r\nWe will come back : )\r\nThank you!"
       }
     ],
-    "_id": "622f337a75c7d36e498aab05",
     "imgUrls": [
       "028.jpeg",
       "145.jpeg",
@@ -3421,11 +3480,16 @@
     ]
   },
   {
+    "_id": "622f337a75c7d36e498aab06",
     "name": "*CoZy Private Williamsburg Home*",
     "summary": "*NO PARTIES OR EVENTS* **Minutes From MANHATTAN / NYC BY TRAIN* 1 BLOCK FROM GRAND ST. First Floor Newly Renovated And Furnished Williamsburg Apartment Duplex  Back yard access. Wood Floors. Wifi. Marble & Granite Bathroom. *NEW-CLEAN* *BAKYARD PATIO* *CABLE TV*",
     "interaction": "will pickup phone for any questions while staying at my place. & usually local to stop by if necessary.",
     "houseRules": "NO SMOKING INSIDE NO DISRESPECTING HOUSE SPACE.",
-    "propertyType": "Apartment",
+    "propertyType": [
+      "Off-the-grid",
+      "House",
+      "Creative spaces"
+    ],
     "roomType": "Entire home/apt",
     "bedType": "Real Bed",
     "capacity": 4,
@@ -3704,7 +3768,6 @@
         "txt": "Sal was great! I booked his place to house two trainees coming in to nyc from las vegas for work and he was super helpful with meeting up with them to get the keys to the place. The apartment was great, located in a safe part of williamsburg, very convenient to trains, restaurant and bars! He checked in with the two ladies during their stay to ensure that everything was going well. I would recommend this place to anyone who is looking for a friendly host and a nice place to stay in williamsburg brooklyn! "
       }
     ],
-    "_id": "622f337a75c7d36e498aab06",
     "imgUrls": [
       "027.jpeg",
       "048.jpeg",
@@ -3714,11 +3777,16 @@
     ]
   },
   {
+    "_id": "622f337a75c7d36e498aab07",
     "name": "Newly and comfortable apt",
     "summary": "The comfortable apartment at the heart of busy Tsim Sha Tsui.2minutes walk to the MTR/Subway station.There are many biggest shopping mall around here:K-11,The One,Harbour city ect.",
     "interaction": "We are always contactable by mobile,Email or Airbnb.Feel free to let us know if there's anything we can do to make your stay more pleasant!",
     "houseRules": "",
-    "propertyType": "Beach",
+    "propertyType": [
+      "Townhouse",
+      "House",
+      "Creative spaces"
+    ],
     "roomType": "Entire home/apt",
     "bedType": "Real Bed",
     "capacity": 2,
@@ -4001,7 +4069,6 @@
         "txt": "Great flat in a very good location, very close from subway which brings you to wherever you want in a few minutes. Xabi has been really nice and we didn't miss anything in the flat. Thank you"
       }
     ],
-    "_id": "622f337a75c7d36e498aab07",
     "imgUrls": [
       "110.jpeg",
       "080.jpeg",
@@ -4011,11 +4078,16 @@
     ]
   },
   {
+    "_id": "622f337a75c7d36e498aab08",
     "name": "302 Kanai A Nalu Ocean front/view",
     "summary": "Welcome to Kana'i A Nalu a quiet resort that sits on the ocean away from the road. This property has the BEST ocean front views of Molokini Crater and Kaho'Olawe Island. There is a resort swimming pool and BBQs next to the ocean. This gorgeous 2 bed 2 bath unit is on the third floor look over the Pacific Ocean with views of Sugar Beach and Mount Haleakalea!  The condo is light and bright with all the creature comforts of home.  The beds are very comfortable.",
     "interaction": "We will email you PDF check-in letter and documents at least 60 days prior to check-in.",
     "houseRules": "MVFA LLC dba Maui Vision Rentals (Agent) Cancellation, Deposit & Booking Policies Rental Rules: Guest agrees to abide by the Rental Rules.  Guest shall cause all members of the rental party and anyone else Guest permits on the property to abide by the following rules at all times while at the property including rules posted at the condominium complex.  By accepting this reservation and paying for the rental, guest enters the condo agreeing to all terms and conditions of this agreement and accepts responsibility for all guests of the property. Guest shall not permit any use of the pool by unsupervised children.  An adult Guest must accompany children and be present at all times. Guest and other invitees shall use the pool at their own risk.  Please respect the posted rules. Mandatory Occupancy Disclosures: You must disclose to us the exact number and names of guests (subject to maximum) who will be occupying the Property during the rental term.  You must immediately notify us, by phone ",
-    "propertyType": "Beach",
+    "propertyType": [
+      "Apartment",
+      "amazing views",
+      "Golfing"
+    ],
     "roomType": "Entire home/apt",
     "bedType": "Real Bed",
     "capacity": 6,
@@ -4163,7 +4235,6 @@
         "txt": "Book this place.... seriously!"
       }
     ],
-    "_id": "622f337a75c7d36e498aab08",
     "imgUrls": [
       "081.jpeg",
       "070.jpeg",
@@ -4173,11 +4244,16 @@
     ]
   },
   {
+    "_id": "622f337a75c7d36e498aab09",
     "name": "Spacious, Sunny Room in Park Slope",
     "summary": "Spacious, sunny room in owner occupied house in the heart of Park Slope. Shared  bathroom with shower/bath tub. Steps away from restaurants/bars and shopping. Within walking distance of major subway lines, Prospect Park, BAM and Barclay Center.",
     "interaction": "I am always available, either at home or on my cell phone.",
     "houseRules": "",
-    "propertyType": "House",
+    "propertyType": [
+      "Off-the-grid",
+      "Apartment",
+      "Golfing"
+    ],
     "roomType": "Private room",
     "bedType": "Real Bed",
     "capacity": 2,
@@ -4239,7 +4315,6 @@
         "txt": "Lisa's house was beautiful and in an incredible location. The room was comfortable and immaculate. Lisa was a very relaxed and gracious host with lots of useful local knowledge.  I recommend her highly."
       }
     ],
-    "_id": "622f337a75c7d36e498aab09",
     "imgUrls": [
       "024.jpeg",
       "132.jpeg",
@@ -4249,11 +4324,16 @@
     ]
   },
   {
+    "_id": "622f337a75c7d36e498aab0a",
     "name": "Apartamento en casco antiguo",
     "summary": "Apartamento en el centro del casco antiguo de Barcelona, a 50 mts del mar, a 1 minuto de Las Ramblas, Borne, Plaza Real y Barceloneta.",
     "interaction": "Me podréis localizar a cualquier hora del día. Os podré ayudar para que vuestra estancia sea lo mas cómoda posible.",
     "houseRules": "- No hacer ruido a partir de la 10 pm. - La normativa del ayuntamiento de Barcelona obliga a formalizar contrato de alquiler - Contratación de limpieza obligatoria semanal de dos horas - Suministros (agua, luz y gas) se ha de pagar al anfitrión directamente y el coste es de     150€ mensuales - Pasadas las 22h se cobrara recargo de 35€ para hacer el check in",
-    "propertyType": "Apartment",
+    "propertyType": [
+      "Islands",
+      "Apartment",
+      "Golfing"
+    ],
     "roomType": "Entire home/apt",
     "bedType": "Real Bed",
     "capacity": 4,
@@ -4393,7 +4473,6 @@
         "txt": "The host canceled this reservation 174 days before arrival. This is an automated posting."
       }
     ],
-    "_id": "622f337a75c7d36e498aab0a",
     "imgUrls": [
       "152.jpeg",
       "083.jpeg",
@@ -4403,11 +4482,16 @@
     ]
   },
   {
+    "_id": "622f337a75c7d36e498aab0b",
     "name": "Elegant Flat in the Center",
     "summary": "A part of a famous Poet Orhan Veli Kanık's poem: I am listening to Istanbul, intent, my eyes closed.  The Grand Bazaar is serene and cool,  A hubbub at the hub of the market,  Mosque yards are brimful of pigeons,  At the docks while hammers bang and clang  I am listening to Istanbul, intent, my eyes closed.  In the heart of Istanbul, and a step back from Bosphorus, our flat is ideal for a guest looking for to visit magical corners to listen epic Istanbul.",
     "interaction": "Anytime you need assistance we are accessible. Please do not hesitate to contact us, you just need to think about enjoying your holiday.",
     "houseRules": "Just treat as your home",
-    "propertyType": "Apartment",
+    "propertyType": [
+      "Lakefront",
+      "Historical homes",
+      "Desert"
+    ],
     "roomType": "Entire home/apt",
     "bedType": "Real Bed",
     "capacity": 2,
@@ -4499,7 +4583,6 @@
         "txt": "Comfy and charming apartment with 20+ foot high ceilings. The flat is in a great neighborhood. There are hip cafes and restaurants, and little markets all around, and a terrific bakery right across the street sells some of the best simit and other small breads in town. It is also easy to walk to the center of Cihangir, Karikoy, or Taxsim. Pelin is an attentive and helpful host. Great stay in my favorite Istanbul neighborhood!"
       }
     ],
-    "_id": "622f337a75c7d36e498aab0b",
     "imgUrls": [
       "060.jpeg",
       "035.jpeg",
@@ -4509,11 +4592,16 @@
     ]
   },
   {
+    "_id": "622f337a75c7d36e498aab0c",
     "name": "Westin Kaanapali KORVS 2BR OCEAN VIEW",
     "summary": "Westin Kaanapali Ocean Resort Villas South timeshare - Pay resort: $14-20/day, stays under 7 night $38/res - Inquire about availability, I review then offer/approve if available :) - READ \"The Space\" for cleaning/etc AND brief explanation about timeshare reservations - Guaranteed view MUST BE 7 nights (mult weeks avail), check-in Fri/Sat/Sun. More/Less nights @ higher cost - Wheelchair accessible / ADA, call resort directly to ensure U receive. If U need ADA U MUST inform us BEFORE booking.",
     "interaction": "There are activities programs and concierge activities booking services at this resort.",
     "houseRules": "No smoking; No Pets; This property is located in the Westin Kaanapali Ocean Resort Villas, so their rules apply. Please call the resort directly to verify details.",
-    "propertyType": "amazing views",
+    "propertyType": [
+      "Apartment",
+      "amazing views",
+      "Desert"
+    ],
     "roomType": "Entire home/apt",
     "bedType": "Real Bed",
     "capacity": 8,
@@ -4639,7 +4727,6 @@
         "txt": "Lovely space! Cozy, clean with everything you need to relax and settle in quick. Very safe for kids and great resources to explore the surrounding area. Walking distance to the lodge and shuttle which is great!"
       }
     ],
-    "_id": "622f337a75c7d36e498aab0c",
     "imgUrls": [
       "065.jpeg",
       "004.jpeg",
@@ -4649,11 +4736,16 @@
     ]
   },
   {
+    "_id": "622f337a75c7d36e498aab0d",
     "name": "Burgazada da çarşıya yakın daire",
     "summary": "Yeşillikler ve tipik ada evleri arasında yürüyüş yapmak, bisiklete binmek, yüzmek, S.F.Abasıyanık Müzesini gezmek, İstanbul un en güzel gün batımına şahit Kalpazankaya da yemek yemek, baharda mimoza toplamak, Marta yı anlamak koyunda yüzerken",
     "interaction": "Misafirlerin konaklamaları boyunca Kadıköy İstanbul da isem, onlara her konuda yardımcı olabilirim. Bu ara Eskişehir' de yaşıyoruz ve telefonla ulaşılabilirsiniz.",
     "houseRules": "Eve ayakkabıyla girilmiyor, dilerseniz kendi terliklerinizi getirebilirsiniz  Tuvalet kağıtlarını çöp kutusuna atın lütfen, aksi durumda wc tıkanıyor. Kızartma yapılmamasını tercih ederim, bronş hassaslığım var, kokulardan çok rahatsız oluyorum. Kombiyi geceleri kısabilirseniz harika olur, Kırılan dökülen (kaza olabilir) olursa lütfen ne olduğunu söyleyin. Bu benim ve sizden sonrakilerinin kullanımında sorun yaşanmaması için önemli.",
-    "propertyType": "Apartment",
+    "propertyType": [
+      "Amazing pools",
+      "Apartment",
+      "Desert"
+    ],
     "roomType": "Entire home/apt",
     "bedType": "Real Bed",
     "capacity": 4,
@@ -4936,7 +5028,6 @@
         "txt": "Dört arkadaş iki gece kaldık Eser Hanım'ın evinde ve çok memnun kaldık. Ev fotoğraflarda göründüğünden daha güzel, daha tatlı bir yer ve konumu da çok iyi. Her şey tertemizdi. Eser Hanım bize adayla ilgili ihtiyacımız olan bütün bilgileri verdi, güzel önerilerde bulundu. Burgaz'da tatil yapacak olanlara tavsiye ederim. "
       }
     ],
-    "_id": "622f337a75c7d36e498aab0d",
     "imgUrls": [
       "106.jpeg",
       "021.jpeg",
@@ -4946,11 +5037,16 @@
     ]
   },
   {
+    "_id": "622f337a75c7d36e498aab0e",
     "name": "Artsy 4BR in Plateau by Sonder",
     "summary": "At this Sonder, you'll love the bright and airy decor, expansive living area, and beautiful fully-equipped kitchen with modern appliances. Located in the Le Plateau, known for its assortment of delicious restaurants and relaxed cafes.",
     "interaction": "Our concierge is available by phone, email, or Messenger 24/7. Don’t hesitate to contact us if you need anything, from extra towels to restaurant recommendations. Otherwise, we’ll leave you to enjoy your stay.",
     "houseRules": "House Rules 1. All bookings require a security deposit of $300 or more. You will not be charged for this in advance. 2. Guests can cancel within 24 hours of booking and receive a full refund, or cancel anytime up to seven days before the start of your trip and receive a 50% refund. Trips cancelled fewer than seven days in advance are not eligible for refunds. If you cancel within 24 hours of booking, please reach out to our team, as this refund has to be processed manually.   3. Check-in time is any time after 4 pm. Check-out time is any time before 11 am. You're welcome to request an early check in or late checkout, but this is not guaranteed and we can only confirm 24 hours in advance. 4. We do not allow smoking of any kind, including but not limited to nicotine, tobacco derived products and/or cannabis derived substances; breaking this rule will incur a $300 fine. 5. Most of our locations do not allow pets. 6. Generally, parties or excessive noise are not allowed in our locations. I",
-    "propertyType": "Apartment",
+    "propertyType": [
+      "Historical homes",
+      "Amazing pools",
+      "Boats"
+    ],
     "roomType": "Entire home/apt",
     "bedType": "Real Bed",
     "capacity": 8,
@@ -5233,7 +5329,6 @@
         "txt": "Great place in a great location. Bus stop outside the door to get you to Old Montreal in minutes. On a nice day you can walk and it was an $8 Uber. \nThe host responded right away and was helpful. The parking suggested worked great and the person came in on the Holiday to open up when all the other garages were closed. \nThe place was clean and had all the amenities needed. Would recommend this place."
       }
     ],
-    "_id": "622f337a75c7d36e498aab0e",
     "imgUrls": [
       "152.jpeg",
       "078.jpeg",
@@ -5243,11 +5338,16 @@
     ]
   },
   {
+    "_id": "622f337a75c7d36e498aab0f",
     "name": "2 bedroom Upper east side",
     "summary": "Near 70th and 1st.  A very nice 6th floor walk-up with true 2 bedrooms and one bath. Full Kitchen. One bedroom has a queen and the other a double.  Living room has a couch you could sleep on too. New powerful air conditioner cools whole apt. Great area with restaurants, shopping and walk to Central Park Please contact us first if reserving on same day, we might need time to arrange for keys. Holiday weekends we prefer 3 night stays. Thank you!",
     "interaction": "We are able to be reached during your stay.",
     "houseRules": "",
-    "propertyType": "Apartment",
+    "propertyType": [
+      "Off-the-grid",
+      "Vineyards",
+      "Campers"
+    ],
     "roomType": "Entire home/apt",
     "bedType": "Real Bed",
     "capacity": 5,
@@ -5408,7 +5508,6 @@
         "txt": "Lo sconsigliamo vivamente. Abbiamo avuto una pessima esperienza. Mia moglie, io e i tre bambini non abbiamo potuto fermarci neanche un minuto per le pessime condizioni in cui abbiamo trovato l'appartamento. Non corrisponde alle foto, perchè le stanze da letto sono molto più piccole di quello che appaiono, piene di suppellettili polverose e in disordine. Il sofa bed è praticamente un divano sporco dove abbiamo dovuto chiedere lenzuola e ci è stato dato un solo lenzuolo. Il bagno è una latrina minuscola tanto è vero che non appare nelle foto pubblicate. Non abbiamo potuto dormire neanche una notte perché non c'è neanche un cassetto o un armadio vuoto in cui poter stipare i propri effetti. Abbiamo pagato per tre notti oltre 800 euro, non abbiamo passato neanche venti minuti in quella casa, abbiamo dovuto trovare all'1 di notte un'altra sistemazione a New YorK - per cinque persone, compresi due bambini minori - e Chelsea non ci ha risarcito neanche un euro. Veramente un comportamento deprecabile da parte sua."
       }
     ],
-    "_id": "622f337a75c7d36e498aab0f",
     "imgUrls": [
       "149.jpeg",
       "116.jpeg",
@@ -5418,11 +5517,16 @@
     ]
   },
   {
+    "_id": "622f337a75c7d36e498aab10",
     "name": "1 Stop fr. Manhattan! Private Suite,Landmark Block",
     "summary": "Private room, dedicated bath and a separate entrance. Totally renovated Queen Anne Historic Townhouse Home on a safe, Landmark Block. Only one stop from Midtown Manhattan! Enjoy the rear private Garden at breakfast time. Beautiful tree lined,quiet street. 4 subway lines ( E, M, 7 and G ) are one block away! Great restaurants, supermarket and cafes nearby.",
     "interaction": "Only if they want. I enjoy and respect our mutual privacy. I will be present during most stays but I do often travel, and will leave the house either with my partner (Cristian ) or a qualified, trusted live-in House Sitter.",
     "houseRules": "No smoking inside. No outside guests.   No cooking. Appreciate taking off street shoes inside room. We have an old dog, so no pets please.",
-    "propertyType": "Townhouse",
+    "propertyType": [
+      "House",
+      "Islands",
+      "Boats"
+    ],
     "roomType": "Private room",
     "bedType": "Real Bed",
     "capacity": 4,
@@ -5697,7 +5801,6 @@
         "txt": "About location:\r\nGreat location! 5 min from Manhattan. Great neighborhood with laundry service, few market places to provide us all we needed and an Indian restaurant right over the corner. 3 minute walk to the subway!\r\n\r\nAbout the house:\r\nGreat room! big. with A/C, T.V, fridge and coffee table. Towels available in the room and in the shower. All clean and neat. Big private shower. Big beautiful yard to enjoy breakfast.  Perfect. We really enjoyed staying there.\r\n\r\nAbout the owner:\r\nWe had a nice conversation over the phone. I felt comfortable with my decision to book his place .Orestes the owner had his friend Gabbi waiting for us when we arrived. She guided us through out our visit and made us feel at  home.  She was kind enough to spend time on the computer, explaining us where to go and how to get there, as well as many important tips that made the difference in our trip. We were lucky to have her.\r\n\r\n"
       }
     ],
-    "_id": "622f337a75c7d36e498aab10",
     "imgUrls": [
       "036.jpeg",
       "051.jpeg",
@@ -5707,11 +5810,16 @@
     ]
   },
   {
+    "_id": "622f337a75c7d36e498aab11",
     "name": "Two bedroom apartment",
     "summary": "Cozy apartment with wooden floors, two bedrooms, one with double bed, the second with two single beds, two bathrooms and equipped kitchen.",
     "interaction": "We are available to our guests by phone or email. We are always willing to help them in everything they need.",
     "houseRules": "- Horas de silencio a partir de las 22:00h  - Tasa turística no incluida en el precio (2,47€ persona/noche) - Solicitud de fianza de 200€ a la llegada. - Productos de minibar disponible por un precio adicional NO incluido en el precio de la reserva.",
-    "propertyType": "Apartment",
+    "propertyType": [
+      "Townhouse",
+      "Off-the-grid",
+      "Boats"
+    ],
     "roomType": "Entire home/apt",
     "bedType": "Real Bed",
     "capacity": 4,
@@ -5994,7 +6102,6 @@
         "txt": "Excellent apartment for staying in Barcelona. Close to many beautiful places and easy access to public transportation.\n\nMany excellent restaurants near by."
       }
     ],
-    "_id": "622f337a75c7d36e498aab11",
     "imgUrls": [
       "078.jpeg",
       "106.jpeg",
@@ -6004,11 +6111,16 @@
     ]
   },
   {
+    "_id": "622f337a75c7d36e498aab12",
     "name": "Sunny and quiet room with private shower room",
     "summary": "Very quite and sunny room with private shower room My place is in Poble Sec, one of the most charming neighborhood in Barcelona. Located in the shadow of Montjuic's hill,the biggest and most beautiful parc in the city Just 2min far from  metro station and 15min from the airport bus stop Poble Sec is sizzling with open air bars and  quite streets ,pretty squares and friendly locals make it worthy The flat is in the 5th FLOOR NO LIFT  There's a lovely fat cat living",
     "interaction": "I am willing to make your stay in Barcelona as pleasant as possible",
     "houseRules": "1. Please tidy up after yourself. 2. Be respectful of the other residents in the building and keep the noise down after 11.30pm.  3. No smoking in the room and living room. It 's allow in the balcony",
-    "propertyType": "Apartment",
+    "propertyType": [
+      "Amazing pools",
+      "amazing views",
+      "Boats"
+    ],
     "roomType": "Private room",
     "bedType": "Real Bed",
     "capacity": 2,
@@ -6287,7 +6399,6 @@
         "txt": "A great affordable place to stay."
       }
     ],
-    "_id": "622f337a75c7d36e498aab12",
     "imgUrls": [
       "025.jpeg",
       "016.jpeg",
@@ -6297,11 +6408,16 @@
     ]
   },
   {
+    "_id": "622f337a75c7d36e498aab13",
     "name": "Inner City Terrace - 2 rooms 2 beds - 4 ppl.",
     "summary": "Our home is located in Darlington, a small niche suburb of Sydney with a relaxed, friendly and safe atmosphere. We are located a 10 min walk to Broadway, Glebe, Newtown, The University, surrounded by fantastic restaurants, cafes, pubs, markets and public transport. It is a 20 min walk to the city centre.",
     "interaction": "We have a good knowledge of restaurants, bars and clubs, tourist attractions and sights to see in Sydney and other parts of Australia. There are maps of Sydney and Australia and guidebooks on the bookshelf. We are happy to assist with information or let you explore on your own.",
     "houseRules": "We enjoy sharing our home with you and other Airbnb guests, please be considerate, enjoy the house, treat it with respect and apply some common sense! We are relaxed and easy going, we do not have rules or a curfew, however from our hosting experience we have generated some simple guidelines; •\tPlease ensure the house is locked for everyone's safety and security when you leave.  •\tIf you cook or use things in the kitchen place it in the dishwasher, and if you make a mess please clean it up. •\tPlease be considerate when using the bathroom, and be thoughtful for the next person to use it.  •\tPlease hang wet towels behind the door or on the rack provided. •\tWe enjoy cooking and are happy to share what we have in the fridge or pantry, but please do not freeload, for longer stays please be thoughtful by replacing or buying your own products. •\tWe appreciate that people enjoy their own space, may be tired after a long day or have limited/basic English. This is our home, please be courteous t",
-    "propertyType": "Townhouse",
+    "propertyType": [
+      "Arctic",
+      "amazing views",
+      "Ski-in/out"
+    ],
     "roomType": "Private room",
     "bedType": "Real Bed",
     "capacity": 4,
@@ -6396,7 +6512,6 @@
         "txt": "house is so so so…lovely and Jason and his wife are friendly!"
       }
     ],
-    "_id": "622f337a75c7d36e498aab13",
     "imgUrls": [
       "004.jpeg",
       "133.jpeg",
@@ -6406,11 +6521,16 @@
     ]
   },
   {
+    "_id": "622f337a75c7d36e498aab14",
     "name": "Nice room with queen sized bed",
     "summary": "A lovely room with a queen sized bed, chair, dresser, lamp and closet. This room has AC for the hotter months. Guests are welcome to use the kitchen, living room and study.",
     "interaction": "Check in, by chance daily, guests are free to email, text or call me any time if I'm not there.",
     "houseRules": "Respectful.",
-    "propertyType": "Apartment",
+    "propertyType": [
+      "Lakefront",
+      "Arctic",
+      "Ski-in/out"
+    ],
     "roomType": "Private room",
     "bedType": "Real Bed",
     "capacity": 1,
@@ -6685,7 +6805,6 @@
         "txt": "I thoroughly enjoyed my stay at Jen's B&B.  Rooms were airy and clean with a kind of artistic feel that I fell immediately in love with.  B&B is in a great central location, surrounded by many great shops, restaurants, and bars, and near Metro station.  Jen is welcoming, enthusiastic, and warm.  Yummy, filling breakfast was a great start to each morning!"
       }
     ],
-    "_id": "622f337a75c7d36e498aab14",
     "imgUrls": [
       "111.jpeg",
       "072.jpeg",
