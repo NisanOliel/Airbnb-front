@@ -29,6 +29,7 @@
             <div class="user-nav" v-if="showMenu" v-click-away="onClickAway">
               <div class="user-nav-in">
                 <a href="#/login" @click="showMenu = !showMenu" v-if="!getLogInUser">Log in</a>
+                <a href="#/" @click="logDemo" v-if="!getLogInUser">Log Demo</a>
                 <a href="#/wishList" @click="showMenu = !showMenu" class="a1" v-if="getLogInUser">Wish List</a>
                 <a href="#/dashboard" @click="showMenu = !showMenu" v-if="getLogInUser">Dashboard</a>
                 <a @click.prevent="logout" v-if="getLogInUser">Logout</a>
@@ -116,6 +117,20 @@ export default {
       this.$store.dispatch({ type: "logout" });
       // this.$router.push("/")
       this.showMenu = false;
+    },
+    async logDemo() {
+      const demo = {
+        password: "demo",
+        username: "demo"
+      }
+      try {
+        await this.$store.dispatch({ type: "login", userCred: demo });
+        this.$router.push("/");
+        this.showMenu = false
+      } catch (err) {
+        console.log(err);
+        this.msg = "Failed to login";
+      }
     },
     onClickAway() {
       this.isShow = false;

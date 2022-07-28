@@ -78,6 +78,7 @@ export default {
         return
       }
       try {
+        console.log('this.loginCred:', this.loginCred)
         await this.$store.dispatch({ type: "login", userCred: this.loginCred })
         this.$router.push('/')
       } catch (err) {
