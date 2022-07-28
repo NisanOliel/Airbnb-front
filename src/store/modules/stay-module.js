@@ -47,6 +47,10 @@ export const stayStore = {
             }
             break;
           case 'propertyType':
+            if (value.length > 0) {
+              filters = filters.filter(stay => value.includes(stay.propertyType))
+            }
+            break;
           case 'label':
             if (value) {
               const filteredStays = filters.filter(stay => stay.propertyType.includes(value));
@@ -69,12 +73,16 @@ export const stayStore = {
             break;
         }
       }
-
-
       return filters;
     },
 
+    getHostOrders({ stays }) {
+      console.log('stays:', stays)
+      return stays.filter(order => order.hostId === this.$store.getters.loggedinUser._id)
+
+    }
   },
+
   mutations: {
     setStays(state, { stays }) {
       state.stays = stays;
@@ -92,7 +100,7 @@ export const stayStore = {
       state.lastRemovestay = null;
     },
     setFilterBy(state, { filterBy }) {
-      stayStore.state.filterBy = filterBy;
+      state.filterBy = filterBy;
     },
     setFilteredStays(state) {
       state.filterBy = { ...state.filterBy };

@@ -10,8 +10,17 @@
     <td>{{ hostOrder.guests.total }}</td>
     <td>{{ new Date(hostOrder.createdAt).toLocaleString() }}</td>
     <td>
-      <el-button @click.prevent="approve" size="small" type="success">Aprrove</el-button>
-      <el-button @click.prevent="decline" size="small" type="danger">Decline</el-button>
+      <el-button v-if="hostOrder.status === 'pending'" @click.prevent="approve" size="small" type="success">Aprrove
+      </el-button>
+      <el-button v-if="hostOrder.status === 'pending'" @click.prevent="decline" size="small" type="danger">Decline
+      </el-button>
+      <el-button v-if="hostOrder.status === 'declined'" @click.prevent="approve" size="small" type="success">Aprrove
+      </el-button>
+      <el-button v-if="hostOrder.status === 'approved'" @click.prevent="decline" size="small" type="danger">Decline
+      </el-button>
+
+
+
     </td>
   </tr>
 
@@ -35,18 +44,15 @@ export default {
   },
   methods: {
     approve() {
-      console.log("approved");
-      this.hostOrder.status = "approved";
-      console.log("approved2");
+      // this.hostOrder.status = "approved";
+      // this.$store.dispatch({ type: "updateStay", order })
       const order = JSON.parse(JSON.stringify(this.hostOrder));
-      console.log('hostOrder:', order)
-      this.$store.dispatch({ type: "saveOrder", order });
+      this.$store.dispatch({ type: "saveOrder", order, status: 'approved' });
     },
     decline() {
-      console.log("declined");
-      this.hostOrder.status = "declined";
+      // this.hostOrder.status = "declined";
       const order = JSON.parse(JSON.stringify(this.hostOrder));
-      this.$store.dispatch({ type: "saveOrder", order });
+      this.$store.dispatch({ type: "saveOrder", order, status: 'declined' });
     },
   }
 };

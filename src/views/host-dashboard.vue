@@ -1,6 +1,6 @@
 <template>
   <div class="dashboard-container container">
-    <div class="logIn" v-if="!loggedinUser">
+    <div class="logIn" v-if="!getLogInUser">
       <h1>log in first
         <router-link to="/login">
 
@@ -55,7 +55,7 @@
                 <td>Total</td>
               </tr>
               <tr>
-                <td class="nums-td">{{ totalRevenues }}</td>
+                <td class="nums-td">{{ totalRevenues }}$</td>
               </tr>
             </table>
           </div>
@@ -120,7 +120,6 @@ export default {
     return {
       orders: null,
       stays: null,
-      loggedinUser: null,
       hostOrders: null,
       hostStays: null,
       showStay: false
@@ -129,13 +128,16 @@ export default {
   async created() {
     this.orders = this.$store.getters.getOrders
     this.stays = this.$store.getters.getStays
-    this.loggedinUser = this.$store.getters.loggedinUser;
-    this.hostOrders = this.orders.filter(order => order.hostId === this.loggedinUser._id)
-    this.hostStays = this.stays.filter(stays => stays.host._id === this.loggedinUser._id)
+    // this.loggedinUser = this.$store.getters.loggedinUser;
+    this.hostOrders = this.orders.filter(order => order.hostId === this.getLogInUser._id)
+    this.hostStays = this.stays.filter(stays => stays.host._id === this.getLogInUser._id)
 
   },
 
   computed: {
+    getLogInUser() {
+      return this.$store.getters.loggedinUser
+    },
     stayOrder() {
       if (!this.showStay) return 'Show my stays'
       if (this.showStay) return 'Show my orders'

@@ -21,12 +21,20 @@ export const orderService = {
 
 // _createorders()
 
+<<<<<<< HEAD
 async function query(filterBy = '') {
   // return axios.get(API, { params: filterBy }).then((res) => res.data)
   // return storageService.query(KEY)
   console.log('API:', API);
   console.log('filterBy:', filterBy);
   return await httpService.get(API, filterBy);
+=======
+async function query(filterBy = "") {
+    // return axios.get(API, { params: filterBy }).then((res) => res.data)
+    // return storageService.query(KEY)
+    return await httpService.get(API, filterBy)
+
+>>>>>>> 71d27b01d81496896a58b22e9182ec37230480fe
 }
 
 async function getById(id) {
@@ -42,6 +50,7 @@ async function remove(id) {
 }
 
 async function save(order) {
+<<<<<<< HEAD
   console.log('order service:', order);
   // if (order._id) {
   //     return axios.put(API + order._id, order).then(res => res.data)
@@ -58,6 +67,26 @@ async function save(order) {
     return await httpService.post(API, order);
     // return axios.post(API, order).then(res => res.data);
   }
+=======
+    // if (order._id) {
+    //     return axios.put(API + order._id, order).then(res => res.data)
+    // } else {
+    //     return axios.post(API, order).then(res => res.data)
+    // }
+
+    // const savedOrder = (order._id) ? storageService.put(KEY, order) : storageService.post(KEY, order)
+    // return savedOrder
+    if (order._id) {
+        // return axios.put(API + order._id, order).then(res => res.data);
+        const data = await httpService.put(`${API}/${order._id}`, order)
+        return data
+
+    } else {
+        return await httpService.post(API, order)
+        // return axios.post(API, order).then(res => res.data);
+    }
+
+>>>>>>> 71d27b01d81496896a58b22e9182ec37230480fe
 }
 
 // function getEmptyorder() {
