@@ -12,7 +12,7 @@
         <p>The average nightly price is {{ getPricesAvg }}</p>
         <HistogramSlider :barRadius="0" @change="setPrice" :bar-height="64" :data="prices" :clip="false" :min="25"
           :barWidth="12" :max="800" :lineHeight="1" :primaryColor="primaryColor" :labelColor="labelColor"
-          :holderColor="holderColor" hideFromTo="true" :grid="false" :histSliderGap="0" :barGap="0" :width="674" />
+          :holderColor="holderColor" hideFromTo="true" :grid="false" :histSliderGap="0" :barGap="0" />
         <div class="form-inputs">
           <div class="price-inner">
             <label for="min">min price</label>
@@ -66,7 +66,8 @@
         <div class="essentials">
           <h3>Essentials</h3>
           <el-checkbox-group v-model="checkList">
-            <el-checkbox v-for="(opt, idx) in essentials" @change="setAmenities(opt, $event)" :key="idx" :label="opt" />
+            <el-checkbox v-for="(opt, idx) in essentials" @change="setAmenities(opt, $event)" :key="idx" size="30"
+              :label="opt" text-color="#000000" />
           </el-checkbox-group>
         </div>
       </div>
@@ -75,7 +76,8 @@
           <h2>Host language</h2>
         </div>
         <el-checkbox-group v-model="checkList">
-          <el-checkbox v-for="(opt, idx) in language" @change="setLanguage(opt, $event)" :key="idx" :label="opt" />
+          <el-checkbox v-for="(opt, idx) in language" @change="setLanguage(opt, $event)" :key="idx" :label="opt"
+            size="large" />
         </el-checkbox-group>
       </div>
     </div>
@@ -148,6 +150,7 @@ export default {
     setPrice(value) {
       this.filterBy.price.minPrice = value.from;
       this.filterBy.price.maxPrice = value.to;
+      this.setFilter()
     },
     getStaysPrices() {
       const stays = this.$store.getters.getStays
