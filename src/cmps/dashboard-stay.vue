@@ -4,7 +4,7 @@
   <tr>
     <td><img class="stay-image" :src=imageUrl></td>
     <td>{{ hostStay.name }}</td>
-    <td>{{ hostStay.price }}$</td>
+    <td>${{ hostStay.price }}</td>
     <td>{{ hostStay.address.street }}</td>
     <td>
       <el-button><span class="material-icons-outlined">

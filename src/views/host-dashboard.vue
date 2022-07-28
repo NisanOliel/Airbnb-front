@@ -55,7 +55,7 @@
                 <td>Total</td>
               </tr>
               <tr>
-                <td class="nums-td">{{ totalRevenues }}$</td>
+                <td class="nums-td">${{ totalRevenues }}</td>
               </tr>
             </table>
           </div>
@@ -68,6 +68,7 @@
         <table class="content-table">
           <thead>
             <tr>
+              <th>Time</th>
               <th>Guest name</th>
               <th>Stay name</th>
               <th>Check</th>
@@ -75,7 +76,6 @@
               <th>Status</th>
               <th>Revenue</th>
               <th>guests</th>
-              <th>time</th>
               <th>Action</th>
             </tr>
           </thead>
@@ -185,7 +185,7 @@ export default {
         this.hostOrders.forEach((order) => {
           prices.push(order.totalPrice);
         });
-        var sum = prices.reduce((sum, price) => sum + price, 0)
+        var sum = prices.reduce((sum, price) => +sum + +price, 0)
         return sum.toLocaleString();
       }
 
