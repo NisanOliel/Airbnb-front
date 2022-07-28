@@ -15,7 +15,6 @@ export const userStore = {
       return users;
     },
     loggedinUser({ loggedinUser }) {
-      console.log(loggedinUser);
       return userService.getLoggedinUser();
     },
     watchedUser({ watchedUser }) {
@@ -31,6 +30,9 @@ export const userStore = {
     },
     setUsers(state, { users }) {
       state.users = users;
+    },
+    setUser(state, { user }) {
+      state.loggedinUser = user
     },
     removeUser(state, { userId }) {
       state.users = state.users.filter(user => user._id !== userId);
@@ -106,14 +108,18 @@ export const userStore = {
         throw err;
       }
     },
-    async increaseScore({ commit }) {
-      try {
-        const score = await userService.changeScore(100);
-        commit({ type: 'setUserScore', score });
-      } catch (err) {
-        console.log('userStore: Error in increaseScore', err);
-        throw err;
-      }
+    setUser({ commit }) {
+      const user = userService.getLoggedinUser()
+      commit({ type: 'setUser', user })
+    },
+
+    async toggleWishList({ commit }, { stayId }) {
+      const user = await userService.getLoggedinUser()
+      const idx = user.wishList.findIndex(wish => wish === stayId)
+      if (idx === -1) user.wishList.push(stayId)
+      else user.wishList.splice(idx, 1)
+      userService.update(user)
+      commit({ type: 'setUser', user })
     },
   },
 };

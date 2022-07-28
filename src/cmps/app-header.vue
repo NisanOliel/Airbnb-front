@@ -32,7 +32,7 @@
                 <a href="#/" @click="logDemo" v-if="!getLogInUser">Log Demo</a>
                 <a href="#/wishList" @click="showMenu = !showMenu" class="a1" v-if="getLogInUser">Wish List</a>
                 <a href="#/dashboard" @click="showMenu = !showMenu" v-if="getLogInUser">Dashboard</a>
-                <a @click.prevent="logout" v-if="getLogInUser">Logout</a>
+                <a @click="logout" v-if="getLogInUser">Logout</a>
               </div>
             </div>
           </div>
@@ -113,9 +113,9 @@ export default {
       this.isShow = false;
     },
     logout() {
-      this.loggedinUser = null;
       this.$store.dispatch({ type: "logout" });
       // this.$router.push("/")
+      this.loggedinUser = null;
       this.showMenu = false;
     },
     async logDemo() {

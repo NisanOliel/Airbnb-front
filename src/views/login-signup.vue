@@ -51,7 +51,8 @@ export default {
         username: '',
         password: '',
         fullname: '',
-        imgUrl: 'https://res.cloudinary.com/nisan/image/upload/v1658872030/air2b/unprofile_ji7zus.png'
+        imgUrl: 'https://res.cloudinary.com/nisan/image/upload/v1658872030/air2b/unprofile_ji7zus.png',
+        wishList: []
       },
     }
   },
@@ -78,7 +79,6 @@ export default {
         return
       }
       try {
-        console.log('this.loginCred:', this.loginCred)
         await this.$store.dispatch({ type: "login", userCred: this.loginCred })
         this.$router.push('/')
       } catch (err) {
@@ -94,6 +94,7 @@ export default {
         this.msg = 'Please fill up the form'
         return
       }
+      console.log('this.signupCred:', this.signupCred)
       await this.$store.dispatch({ type: 'signup', userCred: this.signupCred })
       this.$router.push('/')
 

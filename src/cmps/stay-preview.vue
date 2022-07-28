@@ -2,18 +2,9 @@
   <!-- <div v-if="isShow" class="overlay"></div> -->
   <div class="preview" @click="goToDetails">
 
-    <div v-if="isShow" class="wish-container form-filter">
-      <header class="flex justify-center">
-        <span @click.stop="toggleWishModal" class="material-icons-outlined gray">
-          close
-        </span>
-        <h1>Your wishlists</h1>
-      </header>
-    </div>
 
     <div class="like">
-      <span @click="toggleWishModal" class="material-icons favorite" :class="{ active: isLiked }"
-        @click.stop="toggleWishList"> favorite </span>
+      <span class="material-icons favorite" :class="{ active: isLiked }" @click.stop="toggleWishList"> favorite </span>
     </div>
     <el-carousel trigger="click" :autoplay="false">
       <el-carousel-item v-for="image in images" :key="image">
@@ -38,6 +29,7 @@
 </template>
 
 <script>
+import { ElMessage } from 'element-plus'
 export default {
   name: 'stay-preview',
   props: {
@@ -52,8 +44,14 @@ export default {
         `src/assets/Images/${this.stay.imgUrls[3]}`,
       ],
       isLiked: false,
-      isShow: false,
     };
+  },
+  created() {
+    const user = this.$store.getters.loggedinUser;
+    if (user.wishList.length > 0) {
+      var isWish = user.wishList.filter((wish) => wish === this.stay._id);
+      if (isWish.length > 0) this.isLiked = true;
+    }
   },
   computed: {
     reviewsCount() {
@@ -64,15 +62,24 @@ export default {
     goToDetails() {
       this.$router.push('/stay/' + this.stay._id);
     },
-    toggleWishList() {
-      this.isLiked = !this.isLiked;
-      console.log(this.isShow);
-      console.log('heart is active', this.isLiked);
-    },
+    // toggleWishList() {
+    //   this.isLiked = !this.isLiked;
+    //   console.log(this.isShow);
+    //   console.log('heart is active', this.isLiked);
+    // },
 
-    toggleWishModal() {
-      this.isShow = !this.isShow
-    }
+
+
+    toggleWishList() {
+      const loggedinUser = this.$store.getters.loggedinUser;
+      if (!loggedinUser) {
+        ElMessage.error('You need to log in first!')
+      } else {
+        var stayId = this.stay._id;
+        this.$store.dispatch({ type: "toggleWishList", stayId });
+        this.isLiked = !this.isLiked;
+      }
+    },
   },
   watch: {
     isShow: function () {
