@@ -334,8 +334,8 @@ export default {
         "status": "pending"
       }
 
-      this.$store.dispatch({ type: "saveOrder", order, });
-      ElMessage.success('Order Added!')
+      this.$store.dispatch({ type: "saveOrder", order, status: 'pending' });
+      ElMessage.success('Order send!')
     },
     onClickAway(event) {
       this.isShow = false
