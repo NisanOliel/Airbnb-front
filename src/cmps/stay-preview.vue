@@ -48,7 +48,7 @@ export default {
   },
   created() {
     const user = this.$store.getters.loggedinUser;
-    if (user.wishList.length > 0) {
+    if (user && user.wishList && user.wishList.length > 0) {
       var isWish = user.wishList.filter((wish) => wish === this.stay._id);
       if (isWish.length > 0) this.isLiked = true;
     }
