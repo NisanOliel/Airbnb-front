@@ -331,12 +331,7 @@ export default {
       this.$store.dispatch({ type: "saveOrder", order, status: 'pending' });
       ElMessage.success('Order send!')
 
-      setTimeout(function () {
-        console.log('Execute later after 1 second')
-        this.$router.push('/')
-
-
-      }, 1000);
+      setTimeout(() => this.$router.push('/'), 1000);
 
     },
     onClickAway(event) {
