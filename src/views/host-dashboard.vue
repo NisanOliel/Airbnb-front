@@ -13,7 +13,66 @@
 
     <div v-else>
 
-      <div class="flex justify-space-between">
+
+
+
+
+      <div class="flex column ">
+
+
+
+        <div class="top-dashboard-label flex">
+
+          <button @click="showOrder" class="top-btn">Orders</button>
+          <button @click="showStay" class="top-btn">Stays</button>
+          <button @click="showGraph" class="top-btn">Graphs</button>
+        </div>
+
+
+
+
+        <table v-if="showOrders" class="content-table">
+          <thead>
+            <tr>
+              <th class="title-thead">Time </th>
+              <th class="title-thead ">Guest </th>
+              <th class="title-thead ">Stay name </th>
+              <th class="title-thead">Check In/Out </th>
+              <th class="title-thead text-center">Status </th>
+              <th class="title-thead text-center">Revenue </th>
+              <th class="title-thead text-center">Guests </th>
+              <th class="title-thead text-center">Action </th>
+            </tr>
+          </thead>
+          <tbody>
+            <orders-dashboard :hostOrder="hostOrder" v-for="hostOrder in hostOrders" :key="hostOrder._id" />
+          </tbody>
+        </table>
+
+
+
+        <table v-if="showStays" class="content-table">
+          <thead>
+            <tr>
+              <th class="title-thead"></th>
+              <th class="title-thead">Stay name</th>
+              <th class="title-thead">Price per night</th>
+              <th class="title-thead">Address</th>
+              <th class="title-thead">Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <stays-dashboard :hostStay="hostStay" v-for="hostStay in hostStays" :key="hostStay._id" />
+          </tbody>
+        </table>
+
+      </div>
+      <graph-dashboard v-if="showGraphs" :hostOrders="hostOrders" />
+
+
+
+
+      <!-- <div class="flex justify-space-between">
         <div class="flex column left-side">
 
           <el-button @click="showStays"><span class="material-icons-sharp">home</span>
@@ -100,21 +159,27 @@
             <dashboard-stay :hostStay="hostStay" v-for="hostStay in hostStays" :key="hostStay._id" />
           </tbody>
         </table>
-      </div>
+      </div> -->
 
     </div>
   </div>
 </template>
 
 <script>
-import dashboardOrder from '../cmps/dashboard-order.vue';
-import dashboardStay from '../cmps/dashboard-stay.vue';
+// import dashboardOrder from '../cmps/dashboard-order.vue';
+// import dashboardStay from '../cmps/dashboard-stay.vue';
+import ordersDashboard from '../cmps/orders-dashboard.vue';
+import staysDashboard from '../cmps/stays-dashboard.vue';
+import graphDashboard from '../cmps/graph-dashboard.vue';
 export default {
 
   name: 'host-dashboard',
   components: {
-    dashboardOrder,
-    dashboardStay
+    // dashboardOrder,
+    // dashboardStay,
+    ordersDashboard,
+    staysDashboard,
+    graphDashboard
   },
   data() {
     return {
@@ -122,7 +187,9 @@ export default {
       stays: null,
       hostOrders: null,
       hostStays: null,
-      showStay: false
+      showStays: false,
+      showOrders: true,
+      showGraphs: false
     }
   },
   async created() {
@@ -193,11 +260,27 @@ export default {
 
   },
   methods: {
-    showStays() {
-      this.showStay = true
+    showStay() {
+      this.showOrders = false
+      this.showGraphs = false
+      this.showStays = true
+
     },
     showOrder() {
-      this.showStay = false
+      this.showStays = false
+      this.showGraphs = false
+      this.showOrders = true
+    },
+    showStay() {
+      this.showOrders = false
+      this.showGraphs = false
+      this.showStays = true
+
+    },
+    showGraph() {
+      this.showStays = false
+      this.showGraphs = true
+      this.showOrders = false
     },
 
   }
