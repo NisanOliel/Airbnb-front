@@ -1,15 +1,16 @@
 import { utilService } from './util.service.js';
 import { storageService } from './async-storage.service.js';
 import axios from 'axios';
-import { httpService } from "./http.service"
-import staysJason from '../../data/stay.json' assert { type: 'json' }
-import labelsJason from '../../data/labels.json' assert {type: 'json'}
+import { httpService } from './http.service';
+import staysJason from '../../data/stay.json' assert { type: 'json' };
+import labelsJason from '../../data/labels.json' assert { type: 'json' };
+import mapJason from '../../data/location.json' assert { type: 'json' };
 
 const KEY = 'staysDB';
 // const API = '//localhost:3030/api/stay/'
 
 // const API = process.env.NODE_ENV !== 'development' ? 'api/stay/' : 'localhost:3030/api/stay';
-const API = 'stay'
+const API = 'stay';
 export const stayService = {
   query,
   getById,
@@ -18,13 +19,14 @@ export const stayService = {
   // getEmptystay,
   getstay,
   getLabels,
+  getMaps,
   // filterStays
-}
+};
 
 // _createstays()
 
-async function query(filterBy = "") {
-  return await httpService.get(API, filterBy)
+async function query(filterBy = '') {
+  return await httpService.get(API, filterBy);
   // const stays = storageService.query(KEY);
   // return await axios.get(API, { params: filterBy })
   // return filterStays(filterBy, await stays);
@@ -32,13 +34,13 @@ async function query(filterBy = "") {
 
 async function getById(id) {
   // return axios.get(API + id).then(res => res.data);
-  return await httpService.get(`${API}/${id}`)
+  return await httpService.get(`${API}/${id}`);
   // return storageService.get(KEY, id)
 }
 
 async function remove(id) {
   // return axios.delete(API + id).then(res => res.data);
-  return await httpService.delete(API, id)
+  return await httpService.delete(API, id);
 
   // return storageService.remove(KEY, id)
 }
@@ -46,10 +48,9 @@ async function remove(id) {
 async function save(stay) {
   if (stay._id) {
     // return axios.put(API + stay._id, stay).then(res => res.data);
-    return await httpService.put(API, stay)
-
+    return await httpService.put(API, stay);
   } else {
-    return await httpService.post(API, stay)
+    return await httpService.post(API, stay);
     // return axios.post(API, stay).then(res => res.data);
   }
 
@@ -82,8 +83,8 @@ function getstay(stayId) {
 // }
 
 function getLabels() {
-  return labelsJason
+  return labelsJason;
 }
-
-
-
+function getMaps() {
+  return mapJason;
+}

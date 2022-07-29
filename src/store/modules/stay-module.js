@@ -7,6 +7,7 @@ export const stayStore = {
     filterBy: null,
     lastRemoveStay: null,
     labels: stayService.getLabels(),
+    maps: stayService.getMaps(),
     num: null,
   },
 
@@ -17,8 +18,10 @@ export const stayStore = {
     getLabels({ labels }) {
       return labels;
     },
+    getMaps({ maps }) {
+      return maps;
+    },
     getFilteredStays({ filterBy, stays }) {
-
       const loc = filterBy?.location;
       const deepStays = JSON.parse(JSON.stringify(stays));
 
@@ -48,7 +51,7 @@ export const stayStore = {
             break;
           case 'propertyType':
             if (value.length > 0) {
-              filters = filters.filter(stay => value.includes(stay.propertyType))
+              filters = filters.filter(stay => value.includes(stay.propertyType));
             }
             break;
           case 'label':
@@ -77,10 +80,9 @@ export const stayStore = {
     },
 
     getHostOrders({ stays }) {
-      console.log('stays:', stays)
-      return stays.filter(order => order.hostId === this.$store.getters.loggedinUser._id)
-
-    }
+      console.log('stays:', stays);
+      return stays.filter(order => order.hostId === this.$store.getters.loggedinUser._id);
+    },
   },
 
   mutations: {

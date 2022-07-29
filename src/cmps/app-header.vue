@@ -1,12 +1,12 @@
 <template>
-  <div v-if="isShow" class="overlay"></div>
+  <div v-if="isExpend" class="overlay"></div>
 
   <!-- <Transition name="bounce"> </Transition> -->
   <header class="main-header flex column" :class="{ sticky: isSticky }">
     <div class="nav-wrapper" :class="{ expend: isExpend }">
       <div :class="{ container: headerLocation, 'inner-container': !headerLocation }">
         <nav class="top-nav flex justify-space-between align-center">
-          <router-link to="/">
+          <router-link class="logo" to="/">
             <div class="main-logo flex">
               <div><img class="logo-img" src="@/assets/airbnb-logo.svg" /></div>
               <h1>air2b</h1>
@@ -61,10 +61,10 @@
             >
             </path>
             <a @click="isShow = !isShow">Filter</a>
-            <standAlone-filter @closeFilersForm="closeModal" v-if="isShow" v-click-away="onClickAway" />
+            <Transition duration="200" name="nested">
+              <standAlone-filter @closeFilersForm="closeModal" v-if="isShow" v-click-away="onClickAway" />
+            </Transition>
           </div>
-          <!-- <Transition duration="550" name="nested">
-        </Transition> -->
         </div>
       </div>
     </div>

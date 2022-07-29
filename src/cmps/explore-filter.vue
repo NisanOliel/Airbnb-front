@@ -19,7 +19,7 @@
           <label for="where">Where</label>
           <!-- <input name="where" @focus="showInitModal($event)" v-model="form.where" placeholder="Search destination" /> -->
           <input name="where" v-model="filterBy.where" placeholder="Search destination" />
-
+          <explore-maps />
           <!-- <div v-if="showModal">dflkgjldfkjgdlsfgjdfslkgjdfsljl</div> -->
         </div>
         <div class="filter-option check">
@@ -243,7 +243,7 @@
 <script>
   // import { fa } from 'element-plus/es/locale';
   import { eventBus } from '../services/event-bus.service';
-
+  import exploreMaps from '../cmps/explore-location.popup.vue';
   // import { ref } from 'vue';
   export default {
     emits: ['expendForm'],
@@ -352,6 +352,9 @@
           this.showModal = data;
         });
       },
+    },
+    components: {
+      exploreMaps,
     },
   };
 </script>
