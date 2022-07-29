@@ -1,14 +1,14 @@
 <template>
 
   <tr>
+    <td>{{ new Date(hostOrder.createdAt).toLocaleString() }}</td>
     <td class="td-image">{{ hostOrder.buyer.fullname }}</td>
     <td>{{ hostOrder.stay.name }}</td>
     <td>{{ hostOrder.startDate }}</td>
     <td>{{ hostOrder.endDate }}</td>
     <td>{{ hostOrder.status }}</td>
-    <td>{{ hostOrder.totalPrice }}$</td>
+    <td>{{ formatRevune }}</td>
     <td>{{ hostOrder.guests.total }}</td>
-    <td>{{ new Date(hostOrder.createdAt).toLocaleString() }}</td>
     <td>
       <el-button v-if="hostOrder.status === 'pending'" @click.prevent="approve" size="small" type="success">Aprrove
       </el-button>
@@ -40,7 +40,10 @@ export default {
 
   },
   computed: {
-
+    formatRevune() {
+      const totalPrice = this.hostOrder.totalPrice
+      return "$" + totalPrice.toLocaleString()
+    }
   },
   methods: {
     approve() {

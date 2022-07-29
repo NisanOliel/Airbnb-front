@@ -3,8 +3,8 @@
     <div v-show="!isExpend" @click="expendForm" class="filter-preview flex align-center">
       <div class="filter btn header-location">Anywhere</div>
       <div class="filter btn header-time">Any week</div>
-      <div class="filter btn header-guests search" value="hellow"
-        >Add guests <span><img src="@/assets/search-icon.svg" /></span>
+      <div class="filter btn header-guests search" value="hellow">Add guests <span><img
+            src="@/assets/search-icon.svg" /></span>
       </div>
     </div>
 
@@ -15,7 +15,8 @@
         <a href="http://">Online Experiences</a>
       </div>
       <el-form :model="filterBy">
-        <div @click="activeTab('where')" class="filter-option where" data-field="where" :class="{ 'active-btn': isExpend ? isActive : !isActive }">
+        <div @click="activeTab('where')" class="filter-option where" data-field="where"
+          :class="{ 'active-btn': isExpend ? isActive : !isActive }">
           <label for="where">Where</label>
           <!-- <input name="where" @focus="showInitModal($event)" v-model="form.where" placeholder="Search destination" /> -->
           <input name="where" v-model="filterBy.where" placeholder="Search destination" />
@@ -27,37 +28,24 @@
             <v-date-picker :columns="2" v-model="filterBy.date" is-range>
               <template v-slot="{ inputValue, inputEvents }">
                 <div class="flex justify-center items-center">
-                  <div
-                    @click.native="activeTab('checkin')"
-                    class="checkin"
-                    data-field="checkin"
-                    :class="{ 'hover-btn': isExpend ? isHover : !isHover, 'active-btn': startActive }"
-                  >
+                  <div @click.native="activeTab('checkin')" class="checkin" data-field="checkin"
+                    :class="{ 'hover-btn': isExpend ? isHover : !isHover, 'active-btn': startActive }">
                     <label for="checkin">Check in</label>
-                    <input
-                      name="checkin"
-                      :value="inputValue.start"
-                      v-on="inputEvents.start"
-                      placeholder="Add dates"
-                      class="border px-2 py-1 w-32 rounded focus:outline-none focus:border-indigo-300"
-                    />
+                    <input name="checkin" :value="inputValue.start" v-on="inputEvents.start" placeholder="Add dates"
+                      class="border px-2 py-1 w-32 rounded focus:outline-none focus:border-indigo-300" />
                   </div>
                   <div :class="{ 'active-btn': endActive }" class="checkout" @click.native="activeTab('checkout')">
                     <label for="checkout">Check out</label>
-                    <input
-                      name="checkout"
-                      :value="inputValue.end"
-                      v-on="inputEvents.end"
-                      placeholder="Add dates"
-                      class="border px-2 py-1 w-32 rounded focus:outline-none focus:border-indigo-300"
-                    />
+                    <input name="checkout" :value="inputValue.end" v-on="inputEvents.end" placeholder="Add dates"
+                      class="border px-2 py-1 w-32 rounded focus:outline-none focus:border-indigo-300" />
                   </div>
                 </div>
               </template>
             </v-date-picker>
           </div>
         </div>
-        <div @click.native="activeTab('guest')" class="filter-option guest-dropdown" :class="{ 'active-btn': guestActive }">
+        <div @click.native="activeTab('guest')" class="filter-option guest-dropdown"
+          :class="{ 'active-btn': guestActive }">
           <div @click="dropDownMenu($event)" class="add-guest-wrapper">
             <label for="add-guest">Who</label>
             <input disabled type="text" data-field="guest" placeholder="Add guests" />
@@ -65,104 +53,7 @@
 
           <div @click="formSubmit" class="order-container header-filter-search">
             <div class="btn-container on-filter">
-              <div class="cell"></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
-              <div class="cell"></div>
+              <div v-for="i in 100" class="cell"></div>
               <div class="content filter-content">
                 <button class="action-btn">
                   <div class="material-icons search"> search </div>
@@ -241,6 +132,7 @@
 </template>
 
 <script>
+<<<<<<< HEAD
   // import { fa } from 'element-plus/es/locale';
   import { eventBus } from '../services/event-bus.service';
   import exploreMaps from '../cmps/explore-location.popup.vue';
@@ -262,89 +154,120 @@
             infants: 0,
             pets: 0,
           },
+=======
+// import { fa } from 'element-plus/es/locale';
+import { eventBus } from '../services/event-bus.service';
+
+// import { ref } from 'vue';
+export default {
+  emits: ['expendForm'],
+  name: 'explore-filter',
+  props: {
+    isExpend: Boolean,
+  },
+  data() {
+    return {
+      filterBy: {
+        where: '',
+        date: [],
+        guests: {
+          adults: 0,
+          children: 0,
+          infants: 0,
+          pets: 0,
+>>>>>>> a6e65a90ef11d9544e91cb899eccd3308efb276a
         },
-        // filterPreview: true,
-        showModal: false,
-        isShow: false,
-        isActive: true,
-        isHover: true,
-        currentActive: false,
-        guestActive: false,
-        startActive: false,
-        endActive: false,
-        expend: this.isExpend,
-      };
+      },
+      // filterPreview: true,
+      showModal: false,
+      isShow: false,
+      isActive: true,
+      isHover: true,
+      currentActive: false,
+      guestActive: false,
+      startActive: false,
+      endActive: false,
+      expend: this.isExpend,
+    };
+  },
+  methods: {
+    activeTab(value, ev) {
+      console.log('the value', value);
+
+      if (value === 'where') {
+        this.isActive = true;
+        this.startActive = false;
+        this.endActive = false;
+        this.guestActive = false;
+      }
+      if (value === 'guest') {
+        this.isActive = false;
+        this.guestActive = true;
+        this.startActive = false;
+        this.endActive = false;
+      }
+
+      if (value === 'checkin') {
+        this.isActive = false;
+        this.guestActive = false;
+        this.startActive = true;
+        this.endActive = false;
+        this.isHover = false;
+      }
+      if (value === 'checkout') {
+        this.isActive = false;
+        this.guestActive = false;
+        this.startActive = false;
+        this.endActive = true;
+      }
     },
-    methods: {
-      activeTab(value, ev) {
-        console.log('the value', value);
+    formSubmit() {
+      this.isShow = !this.isShow;
+      eventBus.emit('overlay', this.isShow);
 
-        if (value === 'where') {
-          this.isActive = true;
-          this.startActive = false;
-          this.endActive = false;
-          this.guestActive = false;
-        }
-        if (value === 'guest') {
-          this.isActive = false;
-          this.guestActive = true;
-          this.startActive = false;
-          this.endActive = false;
-        }
-
-        if (value === 'checkin') {
-          this.isActive = false;
-          this.guestActive = false;
-          this.startActive = true;
-          this.endActive = false;
-          this.isHover = false;
-        }
-        if (value === 'checkout') {
-          this.isActive = false;
-          this.guestActive = false;
-          this.startActive = false;
-          this.endActive = true;
-        }
-      },
-      formSubmit() {
-        this.isShow = !this.isShow;
-        eventBus.emit('overlay', this.isShow);
-
-        let url = `/explore?location=${this.filterBy.where}`;
-        this.$router.push(url);
-      },
-      expendForm() {
-        this.$emit('expendForm', true);
-      },
-      showInitModal(ev) {
-        this.toggleShowModal();
-
-        console.log(this.showModal);
-      },
-      dropDownMenu() {
-        this.showModal = true;
-      },
-      updateGuests(type, number) {
-        this.filterBy.guests[type] += number;
-      },
-      toggleShowModal(ev) {
-        this.showModal = !this.showModal;
-      },
-      onClickAway() {
-        this.showModal = false;
-      },
+      let url = `/explore?location=${this.filterBy.where}`;
+      this.$router.push(url);
     },
-    created() {
+    expendForm() {
+      this.$emit('expendForm', true);
+    },
+    showInitModal(ev) {
+      this.toggleShowModal();
+
+      console.log(this.showModal);
+    },
+    dropDownMenu() {
+      this.showModal = true;
+    },
+    updateGuests(type, number) {
+      this.filterBy.guests[type] += number;
+    },
+    toggleShowModal(ev) {
+      this.showModal = !this.showModal;
+    },
+    onClickAway() {
+      this.showModal = false;
+    },
+  },
+  created() {
+    eventBus.on('closeModal', data => {
+      console.log('data form header expend', data);
+      this.showModal = data;
+      this.isActive = true;
+      this.guestActive = false;
+      this.startActive = false;
+      this.endActive = false;
+      this.isHover = true;
+    });
+  },
+  watch: {
+    expend: function () {
       eventBus.on('closeModal', data => {
         console.log('data form header expend', data);
         this.showModal = data;
-        this.isActive = true;
-        this.guestActive = false;
-        this.startActive = false;
-        this.endActive = false;
-        this.isHover = true;
       });
     },
+<<<<<<< HEAD
     watch: {
       expend: function () {
         eventBus.on('closeModal', data => {
@@ -357,4 +280,8 @@
       exploreMaps,
     },
   };
+=======
+  },
+};
+>>>>>>> a6e65a90ef11d9544e91cb899eccd3308efb276a
 </script>
