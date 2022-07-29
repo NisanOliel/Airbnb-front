@@ -22,7 +22,6 @@
           <explore-maps />
           <!-- <div v-if="showModal">dflkgjldfkjgdlsfgjdfslkgjdfsljl</div> -->
         </div>
-
         <div class="filter-option check">
           <div class="labels-wrap">
             <v-date-picker :columns="2" v-model="filterBy.date" is-range>
@@ -147,7 +146,7 @@
 <script>
   // import { fa } from 'element-plus/es/locale';
   import { eventBus } from '../services/event-bus.service';
-
+  import exploreMaps from '../cmps/explore-location.popup.vue';
   // import { ref } from 'vue';
   export default {
     emits: ['expendForm'],
@@ -167,7 +166,6 @@
             pets: 0,
           },
         },
-        // filterPreview: true,
         showModal: false,
         isShow: false,
         isActive: true,
@@ -256,6 +254,9 @@
           this.showModal = data;
         });
       },
+    },
+    components: {
+      exploreMaps,
     },
   };
 </script>
