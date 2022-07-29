@@ -1,4 +1,68 @@
 <template>
+  <div v-if="isConfirm" class="order-alert-overlay"></div>
+  <section class="order-confirmation-modal" :class="{ showConfirm: isConfirm }">
+    <div class="confirmation-details">
+      <div class="confirm-title-container">
+        <p class="confirm-title">One last step</p>
+        <h1 class="confirm-text">Dear Guest,</h1>
+        <h1 class="confirm-text"> In order to complete your reservation, please confirm your trip details. </h1>
+      </div>
+      <div class="reservation-details-container">
+        <div class="trip-details-container flex column">
+          <h1 class="reservation-details-title">Reservation details</h1>
+          <span class="mini-trip-title">Trip dates:</span>
+          <h1 class="mini-trip-detail">{{ formatCheck }} - {{ formatCheckOut }}</h1>
+          <span class="mini-trip-title">Guests:</span>
+          <h1 class="mini-trip-detail">{{ guestCount }} guests</h1>
+
+          <div class="price-details-container flex column">
+            <h1 class="mini-trip-title">Price Details</h1>
+            <div class="price-per-night flex justify-space-between">
+              <h1 class="mini-trip-detail">${{ stay.price }} X {{ daysTotal }} nights</h1>
+              <h1 class="mini-trip-detail">${{ totalPriceSum }}</h1>
+            </div>
+
+            <div class="service flex justify-space-between">
+              <h1 class="mini-trip-detail">Service fee</h1>
+              <h1 class="mini-trip-detail">${{ serviceFee }}</h1>
+            </div>
+            <div class="total-price flex justify-space-between">
+              <h1 class="mini-trip-detail">Total</h1>
+              <h1 class="mini-trip-detail">${{ totalPrice }}</h1>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="order-stay-details flex column">
+          <img class="order-stay-image" :src="imgOrder">
+          <h1 class="stay-detail">{{ stay.name }}</h1>
+          <h1 class="stay-detail">{{ stay.address.city }},{{ stay.address.country }}</h1>
+        </div>
+
+      </div>
+      <div class="modal-btns-container">
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div @click.prevent="sendOrder" class="btn-container">
+          <div v-for="i in 100" class="cell"></div>
+          <div class="content">
+            <button class="action-btn">
+              <span>Confirm</span>
+            </button>
+          </div>
+        </div>
+
+        <div @click="isConfirm = false" class="sign-up-continue go-back">
+
+          <el-button size="large">Back</el-button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
   <section class="order-container sticky">
     <div class="order-form-header">
       <p><span class="cost bold">${{ stay.price }}</span> night</p>
@@ -41,15 +105,18 @@
 
     <div class="cell"></div>
     <div class="cell"></div>
-    <div @click.prevent="sendOrder" class="btn-container">
+    <div @click="openConfirm" class="btn-container">
       <div v-for="i in 100" class="cell"></div>
-
       <div class="content">
         <button class="action-btn">
           <span>Reserve</span>
         </button>
       </div>
     </div>
+
+
+
+
 
     <div class="flex column guest-add" v-if="isShow" v-click-away="onClickAway">
 
@@ -133,6 +200,7 @@ export default {
   props: { stay: { type: Object } },
   data() {
     return {
+      isConfirm: false,
       totalPriceSum: 0,
       isShow: false,
       trip: {
@@ -162,6 +230,18 @@ export default {
     dateCheck() {
       return Object.keys(this.trip.dates).length;
     },
+    formatCheck() {
+      return new Date(this.trip.dates.start).toLocaleDateString()
+    },
+
+    guestCount() {
+      const { children, adults, Infants } = this.trip.guests
+      return children + adults + Infants;
+    },
+
+    formatCheckOut() {
+      return new Date(this.trip.dates.end).toLocaleDateString()
+    },
 
     guestsCount() {
       const { children, adults, Infants } = this.trip.guests
@@ -178,6 +258,10 @@ export default {
       if (!this.trip.dates[1]) return "Add date"
       else return this.trip.dates[1]
     },
+    imgOrder() {
+      return `src/assets/Images/${this.stay.imgUrls[0]}`
+    },
+
     totalPrice() {
       let size = Object.keys(this.trip.dates).length;
       if (size > 1) {
@@ -203,16 +287,21 @@ export default {
 
       this.trip.guests[type] += number;
     },
-    sendOrder() {
+
+    openConfirm() {
       const loggedinUser = this.$store.getters.loggedinUser;
       if (!loggedinUser) return ElMessage.error("log in first");
 
       if (this.dateCheck === 0) return ElMessage.error('Fill check in and check out date ')
       const { adults, children, Infants } = this.trip.guests
       if (children === 0 && adults === 0) return ElMessage.error('Add guests! ')
-
+      this.isConfirm = true
+    },
+    sendOrder() {
       const time = JSON.parse(JSON.stringify(this.trip.dates));
       const { start, end } = time;
+      const loggedinUser = this.$store.getters.loggedinUser;
+      const { adults, children, Infants } = this.trip.guests
 
       let order = {
         "hostId": this.stay.host._id,
@@ -241,6 +330,14 @@ export default {
 
       this.$store.dispatch({ type: "saveOrder", order, status: 'pending' });
       ElMessage.success('Order send!')
+
+      setTimeout(function () {
+        console.log('Execute later after 1 second')
+        this.$router.push('/')
+
+
+      }, 1000);
+
     },
     onClickAway(event) {
       this.isShow = false
