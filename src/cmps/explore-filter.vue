@@ -22,6 +22,7 @@
           <explore-maps />
           <!-- <div v-if="showModal">dflkgjldfkjgdlsfgjdfslkgjdfsljl</div> -->
         </div>
+
         <div class="filter-option check">
           <div class="labels-wrap">
             <v-date-picker :columns="2" v-model="filterBy.date" is-range>
