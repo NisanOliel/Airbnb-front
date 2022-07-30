@@ -19,7 +19,7 @@
           <label for="where">Where</label>
 
           <input name="where" v-model="filterBy.where" placeholder="Search destination" />
-          <explore-maps v-if="isActive" />
+          <explore-maps v-if="isActive" v-click-away="onClickAway" />
           <!-- <div v-if="showModal">dflkgjldfkjgdlsfgjdfslkgjdfsljl</div> -->
         </div>
         <div class="filter-option check">
@@ -237,6 +237,7 @@
       },
       onClickAway() {
         this.showModal = false;
+        this.isActive = false;
       },
     },
     created() {
