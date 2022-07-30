@@ -523,4 +523,21 @@ header {
       padding-block-start: 5px;
     }
   }
+
+  .guests-modal.dropdown-card.order-container {
+    z-index: 2;
+    position: absolute;
+    background: white;
+    right: 0;
+    /* margin-block-start: 10px; */
+    border-radius: 32px;
+    box-shadow: 0 0 0 1px rgb(0 0 0 / 4%), 0 8px 16px rgb(0 0 0 / 15%);
+    margin-top: 0px;
+    padding: 16px 32px;
+    border: none;
+    top: 171px;
+    margin-top: 12px;
+    /* bottom: 59px; */
+    min-height: 0px;
+  }
 }
