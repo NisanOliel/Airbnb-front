@@ -83,7 +83,6 @@ export const stayStore = {
     // },
 
     getHostOrders({ stays }) {
-      console.log('stays:', stays);
       return stays.filter(order => order.hostId === this.$store.getters.loggedinUser._id);
     },
   },
@@ -105,7 +104,6 @@ export const stayStore = {
       state.lastRemovestay = null;
     },
     setFilterBy(state, { filterBy }) {
-      console.log('filter by store', filterBy);
       state.filterBy = filterBy;
     },
     setFilteredStays(state) {
@@ -158,7 +156,6 @@ export const stayStore = {
     async setFilterBy({ commit }, { filterBy }) {
       const stays = await stayService.query(filterBy);
       commit({ type: 'setStays', stays });
-      console.log('stays await', stays);
     },
 
     setFilteredStays({ commit }) {

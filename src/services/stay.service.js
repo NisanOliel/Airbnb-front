@@ -20,13 +20,13 @@ export const stayService = {
   getstay,
   getLabels,
   getMaps,
+  debounce
   // filterStays
 };
 
 // _createstays()
 
 async function query(filterBy = null) {
-  console.log('stay service filter by', filterBy);
   return await httpService.get(API, filterBy);
 }
 
@@ -85,4 +85,13 @@ function getLabels() {
 }
 function getMaps() {
   return mapJason;
+}
+
+
+function debounce(func, timeout = 300) {
+  let timer;
+  return (...args) => {
+    clearTimeout(timer);
+    timer = setTimeout(() => { func.apply(this, args); }, timeout);
+  };
 }
