@@ -17,9 +17,9 @@
       <el-form :model="filterBy">
         <div @click="activeTab('where')" class="filter-option where" data-field="where" :class="{ 'active-btn': isExpend ? isActive : !isActive }">
           <label for="where">Where</label>
-          <!-- <input name="where" @focus="showInitModal($event)" v-model="form.where" placeholder="Search destination" /> -->
+
           <input name="where" v-model="filterBy.where" placeholder="Search destination" />
-          <explore-maps />
+          <explore-maps v-if="isActive" />
           <!-- <div v-if="showModal">dflkgjldfkjgdlsfgjdfslkgjdfsljl</div> -->
         </div>
         <div class="filter-option check">
@@ -214,6 +214,8 @@
         eventBus.emit('getFilterStay');
         let url = `/explore?location=${this.filterBy.where}`;
         this.$router.push(url);
+
+        this.$emit('expendForm', false);
       },
       expendForm() {
         console.log('click form filter');
