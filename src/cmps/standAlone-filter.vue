@@ -88,6 +88,7 @@
 </template>
 <script>
 import { ref } from 'vue';
+import { stayService } from '../services/stay.service.js';
 export default {
   name: 'standAlone-filter',
   data() {
@@ -96,25 +97,25 @@ export default {
       numLabels: [0, 1, 2, 3, 4, 5, 6, 7, `${8}+`],
       propertyTypes: [
         {
-          "propertyType": "House",
-          "src": "src/assets/app-filter-img/house.jpg",
-          "selected": false,
+          propertyType: 'House',
+          src: 'src/assets/app-filter-img/house.jpg',
+          selected: false,
         },
         {
-          "propertyType": "Apartment",
-          "src": "src/assets/app-filter-img/Apartment.jpg",
-          "selected": false,
+          propertyType: 'Apartment',
+          src: 'src/assets/app-filter-img/Apartment.jpg',
+          selected: false,
         },
         {
-          "propertyType": "Guesthouse",
-          "src": "src/assets/app-filter-img/Guesthouse.jpg",
-          "selected": false,
+          propertyType: 'Guesthouse',
+          src: 'src/assets/app-filter-img/Guesthouse.jpg',
+          selected: false,
         },
         {
-          "propertyType": "Hotel",
-          "src": "src/assets/app-filter-img/Hotel.jpg",
-          "selected": false,
-        }
+          propertyType: 'Hotel',
+          src: 'src/assets/app-filter-img/Hotel.jpg',
+          selected: false,
+        },
       ],
       propertyType: null,
       language: ['English', 'German', 'French', 'Japanese'],
@@ -131,6 +132,8 @@ export default {
   created() {
     this.getStaysPrices();
     this.labels = this.$store.getters.getLabels;
+    this.setFilter = stayService.debounce(this.setFilter)
+
   },
   methods: {
     getInitialFilterState() {
@@ -144,25 +147,23 @@ export default {
         amenities: [],
         hostLanguage: [],
         propertyType: [],
-      }
+      };
     },
     setPrice(value) {
-      console.log(value);
       this.filterBy = {
         price: {
           minPrice: value.from,
           maxPrice: value.to,
-        }
-      }
+        },
+      };
       // this.filterBy.price.minPrice = value.from;
       // this.filterBy.price.maxPrice = value.to;
-      console.log(value.from);
-      this.setFilter()
+      this.setFilter();
     },
     getStaysPrices() {
-      const stays = this.$store.getters.getStays
-      const staysPrices = stays.map(stay => stay.price)
-      this.prices = staysPrices
+      const stays = this.$store.getters.getStays;
+      const staysPrices = stays.map(stay => stay.price);
+      this.prices = staysPrices;
     },
 
     setFilter() {
@@ -176,7 +177,7 @@ export default {
       } else {
         this.filterBy.amenities = this.filterBy.amenities.filter(amenity => amenity !== currAmenity);
       }
-      this.setFilter()
+      this.setFilter();
     },
     setPropertyType(propertyType) {
       console.log(propertyType);
@@ -186,8 +187,12 @@ export default {
       } else {
         this.filterBy.propertyType = this.filterBy.propertyType.filter(propertyType => propertyType.selected);
       }
+<<<<<<< HEAD
       console.log(this.filterBy.propertyType);
       this.setFilter()
+=======
+      this.setFilter();
+>>>>>>> 8dd1448415f9c0862fa5f591eb4dda038ea1c79b
     },
 
     setLanguage(currLanguage, isChecked) {
@@ -196,23 +201,21 @@ export default {
       } else {
         this.filterBy.hostLanguage = this.filterBy.hostLanguage.filter(language => language !== currLanguage);
       }
-      this.setFilter()
+      this.setFilter();
     },
 
-
     onSaveFilters(ev, value) {
-      this.$store.dispatch({ type: 'setFilteredStays' });
+      this.$store.dispatch({ type: 'setFilterBy', filterBy: this.filterBy });
       this.propertyNum = this.$store.getters.getStays.length;
       if (ev.type === 'click') {
         this.closeForm();
       }
     },
 
-
     clearAll() {
       this.filterBy = this.getInitialFilterState();
-      this.checkList = ref([])
-      this.setFilter()
+      this.checkList = ref([]);
+      this.setFilter();
     },
     closeForm() {
       this.$emit('closeFilersForm');
@@ -230,16 +233,9 @@ export default {
       return Sum + '$';
     },
     getStay() {
-      return this.$store.getters.getFilteredStays.length
+      return this.$store.getters.getStays.length;
     },
   },
   components: {},
-}
+};
 </script>
-
-
-
-
-
-
-

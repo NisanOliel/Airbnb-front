@@ -1,10 +1,15 @@
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+
 .preview {
   position: relative;
-  max-width: 300px;
+  max-width: 100%;
   cursor: pointer;
 
   // ------- el-carousel
-
 
   .el-carousel__button {
     height: 6px;
@@ -42,35 +47,27 @@
     /* font-size: 10px; */
   }
 
-  // .wish-container {
-  //   max-width: 568px;
-  //   width: 100%;
-  //   padding: 0px;
+  .el-carousel {
+    border-radius: 12px;
+  }
 
-  //   header {
-  //     border-bottom: 1px solid rgb(235, 235, 235);
-
-  //   }
-
-  //   h1 {
-  //     font-size: 16px;
-  //   }
-
-  //   span.material-icons-outlined {
-  //     left: 10px;
-  //     cursor: pointer;
-  //   }
-
-  // }
+  .img-wrapper {
+    height: 100%;
+    img {
+      height: 100%;
+      object-fit: cover;
+    }
+  }
 
   .preview-info {
     display: grid;
-
     grid-template-columns: 1fr;
     grid-gap: 6px;
+    padding-block-start: 12px;
+    font-size: 15px;
+    line-height: 19px;
 
     .name-bed {
-      font-size: 15px;
       color: $clr7;
     }
   }

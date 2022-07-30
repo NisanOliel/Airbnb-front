@@ -1,5 +1,5 @@
 header {
-  position: relative;
+  position: sticky;
   height: fit-content;
   display: flex;
   justify-content: space-between;
@@ -7,15 +7,21 @@ header {
   background-color: white;
   width: 100%;
   transition: all 500ms ease-out;
-
+  a.logo {
+    flex: 1;
+  }
   &.sticky {
     top: 0;
     position: fixed;
-    box-shadow: 0px 0px 7px 1px #80808087;
+    box-shadow: 0px 0px 3px 0px rgb(128 128 128 / 53%);
     transition: all 300ms ease-out;
 
     .header-bottom {
       padding-block-start: 0;
+      transition: all 300ms ease-out;
+    }
+    .header-bottom {
+      padding-block-start: 0 !important;
       transition: all 300ms ease-out;
     }
   }
@@ -70,12 +76,26 @@ header {
   .labels {
     gap: 13px;
     height: 70px;
-    color: rgb(83 83 83 / 35%);
-    opacity: 1;
+    color: #717171;
+    filter: opacity(0.8);
+  }
 
-    span {
-      color: rgb(83 83 83 / 35%);
-    }
+  .labels:hover {
+    filter: opacity(20.5);
+    font-family: 'Cereal-medium';
+    transition: all 100ms;
+  }
+
+  .labels:hover span::after {
+    /* border-bottom: 1px solid black; */
+    padding-block-start: -20px;
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: black;
+    position: absolute;
+    bottom: 1px;
+    left: 0;
   }
 
   .checkin,
@@ -89,29 +109,6 @@ header {
     max-width: 139px;
   }
 
-  .labels:hover::after {
-    content: '';
-    width: 100%;
-    height: 2px;
-    background: black;
-    bottom: 0px;
-    position: absolute;
-    margin-block-start: 0px;
-    left: 0;
-    right: 0;
-  }
-
-  .labels:hover > * {
-    opacity: 1;
-    color: black;
-    font-size: 'Cereal-medium';
-  }
-
-  .stand-alone-filter {
-    flex: 1;
-    display: flex;
-  }
-
   .carousel {
     position: relative;
     text-align: center;
@@ -123,9 +120,11 @@ header {
   }
 
   .stand-alone-filter {
+    font-family: 'Cereal-medium';
+    font-size: 12px;
     display: flex;
     justify-content: center;
-    padding: 5px 0px;
+    padding: 7px 0px;
     border: 1px solid #dddddd;
     max-width: 90px;
     border-radius: 12px;
@@ -134,14 +133,13 @@ header {
     gap: 2px;
     box-sizing: border-box;
     height: 48px;
-    max-width: 90px;
+
     width: 100%;
   }
-
-  .stand-alone-filter a {
-    font-size: 12px;
+  section.carousel button {
+    width: 24px;
+    height: 24px;
   }
-
   .header-bottom.flex.justify-space-between {
     align-items: center;
   }
@@ -154,6 +152,7 @@ header {
 
   li.carousel__slide {
     padding-top: 10px;
+    min-width: 92px;
   }
 
   .carousel__next {
@@ -162,6 +161,40 @@ header {
     transform: translate(-65%, -50%);
   }
 
+  section.carousel button::after {
+    content: '';
+    width: 24px;
+    height: 24px;
+    background: transparent;
+    position: absolute;
+    border: 1px solid #dddddd;
+    border-radius: 50%;
+  }
+  .carousel {
+    .carousel__prev::before {
+      content: '';
+      width: 65px;
+      height: 92px;
+      background: linear-gradient(89deg, white, white, #ffffff, rgba(255, 255, 255, 0.8784313725));
+      position: absolute;
+      z-index: -1;
+      filter: blur(3px);
+      left: -35px;
+    }
+    .carousel__next:before {
+      content: '';
+      width: 65px;
+      height: 92px;
+      background: linear-gradient(267deg, white, white, #ffffff, rgba(255, 255, 255, 0.8784313725));
+      position: absolute;
+      z-index: -1;
+      filter: blur(3px);
+      right: -45px;
+    }
+  }
+  img.property-type-img {
+    filter: opacity(0.6);
+  }
   .order-container.header-filter-search {
     border: none;
     border-radius: 0;
@@ -179,7 +212,13 @@ header {
     border-radius: 40px;
     display: inline-block;
   }
-
+  .carousel__track {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    gap: 0px;
+  }
   .order-container .btn-container .content {
     border-radius: 64px;
   }
@@ -481,5 +520,22 @@ header {
     .header-bottom {
       padding-block-start: 5px;
     }
+  }
+
+  .guests-modal.dropdown-card.order-container {
+    z-index: 2;
+    position: absolute;
+    background: white;
+    right: 0;
+    /* margin-block-start: 10px; */
+    border-radius: 32px;
+    box-shadow: 0 0 0 1px rgb(0 0 0 / 4%), 0 8px 16px rgb(0 0 0 / 15%);
+    margin-top: 0px;
+    padding: 16px 32px;
+    border: none;
+    top: 171px;
+    margin-top: 12px;
+    /* bottom: 59px; */
+    min-height: 0px;
   }
 }

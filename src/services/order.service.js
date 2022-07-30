@@ -15,11 +15,9 @@ export const orderService = {
   getById,
   remove,
   save,
-  // getEmptyorder,
   getorder,
 };
 
-// _createorders()
 
 async function query(filterBy = '') {
   // return axios.get(API, { params: filterBy }).then((res) => res.data)
@@ -40,57 +38,18 @@ async function remove(id) {
 }
 
 async function save(order) {
-  // if (order._id) {
-  //     return axios.put(API + order._id, order).then(res => res.data)
-  // } else {
-  //     return axios.post(API, order).then(res => res.data)
-  // }
-
-  // const savedOrder = (order._id) ? storageService.put(KEY, order) : storageService.post(KEY, order)
-  // return savedOrder
   if (order._id) {
     // return axios.put(API + order._id, order).then(res => res.data);
     const data = await httpService.put(`${API}/${order._id}`, order);
     return data;
   } else {
-    console.log('order:', order)
     return await httpService.post(API, order);
     // return axios.post(API, order).then(res => res.data);
   }
 }
 
-// function getEmptyorder() {
-//     return {
-//         'hostId': '',
-//         'createdAt': '',
-//         'buyer': {
-//             '_id': '',
-//             'fullname': ''
-//         },
-//         'totalPrice': '',
-//         'startDate': '',
-//         'endDate': '',
-//         'guests': {
-//             'adults': '',
-//             'children': ''
-//         },
-//         'stay': {
-//             '_id': '',
-//             'name': '',
-//             'price': ''
-//         },
-//         'status': 'pending'
-//     }
-// }
+
 
 function getorder(orderId) {
   return storageService.get(KEY, orderId);
-}
-
-function _createorders() {
-  let orders = JSON.parse(localStorage.getItem(KEY));
-  if (!orders || !orders.length) {
-    localStorage.setItem(KEY, JSON.stringify(ordersJason));
-  }
-  return orders;
 }
