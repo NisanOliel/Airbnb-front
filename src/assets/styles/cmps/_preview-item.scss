@@ -61,12 +61,13 @@
 
   .preview-info {
     display: grid;
-
     grid-template-columns: 1fr;
     grid-gap: 6px;
+    padding-block-start: 12px;
+    font-size: 15px;
+    line-height: 19px;
 
     .name-bed {
-      font-size: 15px;
       color: $clr7;
     }
   }
