@@ -622,6 +622,10 @@
       {
         "name": "Kitchen",
         "src": "src/assets/icons/kitchen.svg"
+      },
+      {
+        "name": "Dryer",
+        "src": "src/assets/icons/kitchen.svg"
       }
     ],
     "host": {
@@ -4766,7 +4770,7 @@
         "src": "src/assets/icons/washer.svg"
       },
       {
-        "name": "wifi",
+        "name": "Wifi",
         "src": "src/assets/icons/washer.svg"
       }
     ],
@@ -5539,7 +5543,7 @@
         "src": "src/assets/icons/air-conditioning.svg"
       },
       {
-        "name": "wifi",
+        "name": "Wifi",
         "src": "src/assets/icons/air-conditioning.svg"
       }
     ],
@@ -6438,7 +6442,11 @@
         "src": "src/assets/icons/washer.svg"
       },
       {
-        "name": "wifi",
+        "name": "Wifi",
+        "src": "src/assets/icons/washer.svg"
+      },
+      {
+        "name": "Dryer",
         "src": "src/assets/icons/washer.svg"
       }
     ],
@@ -6544,6 +6552,10 @@
       },
       {
         "name": "Kitchen",
+        "src": "src/assets/icons/kitchen.svg"
+      },
+      {
+        "name": "Dryer",
         "src": "src/assets/icons/kitchen.svg"
       }
     ],

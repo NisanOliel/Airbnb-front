@@ -288,7 +288,7 @@ label {
   align-items: center;
 }
 
-.el-radio-button__original-radio:checked + .el-radio-button__inner {
+.el-radio-button__original-radio:checked+.el-radio-button__inner {
   box-shadow: none !important;
 }
 
@@ -331,4 +331,8 @@ label.activeBg span {
   padding-left: 8px;
   line-height: 1;
   margin: 10px 0 0 11px;
+}
+
+.el-checkbox__input.is-checked+.el-checkbox__label {
+  color: $clr7;
 }

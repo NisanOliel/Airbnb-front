@@ -78,6 +78,69 @@
   import standAloneFilter from './standAlone-filter.vue';
   import { eventBus } from '../services/event-bus.service.js';
 
+<<<<<<< HEAD
+export default {
+  data() {
+    return {
+      isShow: false,
+      location: false,
+      isSticky: false,
+      isExpend: false,
+      showMenu: false,
+      isExplore: false,
+    };
+  },
+  created() {
+    window.addEventListener('scroll', this.handleScroll);
+  },
+
+  computed: {
+    headerLocation() {
+      let params = this.$route.params;
+      const queryString = window.location.search;
+      console.log('this.$route ', this.$route); 
+      console.log('queryString ', queryString); 
+      console.log('params ', params); 
+      // if (queryString.includes('where')) {
+      //   this.isExplore = true
+      // }
+      this.isExplore = this.$route.path !== '/';
+      let isEmpty = Object.keys(params).length === 0;
+      return isEmpty;
+    },
+
+   
+
+    userImg() {
+      var user = this.$store.getters.loggedinUser;
+      return user ? user.imgUrl : 'https://res.cloudinary.com/nisan/image/upload/v1658872030/air2b/unprofile_ji7zus.png';
+    },
+    getLogInUser() {
+      var user = this.$store.getters.loggedinUser;
+      return user ? true : false;
+    },
+  },
+
+  methods: {
+    expendForm(value) {
+      console.log('value', value);
+      console.log('expend clickd');
+      this.isExpend = value;
+    },
+    closeModal() {
+      this.isShow = false;
+    },
+    logout() {
+      this.$store.dispatch({ type: 'logout' });
+      // this.$router.push("/")
+      this.loggedinUser = null;
+      this.showMenu = false;
+    },
+    async logDemo() {
+      const demo = {
+        password: 'demo',
+        username: 'demo',
+=======
   export default {
     data() {
       return {
@@ -87,11 +150,21 @@
         isExpend: false,
         showMenu: false,
         isExplore: false,
+>>>>>>> 8dd1448415f9c0862fa5f591eb4dda038ea1c79b
       };
     },
     created() {
       window.addEventListener('scroll', this.handleScroll);
     },
+<<<<<<< HEAD
+    handleScroll(ev) {
+      let pos = window.scrollY;
+      if (pos === 0) {
+        this.isSticky = true;
+        this.isExpend = false;
+      }
+=======
+>>>>>>> 8dd1448415f9c0862fa5f591eb4dda038ea1c79b
 
     computed: {
       headerLocation() {

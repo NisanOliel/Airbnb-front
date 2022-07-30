@@ -66,8 +66,7 @@
         <div class="essentials">
           <h3>Essentials</h3>
           <el-checkbox-group v-model="checkList">
-            <el-checkbox v-for="(opt, idx) in essentials" @change="setAmenities(opt, $event)" :key="idx" size="30"
-              :label="opt" text-color="#000000" />
+            <el-checkbox v-for="(opt, idx) in essentials" @change="setAmenities(opt, $event)" :key="idx" :label="opt" />
           </el-checkbox-group>
         </div>
       </div>
@@ -120,7 +119,7 @@ export default {
       ],
       propertyType: null,
       language: ['English', 'German', 'French', 'Japanese'],
-      essentials: ['Wifi', 'Washer', 'Air conditioning', 'Kitchen', 'Dryer'],
+      essentials: ['Wifi', 'Kitchen', 'Washer', 'Dryer', 'Air conditioning'],
       price: null,
       checkList: ref([]),
       primaryColor: '#b0b0b0',
@@ -173,6 +172,7 @@ export default {
 
     setAmenities(currAmenity, isChecked) {
       if (isChecked) {
+        console.log(this.filterBy.amenities);
         this.filterBy.amenities.push(currAmenity);
       } else {
         this.filterBy.amenities = this.filterBy.amenities.filter(amenity => amenity !== currAmenity);
@@ -180,14 +180,19 @@ export default {
       this.setFilter();
     },
     setPropertyType(propertyType) {
-      console.log('propertyType');
+      console.log(propertyType);
       propertyType.selected = !propertyType?.selected;
       if (propertyType.selected) {
-        this.filterBy.propertyType.push(propertyType.propertyType);
+        this.filterBy.propertyType.push(propertyType);
       } else {
         this.filterBy.propertyType = this.filterBy.propertyType.filter(propertyType => propertyType.selected);
       }
+<<<<<<< HEAD
+      console.log(this.filterBy.propertyType);
+      this.setFilter()
+=======
       this.setFilter();
+>>>>>>> 8dd1448415f9c0862fa5f591eb4dda038ea1c79b
     },
 
     setLanguage(currLanguage, isChecked) {
