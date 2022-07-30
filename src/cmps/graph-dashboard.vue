@@ -1,6 +1,6 @@
 <template>
     <h2>dashboard page</h2>
-    <!-- <DoughnutChart :chartData="testData" /> -->
+    <DoughnutChart :chartData="testData" />
 
 </template>
 
@@ -25,7 +25,7 @@ export default {
                 labels: ["Pending", "Approved", "Declined"],
                 datasets: [
                     {
-                        data: null,
+                        data: this.chartStatus,
                         backgroundColor: ['red', '#0079AF', '#123E6B',]
                     },
                 ],
@@ -33,7 +33,6 @@ export default {
         }
     },
     created() {
-        this.datasets.data = this.chartStatus
 
     },
     computed: {
@@ -72,8 +71,11 @@ export default {
         },
 
         chartStatus() {
-            return [this.pendingOrders, this.approvedOrders, this.declinedOrders]
 
+
+            var label = [this.pendingOrders, this.approvedOrders, this.declinedOrders]
+            console.log('label:', label)
+            return [1, 2, 3]
         }
     },
 

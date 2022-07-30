@@ -1,7 +1,7 @@
 <template>
 
   <!-- <pre>{{ hostStay }}</pre> -->
-  <tr class="row-table">
+  <tr class="row-table border_bottom">
     <td><img class="stay-image" :src=imageUrl></td>
     <td>{{ hostStay.name }}</td>
     <td>${{ hostStay.price }}</td>
