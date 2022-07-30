@@ -25,11 +25,9 @@ export const stayService = {
 
 // _createstays()
 
-async function query(filterBy = '') {
+async function query(filterBy = null) {
+  console.log('stay service filter by', filterBy);
   return await httpService.get(API, filterBy);
-  // const stays = storageService.query(KEY);
-  // return await axios.get(API, { params: filterBy })
-  // return filterStays(filterBy, await stays);
 }
 
 async function getById(id) {

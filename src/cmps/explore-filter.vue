@@ -211,11 +211,12 @@
       formSubmit() {
         this.isShow = !this.isShow;
         eventBus.emit('overlay', this.isShow);
-
+        eventBus.emit('getFilterStay');
         let url = `/explore?location=${this.filterBy.where}`;
         this.$router.push(url);
       },
       expendForm() {
+        console.log('click form filter');
         this.$emit('expendForm', true);
       },
       showInitModal(ev) {
@@ -247,14 +248,14 @@
         this.isHover = true;
       });
     },
-    watch: {
-      expend: function () {
-        eventBus.on('closeModal', data => {
-          console.log('data form header expend', data);
-          this.showModal = data;
-        });
-      },
-    },
+    // watch: {
+    //   expend: function () {
+    //     eventBus.on('closeModal', data => {
+    //       console.log('data form header expend', data);
+    //       this.showModal = data;
+    //     });
+    //   },
+    // },
     components: {
       exploreMaps,
     },

@@ -1,12 +1,13 @@
 <template>
-  <!-- <div v-if="isShow" class="overlay"></div> -->
   <div class="preview" @click="goToDetails">
     <div class="like">
       <span class="material-icons favorite" :class="{ active: isLiked }" @click.stop="toggleWishList"> favorite </span>
     </div>
-    <el-carousel trigger="click" :autoplay="false">
+    <el-carousel trigger="click" height="285px" :autoplay="false">
       <el-carousel-item v-for="image in images" :key="image">
-        <img :src="image" />
+        <div class="img-wrapper">
+          <img :src="image" />
+        </div>
       </el-carousel-item>
     </el-carousel>
 
@@ -62,11 +63,6 @@
       goToDetails() {
         this.$router.push('/stay/' + this.stay._id);
       },
-      // toggleWishList() {
-      //   this.isLiked = !this.isLiked;
-      //   console.log(this.isShow);
-      //   console.log('heart is active', this.isLiked);
-      // },
 
       toggleWishList() {
         const loggedinUser = this.$store.getters.loggedinUser;
