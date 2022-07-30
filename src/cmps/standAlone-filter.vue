@@ -150,12 +150,10 @@ export default {
       };
     },
     setPrice(value) {
-      this.filterBy = {
-        price: {
+      this.filterBy.price = {
           minPrice: value.from,
           maxPrice: value.to,
-        },
-      }
+      };
       this.setFilter()
     },
     getStaysPrices() {
@@ -172,7 +170,7 @@ export default {
       if (isChecked) {
         this.filterBy.amenities.push(currAmenity);
       } else {
-        // this.filterBy.amenities = this.filterBy.amenities.filter(amenity => amenity !== currAmenity);
+        this.filterBy.amenities = this.filterBy.amenities.filter(amenity => amenity !== currAmenity);
       }
       this.setFilter();
     },
@@ -217,11 +215,11 @@ export default {
   // },
   computed: {
     getPricesAvg() {
-      if (!this.prices) return '0$';
+      if (!this.prices) return '0$'
       var Sum = this.prices.reduce((a, b) => a + b);
       Sum = Sum / this.prices.length;
       Sum = Sum.toFixed(0);
-      return Sum + '$';
+      return '$' + Sum;
     },
     getStay() {
       return this.$store.getters.getStays.length;

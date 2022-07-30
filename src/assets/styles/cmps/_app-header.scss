@@ -124,8 +124,8 @@ header {
   }
 
   .stand-alone-filter {
-    font-family: 'Cereal-medium';
-    font-size: 12px;
+    // font-family: 'Cereal-medium';
+    // font-size: 12px;
     display: flex;
     justify-content: center;
     padding: 7px 0px;
@@ -137,9 +137,18 @@ header {
     gap: 2px;
     box-sizing: border-box;
     height: 48px;
-
+    cursor: pointer;
     width: 100%;
   }
+
+  .stand-alone-filter .filter-btn {
+    font-size: 12px;
+    font-family: 'Cereal-medium'
+  }
+
+
+
+
 
   section.carousel button {
     width: 24px;
