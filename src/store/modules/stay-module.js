@@ -58,6 +58,7 @@ export const stayStore = {
             }
             break;
           case 'amenities':
+            console.log(value);
             if (value.length > 0) {
               filters = filters.filter(stay => {
                 return stay.amenities.find(amenity => value.includes(amenity.name));
@@ -139,9 +140,8 @@ export const stayStore = {
       return stayService.save(stay).then(savedStay => {
         commit({ type: actionType, stay: savedStay });
         return savedStay;
-      });
+      })
     },
-
     getStayById(context, { stayId }) {
       return stayService.getById(stayId);
     },
@@ -151,5 +151,5 @@ export const stayStore = {
     setFilteredStays({ commit }) {
       commit({ type: 'setFilteredStays' });
     },
-  },
-};
+  }
+}
