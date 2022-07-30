@@ -10,9 +10,24 @@
       <div class="form-price">
         <h2>Price range</h2>
         <p>The average nightly price is {{ getPricesAvg }}</p>
-        <HistogramSlider :barRadius="0" @change="setPrice" :bar-height="64" :data="prices" :clip="false" :min="25"
-          :barWidth="12" :max="800" :lineHeight="1" :primaryColor="primaryColor" :labelColor="labelColor"
-          :holderColor="holderColor" hideFromTo="true" :grid="false" :histSliderGap="0" :barGap="0" />
+        <HistogramSlider
+          :barRadius="0"
+          @change="setPrice"
+          :bar-height="64"
+          :data="prices"
+          :clip="false"
+          :min="25"
+          :barWidth="12"
+          :max="800"
+          :lineHeight="1"
+          :primaryColor="primaryColor"
+          :labelColor="labelColor"
+          :holderColor="holderColor"
+          hideFromTo="true"
+          :grid="false"
+          :histSliderGap="0"
+          :barGap="0"
+        />
         <div class="form-inputs">
           <div class="price-inner">
             <label for="min">min price</label>
@@ -49,8 +64,13 @@
         <!-- <el-radio-group text-color="#ffffff" fill="#000000" @change="setFilter" v-model="filterBy.propertyType"> -->
         <!-- <div class="property-type" v-for="(opt, idx) in propertyTypes" :key="idx" :label="opt"></div> -->
         <div class="flex">
-          <div class="property-type" v-for="propertyType in propertyTypes" :key="propertyType"
-            @click="setPropertyType(propertyType)" :class="{ 'selected-item': propertyType.selected }">
+          <div
+            class="property-type"
+            v-for="propertyType in propertyTypes"
+            :key="propertyType"
+            @click="setPropertyType(propertyType)"
+            :class="{ 'selected-item': propertyType.selected }"
+          >
             <div>
               <img :src="propertyType.src" />
               <span>{{ propertyType.propertyType }}</span>
@@ -66,8 +86,7 @@
         <div class="essentials">
           <h3>Essentials</h3>
           <el-checkbox-group v-model="checkList">
-            <el-checkbox v-for="(opt, idx) in essentials" @change="setAmenities(opt, $event)" :key="idx" size="30"
-              :label="opt" text-color="#000000" />
+            <el-checkbox v-for="(opt, idx) in essentials" @change="setAmenities(opt, $event)" :key="idx" size="30" :label="opt" text-color="#000000" />
           </el-checkbox-group>
         </div>
       </div>
@@ -76,8 +95,7 @@
           <h2>Host language</h2>
         </div>
         <el-checkbox-group v-model="checkList">
-          <el-checkbox v-for="(opt, idx) in language" @change="setLanguage(opt, $event)" :key="idx" :label="opt"
-            size="large" />
+          <el-checkbox v-for="(opt, idx) in language" @change="setLanguage(opt, $event)" :key="idx" :label="opt" size="large" />
         </el-checkbox-group>
       </div>
     </div>
@@ -88,158 +106,149 @@
   </form>
 </template>
 <script>
-import { ref } from 'vue';
-export default {
-  name: 'standAlone-filter',
-  data() {
-    return {
-      filterBy: this.getInitialFilterState(),
-      numLabels: [0, 1, 2, 3, 4, 5, 6, 7, `${8}+`],
-      propertyTypes: [
-        {
-          "propertyType": "House",
-          "src": "src/assets/app-filter-img/house.jpg",
-          "selected": false,
-        },
-        {
-          "propertyType": "Apartment",
-          "src": "src/assets/app-filter-img/Apartment.jpg",
-          "selected": false,
-        },
-        {
-          "propertyType": "Guesthouse",
-          "src": "src/assets/app-filter-img/Guesthouse.jpg",
-          "selected": false,
-        },
-        {
-          "propertyType": "Hotel",
-          "src": "src/assets/app-filter-img/Hotel.jpg",
-          "selected": false,
-        }
-      ],
-      propertyType: null,
-      language: ['English', 'German', 'French', 'Japanese'],
-      essentials: ['Wifi', 'Washer', 'Air conditioning', 'Kitchen', 'Dryer'],
-      price: null,
-      checkList: ref([]),
-      primaryColor: '#b0b0b0',
-      holderColor: '#dddddd',
-      labelColor: '#bdd6f8',
-      handleColor: '#dddddd',
-      propertyNum: null,
-    };
-  },
-  created() {
-    this.getStaysPrices();
-    this.labels = this.$store.getters.getLabels;
-  },
-  methods: {
-    getInitialFilterState() {
+  import { ref } from 'vue';
+  export default {
+    name: 'standAlone-filter',
+    data() {
       return {
-        price: {
-          minPrice: 25,
-          maxPrice: 800,
-        },
-        bedrooms: null,
-        beds: null,
-        amenities: [],
-        hostLanguage: [],
-        propertyType: [],
-      }
+        filterBy: this.getInitialFilterState(),
+        numLabels: [0, 1, 2, 3, 4, 5, 6, 7, `${8}+`],
+        propertyTypes: [
+          {
+            propertyType: 'House',
+            src: 'src/assets/app-filter-img/house.jpg',
+            selected: false,
+          },
+          {
+            propertyType: 'Apartment',
+            src: 'src/assets/app-filter-img/Apartment.jpg',
+            selected: false,
+          },
+          {
+            propertyType: 'Guesthouse',
+            src: 'src/assets/app-filter-img/Guesthouse.jpg',
+            selected: false,
+          },
+          {
+            propertyType: 'Hotel',
+            src: 'src/assets/app-filter-img/Hotel.jpg',
+            selected: false,
+          },
+        ],
+        propertyType: null,
+        language: ['English', 'German', 'French', 'Japanese'],
+        essentials: ['Wifi', 'Washer', 'Air conditioning', 'Kitchen', 'Dryer'],
+        price: null,
+        checkList: ref([]),
+        primaryColor: '#b0b0b0',
+        holderColor: '#dddddd',
+        labelColor: '#bdd6f8',
+        handleColor: '#dddddd',
+        propertyNum: null,
+      };
     },
-    setPrice(value) {
-      console.log(value);
-      this.filterBy = {
-        price: {
-          minPrice: value.from,
-          maxPrice: value.to,
+    created() {
+      this.getStaysPrices();
+      this.labels = this.$store.getters.getLabels;
+    },
+    methods: {
+      getInitialFilterState() {
+        return {
+          price: {
+            minPrice: 25,
+            maxPrice: 800,
+          },
+          bedrooms: null,
+          beds: null,
+          amenities: [],
+          hostLanguage: [],
+          propertyType: [],
+        };
+      },
+      setPrice(value) {
+        console.log(value);
+        this.filterBy = {
+          price: {
+            minPrice: value.from,
+            maxPrice: value.to,
+          },
+        };
+        // this.filterBy.price.minPrice = value.from;
+        // this.filterBy.price.maxPrice = value.to;
+        console.log(value.from);
+        this.setFilter();
+      },
+      getStaysPrices() {
+        const stays = this.$store.getters.getStays;
+        const staysPrices = stays.map(stay => stay.price);
+        this.prices = staysPrices;
+      },
+
+      setFilter() {
+        console.log(' this.filterBy:', this.filterBy);
+        this.$store.dispatch({ type: 'setFilterBy', filterBy: this.filterBy });
+      },
+
+      setAmenities(currAmenity, isChecked) {
+        if (isChecked) {
+          this.filterBy.amenities.push(currAmenity);
+        } else {
+          this.filterBy.amenities = this.filterBy.amenities.filter(amenity => amenity !== currAmenity);
         }
-      }
-      // this.filterBy.price.minPrice = value.from;
-      // this.filterBy.price.maxPrice = value.to;
-      console.log(value.from);
-      this.setFilter()
-    },
-    getStaysPrices() {
-      const stays = this.$store.getters.getStays
-      const staysPrices = stays.map(stay => stay.price)
-      this.prices = staysPrices
-    },
+        this.setFilter();
+      },
+      setPropertyType(propertyType) {
+        console.log('propertyType');
+        propertyType.selected = !propertyType?.selected;
+        if (propertyType.selected) {
+          this.filterBy.propertyType.push(propertyType.propertyType);
+        } else {
+          this.filterBy.propertyType = this.filterBy.propertyType.filter(propertyType => propertyType.selected);
+        }
+        this.setFilter();
+      },
 
-    setFilter() {
-      console.log(' this.filterBy:', this.filterBy)
-      this.$store.dispatch({ type: 'setFilterBy', filterBy: this.filterBy });
-    },
+      setLanguage(currLanguage, isChecked) {
+        if (isChecked) {
+          this.filterBy.hostLanguage.push(currLanguage);
+        } else {
+          this.filterBy.hostLanguage = this.filterBy.hostLanguage.filter(language => language !== currLanguage);
+        }
+        this.setFilter();
+      },
 
-    setAmenities(currAmenity, isChecked) {
-      if (isChecked) {
-        this.filterBy.amenities.push(currAmenity);
-      } else {
-        this.filterBy.amenities = this.filterBy.amenities.filter(amenity => amenity !== currAmenity);
-      }
-      this.setFilter()
-    },
-    setPropertyType(propertyType) {
-      console.log('propertyType');
-      propertyType.selected = !propertyType?.selected;
-      if (propertyType.selected) {
-        this.filterBy.propertyType.push(propertyType.propertyType);
-      } else {
-        this.filterBy.propertyType = this.filterBy.propertyType.filter(propertyType => propertyType.selected);
-      }
-      this.setFilter()
-    },
+      onSaveFilters(ev, value) {
+        this.$store.dispatch({ type: 'setFilterBy', filterBy: this.filterBy });
+        this.propertyNum = this.$store.getters.getStays.length;
+        if (ev.type === 'click') {
+          this.closeForm();
+        }
+      },
 
-    setLanguage(currLanguage, isChecked) {
-      if (isChecked) {
-        this.filterBy.hostLanguage.push(currLanguage);
-      } else {
-        this.filterBy.hostLanguage = this.filterBy.hostLanguage.filter(language => language !== currLanguage);
-      }
-      this.setFilter()
+      clearAll() {
+        this.filterBy = this.getInitialFilterState();
+        this.checkList = ref([]);
+        this.setFilter();
+      },
+      closeForm() {
+        this.$emit('closeFilersForm');
+      },
     },
-
-
-    onSaveFilters(ev, value) {
-      this.$store.dispatch({ type: 'setFilteredStays' });
-      this.propertyNum = this.$store.getters.getStays.length;
-      if (ev.type === 'click') {
-        this.closeForm();
-      }
+    // created() {
+    //   this.labels = this.$store.getters.getLabels;
+    // },
+    computed: {
+      getPricesAvg() {
+        if (!this.prices) return '0$';
+        var Sum = this.prices.reduce((a, b) => a + b);
+        Sum = Sum / this.prices.length;
+        Sum = Sum.toFixed(0);
+        return Sum + '$';
+      },
+      getStay() {
+        return this.$store.getters.getStays.length;
+      },
     },
-
-
-    clearAll() {
-      this.filterBy = this.getInitialFilterState();
-      this.checkList = ref([])
-      this.setFilter()
-    },
-    closeForm() {
-      this.$emit('closeFilersForm');
-    },
-  },
-  // created() {
-  //   this.labels = this.$store.getters.getLabels;
-  // },
-  computed: {
-    getPricesAvg() {
-      if (!this.prices) return '0$';
-      var Sum = this.prices.reduce((a, b) => a + b);
-      Sum = Sum / this.prices.length;
-      Sum = Sum.toFixed(0);
-      return Sum + '$';
-    },
-    getStay() {
-      return this.$store.getters.getFilteredStays.length
-    },
-  },
-  components: {},
-}
+    components: {},
+  };
 </script>
-
-
-
-
-
-
-

@@ -103,6 +103,16 @@
         console.log('is empty', isEmpty);
         return isEmpty;
       },
+      // headerLocation() {
+      //   let params = this.$route.params;
+      //   const queryString = window.location.search;
+      //   if (queryString.includes('where')) {
+      //     this.isExplore = true;
+      //   }
+
+      //   let isEmpty = Object.keys(params).length === 0;
+      //   return isEmpty;
+      // },
       userImg() {
         var user = this.$store.getters.loggedinUser;
         return user ? user.imgUrl : 'https://res.cloudinary.com/nisan/image/upload/v1658872030/air2b/unprofile_ji7zus.png';
