@@ -7,6 +7,14 @@
     border: 1px solid #eef0f6;
     background-color: white;
     text-align: left;
+    border-collapse: separate;
+    border-spacing: 30px 30px;
+    display: table;
+  }
+
+  tbody {
+    row-gap: 30px;
+    display: table-row-group;
   }
 
   .logIn {
