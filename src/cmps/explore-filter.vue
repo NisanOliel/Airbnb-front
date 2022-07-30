@@ -1,6 +1,6 @@
 <template>
   <div class="search-wrapper flex">
-    <div v-show="!isExpend" @click="expendForm" class="filter-preview flex align-center">
+    <div v-show="!isExpend" data-expend="expend" @click.prevent="expendForm(true)" class="filter-preview flex align-center">
       <div class="filter btn header-location">Anywhere</div>
       <div class="filter btn header-time">Any week</div>
       <div class="filter btn header-guests search" value="hellow"
@@ -147,7 +147,7 @@
   // import { fa } from 'element-plus/es/locale';
   import { eventBus } from '../services/event-bus.service';
   import exploreMaps from '../cmps/explore-location.popup.vue';
-  // import { ref } from 'vue';
+
   export default {
     emits: ['expendForm'],
     name: 'explore-filter',
@@ -175,6 +175,7 @@
         startActive: false,
         endActive: false,
         expend: this.isExpend,
+        firstClick: null,
       };
     },
     methods: {
@@ -217,8 +218,9 @@
 
         this.$emit('expendForm', false);
       },
-      expendForm() {
-        console.log('click form filter');
+      expendForm(value) {
+        console.log('click away ', value);
+        this.firstClick = value;
         this.$emit('expendForm', true);
       },
       showInitModal(ev) {
@@ -235,9 +237,15 @@
       toggleShowModal(ev) {
         this.showModal = !this.showModal;
       },
-      onClickAway() {
+      onClickAway(ev) {
         this.showModal = false;
-        this.isActive = false;
+        if (this.firstClick) {
+          this.isActive = true;
+          this.firstClick = false;
+        } else {
+          this.isActive = false;
+        }
+        //
       },
     },
     created() {
@@ -251,14 +259,7 @@
         this.isHover = true;
       });
     },
-    // watch: {
-    //   expend: function () {
-    //     eventBus.on('closeModal', data => {
-    //       console.log('data form header expend', data);
-    //       this.showModal = data;
-    //     });
-    //   },
-    // },
+
     components: {
       exploreMaps,
     },
