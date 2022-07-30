@@ -25,6 +25,7 @@ ul {
   align-items: center;
   padding: 0px;
 }
+
 .carousel__viewport {
   overflow: hidden;
 
@@ -40,8 +41,10 @@ ul {
   flex-direction: column;
   align-items: center;
   font-size: 12px;
+  
 
   cursor: pointer;
+
   img {
     width: 24px;
   }
@@ -68,5 +71,5 @@ ul {
 }
 
 .filter.btn.header-guests.search {
-  color: #d9d7d7;
+  color: $clr7;
 }
