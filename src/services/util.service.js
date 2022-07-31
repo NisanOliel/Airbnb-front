@@ -1,29 +1,29 @@
 export const utilService = {
-    delay,
-    getRandomInt,
-    makeId,
-    // getImageUrl
-    getImgUrl,
+  delay,
+  getRandomInt,
+  makeId,
+  // getImageUrl
+  getImgUrl,
 };
 
 function delay(ms = 1500) {
-    return new Promise(resolve => {
-        setTimeout(resolve, ms);
-    });
+  return new Promise(resolve => {
+    setTimeout(resolve, ms);
+  });
 }
 function getRandomInt(min, max) {
-    min = Math.ceil(min);
-    max = Math.floor(max);
-    return Math.floor(Math.random() * (max - min) + min); //The maximum is exclusive and the minimum is inclusive
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min) + min); //The maximum is exclusive and the minimum is inclusive
 }
 
 function makeId(length = 5) {
-    var txt = '';
-    var possible = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-    for (var i = 0; i < length; i++) {
-        txt += possible.charAt(Math.floor(Math.random() * possible.length));
-    }
-    return txt;
+  var txt = '';
+  var possible = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+  for (var i = 0; i < length; i++) {
+    txt += possible.charAt(Math.floor(Math.random() * possible.length));
+  }
+  return txt;
 }
 
 // function getImageUrl(path, alt) {
@@ -43,6 +43,6 @@ function makeId(length = 5) {
 //   });
 // }
 function getImgUrl(file) {
-    const imgUrl = new URL(`../assets/images/${file}`, import.meta.url);
-    return imgUrl;
+  const imgUrl = new URL(`../assets/images/${file}`, import.meta.url);
+  return imgUrl;
 }
