@@ -13,34 +13,34 @@
     ],
     "roomType": "Entire home/apt",
     "bedType": "Real Bed",
-    "capacity": 8,
-    "bedrooms": 2,
-    "beds": 4,
-    "numOfReviews": 9,
+    "capacity": 8.0,
+    "bedrooms": 2.0,
+    "beds": 4.0,
+    "numOfReviews": 9.0,
     "amenities": [
       {
         "name": "TV",
-        "src": "src/assets/icons/tv.svg"
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262492/air2b/tv_mnkywa.jpg"
       },
       {
         "name": "Air conditioning",
-        "src": "src/assets/icons/air-conditioning.svg"
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262488/air2b/air-conditioning_vey5xg.jpg"
       },
       {
         "name": "Kitchen",
-        "src": "src/assets/icons/kitchen.svg"
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262490/air2b/kitchen_jxxtfr.jpg"
       },
       {
         "name": "Free parking",
-        "src": "src/assets/icons/free-parking.svg"
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262489/air2b/free-parking_na5xln.jpg"
       },
       {
         "name": "Elevator",
-        "src": "src/assets/icons/elevator.svg"
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262488/air2b/elevator_jfbds3.jpg"
       },
       {
         "name": "Washer",
-        "src": "src/assets/icons/washer.svg"
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262492/air2b/washer_nt9omk.jpg"
       }
     ],
     "host": {
@@ -66,23 +66,23 @@
       "city": "Maui"
     },
     "id": "12223067",
-    "bathrooms": 2,
-    "price": 595,
-    "securityDeposit": 500,
+    "bathrooms": 2.0,
+    "price": 595.0,
+    "securityDeposit": 500.0,
     "cleaningFee": null,
-    "extraPeople": 0,
+    "extraPeople": 0.0,
     "reviewScores": {
       "accuracy": 4.8,
       "cleanliness": 4.9,
       "checkin": 4.6,
       "communication": 4.7,
-      "location": 5,
+      "location": 5.0,
       "value": 4.7
     },
     "reviews": [
       {
         "at": "2016-06-12T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3407e36c59e6164fc004",
           "fullname": "Kiesha",
@@ -93,7 +93,7 @@
       },
       {
         "at": "2016-07-28T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3403e36c59e6164fb204",
           "fullname": "Chris",
@@ -104,7 +104,7 @@
       },
       {
         "at": "2016-09-11T04:00:00.000Z",
-        "rate": 4,
+        "rate": 4.0,
         "by": {
           "_id": "622f3405e36c59e6164fb703",
           "fullname": "Kim",
@@ -115,7 +115,7 @@
       },
       {
         "at": "2017-01-07T05:00:00.000Z",
-        "rate": 4,
+        "rate": 4.0,
         "by": {
           "_id": "622f3404e36c59e6164fb37f",
           "fullname": "Tracy",
@@ -126,7 +126,7 @@
       },
       {
         "at": "2017-04-07T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3403e36c59e6164fb105",
           "fullname": "Duyen",
@@ -137,7 +137,7 @@
       },
       {
         "at": "2017-05-09T04:00:00.000Z",
-        "rate": 4,
+        "rate": 4.0,
         "by": {
           "_id": "622f3402e36c59e6164fabbe",
           "fullname": "Binh",
@@ -148,7 +148,7 @@
       },
       {
         "at": "2018-02-24T05:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3404e36c59e6164fb4af",
           "fullname": "Samy",
@@ -159,7 +159,7 @@
       },
       {
         "at": "2018-06-16T04:00:00.000Z",
-        "rate": 6,
+        "rate": 6.0,
         "by": {
           "_id": "622f3405e36c59e6164fb87b",
           "fullname": "Breanne",
@@ -170,7 +170,7 @@
       },
       {
         "at": "2018-06-29T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3405e36c59e6164fb713",
           "fullname": "Kimberly",
@@ -202,30 +202,30 @@
     ],
     "roomType": "Private room",
     "bedType": "Real Bed",
-    "capacity": 2,
-    "bedrooms": 1,
-    "beds": 1,
-    "numOfReviews": 4,
+    "capacity": 2.0,
+    "bedrooms": 1.0,
+    "beds": 1.0,
+    "numOfReviews": 4.0,
     "amenities": [
       {
         "name": "TV",
-        "src": "src/assets/icons/tv.svg"
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262492/air2b/tv_mnkywa.jpg"
       },
       {
         "name": "Air conditioning",
-        "src": "src/assets/icons/air-conditioning.svg"
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262488/air2b/air-conditioning_vey5xg.jpg"
       },
       {
         "name": "Kitchen",
-        "src": "src/assets/icons/kitchen.svg"
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262490/air2b/kitchen_jxxtfr.jpg"
       },
       {
         "name": "Elevator",
-        "src": "src/assets/icons/elevator.svg"
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262488/air2b/elevator_jfbds3.jpg"
       },
       {
         "name": "Washer",
-        "src": "src/assets/icons/washer.svg"
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262492/air2b/washer_nt9omk.jpg"
       }
     ],
     "host": {
@@ -250,11 +250,11 @@
       "city": "Montreal"
     },
     "id": "13732894",
-    "bathrooms": 1,
-    "price": 30,
-    "securityDeposit": 150,
-    "cleaningFee": 8,
-    "extraPeople": 15,
+    "bathrooms": 1.0,
+    "price": 30.0,
+    "securityDeposit": 150.0,
+    "cleaningFee": 8.0,
+    "extraPeople": 15.0,
     "reviewScores": {
       "accuracy": 4.8,
       "cleanliness": 4.5,
@@ -266,7 +266,7 @@
     "reviews": [
       {
         "at": "2016-07-07T04:00:00.000Z",
-        "rate": 4,
+        "rate": 4.0,
         "by": {
           "_id": "622f3407e36c59e6164fc058",
           "fullname": "Rowan",
@@ -277,7 +277,7 @@
       },
       {
         "at": "2016-07-08T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3403e36c59e6164fb274",
           "fullname": "Adriana",
@@ -288,7 +288,7 @@
       },
       {
         "at": "2016-07-12T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3405e36c59e6164fb87c",
           "fullname": "Emma",
@@ -299,7 +299,7 @@
       },
       {
         "at": "2016-08-02T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3408e36c59e6164fc082",
           "fullname": "Jeffery",
@@ -331,26 +331,26 @@
     ],
     "roomType": "Entire home/apt",
     "bedType": "Real Bed",
-    "capacity": 4,
-    "bedrooms": 2,
-    "beds": 2,
-    "numOfReviews": 18,
+    "capacity": 4.0,
+    "bedrooms": 2.0,
+    "beds": 2.0,
+    "numOfReviews": 18.0,
     "amenities": [
       {
         "name": "TV",
-        "src": "src/assets/icons/tv.svg"
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262492/air2b/tv_mnkywa.jpg"
       },
       {
         "name": "Air conditioning",
-        "src": "src/assets/icons/air-conditioning.svg"
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262488/air2b/air-conditioning_vey5xg.jpg"
       },
       {
         "name": "Kitchen",
-        "src": "src/assets/icons/kitchen.svg"
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262490/air2b/kitchen_jxxtfr.jpg"
       },
       {
         "name": "Washer",
-        "src": "src/assets/icons/washer.svg"
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262492/air2b/washer_nt9omk.jpg"
       }
     ],
     "host": {
@@ -376,11 +376,11 @@
       "city": "Porto"
     },
     "id": "13605461",
-    "bathrooms": 1,
-    "price": 65,
-    "securityDeposit": 0,
-    "cleaningFee": 0,
-    "extraPeople": 0,
+    "bathrooms": 1.0,
+    "price": 65.0,
+    "securityDeposit": 0.0,
+    "cleaningFee": 0.0,
+    "extraPeople": 0.0,
     "reviewScores": {
       "accuracy": 4.6,
       "cleanliness": 4.9,
@@ -392,7 +392,7 @@
     "reviews": [
       {
         "at": "2016-07-18T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3403e36c59e6164fb090",
           "fullname": "Lina & Alexis",
@@ -403,7 +403,7 @@
       },
       {
         "at": "2016-08-10T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3404e36c59e6164fb4e7",
           "fullname": "Mario R.",
@@ -414,7 +414,7 @@
       },
       {
         "at": "2016-08-14T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3403e36c59e6164fb110",
           "fullname": "Patricia",
@@ -425,7 +425,7 @@
       },
       {
         "at": "2016-09-12T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3401e36c59e6164fab5b",
           "fullname": "Ingrid",
@@ -436,7 +436,7 @@
       },
       {
         "at": "2017-05-13T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3403e36c59e6164fb27c",
           "fullname": "Marie Odile",
@@ -447,7 +447,7 @@
       },
       {
         "at": "2017-06-13T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3407e36c59e6164fbd3c",
           "fullname": "Anne",
@@ -458,7 +458,7 @@
       },
       {
         "at": "2017-06-30T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3407e36c59e6164fbd39",
           "fullname": "Armelle",
@@ -469,7 +469,7 @@
       },
       {
         "at": "2017-08-01T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3406e36c59e6164fbc52",
           "fullname": "Domingo",
@@ -480,7 +480,7 @@
       },
       {
         "at": "2017-08-11T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3406e36c59e6164fbb3f",
           "fullname": "Estelle",
@@ -491,7 +491,7 @@
       },
       {
         "at": "2017-09-21T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3403e36c59e6164fb06f",
           "fullname": "Alfredo Julio Leandro",
@@ -502,7 +502,7 @@
       },
       {
         "at": "2017-10-17T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3405e36c59e6164fb78f",
           "fullname": "Nataliia",
@@ -513,7 +513,7 @@
       },
       {
         "at": "2017-12-09T05:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3402e36c59e6164fad62",
           "fullname": "Liz",
@@ -524,7 +524,7 @@
       },
       {
         "at": "2018-01-09T05:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3403e36c59e6164fb1c3",
           "fullname": "Ariadne",
@@ -535,7 +535,7 @@
       },
       {
         "at": "2018-02-27T05:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3404e36c59e6164fb5f5",
           "fullname": "Bruno",
@@ -546,7 +546,7 @@
       },
       {
         "at": "2018-06-24T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3402e36c59e6164fad10",
           "fullname": "João",
@@ -557,7 +557,7 @@
       },
       {
         "at": "2018-07-18T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3408e36c59e6164fc075",
           "fullname": "Alcides",
@@ -568,7 +568,7 @@
       },
       {
         "at": "2018-12-09T05:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3406e36c59e6164fbad8",
           "fullname": "Miguel Angel",
@@ -579,7 +579,7 @@
       },
       {
         "at": "2018-12-29T05:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3407e36c59e6164fbede",
           "fullname": "Alessandro",
@@ -610,22 +610,22 @@
     ],
     "roomType": "Entire home/apt",
     "bedType": "Real Bed",
-    "capacity": 2,
-    "bedrooms": 1,
-    "beds": 1,
-    "numOfReviews": 180,
+    "capacity": 2.0,
+    "bedrooms": 1.0,
+    "beds": 1.0,
+    "numOfReviews": 180.0,
     "amenities": [
       {
         "name": "Air conditioning",
-        "src": "src/assets/icons/air-conditioning.svg"
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262488/air2b/air-conditioning_vey5xg.jpg"
       },
       {
         "name": "Kitchen",
-        "src": "src/assets/icons/kitchen.svg"
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262490/air2b/kitchen_jxxtfr.jpg"
       },
       {
-        "name": "Dryer",
-        "src": "src/assets/icons/kitchen.svg"
+        "name": "wifi",
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659276876/air2b/wifi_j873ar.jpg"
       }
     ],
     "host": {
@@ -651,11 +651,11 @@
       "city": "New York"
     },
     "id": "1155885",
-    "bathrooms": 1,
-    "price": 79,
-    "securityDeposit": 250,
-    "cleaningFee": 80,
-    "extraPeople": 0,
+    "bathrooms": 1.0,
+    "price": 79.0,
+    "securityDeposit": 250.0,
+    "cleaningFee": 80.0,
+    "extraPeople": 0.0,
     "reviewScores": {
       "accuracy": 4.8,
       "cleanliness": 4.9,
@@ -667,7 +667,7 @@
     "reviews": [
       {
         "at": "2013-05-27T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3407e36c59e6164fbfd2",
           "fullname": "Nicolas",
@@ -678,7 +678,7 @@
       },
       {
         "at": "2013-06-04T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3403e36c59e6164fb048",
           "fullname": "Jeff",
@@ -689,7 +689,7 @@
       },
       {
         "at": "2013-06-13T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3406e36c59e6164fba55",
           "fullname": "Carla",
@@ -700,7 +700,7 @@
       },
       {
         "at": "2013-06-20T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3407e36c59e6164fbf76",
           "fullname": "Dan",
@@ -711,7 +711,7 @@
       },
       {
         "at": "2013-06-25T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3407e36c59e6164fbe9d",
           "fullname": "Ariane",
@@ -722,7 +722,7 @@
       },
       {
         "at": "2013-07-03T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3402e36c59e6164fad91",
           "fullname": "Ilka",
@@ -733,7 +733,7 @@
       },
       {
         "at": "2013-07-12T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3401e36c59e6164fab81",
           "fullname": "Kristy",
@@ -744,7 +744,7 @@
       },
       {
         "at": "2013-07-24T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3405e36c59e6164fb785",
           "fullname": "Barbara",
@@ -755,7 +755,7 @@
       },
       {
         "at": "2013-07-29T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3404e36c59e6164fb515",
           "fullname": "Gloria",
@@ -766,7 +766,7 @@
       },
       {
         "at": "2013-09-07T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3403e36c59e6164fb079",
           "fullname": "Javier",
@@ -777,7 +777,7 @@
       },
       {
         "at": "2013-10-09T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3402e36c59e6164fabc4",
           "fullname": "Ivan",
@@ -788,7 +788,7 @@
       },
       {
         "at": "2013-11-01T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3402e36c59e6164fada2",
           "fullname": "India",
@@ -799,7 +799,7 @@
       },
       {
         "at": "2013-11-10T05:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3406e36c59e6164fb9f9",
           "fullname": "Pamela",
@@ -810,7 +810,7 @@
       },
       {
         "at": "2013-11-14T05:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3402e36c59e6164fae8c",
           "fullname": "Lindsay",
@@ -821,7 +821,7 @@
       },
       {
         "at": "2013-12-01T05:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3407e36c59e6164fbf31",
           "fullname": "Nadia",
@@ -832,7 +832,7 @@
       },
       {
         "at": "2014-01-04T05:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3407e36c59e6164fbdab",
           "fullname": "Barbara",
@@ -843,7 +843,7 @@
       },
       {
         "at": "2014-03-11T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3404e36c59e6164fb2c1",
           "fullname": "Chris",
@@ -854,7 +854,7 @@
       },
       {
         "at": "2014-03-26T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3405e36c59e6164fb8fc",
           "fullname": "Melody",
@@ -865,7 +865,7 @@
       },
       {
         "at": "2014-04-10T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3404e36c59e6164fb41e",
           "fullname": "Carlos",
@@ -876,7 +876,7 @@
       },
       {
         "at": "2014-04-21T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3403e36c59e6164fb087",
           "fullname": "Sergei",
@@ -907,18 +907,22 @@
     ],
     "roomType": "Private room",
     "bedType": "Real Bed",
-    "capacity": 2,
-    "bedrooms": 1,
-    "beds": 1,
-    "numOfReviews": 2,
+    "capacity": 2.0,
+    "bedrooms": 1.0,
+    "beds": 1.0,
+    "numOfReviews": 2.0,
     "amenities": [
       {
         "name": "Kitchen",
-        "src": "src/assets/icons/kitchen.svg"
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262490/air2b/kitchen_jxxtfr.jpg"
       },
       {
         "name": "Elevator",
-        "src": "src/assets/icons/elevator.svg"
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262488/air2b/elevator_jfbds3.jpg"
+      },
+      {
+        "name": "wifi",
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659276876/air2b/wifi_j873ar.jpg"
       }
     ],
     "host": {
@@ -943,23 +947,23 @@
       "city": "Barcelona"
     },
     "id": "13669275",
-    "bathrooms": 1,
-    "price": 40,
+    "bathrooms": 1.0,
+    "price": 40.0,
     "securityDeposit": null,
     "cleaningFee": null,
-    "extraPeople": 20,
+    "extraPeople": 20.0,
     "reviewScores": {
       "accuracy": 4.8,
       "cleanliness": 4.9,
       "checkin": 4.6,
       "communication": 4.8,
-      "location": 5,
+      "location": 5.0,
       "value": 4.3
     },
     "reviews": [
       {
         "at": "2016-07-12T04:00:00.000Z",
-        "rate": 4,
+        "rate": 4.0,
         "by": {
           "_id": "622f3407e36c59e6164fbebb",
           "fullname": "Rafaela",
@@ -970,7 +974,7 @@
       },
       {
         "at": "2016-08-11T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3403e36c59e6164faf56",
           "fullname": "Pauline",
@@ -1001,18 +1005,22 @@
     ],
     "roomType": "Private room",
     "bedType": "Real Bed",
-    "capacity": 2,
-    "bedrooms": 1,
-    "beds": 1,
-    "numOfReviews": 108,
+    "capacity": 2.0,
+    "bedrooms": 1.0,
+    "beds": 1.0,
+    "numOfReviews": 108.0,
     "amenities": [
       {
         "name": "Kitchen",
-        "src": "src/assets/icons/kitchen.svg"
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262490/air2b/kitchen_jxxtfr.jpg"
       },
       {
         "name": "Washer",
-        "src": "src/assets/icons/washer.svg"
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262492/air2b/washer_nt9omk.jpg"
+      },
+      {
+        "name": "wifi",
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659276876/air2b/wifi_j873ar.jpg"
       }
     ],
     "host": {
@@ -1038,23 +1046,23 @@
       "city": "Barcelona"
     },
     "id": "11115528",
-    "bathrooms": 1,
-    "price": 25,
+    "bathrooms": 1.0,
+    "price": 25.0,
     "securityDeposit": null,
-    "cleaningFee": 25,
-    "extraPeople": 20,
+    "cleaningFee": 25.0,
+    "extraPeople": 20.0,
     "reviewScores": {
       "accuracy": 4.6,
       "cleanliness": 4.5,
       "checkin": 4.4,
       "communication": 4.7,
-      "location": 5,
+      "location": 5.0,
       "value": 4.3
     },
     "reviews": [
       {
         "at": "2016-02-24T05:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3405e36c59e6164fb95e",
           "fullname": "Pierre",
@@ -1065,7 +1073,7 @@
       },
       {
         "at": "2016-03-24T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3403e36c59e6164fafa6",
           "fullname": "Isabelle",
@@ -1076,7 +1084,7 @@
       },
       {
         "at": "2016-04-07T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3406e36c59e6164fbaf2",
           "fullname": "Hélène",
@@ -1087,7 +1095,7 @@
       },
       {
         "at": "2016-04-13T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3407e36c59e6164fbdc3",
           "fullname": "Daniel",
@@ -1098,7 +1106,7 @@
       },
       {
         "at": "2016-04-25T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3401e36c59e6164fabad",
           "fullname": "Maria Isabel",
@@ -1109,7 +1117,7 @@
       },
       {
         "at": "2016-05-04T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3405e36c59e6164fb967",
           "fullname": "Aitana",
@@ -1120,7 +1128,7 @@
       },
       {
         "at": "2016-05-12T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3406e36c59e6164fbb88",
           "fullname": "Valentina",
@@ -1131,7 +1139,7 @@
       },
       {
         "at": "2016-05-16T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3405e36c59e6164fb715",
           "fullname": "Jeremy",
@@ -1142,7 +1150,7 @@
       },
       {
         "at": "2016-05-25T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3403e36c59e6164fb0b2",
           "fullname": "Mei-Lin",
@@ -1153,7 +1161,7 @@
       },
       {
         "at": "2016-06-10T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3403e36c59e6164fb1f7",
           "fullname": "Taneli",
@@ -1164,7 +1172,7 @@
       },
       {
         "at": "2016-06-16T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3404e36c59e6164fb623",
           "fullname": "Natasha",
@@ -1175,7 +1183,7 @@
       },
       {
         "at": "2016-06-23T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3407e36c59e6164fc013",
           "fullname": "Elizabeth",
@@ -1186,7 +1194,7 @@
       },
       {
         "at": "2016-06-28T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3403e36c59e6164fb0af",
           "fullname": "Monika",
@@ -1197,7 +1205,7 @@
       },
       {
         "at": "2016-07-03T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3403e36c59e6164fb23a",
           "fullname": "Margaux",
@@ -1208,7 +1216,7 @@
       },
       {
         "at": "2016-07-11T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3403e36c59e6164fb21c",
           "fullname": "Elisabeth",
@@ -1219,7 +1227,7 @@
       },
       {
         "at": "2016-07-23T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3407e36c59e6164fbd7f",
           "fullname": "Ingrid",
@@ -1230,7 +1238,7 @@
       },
       {
         "at": "2016-07-30T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3403e36c59e6164fb1ac",
           "fullname": "Liliane",
@@ -1241,7 +1249,7 @@
       },
       {
         "at": "2016-08-10T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3405e36c59e6164fb8e1",
           "fullname": "Murat",
@@ -1252,7 +1260,7 @@
       },
       {
         "at": "2016-08-26T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3406e36c59e6164fbcb4",
           "fullname": "Mina",
@@ -1263,7 +1271,7 @@
       },
       {
         "at": "2016-09-07T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3405e36c59e6164fb85f",
           "fullname": "Jessy",
@@ -1294,22 +1302,26 @@
     ],
     "roomType": "Entire home/apt",
     "bedType": "Real Bed",
-    "capacity": 3,
-    "bedrooms": 1,
-    "beds": 1,
-    "numOfReviews": 199,
+    "capacity": 3.0,
+    "bedrooms": 1.0,
+    "beds": 1.0,
+    "numOfReviews": 199.0,
     "amenities": [
       {
         "name": "TV",
-        "src": "src/assets/icons/tv.svg"
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262492/air2b/tv_mnkywa.jpg"
       },
       {
         "name": "Air conditioning",
-        "src": "src/assets/icons/air-conditioning.svg"
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262488/air2b/air-conditioning_vey5xg.jpg"
       },
       {
         "name": "Kitchen",
-        "src": "src/assets/icons/kitchen.svg"
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262490/air2b/kitchen_jxxtfr.jpg"
+      },
+      {
+        "name": "wifi",
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659276876/air2b/wifi_j873ar.jpg"
       }
     ],
     "host": {
@@ -1335,11 +1347,11 @@
       "city": "New York"
     },
     "id": "11097962",
-    "bathrooms": 1,
-    "price": 110,
-    "securityDeposit": 0,
-    "cleaningFee": 10,
-    "extraPeople": 25,
+    "bathrooms": 1.0,
+    "price": 110.0,
+    "securityDeposit": 0.0,
+    "cleaningFee": 10.0,
+    "extraPeople": 25.0,
     "reviewScores": {
       "accuracy": 4.6,
       "cleanliness": 4.9,
@@ -1351,7 +1363,7 @@
     "reviews": [
       {
         "at": "2016-03-26T04:00:00.000Z",
-        "rate": 4,
+        "rate": 4.0,
         "by": {
           "_id": "622f3405e36c59e6164fb8b4",
           "fullname": "Christine",
@@ -1362,7 +1374,7 @@
       },
       {
         "at": "2016-04-17T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3407e36c59e6164fbdb9",
           "fullname": "Hector",
@@ -1373,7 +1385,7 @@
       },
       {
         "at": "2016-04-23T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3407e36c59e6164fbdca",
           "fullname": "Jaime",
@@ -1384,7 +1396,7 @@
       },
       {
         "at": "2016-04-24T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3402e36c59e6164fae69",
           "fullname": "Anan",
@@ -1395,7 +1407,7 @@
       },
       {
         "at": "2016-05-04T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3407e36c59e6164fbf23",
           "fullname": "Yamilis",
@@ -1406,7 +1418,7 @@
       },
       {
         "at": "2016-05-08T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3405e36c59e6164fb6a4",
           "fullname": "Leonam",
@@ -1417,7 +1429,7 @@
       },
       {
         "at": "2016-05-11T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3407e36c59e6164fc063",
           "fullname": "Amy",
@@ -1428,7 +1440,7 @@
       },
       {
         "at": "2016-05-17T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3401e36c59e6164fab7d",
           "fullname": "Vlad",
@@ -1439,7 +1451,7 @@
       },
       {
         "at": "2016-05-19T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3407e36c59e6164fbe7b",
           "fullname": "Derick",
@@ -1450,7 +1462,7 @@
       },
       {
         "at": "2016-05-21T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3407e36c59e6164fbefb",
           "fullname": "Derek",
@@ -1461,7 +1473,7 @@
       },
       {
         "at": "2016-05-22T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3404e36c59e6164fb484",
           "fullname": "Shiann",
@@ -1472,7 +1484,7 @@
       },
       {
         "at": "2016-05-26T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3403e36c59e6164fb208",
           "fullname": "Stephanie",
@@ -1483,7 +1495,7 @@
       },
       {
         "at": "2016-05-29T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3404e36c59e6164fb52c",
           "fullname": "Virginie",
@@ -1494,7 +1506,7 @@
       },
       {
         "at": "2016-06-06T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3405e36c59e6164fb803",
           "fullname": "Ada",
@@ -1505,7 +1517,7 @@
       },
       {
         "at": "2016-06-11T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3406e36c59e6164fbc21",
           "fullname": "Fernando",
@@ -1516,7 +1528,7 @@
       },
       {
         "at": "2016-06-14T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3407e36c59e6164fbdfe",
           "fullname": "Francesca",
@@ -1527,7 +1539,7 @@
       },
       {
         "at": "2016-06-20T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3404e36c59e6164fb4de",
           "fullname": "Alex",
@@ -1538,7 +1550,7 @@
       },
       {
         "at": "2016-06-24T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3407e36c59e6164fbd08",
           "fullname": "Johanna",
@@ -1549,7 +1561,7 @@
       },
       {
         "at": "2016-07-03T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3405e36c59e6164fb7a6",
           "fullname": "Bandele",
@@ -1560,7 +1572,7 @@
       },
       {
         "at": "2016-07-13T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3405e36c59e6164fb80a",
           "fullname": "Bryan",
@@ -1591,22 +1603,18 @@
     ],
     "roomType": "Entire home/apt",
     "bedType": "Real Bed",
-    "capacity": 2,
-    "bedrooms": 0,
-    "beds": 1,
-    "numOfReviews": 31,
+    "capacity": 2.0,
+    "bedrooms": 0.0,
+    "beds": 1.0,
+    "numOfReviews": 31.0,
     "amenities": [
       {
         "name": "TV",
-        "src": "src/assets/icons/tv.svg"
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262492/air2b/tv_mnkywa.jpg"
       },
       {
         "name": "Kitchen",
-        "src": "src/assets/icons/kitchen.svg"
-      },
-      {
-        "name": "Wifi",
-        "src": "src/assets/icons/kitchen.svg"
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262490/air2b/kitchen_jxxtfr.jpg"
       }
     ],
     "host": {
@@ -1632,11 +1640,11 @@
       "city": "Porto"
     },
     "id": "10487917",
-    "bathrooms": 1,
-    "price": 29,
-    "securityDeposit": 0,
-    "cleaningFee": 10,
-    "extraPeople": 0,
+    "bathrooms": 1.0,
+    "price": 29.0,
+    "securityDeposit": 0.0,
+    "cleaningFee": 10.0,
+    "extraPeople": 0.0,
     "reviewScores": {
       "accuracy": 4.6,
       "cleanliness": 4.5,
@@ -1648,7 +1656,7 @@
     "reviews": [
       {
         "at": "2016-02-06T05:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3404e36c59e6164fb449",
           "fullname": "Tejovra",
@@ -1659,7 +1667,7 @@
       },
       {
         "at": "2016-02-21T05:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3403e36c59e6164fafcc",
           "fullname": "Sara",
@@ -1670,7 +1678,7 @@
       },
       {
         "at": "2016-03-06T05:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3403e36c59e6164faf68",
           "fullname": "Jennifer",
@@ -1681,7 +1689,7 @@
       },
       {
         "at": "2016-03-22T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3404e36c59e6164fb5b1",
           "fullname": "Irune",
@@ -1692,7 +1700,7 @@
       },
       {
         "at": "2016-04-30T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3403e36c59e6164fb0c1",
           "fullname": "Marlene",
@@ -1703,7 +1711,7 @@
       },
       {
         "at": "2016-05-11T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3402e36c59e6164fae67",
           "fullname": "Елизавета",
@@ -1714,7 +1722,7 @@
       },
       {
         "at": "2016-08-05T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3404e36c59e6164fb3e7",
           "fullname": "Teresa",
@@ -1725,7 +1733,7 @@
       },
       {
         "at": "2016-08-11T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3407e36c59e6164fbf5b",
           "fullname": "Joyce",
@@ -1736,7 +1744,7 @@
       },
       {
         "at": "2016-08-27T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3406e36c59e6164fbaad",
           "fullname": "Jess",
@@ -1747,7 +1755,7 @@
       },
       {
         "at": "2016-09-27T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3402e36c59e6164faeed",
           "fullname": "Jennifer",
@@ -1758,7 +1766,7 @@
       },
       {
         "at": "2016-12-11T05:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3401e36c59e6164fab65",
           "fullname": "Joana",
@@ -1769,7 +1777,7 @@
       },
       {
         "at": "2017-01-01T05:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3405e36c59e6164fb749",
           "fullname": "Nicolas",
@@ -1780,7 +1788,7 @@
       },
       {
         "at": "2017-03-17T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3403e36c59e6164fb10c",
           "fullname": "Marina",
@@ -1791,7 +1799,7 @@
       },
       {
         "at": "2017-04-13T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3402e36c59e6164fad5b",
           "fullname": "Diogo",
@@ -1802,7 +1810,7 @@
       },
       {
         "at": "2017-06-02T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3405e36c59e6164fb79e",
           "fullname": "Anastasia",
@@ -1813,7 +1821,7 @@
       },
       {
         "at": "2017-06-18T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3401e36c59e6164fab70",
           "fullname": "Raphael",
@@ -1824,7 +1832,7 @@
       },
       {
         "at": "2017-06-30T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3406e36c59e6164fbc99",
           "fullname": "Judith",
@@ -1835,7 +1843,7 @@
       },
       {
         "at": "2017-07-11T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3405e36c59e6164fb694",
           "fullname": "Marta",
@@ -1846,7 +1854,7 @@
       },
       {
         "at": "2017-07-30T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3402e36c59e6164fadc4",
           "fullname": "Aron",
@@ -1857,7 +1865,7 @@
       },
       {
         "at": "2017-11-15T05:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3406e36c59e6164fba79",
           "fullname": "Márcio",
@@ -1888,26 +1896,30 @@
     ],
     "roomType": "Private room",
     "bedType": "Real Bed",
-    "capacity": 2,
-    "bedrooms": 1,
-    "beds": 1,
-    "numOfReviews": 5,
+    "capacity": 2.0,
+    "bedrooms": 1.0,
+    "beds": 1.0,
+    "numOfReviews": 5.0,
     "amenities": [
       {
         "name": "Kitchen",
-        "src": "src/assets/icons/kitchen.svg"
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262490/air2b/kitchen_jxxtfr.jpg"
       },
       {
         "name": "Free parking",
-        "src": "src/assets/icons/free-parking.svg"
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262489/air2b/free-parking_na5xln.jpg"
       },
       {
         "name": "Pets allowed",
-        "src": "src/assets/icons/pets-allowed.svg"
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262491/air2b/pets-allowed_tuwhnn.jpg"
       },
       {
         "name": "Washer",
-        "src": "src/assets/icons/washer.svg"
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262492/air2b/washer_nt9omk.jpg"
+      },
+      {
+        "name": "wifi",
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659276876/air2b/wifi_j873ar.jpg"
       }
     ],
     "host": {
@@ -1933,11 +1945,11 @@
       "city": "Porto"
     },
     "id": "13750579",
-    "bathrooms": 1,
-    "price": 26,
+    "bathrooms": 1.0,
+    "price": 26.0,
     "securityDeposit": null,
-    "cleaningFee": 8,
-    "extraPeople": 5,
+    "cleaningFee": 8.0,
+    "extraPeople": 5.0,
     "reviewScores": {
       "accuracy": 4.8,
       "cleanliness": 4.9,
@@ -1949,7 +1961,7 @@
     "reviews": [
       {
         "at": "2016-08-11T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3402e36c59e6164fad68",
           "fullname": "Celeste",
@@ -1960,7 +1972,7 @@
       },
       {
         "at": "2016-08-14T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3402e36c59e6164fadf0",
           "fullname": "Martin",
@@ -1971,7 +1983,7 @@
       },
       {
         "at": "2016-08-15T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3402e36c59e6164faedf",
           "fullname": "Sandra",
@@ -1982,7 +1994,7 @@
       },
       {
         "at": "2016-08-20T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3404e36c59e6164fb3ed",
           "fullname": "Erika",
@@ -1993,7 +2005,7 @@
       },
       {
         "at": "2016-08-22T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3405e36c59e6164fb9bd",
           "fullname": "Guy",
@@ -2024,26 +2036,30 @@
     ],
     "roomType": "Private room",
     "bedType": "Real Bed",
-    "capacity": 2,
-    "bedrooms": 1,
-    "beds": 1,
-    "numOfReviews": 31,
+    "capacity": 2.0,
+    "bedrooms": 1.0,
+    "beds": 1.0,
+    "numOfReviews": 31.0,
     "amenities": [
       {
         "name": "TV",
-        "src": "src/assets/icons/tv.svg"
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262492/air2b/tv_mnkywa.jpg"
       },
       {
         "name": "Air conditioning",
-        "src": "src/assets/icons/air-conditioning.svg"
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262488/air2b/air-conditioning_vey5xg.jpg"
       },
       {
         "name": "Kitchen",
-        "src": "src/assets/icons/kitchen.svg"
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262490/air2b/kitchen_jxxtfr.jpg"
       },
       {
         "name": "Washer",
-        "src": "src/assets/icons/washer.svg"
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262492/air2b/washer_nt9omk.jpg"
+      },
+      {
+        "name": "wifi",
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659276876/air2b/wifi_j873ar.jpg"
       }
     ],
     "host": {
@@ -2069,23 +2085,23 @@
       "city": "Istanbul"
     },
     "id": "1058555",
-    "bathrooms": 1,
-    "price": 105,
+    "bathrooms": 1.0,
+    "price": 105.0,
     "securityDeposit": null,
-    "cleaningFee": 60,
-    "extraPeople": 60,
+    "cleaningFee": 60.0,
+    "extraPeople": 60.0,
     "reviewScores": {
       "accuracy": 4.8,
       "cleanliness": 4.9,
       "checkin": 4.6,
       "communication": 4.7,
-      "location": 5,
+      "location": 5.0,
       "value": 4.3
     },
     "reviews": [
       {
         "at": "2014-04-06T04:00:00.000Z",
-        "rate": 4,
+        "rate": 4.0,
         "by": {
           "_id": "622f3406e36c59e6164fbcc7",
           "fullname": "Quentin",
@@ -2096,7 +2112,7 @@
       },
       {
         "at": "2015-04-02T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3405e36c59e6164fb7f6",
           "fullname": "Steve",
@@ -2107,7 +2123,7 @@
       },
       {
         "at": "2015-05-19T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3404e36c59e6164fb624",
           "fullname": "Jess",
@@ -2118,7 +2134,7 @@
       },
       {
         "at": "2015-08-25T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3406e36c59e6164fbcb6",
           "fullname": "Irina",
@@ -2129,7 +2145,7 @@
       },
       {
         "at": "2015-09-21T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3402e36c59e6164fae1a",
           "fullname": "Matthew",
@@ -2140,7 +2156,7 @@
       },
       {
         "at": "2015-11-09T05:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3407e36c59e6164fc03f",
           "fullname": "Valon",
@@ -2151,7 +2167,7 @@
       },
       {
         "at": "2015-12-28T05:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3405e36c59e6164fb7a0",
           "fullname": "Amanda",
@@ -2162,7 +2178,7 @@
       },
       {
         "at": "2016-01-09T05:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3404e36c59e6164fb3fe",
           "fullname": "Mathieu & Hilal",
@@ -2173,7 +2189,7 @@
       },
       {
         "at": "2016-03-20T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3403e36c59e6164fb225",
           "fullname": "Christie",
@@ -2184,7 +2200,7 @@
       },
       {
         "at": "2017-05-11T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3402e36c59e6164fad81",
           "fullname": "Vanessa",
@@ -2195,7 +2211,7 @@
       },
       {
         "at": "2017-05-21T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3404e36c59e6164fb2d1",
           "fullname": "Florentin",
@@ -2206,7 +2222,7 @@
       },
       {
         "at": "2017-08-27T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3402e36c59e6164fae29",
           "fullname": "Harshak",
@@ -2217,7 +2233,7 @@
       },
       {
         "at": "2017-09-26T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3406e36c59e6164fbc70",
           "fullname": "Haytham",
@@ -2228,7 +2244,7 @@
       },
       {
         "at": "2017-10-03T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3404e36c59e6164fb5fd",
           "fullname": "Vural",
@@ -2239,7 +2255,7 @@
       },
       {
         "at": "2017-12-03T05:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3406e36c59e6164fba05",
           "fullname": "Wasseem",
@@ -2250,7 +2266,7 @@
       },
       {
         "at": "2018-02-23T05:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3402e36c59e6164fac4c",
           "fullname": "Mr Joseph",
@@ -2261,7 +2277,7 @@
       },
       {
         "at": "2018-03-05T05:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3405e36c59e6164fb8b8",
           "fullname": "Gökçe",
@@ -2272,7 +2288,7 @@
       },
       {
         "at": "2018-04-01T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3405e36c59e6164fb952",
           "fullname": "Bruno",
@@ -2283,7 +2299,7 @@
       },
       {
         "at": "2018-04-04T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3405e36c59e6164fb73d",
           "fullname": "Vichapas",
@@ -2294,7 +2310,7 @@
       },
       {
         "at": "2018-04-23T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3403e36c59e6164fb0fe",
           "fullname": "Show",
@@ -2325,34 +2341,34 @@
     ],
     "roomType": "Entire home/apt",
     "bedType": "Real Bed",
-    "capacity": 9,
-    "bedrooms": 3,
-    "beds": 6,
-    "numOfReviews": 17,
+    "capacity": 9.0,
+    "bedrooms": 3.0,
+    "beds": 6.0,
+    "numOfReviews": 17.0,
     "amenities": [
       {
         "name": "TV",
-        "src": "src/assets/icons/tv.svg"
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262492/air2b/tv_mnkywa.jpg"
       },
       {
         "name": "Air conditioning",
-        "src": "src/assets/icons/air-conditioning.svg"
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262488/air2b/air-conditioning_vey5xg.jpg"
       },
       {
         "name": "Kitchen",
-        "src": "src/assets/icons/kitchen.svg"
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262490/air2b/kitchen_jxxtfr.jpg"
       },
       {
         "name": "Free parking",
-        "src": "src/assets/icons/free-parking.svg"
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262489/air2b/free-parking_na5xln.jpg"
       },
       {
         "name": "Elevator",
-        "src": "src/assets/icons/elevator.svg"
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262488/air2b/elevator_jfbds3.jpg"
       },
       {
         "name": "Washer",
-        "src": "src/assets/icons/washer.svg"
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262492/air2b/washer_nt9omk.jpg"
       }
     ],
     "host": {
@@ -2378,23 +2394,23 @@
       "city": "Maui"
     },
     "id": "13934996",
-    "bathrooms": 3,
-    "price": 800,
-    "securityDeposit": 2000,
-    "cleaningFee": 325,
-    "extraPeople": 50,
+    "bathrooms": 3.0,
+    "price": 800.0,
+    "securityDeposit": 2000.0,
+    "cleaningFee": 325.0,
+    "extraPeople": 50.0,
     "reviewScores": {
       "accuracy": 4.8,
       "cleanliness": 4.9,
       "checkin": 4.6,
       "communication": 4.7,
-      "location": 5,
+      "location": 5.0,
       "value": 4.7
     },
     "reviews": [
       {
         "at": "2016-12-08T05:00:00.000Z",
-        "rate": 4,
+        "rate": 4.0,
         "by": {
           "_id": "622f3407e36c59e6164fbfd3",
           "fullname": "Therese",
@@ -2405,7 +2421,7 @@
       },
       {
         "at": "2017-03-23T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3406e36c59e6164fbb9b",
           "fullname": "Alexandra",
@@ -2416,7 +2432,7 @@
       },
       {
         "at": "2017-04-28T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3403e36c59e6164fb19f",
           "fullname": "Daisy",
@@ -2427,7 +2443,7 @@
       },
       {
         "at": "2017-07-29T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3402e36c59e6164fac44",
           "fullname": "Peter",
@@ -2438,7 +2454,7 @@
       },
       {
         "at": "2017-11-03T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3405e36c59e6164fb70f",
           "fullname": "Megan",
@@ -2449,7 +2465,7 @@
       },
       {
         "at": "2018-01-30T05:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3402e36c59e6164fae2f",
           "fullname": "Brenda",
@@ -2460,7 +2476,7 @@
       },
       {
         "at": "2018-03-24T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3403e36c59e6164fb04f",
           "fullname": "Daria",
@@ -2471,7 +2487,7 @@
       },
       {
         "at": "2018-04-14T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3402e36c59e6164faec7",
           "fullname": "Amy",
@@ -2482,7 +2498,7 @@
       },
       {
         "at": "2018-05-19T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3406e36c59e6164fba90",
           "fullname": "Stacey",
@@ -2493,7 +2509,7 @@
       },
       {
         "at": "2018-06-03T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3406e36c59e6164fbb28",
           "fullname": "Rebekah",
@@ -2504,7 +2520,7 @@
       },
       {
         "at": "2018-08-25T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3407e36c59e6164fbda0",
           "fullname": "Chris",
@@ -2515,7 +2531,7 @@
       },
       {
         "at": "2018-09-13T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3406e36c59e6164fbc74",
           "fullname": "Esther",
@@ -2526,7 +2542,7 @@
       },
       {
         "at": "2018-10-18T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3403e36c59e6164fb016",
           "fullname": "Elaine",
@@ -2537,7 +2553,7 @@
       },
       {
         "at": "2019-01-11T05:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3403e36c59e6164fb239",
           "fullname": "Dan",
@@ -2548,7 +2564,7 @@
       },
       {
         "at": "2019-01-22T05:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3403e36c59e6164faf7d",
           "fullname": "Jess",
@@ -2559,7 +2575,7 @@
       },
       {
         "at": "2019-02-14T05:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3403e36c59e6164fb1af",
           "fullname": "Anna-Mae",
@@ -2570,7 +2586,7 @@
       },
       {
         "at": "2019-02-27T05:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3405e36c59e6164fb766",
           "fullname": "Lj",
@@ -2601,22 +2617,26 @@
     ],
     "roomType": "Entire home/apt",
     "bedType": "Real Bed",
-    "capacity": 5,
-    "bedrooms": 0,
-    "beds": 4,
-    "numOfReviews": 39,
+    "capacity": 5.0,
+    "bedrooms": 0.0,
+    "beds": 4.0,
+    "numOfReviews": 39.0,
     "amenities": [
       {
         "name": "TV",
-        "src": "src/assets/icons/tv.svg"
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262492/air2b/tv_mnkywa.jpg"
       },
       {
         "name": "Air conditioning",
-        "src": "src/assets/icons/air-conditioning.svg"
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262488/air2b/air-conditioning_vey5xg.jpg"
       },
       {
         "name": "Kitchen",
-        "src": "src/assets/icons/kitchen.svg"
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262490/air2b/kitchen_jxxtfr.jpg"
+      },
+      {
+        "name": "wifi",
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659276876/air2b/wifi_j873ar.jpg"
       }
     ],
     "host": {
@@ -2642,11 +2662,11 @@
       "city": "Istanbul"
     },
     "id": "15417267",
-    "bathrooms": 1,
-    "price": 264,
-    "securityDeposit": 0,
-    "cleaningFee": 0,
-    "extraPeople": 26,
+    "bathrooms": 1.0,
+    "price": 264.0,
+    "securityDeposit": 0.0,
+    "cleaningFee": 0.0,
+    "extraPeople": 26.0,
     "reviewScores": {
       "accuracy": 4.6,
       "cleanliness": 4.9,
@@ -2658,7 +2678,7 @@
     "reviews": [
       {
         "at": "2016-11-06T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3404e36c59e6164fb5a5",
           "fullname": "Sime",
@@ -2669,7 +2689,7 @@
       },
       {
         "at": "2016-11-09T05:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3406e36c59e6164fbcdd",
           "fullname": "Liberato",
@@ -2680,7 +2700,7 @@
       },
       {
         "at": "2016-12-10T05:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3406e36c59e6164fbb72",
           "fullname": "Tash",
@@ -2691,7 +2711,7 @@
       },
       {
         "at": "2017-01-26T05:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3408e36c59e6164fc07f",
           "fullname": "Magdi",
@@ -2702,7 +2722,7 @@
       },
       {
         "at": "2017-02-06T05:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3403e36c59e6164fb1d3",
           "fullname": "Daria",
@@ -2713,7 +2733,7 @@
       },
       {
         "at": "2017-02-26T05:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3404e36c59e6164fb406",
           "fullname": "Ziying",
@@ -2724,7 +2744,7 @@
       },
       {
         "at": "2017-03-12T05:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3403e36c59e6164fb0da",
           "fullname": "Florianne",
@@ -2735,7 +2755,7 @@
       },
       {
         "at": "2017-04-10T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3405e36c59e6164fb843",
           "fullname": "Zakiuddin",
@@ -2746,7 +2766,7 @@
       },
       {
         "at": "2017-04-26T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3407e36c59e6164fbebe",
           "fullname": "Kristy",
@@ -2757,7 +2777,7 @@
       },
       {
         "at": "2017-06-14T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3407e36c59e6164fbfdf",
           "fullname": "Bas",
@@ -2768,7 +2788,7 @@
       },
       {
         "at": "2017-06-17T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3403e36c59e6164fb299",
           "fullname": "Mahgrine",
@@ -2779,7 +2799,7 @@
       },
       {
         "at": "2017-08-17T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3407e36c59e6164fbd57",
           "fullname": "Tolga",
@@ -2790,7 +2810,7 @@
       },
       {
         "at": "2017-09-24T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3404e36c59e6164fb4ad",
           "fullname": "Öner",
@@ -2801,7 +2821,7 @@
       },
       {
         "at": "2017-10-03T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3403e36c59e6164fb129",
           "fullname": "Med Zied",
@@ -2812,7 +2832,7 @@
       },
       {
         "at": "2017-10-14T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3406e36c59e6164fbb01",
           "fullname": "Danielle",
@@ -2823,7 +2843,7 @@
       },
       {
         "at": "2017-10-21T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3402e36c59e6164fae6a",
           "fullname": "Arifur",
@@ -2834,7 +2854,7 @@
       },
       {
         "at": "2017-10-30T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3402e36c59e6164fad87",
           "fullname": "Nass",
@@ -2845,7 +2865,7 @@
       },
       {
         "at": "2017-11-06T05:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3401e36c59e6164fab5f",
           "fullname": "Fadi",
@@ -2856,7 +2876,7 @@
       },
       {
         "at": "2017-11-19T05:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3403e36c59e6164fb185",
           "fullname": "Igor",
@@ -2867,7 +2887,7 @@
       },
       {
         "at": "2018-01-03T05:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3402e36c59e6164faca0",
           "fullname": "Sarah",
@@ -2898,26 +2918,30 @@
     ],
     "roomType": "Entire home/apt",
     "bedType": "Real Bed",
-    "capacity": 8,
-    "bedrooms": 4,
-    "beds": 6,
-    "numOfReviews": 77,
+    "capacity": 8.0,
+    "bedrooms": 4.0,
+    "beds": 6.0,
+    "numOfReviews": 77.0,
     "amenities": [
       {
         "name": "TV",
-        "src": "src/assets/icons/tv.svg"
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262492/air2b/tv_mnkywa.jpg"
       },
       {
         "name": "Air conditioning",
-        "src": "src/assets/icons/air-conditioning.svg"
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262488/air2b/air-conditioning_vey5xg.jpg"
       },
       {
         "name": "Kitchen",
-        "src": "src/assets/icons/kitchen.svg"
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262490/air2b/kitchen_jxxtfr.jpg"
       },
       {
         "name": "Washer",
-        "src": "src/assets/icons/washer.svg"
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262492/air2b/washer_nt9omk.jpg"
+      },
+      {
+        "name": "wifi",
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659276876/air2b/wifi_j873ar.jpg"
       }
     ],
     "host": {
@@ -2943,11 +2967,11 @@
       "city": "Barcelona"
     },
     "id": "10581101",
-    "bathrooms": 2,
-    "price": 169,
-    "securityDeposit": 200,
-    "cleaningFee": 60,
-    "extraPeople": 0,
+    "bathrooms": 2.0,
+    "price": 169.0,
+    "securityDeposit": 200.0,
+    "cleaningFee": 60.0,
+    "extraPeople": 0.0,
     "reviewScores": {
       "accuracy": 4.8,
       "cleanliness": 4.5,
@@ -2959,7 +2983,7 @@
     "reviews": [
       {
         "at": "2016-03-30T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3402e36c59e6164faec0",
           "fullname": "Lenny",
@@ -2970,7 +2994,7 @@
       },
       {
         "at": "2016-04-05T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3403e36c59e6164fb082",
           "fullname": "Albe Birio",
@@ -2981,7 +3005,7 @@
       },
       {
         "at": "2016-04-17T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3402e36c59e6164faeeb",
           "fullname": "Daniel",
@@ -2992,7 +3016,7 @@
       },
       {
         "at": "2016-04-30T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3402e36c59e6164fad11",
           "fullname": "Bram",
@@ -3003,7 +3027,7 @@
       },
       {
         "at": "2016-05-08T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3407e36c59e6164fbcec",
           "fullname": "Joel",
@@ -3014,7 +3038,7 @@
       },
       {
         "at": "2016-05-16T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3405e36c59e6164fb73f",
           "fullname": "Paul",
@@ -3025,7 +3049,7 @@
       },
       {
         "at": "2016-05-23T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3406e36c59e6164fba01",
           "fullname": "Daniel",
@@ -3036,7 +3060,7 @@
       },
       {
         "at": "2016-07-10T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3406e36c59e6164fbb75",
           "fullname": "Guowei",
@@ -3047,7 +3071,7 @@
       },
       {
         "at": "2016-07-16T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3407e36c59e6164fbf02",
           "fullname": "Glen",
@@ -3058,7 +3082,7 @@
       },
       {
         "at": "2016-07-23T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3407e36c59e6164fbd6b",
           "fullname": "Andrea",
@@ -3069,7 +3093,7 @@
       },
       {
         "at": "2016-07-29T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3402e36c59e6164fad90",
           "fullname": "Jacob",
@@ -3080,7 +3104,7 @@
       },
       {
         "at": "2016-08-08T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3403e36c59e6164fb0e3",
           "fullname": "Yuri",
@@ -3091,7 +3115,7 @@
       },
       {
         "at": "2016-08-28T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3406e36c59e6164fbc92",
           "fullname": "Anne-Sophie",
@@ -3102,7 +3126,7 @@
       },
       {
         "at": "2016-09-19T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3405e36c59e6164fb647",
           "fullname": "Julie",
@@ -3113,7 +3137,7 @@
       },
       {
         "at": "2016-09-23T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3403e36c59e6164fb09e",
           "fullname": "Manuel",
@@ -3124,7 +3148,7 @@
       },
       {
         "at": "2016-10-21T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3408e36c59e6164fc065",
           "fullname": "Maxim",
@@ -3135,7 +3159,7 @@
       },
       {
         "at": "2016-10-24T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3401e36c59e6164fab87",
           "fullname": "Rebecca",
@@ -3146,7 +3170,7 @@
       },
       {
         "at": "2016-10-31T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3407e36c59e6164fbfe5",
           "fullname": "Luke",
@@ -3157,7 +3181,7 @@
       },
       {
         "at": "2016-11-02T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3403e36c59e6164fafc3",
           "fullname": "Karla",
@@ -3168,7 +3192,7 @@
       },
       {
         "at": "2016-11-14T05:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3403e36c59e6164faf4f",
           "fullname": "Katherine",
@@ -3199,26 +3223,30 @@
     ],
     "roomType": "Entire home/apt",
     "bedType": "Real Bed",
-    "capacity": 7,
-    "bedrooms": 3,
-    "beds": 7,
-    "numOfReviews": 129,
+    "capacity": 7.0,
+    "bedrooms": 3.0,
+    "beds": 7.0,
+    "numOfReviews": 129.0,
     "amenities": [
       {
         "name": "TV",
-        "src": "src/assets/icons/tv.svg"
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262492/air2b/tv_mnkywa.jpg"
       },
       {
         "name": "Air conditioning",
-        "src": "src/assets/icons/air-conditioning.svg"
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262488/air2b/air-conditioning_vey5xg.jpg"
       },
       {
         "name": "Kitchen",
-        "src": "src/assets/icons/kitchen.svg"
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262490/air2b/kitchen_jxxtfr.jpg"
       },
       {
         "name": "Washer",
-        "src": "src/assets/icons/washer.svg"
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262492/air2b/washer_nt9omk.jpg"
+      },
+      {
+        "name": "wifi",
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659276876/air2b/wifi_j873ar.jpg"
       }
     ],
     "host": {
@@ -3244,23 +3272,23 @@
       "city": "Barcelona"
     },
     "id": "1112838",
-    "bathrooms": 2,
-    "price": 130,
-    "securityDeposit": 300,
-    "cleaningFee": 65,
-    "extraPeople": 35,
+    "bathrooms": 2.0,
+    "price": 130.0,
+    "securityDeposit": 300.0,
+    "cleaningFee": 65.0,
+    "extraPeople": 35.0,
     "reviewScores": {
       "accuracy": 4.8,
       "cleanliness": 4.9,
       "checkin": 4.6,
       "communication": 4.7,
-      "location": 5,
+      "location": 5.0,
       "value": 4.7
     },
     "reviews": [
       {
         "at": "2013-05-12T04:00:00.000Z",
-        "rate": 4,
+        "rate": 4.0,
         "by": {
           "_id": "622f3403e36c59e6164fb132",
           "fullname": "Jean-Pierre",
@@ -3271,7 +3299,7 @@
       },
       {
         "at": "2013-06-17T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3402e36c59e6164fadce",
           "fullname": "Ove M.",
@@ -3282,7 +3310,7 @@
       },
       {
         "at": "2013-07-12T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3403e36c59e6164fb078",
           "fullname": "Andrew",
@@ -3293,7 +3321,7 @@
       },
       {
         "at": "2013-08-06T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3407e36c59e6164fbce7",
           "fullname": "Juan Daniel",
@@ -3304,7 +3332,7 @@
       },
       {
         "at": "2013-08-09T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3406e36c59e6164fba44",
           "fullname": "Carey",
@@ -3315,7 +3343,7 @@
       },
       {
         "at": "2013-08-25T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3407e36c59e6164fbfa0",
           "fullname": "Julie",
@@ -3326,7 +3354,7 @@
       },
       {
         "at": "2013-09-16T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3402e36c59e6164fae47",
           "fullname": "Ron",
@@ -3337,7 +3365,7 @@
       },
       {
         "at": "2013-10-27T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3407e36c59e6164fc002",
           "fullname": "Christine",
@@ -3348,7 +3376,7 @@
       },
       {
         "at": "2013-11-05T05:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3405e36c59e6164fb814",
           "fullname": "Jeremie",
@@ -3359,7 +3387,7 @@
       },
       {
         "at": "2014-02-27T05:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3404e36c59e6164fb306",
           "fullname": "Kirstin",
@@ -3370,7 +3398,7 @@
       },
       {
         "at": "2014-03-04T05:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3406e36c59e6164fbbcc",
           "fullname": "Oliver",
@@ -3381,7 +3409,7 @@
       },
       {
         "at": "2014-03-18T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3404e36c59e6164fb476",
           "fullname": "Okan",
@@ -3392,7 +3420,7 @@
       },
       {
         "at": "2014-03-25T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3404e36c59e6164fb510",
           "fullname": "Lisa",
@@ -3403,7 +3431,7 @@
       },
       {
         "at": "2014-04-12T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3404e36c59e6164fb5a8",
           "fullname": "Danielle",
@@ -3414,7 +3442,7 @@
       },
       {
         "at": "2014-04-27T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3406e36c59e6164fbc22",
           "fullname": "Henrik",
@@ -3425,7 +3453,7 @@
       },
       {
         "at": "2014-05-01T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3403e36c59e6164fb07b",
           "fullname": "Marie-Pierre",
@@ -3436,7 +3464,7 @@
       },
       {
         "at": "2014-05-05T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3406e36c59e6164fbb13",
           "fullname": "Céline",
@@ -3447,7 +3475,7 @@
       },
       {
         "at": "2014-05-08T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3404e36c59e6164fb401",
           "fullname": "Véronique",
@@ -3458,7 +3486,7 @@
       },
       {
         "at": "2014-06-17T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3402e36c59e6164faf30",
           "fullname": "Thorsten",
@@ -3469,7 +3497,7 @@
       },
       {
         "at": "2014-06-21T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3407e36c59e6164fbf72",
           "fullname": "Birgit",
@@ -3500,22 +3528,22 @@
     ],
     "roomType": "Entire home/apt",
     "bedType": "Real Bed",
-    "capacity": 4,
-    "bedrooms": 2,
-    "beds": 4,
-    "numOfReviews": 94,
+    "capacity": 4.0,
+    "bedrooms": 2.0,
+    "beds": 4.0,
+    "numOfReviews": 94.0,
     "amenities": [
       {
         "name": "TV",
-        "src": "src/assets/icons/tv.svg"
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262492/air2b/tv_mnkywa.jpg"
       },
       {
         "name": "Air conditioning",
-        "src": "src/assets/icons/air-conditioning.svg"
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262488/air2b/air-conditioning_vey5xg.jpg"
       },
       {
         "name": "Kitchen",
-        "src": "src/assets/icons/kitchen.svg"
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262490/air2b/kitchen_jxxtfr.jpg"
       }
     ],
     "host": {
@@ -3541,23 +3569,23 @@
       "city": "New York"
     },
     "id": "11693193",
-    "bathrooms": 1,
-    "price": 225,
-    "securityDeposit": 1000,
+    "bathrooms": 1.0,
+    "price": 225.0,
+    "securityDeposit": 1000.0,
     "cleaningFee": null,
-    "extraPeople": 0,
+    "extraPeople": 0.0,
     "reviewScores": {
       "accuracy": 4.8,
       "cleanliness": 4.9,
       "checkin": 4.6,
       "communication": 4.7,
-      "location": 5,
+      "location": 5.0,
       "value": 4.7
     },
     "reviews": [
       {
         "at": "2016-03-23T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3402e36c59e6164facca",
           "fullname": "Franz",
@@ -3568,7 +3596,7 @@
       },
       {
         "at": "2016-05-09T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3403e36c59e6164faf76",
           "fullname": "Shanna",
@@ -3579,7 +3607,7 @@
       },
       {
         "at": "2016-05-15T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3404e36c59e6164fb2cc",
           "fullname": "Agustin",
@@ -3590,7 +3618,7 @@
       },
       {
         "at": "2016-05-20T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3404e36c59e6164fb2d9",
           "fullname": "Raymond",
@@ -3601,7 +3629,7 @@
       },
       {
         "at": "2016-05-24T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3402e36c59e6164fac18",
           "fullname": "Robert",
@@ -3612,7 +3640,7 @@
       },
       {
         "at": "2016-06-09T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3407e36c59e6164fbe19",
           "fullname": "Jack",
@@ -3623,7 +3651,7 @@
       },
       {
         "at": "2016-06-11T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3402e36c59e6164fad2e",
           "fullname": "Nick",
@@ -3634,7 +3662,7 @@
       },
       {
         "at": "2016-07-29T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3405e36c59e6164fb6dc",
           "fullname": "Rocio",
@@ -3645,7 +3673,7 @@
       },
       {
         "at": "2016-09-12T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3407e36c59e6164fbf07",
           "fullname": "Marek",
@@ -3656,7 +3684,7 @@
       },
       {
         "at": "2016-09-20T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3403e36c59e6164fb092",
           "fullname": "Eric",
@@ -3667,7 +3695,7 @@
       },
       {
         "at": "2016-09-23T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3403e36c59e6164fb12b",
           "fullname": "Micheal",
@@ -3678,7 +3706,7 @@
       },
       {
         "at": "2016-09-25T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3402e36c59e6164fae81",
           "fullname": "Carolyn",
@@ -3689,7 +3717,7 @@
       },
       {
         "at": "2016-10-03T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3404e36c59e6164fb40c",
           "fullname": "Stuart",
@@ -3700,7 +3728,7 @@
       },
       {
         "at": "2016-10-06T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3404e36c59e6164fb327",
           "fullname": "Martin",
@@ -3711,7 +3739,7 @@
       },
       {
         "at": "2016-10-14T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3405e36c59e6164fb779",
           "fullname": "Gianna",
@@ -3722,7 +3750,7 @@
       },
       {
         "at": "2016-10-23T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3405e36c59e6164fb762",
           "fullname": "Lene",
@@ -3733,7 +3761,7 @@
       },
       {
         "at": "2016-11-02T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3407e36c59e6164fbffb",
           "fullname": "Jacques",
@@ -3744,7 +3772,7 @@
       },
       {
         "at": "2016-11-05T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3404e36c59e6164fb378",
           "fullname": "Erin",
@@ -3755,7 +3783,7 @@
       },
       {
         "at": "2016-11-14T05:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3407e36c59e6164fbfc7",
           "fullname": "Barry",
@@ -3766,7 +3794,7 @@
       },
       {
         "at": "2016-12-12T05:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3404e36c59e6164fb439",
           "fullname": "Adam",
@@ -3797,26 +3825,30 @@
     ],
     "roomType": "Entire home/apt",
     "bedType": "Real Bed",
-    "capacity": 2,
-    "bedrooms": 0,
-    "beds": 1,
-    "numOfReviews": 206,
+    "capacity": 2.0,
+    "bedrooms": 0.0,
+    "beds": 1.0,
+    "numOfReviews": 206.0,
     "amenities": [
       {
         "name": "TV",
-        "src": "src/assets/icons/tv.svg"
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262492/air2b/tv_mnkywa.jpg"
       },
       {
         "name": "Air conditioning",
-        "src": "src/assets/icons/air-conditioning.svg"
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262488/air2b/air-conditioning_vey5xg.jpg"
       },
       {
         "name": "Kitchen",
-        "src": "src/assets/icons/kitchen.svg"
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262490/air2b/kitchen_jxxtfr.jpg"
       },
       {
         "name": "Elevator",
-        "src": "src/assets/icons/elevator.svg"
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262488/air2b/elevator_jfbds3.jpg"
+      },
+      {
+        "name": "wifi",
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659276876/air2b/wifi_j873ar.jpg"
       }
     ],
     "host": {
@@ -3842,23 +3874,23 @@
       "city": "Hong Kong"
     },
     "id": "11093339",
-    "bathrooms": 1,
-    "price": 463,
-    "securityDeposit": 800,
-    "cleaningFee": 120,
-    "extraPeople": 80,
+    "bathrooms": 1.0,
+    "price": 463.0,
+    "securityDeposit": 800.0,
+    "cleaningFee": 120.0,
+    "extraPeople": 80.0,
     "reviewScores": {
       "accuracy": 4.8,
       "cleanliness": 4.9,
       "checkin": 4.6,
       "communication": 4.7,
-      "location": 5,
+      "location": 5.0,
       "value": 4.7
     },
     "reviews": [
       {
         "at": "2016-03-26T04:00:00.000Z",
-        "rate": 4,
+        "rate": 4.0,
         "by": {
           "_id": "622f3407e36c59e6164fbf0f",
           "fullname": "Sindy",
@@ -3869,7 +3901,7 @@
       },
       {
         "at": "2016-04-03T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3404e36c59e6164fb4da",
           "fullname": "William",
@@ -3880,7 +3912,7 @@
       },
       {
         "at": "2016-04-05T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3405e36c59e6164fb903",
           "fullname": "Molinta",
@@ -3891,7 +3923,7 @@
       },
       {
         "at": "2016-04-11T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3407e36c59e6164fbda8",
           "fullname": "丹琳",
@@ -3902,7 +3934,7 @@
       },
       {
         "at": "2016-04-11T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3403e36c59e6164fb1b4",
           "fullname": "Daniel",
@@ -3913,7 +3945,7 @@
       },
       {
         "at": "2016-04-15T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3405e36c59e6164fb68f",
           "fullname": "Kally",
@@ -3924,7 +3956,7 @@
       },
       {
         "at": "2016-04-28T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3406e36c59e6164fbc83",
           "fullname": "Phan",
@@ -3935,7 +3967,7 @@
       },
       {
         "at": "2016-05-03T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3405e36c59e6164fb653",
           "fullname": "J",
@@ -3946,7 +3978,7 @@
       },
       {
         "at": "2016-05-18T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3402e36c59e6164fae4b",
           "fullname": "Mengdi",
@@ -3957,7 +3989,7 @@
       },
       {
         "at": "2016-05-22T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3402e36c59e6164fae1d",
           "fullname": "Cat",
@@ -3968,7 +4000,7 @@
       },
       {
         "at": "2016-06-01T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3405e36c59e6164fb701",
           "fullname": "小芳",
@@ -3979,7 +4011,7 @@
       },
       {
         "at": "2016-06-03T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3404e36c59e6164fb4bf",
           "fullname": "Yan",
@@ -3990,7 +4022,7 @@
       },
       {
         "at": "2016-06-13T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3403e36c59e6164fb009",
           "fullname": "Sally",
@@ -4001,7 +4033,7 @@
       },
       {
         "at": "2016-06-16T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3404e36c59e6164fb33d",
           "fullname": "Maggie",
@@ -4012,7 +4044,7 @@
       },
       {
         "at": "2016-06-17T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3403e36c59e6164faff9",
           "fullname": "萌",
@@ -4023,7 +4055,7 @@
       },
       {
         "at": "2016-06-24T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3405e36c59e6164fb719",
           "fullname": "Miaoqi",
@@ -4034,7 +4066,7 @@
       },
       {
         "at": "2016-06-26T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3403e36c59e6164fb1e6",
           "fullname": "Rosa",
@@ -4045,7 +4077,7 @@
       },
       {
         "at": "2016-07-07T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3403e36c59e6164fb16f",
           "fullname": "Kaye",
@@ -4056,7 +4088,7 @@
       },
       {
         "at": "2016-07-12T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3406e36c59e6164fbac7",
           "fullname": "Lilia",
@@ -4067,7 +4099,7 @@
       },
       {
         "at": "2016-07-23T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3404e36c59e6164fb404",
           "fullname": "Weiwei",
@@ -4098,34 +4130,34 @@
     ],
     "roomType": "Entire home/apt",
     "bedType": "Real Bed",
-    "capacity": 6,
-    "bedrooms": 2,
-    "beds": 3,
-    "numOfReviews": 7,
+    "capacity": 6.0,
+    "bedrooms": 2.0,
+    "beds": 3.0,
+    "numOfReviews": 7.0,
     "amenities": [
       {
         "name": "TV",
-        "src": "src/assets/icons/tv.svg"
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262492/air2b/tv_mnkywa.jpg"
       },
       {
         "name": "Air conditioning",
-        "src": "src/assets/icons/air-conditioning.svg"
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262488/air2b/air-conditioning_vey5xg.jpg"
       },
       {
         "name": "Kitchen",
-        "src": "src/assets/icons/kitchen.svg"
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262490/air2b/kitchen_jxxtfr.jpg"
       },
       {
         "name": "Free parking",
-        "src": "src/assets/icons/free-parking.svg"
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262489/air2b/free-parking_na5xln.jpg"
       },
       {
         "name": "Elevator",
-        "src": "src/assets/icons/elevator.svg"
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262488/air2b/elevator_jfbds3.jpg"
       },
       {
         "name": "Washer",
-        "src": "src/assets/icons/washer.svg"
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262492/air2b/washer_nt9omk.jpg"
       }
     ],
     "host": {
@@ -4151,23 +4183,23 @@
       "city": "Maui"
     },
     "id": "11207193",
-    "bathrooms": 2,
-    "price": 400,
-    "securityDeposit": 200,
-    "cleaningFee": 270,
-    "extraPeople": 20,
+    "bathrooms": 2.0,
+    "price": 400.0,
+    "securityDeposit": 200.0,
+    "cleaningFee": 270.0,
+    "extraPeople": 20.0,
     "reviewScores": {
       "accuracy": 4.8,
       "cleanliness": 4.9,
       "checkin": 4.6,
       "communication": 4.7,
-      "location": 5,
+      "location": 5.0,
       "value": 4.3
     },
     "reviews": [
       {
         "at": "2016-09-03T04:00:00.000Z",
-        "rate": 4,
+        "rate": 4.0,
         "by": {
           "_id": "622f3407e36c59e6164fbf63",
           "fullname": "Mony",
@@ -4178,7 +4210,7 @@
       },
       {
         "at": "2016-12-25T05:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3403e36c59e6164fb1f2",
           "fullname": "Jerome",
@@ -4189,7 +4221,7 @@
       },
       {
         "at": "2016-12-30T05:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3407e36c59e6164fbcf9",
           "fullname": "Chris",
@@ -4200,7 +4232,7 @@
       },
       {
         "at": "2017-01-02T05:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3406e36c59e6164fbbfa",
           "fullname": "Anne",
@@ -4211,7 +4243,7 @@
       },
       {
         "at": "2017-01-05T05:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3405e36c59e6164fb64e",
           "fullname": "Tiffany",
@@ -4222,7 +4254,7 @@
       },
       {
         "at": "2018-06-24T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3405e36c59e6164fb888",
           "fullname": "Lindsay",
@@ -4233,7 +4265,7 @@
       },
       {
         "at": "2018-08-30T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3407e36c59e6164fbf97",
           "fullname": "Ryan",
@@ -4264,14 +4296,18 @@
     ],
     "roomType": "Private room",
     "bedType": "Real Bed",
-    "capacity": 2,
-    "bedrooms": 1,
-    "beds": 1,
-    "numOfReviews": 1,
+    "capacity": 2.0,
+    "bedrooms": 1.0,
+    "beds": 1.0,
+    "numOfReviews": 1.0,
     "amenities": [
       {
         "name": "Air conditioning",
-        "src": "src/assets/icons/air-conditioning.svg"
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262488/air2b/air-conditioning_vey5xg.jpg"
+      },
+      {
+        "name": "wifi",
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659276876/air2b/wifi_j873ar.jpg"
       }
     ],
     "host": {
@@ -4297,23 +4333,23 @@
       "city": "New York"
     },
     "id": "11935301",
-    "bathrooms": 1,
-    "price": 85,
+    "bathrooms": 1.0,
+    "price": 85.0,
     "securityDeposit": null,
     "cleaningFee": null,
-    "extraPeople": 0,
+    "extraPeople": 0.0,
     "reviewScores": {
       "accuracy": 4.8,
       "cleanliness": 4.9,
       "checkin": 4.6,
       "communication": 4.7,
-      "location": 5,
+      "location": 5.0,
       "value": 4.7
     },
     "reviews": [
       {
         "at": "2016-06-24T04:00:00.000Z",
-        "rate": 4,
+        "rate": 4.0,
         "by": {
           "_id": "622f3405e36c59e6164fb74c",
           "fullname": "Francesca",
@@ -4344,26 +4380,26 @@
     ],
     "roomType": "Entire home/apt",
     "bedType": "Real Bed",
-    "capacity": 4,
-    "bedrooms": 3,
-    "beds": 4,
-    "numOfReviews": 7,
+    "capacity": 4.0,
+    "bedrooms": 3.0,
+    "beds": 4.0,
+    "numOfReviews": 7.0,
     "amenities": [
       {
         "name": "TV",
-        "src": "src/assets/icons/tv.svg"
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262492/air2b/tv_mnkywa.jpg"
       },
       {
         "name": "Air conditioning",
-        "src": "src/assets/icons/air-conditioning.svg"
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262488/air2b/air-conditioning_vey5xg.jpg"
       },
       {
         "name": "Kitchen",
-        "src": "src/assets/icons/kitchen.svg"
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262490/air2b/kitchen_jxxtfr.jpg"
       },
       {
         "name": "Washer",
-        "src": "src/assets/icons/washer.svg"
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262492/air2b/washer_nt9omk.jpg"
       }
     ],
     "host": {
@@ -4389,23 +4425,23 @@
       "city": "Barcelona"
     },
     "id": "11568230",
-    "bathrooms": 1,
-    "price": 55,
-    "securityDeposit": 500,
-    "cleaningFee": 80,
-    "extraPeople": 0,
+    "bathrooms": 1.0,
+    "price": 55.0,
+    "securityDeposit": 500.0,
+    "cleaningFee": 80.0,
+    "extraPeople": 0.0,
     "reviewScores": {
       "accuracy": 4.6,
       "cleanliness": 4.5,
       "checkin": 4.6,
       "communication": 4.7,
-      "location": 5,
+      "location": 5.0,
       "value": 4.3
     },
     "reviews": [
       {
         "at": "2016-06-01T04:00:00.000Z",
-        "rate": 4,
+        "rate": 4.0,
         "by": {
           "_id": "622f3404e36c59e6164fb3db",
           "fullname": "Tim",
@@ -4416,7 +4452,7 @@
       },
       {
         "at": "2016-07-31T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3407e36c59e6164fbeae",
           "fullname": "Danny",
@@ -4427,7 +4463,7 @@
       },
       {
         "at": "2017-02-19T05:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3407e36c59e6164fbe8c",
           "fullname": "Artea",
@@ -4438,7 +4474,7 @@
       },
       {
         "at": "2017-09-01T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3403e36c59e6164fb058",
           "fullname": "Andrew",
@@ -4449,7 +4485,7 @@
       },
       {
         "at": "2017-10-27T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3404e36c59e6164fb4c6",
           "fullname": "Kar",
@@ -4460,7 +4496,7 @@
       },
       {
         "at": "2018-01-13T05:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3404e36c59e6164fb3d0",
           "fullname": "Rosario",
@@ -4471,7 +4507,7 @@
       },
       {
         "at": "2018-02-06T05:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3406e36c59e6164fba64",
           "fullname": "Александр",
@@ -4502,22 +4538,26 @@
     ],
     "roomType": "Entire home/apt",
     "bedType": "Real Bed",
-    "capacity": 2,
-    "bedrooms": 1,
-    "beds": 1,
-    "numOfReviews": 3,
+    "capacity": 2.0,
+    "bedrooms": 1.0,
+    "beds": 1.0,
+    "numOfReviews": 3.0,
     "amenities": [
       {
         "name": "TV",
-        "src": "src/assets/icons/tv.svg"
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262492/air2b/tv_mnkywa.jpg"
       },
       {
         "name": "Kitchen",
-        "src": "src/assets/icons/kitchen.svg"
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262490/air2b/kitchen_jxxtfr.jpg"
       },
       {
         "name": "Washer",
-        "src": "src/assets/icons/washer.svg"
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262492/air2b/washer_nt9omk.jpg"
+      },
+      {
+        "name": "wifi",
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659276876/air2b/wifi_j873ar.jpg"
       }
     ],
     "host": {
@@ -4543,23 +4583,23 @@
       "city": "Istanbul"
     },
     "id": "1503655",
-    "bathrooms": 1,
-    "price": 190,
-    "securityDeposit": 0,
-    "cleaningFee": 105,
-    "extraPeople": 0,
+    "bathrooms": 1.0,
+    "price": 190.0,
+    "securityDeposit": 0.0,
+    "cleaningFee": 105.0,
+    "extraPeople": 0.0,
     "reviewScores": {
       "accuracy": 4.8,
       "cleanliness": 4.9,
       "checkin": 4.6,
       "communication": 4.7,
-      "location": 5,
+      "location": 5.0,
       "value": 4.7
     },
     "reviews": [
       {
         "at": "2017-01-08T05:00:00.000Z",
-        "rate": 4,
+        "rate": 4.0,
         "by": {
           "_id": "622f3407e36c59e6164fc04e",
           "fullname": "Jorge",
@@ -4570,7 +4610,7 @@
       },
       {
         "at": "2017-10-16T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3407e36c59e6164fbf34",
           "fullname": "Rene",
@@ -4581,7 +4621,7 @@
       },
       {
         "at": "2017-11-17T05:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3403e36c59e6164fb0e7",
           "fullname": "Elizabeth",
@@ -4612,34 +4652,34 @@
     ],
     "roomType": "Entire home/apt",
     "bedType": "Real Bed",
-    "capacity": 8,
-    "bedrooms": 2,
-    "beds": 4,
-    "numOfReviews": 5,
+    "capacity": 8.0,
+    "bedrooms": 2.0,
+    "beds": 4.0,
+    "numOfReviews": 5.0,
     "amenities": [
       {
         "name": "TV",
-        "src": "src/assets/icons/tv.svg"
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262492/air2b/tv_mnkywa.jpg"
       },
       {
         "name": "Air conditioning",
-        "src": "src/assets/icons/air-conditioning.svg"
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262488/air2b/air-conditioning_vey5xg.jpg"
       },
       {
         "name": "Kitchen",
-        "src": "src/assets/icons/kitchen.svg"
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262490/air2b/kitchen_jxxtfr.jpg"
       },
       {
         "name": "Free parking",
-        "src": "src/assets/icons/free-parking.svg"
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262489/air2b/free-parking_na5xln.jpg"
       },
       {
         "name": "Elevator",
-        "src": "src/assets/icons/elevator.svg"
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262488/air2b/elevator_jfbds3.jpg"
       },
       {
         "name": "Washer",
-        "src": "src/assets/icons/washer.svg"
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262492/air2b/washer_nt9omk.jpg"
       }
     ],
     "host": {
@@ -4665,23 +4705,23 @@
       "city": "Maui"
     },
     "id": "12762350",
-    "bathrooms": 2,
-    "price": 799,
-    "securityDeposit": 500,
+    "bathrooms": 2.0,
+    "price": 799.0,
+    "securityDeposit": 500.0,
     "cleaningFee": null,
-    "extraPeople": 0,
+    "extraPeople": 0.0,
     "reviewScores": {
       "accuracy": 4.8,
       "cleanliness": 4.9,
       "checkin": 4.6,
       "communication": 4.7,
-      "location": 5,
+      "location": 5.0,
       "value": 4.3
     },
     "reviews": [
       {
         "at": "2016-12-31T05:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3404e36c59e6164fb43d",
           "fullname": "Darren",
@@ -4692,7 +4732,7 @@
       },
       {
         "at": "2017-04-01T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3404e36c59e6164fb506",
           "fullname": "Charles",
@@ -4703,7 +4743,7 @@
       },
       {
         "at": "2017-12-30T05:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3404e36c59e6164fb32c",
           "fullname": "Kerrin (Kerri)",
@@ -4714,7 +4754,7 @@
       },
       {
         "at": "2018-03-31T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3407e36c59e6164fbf6d",
           "fullname": "Stacy",
@@ -4725,7 +4765,7 @@
       },
       {
         "at": "2019-02-23T05:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3403e36c59e6164fafc0",
           "fullname": "Kyle",
@@ -4756,26 +4796,26 @@
     ],
     "roomType": "Entire home/apt",
     "bedType": "Real Bed",
-    "capacity": 4,
-    "bedrooms": 2,
-    "beds": 3,
-    "numOfReviews": 22,
+    "capacity": 4.0,
+    "bedrooms": 2.0,
+    "beds": 3.0,
+    "numOfReviews": 22.0,
     "amenities": [
       {
         "name": "TV",
-        "src": "src/assets/icons/tv.svg"
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262492/air2b/tv_mnkywa.jpg"
       },
       {
         "name": "Kitchen",
-        "src": "src/assets/icons/kitchen.svg"
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262490/air2b/kitchen_jxxtfr.jpg"
       },
       {
         "name": "Washer",
-        "src": "src/assets/icons/washer.svg"
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262492/air2b/washer_nt9omk.jpg"
       },
       {
-        "name": "Wifi",
-        "src": "src/assets/icons/washer.svg"
+        "name": "wifi",
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262492/air2b/washer_nt9omk.jpg"
       }
     ],
     "host": {
@@ -4801,23 +4841,23 @@
       "city": "Istanbul"
     },
     "id": "11144250",
-    "bathrooms": 1,
-    "price": 348,
-    "securityDeposit": 0,
-    "cleaningFee": 50,
-    "extraPeople": 0,
+    "bathrooms": 1.0,
+    "price": 348.0,
+    "securityDeposit": 0.0,
+    "cleaningFee": 50.0,
+    "extraPeople": 0.0,
     "reviewScores": {
       "accuracy": 4.8,
       "cleanliness": 4.5,
       "checkin": 4.6,
       "communication": 4.7,
-      "location": 5,
+      "location": 5.0,
       "value": 4.3
     },
     "reviews": [
       {
         "at": "2016-04-10T04:00:00.000Z",
-        "rate": 4,
+        "rate": 4.0,
         "by": {
           "_id": "622f3402e36c59e6164faed0",
           "fullname": "Ayşegül",
@@ -4828,7 +4868,7 @@
       },
       {
         "at": "2016-04-22T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3407e36c59e6164fbde4",
           "fullname": "Elif",
@@ -4839,7 +4879,7 @@
       },
       {
         "at": "2016-04-24T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3407e36c59e6164fbdc1",
           "fullname": "Emre",
@@ -4850,7 +4890,7 @@
       },
       {
         "at": "2016-05-01T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3403e36c59e6164fb267",
           "fullname": "Erdinç",
@@ -4861,7 +4901,7 @@
       },
       {
         "at": "2016-05-12T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3406e36c59e6164fbc34",
           "fullname": "A Uygur",
@@ -4872,7 +4912,7 @@
       },
       {
         "at": "2016-05-15T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3403e36c59e6164fafc1",
           "fullname": "Eralp",
@@ -4883,7 +4923,7 @@
       },
       {
         "at": "2016-05-23T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3406e36c59e6164fb9d4",
           "fullname": "Gokcen",
@@ -4894,7 +4934,7 @@
       },
       {
         "at": "2016-05-26T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3402e36c59e6164facb8",
           "fullname": "Jing Yi",
@@ -4905,7 +4945,7 @@
       },
       {
         "at": "2017-03-05T05:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3406e36c59e6164fbb7e",
           "fullname": "Murat",
@@ -4916,7 +4956,7 @@
       },
       {
         "at": "2017-04-03T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3406e36c59e6164fba9c",
           "fullname": "Zeynep",
@@ -4927,7 +4967,7 @@
       },
       {
         "at": "2017-08-27T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3407e36c59e6164fbef2",
           "fullname": "Deniz",
@@ -4938,7 +4978,7 @@
       },
       {
         "at": "2018-01-01T05:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3406e36c59e6164fba8a",
           "fullname": "Nazire",
@@ -4949,7 +4989,7 @@
       },
       {
         "at": "2018-02-18T05:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3403e36c59e6164fb290",
           "fullname": "Emre",
@@ -4960,7 +5000,7 @@
       },
       {
         "at": "2018-05-06T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3406e36c59e6164fba50",
           "fullname": "Larissa",
@@ -4971,7 +5011,7 @@
       },
       {
         "at": "2018-05-28T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3403e36c59e6164faf6f",
           "fullname": "Christophe",
@@ -4982,7 +5022,7 @@
       },
       {
         "at": "2018-06-03T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3405e36c59e6164fb74b",
           "fullname": "Nefise",
@@ -4993,7 +5033,7 @@
       },
       {
         "at": "2018-06-10T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3405e36c59e6164fb7f5",
           "fullname": "Edip",
@@ -5004,7 +5044,7 @@
       },
       {
         "at": "2018-06-27T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3405e36c59e6164fb775",
           "fullname": "Şilan",
@@ -5015,7 +5055,7 @@
       },
       {
         "at": "2018-07-08T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3402e36c59e6164fad5c",
           "fullname": "Cemre",
@@ -5026,7 +5066,7 @@
       },
       {
         "at": "2018-07-16T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3402e36c59e6164facff",
           "fullname": "Ayça",
@@ -5057,26 +5097,26 @@
     ],
     "roomType": "Entire home/apt",
     "bedType": "Real Bed",
-    "capacity": 8,
-    "bedrooms": 4,
-    "beds": 4,
-    "numOfReviews": 22,
+    "capacity": 8.0,
+    "bedrooms": 4.0,
+    "beds": 4.0,
+    "numOfReviews": 22.0,
     "amenities": [
       {
         "name": "TV",
-        "src": "src/assets/icons/tv.svg"
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262492/air2b/tv_mnkywa.jpg"
       },
       {
         "name": "Air conditioning",
-        "src": "src/assets/icons/air-conditioning.svg"
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262488/air2b/air-conditioning_vey5xg.jpg"
       },
       {
         "name": "Kitchen",
-        "src": "src/assets/icons/kitchen.svg"
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262490/air2b/kitchen_jxxtfr.jpg"
       },
       {
         "name": "Washer",
-        "src": "src/assets/icons/washer.svg"
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262492/air2b/washer_nt9omk.jpg"
       }
     ],
     "host": {
@@ -5102,23 +5142,23 @@
       "city": "Montreal"
     },
     "id": "12902610",
-    "bathrooms": 1,
-    "price": 152,
-    "securityDeposit": 400,
-    "cleaningFee": 165,
-    "extraPeople": 7,
+    "bathrooms": 1.0,
+    "price": 152.0,
+    "securityDeposit": 400.0,
+    "cleaningFee": 165.0,
+    "extraPeople": 7.0,
     "reviewScores": {
       "accuracy": 4.8,
       "cleanliness": 4.9,
       "checkin": 4.6,
       "communication": 4.7,
-      "location": 5,
+      "location": 5.0,
       "value": 4.7
     },
     "reviews": [
       {
         "at": "2016-07-16T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3403e36c59e6164fb212",
           "fullname": "Lawrence",
@@ -5129,7 +5169,7 @@
       },
       {
         "at": "2016-08-11T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3407e36c59e6164fbffc",
           "fullname": "Christopher",
@@ -5140,7 +5180,7 @@
       },
       {
         "at": "2016-08-15T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3407e36c59e6164fbdbd",
           "fullname": "Neil",
@@ -5151,7 +5191,7 @@
       },
       {
         "at": "2016-08-27T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3402e36c59e6164facd1",
           "fullname": "Diego & Amy",
@@ -5162,7 +5202,7 @@
       },
       {
         "at": "2017-06-19T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3401e36c59e6164fab60",
           "fullname": "Bolivar",
@@ -5173,7 +5213,7 @@
       },
       {
         "at": "2017-07-04T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3404e36c59e6164fb4e1",
           "fullname": "Owni",
@@ -5184,7 +5224,7 @@
       },
       {
         "at": "2017-07-09T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3405e36c59e6164fb987",
           "fullname": "Nichole",
@@ -5195,7 +5235,7 @@
       },
       {
         "at": "2017-08-28T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3406e36c59e6164fbc3a",
           "fullname": "Ahmed",
@@ -5206,7 +5246,7 @@
       },
       {
         "at": "2018-06-04T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3403e36c59e6164fb0df",
           "fullname": "Courtney",
@@ -5217,7 +5257,7 @@
       },
       {
         "at": "2018-08-28T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3404e36c59e6164fb5f1",
           "fullname": "Anne Patricia",
@@ -5228,7 +5268,7 @@
       },
       {
         "at": "2018-08-29T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3407e36c59e6164fbec7",
           "fullname": "Cynthia",
@@ -5239,7 +5279,7 @@
       },
       {
         "at": "2018-09-23T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3406e36c59e6164fbbef",
           "fullname": "Ivan",
@@ -5250,7 +5290,7 @@
       },
       {
         "at": "2018-09-30T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3403e36c59e6164fb0e8",
           "fullname": "Léa",
@@ -5261,7 +5301,7 @@
       },
       {
         "at": "2018-10-12T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3402e36c59e6164fac36",
           "fullname": "Juan Pablo",
@@ -5272,7 +5312,7 @@
       },
       {
         "at": "2018-11-02T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3403e36c59e6164fb273",
           "fullname": "Melanie",
@@ -5283,7 +5323,7 @@
       },
       {
         "at": "2018-11-09T05:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3404e36c59e6164fb2f5",
           "fullname": "Puck",
@@ -5294,7 +5334,7 @@
       },
       {
         "at": "2018-11-25T05:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3407e36c59e6164fbe3d",
           "fullname": "Shawn",
@@ -5305,7 +5345,7 @@
       },
       {
         "at": "2018-12-09T05:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3407e36c59e6164fbf94",
           "fullname": "Sebastian",
@@ -5316,7 +5356,7 @@
       },
       {
         "at": "2019-01-01T05:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3404e36c59e6164fb346",
           "fullname": "Brendan",
@@ -5327,7 +5367,7 @@
       },
       {
         "at": "2019-01-04T05:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3407e36c59e6164fbe63",
           "fullname": "Craig",
@@ -5358,26 +5398,26 @@
     ],
     "roomType": "Entire home/apt",
     "bedType": "Real Bed",
-    "capacity": 5,
-    "bedrooms": 2,
-    "beds": 2,
-    "numOfReviews": 9,
+    "capacity": 5.0,
+    "bedrooms": 2.0,
+    "beds": 2.0,
+    "numOfReviews": 9.0,
     "amenities": [
       {
         "name": "TV",
-        "src": "src/assets/icons/tv.svg"
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262492/air2b/tv_mnkywa.jpg"
       },
       {
         "name": "Air conditioning",
-        "src": "src/assets/icons/air-conditioning.svg"
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262488/air2b/air-conditioning_vey5xg.jpg"
       },
       {
         "name": "Kitchen",
-        "src": "src/assets/icons/kitchen.svg"
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262490/air2b/kitchen_jxxtfr.jpg"
       },
       {
         "name": "Pets allowed",
-        "src": "src/assets/icons/pets-allowed.svg"
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262491/air2b/pets-allowed_tuwhnn.jpg"
       }
     ],
     "host": {
@@ -5402,11 +5442,11 @@
       "city": "New York"
     },
     "id": "10133350",
-    "bathrooms": 1,
-    "price": 275,
-    "securityDeposit": 0,
-    "cleaningFee": 35,
-    "extraPeople": 0,
+    "bathrooms": 1.0,
+    "price": 275.0,
+    "securityDeposit": 0.0,
+    "cleaningFee": 35.0,
+    "extraPeople": 0.0,
     "reviewScores": {
       "accuracy": 4.6,
       "cleanliness": 4.9,
@@ -5418,7 +5458,7 @@
     "reviews": [
       {
         "at": "2016-05-28T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3403e36c59e6164fb0e2",
           "fullname": "Danielle",
@@ -5429,7 +5469,7 @@
       },
       {
         "at": "2016-08-13T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3402e36c59e6164fae96",
           "fullname": "Kelly",
@@ -5440,7 +5480,7 @@
       },
       {
         "at": "2016-10-02T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3404e36c59e6164fb551",
           "fullname": "William",
@@ -5451,7 +5491,7 @@
       },
       {
         "at": "2016-10-08T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3402e36c59e6164fac59",
           "fullname": "Harry",
@@ -5462,7 +5502,7 @@
       },
       {
         "at": "2016-10-11T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3403e36c59e6164fafbd",
           "fullname": "Kayla",
@@ -5473,7 +5513,7 @@
       },
       {
         "at": "2016-11-26T05:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3406e36c59e6164fbca1",
           "fullname": "Kristin",
@@ -5484,7 +5524,7 @@
       },
       {
         "at": "2016-12-30T05:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3402e36c59e6164fac95",
           "fullname": "Alex",
@@ -5495,7 +5535,7 @@
       },
       {
         "at": "2017-06-05T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3405e36c59e6164fb879",
           "fullname": "Mateus",
@@ -5506,7 +5546,7 @@
       },
       {
         "at": "2017-08-19T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3405e36c59e6164fb70d",
           "fullname": "Francesco",
@@ -5537,18 +5577,18 @@
     ],
     "roomType": "Private room",
     "bedType": "Real Bed",
-    "capacity": 4,
-    "bedrooms": 1,
-    "beds": 2,
-    "numOfReviews": 231,
+    "capacity": 4.0,
+    "bedrooms": 1.0,
+    "beds": 2.0,
+    "numOfReviews": 231.0,
     "amenities": [
       {
         "name": "Air conditioning",
-        "src": "src/assets/icons/air-conditioning.svg"
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262488/air2b/air-conditioning_vey5xg.jpg"
       },
       {
-        "name": "Wifi",
-        "src": "src/assets/icons/air-conditioning.svg"
+        "name": "wifi",
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262488/air2b/air-conditioning_vey5xg.jpg"
       }
     ],
     "host": {
@@ -5574,23 +5614,23 @@
       "city": "New York"
     },
     "id": "12937",
-    "bathrooms": 1,
-    "price": 130,
-    "securityDeposit": 250,
+    "bathrooms": 1.0,
+    "price": 130.0,
+    "securityDeposit": 250.0,
     "cleaningFee": null,
-    "extraPeople": 70,
+    "extraPeople": 70.0,
     "reviewScores": {
       "accuracy": 4.8,
       "cleanliness": 4.9,
       "checkin": 4.6,
       "communication": 4.7,
-      "location": 5,
+      "location": 5.0,
       "value": 4.7
     },
     "reviews": [
       {
         "at": "2010-06-13T04:00:00.000Z",
-        "rate": 4,
+        "rate": 4.0,
         "by": {
           "_id": "622f3404e36c59e6164fb351",
           "fullname": "Andre",
@@ -5601,7 +5641,7 @@
       },
       {
         "at": "2010-09-27T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3405e36c59e6164fb97a",
           "fullname": "Sharinne",
@@ -5612,7 +5652,7 @@
       },
       {
         "at": "2010-10-05T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3406e36c59e6164fb9ce",
           "fullname": "Virginia",
@@ -5623,7 +5663,7 @@
       },
       {
         "at": "2010-10-11T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3406e36c59e6164fbca2",
           "fullname": "Jean",
@@ -5634,7 +5674,7 @@
       },
       {
         "at": "2010-10-24T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3406e36c59e6164fbc01",
           "fullname": "Susan",
@@ -5645,7 +5685,7 @@
       },
       {
         "at": "2010-10-26T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3403e36c59e6164fb1f8",
           "fullname": "Cassie",
@@ -5656,7 +5696,7 @@
       },
       {
         "at": "2010-10-29T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3403e36c59e6164fafde",
           "fullname": "Lydia",
@@ -5667,7 +5707,7 @@
       },
       {
         "at": "2010-12-21T05:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3406e36c59e6164fba37",
           "fullname": "James",
@@ -5678,7 +5718,7 @@
       },
       {
         "at": "2011-05-04T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3402e36c59e6164fae19",
           "fullname": "Delia",
@@ -5689,7 +5729,7 @@
       },
       {
         "at": "2011-10-03T04:00:00.000Z",
-        "rate": 4,
+        "rate": 4.0,
         "by": {
           "_id": "622f3403e36c59e6164fb226",
           "fullname": "Mandy",
@@ -5700,7 +5740,7 @@
       },
       {
         "at": "2012-01-09T05:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3403e36c59e6164fb020",
           "fullname": "Jenny",
@@ -5711,7 +5751,7 @@
       },
       {
         "at": "2012-03-13T04:00:00.000Z",
-        "rate": 4,
+        "rate": 4.0,
         "by": {
           "_id": "622f3406e36c59e6164fbad5",
           "fullname": "Mistie",
@@ -5722,7 +5762,7 @@
       },
       {
         "at": "2012-03-23T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3402e36c59e6164faf2b",
           "fullname": "Cleo & Laure",
@@ -5733,7 +5773,7 @@
       },
       {
         "at": "2012-04-13T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3406e36c59e6164fbbeb",
           "fullname": "Morten",
@@ -5744,7 +5784,7 @@
       },
       {
         "at": "2012-06-03T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3405e36c59e6164fb783",
           "fullname": "Francois",
@@ -5755,7 +5795,7 @@
       },
       {
         "at": "2012-06-15T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3406e36c59e6164fbc87",
           "fullname": "Oliver",
@@ -5766,7 +5806,7 @@
       },
       {
         "at": "2012-06-22T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3404e36c59e6164fb619",
           "fullname": "Vince",
@@ -5777,7 +5817,7 @@
       },
       {
         "at": "2012-07-10T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3407e36c59e6164fbe54",
           "fullname": "James",
@@ -5788,7 +5828,7 @@
       },
       {
         "at": "2012-07-26T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3404e36c59e6164fb3e4",
           "fullname": "Yat & René",
@@ -5799,7 +5839,7 @@
       },
       {
         "at": "2012-08-07T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3404e36c59e6164fb55d",
           "fullname": "Hagay",
@@ -5830,26 +5870,26 @@
     ],
     "roomType": "Entire home/apt",
     "bedType": "Real Bed",
-    "capacity": 4,
-    "bedrooms": 2,
-    "beds": 3,
-    "numOfReviews": 23,
+    "capacity": 4.0,
+    "bedrooms": 2.0,
+    "beds": 3.0,
+    "numOfReviews": 23.0,
     "amenities": [
       {
         "name": "TV",
-        "src": "src/assets/icons/tv.svg"
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262492/air2b/tv_mnkywa.jpg"
       },
       {
         "name": "Air conditioning",
-        "src": "src/assets/icons/air-conditioning.svg"
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262488/air2b/air-conditioning_vey5xg.jpg"
       },
       {
         "name": "Kitchen",
-        "src": "src/assets/icons/kitchen.svg"
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262490/air2b/kitchen_jxxtfr.jpg"
       },
       {
         "name": "Washer",
-        "src": "src/assets/icons/washer.svg"
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262492/air2b/washer_nt9omk.jpg"
       }
     ],
     "host": {
@@ -5875,23 +5915,23 @@
       "city": "Barcelona"
     },
     "id": "1198074",
-    "bathrooms": 2,
-    "price": 155,
-    "securityDeposit": 200,
-    "cleaningFee": 30,
-    "extraPeople": 35,
+    "bathrooms": 2.0,
+    "price": 155.0,
+    "securityDeposit": 200.0,
+    "cleaningFee": 30.0,
+    "extraPeople": 35.0,
     "reviewScores": {
       "accuracy": 4.8,
       "cleanliness": 4.9,
       "checkin": 4.6,
       "communication": 4.7,
-      "location": 5,
+      "location": 5.0,
       "value": 4.7
     },
     "reviews": [
       {
         "at": "2016-03-07T05:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3405e36c59e6164fb93c",
           "fullname": "Zeljko",
@@ -5902,7 +5942,7 @@
       },
       {
         "at": "2016-06-10T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3403e36c59e6164fb093",
           "fullname": "Kris",
@@ -5913,7 +5953,7 @@
       },
       {
         "at": "2016-07-13T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3404e36c59e6164fb5d6",
           "fullname": "Nicholas",
@@ -5924,7 +5964,7 @@
       },
       {
         "at": "2016-08-07T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3404e36c59e6164fb30c",
           "fullname": "Kim",
@@ -5935,7 +5975,7 @@
       },
       {
         "at": "2018-02-11T05:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3404e36c59e6164fb5c1",
           "fullname": "Ian",
@@ -5946,7 +5986,7 @@
       },
       {
         "at": "2018-02-19T05:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3403e36c59e6164fb0a3",
           "fullname": "Tommy",
@@ -5957,7 +5997,7 @@
       },
       {
         "at": "2018-02-25T05:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3403e36c59e6164faff8",
           "fullname": "Andrea",
@@ -5968,7 +6008,7 @@
       },
       {
         "at": "2018-03-18T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3404e36c59e6164fb3c4",
           "fullname": "Igor",
@@ -5979,7 +6019,7 @@
       },
       {
         "at": "2018-04-18T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3407e36c59e6164fbfb4",
           "fullname": "Dawn",
@@ -5990,7 +6030,7 @@
       },
       {
         "at": "2018-04-22T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3403e36c59e6164fb1ad",
           "fullname": "Zhanna",
@@ -6001,7 +6041,7 @@
       },
       {
         "at": "2018-04-25T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3407e36c59e6164fbe78",
           "fullname": "Echo",
@@ -6012,7 +6052,7 @@
       },
       {
         "at": "2018-05-13T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3403e36c59e6164fb29a",
           "fullname": "Pat",
@@ -6023,7 +6063,7 @@
       },
       {
         "at": "2018-05-14T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3403e36c59e6164fafc6",
           "fullname": "Jae Keun",
@@ -6034,7 +6074,7 @@
       },
       {
         "at": "2018-05-20T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3407e36c59e6164fc034",
           "fullname": "Dawn",
@@ -6045,7 +6085,7 @@
       },
       {
         "at": "2018-05-27T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3406e36c59e6164fb9f7",
           "fullname": "Jessica",
@@ -6056,7 +6096,7 @@
       },
       {
         "at": "2018-06-29T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3404e36c59e6164fb46f",
           "fullname": "Celestina",
@@ -6067,7 +6107,7 @@
       },
       {
         "at": "2018-07-12T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3404e36c59e6164fb423",
           "fullname": "Jein",
@@ -6078,7 +6118,7 @@
       },
       {
         "at": "2018-07-22T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3403e36c59e6164fafaa",
           "fullname": "Liliana",
@@ -6089,7 +6129,7 @@
       },
       {
         "at": "2018-08-12T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3404e36c59e6164fb3cb",
           "fullname": "Marsha",
@@ -6100,7 +6140,7 @@
       },
       {
         "at": "2018-08-26T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3404e36c59e6164fb2df",
           "fullname": "Leonard",
@@ -6131,22 +6171,22 @@
     ],
     "roomType": "Private room",
     "bedType": "Real Bed",
-    "capacity": 2,
-    "bedrooms": 1,
-    "beds": 1,
-    "numOfReviews": 132,
+    "capacity": 2.0,
+    "bedrooms": 1.0,
+    "beds": 1.0,
+    "numOfReviews": 132.0,
     "amenities": [
       {
         "name": "Kitchen",
-        "src": "src/assets/icons/kitchen.svg"
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262490/air2b/kitchen_jxxtfr.jpg"
       },
       {
         "name": "Pets allowed",
-        "src": "src/assets/icons/pets-allowed.svg"
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262491/air2b/pets-allowed_tuwhnn.jpg"
       },
       {
         "name": "Washer",
-        "src": "src/assets/icons/washer.svg"
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262492/air2b/washer_nt9omk.jpg"
       }
     ],
     "host": {
@@ -6172,23 +6212,23 @@
       "city": "Barcelona"
     },
     "id": "13766096",
-    "bathrooms": 1,
-    "price": 40,
+    "bathrooms": 1.0,
+    "price": 40.0,
     "securityDeposit": null,
     "cleaningFee": null,
-    "extraPeople": 0,
+    "extraPeople": 0.0,
     "reviewScores": {
       "accuracy": 4.8,
       "cleanliness": 4.9,
       "checkin": 4.6,
       "communication": 4.7,
-      "location": 5,
+      "location": 5.0,
       "value": 4.3
     },
     "reviews": [
       {
         "at": "2016-07-24T04:00:00.000Z",
-        "rate": 4,
+        "rate": 4.0,
         "by": {
           "_id": "622f3402e36c59e6164faf17",
           "fullname": "Ida",
@@ -6199,7 +6239,7 @@
       },
       {
         "at": "2016-08-07T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3406e36c59e6164fbcca",
           "fullname": "Alicja",
@@ -6210,7 +6250,7 @@
       },
       {
         "at": "2016-08-14T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3407e36c59e6164fbdf5",
           "fullname": "Marvin & Henrica",
@@ -6221,7 +6261,7 @@
       },
       {
         "at": "2016-08-15T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3406e36c59e6164fbafe",
           "fullname": "Francesco",
@@ -6232,7 +6272,7 @@
       },
       {
         "at": "2016-08-24T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3402e36c59e6164fae90",
           "fullname": "Lola",
@@ -6243,7 +6283,7 @@
       },
       {
         "at": "2016-08-29T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3403e36c59e6164fb069",
           "fullname": "Sébastien",
@@ -6254,7 +6294,7 @@
       },
       {
         "at": "2016-09-03T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3408e36c59e6164fc06c",
           "fullname": "Olesya",
@@ -6265,7 +6305,7 @@
       },
       {
         "at": "2016-09-05T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3406e36c59e6164fb9ef",
           "fullname": "Alice",
@@ -6276,7 +6316,7 @@
       },
       {
         "at": "2016-09-07T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3406e36c59e6164fbc26",
           "fullname": "Jenny",
@@ -6287,7 +6327,7 @@
       },
       {
         "at": "2016-09-09T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3407e36c59e6164fc04f",
           "fullname": "Dora",
@@ -6298,7 +6338,7 @@
       },
       {
         "at": "2016-09-20T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3407e36c59e6164fbf4e",
           "fullname": "Marie Laure",
@@ -6309,7 +6349,7 @@
       },
       {
         "at": "2016-10-02T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3404e36c59e6164fb325",
           "fullname": "Federica",
@@ -6320,7 +6360,7 @@
       },
       {
         "at": "2016-10-08T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3407e36c59e6164fbd00",
           "fullname": "Lucia",
@@ -6331,7 +6371,7 @@
       },
       {
         "at": "2016-10-16T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3403e36c59e6164fb1c6",
           "fullname": "Friedrich",
@@ -6342,7 +6382,7 @@
       },
       {
         "at": "2016-10-18T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3403e36c59e6164fb03f",
           "fullname": "Irene",
@@ -6353,7 +6393,7 @@
       },
       {
         "at": "2016-10-22T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3405e36c59e6164fb6e2",
           "fullname": "Simen",
@@ -6364,7 +6404,7 @@
       },
       {
         "at": "2016-10-26T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3404e36c59e6164fb5e3",
           "fullname": "Ines",
@@ -6375,7 +6415,7 @@
       },
       {
         "at": "2016-10-28T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3407e36c59e6164fbd45",
           "fullname": "Ylenia",
@@ -6386,7 +6426,7 @@
       },
       {
         "at": "2016-11-02T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3403e36c59e6164fb09a",
           "fullname": "Ainara",
@@ -6397,7 +6437,7 @@
       },
       {
         "at": "2016-11-13T05:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3407e36c59e6164fbeeb",
           "fullname": "Ольга",
@@ -6428,30 +6468,26 @@
     ],
     "roomType": "Private room",
     "bedType": "Real Bed",
-    "capacity": 4,
-    "bedrooms": 2,
-    "beds": 2,
-    "numOfReviews": 3,
+    "capacity": 4.0,
+    "bedrooms": 2.0,
+    "beds": 2.0,
+    "numOfReviews": 3.0,
     "amenities": [
       {
         "name": "TV",
-        "src": "src/assets/icons/tv.svg"
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262492/air2b/tv_mnkywa.jpg"
       },
       {
         "name": "Kitchen",
-        "src": "src/assets/icons/kitchen.svg"
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262490/air2b/kitchen_jxxtfr.jpg"
       },
       {
         "name": "Washer",
-        "src": "src/assets/icons/washer.svg"
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262492/air2b/washer_nt9omk.jpg"
       },
       {
-        "name": "Wifi",
-        "src": "src/assets/icons/washer.svg"
-      },
-      {
-        "name": "Dryer",
-        "src": "src/assets/icons/washer.svg"
+        "name": "wifi",
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262492/air2b/washer_nt9omk.jpg"
       }
     ],
     "host": {
@@ -6476,23 +6512,23 @@
       "city": "Sydney"
     },
     "id": "11778959",
-    "bathrooms": 1,
-    "price": 171,
-    "securityDeposit": 0,
-    "cleaningFee": 0,
-    "extraPeople": 0,
+    "bathrooms": 1.0,
+    "price": 171.0,
+    "securityDeposit": 0.0,
+    "cleaningFee": 0.0,
+    "extraPeople": 0.0,
     "reviewScores": {
       "accuracy": 4.8,
       "cleanliness": 4.9,
       "checkin": 4.6,
       "communication": 4.7,
-      "location": 5,
+      "location": 5.0,
       "value": 4.7
     },
     "reviews": [
       {
         "at": "2016-08-15T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3407e36c59e6164fbfd7",
           "fullname": "Joshua",
@@ -6503,7 +6539,7 @@
       },
       {
         "at": "2016-11-05T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3404e36c59e6164fb4f4",
           "fullname": "Sung Hui(Audrey)",
@@ -6514,7 +6550,7 @@
       },
       {
         "at": "2017-06-11T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3403e36c59e6164fb109",
           "fullname": "Jiaojie",
@@ -6545,22 +6581,18 @@
     ],
     "roomType": "Private room",
     "bedType": "Real Bed",
-    "capacity": 1,
-    "bedrooms": 1,
-    "beds": 1,
-    "numOfReviews": 122,
+    "capacity": 1.0,
+    "bedrooms": 1.0,
+    "beds": 1.0,
+    "numOfReviews": 122.0,
     "amenities": [
       {
         "name": "Air conditioning",
-        "src": "src/assets/icons/air-conditioning.svg"
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262488/air2b/air-conditioning_vey5xg.jpg"
       },
       {
         "name": "Kitchen",
-        "src": "src/assets/icons/kitchen.svg"
-      },
-      {
-        "name": "Dryer",
-        "src": "src/assets/icons/kitchen.svg"
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262490/air2b/kitchen_jxxtfr.jpg"
       }
     ],
     "host": {
@@ -6586,23 +6618,23 @@
       "city": "Montreal"
     },
     "id": "116931",
-    "bathrooms": 1,
-    "price": 30,
-    "securityDeposit": 0,
-    "cleaningFee": 20,
-    "extraPeople": 0,
+    "bathrooms": 1.0,
+    "price": 30.0,
+    "securityDeposit": 0.0,
+    "cleaningFee": 20.0,
+    "extraPeople": 0.0,
     "reviewScores": {
       "accuracy": 4.6,
       "cleanliness": 4.9,
       "checkin": 4.6,
       "communication": 4.8,
-      "location": 5,
+      "location": 5.0,
       "value": 4.3
     },
     "reviews": [
       {
         "at": "2011-05-22T04:00:00.000Z",
-        "rate": 4,
+        "rate": 4.0,
         "by": {
           "_id": "622f3405e36c59e6164fb685",
           "fullname": "Jesse",
@@ -6613,7 +6645,7 @@
       },
       {
         "at": "2011-06-25T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3402e36c59e6164fae87",
           "fullname": "Peter",
@@ -6624,7 +6656,7 @@
       },
       {
         "at": "2011-07-01T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3407e36c59e6164fbeec",
           "fullname": "Kim",
@@ -6635,7 +6667,7 @@
       },
       {
         "at": "2011-07-07T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3407e36c59e6164fbe06",
           "fullname": "Robert Halley",
@@ -6646,7 +6678,7 @@
       },
       {
         "at": "2011-07-08T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3406e36c59e6164fba59",
           "fullname": "Hana",
@@ -6657,7 +6689,7 @@
       },
       {
         "at": "2011-07-10T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3404e36c59e6164fb586",
           "fullname": "Rosa",
@@ -6668,7 +6700,7 @@
       },
       {
         "at": "2011-07-16T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3402e36c59e6164fac57",
           "fullname": "Kristin",
@@ -6679,7 +6711,7 @@
       },
       {
         "at": "2011-07-18T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3404e36c59e6164fb323",
           "fullname": "Antonia",
@@ -6690,7 +6722,7 @@
       },
       {
         "at": "2011-08-06T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3407e36c59e6164fc014",
           "fullname": "Alex",
@@ -6701,7 +6733,7 @@
       },
       {
         "at": "2011-08-08T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3403e36c59e6164fb1b1",
           "fullname": "Danielle",
@@ -6712,7 +6744,7 @@
       },
       {
         "at": "2011-08-13T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3404e36c59e6164fb555",
           "fullname": "Jean",
@@ -6723,7 +6755,7 @@
       },
       {
         "at": "2012-05-21T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3403e36c59e6164faffb",
           "fullname": "Huda",
@@ -6734,7 +6766,7 @@
       },
       {
         "at": "2012-05-24T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3403e36c59e6164fb083",
           "fullname": "Matthew",
@@ -6745,7 +6777,7 @@
       },
       {
         "at": "2012-06-12T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3402e36c59e6164fae33",
           "fullname": "Tara",
@@ -6756,7 +6788,7 @@
       },
       {
         "at": "2012-06-29T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3402e36c59e6164fad61",
           "fullname": "Bill",
@@ -6767,7 +6799,7 @@
       },
       {
         "at": "2012-07-02T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3406e36c59e6164fbc84",
           "fullname": "Anna",
@@ -6778,7 +6810,7 @@
       },
       {
         "at": "2012-07-06T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3402e36c59e6164fac71",
           "fullname": "Marshall And Denise",
@@ -6789,7 +6821,7 @@
       },
       {
         "at": "2012-07-15T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3402e36c59e6164faf25",
           "fullname": "Steve",
@@ -6800,7 +6832,7 @@
       },
       {
         "at": "2012-07-19T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3402e36c59e6164faf25",
           "fullname": "Steve",
@@ -6811,7 +6843,7 @@
       },
       {
         "at": "2012-07-23T04:00:00.000Z",
-        "rate": 5,
+        "rate": 5.0,
         "by": {
           "_id": "622f3403e36c59e6164faffd",
           "fullname": "Jackie",
