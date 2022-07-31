@@ -18,7 +18,8 @@
         <div @click="activeTab('where')" class="filter-option where" data-field="where" :class="{ 'active-btn': isExpend ? isActive : !isActive }">
           <label for="where">Where</label>
 
-          <input name="where" v-model="filterBy.where" placeholder="Search destination" />
+          <input id="where" list="where" name="where" v-model="filterBy.where" placeholder="Search destination" />
+
           <explore-maps v-if="isActive" v-click-away="onClickAway" />
           <!-- <div v-if="showModal">dflkgjldfkjgdlsfgjdfslkgjdfsljl</div> -->
         </div>
