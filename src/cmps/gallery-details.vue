@@ -4,6 +4,7 @@
   </section>
 </template>
 <script>
+import { utilService } from '../services/util.service.js';
 
 export default {
   name: "gallery-details",
@@ -13,11 +14,11 @@ export default {
   data() {
     return {
       images: [
-        `src/assets/Images/${this.stay.imgUrls[0]}`,
-        `src/assets/Images/${this.stay.imgUrls[1]}`,
-        `src/assets/Images/${this.stay.imgUrls[2]}`,
-        `src/assets/Images/${this.stay.imgUrls[3]}`,
-        `src/assets/Images/${this.stay.imgUrls[4]}`,
+        utilService.getImgUrl(this.stay.imgUrls[0]),
+        utilService.getImgUrl(this.stay.imgUrls[1]),
+        utilService.getImgUrl(this.stay.imgUrls[2]),
+        utilService.getImgUrl(this.stay.imgUrls[3]),
+        utilService.getImgUrl(this.stay.imgUrls[4])
       ],
     };
   },
