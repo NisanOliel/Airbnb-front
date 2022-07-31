@@ -4,7 +4,7 @@
       <div class="filter btn header-location">Anywhere</div>
       <div class="filter btn header-time">Any week</div>
       <div class="filter btn header-guests search" value="hellow"
-        >Add guests <span><img src="@/assets/search-icon.svg" /></span>
+        >Add guests <span><img src="@/assets/icons/search-icon.svg" /></span>
       </div>
     </div>
 
