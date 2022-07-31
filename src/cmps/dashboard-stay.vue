@@ -28,7 +28,7 @@ export default {
   data() {
     return {
       imageUrl:
-        utilService.getImgUrl(this.hostStay.imgUrls[0]),
+        utilService.getImgUrl(this.hostStay.imgUrls[1]),
     };
   },
   created() {
