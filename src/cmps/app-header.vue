@@ -50,7 +50,7 @@
                 </div>
               </div>
               <div class="adjustment-bar">
-                <span><img src="@/assets/icons/adjustment-icon.svg" /></span>
+                <span @click="isShow = !isShow"><img src="@/assets/icons/adjustment-icon.svg" /></span>
               </div>
             </div>
           </div>
@@ -60,16 +60,16 @@
 
     <div v-if="headerLocation" :class="{ 'hide-expend': isExpend }" class="header-labels flex justify-space-between align-center">
       <div class="container">
-        <div class="header-bottom flex justify-space-between">
+        <div v-if="path !== '/dashboard'" class="header-bottom flex justify-space-between">
           <explore-labels v-if="!isExplore" />
 
-          <div class="stand-alone-filter">
+          <div v-if="desktop" @click="isShow = !isShow" class="stand-alone-filter">
             <img src="/src/assets/icons/filter-icon.svg" alt="" />
-            <span class="filter-btn" @click="isShow = !isShow">Filters</span>
-            <Transition duration="200" name="nested">
-              <standAlone-filter @closeFilersForm="closeModal" v-if="isShow" v-click-away="onClickAway" />
-            </Transition>
+            <span class="filter-btn">Filters</span>
           </div>
+          <Transition duration="200" name="nested">
+            <standAlone-filter @closeFilersForm="closeModal" v-if="isShow" v-click-away="onClickAway" />
+          </Transition>
         </div>
       </div>
     </div>
@@ -92,6 +92,7 @@
         showMenu: false,
         isExplore: false,
         desktop: window.innerWidth > 750 ? true : false,
+        path: null,
       };
     },
     created() {
@@ -107,9 +108,11 @@
     computed: {
       headerLocation() {
         let { params, path } = this.$route || {};
-
+        console.log('params', params, 'path', path);
         this.isExplore = path !== '/';
-
+        this.path = path;
+        console.log('this.path', this.path);
+        if (path === '/dashboard') console.log('path dash');
         let isEmpty = Object.keys(params).length === 0;
         return isEmpty;
       },

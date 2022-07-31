@@ -18,10 +18,9 @@ export const orderService = {
   getorder,
 };
 
+async function query(filterBy = null) {
+  console.log('user id filter', filterBy);
 
-async function query(filterBy = '') {
-  // return axios.get(API, { params: filterBy }).then((res) => res.data)
-  // return storageService.query(KEY)
   return await httpService.get(API, filterBy);
 }
 
@@ -47,8 +46,6 @@ async function save(order) {
     // return axios.post(API, order).then(res => res.data);
   }
 }
-
-
 
 function getorder(orderId) {
   return storageService.get(KEY, orderId);
