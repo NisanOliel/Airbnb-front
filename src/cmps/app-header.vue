@@ -40,7 +40,7 @@
           <div v-if="!desktop" class="mobile-view">
             <div class="mobile-nav">
               <div class="search-icon">
-                <span><img src="src/assets/search-icon.svg" /></span>
+                <span><img src="@/assets/search-icon.svg" /></span>
               </div>
               <div class="mobile-content">
                 <div class="mobile-sech-title"> Where to? </div>
