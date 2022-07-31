@@ -15,7 +15,8 @@ import App from './App.vue';
 // import Intersect from 'vue-intersect';
 import HistogramSlider from 'vue3-histogram-slider';
 import 'vue3-histogram-slider/dist/histogram-slider.css';
-
+// import { Skeletor } from 'vue-skeletor';
+import 'vue-skeletor/dist/vue-skeletor.css';
 const app = createApp(App);
 
 app.config.globalProperties.$filters = {
@@ -34,7 +35,7 @@ app.use(ElementPlus);
 app.use(VCalendar, {});
 // app.use(IntersectionRoot, IntersectionChild);
 app.use(VueClickAway);
-// app.use(Intersect);
+// app.use(Skeletor);
 app.component(HistogramSlider.name, HistogramSlider);
 
 app.mount('#app');

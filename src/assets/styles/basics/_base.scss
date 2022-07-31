@@ -7,11 +7,13 @@ html {
 }
 
 body {
-  font-size: $regular-size;
+  font-size: 'Cereal';
   margin: 0;
   padding: 0;
 }
-
+div {
+  color: $clr1;
+}
 h1,
 h2,
 h3 {
