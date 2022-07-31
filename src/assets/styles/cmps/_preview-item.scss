@@ -53,6 +53,7 @@
 
   .img-wrapper {
     height: 100%;
+
     img {
       height: 100%;
       object-fit: cover;
@@ -87,6 +88,12 @@
     font-family: 'Cereal-medium', Arial, sans-serif;
   }
 
+  .location-info .stared {
+    font-family: 'Cereal', Arial, sans-serif;
+
+  }
+
+
   .gray {
     color: $clr7;
   }
@@ -94,6 +101,5 @@
   .gray {
     color: rgba(0, 0, 0, 0.4392156863);
     font-size: 0.85em;
-    text-decoration: underline;
   }
 }

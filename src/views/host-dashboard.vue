@@ -33,7 +33,7 @@
 
         <table v-if="showOrders" class="content-table">
           <thead>
-            <tr>
+            <tr class="border_bottom">
               <th class="title-thead">Time </th>
               <th class="title-thead ">Guest </th>
               <th class="title-thead ">Stay name </th>
@@ -70,96 +70,6 @@
       <graph-dashboard v-if="showGraphs" :hostOrders="hostOrders" />
 
 
-
-
-      <!-- <div class="flex justify-space-between">
-        <div class="flex column left-side">
-
-          <el-button @click="showStays"><span class="material-icons-sharp">home</span>
-            <span class="btn-dashboard">My Stays</span>
-          </el-button>
-
-          <el-button witd @click="showOrder">
-            <span class="material-icons-sharp">list_alt</span>
-            <span class="btn-dashboard">My orders</span>
-          </el-button>
-        </div>
-
-        <div class="flex right-side">
-          <div class="order-box">
-            <h3>Orders</h3>
-
-            <table>
-              <tr>
-                <td>Total</td>
-                <td>Pending</td>
-                <td>Approved</td>
-                <td>Declined</td>
-              </tr>
-              <tr>
-                <td class="nums-td">{{ totalOrders }}</td>
-                <td class="nums-td">{{ pendingOrders }}</td>
-                <td class="nums-td">{{ approvedOrders }}</td>
-                <td class="nums-td">{{ declinedOrders }}</td>
-              </tr>
-            </table>
-          </div>
-
-
-          <div class="order-box">
-            <h3>Total revenues</h3>
-
-            <table>
-              <tr>
-                <td>Total</td>
-              </tr>
-              <tr>
-                <td class="nums-td">${{ totalRevenues }}</td>
-              </tr>
-            </table>
-          </div>
-
-        </div>
-      </div>
-
-
-      <div v-if="!showStay">
-        <table class="content-table">
-          <thead>
-            <tr>
-              <th>Time</th>
-              <th>Guest name</th>
-              <th>Stay name</th>
-              <th>Check</th>
-              <th>Check out</th>
-              <th>Status</th>
-              <th>Revenue</th>
-              <th>guests</th>
-              <th>Action</th>
-            </tr>
-          </thead>
-          <tbody>
-            <dashboard-order :hostOrder="hostOrder" v-for="hostOrder in hostOrders" :key="hostOrder._id" />
-          </tbody>
-        </table>
-      </div>
-
-      <div v-if="showStay">
-        <table class="content-table">
-          <thead>
-            <tr>
-              <th></th>
-              <th>Stay name</th>
-              <th>Price per night</th>
-              <th>Address</th>
-              <th>Actions</th>
-            </tr>
-          </thead>
-          <tbody>
-            <dashboard-stay :hostStay="hostStay" v-for="hostStay in hostStays" :key="hostStay._id" />
-          </tbody>
-        </table>
-      </div> -->
 
     </div>
   </div>

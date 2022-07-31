@@ -83,9 +83,17 @@ h2 {
   padding-bottom: 24px;
 }
 
-.form-price h2 {
-  margin-bottom: 9px;
+.form-price {
+  h2 {
+    margin-bottom: 31px;
+  }
+
+  p {
+    font-size: 16px;
+
+  }
 }
+
 
 .form-title-amenities h2,
 .form-property-type h2 {
@@ -223,7 +231,7 @@ span.el-radio-button__inner {
   bottom: 20px;
   left: 17px;
   font-size: 16px;
-  font-weight: 600;
+  // font-weight: 600;
 }
 
 input::-webkit-outer-spin-button,
@@ -257,7 +265,7 @@ input[type='number'] {
 
 label {
   font-size: 12px;
-  color: #1f1f1f38;
+  // color: #1f1f1f38;
 }
 
 .form-footer button:first-child {
@@ -288,7 +296,7 @@ label {
   align-items: center;
 }
 
-.el-radio-button__original-radio:checked + .el-radio-button__inner {
+.el-radio-button__original-radio:checked+.el-radio-button__inner {
   box-shadow: none !important;
 }
 
@@ -331,4 +339,9 @@ label.activeBg span {
   padding-left: 8px;
   line-height: 1;
   margin: 10px 0 0 11px;
+  font-size: 16px;
+}
+
+.el-checkbox__input.is-checked+.el-checkbox__label {
+  color: $clr7;
 }

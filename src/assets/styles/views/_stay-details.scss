@@ -74,6 +74,12 @@
     margin-top: 20px;
   }
 
+  .main-title h1 {
+    font-family: "Cereal", Helvetica, sans-serif;
+  }
+
+
+
   .content-wrapper {
     h2 {
       margin-bottom: 10px;
@@ -98,6 +104,7 @@
 
         li {
           flex-basis: 40%;
+          padding: 6px 0;
         }
       }
 
@@ -155,7 +162,7 @@
 
     h2 {
       margin: 0;
-      margin-bottom: 25px;
+      margin-bottom: 20px;
     }
   }
 
@@ -176,6 +183,7 @@
 
     h2 {
       padding-bottom: 32px;
+      font-family: "Cereal", Helvetica, sans-serif;
     }
   }
 }
@@ -463,7 +471,7 @@ p.text-desc {
 }
 
 .amenity-icons {
-  height: 18px;
+  height: 24px;
 }
 
 .reviews-list-container {

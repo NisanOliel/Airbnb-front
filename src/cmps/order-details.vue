@@ -205,7 +205,7 @@ export default {
       isShow: false,
       trip: {
         guests: {
-          adults: 0,
+          adults: 1,
           children: 0,
           Infants: 0
         },

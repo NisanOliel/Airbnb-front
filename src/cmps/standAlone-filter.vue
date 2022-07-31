@@ -66,8 +66,7 @@
         <div class="essentials">
           <h3>Essentials</h3>
           <el-checkbox-group v-model="checkList">
-            <el-checkbox v-for="(opt, idx) in essentials" @change="setAmenities(opt, $event)" :key="idx" size="30"
-              :label="opt" text-color="#000000" />
+            <el-checkbox v-for="(opt, idx) in essentials" @change="setAmenities(opt, $event)" :key="idx" :label="opt" />
           </el-checkbox-group>
         </div>
       </div>
@@ -120,7 +119,7 @@ export default {
       ],
       propertyType: null,
       language: ['English', 'German', 'French', 'Japanese'],
-      essentials: ['Wifi', 'Washer', 'Air conditioning', 'Kitchen', 'Dryer'],
+      essentials: ['Wifi', 'Kitchen', 'Washer', 'Dryer', 'Air conditioning'],
       price: null,
       checkList: ref([]),
       primaryColor: '#b0b0b0',
@@ -151,15 +150,11 @@ export default {
       };
     },
     setPrice(value) {
-      this.filterBy = {
-        price: {
+      this.filterBy.price = {
           minPrice: value.from,
           maxPrice: value.to,
-        },
       };
-      // this.filterBy.price.minPrice = value.from;
-      // this.filterBy.price.maxPrice = value.to;
-      this.setFilter();
+      this.setFilter()
     },
     getStaysPrices() {
       const stays = this.$store.getters.getStays;
@@ -180,10 +175,9 @@ export default {
       this.setFilter();
     },
     setPropertyType(propertyType) {
-      console.log('propertyType');
       propertyType.selected = !propertyType?.selected;
       if (propertyType.selected) {
-        this.filterBy.propertyType.push(propertyType.propertyType);
+        this.filterBy.propertyType.push(propertyType);
       } else {
         this.filterBy.propertyType = this.filterBy.propertyType.filter(propertyType => propertyType.selected);
       }
@@ -221,11 +215,11 @@ export default {
   // },
   computed: {
     getPricesAvg() {
-      if (!this.prices) return '0$';
+      if (!this.prices) return '0$'
       var Sum = this.prices.reduce((a, b) => a + b);
       Sum = Sum / this.prices.length;
       Sum = Sum.toFixed(0);
-      return Sum + '$';
+      return '$' + Sum;
     },
     getStay() {
       return this.$store.getters.getStays.length;

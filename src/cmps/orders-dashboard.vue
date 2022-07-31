@@ -1,9 +1,9 @@
 <template>
 
   <!-- <pre>{{ hostOrder }}</pre> -->
-  <tr class="row-table">
+  <tr class="border_bottom">
     <td>{{ new Date(hostOrder.createdAt).toLocaleString() }}</td>
-    <td class="td-buyer flex align-center">
+    <td class=" td-buyer flex align-center">
       <img class="host-image" :src="hostOrder.buyer.imgUrl">
       <span>{{ hostOrder.buyer.fullname }}</span>
     </td>
