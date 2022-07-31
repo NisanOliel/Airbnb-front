@@ -37,7 +37,7 @@
               </div>
             </div>
           </div>
-          <!-- <div v-if="!desktop" class="mobile-view">
+          <div v-if="!desktop" class="mobile-view">
             <div class="mobile-nav">
               <div class="search-icon">
                 <span><img src="src/assets/search-icon.svg" /></span>
@@ -53,7 +53,7 @@
                 <span><img src="src/assets/adjustment-icon.svg" /></span>
               </div>
             </div>
-          </div> -->
+          </div>
         </nav>
       </div>
     </div>
@@ -64,22 +64,7 @@
           <explore-labels v-if="!isExplore" />
 
           <div class="stand-alone-filter">
-            <svg
-              viewBox="0 0 16 16"
-              xmlns="http://www.w3.org/2000/svg"
-              aria-hidden="true"
-              role="presentation"
-              focusable="false"
-              style="display: block; height: 14px; width: 14px; fill: currentcolor"
-            >
-              <path
-                d="M5 8c1.306 0 2.418.835 2.83 2H14v2H7.829A3.001 3.001 0 1 1 5 8zm0 2a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm6-8a3 3 0 1 1-2.829 4H2V4h6.17A3.001 3.001 0 0 1 11 2zm0 2a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"
-              ></path>
-            </svg>
-            <path
-              d="M5 8c1.306 0 2.418.835 2.83 2H14v2H7.829A3.001 3.001 0 1 1 5 8zm0 2a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm6-8a3 3 0 1 1-2.829 4H2V4h6.17A3.001 3.001 0 0 1 11 2zm0 2a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"
-            >
-            </path>
+            <img src="/src/assets/filter-icon.svg" alt="" />
             <span class="filter-btn" @click="isShow = !isShow">Filters</span>
             <Transition duration="200" name="nested">
               <standAlone-filter @closeFilersForm="closeModal" v-if="isShow" v-click-away="onClickAway" />
@@ -106,24 +91,17 @@
         isExpend: false,
         showMenu: false,
         isExplore: false,
-        desktop: true,
-        mobile: false,
+        desktop: window.innerWidth > 750 ? true : false,
       };
     },
     created() {
       window.addEventListener('scroll', this.handleScroll);
-      window.addEventListener('resize', this.handleResize, () => {
-        if (window.innerWidth > 750) {
-          this.desktop = true;
-        } else {
-          this.desktop = false;
-        }
-      });
+      window.addEventListener('resize', this.handleResize);
     },
 
     destroyed() {
-      // window.removeEventListener('resize', this.handleResize);
-      // window.removeEventListener('scroll', this.handleScroll);
+      window.removeEventListener('resize', this.handleResize);
+      window.removeEventListener('scroll', this.handleScroll);
     },
 
     computed: {
@@ -201,12 +179,11 @@
 
       handleResize() {
         const width = window.outerWidth;
-        if (width >= 750) {
+        if (width > 750) {
           this.desktop = true;
         }
         if (width < 750) {
           this.desktop = false;
-          console.log('new nav bar');
         }
       },
     },
@@ -219,23 +196,8 @@
         }
         document.documentElement.style.overflow = 'auto';
       },
-      desktop: function () {
-        if (window.innerWidth < 750) {
-          this.desktop = true;
-        } else if (window.innerWidth <= 750) {
-          this.desktop = false;
-        }
-      },
     },
-    mounted() {
-      // const observer = new IntersectionObserver(entries => {
-      //   const [entry] = entries;
-      //   console.log('entry', entry);
-      //   if (entry.intersectionRatio > 0) {
-      //     mainHeader.value = entry.target.getAttribute('header');
-      //   }
-      // });
-    },
+
     components: {
       exploreFilter,
       exploreLabels,

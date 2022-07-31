@@ -31,6 +31,8 @@ header {
   .desktop-view {
     width: 100%;
     display: flex;
+    flex-direction: row;
+    align-items: center;
   }
 
   .mobile-view {
@@ -182,11 +184,14 @@ header {
     border-radius: 12px;
     text-align: -webkit-left;
     align-items: center;
-    gap: 2px;
+    gap: 6px;
     box-sizing: border-box;
     height: 48px;
     cursor: pointer;
     width: 100%;
+    img {
+      width: 15px;
+    }
   }
 
   .stand-alone-filter .filter-btn {
@@ -365,9 +370,6 @@ header {
     height: 66px;
   }
 
-  .filter-option.check {
-  }
-
   /* flex: 2; */
   .filter-option.where {
     min-width: 328px;
@@ -454,8 +456,9 @@ header {
   }
 
   .explore-filter {
-    flex: 0;
-    width: fit-content;
+    height: 0px;
+    position: relative;
+    align-self: baseline;
   }
 
   .user-menu-btn {
@@ -576,12 +579,6 @@ header {
   .filter-expend.flex {
     padding-block-start: 20px;
     /* padding-bottom: 30px; */
-  }
-
-  .nav-wrapper.expend .explore-filter {
-    height: 180px;
-    position: relative;
-    align-self: baseline;
   }
 
   .nav-wrapper.expend {
