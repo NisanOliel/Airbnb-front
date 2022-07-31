@@ -119,7 +119,7 @@ export default {
       ],
       propertyType: null,
       language: ['English', 'German', 'French', 'Japanese'],
-      essentials: ['Wifi', 'Kitchen', 'Washer', 'Dryer', 'Air conditioning'],
+      essentials: ['wifi', 'Kitchen', 'Washer', 'TV', 'Air conditioning'],
       price: null,
       checkList: ref([]),
       primaryColor: '#b0b0b0',

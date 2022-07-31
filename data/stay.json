@@ -622,11 +622,8 @@
       {
         "name": "Kitchen",
         "src": "src/assets/icons/kitchen.svg"
-      },
-      {
-        "name": "Dryer",
-        "src": "src/assets/icons/kitchen.svg"
       }
+    
     ],
     "host": {
       "_id": "622f3402e36c59e6164fac46",
@@ -1606,7 +1603,7 @@
       },
       {
         "name": "Wifi",
-        "src": "src/assets/icons/kitchen.svg"
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659276876/air2b/wifi_j873ar.jpg"
       }
     ],
     "host": {
@@ -2044,6 +2041,10 @@
       {
         "name": "Washer",
         "src": "src/assets/icons/washer.svg"
+      },
+      {
+        "name": "Wifi",
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659276876/air2b/wifi_j873ar.jpg"
       }
     ],
     "host": {
@@ -2617,6 +2618,10 @@
       {
         "name": "Kitchen",
         "src": "src/assets/icons/kitchen.svg"
+      },
+      {
+        "name": "Wifi",
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659276876/air2b/wifi_j873ar.jpg"
       }
     ],
     "host": {
@@ -4775,7 +4780,7 @@
       },
       {
         "name": "Wifi",
-        "src": "src/assets/icons/washer.svg"
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659276876/air2b/wifi_j873ar.jpg"
       }
     ],
     "host": {
@@ -5548,7 +5553,7 @@
       },
       {
         "name": "Wifi",
-        "src": "src/assets/icons/air-conditioning.svg"
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659276876/air2b/wifi_j873ar.jpg"
       }
     ],
     "host": {
@@ -6447,11 +6452,7 @@
       },
       {
         "name": "Wifi",
-        "src": "src/assets/icons/washer.svg"
-      },
-      {
-        "name": "Dryer",
-        "src": "src/assets/icons/washer.svg"
+        "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659276876/air2b/wifi_j873ar.jpg"
       }
     ],
     "host": {
@@ -6556,10 +6557,6 @@
       },
       {
         "name": "Kitchen",
-        "src": "src/assets/icons/kitchen.svg"
-      },
-      {
-        "name": "Dryer",
         "src": "src/assets/icons/kitchen.svg"
       }
     ],
