@@ -1,8 +1,5 @@
 <template>
   <div class="location-container flex">
-    <div class="popup-rt-side">
-      <div class="rt map-header">Recent searches </div>
-    </div>
     <div class="popup-lt-side flex">
       <div class="lt map-header">Search by region</div>
       <div class="maps-wrapper">

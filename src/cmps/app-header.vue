@@ -50,7 +50,7 @@
                 </div>
               </div>
               <div class="adjustment-bar">
-                <span><img src="@/assets/icons/adjustment-icon.svg" /></span>
+                <span @click="isShow = !isShow"><img src="@/assets/icons/adjustment-icon.svg" /></span>
               </div>
             </div>
           </div>
@@ -63,13 +63,13 @@
         <div class="header-bottom flex justify-space-between">
           <explore-labels v-if="!isExplore" />
 
-          <div class="stand-alone-filter">
+          <div v-if="desktop" @click="isShow = !isShow" class="stand-alone-filter">
             <img src="/src/assets/icons/filter-icon.svg" alt="" />
-            <span class="filter-btn" @click="isShow = !isShow">Filters</span>
-            <Transition duration="200" name="nested">
-              <standAlone-filter @closeFilersForm="closeModal" v-if="isShow" v-click-away="onClickAway" />
-            </Transition>
+            <span class="filter-btn">Filters</span>
           </div>
+          <Transition duration="200" name="nested">
+            <standAlone-filter @closeFilersForm="closeModal" v-if="isShow" v-click-away="onClickAway" />
+          </Transition>
         </div>
       </div>
     </div>
