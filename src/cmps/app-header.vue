@@ -63,6 +63,7 @@
       <div class="container">
         <div v-if="path !== '/dashboard'" class="header-bottom flex justify-space-between">
           <explore-labels v-if="!isExplore" />
+          <div></div>
 
           <div class="stand-alone-filter">
             <img src="@/assets/filter-icon.svg" alt="" />
