@@ -20,6 +20,7 @@
 
 <script>
 // import { ElMessage } from 'element-plus';
+import { utilService } from '../services/util.service.js';
 
 export default {
   name: ' dashboard-stay',
@@ -27,8 +28,7 @@ export default {
   data() {
     return {
       imageUrl:
-        `src/assets/Images/${this.hostStay.imgUrls[0]}`,
-
+        utilService.getImgUrl(this.hostStay.imgUrls[0]),
     };
   },
   created() {

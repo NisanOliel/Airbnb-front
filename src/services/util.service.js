@@ -4,6 +4,7 @@ export const utilService = {
     getRandomInt,
     makeId,
     // getImageUrl
+    getImgUrl
 
 }
 
@@ -35,3 +36,9 @@ function makeId(length = 5) {
 //         return null;
 //     }
 // }
+
+
+function getImgUrl(file) {
+    const imgUrl = new URL(`../assets/images/${file}`, import.meta.url)
+    return imgUrl
+}
