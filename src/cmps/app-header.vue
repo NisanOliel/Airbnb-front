@@ -9,7 +9,7 @@
           <div v-if="desktop" class="desktop-view">
             <router-link class="logo" to="/">
               <div class="main-logo flex">
-                <div><img class="logo-img" src="@/assets/airbnb-logo.svg" /></div>
+                <div><img class="logo-img" src="@/assets/icons/airbnb-logo.svg" /></div>
                 <h1>air2b</h1>
               </div>
             </router-link>
@@ -40,7 +40,7 @@
           <div v-if="!desktop" class="mobile-view">
             <div class="mobile-nav">
               <div class="search-icon">
-                <span><img src="@/assets/search-icon.svg" /></span>
+                <span><img src="@/assets/icons/search-icon.svg" /></span>
               </div>
               <div class="mobile-content">
                 <div class="mobile-sech-title"> Where to? </div>
@@ -50,7 +50,7 @@
                 </div>
               </div>
               <div class="adjustment-bar">
-                <span><img src="src/assets/adjustment-icon.svg" /></span>
+                <span><img src="@/assets/icons/adjustment-icon.svg" /></span>
               </div>
             </div>
           </div>
@@ -64,7 +64,7 @@
           <explore-labels v-if="!isExplore" />
 
           <div class="stand-alone-filter">
-            <img src="/src/assets/filter-icon.svg" alt="" />
+            <img src="/src/assets/icons/filter-icon.svg" alt="" />
             <span class="filter-btn" @click="isShow = !isShow">Filters</span>
             <Transition duration="200" name="nested">
               <standAlone-filter @closeFilersForm="closeModal" v-if="isShow" v-click-away="onClickAway" />
