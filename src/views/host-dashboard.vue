@@ -1,8 +1,7 @@
 <template>
   <div class="dashboard-container container">
     <div class="logIn" v-if="!getLogInUser">
-      <h1
-        >log in first
+      <h1>log in first
         <router-link to="/login">
           <span class="under-line">click Here</span>
         </router-link>
@@ -31,7 +30,7 @@
             </tr>
           </thead>
           <tbody>
-            <orders-dashboard :hostOrder="hostOrder" v-for="hostOrder in hostOrders" :key="hostOrder._id" />
+            <orders-dashboard v-for="hostOrder in getHostOrders" :key="hostOrder._id" :hostOrder="hostOrder" />
           </tbody>
         </table>
 
@@ -56,117 +55,121 @@
 </template>
 
 <script>
-  // import dashboardOrder from '../cmps/dashboard-order.vue';
-  // import dashboardStay from '../cmps/dashboard-stay.vue';
-  import ordersDashboard from '../cmps/orders-dashboard.vue';
-  import staysDashboard from '../cmps/stays-dashboard.vue';
-  import graphDashboard from '../cmps/graph-dashboard.vue';
-  export default {
-    name: 'host-dashboard',
-    components: {
-      // dashboardOrder,
-      // dashboardStay,
-      ordersDashboard,
-      staysDashboard,
-      graphDashboard,
-    },
-    data() {
-      return {
-        orders: null,
-        stays: null,
-        hostOrders: null,
-        hostStays: null,
-        showStays: false,
-        showOrders: true,
-        showGraphs: false,
-      };
-    },
-    created() {
-      // this.orders = this.$store.getters.getHostOrders;
-      this.$store.dispatch({ type: 'loadOrders', usrId: this.getLogInUser });
-      // this.stays = this.$store.getters.getStays;
-      // this.loggedinUser = this.$store.getters.loggedinUser;
+// import dashboardOrder from '../cmps/dashboard-order.vue';
+// import dashboardStay from '../cmps/dashboard-stay.vue';
+import ordersDashboard from '../cmps/orders-dashboard.vue';
+import staysDashboard from '../cmps/stays-dashboard.vue';
+import graphDashboard from '../cmps/graph-dashboard.vue';
+export default {
+  name: 'host-dashboard',
+  components: {
+    // dashboardOrder,
+    // dashboardStay,
+    ordersDashboard,
+    staysDashboard,
+    graphDashboard,
+  },
+  data() {
+    return {
+      orders: null,
+      stays: null,
+      // hostOrders: this.getHostOrders,
+      hostStays: null,
+      showStays: false,
+      showOrders: true,
+      showGraphs: false,
+    };
+  },
+  created() {
+    this.$store.dispatch({ type: 'loadOrders', usrId: this.getLogInUser });
+    this.$store.dispatch({ type: 'setFilterBy', filterBy: { hostID: this.getLogInUser } });
+    // this.stays = this.$store.getters.getStays;
+    // this.orders = this.$store.getters.getHostOrders;
+    // this.loggedinUser = this.$store.getters.loggedinUser;
 
-      // this.hostStays = this.stays.filter(stays => stays.host._id === this.getLogInUser._id);
+    // this.hostStays = this.stays.filter(stays => stays.host._id === this.getLogInUser._id);
+  },
+
+  computed: {
+    getLogInUser() {
+      return this.$store.getters.loggedinUser;
+    },
+    getHostOrders() {
+      return this.$store.getters.getOrders
+    },
+    stayOrder() {
+      if (!this.showStay) return 'Show my stays';
+      if (this.showStay) return 'Show my orders';
+    },
+    totalOrders() {
+      return this.hostOrders.length;
+    },
+    pendingOrders() {
+      var ordersCount = 0;
+      if (this.hostOrders.length > 0) {
+        this.hostOrders.forEach(order => {
+          if (order.status === 'pending') {
+            ordersCount++;
+          }
+        });
+        return ordersCount;
+      }
+    },
+    approvedOrders() {
+      var ordersCount = 0;
+      if (this.hostOrders.length > 0) {
+        this.hostOrders.forEach(order => {
+          if (order.status === 'approved') {
+            ordersCount++;
+          }
+        });
+        return ordersCount;
+      }
+    },
+    declinedOrders() {
+      var ordersCount = 0;
+      if (this.hostOrders.length > 0) {
+        this.hostOrders.forEach(order => {
+          if (order.status === 'declined') {
+            ordersCount++;
+          }
+        });
+        return ordersCount;
+      }
     },
 
-    computed: {
-      getLogInUser() {
-        return this.$store.getters.loggedinUser;
-      },
-      stayOrder() {
-        if (!this.showStay) return 'Show my stays';
-        if (this.showStay) return 'Show my orders';
-      },
-      totalOrders() {
-        return this.hostOrders.length;
-      },
-      pendingOrders() {
-        var ordersCount = 0;
-        if (this.hostOrders.length > 0) {
-          this.hostOrders.forEach(order => {
-            if (order.status === 'pending') {
-              ordersCount++;
-            }
-          });
-          return ordersCount;
-        }
-      },
-      approvedOrders() {
-        var ordersCount = 0;
-        if (this.hostOrders.length > 0) {
-          this.hostOrders.forEach(order => {
-            if (order.status === 'approved') {
-              ordersCount++;
-            }
-          });
-          return ordersCount;
-        }
-      },
-      declinedOrders() {
-        var ordersCount = 0;
-        if (this.hostOrders.length > 0) {
-          this.hostOrders.forEach(order => {
-            if (order.status === 'declined') {
-              ordersCount++;
-            }
-          });
-          return ordersCount;
-        }
-      },
-
-      totalRevenues() {
-        var prices = [];
-        if (this.hostOrders.length > 0) {
-          this.hostOrders.forEach(order => {
-            prices.push(order.totalPrice);
-          });
-          var sum = prices.reduce((sum, price) => +sum + +price, 0);
-          return sum.toLocaleString();
-        }
-      },
+    totalRevenues() {
+      var prices = [];
+      if (this.hostOrders.length > 0) {
+        this.hostOrders.forEach(order => {
+          prices.push(order.totalPrice);
+        });
+        var sum = prices.reduce((sum, price) => +sum + +price, 0);
+        return sum.toLocaleString();
+      }
     },
-    methods: {
-      showStay() {
-        this.showOrders = false;
-        this.showGraphs = false;
-        this.showStays = true;
-      },
-      showOrder() {
-        this.showStays = false;
-        this.showGraphs = false;
-        this.showOrders = true;
-      },
-      showStay() {
-        this.showOrders = false;
-        this.showGraphs = false;
-        this.showStays = true;
-      },
-      showGraph() {
-        this.showStays = false;
-        this.showGraphs = true;
-        this.showOrders = false;
-      },
+  },
+  methods: {
+    showStay() {
+      this.showOrders = false;
+      this.showGraphs = false;
+      this.showStays = true;
     },
-  };
+    showOrder() {
+      this.showStays = false;
+      this.showGraphs = false;
+      this.showOrders = true;
+    },
+    showStay() {
+      this.showOrders = false;
+      this.showGraphs = false;
+      this.showStays = true;
+    },
+    showGraph() {
+      this.showStays = false;
+      this.showGraphs = true;
+      this.showOrders = false;
+    },
+  },
+};
 </script>
