@@ -50,7 +50,7 @@
                 </div>
               </div>
               <div class="adjustment-bar">
-                <span><img src="src/assets/adjustment-icon.svg" /></span>
+                <span><img src="@/assets/adjustment-icon.svg" /></span>
               </div>
             </div>
           </div>
@@ -58,13 +58,14 @@
       </div>
     </div>
 
-    <div v-if="headerLocation" :class="{ 'hide-expend': isExpend }" class="header-labels flex justify-space-between align-center">
+    <div v-if="headerLocation" :class="{ 'hide-expend': isExpend }"
+      class="header-labels flex justify-space-between align-center">
       <div class="container">
         <div class="header-bottom flex justify-space-between">
           <explore-labels v-if="!isExplore" />
 
           <div class="stand-alone-filter">
-            <img src="/src/assets/filter-icon.svg" alt="" />
+            <img src="@/assets/filter-icon.svg" alt="" />
             <span class="filter-btn" @click="isShow = !isShow">Filters</span>
             <Transition duration="200" name="nested">
               <standAlone-filter @closeFilersForm="closeModal" v-if="isShow" v-click-away="onClickAway" />
@@ -77,133 +78,133 @@
   <div v-if="isShow" class="overlay"></div>
 </template>
 <script>
-  import exploreFilter from './explore-filter.vue';
-  import exploreLabels from './explore-labels.vue';
-  import standAloneFilter from './standAlone-filter.vue';
-  import { eventBus } from '../services/event-bus.service.js';
+import exploreFilter from './explore-filter.vue';
+import exploreLabels from './explore-labels.vue';
+import standAloneFilter from './standAlone-filter.vue';
+import { eventBus } from '../services/event-bus.service.js';
 
-  export default {
-    data() {
-      return {
-        isShow: false,
-        location: false,
-        isSticky: false,
-        isExpend: false,
-        showMenu: false,
-        isExplore: false,
-        desktop: window.innerWidth > 750 ? true : false,
+export default {
+  data() {
+    return {
+      isShow: false,
+      location: false,
+      isSticky: false,
+      isExpend: false,
+      showMenu: false,
+      isExplore: false,
+      desktop: window.innerWidth > 750 ? true : false,
+    };
+  },
+  created() {
+    window.addEventListener('scroll', this.handleScroll);
+    window.addEventListener('resize', this.handleResize);
+  },
+
+  destroyed() {
+    window.removeEventListener('resize', this.handleResize);
+    window.removeEventListener('scroll', this.handleScroll);
+  },
+
+  computed: {
+    headerLocation() {
+      let { params, path } = this.$route || {};
+
+      this.isExplore = path !== '/';
+
+      let isEmpty = Object.keys(params).length === 0;
+      return isEmpty;
+    },
+
+    userImg() {
+      var user = this.$store.getters.loggedinUser;
+      return user ? user.imgUrl : 'https://res.cloudinary.com/nisan/image/upload/v1658872030/air2b/unprofile_ji7zus.png';
+    },
+    getLogInUser() {
+      var user = this.$store.getters.loggedinUser;
+      return user ? true : false;
+    },
+  },
+
+  methods: {
+    expendForm(value) {
+      console.log('value', value);
+      console.log('expend clickd');
+      this.isExpend = value;
+    },
+    closeModal() {
+      this.isShow = false;
+    },
+    logout() {
+      this.$store.dispatch({ type: 'logout' });
+      // this.$router.push("/")
+      this.loggedinUser = null;
+      this.showMenu = false;
+    },
+    async logDemo() {
+      const demo = {
+        password: 'demo',
+        username: 'demo',
       };
-    },
-    created() {
-      window.addEventListener('scroll', this.handleScroll);
-      window.addEventListener('resize', this.handleResize);
-    },
-
-    destroyed() {
-      window.removeEventListener('resize', this.handleResize);
-      window.removeEventListener('scroll', this.handleScroll);
-    },
-
-    computed: {
-      headerLocation() {
-        let { params, path } = this.$route || {};
-
-        this.isExplore = path !== '/';
-
-        let isEmpty = Object.keys(params).length === 0;
-        return isEmpty;
-      },
-
-      userImg() {
-        var user = this.$store.getters.loggedinUser;
-        return user ? user.imgUrl : 'https://res.cloudinary.com/nisan/image/upload/v1658872030/air2b/unprofile_ji7zus.png';
-      },
-      getLogInUser() {
-        var user = this.$store.getters.loggedinUser;
-        return user ? true : false;
-      },
-    },
-
-    methods: {
-      expendForm(value) {
-        console.log('value', value);
-        console.log('expend clickd');
-        this.isExpend = value;
-      },
-      closeModal() {
-        this.isShow = false;
-      },
-      logout() {
-        this.$store.dispatch({ type: 'logout' });
-        // this.$router.push("/")
-        this.loggedinUser = null;
+      try {
+        await this.$store.dispatch({ type: 'login', userCred: demo });
+        this.$router.push('/');
         this.showMenu = false;
-      },
-      async logDemo() {
-        const demo = {
-          password: 'demo',
-          username: 'demo',
-        };
-        try {
-          await this.$store.dispatch({ type: 'login', userCred: demo });
-          this.$router.push('/');
-          this.showMenu = false;
-        } catch (err) {
-          console.log(err);
-          this.msg = 'Failed to login';
-        }
-      },
-      onClickAway() {
+      } catch (err) {
+        console.log(err);
+        this.msg = 'Failed to login';
+      }
+    },
+    onClickAway() {
+      this.isShow = false;
+      this.showMenu = false;
+    },
+    handleScroll(ev) {
+      let pos = window.scrollY;
+      if (pos === 0) {
+        this.isSticky = false;
+        this.isExpend = false;
+      }
+
+      if (pos > 0) {
+        this.isSticky = true;
         this.isShow = false;
-        this.showMenu = false;
-      },
-      handleScroll(ev) {
-        let pos = window.scrollY;
-        if (pos === 0) {
-          this.isSticky = false;
-          this.isExpend = false;
-        }
 
-        if (pos > 0) {
-          this.isSticky = true;
-          this.isShow = false;
+        eventBus.emit('overlay', this.isShow);
+      }
 
-          eventBus.emit('overlay', this.isShow);
-        }
-
-        if (this.isExpend) {
-          this.isExpend = false;
-          eventBus.emit('closeModal', this.isExpend);
-        }
-      },
-
-      handleResize() {
-        const width = window.outerWidth;
-        if (width > 750) {
-          this.desktop = true;
-        }
-        if (width < 750) {
-          this.desktop = false;
-        }
-      },
+      if (this.isExpend) {
+        this.isExpend = false;
+        eventBus.emit('closeModal', this.isExpend);
+      }
     },
 
-    watch: {
-      isShow: function () {
-        if (this.isShow) {
-          document.documentElement.style.overflow = 'hidden';
-          return;
-        }
-        document.documentElement.style.overflow = 'auto';
-      },
+    handleResize() {
+      const width = window.outerWidth;
+      if (width > 750) {
+        this.desktop = true;
+      }
+      if (width < 750) {
+        this.desktop = false;
+      }
     },
+  },
 
-    components: {
-      exploreFilter,
-      exploreLabels,
-      standAloneFilter,
-      eventBus,
+  watch: {
+    isShow: function () {
+      if (this.isShow) {
+        document.documentElement.style.overflow = 'hidden';
+        return;
+      }
+      document.documentElement.style.overflow = 'auto';
     },
-    setup() {},
-  };
+  },
+
+  components: {
+    exploreFilter,
+    exploreLabels,
+    standAloneFilter,
+    eventBus,
+  },
+  setup() { },
+};
 </script>
