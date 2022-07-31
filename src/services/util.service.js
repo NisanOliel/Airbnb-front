@@ -36,9 +36,6 @@ function makeId(length = 5) {
 // }
 
 function getImgUrl(file) {
-  const folders = ['app-filter-img', 'fonts', 'icons', 'images', 'maps', 'styles'];
-  folders.forEach(folder => {
-    let imgUrl = new URL(`../assets/${folder}/${file},`, import.meta.url);
-    return imgUrl;
-  });
+  const imgUrl = new URL(`../assets/images/${file}`, import.meta.url);
+  return imgUrl;
 }
