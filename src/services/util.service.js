@@ -43,7 +43,7 @@ function makeId(length = 5) {
 //   });
 // }
 function getImgUrl(file) {
-    const imgUrl = new URL(`../assets/images/${file},`, import.meta.url);
+    const imgUrl = new URL(`../assets/images/${file}`, import.meta.url);
     return imgUrl;
 
 }
