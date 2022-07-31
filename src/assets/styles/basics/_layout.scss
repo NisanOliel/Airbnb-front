@@ -73,6 +73,16 @@
   }
 }
 
+@media screen and (max-width: 813px) {
+  header nav a.logo {
+    flex: 0 1 0%;
+    padding-inline-end: 20px;
+    h1 {
+      display: none;
+    }
+  }
+}
+
 @media (max-width: 650px) {
   .container {
     .list-container {

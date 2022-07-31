@@ -8,7 +8,6 @@ export const stayStore = {
     lastRemoveStay: null,
     labels: stayService.getLabels(),
     maps: stayService.getMaps(),
-    num: null,
   },
 
   getters: {
@@ -58,30 +57,40 @@ export const stayStore = {
   },
 
   actions: {
-    loadStays({ commit }) {
-      stayService.query().then(stays => {
+    async loadStays({ commit }) {
+      try {
+        const stays = await stayService.query();
         commit({ type: 'setStays', stays });
-      });
+      } catch (error) {
+        throw error;
+      }
     },
 
-    removeStay({ commit }, payload) {
-      commit(payload);
-      return stayService
-        .remove(payload.stayId)
-        .then(() => {
-          commit({ type: 'clearRemovestay' });
-        })
-        .catch(err => {
-          commit({ type: 'undoRemovestay' });
-          throw err;
-        });
+    async removeStay({ commit }, payload) {
+      try {
+        await stayService.remove(payload.stayId);
+        commit({ type: 'clearRemovestay' });
+      } catch (error) {
+        commit({ type: 'undoRemovestay' });
+        throw error;
+      }
+      // commit(payload);
+      // return stayService
+      //   .remove(payload.stayId)
+      //   .then(() => {
+      //     commit({ type: 'clearRemovestay' });
+      //   })
+      //   .catch(err => {
+      //     commit({ type: 'undoRemovestay' });
+      //     throw err;
+      //   });
     },
     saveStay({ commit }, { stay }) {
       const actionType = stay._id ? 'updateStay' : 'addStay';
       return stayService.save(stay).then(savedStay => {
         commit({ type: actionType, stay: savedStay });
         return savedStay;
-      })
+      });
     },
     getStayById(context, { stayId }) {
       return stayService.getById(stayId);
@@ -90,12 +99,12 @@ export const stayStore = {
     async setFilterBy({ commit }, { filterBy }) {
       console.log('filter by', { filterBy });
       const stays = await stayService.query(filterBy);
-      console.log(stays)
+      console.log(stays);
       commit({ type: 'setStays', stays });
     },
 
     setFilteredStays({ commit }) {
       commit({ type: 'setFilteredStays' });
     },
-  }
-}
+  },
+};

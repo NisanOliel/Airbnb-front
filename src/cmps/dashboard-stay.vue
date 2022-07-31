@@ -2,7 +2,7 @@
 
   <!-- <pre>{{ hostStay }}</pre> -->
   <tr>
-    <td><img class="stay-image" :src=imageUrl></td>
+    <td><img class="stay-image" :src=images></td>
     <td>{{ hostStay.name }}</td>
     <td>${{ hostStay.price }}</td>
     <td>{{ hostStay.address.street }}</td>
@@ -20,18 +20,19 @@
 
 <script>
 // import { ElMessage } from 'element-plus';
+import { utilService } from '../services/util.service.js';
 
 export default {
   name: ' dashboard-stay',
   props: { hostStay: { type: Object } },
   data() {
     return {
-      imageUrl:
-        `src/assets/Images/${this.hostStay.imgUrls[0]}`,
-
+      images:
+        utilService.getImgUrl(this.hostStay.imgUrls[1]),
     };
   },
   created() {
+
 
   },
   computed: {
