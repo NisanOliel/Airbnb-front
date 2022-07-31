@@ -42,7 +42,7 @@ function makeId(length = 5) {
 //     return imgUrl;
 //   });
 // }
-function getImgUrl(file, folder = 'images') {
-  const imgUrl = new URL(`../assets/${folder}/${file}`, import.meta.url);
+function getImgUrl(file) {
+  const imgUrl = new URL(`../assets/images/${file}`, import.meta.url);
   return imgUrl;
 }

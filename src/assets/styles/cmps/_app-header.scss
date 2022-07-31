@@ -357,11 +357,6 @@ header {
     width: auto;
   }
 
-  .hover-btn {
-    // background: #dddddd;
-    // border-radius: 32px;
-  }
-
   .filter-option {
     cursor: pointer;
     background-clip: padding-box;
@@ -379,15 +374,6 @@ header {
     display: flex;
     align-items: center;
     padding-right: 8px;
-  }
-
-  .filter-option:after {
-    // width: 1px;
-    // content: '';
-    // height: 39px;
-    // background: #80808047;
-    // position: absolute;
-    // right: 34px;
   }
 
   .filter-option {

@@ -2,7 +2,7 @@
 
   <!-- <pre>{{ hostStay }}</pre> -->
   <tr>
-    <td><img class="stay-image" :src=imageUrl></td>
+    <td><img class="stay-image" :src=images></td>
     <td>{{ hostStay.name }}</td>
     <td>${{ hostStay.price }}</td>
     <td>{{ hostStay.address.street }}</td>
@@ -27,11 +27,12 @@ export default {
   props: { hostStay: { type: Object } },
   data() {
     return {
-      imageUrl:
-        utilService.getImgUrl(this.hostStay.imgUrls[0]),
+      images:
+        utilService.getImgUrl(this.hostStay.imgUrls[1]),
     };
   },
   created() {
+
 
   },
   computed: {
