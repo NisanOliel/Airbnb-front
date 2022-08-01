@@ -22,9 +22,6 @@ export const stayStore = {
       return maps;
     },
 
-    // getHostOrders({ stays }) {
-    //   return stays.filter(order => order.hostId === this.$store.getters.loggedinUser._id);
-    // },
   },
 
   mutations: {
@@ -97,9 +94,8 @@ export const stayStore = {
     },
 
     async setFilterBy({ commit }, { filterBy }) {
-      console.log('filter by', { filterBy });
+      console.log('filterBy:', filterBy)
       const stays = await stayService.query(filterBy);
-      console.log(stays);
       commit({ type: 'setStays', stays });
     },
 

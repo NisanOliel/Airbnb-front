@@ -1,10 +1,11 @@
 <template>
   <div class="search-wrapper flex">
-    <div v-show="!isExpend" data-expend="expend" @click.prevent="expendForm(true)" class="filter-preview flex align-center">
+    <div v-show="!isExpend" data-expend="expend" @click.prevent="expendForm(true)"
+      class="filter-preview flex align-center">
       <div class="filter btn header-location">Anywhere</div>
       <div class="filter btn header-time">Any week</div>
-      <div class="filter btn header-guests search" value="hellow"
-        >Add guests <span><img src="@/assets/icons/search-icon.svg" /></span>
+      <div class="filter btn header-guests search" value="hellow">Add guests <span><img
+            src="@/assets/icons/search-icon.svg" /></span>
       </div>
     </div>
 
@@ -15,7 +16,8 @@
         <a href="http://">Online Experiences</a>
       </div>
       <el-form :model="filterBy">
-        <div @click="activeTab('where')" class="filter-option where" data-field="where" :class="{ 'active-btn': isExpend ? isActive : !isActive }">
+        <div @click="activeTab('where')" class="filter-option where" data-field="where"
+          :class="{ 'active-btn': isExpend ? isActive : !isActive }">
           <label for="where">Where</label>
 
           <input id="where" list="where" name="where" v-model="filterBy.where" placeholder="Search destination" />
@@ -28,37 +30,24 @@
             <v-date-picker :columns="2" v-model="filterBy.date" is-range>
               <template v-slot="{ inputValue, inputEvents }">
                 <div class="flex justify-center items-center">
-                  <div
-                    @click.native="activeTab('checkin')"
-                    class="checkin"
-                    data-field="checkin"
-                    :class="{ 'hover-btn': isExpend ? isHover : !isHover, 'active-btn': startActive }"
-                  >
+                  <div @click.native="activeTab('checkin')" class="checkin" data-field="checkin"
+                    :class="{ 'hover-btn': isExpend ? isHover : !isHover, 'active-btn': startActive }">
                     <label for="checkin">Check in</label>
-                    <input
-                      name="checkin"
-                      :value="inputValue.start"
-                      v-on="inputEvents.start"
-                      placeholder="Add dates"
-                      class="border px-2 py-1 w-32 rounded focus:outline-none focus:border-indigo-300"
-                    />
+                    <input name="checkin" :value="inputValue.start" v-on="inputEvents.start" placeholder="Add dates"
+                      class="border px-2 py-1 w-32 rounded focus:outline-none focus:border-indigo-300" />
                   </div>
                   <div :class="{ 'active-btn': endActive }" class="checkout" @click.native="activeTab('checkout')">
                     <label for="checkout">Check out</label>
-                    <input
-                      name="checkout"
-                      :value="inputValue.end"
-                      v-on="inputEvents.end"
-                      placeholder="Add dates"
-                      class="border px-2 py-1 w-32 rounded focus:outline-none focus:border-indigo-300"
-                    />
+                    <input name="checkout" :value="inputValue.end" v-on="inputEvents.end" placeholder="Add dates"
+                      class="border px-2 py-1 w-32 rounded focus:outline-none focus:border-indigo-300" />
                   </div>
                 </div>
               </template>
             </v-date-picker>
           </div>
         </div>
-        <div @click.native="activeTab('guest')" class="filter-option guest-dropdown" :class="{ 'active-btn': guestActive }">
+        <div @click.native="activeTab('guest')" class="filter-option guest-dropdown"
+          :class="{ 'active-btn': guestActive }">
           <div @click="dropDownMenu($event)" class="add-guest-wrapper">
             <label for="add-guest">Who</label>
             <input disabled type="text" data-field="guest" placeholder="Add guests" />
@@ -145,124 +134,120 @@
 </template>
 
 <script>
-  // import { fa } from 'element-plus/es/locale';
-  import { eventBus } from '../services/event-bus.service';
-  import exploreMaps from '../cmps/explore-location.popup.vue';
+// import { fa } from 'element-plus/es/locale';
+import { eventBus } from '../services/event-bus.service';
+import exploreMaps from '../cmps/explore-location.popup.vue';
 
-  export default {
-    emits: ['expendForm'],
-    name: 'explore-filter',
-    props: {
-      isExpend: Boolean,
-    },
-    data() {
-      return {
-        filterBy: {
-          where: '',
-          date: [],
-          guests: {
-            adults: 0,
-            children: 0,
-            infants: 0,
-            pets: 0,
-          },
+export default {
+  emits: ['expendForm'],
+  name: 'explore-filter',
+  props: {
+    isExpend: Boolean,
+  },
+  data() {
+    return {
+      filterBy: {
+        where: '',
+        date: [],
+        guests: {
+          adults: 0,
+          children: 0,
+          infants: 0,
+          pets: 0,
         },
-        showModal: false,
-        isShow: false,
-        isActive: true,
-        isHover: true,
-        currentActive: false,
-        guestActive: false,
-        startActive: false,
-        endActive: false,
-        expend: this.isExpend,
-        firstClick: null,
-      };
-    },
-    methods: {
-      activeTab(value, ev) {
-        console.log('the value', value);
+      },
+      showModal: false,
+      isShow: false,
+      isActive: true,
+      isHover: true,
+      currentActive: false,
+      guestActive: false,
+      startActive: false,
+      endActive: false,
+      expend: this.isExpend,
+      firstClick: null,
+    };
+  },
+  methods: {
+    activeTab(value, ev) {
 
-        if (value === 'where') {
-          this.isActive = true;
-          this.startActive = false;
-          this.endActive = false;
-          this.guestActive = false;
-        }
-        if (value === 'guest') {
-          this.isActive = false;
-          this.guestActive = true;
-          this.startActive = false;
-          this.endActive = false;
-        }
-
-        if (value === 'checkin') {
-          this.isActive = false;
-          this.guestActive = false;
-          this.startActive = true;
-          this.endActive = false;
-          this.isHover = false;
-        }
-        if (value === 'checkout') {
-          this.isActive = false;
-          this.guestActive = false;
-          this.startActive = false;
-          this.endActive = true;
-        }
-      },
-      formSubmit() {
-        this.isShow = !this.isShow;
-        eventBus.emit('overlay', this.isShow);
-        eventBus.emit('getFilterStay');
-        let url = `/explore?location=${this.filterBy.where}`;
-        this.$router.push(url);
-
-        this.$emit('expendForm', false);
-      },
-      expendForm(value) {
-        console.log('click away ', value);
-        this.firstClick = value;
-        this.$emit('expendForm', true);
-      },
-      showInitModal(ev) {
-        this.toggleShowModal();
-
-        console.log(this.showModal);
-      },
-      dropDownMenu() {
-        this.showModal = true;
-      },
-      updateGuests(type, number) {
-        this.filterBy.guests[type] += number;
-      },
-      toggleShowModal(ev) {
-        this.showModal = !this.showModal;
-      },
-      onClickAway(ev) {
-        this.showModal = false;
-        if (this.firstClick) {
-          this.isActive = true;
-          this.firstClick = false;
-        } else {
-          this.isActive = false;
-        }
-        //
-      },
-    },
-    created() {
-      eventBus.on('closeModal', data => {
-        console.log('data form header expend', data);
-        this.showModal = data;
+      if (value === 'where') {
         this.isActive = true;
-        this.guestActive = false;
         this.startActive = false;
         this.endActive = false;
-        this.isHover = true;
-      });
-    },
+        this.guestActive = false;
+      }
+      if (value === 'guest') {
+        this.isActive = false;
+        this.guestActive = true;
+        this.startActive = false;
+        this.endActive = false;
+      }
 
-    components: {
-      exploreMaps,
+      if (value === 'checkin') {
+        this.isActive = false;
+        this.guestActive = false;
+        this.startActive = true;
+        this.endActive = false;
+        this.isHover = false;
+      }
+      if (value === 'checkout') {
+        this.isActive = false;
+        this.guestActive = false;
+        this.startActive = false;
+        this.endActive = true;
+      }
     },
-  };
+    formSubmit() {
+      this.isShow = !this.isShow;
+      eventBus.emit('overlay', this.isShow);
+      eventBus.emit('getFilterStay');
+      let url = `/explore?location=${this.filterBy.where}`;
+      this.$router.push(url);
+
+      this.$emit('expendForm', false);
+    },
+    expendForm(value) {
+      this.firstClick = value;
+      this.$emit('expendForm', true);
+    },
+    showInitModal(ev) {
+      this.toggleShowModal();
+
+    },
+    dropDownMenu() {
+      this.showModal = true;
+    },
+    updateGuests(type, number) {
+      this.filterBy.guests[type] += number;
+    },
+    toggleShowModal(ev) {
+      this.showModal = !this.showModal;
+    },
+    onClickAway(ev) {
+      this.showModal = false;
+      if (this.firstClick) {
+        this.isActive = true;
+        this.firstClick = false;
+      } else {
+        this.isActive = false;
+      }
+      //
+    },
+  },
+  created() {
+    eventBus.on('closeModal', data => {
+      this.showModal = data;
+      this.isActive = true;
+      this.guestActive = false;
+      this.startActive = false;
+      this.endActive = false;
+      this.isHover = true;
+    });
+  },
+
+  components: {
+    exploreMaps,
+  },
+};
 </script>

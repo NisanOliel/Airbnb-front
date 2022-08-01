@@ -13,7 +13,6 @@
       <navigation ref="el" />
     </template>
   </carousel>
-  {{ getIdx }}
 </template>
 
 <script setup>
@@ -22,16 +21,12 @@ import { ref, onMounted } from 'vue';
 const el = ref();
 
 onMounted(() => {
-  console.log('elvalue', el);
   const prev = document.querySelector('.carousel__prev');
   prev.style.visibility = 'hidden';
   const next = document.querySelector('.carousel__next');
   next.addEventListener('click', e => {
-    console.log('is click');
     prev.style.visibility = 'visible';
   });
-  console.log(prev);
-  console.log(next);
 });
 </script>
 
@@ -55,7 +50,6 @@ export default {
       this.filterBy.label = value;
       this.$store.dispatch({ type: 'setFilterBy', filterBy: this.filterBy });
       this.$store.dispatch({ type: 'setFilteredStays' });
-      console.log('click', this.filterBy.label);
     },
   },
 
@@ -66,9 +60,7 @@ export default {
     getLabels() {
       return this.labels;
     },
-    getIdx() {
-      console.log(this.index);
-    },
+
   },
   components: {
     Carousel,
