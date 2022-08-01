@@ -10,8 +10,8 @@
       <div class="form-price">
         <h2>Price range</h2>
         <p>The average nightly price is {{ getPricesAvg }}</p>
-        <HistogramSlider :barRadius="0" @change="setPrice" :bar-height="64" :data="prices" :clip="false" :min="25"
-          :barWidth="12" :max="800" :lineHeight="1" :primaryColor="primaryColor" :labelColor="labelColor"
+        <HistogramSlider :barRadius="0" @change="setPrice" :bar-height="64" :data="prices" :clip="false" :min="20"
+          :barWidth="12" :max="805" :lineHeight="1" :primaryColor="primaryColor" :labelColor="labelColor"
           :holderColor="holderColor" :grid="false" :histSliderGap="0" :barGap="0" />
         <div class="form-inputs">
           <div class="price-inner">
@@ -138,8 +138,8 @@ export default {
     getInitialFilterState() {
       return {
         price: {
-          minPrice: 25,
-          maxPrice: 800,
+          minPrice: 20,
+          maxPrice: 805,
         },
         bedrooms: null,
         beds: null,
