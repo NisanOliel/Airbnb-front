@@ -194,12 +194,14 @@
 
 <script>
 import { ElMessage } from 'element-plus';
+import { utilService } from '../services/util.service.js';
 
 export default {
   name: ' order-details',
   props: { stay: { type: Object } },
   data() {
     return {
+      imgOrder: utilService.getImgUrl(this.stay.imgUrls[0]),
       isConfirm: false,
       totalPriceSum: 0,
       isShow: false,
@@ -257,9 +259,6 @@ export default {
     checkOut() {
       if (!this.trip.dates[1]) return "Add date"
       else return this.trip.dates[1]
-    },
-    imgOrder() {
-      return `src/assets/Images/${this.stay.imgUrls[0]}`
     },
 
     totalPrice() {
