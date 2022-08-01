@@ -1,26 +1,26 @@
 [
   {
     "loc": "United States",
-    "src": "src/assets/maps/united-state.webp"
+    "src": "src/assets/Images/united-state.webp"
   },
   {
     "loc": "Canada",
-    "src": "src/assets/maps/flexible.jpeg"
+    "src": "src/assets/Images/flexible.jpeg"
   },
   {
     "loc": "Spain",
-    "src": "src/assets/maps/middle-east.webp"
+    "src": "src/assets/Images/middle-east.webp"
   },
   {
     "loc": "Australia",
-    "src": "src/assets/maps/italy.webp"
+    "src": "src/assets/Images/italy.webp"
   },
   {
     "loc": "Portugal",
-    "src": "src/assets/maps/france.webp"
+    "src": "src/assets/Images/france.webp"
   },
   {
     "loc": "Maui",
-    "src": "src/assets/maps/south-america.webp"
+    "src": "src/assets/Images/south-america.webp"
   }
 ]
