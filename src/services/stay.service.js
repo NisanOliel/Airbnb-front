@@ -1,84 +1,47 @@
-import { utilService } from './util.service.js';
 import { storageService } from './async-storage.service.js';
-import axios from 'axios';
+
 import { httpService } from './http.service';
-import staysJason from '../../data/stay.json' assert { type: 'json' };
-import labelsJason from '../../data/labels.json' assert { type: 'json' };
-import mapJason from '../../data/location.json' assert { type: 'json' };
+import labelsJason from '../assets/data/labels.json' assert { type: 'json' };
+import mapJason from '../assets/data/location.json' assert { type: 'json' };
 
 const KEY = 'staysDB';
-// const API = '//localhost:3030/api/stay/'
 
-// const API = process.env.NODE_ENV !== 'development' ? 'api/stay/' : 'localhost:3030/api/stay';
 const API = 'stay';
 export const stayService = {
   query,
   getById,
   remove,
   save,
-  // getEmptystay,
+
   getstay,
   getLabels,
   getMaps,
-  debounce
-  // filterStays
+  debounce,
 };
-
-// _createstays()
 
 async function query(filterBy = null) {
   return await httpService.get(API, filterBy);
 }
 
 async function getById(id) {
-  // return axios.get(API + id).then(res => res.data);
   return await httpService.get(`${API}/${id}`);
-  // return storageService.get(KEY, id)
 }
 
 async function remove(id) {
-  // return axios.delete(API + id).then(res => res.data);
   return await httpService.delete(API, id);
-
-  // return storageService.remove(KEY, id)
 }
 
 async function save(stay) {
   if (stay._id) {
-    // return axios.put(API + stay._id, stay).then(res => res.data);
     return await httpService.put(API, stay);
   } else {
     return await httpService.post(API, stay);
-    // return axios.post(API, stay).then(res => res.data);
   }
-
-  // const savedStay = (stay._id) ? storageService.put(KEY, stay) : storageService.post(KEY, stay)
-  // return savedStay
 }
-
-// function getEmptystay() {
-//   return {
-//     _id: '',
-//     name: '',
-//     price: '',
-//     labels: '',
-//     createdAt: Date.now(),
-//     inStock: false,
-//     reviews: ['review 1 best 1', 'review 2 almost 1', 'review 3 far from 1'],
-//   };
-// }
 
 function getstay(stayId) {
   return storageService.get(KEY, stayId);
 }
-
-// function _createstays() {
-//   let stays = JSON.parse(localStorage.getItem(KEY))
-//   if (!stays || !stays.length) {
-//     localStorage.setItem(KEY, JSON.stringify(staysJason))
-//   }
-//   return stays;
-// }
 
 function getLabels() {
   return labelsJason;
@@ -87,11 +50,12 @@ function getMaps() {
   return mapJason;
 }
 
-
 function debounce(func, timeout = 300) {
   let timer;
   return (...args) => {
     clearTimeout(timer);
-    timer = setTimeout(() => { func.apply(this, args); }, timeout);
+    timer = setTimeout(() => {
+      func.apply(this, args);
+    }, timeout);
   };
 }
