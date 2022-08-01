@@ -58,7 +58,6 @@
         </nav>
       </div>
     </div>
-
     <div v-if="headerLocation" :class="{ 'hide-expend': isExpend }"
       class="header-labels flex justify-space-between align-center">
       <div class="container">
