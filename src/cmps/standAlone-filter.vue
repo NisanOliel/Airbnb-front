@@ -10,23 +10,9 @@
       <div class="form-price">
         <h2>Price range</h2>
         <p>The average nightly price is {{ getPricesAvg }}</p>
-        <HistogramSlider
-          :barRadius="0"
-          @change="setPrice"
-          :bar-height="64"
-          :data="prices"
-          :clip="false"
-          :min="25"
-          :barWidth="12"
-          :max="800"
-          :lineHeight="1"
-          :primaryColor="primaryColor"
-          :labelColor="labelColor"
-          :holderColor="holderColor"
-          :grid="false"
-          :histSliderGap="0"
-          :barGap="0"
-        />
+        <HistogramSlider :barRadius="0" @change="setPrice" :bar-height="64" :data="prices" :clip="false" :min="25"
+          :barWidth="12" :max="800" :lineHeight="1" :primaryColor="primaryColor" :labelColor="labelColor"
+          :holderColor="holderColor" :grid="false" :histSliderGap="0" :barGap="0" />
         <div class="form-inputs">
           <div class="price-inner">
             <label for="min">min price</label>
@@ -63,13 +49,8 @@
         <!-- <el-radio-group text-color="#ffffff" fill="#000000" @change="setFilter" v-model="filterBy.propertyType"> -->
         <!-- <div class="property-type" v-for="(opt, idx) in propertyTypes" :key="idx" :label="opt"></div> -->
         <div class="flex">
-          <div
-            class="property-type"
-            v-for="propertyType in propertyTypes"
-            :key="propertyType"
-            @click="setPropertyType(propertyType)"
-            :class="{ 'selected-item': propertyType.selected }"
-          >
+          <div class="property-type" v-for="propertyType in propertyTypes" :key="propertyType"
+            @click="setPropertyType(propertyType)" :class="{ 'selected-item': propertyType.selected }">
             <div>
               <img :src="propertyType.src" />
               <span>{{ propertyType.propertyType }}</span>
@@ -94,7 +75,8 @@
           <h2>Host language</h2>
         </div>
         <el-checkbox-group v-model="checkList">
-          <el-checkbox v-for="(opt, idx) in language" @change="setLanguage(opt, $event)" :key="idx" :label="opt" size="large" />
+          <el-checkbox v-for="(opt, idx) in language" @change="setLanguage(opt, $event)" :key="idx" :label="opt"
+            size="large" />
         </el-checkbox-group>
       </div>
     </div>
@@ -105,143 +87,143 @@
   </form>
 </template>
 <script>
-  import { ref } from 'vue';
-  import { stayService } from '../services/stay.service.js';
-  export default {
-    name: 'standAlone-filter',
-    data() {
+import { ref } from 'vue';
+import { stayService } from '../services/stay.service.js';
+export default {
+  name: 'standAlone-filter',
+  data() {
+    return {
+      filterBy: this.getInitialFilterState(),
+      numLabels: [0, 1, 2, 3, 4, 5, 6, 7, `${8}+`],
+      propertyTypes: [
+        {
+          propertyType: 'House',
+          src: 'src/assets/app-filter-img/house.jpg',
+          selected: false,
+        },
+        {
+          propertyType: 'Apartment',
+          src: 'src/assets/app-filter-img/Apartment.jpg',
+          selected: false,
+        },
+        {
+          propertyType: 'Guesthouse',
+          src: 'src/assets/app-filter-img/Guesthouse.jpg',
+          selected: false,
+        },
+        {
+          propertyType: 'Hotel',
+          src: 'src/assets/app-filter-img/Hotel.jpg',
+          selected: false,
+        },
+      ],
+      propertyType: null,
+      language: ['English', 'German', 'French', 'Japanese'],
+      essentials: ['Wifi', 'Kitchen', 'Washer', 'Dryer', 'Air conditioning'],
+      price: null,
+      checkList: ref([]),
+      primaryColor: '#b0b0b0',
+      holderColor: '#dddddd',
+      labelColor: '#bdd6f8',
+      handleColor: '#dddddd',
+      propertyNum: null,
+    };
+  },
+  created() {
+    this.getStaysPrices();
+    this.labels = this.$store.getters.getLabels;
+    this.setFilter = stayService.debounce(this.setFilter);
+  },
+  methods: {
+    getInitialFilterState() {
       return {
-        filterBy: this.getInitialFilterState(),
-        numLabels: [0, 1, 2, 3, 4, 5, 6, 7, `${8}+`],
-        propertyTypes: [
-          {
-            propertyType: 'House',
-            src: 'src/assets/app-filter-img/house.jpg',
-            selected: false,
-          },
-          {
-            propertyType: 'Apartment',
-            src: 'src/assets/app-filter-img/Apartment.jpg',
-            selected: false,
-          },
-          {
-            propertyType: 'Guesthouse',
-            src: 'src/assets/app-filter-img/Guesthouse.jpg',
-            selected: false,
-          },
-          {
-            propertyType: 'Hotel',
-            src: 'src/assets/app-filter-img/Hotel.jpg',
-            selected: false,
-          },
-        ],
-        propertyType: null,
-        language: ['English', 'German', 'French', 'Japanese'],
-        essentials: ['Wifi', 'Kitchen', 'Washer', 'Dryer', 'Air conditioning'],
-        price: null,
-        checkList: ref([]),
-        primaryColor: '#b0b0b0',
-        holderColor: '#dddddd',
-        labelColor: '#bdd6f8',
-        handleColor: '#dddddd',
-        propertyNum: null,
+        price: {
+          minPrice: 25,
+          maxPrice: 800,
+        },
+        bedrooms: null,
+        beds: null,
+        amenities: [],
+        hostLanguage: [],
+        propertyType: [],
       };
     },
-    created() {
-      this.getStaysPrices();
-      this.labels = this.$store.getters.getLabels;
-      this.setFilter = stayService.debounce(this.setFilter);
+    setPrice(value) {
+      this.filterBy.price = {
+        minPrice: value.from,
+        maxPrice: value.to,
+      };
+      this.setFilter();
     },
-    methods: {
-      getInitialFilterState() {
-        return {
-          price: {
-            minPrice: 25,
-            maxPrice: 800,
-          },
-          bedrooms: null,
-          beds: null,
-          amenities: [],
-          hostLanguage: [],
-          propertyType: [],
-        };
-      },
-      setPrice(value) {
-        this.filterBy.price = {
-          minPrice: value.from,
-          maxPrice: value.to,
-        };
-        this.setFilter();
-      },
-      getStaysPrices() {
-        const stays = this.$store.getters.getStays;
-        const staysPrices = stays.map(stay => stay.price);
-        this.prices = staysPrices;
-      },
-
-      setFilter() {
-        this.$store.dispatch({ type: 'setFilterBy', filterBy: this.filterBy });
-      },
-
-      setAmenities(currAmenity, isChecked) {
-        if (isChecked) {
-          this.filterBy.amenities.push(currAmenity);
-        } else {
-          this.filterBy.amenities = this.filterBy.amenities.filter(amenity => amenity !== currAmenity);
-        }
-        this.setFilter();
-      },
-      setPropertyType(propertyType) {
-        propertyType.selected = !propertyType?.selected;
-        if (propertyType.selected) {
-          this.filterBy.propertyType.push(propertyType);
-        } else {
-          this.filterBy.propertyType = this.filterBy.propertyType.filter(propertyType => propertyType.selected);
-        }
-        this.setFilter();
-      },
-
-      setLanguage(currLanguage, isChecked) {
-        if (isChecked) {
-          this.filterBy.hostLanguage.push(currLanguage);
-        } else {
-          this.filterBy.hostLanguage = this.filterBy.hostLanguage.filter(language => language !== currLanguage);
-        }
-        this.setFilter();
-      },
-
-      onSaveFilters(ev, value) {
-        this.$store.dispatch({ type: 'setFilterBy', filterBy: this.filterBy });
-        this.propertyNum = this.$store.getters.getStays.length;
-        if (ev.type === 'click') {
-          this.closeForm();
-        }
-      },
-
-      clearAll() {
-        this.filterBy = this.getInitialFilterState();
-        this.checkList = ref([]);
-        this.setFilter();
-      },
-      closeForm() {
-        this.$emit('closeFilersForm');
-      },
+    getStaysPrices() {
+      const stays = this.$store.getters.getStays;
+      const staysPrices = stays.map(stay => stay.price);
+      this.prices = staysPrices;
     },
-    // created() {
-    //   this.labels = this.$store.getters.getLabels;
-    // },
-    computed: {
-      getPricesAvg() {
-        if (!this.prices) return '0$';
-        var Sum = this.prices.reduce((a, b) => a + b);
-        Sum = Sum / this.prices.length;
-        Sum = Sum.toFixed(0);
-        return '$' + Sum;
-      },
-      getStay() {
-        return this.$store.getters.getStays.length;
-      },
+
+    setFilter() {
+      this.$store.dispatch({ type: 'setFilterBy', filterBy: this.filterBy });
     },
-    components: {},
-  };
+
+    setAmenities(currAmenity, isChecked) {
+      if (isChecked) {
+        this.filterBy.amenities.push(currAmenity);
+      } else {
+        this.filterBy.amenities = this.filterBy.amenities.filter(amenity => amenity !== currAmenity);
+      }
+      this.setFilter();
+    },
+    setPropertyType(propertyType) {
+      propertyType.selected = !propertyType?.selected;
+      if (propertyType.selected) {
+        this.filterBy.propertyType.push(propertyType.propertyType);
+      } else {
+        this.filterBy.propertyType = this.filterBy.propertyType.filter(propertyType => propertyType.selected);
+      }
+      this.setFilter();
+    },
+
+    setLanguage(currLanguage, isChecked) {
+      if (isChecked) {
+        this.filterBy.hostLanguage.push(currLanguage);
+      } else {
+        this.filterBy.hostLanguage = this.filterBy.hostLanguage.filter(language => language !== currLanguage);
+      }
+      this.setFilter();
+    },
+
+    onSaveFilters(ev, value) {
+      this.$store.dispatch({ type: 'setFilterBy', filterBy: this.filterBy });
+      this.propertyNum = this.$store.getters.getStays.length;
+      if (ev.type === 'click') {
+        this.closeForm();
+      }
+    },
+
+    clearAll() {
+      this.filterBy = this.getInitialFilterState();
+      this.checkList = ref([]);
+      this.setFilter();
+    },
+    closeForm() {
+      this.$emit('closeFilersForm');
+    },
+  },
+  // created() {
+  //   this.labels = this.$store.getters.getLabels;
+  // },
+  computed: {
+    getPricesAvg() {
+      if (!this.prices) return '0$';
+      var Sum = this.prices.reduce((a, b) => a + b);
+      Sum = Sum / this.prices.length;
+      Sum = Sum.toFixed(0);
+      return '$' + Sum;
+    },
+    getStay() {
+      return this.$store.getters.getStays.length;
+    },
+  },
+  components: {},
+};
 </script>

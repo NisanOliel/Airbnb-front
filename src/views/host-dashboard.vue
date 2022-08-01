@@ -82,7 +82,7 @@ export default {
   },
   created() {
     this.$store.dispatch({ type: 'loadOrders', usrId: this.getLogInUser });
-    this.$store.dispatch({ type: 'setFilterBy', filterBy: { hostID: this.getLogInUser } });
+    this.$store.dispatch({ type: 'setFilterBy', filterBy: { hostID: this.getLogInUser._id } });
     // this.stays = this.$store.getters.getStays;
     // this.orders = this.$store.getters.getHostOrders;
     // this.loggedinUser = this.$store.getters.loggedinUser;
