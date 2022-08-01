@@ -201,6 +201,8 @@ export default {
   props: { stay: { type: Object } },
   data() {
     return {
+
+      imgOrder: utilService.getImgUrl(this.hostStay.imgUrls[0]),
       isConfirm: false,
       totalPriceSum: 0,
       isShow: false,
@@ -258,9 +260,6 @@ export default {
     checkOut() {
       if (!this.trip.dates[1]) return "Add date"
       else return this.trip.dates[1]
-    },
-    imgOrder() {
-      return utilService.getImgUrl(this.hostStay.imgUrls[0])
     },
 
     totalPrice() {
