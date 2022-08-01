@@ -1,7 +1,7 @@
 <template>
   <span class="shadow-left"></span>
   <carousel :transition="330" :items-to-show="20" snapAlign="start">
-    <slide v-for="(label, idx) in labels" ref="labels" :key="label" @click="filter(label.propertyType)">
+    <slide v-for="(label, idx) in labelsList" ref="labels" :key="label" @click="filter(label.propertyType)">
       <div class="labels">
         <img class="property-type-img" :src="label.src" />
         <span>{{ label.propertyType }}</span>
@@ -38,7 +38,7 @@ export default {
   name: 'explore-labels',
   data() {
     return {
-      labels: [
+      labelsList: [
         {
           "propertyType": "Beach",
           "src": "src/assets/app-filter-img/10ce1091-c854-40f3-a2fb-defc2995bcaf.jpg"
