@@ -19,6 +19,7 @@
 </template>
 
 <script>
+import { utilService } from '../services/util.service.js';
 // import { ElMessage } from 'element-plus';
 
 export default {
@@ -27,7 +28,7 @@ export default {
   data() {
     return {
       imageUrl:
-        `src/assets/Images/${this.hostStay.imgUrls[0]}`,
+        utilService.getImgUrl(this.hostStay.imgUrls[0]),
 
     };
   },
