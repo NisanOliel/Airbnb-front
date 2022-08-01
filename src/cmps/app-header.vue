@@ -40,14 +40,15 @@
           <div v-if="!desktop" class="mobile-view">
             <div class="mobile-nav">
               <div class="search-icon">
-                <span><img src="@/assets/icons/search-icon.svg" /></span>
+                <span><img src="@/assets/icons/search-icon.svg" @click="searchPlace" /></span>
               </div>
               <div class="mobile-content">
-                <div class="mobile-sech-title"> Where to? </div>
-                <div class="mobile-sech-list">
+                <!-- <div class="mobile-sech-title"> Where to? </div> -->
+                <input class="mobile-sech-title" type="text" placeholder="Where to?" v-model="country">
+                <!-- <div class="mobile-sech-list">
                   <span>Anywhere</span> • <span>Any week</span> •
                   <span>Add guests</span>
-                </div>
+                </div> -->
               </div>
               <div class="adjustment-bar">
                 <span @click="isShow = !isShow"><img src="@/assets/icons/adjustment-icon.svg" /></span>
@@ -94,7 +95,8 @@ export default {
       isExplore: false,
       desktop: window.innerWidth > 750 ? true : false,
       path: null,
-    };
+      country: ''
+    }
   },
   created() {
     window.addEventListener('scroll', this.handleScroll);
@@ -185,6 +187,12 @@ export default {
         this.desktop = false;
       }
     },
+  },
+  computed: {
+    searchPlace() {
+      console.log(this.country);
+      console.log('asaf')
+    }
   },
 
   watch: {

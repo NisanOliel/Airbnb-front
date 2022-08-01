@@ -13,15 +13,27 @@
 </template>
 
 <script>
-  export default {
-    name: 'explore-maps',
-    data() {
-      return {
-        maps: [],
-      };
-    },
-    created() {
-      return (this.maps = this.$store.getters.getMaps);
-    },
-  };
+import { emitChangeFn } from 'element-plus';
+
+export default {
+  name: 'explore-maps',
+  data() {
+    return {
+      maps: [],
+    };
+  },
+  created() {
+    return (this.maps = this.$store.getters.getMaps);
+  },
+
+  methods: {
+    setLocation(loc) {
+      console.log(loc);
+      this.$emit('filterByMap', loc)
+    }
+  }
+
+
+
+}
 </script>
