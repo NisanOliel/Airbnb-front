@@ -198,7 +198,8 @@
       "Apartment",
       "Vineyards",
       "Beach",
-      "Iconic cities"
+      "Iconic cities",
+      "Hotel"
     ],
     "roomType": "Private room",
     "bedType": "Real Bed",
@@ -327,7 +328,8 @@
       "Vineyards",
       "amazing views",
       "Ski-in/out",
-      "Iconic cities"
+      "Iconic cities",
+      "Hotel"
     ],
     "roomType": "Entire home/apt",
     "bedType": "Real Bed",
@@ -606,7 +608,8 @@
     "propertyType": [
       "Apartment",
       "Islands",
-      "Beach"
+      "Beach",
+      "Hotel"
     ],
     "roomType": "Entire home/apt",
     "bedType": "Real Bed",
@@ -624,7 +627,7 @@
         "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262490/air2b/kitchen_jxxtfr.jpg"
       },
       {
-        "name": "wifi",
+        "name": "Wifi",
         "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659276876/air2b/wifi_j873ar.jpg"
       }
     ],
@@ -903,7 +906,8 @@
     "propertyType": [
       "House",
       "Amazing pools",
-      "Treehouses"
+      "Treehouses",
+      "Hotel"
     ],
     "roomType": "Private room",
     "bedType": "Real Bed",
@@ -921,7 +925,7 @@
         "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262488/air2b/elevator_jfbds3.jpg"
       },
       {
-        "name": "wifi",
+        "name": "Wifi",
         "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659276876/air2b/wifi_j873ar.jpg"
       }
     ],
@@ -1001,7 +1005,8 @@
     "propertyType": [
       "Vineyards",
       "Islands",
-      "Treehouses"
+      "Treehouses",
+      "Hotel"
     ],
     "roomType": "Private room",
     "bedType": "Real Bed",
@@ -1019,7 +1024,7 @@
         "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262492/air2b/washer_nt9omk.jpg"
       },
       {
-        "name": "wifi",
+        "name": "Wifi",
         "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659276876/air2b/wifi_j873ar.jpg"
       }
     ],
@@ -1298,7 +1303,8 @@
     "propertyType": [
       "Islands",
       "Amazing pools",
-      "Campers"
+      "Campers",
+      "Hotel"
     ],
     "roomType": "Entire home/apt",
     "bedType": "Real Bed",
@@ -1320,7 +1326,7 @@
         "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262490/air2b/kitchen_jxxtfr.jpg"
       },
       {
-        "name": "wifi",
+        "name": "Wifi",
         "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659276876/air2b/wifi_j873ar.jpg"
       }
     ],
@@ -1599,7 +1605,8 @@
     "propertyType": [
       "Arctic",
       "Apartment",
-      "Beach"
+      "Beach",
+      "Guesthouse"
     ],
     "roomType": "Entire home/apt",
     "bedType": "Real Bed",
@@ -1918,7 +1925,7 @@
         "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262492/air2b/washer_nt9omk.jpg"
       },
       {
-        "name": "wifi",
+        "name": "Wifi",
         "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659276876/air2b/wifi_j873ar.jpg"
       }
     ],
@@ -2032,7 +2039,8 @@
     "propertyType": [
       "Apartment",
       "Townhouse",
-      "Surfing"
+      "Surfing",
+      "Guesthouse"
     ],
     "roomType": "Private room",
     "bedType": "Real Bed",
@@ -2058,7 +2066,7 @@
         "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262492/air2b/washer_nt9omk.jpg"
       },
       {
-        "name": "wifi",
+        "name": "Wifi",
         "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659276876/air2b/wifi_j873ar.jpg"
       }
     ],
@@ -2337,7 +2345,8 @@
     "propertyType": [
       "Apartment",
       "Historical homes",
-      "Surfing"
+      "Surfing",
+      "Guesthouse"
     ],
     "roomType": "Entire home/apt",
     "bedType": "Real Bed",
@@ -2613,7 +2622,8 @@
     "propertyType": [
       "Lakefront",
       "Off-the-grid",
-      "Surfing"
+      "Surfing",
+      "Guesthouse"
     ],
     "roomType": "Entire home/apt",
     "bedType": "Real Bed",
@@ -2635,7 +2645,7 @@
         "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262490/air2b/kitchen_jxxtfr.jpg"
       },
       {
-        "name": "wifi",
+        "name": "Wifi",
         "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659276876/air2b/wifi_j873ar.jpg"
       }
     ],
@@ -2914,7 +2924,8 @@
     "propertyType": [
       "Vineyards",
       "Apartment",
-      "Creative spaces"
+      "Creative spaces",
+      "Guesthouse"
     ],
     "roomType": "Entire home/apt",
     "bedType": "Real Bed",
@@ -2940,7 +2951,7 @@
         "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262492/air2b/washer_nt9omk.jpg"
       },
       {
-        "name": "wifi",
+        "name": "Wifi",
         "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659276876/air2b/wifi_j873ar.jpg"
       }
     ],
@@ -3219,7 +3230,8 @@
     "propertyType": [
       "Historical homes",
       "House",
-      "Beach"
+      "Beach",
+      "Guesthouse"
     ],
     "roomType": "Entire home/apt",
     "bedType": "Real Bed",
@@ -3245,7 +3257,7 @@
         "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262492/air2b/washer_nt9omk.jpg"
       },
       {
-        "name": "wifi",
+        "name": "Wifi",
         "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659276876/air2b/wifi_j873ar.jpg"
       }
     ],
@@ -3847,7 +3859,7 @@
         "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262488/air2b/elevator_jfbds3.jpg"
       },
       {
-        "name": "wifi",
+        "name": "Wifi",
         "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659276876/air2b/wifi_j873ar.jpg"
       }
     ],
@@ -4306,7 +4318,7 @@
         "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262488/air2b/air-conditioning_vey5xg.jpg"
       },
       {
-        "name": "wifi",
+        "name": "Wifi",
         "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659276876/air2b/wifi_j873ar.jpg"
       }
     ],
@@ -4556,7 +4568,7 @@
         "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262492/air2b/washer_nt9omk.jpg"
       },
       {
-        "name": "wifi",
+        "name": "Wifi",
         "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659276876/air2b/wifi_j873ar.jpg"
       }
     ],
@@ -4814,7 +4826,7 @@
         "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262492/air2b/washer_nt9omk.jpg"
       },
       {
-        "name": "wifi",
+        "name": "Wifi",
         "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262492/air2b/washer_nt9omk.jpg"
       }
     ],
@@ -5587,7 +5599,7 @@
         "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262488/air2b/air-conditioning_vey5xg.jpg"
       },
       {
-        "name": "wifi",
+        "name": "Wifi",
         "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262488/air2b/air-conditioning_vey5xg.jpg"
       }
     ],
@@ -6486,7 +6498,7 @@
         "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262492/air2b/washer_nt9omk.jpg"
       },
       {
-        "name": "wifi",
+        "name": "Wifi",
         "src": "https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659262492/air2b/washer_nt9omk.jpg"
       }
     ],

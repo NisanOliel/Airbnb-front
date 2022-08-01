@@ -22,7 +22,7 @@
 
           <input id="where" list="where" name="where" v-model="filterBy.where" placeholder="Search destination" />
 
-          <explore-maps v-if="isActive" v-click-away="onClickAway" />
+          <explore-maps v-if="isActive" v-click-away="onClickAway" @filterByMap="setFilter" />
           <!-- <div v-if="showModal">dflkgjldfkjgdlsfgjdfslkgjdfsljl</div> -->
         </div>
         <div class="filter-option check">
@@ -232,9 +232,13 @@ export default {
       } else {
         this.isActive = false;
       }
-      //
     },
+
+    setFilter(loc) {
+      this.filterBy.where = loc
+    }
   },
+
   created() {
     eventBus.on('closeModal', data => {
       this.showModal = data;

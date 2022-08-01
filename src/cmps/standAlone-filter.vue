@@ -94,7 +94,7 @@ export default {
   data() {
     return {
       filterBy: this.getInitialFilterState(),
-      numLabels: [0, 1, 2, 3, 4, 5, 6, 7, `${8}+`],
+      numLabels: [1, 2, 3, 4, 5, 6, 7, `${8}+`],
       propertyTypes: [
         {
           propertyType: 'House',
@@ -119,7 +119,7 @@ export default {
       ],
       propertyType: null,
       language: ['English', 'German', 'French', 'Japanese'],
-      essentials: ['Wifi', 'Kitchen', 'Washer', 'Dryer', 'Air conditioning'],
+      essentials: ['Wifi', 'Kitchen', 'Washer', 'TV', 'Air conditioning'],
       price: null,
       checkList: ref([]),
       primaryColor: '#b0b0b0',
@@ -176,7 +176,7 @@ export default {
     setPropertyType(propertyType) {
       propertyType.selected = !propertyType?.selected;
       if (propertyType.selected) {
-        this.filterBy.propertyType.push(propertyType.propertyType);
+        this.filterBy.propertyType.push(propertyType);
       } else {
         this.filterBy.propertyType = this.filterBy.propertyType.filter(propertyType => propertyType.selected);
       }

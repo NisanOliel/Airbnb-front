@@ -4,24 +4,23 @@
     "src": "../src/assets/maps/united-state.webp"
   },
   {
-    "loc": "I’m flexible",
+    "loc": "Canada",
     "src": "../src/assets/maps/flexible.jpeg"
   },
   {
-    "loc": "Middle East",
+    "loc": "Spain",
     "src": "../src/assets/maps/middle-east.webp"
   },
   {
-    "loc": "Italy",
+    "loc": "Australia",
     "src": "../src/assets/maps/italy.webp"
   },
   {
-    "loc": "France",
+    "loc": "Portugal",
     "src": "../src/assets/maps/france.webp"
   },
-
   {
-    "loc": "South America",
+    "loc": "Maui",
     "src": "../src/assets/maps/south-america.webp"
   }
 ]
