@@ -201,8 +201,7 @@ export default {
   props: { stay: { type: Object } },
   data() {
     return {
-
-      imgOrder: utilService.getImgUrl(this.hostStay.imgUrls[0]),
+      imgOrder: utilService.getImgUrl(this.stay.imgUrls[0]),
       isConfirm: false,
       totalPriceSum: 0,
       isShow: false,

@@ -29,7 +29,6 @@ export default {
     return {
       imageUrl:
         utilService.getImgUrl(this.hostStay.imgUrls[0]),
-
     };
   },
   created() {
