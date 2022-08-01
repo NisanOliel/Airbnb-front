@@ -176,7 +176,7 @@ export default {
     setPropertyType(propertyType) {
       propertyType.selected = !propertyType?.selected;
       if (propertyType.selected) {
-        this.filterBy.propertyType.push(propertyType);
+        this.filterBy.propertyType.push(propertyType.propertyType);
       } else {
         this.filterBy.propertyType = this.filterBy.propertyType.filter(propertyType => propertyType.selected);
       }
