@@ -138,7 +138,7 @@
       },
       logout() {
         this.$store.dispatch({ type: 'logout' });
-        // this.$router.push("/")
+        this.$router.push('/');
         this.loggedinUser = null;
         this.showMenu = false;
       },
