@@ -3,7 +3,7 @@
   <carousel :transition="330" :items-to-show="20" snapAlign="start">
     <slide v-for="(label, idx) in labelsList" ref="labels" :key="label" @click="filter(label.propertyType)">
       <div class="labels">
-        <img class="property-type-img" :src="label.src" />
+        <img class="property-type-img" :src="utilService.getImgUrl(label.src)" />
         <span>{{ label.propertyType }}</span>
       </div>
     </slide>
@@ -33,6 +33,7 @@ onMounted(() => {
 <script>
 import 'vue3-carousel/dist/carousel.css';
 import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel';
+import { utilService } from '../services/util.service.js';
 
 export default {
   name: 'explore-labels',
