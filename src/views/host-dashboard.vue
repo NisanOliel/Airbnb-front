@@ -45,7 +45,7 @@
             </tr>
           </thead>
           <tbody>
-            <stays-dashboard :hostStay="hostStay" v-for="hostStay in hostStays" :key="hostStay._id" />
+            <stays-dashboard v-for="hostStay in getHostStays" :key="hostStay._id" :hostStay="hostStay" />
           </tbody>
         </table>
       </div>
@@ -55,16 +55,12 @@
 </template>
 
 <script>
-// import dashboardOrder from '../cmps/dashboard-order.vue';
-// import dashboardStay from '../cmps/dashboard-stay.vue';
 import ordersDashboard from '../cmps/orders-dashboard.vue';
 import staysDashboard from '../cmps/stays-dashboard.vue';
 import graphDashboard from '../cmps/graph-dashboard.vue';
 export default {
   name: 'host-dashboard',
   components: {
-    // dashboardOrder,
-    // dashboardStay,
     ordersDashboard,
     staysDashboard,
     graphDashboard,
@@ -73,7 +69,6 @@ export default {
     return {
       orders: null,
       stays: null,
-      // hostOrders: this.getHostOrders,
       hostStays: null,
       showStays: false,
       showOrders: true,
@@ -83,11 +78,7 @@ export default {
   created() {
     this.$store.dispatch({ type: 'loadOrders', usrId: this.getLogInUser });
     this.$store.dispatch({ type: 'setFilterBy', filterBy: { hostID: this.getLogInUser._id } });
-    // this.stays = this.$store.getters.getStays;
-    // this.orders = this.$store.getters.getHostOrders;
-    // this.loggedinUser = this.$store.getters.loggedinUser;
 
-    // this.hostStays = this.stays.filter(stays => stays.host._id === this.getLogInUser._id);
   },
 
   computed: {
@@ -96,6 +87,9 @@ export default {
     },
     getHostOrders() {
       return this.$store.getters.getOrders
+    },
+    getHostStays() {
+      return this.$store.getters.getStays
     },
     stayOrder() {
       if (!this.showStay) return 'Show my stays';
