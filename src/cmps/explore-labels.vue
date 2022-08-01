@@ -1,9 +1,9 @@
 <template>
   <span class="shadow-left"></span>
   <carousel :transition="330" :items-to-show="20" snapAlign="start">
-    <slide v-for="(label, idx) in labels" ref="labels" :key="label" @click="filter(label.propertyType)">
+    <slide v-for="(label, idx) in labelsList" ref="labels" :key="label" @click="filter(label.propertyType)">
       <div class="labels">
-        <img class="property-type-img" :src="label.src" />
+        <img class="property-type-img" :src="utilService.getImgUrlFilter(label.src)" />
         <span>{{ label.propertyType }}</span>
       </div>
     </slide>
@@ -33,12 +33,13 @@ onMounted(() => {
 <script>
 import 'vue3-carousel/dist/carousel.css';
 import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel';
+import { utilService } from '../services/util.service.js';
 
 export default {
   name: 'explore-labels',
   data() {
     return {
-      labels: '',
+      labelsList: null,
       filterBy: {
         propertyType: [],
       },
@@ -51,17 +52,13 @@ export default {
       this.filterBy.propertyType = []
       this.filterBy.propertyType.push(value)
       this.$store.dispatch({ type: 'setFilterBy', filterBy: this.filterBy });
-      this.$store.dispatch({ type: 'setFilteredStays' });
     },
   },
 
   created() {
-    this.labels = this.$store.getters.getLabels;
+    this.labelsList = this.$store.getters.getLabels;
   },
   computed: {
-    getLabels() {
-      return this.labels;
-    },
 
   },
   components: {
