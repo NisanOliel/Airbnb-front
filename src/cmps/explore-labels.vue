@@ -40,14 +40,16 @@ export default {
     return {
       labels: '',
       filterBy: {
-        label: null,
+        propertyType: [],
       },
       index: null,
     };
   },
   methods: {
     filter(value) {
-      this.filterBy.label = value;
+
+      this.filterBy.propertyType = []
+      this.filterBy.propertyType.push(value)
       this.$store.dispatch({ type: 'setFilterBy', filterBy: this.filterBy });
       this.$store.dispatch({ type: 'setFilteredStays' });
     },
