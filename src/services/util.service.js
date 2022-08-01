@@ -4,7 +4,8 @@ export const utilService = {
   makeId,
   // getImageUrl
   getImgUrl,
-  getImgUrlFilter
+  getImgUrlFilter,
+  getImgUrlMap
 };
 
 function delay(ms = 1500) {
@@ -49,5 +50,9 @@ function getImgUrl(file) {
 }
 function getImgUrlFilter(file) {
   const imgUrl = new URL(`../assets/app-filter-img/${file}`, import.meta.url);
+  return imgUrl;
+}
+function getImgUrlMap(file) {
+  const imgUrl = new URL(`../assets/maps/${file}`, import.meta.url);
   return imgUrl;
 }
