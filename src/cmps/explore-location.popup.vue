@@ -32,8 +32,5 @@ export default {
       this.$emit('filterByMap', loc)
     }
   }
-
-
-
 }
 </script>

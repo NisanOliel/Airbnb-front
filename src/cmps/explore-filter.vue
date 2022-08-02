@@ -8,7 +8,6 @@
             src="@/assets/icons/search-icon.svg" /></span>
       </div>
     </div>
-
     <div v-show="isExpend" class="filter-expend flex">
       <div class="navigation">
         <a href="http://">Stays</a>
@@ -23,7 +22,7 @@
           <input id="where" list="where" name="where" v-model="filterBy.where" placeholder="Search destination" />
 
           <explore-maps v-if="isActive" v-click-away="onClickAway" @filterByMap="setFilter" />
-          <!-- <div v-if="showModal">dflkgjldfkjgdlsfgjdfslkgjdfsljl</div> -->
+
         </div>
         <div class="filter-option check">
           <div class="labels-wrap">
@@ -70,7 +69,7 @@
   </div>
 
   <div v-if="showModal" v-click-away="onClickAway" class="guests-modal dropdown-card order-container">
-    <div class="row-card">
+    <div class="row-card flex">
       <div class="lft-crd">
         <span class="title-sm"> Adults</span>
         <span class="txt-sm">Ages 13 or above</span>
@@ -85,7 +84,7 @@
         </button>
       </div>
     </div>
-    <div class="row-card">
+    <div class="row-card flex">
       <div class="lft-crd">
         <span class="title-sm"> Children</span>
         <span class="txt-sm">Ages 2–12</span>
@@ -100,7 +99,7 @@
         </button>
       </div>
     </div>
-    <div class="row-card">
+    <div class="row-card flex">
       <div class="lft-crd">
         <span class="title-sm"> Infants</span>
         <span class="txt-sm">Under 2</span>
@@ -115,7 +114,7 @@
         </button>
       </div>
     </div>
-    <div class="row-card">
+    <div class="row-card flex">
       <div class="lft-crd">
         <span class="title-sm"> Pets</span>
         <span class="txt-sm">Serve animals</span>
@@ -126,7 +125,7 @@
         </button>
         <span>{{ filterBy.guests.pets }}</span>
         <button @click.stop="updateGuests('pets', 1)">
-          <span> + </span>
+          <span>+</span>
         </button>
       </div>
     </div>

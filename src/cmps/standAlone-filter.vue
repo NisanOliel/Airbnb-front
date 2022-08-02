@@ -95,28 +95,7 @@ export default {
     return {
       filterBy: this.getInitialFilterState(),
       numLabels: [1, 2, 3, 4, 5, 6, 7, `${8}+`],
-      propertyTypes: [
-        {
-          propertyType: 'House',
-          src: 'src/assets/app-filter-img/house.jpg',
-          selected: false,
-        },
-        {
-          propertyType: 'Apartment',
-          src: 'src/assets/app-filter-img/Apartment.jpg',
-          selected: false,
-        },
-        {
-          propertyType: 'Guesthouse',
-          src: 'src/assets/app-filter-img/Guesthouse.jpg',
-          selected: false,
-        },
-        {
-          propertyType: 'Hotel',
-          src: 'src/assets/app-filter-img/Hotel.jpg',
-          selected: false,
-        },
-      ],
+      propertyTypes: this.getInitialPropertyTypes(),
       propertyType: null,
       language: ['English', 'German', 'French', 'Japanese'],
       essentials: ['Wifi', 'Kitchen', 'Washer', 'TV', 'Air conditioning'],
@@ -203,10 +182,35 @@ export default {
     clearAll() {
       this.filterBy = this.getInitialFilterState();
       this.checkList = ref([]);
-      this.setFilter();
+      this.propertyTypes = this.getInitialPropertyTypes(),
+        this.setFilter();
     },
     closeForm() {
       this.$emit('closeFilersForm');
+    },
+    getInitialPropertyTypes() {
+      return [
+        {
+          propertyType: 'House',
+          src: 'src/assets/app-filter-img/house.jpg',
+          selected: false,
+        },
+        {
+          propertyType: 'Apartment',
+          src: 'src/assets/app-filter-img/Apartment.jpg',
+          selected: false,
+        },
+        {
+          propertyType: 'Guesthouse',
+          src: 'src/assets/app-filter-img/Guesthouse.jpg',
+          selected: false,
+        },
+        {
+          propertyType: 'Hotel',
+          src: 'src/assets/app-filter-img/Hotel.jpg',
+          selected: false,
+        },
+      ];
     },
   },
   // created() {

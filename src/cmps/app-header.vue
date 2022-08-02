@@ -10,7 +10,7 @@
             <router-link class="logo" to="/">
               <div class="main-logo flex">
                 <div><img class="logo-img" src="@/assets/icons/airbnb-logo.svg" /></div>
-                <h1>air2b</h1>
+                <h1 @click="showList">air2b</h1>
               </div>
             </router-link>
             <div class="explore-filter">
@@ -40,11 +40,12 @@
           <div v-if="!desktop" class="mobile-view">
             <div class="mobile-nav">
               <div class="search-icon">
-                <span><img src="@/assets/icons/search-icon.svg" @click="searchPlace" /></span>
+                <span><img src="@/assets/icons/search-icon.svg" @click="search" /></span>
               </div>
               <div class="mobile-content">
                 <!-- <div class="mobile-sech-title"> Where to? </div> -->
-                <input class="mobile-sech-title" type="text" placeholder="Where to?" v-model="country">
+                <input class="mobile-sech-title" type="text" placeholder="Where to?" input="searchCountry"
+                  v-model="country">
                 <!-- <div class="mobile-sech-list">
                   <span>Anywhere</span> • <span>Any week</span> •
                   <span>Add guests</span>
@@ -63,7 +64,7 @@
       <div class="container">
         <div v-if="path === '/explore' || path === '/'" class="header-bottom flex justify-space-between">
           <explore-labels v-if="!isExplore" />
-
+          <h3 v-if="isExplore">Stays : {{ staysLength }}</h3>
           <div v-if="desktop" @click="isShow = !isShow" class="stand-alone-filter">
             <img src="/src/assets/icons/filter-icon.svg" alt="" />
             <span class="filter-btn">Filters</span>
@@ -94,12 +95,16 @@ export default {
       isExplore: false,
       desktop: window.innerWidth > 750 ? true : false,
       path: null,
-      country: ''
+      country: '',
+      staysLength: null
     }
   },
   created() {
-    window.addEventListener('scroll', this.handleScroll);
-    window.addEventListener('resize', this.handleResize);
+    window.addEventListener('scroll', this.handleScroll)
+    window.addEventListener('resize', this.handleResize)
+    eventBus.on('staysLength', data => {
+      this.staysLength = data
+    });
   },
 
   destroyed() {
@@ -186,13 +191,22 @@ export default {
         this.desktop = false;
       }
     },
+
+    search() {
+      let url = `/explore?location=${this.country}`;
+      this.$router.push(url);
+    },
+
+    searchCountry(value) {
+      this.country = value
+    },
+
+    showList() {
+      this.$store.dispatch({ type: 'setFilterBy', filterBy: {} })
+    }
+
   },
-  // computed: {
-  //   searchPlace() {
-  //     console.log(this.country);
-  //     console.log('asaf')
-  //   }
-  // },
+
 
   watch: {
     isShow: function () {

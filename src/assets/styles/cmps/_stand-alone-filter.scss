@@ -231,7 +231,10 @@ span.el-radio-button__inner {
   bottom: 20px;
   left: 17px;
   font-size: 16px;
-  // font-weight: 600;
+}
+
+.selected-item {
+  border: 2px solid black;
 }
 
 input::-webkit-outer-spin-button,
@@ -318,10 +321,6 @@ span.el-checkbox__inner {
 label.activeBg span {
   background-color: black;
   color: #ffffff;
-}
-
-.selected-item {
-  border: 2px solid black;
 }
 
 .el-checkbox__original {

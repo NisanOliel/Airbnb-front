@@ -1,7 +1,5 @@
 <template>
   <section if="getStays" class="container">
-    <h3> Stays: {{ getStays.length }}</h3>
-
     <stay-list :stays="getStays"></stay-list>
   </section>
 </template>
@@ -18,7 +16,8 @@ export default {
   },
   computed: {
     getStays() {
-      return this.$store.getters.getStays;
+      eventBus.emit('staysLength', this.$store.getters.getStays.length);
+      return this.$store.getters.getStays
     },
   },
   created() {
