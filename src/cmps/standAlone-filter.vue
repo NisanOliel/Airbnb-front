@@ -89,6 +89,7 @@
 <script>
 import { ref } from 'vue';
 import { stayService } from '../services/stay.service.js';
+
 export default {
   name: 'standAlone-filter',
   data() {

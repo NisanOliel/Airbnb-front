@@ -5,7 +5,6 @@ export const stayStore = {
   state: {
     stays: [],
     filterBy: null,
-    lastRemoveStay: null,
     labels: stayService.getLabels(),
     maps: stayService.getMaps(),
   },
@@ -43,9 +42,7 @@ export const stayStore = {
     setFilterBy(state, { filterBy }) {
       state.filterBy = filterBy;
     },
-    setFilteredStays(state) {
-      state.filterBy = { ...state.filterBy };
-    },
+
 
     updateStay(state, { stay }) {
       const idx = state.stays.findIndex(p => p._id === stay._id);
@@ -71,16 +68,7 @@ export const stayStore = {
         commit({ type: 'undoRemovestay' });
         throw error;
       }
-      // commit(payload);
-      // return stayService
-      //   .remove(payload.stayId)
-      //   .then(() => {
-      //     commit({ type: 'clearRemovestay' });
-      //   })
-      //   .catch(err => {
-      //     commit({ type: 'undoRemovestay' });
-      //     throw err;
-      //   });
+
     },
     saveStay({ commit }, { stay }) {
       const actionType = stay._id ? 'updateStay' : 'addStay';
@@ -94,13 +82,8 @@ export const stayStore = {
     },
 
     async setFilterBy({ commit }, { filterBy }) {
-      console.log('filterBy:', filterBy)
       const stays = await stayService.query(filterBy);
       commit({ type: 'setStays', stays });
-    },
-
-    setFilteredStays({ commit }) {
-      commit({ type: 'setFilteredStays' });
     },
   },
 };
