@@ -89,6 +89,7 @@
 <script>
 import { ref } from 'vue';
 import { stayService } from '../services/stay.service.js';
+
 export default {
   name: 'standAlone-filter',
   data() {
@@ -98,22 +99,22 @@ export default {
       propertyTypes: [
         {
           propertyType: 'House',
-          src: 'src/assets/app-filter-img/house.jpg',
+          src: 'https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659426086/air2b/house_oz9fpr.jpg',
           selected: false,
         },
         {
           propertyType: 'Apartment',
-          src: 'src/assets/app-filter-img/Apartment.jpg',
+          src: 'https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659425953/air2b/Apartment_s5whob.jpg',
           selected: false,
         },
         {
           propertyType: 'Guesthouse',
-          src: 'src/assets/app-filter-img/Guesthouse.jpg',
+          src: 'https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659426009/air2b/Guesthouse_rxvpqm.jpg',
           selected: false,
         },
         {
           propertyType: 'Hotel',
-          src: 'src/assets/app-filter-img/Hotel.jpg',
+          src: 'https://res.cloudinary.com/nisan/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency//v1659426046/air2b/Hotel_lywp1t.jpg',
           selected: false,
         },
       ],
